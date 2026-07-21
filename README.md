@@ -1,0 +1,56 @@
+# Stockpit
+
+AI-driven investeringscockpit på en skärm. En enda `index.html`, noll beroenden i frontend —
+all data läses från `data/data.json` som uppdateras automatiskt var 30:e minut av GitHub Actions.
+
+**Live:** aktiveras via GitHub Pages (Settings → Pages → Deploy from a branch → `main` / root).
+
+## Så hänger det ihop
+
+```
+.github/workflows/update.yml   kör var 30:e minut (cron är inte sekundprecis)
+        └── scripts/update_data.py
+                ├── FRED (räntekurva, HY-spread, realränta)      — fredgraph.csv, ingen nyckel
+                ├── Yahoo Finance (olja, guld, silver, koppar,
+                │   VIX, sektor-ETF:er, kvotpar)                 — publikt chart-API
+                ├── SEC EDGAR full-text search (Form 4, USA)     — JSON, User-Agent med kontakt
+                └── FI marknadssök (svenska insynsaffärer)       — EXAKT EN CSV-export per körning,
+                                                                    aldrig HTML-skrapning, backoff vid fel
+                └──> skriver data/data.json + data/state.json och committar bara vid förändring
+                     → pushen får GitHub Pages att publicera om sidan
+```
+
+`update_data.py` **mergar**: endast fält med livekälla skrivs över; kurerade fält
+(estimatrevideringar, flöden, konvergenskandidater m.m.) behålls med sina egna vintage-märken.
+Kontraktet för varje fält finns i [DATA_SCHEMA.md](DATA_SCHEMA.md).
+
+## Filer
+
+| Fil | Roll |
+|---|---|
+| `index.html` | Hela cockpiten — motor, vy och en inbäddad TEST-kopia av datat |
+| `data/data.json` | LIVE-ögonblicksbilden (skrivs av botten) |
+| `data/sample_data.json` | Testdatat — byte-identiskt med det inbäddade blocket |
+| `data/state.json` | Bottens minne (senast sedda FI-publicering, felräknare) |
+| `data/track_record.json` | Utfallslogg för track record-fliken |
+| `scripts/update_data.py` | Datainsamlaren (Python 3.12, endast `requests`) |
+
+## TEST eller LIVE
+
+En rad i `index.html` styr: `var DATALAGE = "LIVE";` (eller `"TEST"`).
+Sidan sätter dock alltid badges efter vad datat *säger* (`lage`-fältet) — badgen kan aldrig ljuga.
+Öppnas filen direkt från disk (utan server) faller den ärligt tillbaka till inbäddat testdata.
+
+## Köra lokalt
+
+```
+python -m http.server 8123
+# öppna http://127.0.0.1:8123/?debug=1  — debug-badgen ska visa "assertions=gröna"
+```
+
+## Verifiera att pipelinen lever
+
+1. **Actions-fliken** — senaste "Uppdatera data"-körning grön.
+2. **Commit-historiken** på `data/data.json` — ny commit när något ändrats.
+3. **Sidan själv** — stämpeln "Data per v.X" uppe till höger; blir datat äldre än 24 h
+   visar sidan en gul åldersvarning = pipelinen har stannat.

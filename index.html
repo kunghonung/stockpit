@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stockpit — AI-driven investeringscockpit</title>
+<meta name="description" content="Stockpit — AI-driven investeringscockpit: två linser (tidig cykel + momentum), rotationsradar med dubbla fönster och riskläge på en skärm. Testdata, riktiga källor.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A2540'/%3E%3Crect x='6' y='17' width='4' height='9' rx='1' fill='%237FA3CC'/%3E%3Crect x='14' y='11' width='4' height='15' rx='1' fill='%23BFD3E8'/%3E%3Crect x='22' y='6' width='4' height='20' rx='1' fill='%23FFFFFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ================= STOCKPIT COCKPIT v5 — tokens =================
+   Enda platsen med hexfärger, fontstorlekar och spacingvärden.   */
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+
+:root{
+  --sida:#FFFFFF; --panel:#FAFBFC; --panel2:#F0F3F7;
+  --linje:#E3E9F1; --linje2:#C7D2DF;
+  --navy:#0A2540; --sek:#3F5470; --damp:#5B6B80; --svag:#8A9BB0;
+  --accent:#16437E; --fokus:#16437E;
+  --gron-text:#0E6B33; --gron-fyll:#18A85A; --gron-ton:rgba(24,168,90,.12);
+  --gul-text:#8A6116;  --gul-fyll:#E7A514;  --gul-ton:rgba(231,165,20,.15);
+  --rod-text:#AC3227;  --rod-fyll:#D64541;  --rod-ton:rgba(214,69,65,.11);
+  --accent-ton:rgba(22,67,126,.10);
+  --q-leder:#18A85A; --q-forsvagas:#D98A0E; --q-slapar:#D64541; --q-forbattras:#2E6DB4;
+  --int0:#F2F6FA; --int1:#E2EAF3; --int2:#CBDAEA; --int3:#AFC7DE; --int4:#8FB0D0;
+  --sans:"Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"Geist Mono", ui-monospace, monospace;
+  --fs11:11px; --fs12:12px; --fs13:13px; --fs15:15px; --fs-score:21px;
+  --s4:4px; --s8:8px; --s12:12px; --s16:16px; --s24:24px;
+  --radie:6px; --topphojd:48px;
+}
+html, body{ height:100%; }
+body{
+  background:var(--sida); color:var(--navy);
+  font-family:var(--sans); font-size:var(--fs13); line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  display:flex; flex-direction:column;
+}
+a{ color:inherit; }
+:focus-visible{ outline:2px solid var(--fokus); outline-offset:2px; border-radius:2px; }
+
+.mono{ font-family:var(--mono); font-variant-numeric:tabular-nums; }
+.stampeltext{ font-family:var(--mono); font-size:var(--fs11); font-variant-numeric:tabular-nums; color:var(--damp); white-space:nowrap; }
+.enhet{ color:var(--svag); font-weight:400; }
+.hopp{
+  position:absolute; left:-9999px; top:var(--s8); z-index:99;
+  background:var(--panel); border:1px solid var(--linje2); padding:var(--s8) var(--s12);
+  font-size:var(--fs12); font-weight:500;
+}
+.hopp:focus{ left:var(--s8); }
+.oppna{ font-family:var(--mono); font-size:var(--fs11); font-weight:500; color:var(--accent); text-decoration:none; white-space:nowrap; transition:color .12s; }
+.oppna:hover{ text-decoration:underline; text-underline-offset:3px; }
+
+.panelkropp{ scrollbar-width:thin; scrollbar-color:var(--linje2) transparent; }
+.panelkropp::-webkit-scrollbar{ width:5px; }
+.panelkropp::-webkit-scrollbar-thumb{ background:var(--linje2); border-radius:var(--radie); }
+
+/* ---------- Lineage-badge (P1): källa + vintage + TEST/LIVE ---------- */
+.lineage{
+  font-family:var(--mono); font-size:var(--fs11); color:var(--svag);
+  white-space:nowrap; letter-spacing:.02em; cursor:help;
+}
+.lineage b{ font-weight:600; color:var(--gul-text); }
+.lineage.live b{ color:var(--gron-text); }
+.testmark{ font-family:var(--mono); font-size:var(--fs11); color:var(--gul-text); cursor:help; }
+
+/* ---------- EN badge-komponent (endast åtgärder + NY) ---------- */
+.badge{
+  display:inline-block; font-size:var(--fs11); font-weight:600; letter-spacing:.04em;
+  padding:0 var(--s8); border-radius:var(--radie); line-height:1.6; white-space:nowrap;
+}
+.badge.oka{ color:var(--gron-text); background:var(--gron-ton); }
+.badge.minska{ color:var(--rod-text); background:var(--rod-ton); }
+.badge.bevaka{ color:var(--gul-text); background:var(--gul-ton); }
+.badge.ny{ color:var(--accent); background:var(--accent-ton); }
+.nrad .badge{ min-width:62px; text-align:center; }
+
+/* ---------- Gemensam nyckeltalsrad ---------- */
+.nrad{
+  display:flex; align-items:center; gap:var(--s8);
+  min-height:26px; padding:0 var(--s4); border-radius:var(--radie);
+  font-size:var(--fs12); color:var(--sek);
+  transition:background .12s;
+}
+.nrad:hover{ background:var(--panel2); }
+.nrad .punkt{ width:7px; height:7px; border-radius:50%; flex:none; }
+.punkt.gron{ background:var(--gron-fyll); } .punkt.gul{ background:var(--gul-fyll); } .punkt.rod{ background:var(--rod-fyll); }
+.nrad .etikett{ color:var(--navy); font-weight:500; white-space:nowrap; }
+.nrad .beskr{ color:var(--damp); font-size:var(--fs11); white-space:nowrap; overflow:hidden; }
+.nrad .varde{ margin-left:auto; font-family:var(--mono); font-size:var(--fs12); font-weight:500; font-variant-numeric:tabular-nums; color:var(--navy); white-space:nowrap; text-align:right; }
+.nrad .meta{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); font-variant-numeric:tabular-nums; white-space:nowrap; }
+.riktpil{ font-family:var(--mono); font-size:var(--fs11); font-weight:600; flex:none; }
+.riktpil.upp{ color:var(--gron-text); } .riktpil.ned{ color:var(--rod-text); } .riktpil.hoger{ color:var(--svag); }
+.statusord{ font-size:var(--fs11); font-weight:600; letter-spacing:.05em; }
+.statusord.gron{ color:var(--gron-text); } .statusord.gul{ color:var(--gul-text); } .statusord.rod{ color:var(--rod-text); }
+
+.slutsats{ font-size:var(--fs12); color:var(--sek); line-height:1.45; padding:0 0 var(--s4); flex:none; }
+.slutsats::before{ content:"→ "; color:var(--svag); }
+.slutsats b{ font-weight:600; color:var(--navy); }
+
+/* ================= TOPPRAD ================= */
+.topp{
+  height:var(--topphojd); flex:none; display:flex; align-items:center; gap:var(--s16);
+  padding:0 var(--s12); background:var(--sida); border-bottom:1px solid var(--linje);
+}
+.marke{ display:flex; align-items:baseline; gap:var(--s8); text-decoration:none; white-space:nowrap; }
+.marke b{ font-family:var(--mono); font-size:var(--fs13); font-weight:600; letter-spacing:.14em; }
+.toppnav{ display:flex; gap:var(--s4); overflow-x:auto; scrollbar-width:none; }
+.toppnav::-webkit-scrollbar{ display:none; }
+.toppnav a{
+  font-size:var(--fs12); font-weight:500; color:var(--sek); text-decoration:none;
+  padding:var(--s4) var(--s8); border-radius:var(--radie); white-space:nowrap; transition:background .12s;
+}
+.toppnav a:hover{ color:var(--navy); background:var(--panel2); }
+.toppnav a[aria-current="page"]{ color:var(--sida); background:var(--navy); }
+.toppstatus{ margin-left:auto; display:flex; align-items:center; gap:var(--s12); white-space:nowrap; }
+.exempel{
+  border:1px dashed var(--linje2); color:var(--damp); padding:0 var(--s8); border-radius:var(--radie);
+  font-size:var(--fs11); font-weight:500; letter-spacing:.06em; text-transform:uppercase; line-height:1.7;
+}
+.stampel-varning{ color:var(--gul-text); }
+
+/* ================= COCKPIT-GRID ================= */
+.cockpit{ flex:1; min-height:0; display:flex; flex-direction:column; gap:var(--s8); padding:var(--s8); overflow:auto; }
+.center, .hoger, .botten{ display:contents; }
+.panel{
+  background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie);
+  padding:var(--s12); display:flex; flex-direction:column; min-height:0; min-width:0; position:relative;
+}
+.panel.belyst{ outline:2px solid var(--accent); outline-offset:1px; }
+.panelhuvud{ display:flex; align-items:center; gap:var(--s8); margin-bottom:var(--s4); flex:none; min-width:0; position:relative; }
+.panelhuvud h2{ font-size:var(--fs11); font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--damp); white-space:nowrap; }
+.panelhuvud .fordjupning{ margin-left:auto; display:flex; gap:var(--s8); overflow:visible; align-items:center; }
+.fordjupning a{
+  font-family:var(--mono); font-size:var(--fs11); font-weight:500; color:var(--svag);
+  text-decoration:none; white-space:nowrap; transition:color .12s;
+}
+.fordjupning a:hover{ color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+.panelkropp{ flex:1; min-height:0; overflow-y:auto; overflow-x:hidden; }
+[role="tabpanel"][hidden]{ display:none !important; }
+
+.infopop{ position:static; display:inline-block; }
+.infopop summary{
+  list-style:none; cursor:pointer; font-family:var(--mono); font-size:var(--fs11); font-weight:600;
+  color:var(--svag); border:1px solid var(--linje2); border-radius:50%;
+  width:16px; height:16px; display:inline-grid; place-items:center; line-height:1;
+  transition:color .12s, border-color .12s;
+}
+.infopop summary::-webkit-details-marker{ display:none; }
+.infopop summary:hover{ color:var(--accent); border-color:var(--accent); }
+.infopop .popinnehall{
+  position:absolute; right:var(--s16); top:34px; z-index:30; width:260px;
+  background:var(--sida); border:1px solid var(--linje2); border-radius:var(--radie); padding:var(--s12);
+  font-size:var(--fs12); line-height:1.5; color:var(--sek); box-shadow:0 4px 16px rgba(10,37,64,.10);
+}
+.popinnehall p{ margin-bottom:var(--s8); }
+.popinnehall p:last-child{ margin-bottom:0; }
+.popinnehall b{ color:var(--navy); font-weight:600; }
+
+@media (min-width:1120px) and (min-height:700px){
+  body{ height:100dvh; overflow:hidden; }
+  .cockpit{
+    display:grid; overflow:hidden;
+    grid-template-columns:318px minmax(0,1fr) 332px;
+    grid-template-rows:minmax(0,1fr);
+    grid-template-areas:"rek center hoger";
+  }
+  #rek{ grid-area:rek; }
+  .center{ grid-area:center; display:grid; gap:var(--s8); min-height:0; min-width:0; grid-template-rows:minmax(0,1.32fr) minmax(0,1fr); }
+  .botten{ display:grid; grid-template-columns:0.98fr 0.95fr 1.25fr; gap:var(--s8); min-height:0; min-width:0; }
+  .hoger{ grid-area:hoger; display:flex; flex-direction:column; gap:var(--s8); min-height:0; }
+  #aktier{ flex:none; }
+  #regim{ flex:1; }
+  .aktie .skal{ -webkit-line-clamp:1; }
+}
+@media (min-width:1120px) and (max-height:940px){
+  .cockpit{ gap:var(--s8); padding:var(--s8); }
+  .panel{ padding:var(--s8) var(--s12); }
+  .center{ grid-template-rows:minmax(0,1.2fr) minmax(0,1fr); }
+}
+
+/* ================= VÄNSTER: KAPITALALLOKERING ================= */
+.deltarad{
+  font-size:var(--fs12); color:var(--sek); line-height:1.5; flex:none;
+  margin-bottom:var(--s8); font-variant-numeric:tabular-nums;
+}
+.deltarad b{ color:var(--navy); font-weight:600; }
+
+.sektortabell{ margin-bottom:var(--s8); }
+.sektortabell > summary{
+  cursor:pointer; list-style:none; font-size:var(--fs11); font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--svag); transition:color .12s;
+}
+.sektortabell > summary::-webkit-details-marker{ display:none; }
+.sektortabell > summary::after{ content:" ↓"; }
+.sektortabell[open] > summary::after{ content:" ↑"; }
+.sektortabell > summary:hover{ color:var(--accent); }
+.stab{ width:100%; border-collapse:collapse; margin-top:var(--s4); }
+.stab th{
+  font-family:var(--mono); font-size:var(--fs11); font-weight:600; color:var(--svag);
+  text-align:right; padding:0 var(--s4); border-bottom:1px solid var(--linje); white-space:nowrap;
+}
+.stab th:first-child{ text-align:left; }
+.stab td{
+  font-family:var(--mono); font-size:var(--fs11); font-variant-numeric:tabular-nums;
+  padding:0 var(--s4); text-align:right; color:var(--sek); line-height:1.6; white-space:nowrap;
+}
+.stab td:first-child{ font-family:var(--sans); text-align:left; color:var(--navy); font-weight:500; }
+.stab tr:hover td{ background:var(--panel2); }
+.stab .topp2{ color:var(--gron-text); font-weight:600; }
+.stab .flagg{ color:var(--gul-text); font-weight:600; cursor:help; }
+
+.rek{ border:1px solid var(--linje); background:var(--sida); border-radius:var(--radie); padding:var(--s8) var(--s12); margin-bottom:var(--s8); }
+.rekhuvud{ display:flex; align-items:center; gap:var(--s8); margin-bottom:var(--s4); flex-wrap:wrap; }
+.rekhuvud h3{ font-size:var(--fs13); font-weight:600; letter-spacing:-.01em; }
+.rekhuvud .etf{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); letter-spacing:.05em; }
+.rekhuvud .riskniva{ margin-left:auto; font-size:var(--fs11); color:var(--damp); white-space:nowrap; }
+.divflagga{
+  font-size:var(--fs11); font-weight:600; color:var(--gul-text); cursor:help; white-space:nowrap;
+}
+.overtygelse{ display:flex; align-items:center; gap:var(--s8); margin-bottom:var(--s4); }
+.overtygelse .rubrik{ font-size:var(--fs11); font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--damp); }
+.meter{ flex:1; height:5px; background:var(--panel2); border-radius:var(--radie); overflow:hidden; }
+.meter i{ display:block; height:100%; background:var(--navy); border-radius:var(--radie); width:0; transition:width .9s cubic-bezier(.2,.7,.2,1); }
+.overtygelse .tal{ font-size:var(--fs-score); font-weight:500; min-width:30px; text-align:right; line-height:1; }
+.linsrad{ display:flex; gap:var(--s12); font-family:var(--mono); font-size:var(--fs11); color:var(--damp); margin-bottom:var(--s4); font-variant-numeric:tabular-nums; }
+.linsrad b{ color:var(--navy); font-weight:600; }
+.signaler{ list-style:none; display:flex; flex-direction:column; }
+.sigrad{
+  display:flex; align-items:center; gap:var(--s8); font-family:var(--sans); font-size:var(--fs12); color:var(--sek);
+  background:none; border:0; padding:var(--s4); border-radius:var(--radie); cursor:pointer; text-align:left; width:100%;
+  transition:background .12s; min-height:22px;
+}
+.sigrad:hover{ background:var(--panel2); }
+.signamn{ color:var(--navy); font-weight:500; }
+.sigrad .sigpoang{ margin-left:auto; font-family:var(--mono); font-size:var(--fs11); color:var(--svag); font-variant-numeric:tabular-nums; }
+.sigdetalj{ display:none; font-size:var(--fs11); color:var(--sek); padding:0 var(--s4) var(--s4) var(--s24); line-height:1.45; }
+.sigdetalj b{ color:var(--navy); }
+li.oppen .sigdetalj{ display:block; }
+.prickar{ display:inline-flex; gap:var(--s4); flex:none; }
+.prickar i{ width:4px; height:4px; border-radius:50%; border:1px solid var(--linje2); }
+.prickar i.fylld{ background:var(--navy); border-color:var(--navy); }
+.konfliktrad{
+  font-size:var(--fs11); color:var(--sek); line-height:1.45; margin-top:var(--s4);
+  border-left:2px solid var(--gul-fyll); padding-left:var(--s8);
+}
+.konfliktrad b{ color:var(--navy); }
+.omprovas{
+  margin-top:var(--s4); font-size:var(--fs11); line-height:1.5; color:var(--damp);
+  border-top:1px solid var(--linje); padding-top:var(--s4);
+}
+.omprovas b{ color:var(--sek); font-weight:600; }
+.villkor{ white-space:nowrap; }
+.villkor .vst{ font-family:var(--mono); font-weight:600; }
+.villkor .vst.ok{ color:var(--gron-text); } .villkor .vst.utlost{ color:var(--rod-text); }
+.rek .fotrad{ display:flex; align-items:baseline; gap:var(--s12); margin-top:var(--s4); }
+
+.metod{ margin-top:var(--s4); }
+.metod > summary{ cursor:pointer; list-style:none; font-size:var(--fs11); font-weight:500; color:var(--damp); transition:color .12s; }
+.metod > summary::-webkit-details-marker{ display:none; }
+.metod > summary::after{ content:" ↓"; }
+.metod[open] > summary::after{ content:" ↑"; }
+.metod > summary:hover{ color:var(--accent); }
+.metod .inre{ margin-top:var(--s8); font-size:var(--fs11); line-height:1.5; color:var(--sek); }
+.metod .inre p{ margin-bottom:var(--s4); }
+
+/* ================= RADAR ================= */
+#radar .panelkropp{ display:flex; flex-direction:column; overflow:hidden; }
+.radar-subtitel{ font-size:var(--fs11); color:var(--damp); flex:none; margin-bottom:var(--s4); }
+.radarytor{ flex:1; min-height:0; display:grid; grid-template-columns:1.5fr 1fr; gap:var(--s12); min-width:0; }
+.radarcell{ display:flex; flex-direction:column; min-height:0; min-width:0; position:relative; }
+.radarcell .cellrub{ font-size:var(--fs11); font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--svag); flex:none; }
+.radarhall{ flex:1; min-height:0; display:grid; place-items:center; position:relative; }
+.radarhall svg{ height:100%; max-width:100%; display:block; }
+#radarhall-geo svg{ max-width:400px; }
+.radar-ring{ fill:none; stroke:var(--linje); stroke-width:1; }
+.radar-kors{ stroke:var(--linje2); stroke-width:1; }
+.radar-svep{ animation:svep 14s linear infinite; }
+@keyframes svep{ to{ transform:rotate(360deg); } }
+.fas-etikett{ font-family:var(--sans); font-size:var(--fs11); font-weight:600; letter-spacing:.08em; text-transform:uppercase; }
+.fas-etikett.leder{ fill:var(--gron-text); } .fas-etikett.forsvagas{ fill:var(--gul-text); }
+.fas-etikett.slapar{ fill:var(--rod-text); } .fas-etikett.forbattras{ fill:var(--accent); }
+.radar-axel{ font-family:var(--sans); font-size:var(--fs11); fill:var(--svag); }
+.blip{ fill:var(--navy); stroke:var(--panel); stroke-width:2; }
+.blip-spar{ stroke:var(--linje2); stroke-width:1.2; fill:none; }
+.blip-sparpunkt{ fill:var(--linje2); }
+.blip-namn{
+  font-family:var(--sans); font-size:var(--fs12); font-weight:500; fill:var(--sek);
+  stroke:var(--panel); stroke-width:3; paint-order:stroke; stroke-linejoin:round;
+}
+.blip-namn.mono{ font-family:var(--mono); }
+.blip-div{ font-family:var(--mono); font-size:var(--fs12); font-weight:600; fill:var(--gul-text); stroke:var(--panel); stroke-width:3; paint-order:stroke; }
+.blip-ring{ fill:none; stroke-width:2; }
+.blip-ring.oka{ stroke:var(--gron-fyll); } .blip-ring.minska{ stroke:var(--rod-fyll); } .blip-ring.bevaka{ stroke:var(--gul-fyll); }
+.blip-puls{ fill:none; stroke:var(--accent); stroke-width:1.2; transform-box:fill-box; transform-origin:center; animation:blippuls 2.6s ease-out infinite; }
+@keyframes blippuls{ 0%{ transform:scale(.5); opacity:.6; } 75%{ transform:scale(1.9); opacity:0; } 100%{ opacity:0; } }
+.radarg[tabindex]:hover .blip, .radarg[tabindex]:focus .blip{ fill:var(--accent); }
+.radar-legend{
+  position:absolute; left:var(--s4); bottom:0; display:flex; gap:var(--s8); flex-wrap:wrap; max-width:70%;
+  font-family:var(--sans); font-size:var(--fs11); color:var(--svag); pointer-events:none;
+}
+.radar-legend i{ width:6px; height:6px; border-radius:50%; display:inline-block; margin-right:var(--s4); }
+
+/* ================= HÖGER: AKTIER + TRACK RECORD ================= */
+.underrad{ font-size:var(--fs11); color:var(--svag); margin-bottom:var(--s4); flex:none; }
+.underrad a{ color:var(--svag); }
+.underrad a:hover{ color:var(--accent); }
+.flikar{ display:flex; gap:var(--s4); margin-left:var(--s8); }
+.flik{
+  font-family:var(--sans); font-size:var(--fs11); font-weight:500; color:var(--damp);
+  background:none; border:0; border-radius:var(--radie); padding:0 var(--s8); line-height:1.8;
+  cursor:pointer; transition:background .12s;
+}
+.flik:hover{ background:var(--panel2); color:var(--navy); }
+.flik[aria-selected="true"]{ background:var(--navy); color:var(--sida); }
+.aktie{
+  display:flex; align-items:center; gap:var(--s8); padding:0 var(--s4);
+  border-bottom:1px solid var(--linje); border-radius:var(--radie); transition:background .12s;
+  min-height:42px;
+}
+.aktie:hover{ background:var(--panel2); }
+.aktie:last-child{ border-bottom:none; }
+.aktie .rang{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); width:18px; flex:none; font-variant-numeric:tabular-nums; }
+.aktie .tick{ font-family:var(--mono); font-size:var(--fs12); font-weight:600; min-width:42px; letter-spacing:.02em; }
+.aktie .tick small{ display:block; font-size:var(--fs11); font-weight:400; color:var(--svag); }
+.aktie .mitt{ flex:1; min-width:0; }
+.aktie .namnrad{ display:flex; align-items:baseline; gap:var(--s8); }
+.aktie .namn{ font-weight:500; font-size:var(--fs12); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.poang{ font-family:var(--mono); font-size:var(--fs11); color:var(--damp); white-space:nowrap; font-variant-numeric:tabular-nums; }
+.aktie .skal{
+  font-size:var(--fs11); line-height:1.4; color:var(--sek); margin-top:0;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.parlor{ display:flex; gap:var(--s8); margin-top:0; }
+.parla{ font-family:var(--mono); font-size:var(--fs11); font-weight:400; color:var(--svag); letter-spacing:.03em; }
+.parla.aktiv{ color:var(--navy); font-weight:600; }
+.trtab{ width:100%; border-collapse:collapse; }
+.trtab th{
+  font-family:var(--mono); font-size:var(--fs11); font-weight:600; color:var(--svag);
+  text-align:right; padding:0 var(--s4); border-bottom:1px solid var(--linje); white-space:nowrap;
+}
+.trtab th:first-child, .trtab th:nth-child(2){ text-align:left; }
+.trtab td{
+  font-family:var(--mono); font-size:var(--fs11); font-variant-numeric:tabular-nums;
+  padding:0 var(--s4); text-align:right; color:var(--sek); line-height:1.7; white-space:nowrap;
+  border-bottom:1px solid var(--linje);
+}
+.trtab td:first-child, .trtab td:nth-child(2){ text-align:left; }
+.trtab .pos{ color:var(--gron-text); } .trtab .neg{ color:var(--rod-text); }
+.trsummering{ font-size:var(--fs11); color:var(--sek); margin-top:var(--s8); line-height:1.5; }
+.trsummering b{ color:var(--navy); }
+
+/* ================= HÖGER: REGIM ================= */
+.regimrad{ display:flex; align-items:center; gap:var(--s8); margin-bottom:0; }
+.lampa{ width:8px; height:8px; border-radius:50%; flex:none; }
+.lampa.gron{ background:var(--gron-fyll); } .lampa.gul{ background:var(--gul-fyll); } .lampa.rod{ background:var(--rod-fyll); }
+.regimrad .ord{ font-family:var(--mono); font-size:var(--fs12); font-weight:600; letter-spacing:.08em; }
+.regimrad .meter{ max-width:90px; }
+.regimrad .rtal{ font-size:var(--fs-score); font-weight:500; line-height:1; }
+.regimrad .rmax{ font-size:var(--fs11); color:var(--svag); }
+#regim .slutsats{ margin-bottom:0; padding-bottom:var(--s4); }
+.bullet{ margin-bottom:var(--s4); }
+.bullet .nrad{ min-height:24px; }
+.spar{ position:relative; height:6px; border-radius:var(--radie); overflow:hidden; background:var(--panel2); margin:0 var(--s4); }
+.zon{ position:absolute; top:0; bottom:0; }
+.zon.gron{ background:var(--gron-ton); } .zon.gul{ background:var(--gul-ton); } .zon.rod{ background:var(--rod-ton); }
+.spar .tick{ position:absolute; top:0; bottom:0; width:1px; background:var(--linje2); }
+.spar .pil{ position:absolute; top:1px; bottom:1px; width:2.5px; border-radius:var(--radie); background:var(--navy); }
+.sektionsrub{ font-size:var(--fs11); font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--svag); margin:var(--s4) 0; }
+.kvoter{ display:grid; grid-template-columns:1fr 1fr; gap:0 var(--s16); }
+.kvoter .nrad{ min-height:20px; font-size:var(--fs11); padding:0 var(--s4); }
+.kvoter .etikett{ font-family:var(--mono); font-size:var(--fs11); font-weight:500; }
+.crowd summary{ list-style:none; cursor:pointer; }
+.crowd summary::-webkit-details-marker{ display:none; }
+.crowd .komp{ margin:var(--s4) 0 var(--s4) var(--s24); font-size:var(--fs11); line-height:1.5; color:var(--sek); }
+.crowd .komp b{ color:var(--navy); font-weight:500; }
+.riskrad{ font-size:var(--fs11); color:var(--sek); line-height:1.45; margin-bottom:var(--s4); padding-left:var(--s16); position:relative; }
+.riskrad::before{ content:""; position:absolute; left:2px; top:5px; width:6px; height:6px; border-radius:50%; background:var(--gul-fyll); }
+.riskrad b{ color:var(--navy); font-weight:600; }
+.riskrad .kalla-chip{ color:var(--svag); font-family:var(--mono); font-size:var(--fs11); }
+
+/* ================= BOTTEN ================= */
+.flod{ display:grid; grid-template-columns:92px 1fr 44px; gap:var(--s8); align-items:center; margin-bottom:var(--s4); border-radius:var(--radie); transition:background .12s; }
+.flod:hover{ background:var(--panel2); }
+.flod .namn{ font-size:var(--fs12); color:var(--sek); white-space:nowrap; overflow:hidden; }
+.flod .namn .div-ikon{ color:var(--gul-text); font-weight:600; cursor:help; }
+.divtrack{ position:relative; height:7px; background:var(--panel2); border-radius:var(--radie); overflow:hidden; }
+.divtrack .mittlinje{ position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--linje2); }
+.divtrack .stapel{ position:absolute; top:0; bottom:0; width:0; transition:width .9s cubic-bezier(.2,.7,.2,1); }
+.divtrack .stapel.in{ left:50%; background:var(--gron-fyll); border-radius:0 var(--radie) var(--radie) 0; }
+.divtrack .stapel.ut{ right:50%; background:var(--rod-fyll); border-radius:var(--radie) 0 0 var(--radie); }
+.flod .tal{ font-family:var(--mono); font-size:var(--fs11); font-weight:500; font-variant-numeric:tabular-nums; text-align:right; color:var(--navy); white-space:nowrap; }
+.flodnot{ font-size:var(--fs11); color:var(--damp); line-height:1.45; margin-top:var(--s4); border-top:1px solid var(--linje); padding-top:var(--s4); }
+
+.kurvhall svg{ width:100%; height:60px; display:block; overflow:visible; }
+.kurva-nu{ fill:none; stroke:var(--navy); stroke-width:2; stroke-linecap:round; }
+.kurva-forr{ fill:none; stroke:var(--linje2); stroke-width:1.4; stroke-linecap:round; }
+.kurva-punkt{ fill:var(--navy); stroke:var(--panel); stroke-width:1.6; }
+.kurva-text{ font-family:var(--mono); font-size:var(--fs11); fill:var(--svag); font-variant-numeric:tabular-nums; }
+.kurva-serietext{ font-family:var(--sans); font-size:var(--fs11); font-weight:500; fill:var(--sek); }
+.kallradtext{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); flex:none; }
+
+.matris{ width:100%; }
+.mrad{ display:grid; grid-template-columns:92px 1fr 1fr 1fr; gap:var(--s4); align-items:center; }
+.mrad.huvud{ margin-bottom:var(--s4); }
+.mrad.huvud span{ font-size:var(--fs11); font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--svag); text-align:right; white-space:nowrap; }
+.mrad.huvud span:first-child{ text-align:left; }
+.mrad .fnamn{ font-size:var(--fs12); font-weight:500; color:var(--navy); white-space:nowrap; overflow:hidden; }
+.cell{
+  display:flex; align-items:center; justify-content:flex-end; gap:var(--s4);
+  min-height:22px; border-radius:var(--radie); padding:0 var(--s8); cursor:help; white-space:nowrap;
+  font-family:var(--mono); font-size:var(--fs11); font-weight:500; font-variant-numeric:tabular-nums; color:var(--navy);
+}
+.konsekvens{ grid-column:1 / -1; font-size:var(--fs11); color:var(--damp); line-height:1.4; padding:0 0 var(--s4) var(--s4); }
+.konsekvens b{ color:var(--sek); font-weight:600; }
+.syntes{ font-size:var(--fs11); color:var(--sek); line-height:1.45; margin-top:var(--s8); border-top:1px solid var(--linje); padding-top:var(--s4); }
+.syntes b{ color:var(--navy); font-weight:600; }
+
+/* ================= MOBIL / STAPLAT ================= */
+@media (max-width:1119.9px), (max-height:699.9px){
+  body{ overflow-y:auto; overflow-x:clip; height:auto; min-height:100dvh; }
+  .cockpit{ overflow:visible; }
+  .panel{ min-height:auto; }
+  .panelkropp{ overflow:visible; }
+  .radarytor{ grid-template-columns:1fr; }
+  .radarhall svg{ width:100%; height:auto; max-height:none; }
+  section{ scroll-margin-top:calc(var(--topphojd) + var(--s8)); }
+  .panelhuvud{ flex-wrap:wrap; row-gap:var(--s4); }
+  .panelhuvud .fordjupning{ margin-left:0; flex-basis:100%; flex-wrap:wrap; }
+  .aktie .skal{ -webkit-line-clamp:3; }
+  #radarhall-sektor .blip-namn{ font-size:var(--fs15); }
+}
+@media (max-width:640px){
+  .topp{ flex-wrap:wrap; height:auto; min-height:var(--topphojd); padding:var(--s4) var(--s12); row-gap:0; }
+  .toppstatus{ flex-basis:100%; justify-content:flex-end; }
+  #klocka{ display:none; }
+}
+@media (prefers-reduced-motion: reduce){
+  .radar-svep{ animation:none; display:none; }
+  .blip-puls{ animation:none; display:none; }
+  .meter i, .divtrack .stapel{ transition:none; }
+  .nrad, .aktie, .flod, .sigrad, .flik, .toppnav a{ transition:none; }
+}
+</style>
+</head>
+<body>
+<a class="hopp" href="#rek">Hoppa till innehåll</a>
+
+<header class="topp">
+  <a class="marke" href="#rek" aria-label="Stockpit — till kapitalallokering">
+    <b>STOCKPIT</b><span class="stampeltext" id="lagesmark" title="Datalage styrs av en konfigurationsrad i koden. TEST = data/sample_data.json (seedad med verifierade fakta per 2026-07-17). LIVE kopplas in senare utan frontendändring.">TEST</span>
+  </a>
+  <nav class="toppnav" aria-label="Cockpitens paneler">
+    <a href="#rek" aria-current="page">Cockpit</a>
+    <a href="#radar">Sektorer</a>
+    <a href="#aktier">Aktier</a>
+    <a href="#aktier" data-panel="aktier">Insyn</a>
+    <a href="#makro">Makro</a>
+    <a href="#floden">Flöden</a>
+    <a href="#regim">Regim</a>
+  </nav>
+  <div class="toppstatus">
+    <span class="exempel" title="TEST-läge: all marknadsdata kommer ur data/sample_data.json — seedad med verifierade fakta per 17 juli 2026 (fält utan verifierad siffra är märkta approx). Fatta beslut på strukturen, inte på siffrorna.">Testdata</span>
+    <span class="stampeltext" id="stampel" aria-live="polite">Läser in …</span>
+    <span class="stampeltext" id="klocka" aria-hidden="true">--:--</span>
+  </div>
+</header>
+
+<main class="cockpit">
+
+  <!-- ===== VÄNSTER ===== -->
+  <section class="panel" id="rek" tabindex="-1" aria-labelledby="rek-rubrik">
+    <div class="panelhuvud">
+      <h2 id="rek-rubrik">Kapitalallokering</h2>
+      <div class="fordjupning">
+        <span class="lineage" id="lin-rek"></span>
+      </div>
+    </div>
+    <p class="slutsats" id="rek-slutsats"><noscript>Cockpiten kräver JavaScript för att läsa datalagret.</noscript></p>
+    <p class="deltarad" id="deltarad"></p>
+    <div class="panelkropp">
+      <details class="sektortabell" id="sektortabell" open>
+        <summary>Alla 11 sektorer · båda linserna</summary>
+        <div id="stabinre"></div>
+      </details>
+      <div id="reklista"></div>
+      <details class="metod" id="metod"><summary>Så räknas linserna, reglerna &amp; screeningen</summary><div class="inre" id="metodinre"></div></details>
+    </div>
+  </section>
+
+  <!-- ===== MITTEN ===== -->
+  <div class="center">
+    <section class="panel" id="radar" tabindex="-1" aria-labelledby="radar-rubrik">
+      <div class="panelhuvud">
+        <h2 id="radar-rubrik">Rotationsradar</h2>
+        <span class="stampeltext" id="radar-fonster"></span>
+        <div class="fordjupning">
+          <span class="lineage" id="lin-radar"></span>
+          <a href="https://stockcharts.com/freecharts/rrg/" target="_blank" rel="noopener" title="Öppna interaktiv RRG hos StockCharts">Öppna RRG →</a>
+          <details class="infopop">
+            <summary aria-label="Om radarns metod" title="Om radarns metod">i</summary>
+            <div class="popinnehall">
+              <p><b>Dubbla fönster.</b> Positionen ritas på det långa fönstret (12 v-ratio, 6 v-momentum). Byter en sektor kvadrant i det korta fönstret (2 v-momentum) utan bekräftelse i det långa pulserar punkten — det är »början av en vändning«-signalen.</p>
+              <p><b>Relativt, inte absolut.</b> Faller en sektor mindre än index i en nedgång räknas det som ledarskap här.</p>
+              <p><b>Spår</b> = tre veckors rörelse; pilspetsen visar riktningen.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <p class="radar-subtitel">Relativ styrka mot jämförelseindex — inte absolut avkastning. En sektor kan leda i en fallande marknad.</p>
+      <div class="panelkropp">
+        <div class="radarytor">
+          <div class="radarcell">
+            <span class="cellrub" id="radar-cellrub">Sektorer · mot S&amp;P 500</span>
+            <div class="radarhall" id="radarhall-sektor"></div>
+            <p class="slutsats" id="radar-slutsats"></p>
+          </div>
+          <div class="radarcell">
+            <span class="cellrub">Geografi · mot MSCI ACWI</span>
+            <div class="radarhall" id="radarhall-geo"></div>
+            <p class="slutsats" id="geo-slutsats"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="botten">
+      <section class="panel" id="floden" tabindex="-1" aria-labelledby="floden-rubrik">
+        <div class="panelhuvud">
+          <h2 id="floden-rubrik">Flöden</h2>
+          <div class="fordjupning">
+            <span class="lineage" id="lin-floden"></span>
+            <a href="https://www.ssga.com/us/en/intermediary/insights" target="_blank" rel="noopener" title="Öppna SSGA:s flödesrapporter">SSGA →</a>
+            <details class="infopop">
+              <summary aria-label="Om flödesdata" title="Om flödesdata">i</summary>
+              <div class="popinnehall">
+                <p><b>Institutionella ETF-flöden.</b> Negativt = institutionellt kapital lämnar sektorn — priset kan ändå stiga på retail-köp.</p>
+                <p>Divergens mellan flöde och momentum markeras med <b>⇄</b> här och i radarn. Månads- och veckodata blandas aldrig under samma etikett — testdatan innehåller medvetet bara månadsflöden, och då säger panelen det.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <p class="slutsats" id="flod-slutsats"></p>
+        <div class="panelkropp" id="flodkropp"></div>
+      </section>
+
+      <section class="panel" id="makro" tabindex="-1" aria-labelledby="makro-rubrik">
+        <div class="panelhuvud">
+          <h2 id="makro-rubrik">Makro</h2>
+          <div class="flikar" role="tablist" aria-label="Makrovyer">
+            <button class="flik" role="tab" id="flik-kurva" aria-selected="true" aria-controls="vy-kurva" type="button">Räntekurva</button>
+            <button class="flik" role="tab" id="flik-sentiment" aria-selected="false" aria-controls="vy-sentiment" type="button">Sentiment</button>
+          </div>
+          <div class="fordjupning"><span class="lineage" id="lin-makro"></span></div>
+        </div>
+        <div class="panelkropp">
+          <div id="vy-kurva" role="tabpanel" aria-labelledby="flik-kurva"></div>
+          <div id="vy-sentiment" role="tabpanel" aria-labelledby="flik-sentiment" hidden></div>
+        </div>
+      </section>
+
+      <section class="panel" id="megatrend" tabindex="-1" aria-labelledby="megatrend-rubrik">
+        <div class="panelhuvud">
+          <h2 id="megatrend-rubrik">Megatrend · flaskhalsar</h2>
+          <div class="fordjupning">
+            <span class="lineage" id="lin-mega"></span>
+            <a href="https://www.gridstatus.io" target="_blank" rel="noopener" title="Öppna GridStatus (elnät) — för AI-capex, se SemiAnalysis">GridStatus →</a>
+          </div>
+        </div>
+        <div class="panelkropp" id="megakropp"></div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ===== HÖGER ===== -->
+  <div class="hoger">
+    <section class="panel" id="aktier" tabindex="-1" aria-labelledby="aktier-rubrik">
+      <div class="panelhuvud">
+        <h2 id="aktier-rubrik">Aktier</h2>
+        <div class="flikar" role="tablist" aria-label="Aktievyer">
+          <button class="flik" role="tab" id="flik-konv" aria-selected="true" aria-controls="vy-konv" type="button">Konvergens</button>
+          <button class="flik" role="tab" id="flik-track" aria-selected="false" aria-controls="vy-track" type="button">Track record</button>
+        </div>
+        <div class="fordjupning">
+          <span class="lineage" id="lin-aktier"></span>
+          <a href="http://openinsider.com/latest-cluster-buys" target="_blank" rel="noopener" title="Öppna OpenInsiders lista över senaste klusterköpen">OpenInsider →</a>
+          <details class="infopop" id="legendpop">
+            <summary aria-label="Teckenförklaring för signaltyper" title="Teckenförklaring">?</summary>
+            <div class="popinnehall" id="legendinre"></div>
+          </details>
+        </div>
+      </div>
+      <div id="vy-konv" role="tabpanel" aria-labelledby="flik-konv" style="display:flex;flex-direction:column;min-height:0;flex:1">
+        <p class="slutsats" id="aktier-slutsats"></p>
+        <p class="underrad" id="aktier-underrad"></p>
+        <div class="panelkropp" id="aktielista"></div>
+      </div>
+      <div id="vy-track" role="tabpanel" aria-labelledby="flik-track" hidden style="display:flex;flex-direction:column;min-height:0;flex:1">
+        <p class="underrad" id="track-underrad"></p>
+        <div class="panelkropp" id="trackkropp"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="regim" tabindex="-1" aria-labelledby="regim-rubrik">
+      <div class="panelhuvud">
+        <h2 id="regim-rubrik">Marknadsregim &amp; risk</h2>
+        <div class="fordjupning">
+          <span class="lineage" id="lin-regim"></span>
+          <a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2" target="_blank" rel="noopener" title="Öppna FRED-grafen för HY-spreaden">Öppna FRED →</a>
+        </div>
+      </div>
+      <div class="panelkropp" id="regimkropp"></div>
+    </section>
+  </div>
+
+</main>
+
+<!-- ============ INBÄDDAD KOPIA AV data/sample_data.json ============
+     Byte-identisk med filen (QC diffar). Behövs för file://-läge där
+     fetch inte kan läsa lokala filer. Serverad över HTTP vinner filen. -->
+<script type="application/json" id="datalager">
+{
+  "schemaVersion": "1.0",
+  "lage": "TEST",
+  "asOfWeek": "2026-W29",
+  "asOfDatum": "2026-07-17",
+  "genererad": "2026-07-18T07:30:00+02:00",
+  "illustrativ": true,
+  "kommentar": "Realistisk testdata seedad med verifierade fakta per 2026-07-17. Fält utan verifierad siffra är markerade vintage 'approx' — de är rimliga men INTE faktakontrollerade. Serierna relSerie19 är syntetiska (19 veckopunkter, sektor/SPX indexerat) konstruerade för att vara konsistenta med RRG-fakta v.29.",
+
+  "rimlighet": { "vix": [9, 80], "move": [40, 200], "hy": [2, 10], "bredd": [5, 95], "crowding": [0, 100], "kvotindex": [50, 200], "fwdPE": [5, 45], "revQ2": [-40, 80] },
+
+  "rrgMetod": { "ratioFonster": 12, "momKort": 2, "momLang": 6, "kommentar": "x = avstånd (%) från 12 v glidande medel av relativpriset; y_kort = Δx över 2 v; y_lang = Δx över 6 v. Position ritas på långa läget; kort avvikelse = obekräftat kvadrantbyte → pulsmarkering." },
+
+  "linsvikter": {
+    "tidig": { "efterslapning": 30, "vardering": 25, "revideringar": 35, "flodesvandning": 10 },
+    "momentum": { "rs": 40, "kvadrant": 25, "flode": 20, "insyn": 15 },
+    "kommentar": "Komponent med saknat underlag (null) viktas bort och övriga skalas om — ingen låtsassiffra."
+  },
+
+  "sektorer": [
+    { "id": "XLK", "namn": "Teknik", "etf": "XLK",
+      "perfH1": { "v": 19.8, "kalla": "S&P sektorindex", "vintage": "2026-06-30" },
+      "fwdPE": { "v": 28.4, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 21.9, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 9.4, "kalla": "FactSet Earnings Insight (intervall +8,7–10 %)", "vintage": "2026-07-11" },
+      "revRiktning": "stiger",
+      "flodeM": { "v": 13.0, "andelInflode": 78, "kalla": "SSGA månadsdata", "vintage": "2026-06" },
+      "insynKluster": 0,
+      "rsRank": 2, "rsRankForra": 2,
+      "relSerie19": [100,100.7,101.4,102.1,102.9,103.7,104.5,105.3,106.2,107.1,108.1,109.2,110.4,112.0,113.9,115.9,117.7,117.9,118.0],
+      "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)." },
+    { "id": "XLI", "namn": "Industri", "etf": "XLI",
+      "perfH1": { "v": 20.2, "kalla": "S&P sektorindex", "vintage": "2026-06-30" },
+      "fwdPE": { "v": 25.5, "kalla": "FactSet", "vintage": "2026-07" },
+      "fwdPE10y": { "v": 19.8, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 6.2, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "stiger",
+      "flodeM": { "v": 2.2, "kalla": "SSGA månadsdata — störst enskild sektor vid sidan av Tech", "vintage": "2026-06" },
+      "insynKluster": 1,
+      "rsRank": 1, "rsRankForra": 1,
+      "relSerie19": [100,100.6,101.3,102.0,102.8,103.6,104.5,105.4,106.4,107.4,108.5,109.6,110.8,112.0,113.2,114.4,115.6,116.8,118.0] },
+    { "id": "XLC", "namn": "Kommunikation", "etf": "XLC",
+      "perfH1": { "v": 11.9, "kalla": "S&P sektorindex", "vintage": "approx" },
+      "fwdPE": { "v": 19.8, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 17.5, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 5.5, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "stiger",
+      "flodeM": null,
+      "insynKluster": 0,
+      "rsRank": 3, "rsRankForra": 3,
+      "relSerie19": [100,100.3,100.6,100.95,101.3,101.7,102.1,102.55,103.0,103.5,104.0,104.55,105.1,105.7,106.3,106.95,107.6,108.3,109.0] },
+    { "id": "XLB", "namn": "Material", "etf": "XLB",
+      "perfH1": { "v": 7.8, "kalla": "S&P sektorindex", "vintage": "approx" },
+      "fwdPE": { "v": 20.1, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 18.9, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 1.0, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "vänder",
+      "flodeM": null,
+      "insynKluster": 0,
+      "rsRank": 4, "rsRankForra": 6,
+      "relSerie19": [100,99.7,99.4,99.0,98.6,98.2,97.8,97.4,97.1,96.8,96.6,96.5,96.45,96.4,96.35,96.3,96.3,96.35,96.45] },
+    { "id": "XLP", "namn": "Dagligvaror", "etf": "XLP",
+      "perfH1": { "v": 4.6, "kalla": "S&P sektorindex", "vintage": "approx" },
+      "fwdPE": { "v": 21.5, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 20.2, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 0.5, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "flat",
+      "flodeM": null,
+      "insynKluster": 0,
+      "rsRank": 5, "rsRankForra": 5,
+      "relSerie19": [100,99.96,99.92,99.87,99.81,99.74,99.66,99.57,99.47,99.36,99.24,99.11,98.97,98.82,98.66,98.49,98.31,98.12,97.92] },
+    { "id": "XLV", "namn": "Hälsovård", "etf": "XLV",
+      "perfH1": { "v": 5.9, "kalla": "S&P sektorindex", "vintage": "approx" },
+      "fwdPE": { "v": 17.6, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 16.4, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": -14.7, "kalla": "FactSet EI — störst nedrevidering; enda sektorn med Q2-vinstfall (−9 %)", "vintage": "2026-07-11" },
+      "revRiktning": "faller",
+      "flodeM": null,
+      "insynKluster": 1,
+      "rsRank": 6, "rsRankForra": 9,
+      "relSerie19": [100,99.4,98.8,98.1,97.4,96.7,96.0,95.3,94.7,94.2,93.9,93.8,94.0,94.4,94.9,95.4,95.9,96.3,96.6],
+      "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta." },
+    { "id": "XLU", "namn": "Kraftförsörjning", "etf": "XLU",
+      "perfH1": { "v": 13.6, "kalla": "S&P sektorindex", "vintage": "approx" },
+      "fwdPE": { "v": 19.5, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 17.2, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 4.0, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "stiger",
+      "flodeM": null,
+      "insynKluster": 0,
+      "rsRank": 7, "rsRankForra": 7,
+      "relSerie19": [100,100.05,100.1,100.2,100.3,100.45,100.6,100.75,100.9,101.05,101.2,101.35,101.5,101.6,101.7,101.8,101.9,101.95,102.0] },
+    { "id": "XLRE", "namn": "Fastigheter", "etf": "XLRE",
+      "perfH1": { "v": 2.8, "kalla": "S&P sektorindex", "vintage": "approx" },
+      "fwdPE": { "v": 17.9, "kalla": "Koyfin", "vintage": "approx" },
+      "fwdPE10y": { "v": 18.8, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 0.8, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "flat",
+      "flodeM": null,
+      "insynKluster": 0,
+      "rsRank": 8, "rsRankForra": 8,
+      "relSerie19": [100,99.8,99.6,99.35,99.1,98.8,98.5,98.15,97.8,97.4,97.0,96.55,96.1,95.6,95.1,94.55,94.0,93.4,92.8] },
+    { "id": "XLE", "namn": "Energi", "etf": "XLE",
+      "perfH1": { "v": 19.7, "kalla": "S&P sektorindex", "vintage": "2026-06-30" },
+      "fwdPE": { "v": 12.9, "kalla": "FactSet — billigast av sektorerna", "vintage": "2026-07" },
+      "fwdPE10y": { "v": 15.6, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 55, "kalla": "FactSet EI (intervall +50–61 %) — störst upprevidering", "vintage": "2026-07-11" },
+      "revRiktning": "accelererar",
+      "flodeM": null,
+      "insynKluster": 0,
+      "rsRank": 9, "rsRankForra": 10,
+      "relSerie19": [100,99.4,98.8,98.2,97.6,97.0,96.4,95.85,95.3,94.75,94.2,93.6,92.95,92.35,91.8,91.3,90.75,90.1,89.4],
+      "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris." },
+    { "id": "XLF", "namn": "Finans", "etf": "XLF",
+      "perfH1": { "v": -1.2, "kalla": "S&P sektorindex — en av två minussektorer H1", "vintage": "2026-06-30" },
+      "fwdPE": { "v": 15.4, "kalla": "FactSet", "vintage": "2026-07" },
+      "fwdPE10y": { "v": 16.1, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": 1.8, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "vänder",
+      "flodeM": null,
+      "insynKluster": 1,
+      "rsRank": 10, "rsRankForra": 11,
+      "relSerie19": [100,99.8,99.6,99.3,99.0,98.6,98.2,97.7,97.1,96.4,95.6,94.7,93.7,92.5,91.2,90.0,89.2,89.0,89.1],
+      "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa." },
+    { "id": "XLY", "namn": "Sällanköp", "etf": "XLY",
+      "perfH1": { "v": -0.8, "kalla": "S&P sektorindex — en av två minussektorer H1", "vintage": "2026-06-30" },
+      "fwdPE": { "v": 25.9, "kalla": "FactSet — dyrast av sektorerna", "vintage": "2026-07" },
+      "fwdPE10y": { "v": 23.8, "kalla": "Koyfin 10-årssnitt", "vintage": "approx" },
+      "revQ2": { "v": -2.5, "kalla": "FactSet EI", "vintage": "approx" },
+      "revRiktning": "faller",
+      "flodeM": null,
+      "insynKluster": 1,
+      "rsRank": 11, "rsRankForra": 9,
+      "relSerie19": [100,99.6,99.2,98.75,98.3,97.8,97.3,96.75,96.2,95.6,95.0,94.35,93.7,93.0,92.3,91.55,90.8,90.0,89.2] }
+  ],
+
+  "flodenNoter": [
+    { "text": "Europa-regionala ETF:er: nettoutflöden i juni", "kalla": "SSGA månadsdata", "vintage": "2026-06" },
+    { "text": "Småbolags-ETF:er: +4 mdr USD senaste 3 mån", "kalla": "SSGA", "vintage": "2026-04→06" }
+  ],
+
+  "tripwires": [
+    { "id": "hy", "etikett": "HY-spread", "enhet": "%", "decimaler": 2, "varde": 2.87, "delta": "−4 bp · 1 v", "trosklar": [3.5, 4.5], "skala": [2, 5],
+      "kalla": "FRED BAMLH0A0HYM2", "vintage": "2026-07-17", "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2" },
+    { "id": "vix", "etikett": "VIX", "enhet": "", "decimaler": 1, "varde": 16.4, "delta": "+0,8 · 1 v", "trosklar": [20, 28], "skala": [10, 34],
+      "kalla": "CBOE via FRED", "vintage": "2026-07-17", "url": "https://fred.stlouisfed.org/series/VIXCLS" },
+    { "id": "move", "etikett": "MOVE", "enhet": "", "decimaler": 0, "varde": 71, "delta": "−1 · 1 v", "trosklar": [100, 130], "skala": [40, 145],
+      "kalla": "ICE BofA", "vintage": "2026-07-17", "url": "https://www.tradingview.com/symbols/TVC-MOVE/" }
+  ],
+
+  "regim": {
+    "trosklarOrd": { "riskAv": 45, "riskPa": 75 },
+    "kvoter": [
+      { "id": "bcomspx", "namn": "BCOM/SPX", "grupp": "Tillväxt/Inflation", "index": 94, "pil": "ned", "status": "gron" },
+      { "id": "hgxau", "namn": "HG1/XAU", "grupp": "Tillväxt/Inflation", "index": 97, "pil": "ned", "status": "gul" },
+      { "id": "btcxau", "namn": "BTC/XAU", "grupp": "Riskvilja/Likviditet", "index": 108, "pil": "upp", "status": "gron" },
+      { "id": "xlyxlp", "namn": "XLY/XLP", "grupp": "Riskvilja/Likviditet", "index": 103, "pil": "upp", "status": "gron" },
+      { "id": "hygtlt", "namn": "HYG/TLT", "grupp": "Riskvilja/Likviditet", "index": 105, "pil": "upp", "status": "gron" },
+      { "id": "soxspx", "namn": "SOX/SPX", "grupp": "AI/Tech-cykel", "index": 112, "pil": "upp", "status": "gul" },
+      { "id": "qqqspy", "namn": "QQQ/SPY", "grupp": "AI/Tech-cykel", "index": 104, "pil": "upp", "status": "gron" }
+    ],
+    "kvoterLineage": { "kalla": "egna kvotberäkningar (indexerade mot 13 v-snitt)", "vintage": "2026-W29" },
+    "crowding": {
+      "score": 72, "komfort": 60,
+      "kalla": "komposit CFTC/CBOE/BAML", "vintage": "2026-W28/29",
+      "komponenter": [
+        { "namn": "Systematiska flöden", "varde": "COT netto-long teknik, 88:e percentilen", "kalla": "CFTC · v.28" },
+        { "namn": "Put/Call-kvoter", "varde": "CPC 0,78 · CPCEX 0,64 — lågt skydd", "kalla": "CBOE" },
+        { "namn": "Kreditspreadar", "varde": "HY 2,87 % — inget stresspremium", "kalla": "BAML" }
+      ]
+    },
+    "aiCapex": { "kvot": 1.42, "pil": "upp", "capexYoY": 38, "kalla": "SOX/SPX + hyperscaler-guidance", "vintage": "2026-Q2" }
+  },
+
+  "riskregler": [
+    { "id": "koncentration", "namn": "Flödeskoncentration", "varde": 78, "komfort": 50, "dec": 0,
+      "mall": "{namn}: {varde} % av juniinflödena till en sektor (komfort < {komfort} %) — bredda köpen.", "kalla": "SSGA 2026-06" },
+    { "id": "crowding", "namn": "Trängsel", "varde": 72, "komfort": 60, "dec": 0,
+      "mall": "{namn}: {varde}/100 mot komfort {komfort} — trimma trängda fickor.", "kalla": "CFTC/CBOE/BAML" },
+    { "id": "move", "namn": "Räntevolatilitet", "varde": 71, "komfort": 100, "dec": 0,
+      "mall": "{namn}: MOVE {varde} mot komfort {komfort}.", "kalla": "ICE" },
+    { "id": "vix", "namn": "Aktievolatilitet", "varde": 16.4, "komfort": 20, "dec": 1,
+      "mall": "{namn}: VIX {varde} mot komfort {komfort}.", "kalla": "CBOE" },
+    { "id": "hy", "namn": "Kreditstress", "varde": 2.87, "komfort": 3.5, "dec": 2,
+      "mall": "{namn}: HY {varde} % mot komfort {komfort} %.", "kalla": "FRED" }
+  ],
+
+  "makro": {
+    "rantekurva": {
+      "punkter": ["3M", "2Y", "5Y", "10Y", "30Y"],
+      "nu": [4.33, 3.98, 3.92, 4.08, 4.46],
+      "forr": [4.35, 4.15, 4.02, 4.15, 4.50],
+      "kalla": "FRED", "vintage": "2026-07-17",
+      "not": "Brantande 2s10s: +10 bp/mån."
+    },
+    "bredd": { "over50": 62, "delta": "+4 · 1 v", "over200": 58, "skala": [20, 90], "zoner": [35, 72], "kalla": "StockCharts", "vintage": "2026-W29" },
+    "sentiment": {
+      "spx26": [100,100.8,101.5,101.1,102.2,103.0,102.6,103.8,104.5,104.1,105.2,106.0,105.5,106.8,107.4,106.9,108.1,108.8,108.3,109.5,110.2,109.8,110.9,111.6,111.2,111.8],
+      "high52": 112.4,
+      "spread26": [15,12,14,10,8,11,9,12,7,9,6,8,5,7,9,6,8,5,7,4,6,11,9,8,4,1],
+      "kalla": "AAII bull-bear · CFTC-netto", "vintage": "2026-W29"
+    },
+    "realranta": { "varde": "1,32 %", "pil": "ned", "delta": "−12 bp · 1 mån", "kalla": "FRED 10y TIPS", "vintage": "2026-07-17" },
+    "guld":   { "namn": "Guld", "kort": "XAU", "varde": "3 385", "enhet": "USD/oz", "pil": "upp", "delta4v": "+3,4 %", "status": "gron", "atgard": "oka", "kalla": "spot", "vintage": "2026-07-17" },
+    "silver": { "namn": "Silver", "kort": "XAG", "varde": "41,20", "enhet": "USD/oz", "pil": "upp", "delta4v": "+5,1 %", "status": "gul", "atgard": "bevaka", "kalla": "spot", "vintage": "approx" },
+    "koppar": { "namn": "Koppar", "kort": "HG1", "varde": "9 640", "enhet": "USD/t", "pil": "upp", "delta4v": "+2,1 %", "over200d": true, "status": "gul", "atgard": "bevaka", "kalla": "LME 3 mån", "vintage": "approx" }
+  },
+
+  "megatrend": {
+    "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)", "vintage": "2026-Q2",
+    "kolumner": ["Backl. å/å", "Ledtid", "Marg-Δ"],
+    "rader": [
+      { "namn": "Transformatorer", "sektor": "Kraftförsörjning", "tema": "el",
+        "celler": [ { "v": "+42 %", "i": 4, "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy" },
+                    { "v": "38 m", "pil": "upp", "i": 4, "k": "Ledtid 38 månader — stora krafttransformatorer" },
+                    { "v": "+3,2", "i": 3, "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna" } ] },
+      { "namn": "HVDC-kabel", "sektor": "Kraftförsörjning", "tema": "el",
+        "celler": [ { "v": "+31 %", "i": 3, "k": "Backlogg å/å — Prysmian/NKT/Nexans" },
+                    { "v": "30 m", "pil": "upp", "i": 3, "k": "Ledtid 30 månader — högspänningskabel" },
+                    { "v": "+2,1", "i": 2, "k": "Prispåslag +2,1 procentenheter i nya kontrakt" } ] },
+      { "namn": "Kylsystem", "sektor": "Kraftförsörjning", "tema": "el",
+        "celler": [ { "v": "+34 %", "i": 3, "k": "Backlogg å/å — datacenter-kyla (vätskekyla)" },
+                    { "v": "9 m", "pil": "upp", "i": 2, "k": "Ledtid 9 månader — kylsystem för AI-täta hallar" },
+                    { "v": "+2,8", "i": 3, "k": "Prismakt +2,8 procentenheter hos kylleverantörer" } ] },
+      { "namn": "Elnätskapacitet", "sektor": "Kraftförsörjning", "tema": "el",
+        "celler": [ { "v": "+19 %", "i": 2, "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)" },
+                    { "v": "44 m", "pil": "upp", "i": 4, "k": "Kötid 44 månader — nätanslutning datacenter" },
+                    { "v": "+0,9", "i": 1, "k": "Nättariffer +0,9 procentenheter" } ] },
+      { "namn": "Hyperscalers", "sektor": "Teknik", "tema": "ai",
+        "celler": [ { "v": "+38 %", "i": 4, "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)" },
+                    { "v": "26 v", "pil": "hoger", "i": 2, "k": "Leveranstid 26 veckor — GPU/serverutrustning" },
+                    { "v": "+4,1", "i": 4, "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)" } ] }
+    ]
+  },
+
+  "screenadeAntal": 214,
+  "aktierLineage": { "kalla": "FI/SEC", "vintage": "2026-W29" },
+  "aktier": [
+    { "ticker": "EVO", "namn": "Evolution", "marknad": "SE", "sektorId": "XLY", "styrka": 82, "tema": [],
+      "parlor": ["IN", "VÄ", "TK", "BL"],
+      "skal": "Insynskluster (4 köpare, 11,8 Mkr) + lägsta värderingen sedan notering + RS-vänd mot OMX.",
+      "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Evolution" },
+    { "ticker": "CEG", "namn": "Constellation Energy", "marknad": "US", "sektorId": "XLU", "styrka": 78, "tema": ["el", "ai"],
+      "parlor": ["TK", "FL", "MA", "ES"],
+      "skal": "Kraftsektorns ledare: momentum, sektorflöden, AI-efterfrågan och höjda estimat åt samma håll.",
+      "url": "https://www.tradingview.com/symbols/NASDAQ-CEG/" },
+    { "ticker": "ELV", "namn": "Elevance Health", "marknad": "US", "sektorId": "XLV", "styrka": 76, "tema": [],
+      "parlor": ["IN", "ES", "MA", "VÄ"],
+      "skal": "Störst insynskluster i sektorn (5 köpare, 9,4 MUSD) efter −41 % — estimaten har slutat sänkas.",
+      "url": "http://openinsider.com/search?q=ELV" },
+    { "ticker": "NIBE", "namn": "NIBE Industrier", "marknad": "SE", "sektorId": "XLI", "styrka": 64, "tema": ["el"],
+      "parlor": ["IN", "MA", "TK"],
+      "skal": "Insynsköp av VD + ordförande, räntemedvind för värmepumpar, botten i orderingången.",
+      "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=NIBE" },
+    { "ticker": "ZION", "namn": "Zions Bancorp", "marknad": "US", "sektorId": "XLF", "styrka": 61, "tema": [],
+      "parlor": ["IN", "VÄ", "MA"],
+      "skal": "Motvalls-idé i svag sektor: 4 köpare på −22 %-dippen, P/TBV under 10-årssnitt, brantare kurva hjälper.",
+      "url": "http://openinsider.com/search?q=ZION" }
+  ],
+  "parlnyckel": {
+    "IN": { "namn": "Insynsköp", "besk": "Kluster av insynsköp, gärna efter kursfall — den starkaste enskilda signalen." },
+    "FL": { "namn": "Kapitalflöden", "besk": "Institutionella ETF-/sektorflöden rör sig in i aktien eller dess sektor." },
+    "ES": { "namn": "Vinstestimat", "besk": "Analytikernas prognoser revideras upp, eller har slutat sänkas." },
+    "TK": { "namn": "Teknik/momentum", "besk": "Relativ styrka och pristrend pekar uppåt." },
+    "VÄ": { "namn": "Värdering", "besk": "Multiplar låga mot egen historik eller sektor." },
+    "MA": { "namn": "Makromedvind", "besk": "Ränteläge, valuta eller konjunktur gynnar affärsmodellen." },
+    "BL": { "namn": "Blankningstäckning", "besk": "Hög blankning som täcks kan förstärka en uppgång." }
+  },
+
+  "geo": {
+    "benchmark": "MSCI ACWI", "kalla": "statisk illustration (ej seedad mot verifierade fakta)", "vintage": "2026-W29",
+    "marknader": [
+      { "namn": "USA",    "kort": "SPX",  "x": 0.65, "y": -0.35, "spar": [[0.9,0.35],[0.82,0.05],[0.74,-0.18]] },
+      { "namn": "Nasdaq", "kort": "NDX",  "x": 1.7,  "y": -0.95, "spar": [[2.0,0.05],[1.9,-0.4],[1.8,-0.7]] },
+      { "namn": "Europa", "kort": "SXXP", "x": -0.8, "y": 0.9,  "spar": [[-1.4,0.1],[-1.15,0.45],[-0.95,0.7]] },
+      { "namn": "Japan",  "kort": "NKY",  "x": 0.4,  "y": 0.6,  "spar": [[0.0,0.3],[0.15,0.45],[0.3,0.55]] },
+      { "namn": "EM",     "kort": "EEM",  "x": -0.3, "y": 0.5,  "spar": [[-0.7,-0.1],[-0.55,0.15],[-0.42,0.35]] },
+      { "namn": "Kina",   "kort": "MCHI", "x": -1.5, "y": -0.6, "spar": [[-1.7,-1.1],[-1.62,-0.9],[-1.55,-0.72]] },
+      { "namn": "Indien", "kort": "INDA", "x": 0.7,  "y": -1.1, "spar": [[1.0,-0.5],[0.9,-0.75],[0.8,-0.95]] }
+    ],
+    "not": "Europa-regionala ETF:er hade utflöden i juni (SSGA) — divergens mot Europas RRG-förbättring."
+  }
+}
+</script>
+
+<!-- ============ INBÄDDAD KOPIA AV data/track_record.json ============ -->
+<script type="application/json" id="trackrecordlager">
+{
+  "schemaVersion": "1.0",
+  "illustrativ": true,
+  "kommentar": "ILLUSTRATIV historik — fiktiva poster för att göra utvärderingsvyn testbar. Ersätts löpande när skarpa rekommendationer loggas. Utfall = sektor-ETF:ns relativa avkastning mot S&P 500 (procentenheter) 1/4/12 veckor efter loggning; för MINSKA räknas negativ relativ avkastning som träff.",
+  "poster": [
+    { "id": "tr-01", "datum": "2026-02-06", "lins": "momentum", "handling": "oka", "etf": "XLK", "sektor": "Teknik",
+      "ingang": { "rsRank": 1, "fwdPE": 26.1, "revQ2": 7.2 },
+      "utfall": { "v1": 2.1, "v4": 5.8, "v12": 14.2 }, "omprovningTriggad": false },
+    { "id": "tr-02", "datum": "2026-02-20", "lins": "tidig", "handling": "oka", "etf": "XLE", "sektor": "Energi",
+      "ingang": { "rsRank": 11, "fwdPE": 11.8, "revQ2": 12.0 },
+      "utfall": { "v1": -0.8, "v4": 3.2, "v12": 9.5 }, "omprovningTriggad": false },
+    { "id": "tr-03", "datum": "2026-03-06", "lins": "momentum", "handling": "oka", "etf": "XLI", "sektor": "Industri",
+      "ingang": { "rsRank": 2, "fwdPE": 23.9, "revQ2": 4.1 },
+      "utfall": { "v1": 0.9, "v4": 2.7, "v12": 6.1 }, "omprovningTriggad": false },
+    { "id": "tr-04", "datum": "2026-03-20", "lins": "tidig", "handling": "minska", "etf": "XLV", "sektor": "Hälsovård",
+      "ingang": { "rsRank": 4, "fwdPE": 19.2, "revQ2": -6.5 },
+      "utfall": { "v1": -1.2, "v4": -4.8, "v12": -11.3 }, "omprovningTriggad": false,
+      "kommentar": "Nedrevideringsregeln: pris höll emot i 4 v, fundamenta vann på 12 v." },
+    { "id": "tr-05", "datum": "2026-04-03", "lins": "momentum", "handling": "oka", "etf": "XLC", "sektor": "Kommunikation",
+      "ingang": { "rsRank": 3, "fwdPE": 18.9, "revQ2": 5.0 },
+      "utfall": { "v1": 1.4, "v4": 1.1, "v12": 2.8 }, "omprovningTriggad": false },
+    { "id": "tr-06", "datum": "2026-04-17", "lins": "tidig", "handling": "oka", "etf": "XLU", "sektor": "Kraftförsörjning",
+      "ingang": { "rsRank": 9, "fwdPE": 16.8, "revQ2": 3.2 },
+      "utfall": { "v1": 0.2, "v4": 4.6, "v12": 8.9 }, "omprovningTriggad": false },
+    { "id": "tr-07", "datum": "2026-05-01", "lins": "momentum", "handling": "oka", "etf": "XLY", "sektor": "Sällanköp",
+      "ingang": { "rsRank": 5, "fwdPE": 24.7, "revQ2": 1.0 },
+      "utfall": { "v1": 1.8, "v4": -2.4, "v12": -6.7 }, "omprovningTriggad": true,
+      "kommentar": "Omprövning triggad v4: RS-rank föll under 8 — positionen stängdes enligt villkor." },
+    { "id": "tr-08", "datum": "2026-05-15", "lins": "tidig", "handling": "oka", "etf": "XLB", "sektor": "Material",
+      "ingang": { "rsRank": 10, "fwdPE": 18.4, "revQ2": 0.5 },
+      "utfall": { "v1": -0.4, "v4": 1.9, "v12": 3.4 }, "omprovningTriggad": false },
+    { "id": "tr-09", "datum": "2026-05-29", "lins": "momentum", "handling": "minska", "etf": "XLRE", "sektor": "Fastigheter",
+      "ingang": { "rsRank": 10, "fwdPE": 18.1, "revQ2": -1.2 },
+      "utfall": { "v1": -0.6, "v4": -1.8, "v12": -3.9 }, "omprovningTriggad": false },
+    { "id": "tr-10", "datum": "2026-06-12", "lins": "tidig", "handling": "oka", "etf": "XLF", "sektor": "Finans",
+      "ingang": { "rsRank": 11, "fwdPE": 15.1, "revQ2": 0.9 },
+      "utfall": { "v1": -1.1, "v4": 0.8, "v12": null }, "omprovningTriggad": false,
+      "kommentar": "12 v-utfall ännu ej mätbart (för färsk)." }
+  ]
+}
+</script>
+
+<script>
+(function(){
+"use strict";
+
+/* ============ EN konfigurationsrad styr datalaget ============ */
+var DATALAGE = "LIVE";
+var DATAKALLOR = { TEST: "data/sample_data.json", LIVE: "data/data.json" };
+var AKTIVT_LAGE = "TEST"; /* sätts av inläst data — badges ljuger aldrig om källan */
+var TRACKKALLA = "data/track_record.json";
+
+var $ = function(s, r){ return (r||document).querySelector(s); };
+var esc = function(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); };
+var svTal = function(v, dec){
+  return new Intl.NumberFormat("sv-SE", {minimumFractionDigits:dec, maximumFractionDigits:dec}).format(v);
+};
+var HANDLING = { oka:"ÖKA", minska:"MINSKA", bevaka:"BEVAKA" };
+var PIL = { upp:"▲", ned:"▼", hoger:"→" };
+var VDAG = ["sön","mån","tis","ons","tor","fre","lör"];
+var MAN = ["jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"];
+
+function veckoNr(w){ return parseInt(String(w).split("-W")[1], 10); }
+function veckoEtikett(data){
+  var d = new Date(data.asOfDatum + "T12:00:00");
+  return "v." + veckoNr(data.asOfWeek) + " · " + VDAG[d.getDay()] + " " + d.getDate() + " " + MAN[d.getMonth()];
+}
+/* P1: lineage-badge — källa · vintage · TEST/LIVE */
+function linBadge(kalla, vintage, fullKalla){
+  var lage = AKTIVT_LAGE === "LIVE" ? "LIVE" : "TEST";
+  return '<span class="lineage' + (lage === "LIVE" ? " live" : "") + '" title="Källa: ' + esc(fullKalla || kalla) + " · Vintage: " + esc(vintage) + " · Status: " + lage + (lage === "TEST" ? " (testdata — inte handlingsunderlag)" : "") + '"><b>' + lage + "</b> · " + esc(kalla) + " · " + esc(vintage) + "</span>";
+}
+function satLin(id, kalla, vintage, fullKalla){ var el = $("#" + id); if(el) el.innerHTML = linBadge(kalla, vintage, fullKalla); }
+/* diskret markering på sammansatta poäng byggda på TEST-data */
+function testTal(varde){
+  return varde + (AKTIVT_LAGE === "TEST" ? '<span class="testmark" title="Beräknad på TEST-data — inte handlingsunderlag.">°</span>' : "");
+}
+
+/* ============ P5: RRG med dubbla fönster (beräknas ur relSerie19) ============ */
+function sma(serie, till, n){
+  var s = 0; for(var i = till - n + 1; i <= till; i++) s += serie[i];
+  return s / n;
+}
+function rrgX(serie, k, fonster){ return (serie[k] / sma(serie, k, fonster) - 1) * 100; }
+function kvadrantAv(x, y){ return x >= 0 ? (y >= 0 ? "leder" : "försvagas") : (y >= 0 ? "förbättras" : "släpar"); }
+function beraknaRRG(serie, metod){
+  var n = serie.length - 1, f = metod.ratioFonster;
+  var x = rrgX(serie, n, f);
+  var yKort = x - rrgX(serie, n - metod.momKort, f);
+  var yLang = x - rrgX(serie, n - metod.momLang, f);
+  var trail = [];
+  for(var t = 3; t >= 1; t--){
+    trail.push({ x: rrgX(serie, n - t, f), y: rrgX(serie, n - t, f) - rrgX(serie, n - t - metod.momKort, f) });
+  }
+  return {
+    x: x, yKort: yKort, yLang: yLang,
+    kvadrantKort: kvadrantAv(x, yKort), kvadrantLang: kvadrantAv(x, yLang),
+    puls: kvadrantAv(x, yKort) !== kvadrantAv(x, yLang),
+    trail: trail
+  };
+}
+
+/* ============ P2: två linser — beräknas ur snapshoten, inga sektornamn i logiken ============ */
+function medNull(par){ /* [poäng|null, vikt][] → viktad summa med bortviktning */
+  var s = 0, w = 0;
+  par.forEach(function(p){ if(p[0] != null){ s += p[0] * p[1]; w += p[1]; } });
+  return w > 0 ? s / w : 0;
+}
+function klamp(v, a, b){ return Math.max(a, Math.min(b, v)); }
+
+function analysera(data){
+  var sektorer = data.sektorer;
+  var n = sektorer.length;
+  var revMin = Math.min.apply(null, sektorer.map(function(s){ return s.revQ2.v; }));
+  var revMax = Math.max.apply(null, sektorer.map(function(s){ return s.revQ2.v; }));
+  var peMin = Math.min.apply(null, sektorer.map(function(s){ return s.fwdPE.v; }));
+  var rabattMax = Math.max.apply(null, sektorer.map(function(s){ return (s.fwdPE10y.v - s.fwdPE.v) / s.fwdPE10y.v; }));
+  var flodPos = sektorer.filter(function(s){ return s.flodeM && s.flodeM.v > 0; })
+    .reduce(function(a, s){ return a + s.flodeM.v; }, 0);
+  var brantning = kurvBrantning(data);
+  var RIKTBONUS = { accelererar: 20, "vänder": 15, stiger: 10, flat: 0, faller: -10 };
+  var KVADRANT = { leder: 100, "förbättras": 55, "försvagas": 40, "släpar": 10 };
+
+  var a = {};
+  sektorer.forEach(function(s){
+    var rrg = beraknaRRG(s.relSerie19, data.rrgMetod);
+    /* — tidig-cykel-linsen — */
+    var efterslapning = (s.rsRank - 1) / (n - 1) * 100;
+    var rabatt = (s.fwdPE10y.v - s.fwdPE.v) / s.fwdPE10y.v;
+    var vardering = rabatt > 0 && rabattMax > 0 ? klamp(rabatt / rabattMax * 100, 0, 100) : 0;
+    var rev = klamp((s.revQ2.v - revMin) / ((revMax - revMin) || 1) * 100 + (RIKTBONUS[s.revRiktning] || 0), 0, 100);
+    var flodesvandning = s.flodeM == null ? null : (s.flodeM.v > 0 && s.rsRank >= 6 ? 100 : 0);
+    var vT = data.linsvikter.tidig;
+    var makro = 0, makroNot = null;
+    if(brantning > 0 && s.id === identifieraRantekanslig(data)){ makro = 8; makroNot = "Brantning +" + brantning + " bp/mån stöder räntenettot: +8 på tidig-linsen."; }
+    var tidig = klamp(Math.round(medNull([[efterslapning, vT.efterslapning], [vardering, vT.vardering], [rev, vT.revideringar], [flodesvandning, vT.flodesvandning]]) + makro), 0, 100);
+    /* — momentum-linsen — */
+    var vM = data.linsvikter.momentum;
+    var rs = (n - s.rsRank) / (n - 1) * 100;
+    var kv = KVADRANT[rrg.kvadrantLang];
+    var flode = s.flodeM == null ? null : klamp(Math.abs(s.flodeM.v) / (flodPos || 1) * 100 * (s.flodeM.v > 0 ? 1 : 0), 0, 100);
+    var insyn = s.insynKluster > 0 ? 100 : 0;
+    var momentum = klamp(Math.round(medNull([[rs, vM.rs], [kv, vM.kvadrant], [flode, vM.flode], [insyn, vM.insyn]])), 0, 100);
+
+    a[s.id] = {
+      s: s, rrg: rrg, tidig: tidig, momentum: momentum,
+      komp: { efterslapning: Math.round(efterslapning), vardering: Math.round(vardering), rev: Math.round(rev), flodesvandning: flodesvandning, rs: Math.round(rs), kvadrant: kv, insyn: insyn },
+      makro: makro, makroNot: makroNot,
+      prisForeFundamenta: (s.rsRankForra - s.rsRank) >= 3 && s.revQ2.v === revMin,
+      revArMin: s.revQ2.v === revMin,
+      revArMax: s.revQ2.v === revMax,
+      peArMin: s.fwdPE.v === peMin
+    };
+  });
+
+  var lista = sektorer.map(function(s){ return a[s.id]; });
+  var tidigOrdning = lista.slice().sort(function(x, y){ return y.tidig - x.tidig; });
+  var momOrdning = lista.slice().sort(function(x, y){ return y.momentum - x.momentum; });
+  lista.forEach(function(x){
+    x.tidigTopp2 = tidigOrdning.indexOf(x) < 2;
+    x.momTopp2 = momOrdning.indexOf(x) < 2;
+    /* divergens = linserna ger olika handling: köpkandidat i den ena, undvik i den andra */
+    x.divergens = (x.tidigTopp2 && x.momentum < 40) || (x.momTopp2 && x.tidig < 25);
+  });
+  return { perSektor: a, lista: lista, tidigOrdning: tidigOrdning, momOrdning: momOrdning, brantning: brantning };
+}
+/* räntekänslig sektor identifieras på fält (störst positiv revRiktning-effekt av brantning):
+   generisk proxy — sektorn med lägst rsRank bland dem vars fwdPE < fwdPE10y och revRiktning är 'vänder' */
+function identifieraRantekanslig(data){
+  var kand = data.sektorer.filter(function(s){ return s.revRiktning === "vänder" && s.fwdPE.v < s.fwdPE10y.v; })
+    .sort(function(a, b){ return b.rsRank - a.rsRank; })[0];
+  return kand ? kand.id : null;
+}
+function kurvBrantning(data){
+  var k = data.makro.rantekurva;
+  return Math.round((((k.nu[3] - k.nu[1]) - (k.forr[3] - k.forr[1]))) * 100);
+}
+
+/* ============ P2/P3: rekommendationsgenerering (fältregler, inga namn) ============ */
+function styrkaAv(poang){ return klamp(Math.round(poang / 20), 1, 5); }
+function byggKort(analys, data){
+  var kort = [];
+  /* ÖKA: tidig-cykel-linsens topp 2 (huvudlins) */
+  analys.tidigOrdning.slice(0, 2).forEach(function(x){
+    kort.push(gorKort(x, "oka", data, analys));
+  });
+  /* MINSKA: bland momentum-topp 3 med tidig < 25 (och bruten trängselregel) väljs
+     sektorn med störst flödeskoncentration — trängseln pekar ut sin egen adress */
+  var trangsel = data.riskregler.filter(function(r){ return r.id === "crowding"; })[0];
+  if(trangsel && trangsel.varde > trangsel.komfort){
+    var kand = analys.momOrdning.slice(0, 3).filter(function(x){ return x.tidig < 25; })
+      .sort(function(a, b){
+        return ((b.s.flodeM && b.s.flodeM.andelInflode) || 0) - ((a.s.flodeM && a.s.flodeM.andelInflode) || 0) || b.momentum - a.momentum;
+      })[0];
+    if(kand && kort.length < 3){ kort.push(gorKort(kand, "minska", data, analys)); }
+  }
+  /* BEVAKA: pris före fundamenta-flaggan */
+  analys.lista.forEach(function(x){
+    if(x.prisForeFundamenta && kort.length < 4){ kort.push(gorKort(x, "bevaka", data, analys)); }
+  });
+  /* P3-regel a (spärr): sektorminimum i revideringar får aldrig ÖKA utan varningsflagga */
+  kort.forEach(function(k){
+    if(k.handling === "oka" && k.analys.revArMin){ k.revVarning = true; }
+  });
+  return kort;
+}
+function gorKort(x, handling, data, analys){
+  var s = x.s;
+  var signaler = [];
+  if(handling === "oka"){
+    signaler.push({ namn: "Estimat " + (s.revQ2.v > 0 ? "+" : "") + svTal(s.revQ2.v, s.revQ2.v % 1 ? 1 : 0) + " % · " + s.revRiktning, styrka: styrkaAv(x.komp.rev), detalj: s.revQ2.kalla + " (" + s.revQ2.vintage + "). Komponentpoäng " + x.komp.rev + "/100, vikt 35 %." });
+    signaler.push({ namn: "Värdering " + svTal(s.fwdPE.v, 1) + "x mot " + svTal(s.fwdPE10y.v, 1) + "x snitt", styrka: styrkaAv(x.komp.vardering), detalj: "Forward P/E mot 10-årssnitt (" + s.fwdPE.kalla + "). Komponentpoäng " + x.komp.vardering + "/100, vikt 25 %." });
+    signaler.push({ namn: "RS-rank " + s.rsRank + "/11 — eftersläpare", styrka: styrkaAv(x.komp.efterslapning), detalj: "Eftersläpning är tidig-cykel-linsens råvara: låg relativ styrka + starka fundamenta = början, inte slutet. Vikt 30 %." });
+    signaler.push({ namn: "Momentum bekräftar " + (x.momentum < 40 ? "inte än" : "delvis") + " (" + x.momentum + "/100)", styrka: styrkaAv(x.momentum), detalj: "Momentum-linsens syn. Låg bekräftelse är väntad i början av en vändning — därför är divergensen flaggad, inte dold." });
+  } else if(handling === "minska"){
+    signaler.push({ namn: "Momentum-topp (" + x.momentum + "/100) men tidig-cykel " + x.tidig + "/100", styrka: styrkaAv(x.momentum), detalj: "Sen cykel: priset har redan gått. Tidig-cykel-linsen hittar inget kvar att hämta." });
+    signaler.push({ namn: "Trängsel över komfort", styrka: 4, detalj: "Crowding + flödeskoncentration enligt riskpanelen — asymmetrin är fel väg." });
+    signaler.push({ namn: "Värdering " + svTal(s.fwdPE.v, 1) + "x mot " + svTal(s.fwdPE10y.v, 1) + "x snitt", styrka: 3, detalj: "Premien lämnar inget utrymme för besvikelser." });
+  } else {
+    signaler.push({ namn: "RS-hopp " + s.rsRankForra + ":e→" + s.rsRank + ":e utan fundamenta", styrka: 4, detalj: "Priset springer före: rank upp " + (s.rsRankForra - s.rsRank) + " steg samtidigt som revideringarna är sektorns sämsta." });
+    signaler.push({ namn: "Estimat " + svTal(s.revQ2.v, 1) + " % · " + s.revRiktning, styrka: 1, detalj: s.revQ2.kalla + ". Regeln: störst nedrevidering kan aldrig få ÖKA utan varningsflagga." });
+    signaler.push({ namn: "Insynskluster i sektorn", styrka: s.insynKluster > 0 ? 3 : 1, detalj: s.insynKluster > 0 ? "Insynsköp finns — bevaka om fundamenta bottnar." : "Ingen insynsbekräftelse." });
+  }
+  /* omprövningsvillkor — maskinläsbara, utvärderas mot snapshoten (P7) */
+  var omprovas = [];
+  if(handling === "oka"){
+    omprovas.push({ text: "revideringarna vänder ned", test: { falt: "sektor." + s.id + ".revRiktning", op: "in", varde: ["accelererar", "stiger", "vänder", "flat"] } });
+    omprovas.push({ text: "tidig-poängen faller under 40", test: { falt: "tidig." + s.id, op: "under", varde: 40 } });
+  } else if(handling === "minska"){
+    omprovas.push({ text: "trängseln normaliseras (crowding < komfort)", test: { falt: "risk.crowding", op: "brytsEj", varde: null } });
+    omprovas.push({ text: "tidig-poängen tar sig över 40", test: { falt: "tidig." + s.id, op: "over", varde: 40 } });
+  } else {
+    omprovas.push({ text: "revideringarna slutar falla", test: { falt: "sektor." + s.id + ".revRiktning", op: "in", varde: ["faller"] } });
+    omprovas.push({ text: "insynsköpen försvinner", test: { falt: "sektor." + s.id + ".insynKluster", op: ">", varde: 0 } });
+  }
+  return { handling: handling, s: s, analys: x, signaler: signaler, omprovas: omprovas };
+}
+/* utvärdera villkor mot snapshoten — i drift: daglig kontroll; i testläge körs vid varje inläsning */
+function kontrolleraOmprovning(villkor, data, analys){
+  var t = villkor.test;
+  if(t.falt.indexOf("sektor.") === 0){
+    var delar = t.falt.split(".");
+    var sekt = data.sektorer.filter(function(s){ return s.id === delar[1]; })[0];
+    var v = delar[2] === "revRiktning" ? sekt.revRiktning : delar[2] === "insynKluster" ? sekt.insynKluster : (sekt[delar[2]] || {}).v;
+    if(t.op === "in"){ return t.varde.indexOf(v) === -1; }  /* utlöst när värdet lämnat godkänd-listan */
+    if(t.op === ">"){ return !(v > t.varde); }               /* utlöst när villkoret inte längre håller */
+  }
+  if(t.falt.indexOf("tidig.") === 0){
+    var p = analys.perSektor[t.falt.split(".")[1]].tidig;
+    if(t.op === "under"){ return p < t.varde; }
+    if(t.op === "over"){ return p > t.varde; }
+  }
+  if(t.falt === "risk.crowding"){
+    var r = data.riskregler.filter(function(x){ return x.id === "crowding"; })[0];
+    return r.varde < r.komfort;
+  }
+  return false; /* false = ej utlöst */
+}
+
+/* ============ Riskmotor & regim (oförändrad logik) ============ */
+function riskTopp(data, antal){
+  return data.riskregler.map(function(r){ return { regel: r, avvikelse: (r.varde - r.komfort) / r.komfort }; })
+    .sort(function(a, b){ return b.avvikelse - a.avvikelse; }).slice(0, antal);
+}
+function riskText(r){
+  return r.mall.replace("{namn}", r.namn).replace("{varde}", svTal(r.varde, r.dec)).replace("{komfort}", svTal(r.komfort, 0));
+}
+function beraknaOvertygelse(signaler){
+  var antal = signaler.length;
+  var summa = signaler.reduce(function(a, s){ return a + s.styrka; }, 0);
+  return Math.round(40 * Math.min(antal, 5) / 5 + 60 * summa / (antal * 5));
+}
+function tripwireStatus(t){
+  if(t.varde >= t.trosklar[1]) return "rod";
+  if(t.varde >= t.trosklar[0]) return "gul";
+  return "gron";
+}
+function beraknaRegim(data){
+  var statusar = data.tripwires.map(tripwireStatus);
+  var tripAndel = statusar.reduce(function(a, s){ return a + (s === "gron" ? 1 : s === "gul" ? 0.5 : 0); }, 0) / statusar.length;
+  var kvotAndel = data.regim.kvoter.reduce(function(a, k){ return a + (k.status === "gron" ? 1 : k.status === "gul" ? 0.5 : 0); }, 0) / data.regim.kvoter.length;
+  var poang = Math.round(35 * tripAndel + 35 * kvotAndel + 30 * (1 - data.regim.crowding.score / 100));
+  var breach = riskTopp(data, 5).some(function(x){ return x.avvikelse > 0; });
+  var ord, farg;
+  if(statusar.indexOf("rod") > -1 || poang < data.regim.trosklarOrd.riskAv){ ord = "RISK AV"; farg = "rod"; }
+  else if(breach || statusar.indexOf("gul") > -1 || poang <= data.regim.trosklarOrd.riskPa){ ord = "VAKSAM"; farg = "gul"; }
+  else { ord = "RISK PÅ"; farg = "gron"; }
+  return { poang: poang, ord: ord, farg: farg };
+}
+function sentimentDivergens(data){
+  var s = data.makro.sentiment;
+  var pris = s.spx26[s.spx26.length - 1];
+  var n = s.spread26.length;
+  return pris >= s.high52 * 0.99 && s.spread26[n-1] < s.spread26[n-2] && s.spread26[n-2] < s.spread26[n-3];
+}
+
+/* ============ Slutsatser ============ */
+function slutsatser(data, analys, regim, kort){
+  var s = {};
+  var oka = kort.filter(function(k){ return k.handling === "oka"; }).map(function(k){ return k.s.namn; });
+  var minska = kort.filter(function(k){ return k.handling === "minska"; }).map(function(k){ return k.s.namn; });
+  var divAntal = analys.lista.filter(function(x){ return x.divergens; }).length;
+  s.rek = "Tidig cykel styr: öka " + oka.join(" & ") + (minska.length ? ", finansiera med " + minska.join(" & ") : "") +
+    ". " + divAntal + " linsdivergenser flaggade — det är sajtens viktigaste signal.";
+  var pulser = analys.lista.filter(function(x){ return x.rrg.puls; }).map(function(x){ return x.s.etf; });
+  s.radar = pulser.length
+    ? "Obekräftade vändningar (puls): " + pulser.join(" · ") + " — kort fönster har bytt kvadrant, långt har inte hunnit med."
+    : "Inga obekräftade kvadrantbyten just nu.";
+  var geoLedareSvag = data.geo.marknader.filter(function(m){ return m.x > 0.5 && m.y < 0; }).sort(function(a, b){ return b.x - a.x; })[0];
+  var geoForb = data.geo.marknader.filter(function(m){ return m.x < 0 && m.y > 0; }).map(function(m){ return m.namn; });
+  s.geo = (geoLedareSvag ? geoLedareSvag.namn + " leder men försvagas; " : "") +
+    (geoForb.length ? geoForb.join(" & ") + " förbättras — men juniflödena lämnade Europa (vintage-gap: flöden 2026-06, RRG v.29)." : "ingen tydlig geografisk rotation.");
+  var kanda = data.sektorer.filter(function(x){ return x.flodeM; });
+  var toppFlode = kanda.slice().sort(function(a, b){ return b.flodeM.v - a.flodeM.v; })[0];
+  s.flod = "Junidata: " + (toppFlode ? toppFlode.namn + " tog " + toppFlode.flodeM.andelInflode + " % av sektorinflödena — koncentration, inte bredd." : "inga sektorflöden.") +
+    " Veckodata saknas i testläget och blandas aldrig in tyst.";
+  var br = analys.brantning;
+  var rk = identifieraRantekanslig(data);
+  var rkNamn = rk ? data.sektorer.filter(function(x){ return x.id === rk; })[0].namn : null;
+  s.kurva = (br > 0 ? "Brantning (+" + br + " bp/mån)" : br < 0 ? "Flackning (" + br + " bp/mån)" : "Oförändrad kurva") +
+    " + bredd " + data.makro.bredd.over50 + " % = " +
+    (data.makro.bredd.over50 >= data.makro.bredd.zoner[1] ? "brett men hett." : data.makro.bredd.over50 >= data.makro.bredd.zoner[0] ? "sen cykel utan överhettning." : "svag intern styrka.") +
+    (br > 0 && rkNamn ? " Medvind: brantningen ger " + rkNamn + " +8 på tidig-linsen." : "");
+  s.sentiment = sentimentDivergens(data)
+    ? "Pris nära topp medan sentimentet viker — historiskt en distributionssignal. Se Trängsel " + data.regim.crowding.score + "/100."
+    : "Ingen sentimentdivergens: pris och sentiment följs åt.";
+  var parlAntal = {};
+  data.aktier.forEach(function(a){ a.parlor.forEach(function(p){ parlAntal[p] = (parlAntal[p] || 0) + 1; }); });
+  var toppParla = Object.keys(parlAntal).sort(function(a, b){ return parlAntal[b] - parlAntal[a]; })[0];
+  s.aktier = data.parlnyckel[toppParla].namn + " driver " + parlAntal[toppParla] + " av " + data.aktier.length + " idéer — kontracykliskt urval.";
+  var grona = data.tripwires.filter(function(t){ return tripwireStatus(t) === "gron"; }).length;
+  var topp = riskTopp(data, 1)[0];
+  s.regim = (grona === data.tripwires.length ? "Alla " + grona + " tripwires gröna." : grona + " av " + data.tripwires.length + " tripwires gröna.") +
+    (topp.avvikelse > 0 ? " Främsta bromsen: " + topp.regel.namn.toLowerCase() + " (" + svTal(topp.regel.varde, topp.regel.dec) + " mot " + svTal(topp.regel.komfort, 0) + ")." : " Ingen riskregel över komfort.") +
+    " Riskaptit " + regim.poang + "/100.";
+  return s;
+}
+
+/* ============ Dev-assertions inkl. testkriterier P2/P3/P5 ============ */
+function assertions(data, analys, kort){
+  var varningar = [];
+  var iRim = function(nyckel, v){
+    var r = data.rimlighet[nyckel];
+    if(r && (v < r[0] || v > r[1])) varningar.push(nyckel + "=" + v + " utanför rimlighetsintervall");
+  };
+  data.tripwires.forEach(function(t){ iRim(t.id, t.varde); });
+  iRim("bredd", data.makro.bredd.over50);
+  iRim("crowding", data.regim.crowding.score);
+  data.regim.kvoter.forEach(function(k){ iRim("kvotindex", k.index); });
+  data.sektorer.forEach(function(s){ iRim("fwdPE", s.fwdPE.v); iRim("revQ2", s.revQ2.v); });
+  /* insynKluster måste stämma med aktielistan */
+  var klusterRaknat = {};
+  data.aktier.forEach(function(a){ if(a.parlor.indexOf("IN") > -1) klusterRaknat[a.sektorId] = (klusterRaknat[a.sektorId] || 0) + 1; });
+  data.sektorer.forEach(function(s){
+    if((klusterRaknat[s.id] || 0) !== s.insynKluster) varningar.push("insynKluster " + s.id + " (" + s.insynKluster + ") ≠ aktielistan (" + (klusterRaknat[s.id] || 0) + ")");
+  });
+  /* Testkriterierna gäller den seedade TESTDATAN — i LIVE-läge är utfallen
+     marknadens sak, inte kriteriers. P3-spärren (rendering) gäller alltid. */
+  if(data.lage !== "LIVE"){
+    var topp2 = analys.tidigOrdning.slice(0, 2).map(function(x){ return x.s.id; }).sort().join(",");
+    if(topp2 !== "XLE,XLF") varningar.push("P2 FALLERAT: tidig-cykel topp 2 = " + topp2 + " (krav: XLE,XLF)");
+    var hc = analys.lista.filter(function(x){ return x.prisForeFundamenta; }).map(function(x){ return x.s.id; });
+    if(hc.indexOf("XLV") === -1) varningar.push("P2 FALLERAT: pris-före-fundamenta-flaggan träffar inte XLV");
+    var okaDiv = kort.filter(function(k){ return k.handling === "oka" && !k.analys.divergens; });
+    if(okaDiv.length) varningar.push("P2: ÖKA-kort utan momentum-divergens (" + okaDiv.map(function(k){ return k.s.id; }) + ") — kontrollera att momentum-linsen visar sin avvikande syn");
+    var xlf = analys.perSektor.XLF;
+    if(!xlf || !xlf.rrg.puls || xlf.rrg.kvadrantKort !== "förbättras")
+      varningar.push("P5 FALLERAT: XLF ska pulsa med kort=förbättras (nu " + (xlf ? xlf.rrg.kvadrantKort + "/" + xlf.rrg.kvadrantLang + " puls=" + xlf.rrg.puls : "saknas") + ")");
+  }
+  /* Estimatreglerna är motorregler, inte testdatakriterier — vaktas alltid */
+  kort.forEach(function(k){
+    if(k.handling === "oka" && k.analys.revArMin && !k.revVarning) varningar.push("P3 FALLERAT: sektorminimum i revideringar fick ÖKA utan varningsflagga");
+  });
+  var maxRevMinPe = analys.lista.filter(function(x){ return x.revArMax && x.peArMin; });
+  maxRevMinPe.forEach(function(x){
+    if(!kort.some(function(k){ return k.handling === "oka" && k.s.id === x.s.id; }))
+      varningar.push("P3 FALLERAT: " + x.s.id + " (störst upprevidering + lägst värdering) saknas bland ÖKA-korten");
+  });
+  /* P6: flödesvintage måste vara månadsformat */
+  data.sektorer.forEach(function(s){
+    if(s.flodeM && !/^\d{4}-\d{2}$/.test(s.flodeM.vintage)) varningar.push("P6: flodeM-vintage för " + s.id + " är inte månadsformat");
+  });
+  if(varningar.length){ varningar.forEach(function(v){ console.warn("Stockpit-assertion: " + v); }); }
+  else { console.info("Stockpit-assertions: gröna (inkl. testkriterier P2/P3/P5)."); }
+  try{ window.__stockpitAssertions = varningar; }catch(e){}
+  /* debug: beräknade kvadranter */
+  try{ window.__stockpitRRG = analys.lista.map(function(x){ return x.s.id + ":" + x.rrg.kvadrantKort.slice(0,4) + "/" + x.rrg.kvadrantLang.slice(0,4) + (x.rrg.puls ? "*" : ""); }).join(" "); }catch(e){}
+  return varningar;
+}
+
+/* ============ Renderers ============ */
+function renderaVanster(data, analys, kort, slut){
+  satLin("lin-rek", "4 källor", "2026-06→W29", "FactSet · Koyfin · SSGA · RRG");
+  $("#rek-slutsats").textContent = slut.rek;
+  var t1 = analys.tidigOrdning[0], t2 = analys.tidigOrdning[1];
+  var m1 = analys.momOrdning[0], m2 = analys.momOrdning[1];
+  $("#deltarad").innerHTML = "Linserna: tidig cykel toppar <b>" + esc(t1.s.namn) + "</b> " + t1.tidig + " · <b>" + esc(t2.s.namn) + "</b> " + t2.tidig +
+    " — momentum toppar <b>" + esc(m1.s.namn) + "</b> " + m1.momentum + " · <b>" + esc(m2.s.namn) + "</b> " + m2.momentum + ".";
+
+  /* P4: alla 11 sektorer */
+  var rader = analys.lista.slice().sort(function(a, b){ return b.tidig - a.tidig; }).map(function(x){
+    var flagg = [];
+    if(x.divergens) flagg.push('<span class="flagg" title="Linsdivergens: tidig cykel och momentum ger olika handling.">⇄</span>');
+    if(x.prisForeFundamenta) flagg.push('<span class="flagg" title="Pris före fundamenta: RS-rank upp ' + (x.s.rsRankForra - x.s.rsRank) + ' steg medan revideringarna är sektorns sämsta.">!</span>');
+    if(x.rrg.puls) flagg.push('<span class="flagg" title="Obekräftat kvadrantbyte i korta RRG-fönstret.">◉</span>');
+    var flode = x.s.flodeM == null ? "—" : (x.s.flodeM.v > 0 ? "+" : "−") + svTal(Math.abs(x.s.flodeM.v), 1);
+    return "<tr><td>" + esc(x.s.namn) + "</td>" +
+      '<td class="' + (x.tidigTopp2 ? "topp2" : "") + '">' + x.tidig + "</td>" +
+      "<td>" + x.momentum + "</td>" +
+      '<td title="Månadsflöde (SSGA 2026-06); — = underlag saknas i testdatan">' + flode + "</td>" +
+      "<td>" + svTal(x.s.revQ2.v, x.s.revQ2.v % 1 ? 1 : 0) + " %</td>" +
+      "<td>" + (flagg.join(" ") || "·") + "</td></tr>";
+  }).join("");
+  $("#stabinre").innerHTML = '<table class="stab"><tr><th>Sektor</th><th title="Tidig-cykel-linsen (huvudlins)">Tidig</th><th title="Momentum-linsen (bekräftelse)">Mom.</th><th title="Månadsflöde, mdr USD">Flöde M</th><th title="Estimatrevideringar Q2">Est.</th><th>Flagg</th></tr>' + rader + "</table>";
+
+  $("#reklista").innerHTML = kort.map(function(k){
+    var x = k.analys, s = k.s;
+    var overtygelse = beraknaOvertygelse(k.signaler);
+    var signaler = k.signaler.map(function(sig){
+      var prickar = '<span class="prickar" aria-hidden="true">';
+      for(var i = 1; i <= 5; i++) prickar += '<i class="' + (i <= sig.styrka ? "fylld" : "") + '"></i>';
+      prickar += "</span>";
+      return '<li><button type="button" class="sigrad" aria-expanded="false">' + prickar +
+        '<span class="signamn">' + esc(sig.namn) + "</span>" +
+        '<span class="sigpoang">' + sig.styrka + "/5</span></button>" +
+        '<div class="sigdetalj">' + esc(sig.detalj) + "</div></li>";
+    }).join("");
+    var villkor = k.omprovas.map(function(v){
+      var utlost = kontrolleraOmprovning(v, dataGlobal, analys);
+      return '<span class="villkor">' + esc(v.text) + ' <span class="vst ' + (utlost ? "utlost" : "ok") + '" title="' + (utlost ? "UTLÖST — ompröva rekommendationen" : "Ej utlöst — kontrolleras vid varje datainläsning (dagligen i drift)") + '">' + (utlost ? "✗" : "✓") + "</span></span>";
+    }).join(" · ");
+    var divflagga = x.divergens ? '<span class="divflagga" title="Linsdivergens — sajtens viktigaste signal. Tidig cykel: ' + x.tidig + "/100 · Momentum: " + x.momentum + '/100. Båda argumenten visas i signalraderna.">⇄ divergens</span>' : "";
+    var revVarning = k.revVarning ? '<span class="divflagga" title="VARNING: sektorn har störst nedrevideringar — ÖKA tillåts aldrig utan denna flagga (estimatregeln).">! estimat</span>' : "";
+    var konflikt = "";
+    if(k.handling === "minska"){
+      var mega = data.megatrend.rader.filter(function(r){ return r.sektor === s.namn; });
+      if(mega.length){
+        konflikt = '<p class="konfliktrad"><b>Motsägelse:</b> flaskhalsarna stöder efterfrågan (+' + mega[0].celler[0].v.replace("+", "") + " backlogg) — men trängsel " + data.regim.crowding.score + "/100 och tidig-cykel " + x.tidig + "/100 väger tyngre. <b>Flippas om:</b> trängsel &lt; " + data.regim.crowding.komfort + " och tidig-poäng &gt; 40.</p>";
+      }
+    }
+    if(x.makroNot){
+      konflikt += '<p class="konfliktrad"><b>Medvind:</b> ' + esc(x.makroNot) + " <b>Flippas om:</b> 2s10s flackar under ±0 bp/mån.</p>";
+    }
+    return '<article class="rek" aria-label="' + HANDLING[k.handling] + " " + esc(s.namn) + '">' +
+      '<div class="rekhuvud">' +
+        '<span class="badge ' + k.handling + '">' + HANDLING[k.handling] + "</span>" +
+        "<h3>" + esc(s.namn) + "</h3>" +
+        '<span class="etf mono">' + esc(s.etf) + "</span>" + divflagga + revVarning +
+      "</div>" +
+      '<div class="linsrad"><span>Tidig <b>' + x.tidig + "</b>" + (x.makro ? ' <span title="varav makrojustering">(+' + x.makro + ")</span>" : "") + "</span><span>Momentum <b>" + x.momentum + "</b></span></div>" +
+      '<div class="overtygelse" title="Övertygelse ' + overtygelse + '/100 = 40 % konvergens + 60 % signalstyrka — beräknad på TEST-data">' +
+        '<span class="rubrik">Övertygelse</span>' +
+        '<span class="meter" role="img" aria-label="Övertygelse ' + overtygelse + ' av 100"><i data-niva="' + overtygelse + '"></i></span>' +
+        '<span class="tal">' + testTal(overtygelse) + "</span></div>" +
+      '<ul class="signaler">' + signaler + "</ul>" + konflikt +
+      '<p class="omprovas"><b>Omprövas om:</b> ' + villkor + "</p>" +
+      '<div class="fotrad"><a class="oppna" href="' + esc(hittaKalla(k)) + '" target="_blank" rel="noopener">' + esc(kallText(k)) + "</a></div>" +
+    "</article>";
+  }).join("");
+
+  $("#reklista").addEventListener("click", function(ev){
+    var knapp = ev.target.closest(".sigrad");
+    if(!knapp) return;
+    var li = knapp.closest("li");
+    var oppen = li.classList.toggle("oppen");
+    knapp.setAttribute("aria-expanded", oppen ? "true" : "false");
+  });
+  if(window.innerHeight < 940){ $("#sektortabell").open = false; }
+}
+/* källänk per handling — samma logik oavsett sektor */
+function hittaKalla(k){
+  return k.handling === "minska" ? "https://www.ssga.com/us/en/intermediary/insights"
+    : k.handling === "bevaka" ? "https://insight.factset.com"
+    : k.analys.makroNot ? "https://fred.stlouisfed.org/series/T10Y2Y" : "https://insight.factset.com";
+}
+function kallText(k){
+  return k.handling === "minska" ? "Öppna sektorflödena →"
+    : k.analys.makroNot ? "Öppna 2s10s-grafen →" : "Öppna FactSet EI →";
+}
+
+function renderaMetod(data, regim){
+  var vT = data.linsvikter.tidig, vM = data.linsvikter.momentum;
+  $("#metodinre").innerHTML =
+    "<p><b>Tidig-cykel-linsen (huvudlins)</b> = eftersläpning " + vT.efterslapning + " % (RS-rank inverterad) + värdering " + vT.vardering + " % (rabatt mot 10-årssnitt) + estimatrevideringar " + vT.revideringar + " % (nivå + riktningsbonus) + flödesvändning " + vT.flodesvandning + " %. Saknat underlag viktas bort — aldrig låtsassiffror. Makrojustering (brantande kurva → räntekänslig sektor) visas explicit på kortet.</p>" +
+    "<p><b>Momentum-linsen (bekräftelse)</b> = RS-rank " + vM.rs + " % + RRG-kvadrant (långt fönster) " + vM.kvadrant + " % + flödesandel " + vM.flode + " % + insynskluster " + vM.insyn + " %.</p>" +
+    "<p><b>Handling:</b> tidig-cykelns topp 2 → ÖKA · momentum-topp med tidig &lt; 25 och bruten trängselregel → MINSKA · RS-hopp ≥ 3 steg med sektorns sämsta revideringar → BEVAKA (»pris före fundamenta«). Reglerna är fältbaserade — inga sektornamn i koden.</p>" +
+    "<p><b>Estimatreglerna:</b> störst nedrevidering får aldrig ÖKA utan synlig flagga · störst upprevidering + lägst värdering ska alltid upp bland ÖKA-korten. Båda körs som assertions mot testdatan.</p>" +
+    "<p><b>RRG-fönster:</b> ratio 12 v · momentum 2 v (kort) och 6 v (långt). Position = långa läget; puls = obekräftat kvadrantbyte i korta.</p>" +
+    "<p><b>Riskaptit</b> (0–100) = 35 % tripwires + 35 % kvoter + 30 % inverterad trängsel. Nu: " + regim.poang + "/100. <b>Screening:</b> " + data.screenadeAntal + " bolag mot sju signaltyper, topp 5 på konvergens × styrka.</p>";
+}
+
+/* ---- RRG-rendering (P5: position = långt läge, puls = kort avvikelse) ---- */
+function renderRRGSvg(punkter, cfg){
+  var S = cfg.S, C = S / 2, RMAX = cfg.RMAX, RMIN = cfg.RMIN;
+  function pol(x, y){
+    var a = Math.atan2(y, x);
+    var r = Math.min(Math.sqrt(x*x + y*y) / cfg.skala, 1) * (RMAX - RMIN) + RMIN;
+    return [C + r * Math.cos(a), C - r * Math.sin(a)];
+  }
+  var s = '<svg viewBox="0 0 ' + S + " " + S + '" role="img" aria-label="' + esc(cfg.aria) + '">';
+  s += "<defs>";
+  [["gLeder" + cfg.id, "--q-leder"], ["gForsvagas" + cfg.id, "--q-forsvagas"], ["gSlapar" + cfg.id, "--q-slapar"], ["gForbattras" + cfg.id, "--q-forbattras"]].forEach(function(par){
+    s += '<radialGradient id="' + par[0] + '" cx="' + C + '" cy="' + C + '" r="' + RMAX + '" gradientUnits="userSpaceOnUse">' +
+      '<stop offset="0%" stop-color="var(' + par[1] + ')" stop-opacity="0.03"></stop>' +
+      '<stop offset="80%" stop-color="var(' + par[1] + ')" stop-opacity="0.06"></stop>' +
+      '<stop offset="100%" stop-color="var(' + par[1] + ')" stop-opacity="0.11"></stop></radialGradient>';
+  });
+  s += '<marker id="sparpil' + cfg.id + '" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3L0 6Z" fill="var(--linje2)"></path></marker>';
+  s += "</defs>";
+  var Q = function(p1, p2, grad){
+    return '<path d="M' + C + " " + C + " L" + p1 + " A" + RMAX + " " + RMAX + ' 0 0 1 ' + p2 + ' Z" fill="url(#' + grad + ')"></path>';
+  };
+  s += Q(C + " " + (C - RMAX), (C + RMAX) + " " + C, "gLeder" + cfg.id);
+  s += Q((C + RMAX) + " " + C, C + " " + (C + RMAX), "gForsvagas" + cfg.id);
+  s += Q(C + " " + (C + RMAX), (C - RMAX) + " " + C, "gSlapar" + cfg.id);
+  s += Q((C - RMAX) + " " + C, C + " " + (C - RMAX), "gForbattras" + cfg.id);
+  var arc = function(fran, till, hue){
+    return '<path d="M' + fran + " A" + (RMAX - 1) + " " + (RMAX - 1) + ' 0 0 1 ' + till + '" fill="none" stroke="var(' + hue + ')" stroke-width="2.5" opacity="0.4"></path>';
+  };
+  s += arc(C + " " + (C - RMAX + 1), (C + RMAX - 1) + " " + C, "--q-leder");
+  s += arc((C + RMAX - 1) + " " + C, C + " " + (C + RMAX - 1), "--q-forsvagas");
+  s += arc(C + " " + (C + RMAX - 1), (C - RMAX + 1) + " " + C, "--q-slapar");
+  s += arc((C - RMAX + 1) + " " + C, C + " " + (C - RMAX + 1), "--q-forbattras");
+  if(cfg.svep){
+    s += '<g class="radar-svep" style="transform-origin:' + C + "px " + C + 'px" aria-hidden="true"><path d="M' + C + " " + C + " L" + C + " " + (C - RMAX) + " A" + RMAX + " " + RMAX + " 0 0 1 " + (C + RMAX * 0.5) + " " + (C - RMAX * 0.866) + ' Z" fill="var(--accent)" opacity="0.04"></path></g>';
+  }
+  [0.33, 0.66, 1].forEach(function(f){
+    s += '<circle class="radar-ring" cx="' + C + '" cy="' + C + '" r="' + Math.round((RMAX - RMIN) * f + RMIN) + '"></circle>';
+  });
+  s += '<line class="radar-kors" x1="' + C + '" y1="' + (C - RMAX - 6) + '" x2="' + C + '" y2="' + (C + RMAX + 6) + '"></line>';
+  s += '<line class="radar-kors" x1="' + (C - RMAX - 6) + '" y1="' + C + '" x2="' + (C + RMAX + 6) + '" y2="' + C + '"></line>';
+  if(cfg.fasEtiketter){
+    var fx = C - RMAX * 0.62, fx2 = C + RMAX * 0.62;
+    s += '<text class="fas-etikett forbattras" x="' + fx + '" y="' + (C - RMAX - 8) + '" text-anchor="middle">Förbättras</text>';
+    s += '<text class="fas-etikett leder" x="' + fx2 + '" y="' + (C - RMAX - 8) + '" text-anchor="middle">Leder</text>';
+    s += '<text class="fas-etikett forsvagas" x="' + fx2 + '" y="' + (C + RMAX + 16) + '" text-anchor="middle">Försvagas</text>';
+    s += '<text class="fas-etikett slapar" x="' + fx + '" y="' + (C + RMAX + 16) + '" text-anchor="middle">Släpar</text>';
+  }
+  if(cfg.axelOrd){
+    s += '<text class="radar-axel" x="' + (C + 6) + '" y="' + (C - RMAX + 14) + '">stark</text>';
+    if(RMAX - RMIN > 150){ s += '<text class="radar-axel" x="' + (C + 6) + '" y="' + (C - RMIN - 26) + '">svag</text>'; }
+  }
+  punkter.forEach(function(pt){
+    var p = pol(pt.x, pt.y);
+    var sparP = pt.spar.map(function(q){ return pol(q[0], q[1]); });
+    var sista = sparP[sparP.length - 1];
+    var dx = p[0] - sista[0], dy = p[1] - sista[1];
+    var len = Math.sqrt(dx*dx + dy*dy) || 1;
+    var slut = [p[0] - dx / len * 8, p[1] - dy / len * 8];
+    var sparD = sparP.map(function(q, i){ return (i ? "L" : "M") + q[0].toFixed(1) + " " + q[1].toFixed(1); }).join("") +
+      "L" + slut[0].toFixed(1) + " " + slut[1].toFixed(1);
+    s += '<g class="radarg" tabindex="0" role="img" aria-label="' + esc(pt.aria) + '">';
+    s += "<title>" + esc(pt.titel) + "</title>";
+    s += '<path class="blip-spar" d="' + sparD + '" marker-end="url(#sparpil' + cfg.id + ')"></path>';
+    sparP.forEach(function(q){ s += '<circle class="blip-sparpunkt" cx="' + q[0].toFixed(1) + '" cy="' + q[1].toFixed(1) + '" r="2"></circle>'; });
+    if(pt.handling){ s += '<circle class="blip-ring ' + pt.handling + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="10"></circle>'; }
+    if(pt.puls){ s += '<circle class="blip-puls" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="9" aria-hidden="true"></circle>'; }
+    s += '<circle class="blip" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="5"></circle>';
+    var namn = pt.namn;
+    var avst = pt.handling ? 15 : 10;
+    var bredd = namn.length * 6.6 + (pt.div ? 14 : 0);
+    var anchor = p[0] - C >= 0 ? "start" : "end";
+    if(anchor === "start" && p[0] + avst + bredd > S - 4){ anchor = "end"; }
+    else if(anchor === "end" && p[0] - avst - bredd < 4){ anchor = "start"; }
+    var lx = p[0] + (anchor === "start" ? avst : -avst);
+    var ly = p[1] + (p[1] - C >= 0 ? 14 : -8);
+    s += '<text class="blip-namn' + (cfg.mono ? " mono" : "") + '" x="' + lx.toFixed(1) + '" y="' + ly.toFixed(1) + '" text-anchor="' + anchor + '">' + esc(namn) +
+      (pt.div ? ' <tspan class="blip-div">⇄</tspan>' : "") + "</text>";
+    s += "</g>";
+  });
+  s += "</svg>";
+  return s;
+}
+
+function renderaRadar(data, analys, kort, slut){
+  var m = data.rrgMetod;
+  $("#radar-fonster").textContent = "ratio " + m.ratioFonster + " v · mom " + m.momKort + "/" + m.momLang + " v";
+  satLin("lin-radar", "relSerie19", "v." + veckoNr(data.asOfWeek), "beräknad i frontenden ur relSerie19 (sektor/SPX)");
+  var handlingPer = {};
+  kort.forEach(function(k){ handlingPer[k.s.namn] = k.handling; });
+  var divText = "Pengar in men relativ styrka ner = möjlig distribution (flöden 2026-06 vs RRG v.29). Trängsel " + data.regim.crowding.score + "/100 gör risk/reward sämre.";
+  /* Läsbar polär mappning: kvadrant = beräknat 12 v-läge (sanningen), radie =
+     RS-rank 1–11, vinkel = jämn fördelning inom kvadranten (ingen falsk precision,
+     inga överlapp). Rörelsen ritas som kort båge: medurs när momentum avtar. */
+  var VINKELSPANN = { leder: [12, 78], "förbättras": [102, 168], "släpar": [192, 258], "försvagas": [282, 348] };
+  var grupper = { leder: [], "förbättras": [], "släpar": [], "försvagas": [] };
+  analys.lista.forEach(function(x){ grupper[x.rrg.kvadrantLang].push(x); });
+  var vinkelFor = {};
+  Object.keys(grupper).forEach(function(kv){
+    var g = grupper[kv].slice().sort(function(a, b){ return a.s.rsRank - b.s.rsRank; });
+    var span = VINKELSPANN[kv];
+    g.forEach(function(x, i){
+      vinkelFor[x.s.id] = (span[0] + (i + 0.5) / g.length * (span[1] - span[0])) * Math.PI / 180;
+    });
+  });
+  var punkter = analys.lista.map(function(x){
+    var div = x.s.flodeM && x.s.flodeM.v > 0 && x.rrg.yKort < 0;
+    var v = vinkelFor[x.s.id];
+    var r = 0.25 + (11 - x.s.rsRank) / 10 * 0.75;
+    var dir = x.rrg.yKort < x.rrg.yLang ? 1 : -1; /* medurs (mot nästa fas) när momentum avtar */
+    var sparV = [18, 12, 6].map(function(g){ return v + dir * g * Math.PI / 180; });
+    return {
+      namn: x.s.namn, x: r * Math.cos(v), y: r * Math.sin(v),
+      spar: sparV.map(function(sv){ return [r * Math.cos(sv), r * Math.sin(sv)]; }),
+      handling: handlingPer[x.s.namn] || null,
+      puls: x.rrg.puls, div: div,
+      aria: x.s.namn + ": " + x.rrg.kvadrantLang + " (långt fönster)" + (x.rrg.puls ? ", obekräftat byte till " + x.rrg.kvadrantKort + " i korta" : "") + (div ? ". Divergens: " + divText : ""),
+      titel: x.s.namn + " — långt: " + x.rrg.kvadrantLang + " · kort: " + x.rrg.kvadrantKort + (x.rrg.puls ? " (OBEKRÄFTAT BYTE — puls)" : "") + "\nRS-rank " + x.s.rsRank + "/11" + (div ? "\n⇄ " + divText : "")
+    };
+  });
+  $("#radarhall-sektor").innerHTML = renderRRGSvg(punkter, {
+    id: "S", S: 560, RMAX: 226, RMIN: 26, skala: 1.02, svep: true, fasEtiketter: true, axelOrd: true, mono: false,
+    aria: "Sektorrotationsradar v." + veckoNr(data.asOfWeek) + " mot S&P 500, dubbla fönster."
+  }) + '<div class="radar-legend" aria-hidden="true">' +
+    "<span>position = 12 v-läget</span><span>radie = RS-rank 1–11</span><span>puls = obekräftad vändning</span>" +
+    '<span><i style="background:var(--gron-fyll)"></i>öka</span>' +
+    '<span><i style="background:var(--rod-fyll)"></i>minska</span>' +
+    '<span><i style="background:var(--gul-fyll)"></i>bevaka</span>' +
+    "<span>⇄ flödesdivergens</span></div>";
+  $("#radar-slutsats").textContent = slut.radar;
+
+  var geopunkter = data.geo.marknader.map(function(mk){
+    return { namn: mk.kort, x: mk.x, y: mk.y, spar: mk.spar, handling: null, puls: false, div: false,
+      aria: mk.namn + ": " + kvadrantAv(mk.x, mk.y), titel: mk.namn + " — " + kvadrantAv(mk.x, mk.y) + " (statisk illustration)" };
+  });
+  $("#radarhall-geo").innerHTML = renderRRGSvg(geopunkter, {
+    id: "G", S: 340, RMAX: 120, RMIN: 18, skala: 3, svep: false, fasEtiketter: true, axelOrd: true, mono: true,
+    aria: "Geografisk rotationsradar mot " + data.geo.benchmark + " (statisk illustration)."
+  });
+  $("#geo-slutsats").textContent = slut.geo;
+}
+
+function renderaAktier(data, slut){
+  satLin("lin-aktier", data.aktierLineage.kalla, data.aktierLineage.vintage);
+  var nycklar = Object.keys(data.parlnyckel);
+  var rankade = data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+  $("#aktier-slutsats").textContent = slut.aktier;
+  $("#aktier-underrad").innerHTML = "Topp " + rankade.length + " av " + data.screenadeAntal +
+    ' screenade · rankade på konvergens × signalstyrka · <a href="#metod" data-oppnametod="1">så görs screeningen</a>';
+  $("#legendinre").innerHTML = nycklar.map(function(k){
+    return "<p><b>" + esc(k) + "</b> — " + esc(data.parlnyckel[k].namn) + ". " + esc(data.parlnyckel[k].besk) + "</p>";
+  }).join("");
+  $("#aktielista").innerHTML = rankade.map(function(a, i){
+    var parlor = nycklar.map(function(k){
+      var aktiv = a.parlor.indexOf(k) > -1;
+      return '<span class="parla' + (aktiv ? " aktiv" : "") + '" title="' + esc(data.parlnyckel[k].namn) + ": " + esc(data.parlnyckel[k].besk) + (aktiv ? " (aktiv)" : " (ej aktiv)") + '">' + esc(k) + "</span>";
+    }).join("");
+    return '<div class="aktie">' +
+      '<span class="rang">#' + (i + 1) + "</span>" +
+      '<span class="tick">' + esc(a.ticker) + "<small>" + esc(a.marknad) + "</small></span>" +
+      '<div class="mitt">' +
+        '<div class="namnrad"><span class="namn">' + esc(a.namn) + "</span>" +
+        '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + nycklar.length + ' spårade signaltyper · signalstyrka ' + a.styrka + '/100">' + a.parlor.length + "/" + nycklar.length + " · " + a.styrka + "</span></div>" +
+        '<div class="skal" title="' + esc(a.skal) + '">' + esc(a.skal) + "</div>" +
+        '<div class="parlor" role="img" aria-label="Aktiva signaler: ' + a.parlor.map(function(k){ return data.parlnyckel[k].namn; }).join(", ") + '">' + parlor + "</div>" +
+      "</div>" +
+      '<a class="oppna" href="' + esc(a.url) + '" target="_blank" rel="noopener" aria-label="Öppna källan för ' + esc(a.namn) + '">Öppna →</a>' +
+    "</div>";
+  }).join("");
+  var metodlank = $('[data-oppnametod]');
+  if(metodlank){
+    metodlank.addEventListener("click", function(){
+      var mm = $("#metod"); mm.open = true;
+      setTimeout(function(){ mm.querySelector("summary").focus(); }, 60);
+    });
+  }
+}
+
+/* ---- P8: track record-vyn ---- */
+function renderaTrack(tr){
+  $("#track-underrad").innerHTML = '<span class="lineage" title="Illustrativ historik tills skarpa rekommendationer börjat loggas. Schema: data/track_record.json."><b>TEST</b> · illustrativ historik · loggas i data/track_record.json</span>';
+  var rader = tr.poster.map(function(p){
+    var f = function(v){
+      if(v == null) return "—";
+      var traff = p.handling === "minska" ? v < 0 : v > 0;
+      return '<span class="' + (traff ? "pos" : "neg") + '">' + (v > 0 ? "+" : "−") + svTal(Math.abs(v), 1) + "</span>";
+    };
+    return "<tr title=\"" + esc((p.kommentar || "") + " Ingång: RS-rank " + p.ingang.rsRank + ", P/E " + svTal(p.ingang.fwdPE, 1) + ", rev " + svTal(p.ingang.revQ2, 1) + " %.") + "\">" +
+      "<td>" + p.datum.slice(5) + "</td><td>" + esc(p.etf) + " " + HANDLING[p.handling].slice(0, 3) + "</td>" +
+      "<td>" + (p.lins === "tidig" ? "T" : "M") + "</td>" +
+      "<td>" + f(p.utfall.v1) + "</td><td>" + f(p.utfall.v4) + "</td><td>" + f(p.utfall.v12) + "</td>" +
+      "<td>" + (p.omprovningTriggad ? '<span class="neg" title="Omprövningsvillkor triggades">✗</span>' : "·") + "</td></tr>";
+  }).join("");
+  var hit = function(lins, horisont){
+    var rel = tr.poster.filter(function(p){ return p.lins === lins && p.utfall[horisont] != null; });
+    var traff = rel.filter(function(p){ return p.handling === "minska" ? p.utfall[horisont] < 0 : p.utfall[horisont] > 0; });
+    return rel.length ? traff.length + "/" + rel.length : "—";
+  };
+  $("#trackkropp").innerHTML =
+    '<table class="trtab"><tr><th>Datum</th><th>Rek</th><th title="Lins: T = tidig cykel, M = momentum">L</th><th>1 v</th><th>4 v</th><th>12 v</th><th title="Omprövning triggad">Ompr.</th></tr>' + rader + "</table>" +
+    '<p class="trsummering">Träffsäkerhet (relativt S&P 500): <b>tidig cykel</b> ' + hit("tidig", "v1") + " på 1 v · " + hit("tidig", "v4") + " på 4 v · " + hit("tidig", "v12") + " på 12 v — <b>momentum</b> " + hit("momentum", "v1") + " · " + hit("momentum", "v4") + " · " + hit("momentum", "v12") + ". Mönstret är poängen: momentum vinner veckan, tidig cykel vinner kvartalet.</p>";
+}
+
+/* ---- Regim (P1-lineage + oförändrad anatomi) ---- */
+function bulletHtml(t){
+  var span = t.skala[1] - t.skala[0];
+  var pct = function(v){ return Math.max(0, Math.min(100, (v - t.skala[0]) / span * 100)); };
+  var status = tripwireStatus(t);
+  var ORD = { gron:"GRÖN", gul:"GUL", rod:"RÖD" };
+  return '<a class="bullet" style="display:block;text-decoration:none" href="' + esc(t.url) + '" target="_blank" rel="noopener" title="' + esc(t.etikett + " " + svTal(t.varde, t.decimaler) + " · " + t.delta + " · Källa: " + t.kalla + " · " + t.vintage) + '">' +
+    '<div class="nrad"><span class="punkt ' + status + '"></span>' +
+      '<span class="etikett">' + esc(t.etikett) + "</span>" +
+      '<span class="varde">' + svTal(t.varde, t.decimaler) + (t.enhet ? ' <span class="enhet">' + t.enhet + "</span>" : "") + "</span>" +
+      '<span class="meta">' + esc(t.delta) + "</span>" +
+      '<span class="statusord ' + status + '">' + ORD[status] + "</span></div>" +
+    '<div class="spar" role="img" aria-label="' + esc(t.etikett) + " " + svTal(t.varde, t.decimaler) + ", status " + ORD[status].toLowerCase() + '">' +
+      '<span class="zon gron" style="left:0;width:' + pct(t.trosklar[0]) + '%"></span>' +
+      '<span class="zon gul" style="left:' + pct(t.trosklar[0]) + '%;width:' + (pct(t.trosklar[1]) - pct(t.trosklar[0])) + '%"></span>' +
+      '<span class="zon rod" style="left:' + pct(t.trosklar[1]) + '%;width:' + (100 - pct(t.trosklar[1])) + '%"></span>' +
+      '<span class="tick" style="left:' + pct(t.trosklar[0]) + '%"></span>' +
+      '<span class="tick" style="left:' + pct(t.trosklar[1]) + '%"></span>' +
+      '<span class="pil" style="left:calc(' + pct(t.varde) + '% - 1px)"></span>' +
+    "</div></a>";
+}
+function metallRad(m, data){
+  var mk = data.makro;
+  var drivkraft = m === mk.guld ? (mk.realranta.pil === "ned" ? "fallande realräntor" : "stigande realräntor")
+    : m === mk.silver ? "följer guld"
+    : (mk.koppar.over200d ? "över 200d" : "under 200d");
+  return '<div class="nrad" title="' + esc(m.namn + " " + m.varde + " " + m.enhet + " · " + m.delta4v + " på 4 v · " + drivkraft + " · Källa: " + m.kalla + " · " + m.vintage) + '">' +
+    '<span class="punkt ' + m.status + '"></span>' +
+    '<span class="etikett">' + esc(m.namn) + "</span>" +
+    '<span class="beskr">' + esc(drivkraft) + "</span>" +
+    '<span class="varde">' + esc(m.varde) + "</span>" +
+    '<span class="riktpil ' + m.pil + '">' + PIL[m.pil] + "</span>" +
+    '<span class="badge ' + m.atgard + '">' + HANDLING[m.atgard] + "</span></div>";
+}
+function renderaRegim(data, regim, slut){
+  satLin("lin-regim", "4 källor", "07-17/W29", "FRED · ICE · CFTC · CBOE");
+  var html = '<div class="regimrad"><span class="lampa ' + regim.farg + '"></span>' +
+    '<span class="ord">' + regim.ord + "</span>" +
+    '<span class="meter" role="img" aria-label="Riskaptit ' + regim.poang + ' av 100"><i data-niva="' + regim.poang + '"></i></span>' +
+    '<span class="rtal">' + testTal(regim.poang) + '</span><span class="rmax">/100</span></div>';
+  html += '<p class="slutsats">' + esc(slut.regim) + "</p>";
+  html += data.tripwires.map(bulletHtml).join("");
+  var c = data.regim.aiCapex;
+  html += '<div class="nrad" title="' + esc("AI-capexcykel: SOX/SPX + hyperscaler-capex å/å. Källa: " + c.kalla + " · " + c.vintage) + '">' +
+    '<span class="punkt ' + (c.pil === "upp" ? "gul" : "gron") + '"></span>' +
+    '<span class="etikett">AI-capexcykel</span>' +
+    '<span class="beskr">capex +' + c.capexYoY + " % å/å</span>" +
+    '<span class="varde">' + svTal(c.kvot, 2) + "</span>" +
+    '<span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span></div>";
+  var cr = data.regim.crowding;
+  var crStatus = cr.score >= cr.komfort ? "gul" : "gron";
+  html += '<details class="crowd"><summary class="nrad" title="' + esc("Trängsel (crowding). Källa: " + cr.kalla + " · " + cr.vintage) + '">' +
+    '<span class="punkt ' + crStatus + '"></span>' +
+    '<span class="etikett">Trängsel</span>' +
+    '<span class="beskr">crowding</span>' +
+    '<span class="varde">' + cr.score + '<span class="enhet">/100</span></span>' +
+    '<span class="statusord ' + crStatus + '">' + (cr.score >= cr.komfort ? "FÖRHÖJD" : "OK") + "</span></summary>" +
+    '<div class="komp">' + cr.komponenter.map(function(k){
+      return "<b>" + esc(k.namn) + ":</b> " + esc(k.varde) + ' <span class="kalla-chip">(' + esc(k.kalla) + ")</span>";
+    }).join("<br>") + "</div></details>";
+  var risker = riskTopp(data, 2);
+  html += '<details id="riskdetails" open><summary class="sektionsrub" style="cursor:pointer;list-style:none">Främsta risker (' + risker.length + ")</summary>";
+  html += risker.map(function(x){
+    return '<p class="riskrad"><b>' + esc(x.regel.namn) + ":</b> " + esc(riskText(x.regel).split(": ")[1] || riskText(x.regel)) +
+      ' <span class="kalla-chip">' + esc(x.regel.kalla) + "</span></p>";
+  }).join("") + "</details>";
+  html += '<div class="sektionsrub" title="' + esc("Källa: spot/LME · vintage blandad — se radernas tooltips") + '">Metaller</div>';
+  html += [data.makro.guld, data.makro.silver, data.makro.koppar].map(function(m){ return metallRad(m, data); }).join("");
+  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %.") + '">Cross-asset-kvoter · 13 v-index</div>';
+  html += '<div class="kvoter">' + data.regim.kvoter.map(function(k){
+    return '<div class="nrad" title="' + esc(k.grupp + " — " + k.namn + ": index " + k.index) + '">' +
+      '<span class="punkt ' + k.status + '"></span><span class="etikett">' + esc(k.namn) + "</span>" +
+      '<span class="varde">' + k.index + '</span><span class="riktpil ' + k.pil + '">' + PIL[k.pil] + "</span></div>";
+  }).join("") + "</div>";
+  $("#regimkropp").innerHTML = html;
+  if(window.innerHeight < 940){ var rd = $("#riskdetails"); if(rd) rd.open = false; }
+}
+
+/* ---- P6: flödespanel — endast månadsdata, vintage på varje stapel ---- */
+function renderaFloden(data, analys, slut){
+  satLin("lin-floden", "SSGA månadsdata", "2026-06");
+  $("#flod-slutsats").textContent = slut.flod;
+  var kanda = data.sektorer.filter(function(s){ return s.flodeM; });
+  var okanda = data.sektorer.filter(function(s){ return !s.flodeM; });
+  var max = Math.max.apply(null, kanda.map(function(s){ return Math.abs(s.flodeM.v); }));
+  var rader = kanda.sort(function(a, b){ return b.flodeM.v - a.flodeM.v; }).map(function(s){
+    var x = analys.perSektor[s.id];
+    var div = s.flodeM.v > 0 && x.rrg.yKort < 0;
+    var w = Math.abs(s.flodeM.v) / max * 48;
+    var pos = s.flodeM.v > 0;
+    return '<div class="flod" title="' + esc(s.namn + " " + (pos ? "+" : "−") + svTal(Math.abs(s.flodeM.v), 1) + " mdr USD · JUN månadsdata · " + s.flodeM.kalla + (div ? ". ⇄ Inflöde (juni) mot vikande momentum (v.29) — vintage-gapet är en del av signalen." : "")) + '">' +
+      '<span class="namn">' + esc(s.namn) + (div ? ' <span class="div-ikon">⇄</span>' : "") + "</span>" +
+      '<span class="divtrack"><span class="mittlinje"></span><span class="stapel ' + (pos ? "in" : "ut") + '" data-w="' + w.toFixed(1) + '"></span></span>' +
+      '<span class="tal">' + (pos ? "+" : "−") + svTal(Math.abs(s.flodeM.v), 1) + "</span></div>";
+  }).join("");
+  rader += '<div class="flod" title="Underlag saknas i testdatan för ' + okanda.length + ' sektorer — hellre — än påhitt."><span class="namn">Övriga ' + okanda.length + ' sektorer</span><span class="divtrack"><span class="mittlinje"></span></span><span class="tal">—</span></div>';
+  var noter = data.flodenNoter.map(function(nt){
+    return esc(nt.text) + ' <span class="mono">(' + esc(nt.kalla) + " · " + esc(nt.vintage) + ")</span>";
+  }).join(" · ");
+  $("#flodkropp").innerHTML = rader + '<p class="flodnot">' + noter + "</p>";
+}
+
+/* ---- Makro-flikarna ---- */
+function renderaMakro(data, analys, slut){
+  satLin("lin-makro", "FRED · AAII", data.makro.rantekurva.vintage, data.makro.rantekurva.kalla + " · AAII bull-bear · CFTC-netto");
+  var k = data.makro.rantekurva;
+  var W = 320, H = 60, PL = 8, PR = 70, PT = 8, PB = 14;
+  var xs = [0, 0.2, 0.42, 0.66, 1];
+  var alla = k.nu.concat(k.forr);
+  var min = Math.min.apply(null, alla) - 0.06, max = Math.max.apply(null, alla) + 0.06;
+  var px = function(i){ return PL + xs[i] * (W - PL - PR); };
+  var py = function(v){ return PT + (1 - (v - min) / (max - min)) * (H - PT - PB); };
+  var path = function(arr){ return arr.map(function(v, i){ return (i ? "L" : "M") + px(i).toFixed(1) + " " + py(v).toFixed(1); }).join(""); };
+  var s = '<div class="kurvhall"><svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Amerikansk räntekurva nu jämfört med för en månad sedan.">';
+  s += '<path class="kurva-forr" d="' + path(k.forr) + '"></path>';
+  s += '<path class="kurva-nu" d="' + path(k.nu) + '"></path>';
+  k.nu.forEach(function(v, i){ s += '<circle class="kurva-punkt" cx="' + px(i).toFixed(1) + '" cy="' + py(v).toFixed(1) + '" r="2.6"></circle>'; });
+  k.punkter.forEach(function(p, i){ s += '<text class="kurva-text" x="' + px(i).toFixed(1) + '" y="' + (H - 2) + '" text-anchor="middle">' + p + "</text>"; });
+  var yNu = py(k.nu[k.nu.length - 1]) + 3, yForr = py(k.forr[k.forr.length - 1]) + 3;
+  if(Math.abs(yNu - yForr) < 10){ if(yNu >= yForr){ yNu = yForr + 10; } else { yNu = yForr - 10; } }
+  s += '<text class="kurva-serietext" x="' + (W - PR + 8) + '" y="' + yNu.toFixed(1) + '">nu</text>';
+  s += '<text class="kurva-text" x="' + (W - PR + 8) + '" y="' + yForr.toFixed(1) + '">för 1 mån</text>';
+  s += "</svg></div>";
+  var b = data.makro.bredd;
+  var span = b.skala[1] - b.skala[0];
+  var pct = function(v){ return Math.max(0, Math.min(100, (v - b.skala[0]) / span * 100)); };
+  var breddHtml = '<div class="bullet" title="' + esc("Marknadsbredd. Källa: " + b.kalla + " · " + b.vintage) + '">' +
+    '<div class="nrad"><span class="etikett">S&amp;P&gt;50d</span>' +
+      '<span class="varde">' + b.over50 + ' <span class="enhet">%</span></span>' +
+      '<span class="meta">' + esc(b.delta) + "</span>" +
+      '<span class="meta">200d ' + b.over200 + " %</span></div>" +
+    '<div class="spar" role="img" aria-label="Marknadsbredd ' + b.over50 + ' procent över 50-dagarssnittet">' +
+      '<span class="zon rod" style="left:0;width:' + pct(b.zoner[0]) + '%"></span>' +
+      '<span class="zon gul" style="left:' + pct(b.zoner[1]) + '%;width:' + (100 - pct(b.zoner[1])) + '%"></span>' +
+      '<span class="tick" style="left:' + pct(b.zoner[0]) + '%"></span>' +
+      '<span class="tick" style="left:' + pct(b.zoner[1]) + '%"></span>' +
+      '<span class="pil" style="left:calc(' + pct(b.over50) + '% - 1px)"></span>' +
+    "</div></div>";
+  $("#vy-kurva").innerHTML = s + breddHtml + '<p class="slutsats">' + esc(slut.kurva) + "</p>" +
+    '<p class="kallradtext">' + esc(k.kalla + " · " + k.vintage) + "</p>";
+
+  var sn = data.makro.sentiment;
+  var W2 = 320, H2 = 72, PT2 = 8, PB2 = 14, PL2 = 8, PR2 = 40;
+  var smin = Math.min.apply(null, sn.spx26) - 0.8, smax = Math.max.apply(null, sn.spx26) + 0.8;
+  var sx = function(i){ return PL2 + i / (sn.spx26.length - 1) * (W2 - PL2 - PR2); };
+  var sy = function(v){ return PT2 + (1 - (v - smin) / (smax - smin)) * (H2 - PT2 - PB2); };
+  var band = "";
+  var bw = (W2 - PL2 - PR2) / (sn.spx26.length - 1);
+  sn.spread26.forEach(function(sp, i){
+    var ton = sp > 10 ? "var(--gron-ton)" : sp < -10 ? "var(--rod-ton)" : "none";
+    if(ton !== "none"){ band += '<rect x="' + (sx(i) - bw / 2).toFixed(1) + '" y="' + PT2 + '" width="' + bw.toFixed(1) + '" height="' + (H2 - PT2 - PB2) + '" fill="' + ton + '"></rect>'; }
+  });
+  var prisPath = sn.spx26.map(function(v, i){ return (i ? "L" : "M") + sx(i).toFixed(1) + " " + sy(v).toFixed(1); }).join("");
+  var s2 = '<div class="kurvhall"><svg viewBox="0 0 ' + W2 + " " + H2 + '" preserveAspectRatio="xMidYMid meet" role="img" aria-label="S&P 500 indexerat 26 veckor med sentimentband.">';
+  s2 += band;
+  s2 += '<path class="kurva-nu" d="' + prisPath + '"></path>';
+  s2 += '<circle class="kurva-punkt" cx="' + sx(sn.spx26.length - 1).toFixed(1) + '" cy="' + sy(sn.spx26[sn.spx26.length - 1]).toFixed(1) + '" r="2.6"></circle>';
+  s2 += '<text class="kurva-serietext" x="' + (W2 - PR2 + 6) + '" y="' + (sy(sn.spx26[sn.spx26.length - 1]) + 3).toFixed(1) + '">SPX</text>';
+  s2 += '<text class="kurva-text" x="' + PL2 + '" y="' + (H2 - 2) + '">26 v · indexerad · band = AAII-spread</text>';
+  s2 += "</svg></div>";
+  $("#vy-sentiment").innerHTML = s2 + '<p class="slutsats">' + esc(slut.sentiment) + "</p>" +
+    '<p class="kallradtext">' + esc(sn.kalla + " · " + sn.vintage) + "</p>";
+}
+
+/* ---- Megatrend ---- */
+function renderaMegatrend(data, analys, kort){
+  var m = data.megatrend;
+  satLin("lin-mega", "branschdata", m.vintage);
+  var rankade = data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+  var rekFor = function(sektor){ return kort.filter(function(k){ return k.s.namn === sektor; })[0]; };
+  var aktierFor = function(tema){
+    return rankade.map(function(a, i){ return { a: a, rank: i + 1 }; })
+      .filter(function(x){ return x.a.tema.indexOf(tema) > -1; })
+      .map(function(x){ return x.a.ticker + " #" + x.rank; });
+  };
+  var rader = m.rader.map(function(rad, ri){
+    var celler = rad.celler.map(function(c, ci){
+      return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
+        esc(rad.namn) + " · " + esc(m.kolumner[ci]) + ": " + esc(c.v) + " · Källa: " + esc(c.k) + " · " + esc(m.vintage) + '">' +
+        esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
+    }).join("");
+    var ut = '<div class="mrad"><span class="fnamn" title="' + esc(rad.namn) + '">' + esc(rad.namn) + "</span>" + celler + "</div>";
+    var nasta = m.rader[ri + 1];
+    if(!nasta || nasta.sektor !== rad.sektor){
+      var rek = rekFor(rad.sektor);
+      var grupp = m.rader.filter(function(r){ return r.sektor === rad.sektor; });
+      var teman = [];
+      grupp.forEach(function(r){ if(teman.indexOf(r.tema) === -1) teman.push(r.tema); });
+      var refs = [];
+      teman.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
+      refs = refs.slice(0, 2).join(" · ");
+      var kons;
+      if(rek){
+        kons = rek.handling === "minska"
+          ? "Stark flaskhals — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Exponering via " + refs + "." : "")
+          : (grupp.length > 1 ? "Alla " + grupp.length + " stöder " : "Stöder ") + "<b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · " + refs : "");
+      } else {
+        kons = (grupp.length > 1 ? grupp.length + " flaskhalsar utan aktiv rekommendation för " : "Ingen aktiv rekommendation för ") + esc(rad.sektor) + (refs ? " · exponering: " + refs : "");
+      }
+      ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
+    }
+    return ut;
+  }).join("");
+  var topp = m.rader.slice().sort(function(a, b){
+    return b.celler.reduce(function(x, c){ return x + c.i; }, 0) - a.celler.reduce(function(x, c){ return x + c.i; }, 0);
+  })[0];
+  var rekT = rekFor(topp.sektor);
+  var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
+  var syntes = "<b>" + esc(topp.namn) + ":</b> " + esc(m.kolumner[1].toLowerCase()) + " " + esc(topp.celler[1].v) +
+    " och " + esc(m.kolumner[0].toLowerCase()) + " " + esc(topp.celler[0].v) +
+    (rekT ? " — stöder <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
+      : " — ingen aktiv sektorrekommendation" + (toppRefs ? "; exponering via " + toppRefs + "." : "."));
+  $("#megakropp").innerHTML =
+    '<div class="matris"><div class="mrad huvud"><span>Flaskhals</span>' + m.kolumner.map(function(kol){ return "<span>" + esc(kol) + "</span>"; }).join("") + "</div>" +
+    rader + "</div>" + '<p class="syntes">' + syntes + "</p>";
+}
+
+/* ============ Klocka, stämpel, inläsning ============ */
+function uppdateraKlocka(){
+  var n = new Date();
+  $("#klocka").textContent = String(n.getHours()).padStart(2, "0") + ":" + String(n.getMinutes()).padStart(2, "0");
+}
+var senastLast = null;
+function sattStampel(data){
+  var el = $("#stampel");
+  var gen = new Date(data.genererad);
+  var gammal = !isNaN(gen) && Date.now() - gen.getTime() > 24 * 60 * 60 * 1000;
+  el.textContent = "Data per " + veckoEtikett(data) + (gammal ? " — äldre än ett dygn" : "");
+  el.classList.toggle("stampel-varning", gammal);
+  el.title = "Ögonblicksbilden låses till senaste vecka där alla källor har validerad data (" + data.asOfWeek + "). Läge: " + DATALAGE + " (" + DATAKALLOR[DATALAGE] + ").";
+}
+function lasInline(id){ return JSON.parse($("#" + id).textContent); }
+function laddaData(){
+  return fetch(DATAKALLOR[DATALAGE], {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("saknas"); return r.json(); })
+    .catch(function(){ return lasInline("datalager"); });
+}
+function laddaTrack(){
+  return fetch(TRACKKALLA, {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("saknas"); return r.json(); })
+    .catch(function(){ return lasInline("trackrecordlager"); });
+}
+
+var dataGlobal = null;
+function renderaAllt(data, tr){
+  dataGlobal = data;
+  AKTIVT_LAGE = data.lage === "LIVE" ? "LIVE" : "TEST";
+  var mark = $("#lagesmark");
+  if(mark){
+    mark.textContent = AKTIVT_LAGE;
+    mark.title = AKTIVT_LAGE === "LIVE"
+      ? "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s export), uppdateras var 30:e minut av pipelinen. Kurerade fält bär egna vintage-märken."
+      : "TEST-läge: data/sample_data.json — seedad testdata, inte handlingsunderlag.";
+  }
+  var chip = document.querySelector(".exempel");
+  if(chip){
+    chip.textContent = AKTIVT_LAGE === "LIVE" ? "Live-data" : "Testdata";
+    chip.title = mark ? mark.title : "";
+  }
+  var analys = analysera(data);
+  var kort = byggKort(analys, data);
+  var regim = beraknaRegim(data);
+  var slut = slutsatser(data, analys, regim, kort);
+  assertions(data, analys, kort);
+  renderaVanster(data, analys, kort, slut);
+  renderaMetod(data, regim);
+  renderaRadar(data, analys, kort, slut);
+  renderaAktier(data, slut);
+  renderaTrack(tr);
+  renderaRegim(data, regim, slut);
+  renderaFloden(data, analys, slut);
+  renderaMakro(data, analys, slut);
+  renderaMegatrend(data, analys, kort);
+  sattStampel(data);
+  senastLast = new Date();
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    document.querySelectorAll(".meter i[data-niva]").forEach(function(el){ el.style.width = el.dataset.niva + "%"; });
+    document.querySelectorAll(".divtrack .stapel").forEach(function(el){ el.style.width = el.dataset.w + "%"; });
+  }); });
+}
+
+renderaAllt(lasInline("datalager"), lasInline("trackrecordlager"));
+Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); });
+uppdateraKlocka();
+setInterval(uppdateraKlocka, 30 * 1000);
+setInterval(function(){ Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); }); }, 30 * 60 * 1000);
+document.addEventListener("visibilitychange", function(){
+  if(!document.hidden && senastLast && Date.now() - senastLast.getTime() > 30 * 60 * 1000){
+    Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); });
+  }
+});
+
+/* flikar */
+[["flik-kurva", "vy-kurva", "flik-sentiment", "vy-sentiment"], ["flik-sentiment", "vy-sentiment", "flik-kurva", "vy-kurva"],
+ ["flik-konv", "vy-konv", "flik-track", "vy-track"], ["flik-track", "vy-track", "flik-konv", "vy-konv"]].forEach(function(par){
+  $("#" + par[0]).addEventListener("click", function(){
+    $("#" + par[0]).setAttribute("aria-selected", "true");
+    $("#" + par[2]).setAttribute("aria-selected", "false");
+    $("#" + par[1]).hidden = false;
+    $("#" + par[3]).hidden = true;
+  });
+});
+
+/* nav: belys och fokusera panelen */
+document.querySelectorAll(".toppnav a").forEach(function(a){
+  a.addEventListener("click", function(){
+    var id = a.getAttribute("href").slice(1);
+    var panel = document.getElementById(id);
+    if(!panel) return;
+    document.querySelectorAll(".panel.belyst").forEach(function(p){ p.classList.remove("belyst"); });
+    panel.classList.add("belyst");
+    panel.focus({preventScroll: false});
+    setTimeout(function(){ panel.classList.remove("belyst"); }, 1600);
+  });
+});
+
+/* Mätverktyg för QC (?debug=1) */
+if(location.search.indexOf("debug=1") > -1){
+  window.addEventListener("load", function(){
+    var syndare = [];
+    document.querySelectorAll("body *").forEach(function(el){
+      var b = el.getBoundingClientRect();
+      if(b.right > window.innerWidth + 1 && syndare.length < 10){
+        syndare.push(el.tagName + "." + String(el.className.baseVal || el.className).split(" ")[0] + ":" + Math.round(b.right));
+      }
+    });
+    var a = window.__stockpitAssertions || [];
+    var d = document.createElement("div");
+    d.id = "debughook";
+    d.style.cssText = "position:fixed;left:0;bottom:0;z-index:999;background:var(--navy);color:var(--sida);font-family:var(--mono);font-size:var(--fs11);padding:0 var(--s4);max-width:100%;";
+    d.textContent = "innerW=" + window.innerWidth + " innerH=" + window.innerHeight +
+      " scrollW=" + document.documentElement.scrollWidth + " scrollH=" + document.body.scrollHeight +
+      " assertions=" + (a.length ? "VARNING(" + a.length + "): " + a.join("; ") : "gröna") +
+      " | RRG: " + (window.__stockpitRRG || "") +
+      (syndare.length ? " | " + syndare.join(" | ") : "");
+    document.body.appendChild(d);
+  });
+}
+
+})();
+</script>
+</body>
+</html>

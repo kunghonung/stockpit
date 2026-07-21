@@ -1,0 +1,12 @@
+# Nycklar & hemligheter — får aldrig committas
+.env
+.env.*
+*.env
+
+# OS-skräp
+Thumbs.db
+.DS_Store
+
+# Lokalt arbetsmaterial — publiceras inte
+_arkiv/
+NOTES.md

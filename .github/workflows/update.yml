@@ -1,0 +1,47 @@
+name: Uppdatera data
+
+on:
+  schedule:
+    # Var 30:e minut. OBS: Actions-cron är inte sekundprecis — körningar kan
+    # försenas några minuter vid hög last på GitHub. Acceptabelt här.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}   # manuell körning från Actions-fliken
+
+permissions:
+  contents: write   # krävs för att committa ny data/data.json
+
+concurrency:
+  group: uppdatera-data
+  cancel-in-progress: false
+
+jobs:
+  uppdatera:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v5
+
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installera beroenden
+        run: pip install --quiet requests
+
+      - name: Uppdatera data
+        run: python scripts/update_data.py
+
+      - name: Committa och pusha om något ändrats
+        run: |
+          git config user.name "stockpit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/data.json data/state.json
+          if git diff --cached --quiet; then
+            echo "Ingen dataförändring — ingen commit."
+          else
+            git commit -m "data: automatisk uppdatering $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+          # Pushen till main triggar GitHub Pages att publicera om sidan.
