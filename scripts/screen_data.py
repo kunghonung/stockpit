@@ -445,7 +445,9 @@ def main():
             "url": url,
         })
         if (idx + 1) % 50 == 0:
-            print("  %d/%d bolag …" % (idx + 1, len(bolag)))
+            print("  %d/%d bolag …" % (idx + 1, len(bolag)), flush=True)
+            # checkpoint: EDGAR-/FMP-cachen överlever avbrott och timeouts
+            STATEFIL.write_text(json.dumps(state, ensure_ascii=False) + "\n", encoding="utf-8")
 
     tackning = tk_ok / len(bolag) if bolag else 0
     STATEFIL.write_text(json.dumps(state, ensure_ascii=False) + "\n", encoding="utf-8")
