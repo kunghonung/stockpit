@@ -102,3 +102,23 @@ Lista av teman: `{id, namn, kalla, vintage, kolumner[3], not?, rader[]}`. Radfor
 - Rad- och temapoäng beräknas i frontenden enligt `REGELVERK.md` §3 — aldrig förberäknade i filen.
 - Bakåtkompatibilitet: frontenden läser `megatrender[]` i första hand och faller tillbaka på
   gamla `megatrend`-objektet (visas då som enda temat) tills LIVE-datats kurerade post migrerats.
+
+## `data/screen.json` — konvergensscreenern (daglig pipeline, Sprint 8)
+
+Skrivs av `scripts/screen_data.py` (screen.yml, vardagar 04:23 UTC). Toppnivå:
+`{schemaVersion, vintage, genererad, universum:{antal, kalla}, vikter, tackning, rotation, lista[]}`.
+Listposter: `{ticker, namn, marknad, sektorId, parlor[], sparade, delpoang{}, styrka, skal, url}` —
+`sparade` = antal signaler med underlag (null-signaler krymper nämnaren: "4/6 spårade"),
+`delpoang` endast för aktiva signaler, `skal` genereras ur aktiva signalers faktiska siffror.
+
+- Sortering: konvergens → styrka → IN → ES → VÄ (REGELVERK §2). Hela listan, inte topp 5.
+- Skrivregel: filen skrivs ENDAST vid ≥ 90 % TK-täckning av universum — annars behålls
+  gårdagens fil och orsaken loggas i workflowen. Aldrig en halvtom lista.
+- Källbeslut v1 (dokumenterade proxies, aldrig tysta): FL = sektorflöde (proxy),
+  VÄ = P/E mot sektorns 10-årssnitt (proxy tills egen historik finns), MA = sektor
+  topp 4 på revQ2-/RS-rank (proxy för linserna), ES i FMP-5-dagarsrotation
+  (gratisplanens anropstak), BL null för US och tills ~4 v blankningshistorik byggts (SE).
+- `data/screen_state.json` är pipelinens minne (EDGAR-accessioncache, FMP-rotation,
+  blankningshistorik) — committas av workflowen, läses aldrig av frontenden.
+- Frontenden läser filen med egen lineage-badge (`screener v1 · vintage`); saknas filen
+  visas kurerade urvalet med ärlig underrad — inga mockade screenerdata i testblocket.

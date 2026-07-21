@@ -456,6 +456,20 @@ li.oppen .sigdetalj{ display:block; }
 .korslank{ color:var(--accent); text-decoration:none; }
 .korslank:hover{ text-decoration:underline; }
 .meganot{ font-size:var(--fs11); color:var(--damp); line-height:1.4; margin-top:var(--s4); }
+.koprekrad{ border:1px solid var(--linje); border-radius:var(--radie); padding:var(--s4) var(--s8); margin-bottom:var(--s4); }
+.koprekvillkor{ font-size:var(--fs11); color:var(--damp); line-height:1.5; margin:2px 0; }
+.koprekvillkor .vst.ok{ color:var(--gron-text); } .koprekvillkor .vst.utlost{ color:var(--rod-text); }
+.koprek-logg summary{ font-size:var(--fs11); color:var(--svag); cursor:pointer; list-style:none; }
+.koprek-logg summary::before{ content:"▸ "; } .koprek-logg[open] summary::before{ content:"▾ "; }
+.koprek-logg pre{ font-family:var(--mono); font-size:var(--fs11); background:var(--panel2); border-radius:var(--radie); padding:var(--s8); overflow-x:auto; margin:var(--s4) 0 0; }
+.screenfilter{ display:flex; gap:var(--s8); margin:var(--s4) 0 var(--s8); flex-wrap:wrap; }
+.screenfilter input, .screenfilter select{
+  font-family:var(--sans); font-size:var(--fs12); color:var(--navy);
+  background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie);
+  padding:2px var(--s8); min-height:24px;
+}
+.screenfilter input{ flex:1; min-width:140px; }
+.screenfilter input:focus, .screenfilter select:focus{ outline:2px solid var(--accent); outline-offset:1px; }
 .megaflikar{ margin:0 0 var(--s8); flex-wrap:wrap; }
 .megaflikar .megarank{ font-family:var(--mono); font-size:var(--fs11); opacity:.7; }
 .megaflikar .megapoang{ font-family:var(--mono); font-size:var(--fs11); font-variant-numeric:tabular-nums; }
@@ -687,7 +701,10 @@ li.oppen .sigdetalj{ display:block; }
       <div id="vy-konv" role="tabpanel" aria-labelledby="flik-konv" style="display:flex;flex-direction:column;min-height:0;flex:1">
         <p class="slutsats" id="aktier-slutsats"></p>
         <p class="underrad" id="aktier-underrad"></p>
+        <div id="koprekdel"></div>
+        <div class="msek">Konvergensidéer · kurerat urval</div>
         <div class="panelkropp" id="aktielista"></div>
+        <div id="screenerdel"></div>
       </div>
       <div id="vy-track" role="tabpanel" aria-labelledby="flik-track" hidden style="display:flex;flex-direction:column;min-height:0;flex:1">
         <p class="underrad" id="track-underrad"></p>
@@ -1870,7 +1887,7 @@ function slutsatser(data, analys, regim, kort){
 }
 
 /* ============ Dev-assertions inkl. testkriterier P2/P3/P5 ============ */
-function assertions(data, analys, kort){
+function assertions(data, analys, kort, regim){
   var varningar = [];
   var iRim = function(nyckel, v){
     var r = data.rimlighet[nyckel];
@@ -1887,6 +1904,11 @@ function assertions(data, analys, kort){
   data.sektorer.forEach(function(s){
     if((klusterRaknat[s.id] || 0) !== s.insynKluster) varningar.push("insynKluster " + s.id + " (" + s.insynKluster + ") ≠ aktielistan (" + (klusterRaknat[s.id] || 0) + ")");
   });
+  /* P9 — regimgrinden: med syntetisk riskaptit 35 ska motorn vägra nya rek */
+  try{
+    var p9 = beraknaKoprek(data, analys, kort, { poang: 35 }, null);
+    if(p9.lage !== "stangd" || p9.rek.length) varningar.push("P9: regimgrind < 40 stänger inte motorn");
+  }catch(fel){ varningar.push("P9: beraknaKoprek kastade: " + fel.message); }
   /* P8 — regressionstest av megatrendpoängen (REGELVERK §3) mot fastställda referensvärden.
      Körs bara när testdatats fyra teman är lastade — avviker beräkningen är KODEN fel, inte datat. */
   if(data.lage !== "LIVE" && data.megatrender && data.megatrender.length === 4){
@@ -2039,7 +2061,11 @@ function renderaMetod(data, regim){
     "<p><b>Handling:</b> tidig-cykelns topp 2 → ÖKA · momentum-topp med tidig &lt; 25 och bruten trängselregel → MINSKA · RS-hopp ≥ 3 steg med sektorns sämsta revideringar → BEVAKA (»pris före fundamenta«). Reglerna är fältbaserade — inga sektornamn i koden.</p>" +
     "<p><b>Estimatreglerna:</b> störst nedrevidering får aldrig ÖKA utan synlig flagga · störst upprevidering + lägst värdering ska alltid upp bland ÖKA-korten. Båda körs som assertions mot testdatan.</p>" +
     "<p><b>RRG-fönster:</b> ratio 12 v · momentum 2 v (kort) och 6 v (långt). Position = långa läget; puls = obekräftat kvadrantbyte i korta.</p>" +
-    "<p><b>Riskaptit</b> (0–100) = 35 % tripwires + 35 % kvoter + 30 % inverterad trängsel. Nu: " + regim.poang + "/100. <b>Screening:</b> " + data.screenadeAntal + " bolag mot sju signaltyper, topp 5 på konvergens × styrka.</p>";
+    "<p><b>Riskaptit</b> (0–100) = 35 % tripwires + 35 % kvoter + 30 % inverterad trängsel. Nu: " + regim.poang + "/100.</p>" +
+    "<p><b>Screeningen</b> är daglig kod (scripts/screen_data.py): " +
+    (screenGlobal ? screenGlobal.universum.antal + " bolag i universum, " + screenGlobal.lista.length + " poängsatta " + esc(screenGlobal.vintage) : "S&P 500 + Sthlm Large Cap (körs på servern — ingen färsk fil läst nu)") +
+    " mot sju signaler med öppna vikter: IN 0,25 · ES 0,20 · TK 0,15 · VÄ 0,15 · BL 0,10 · FL 0,10 · MA 0,05. " +
+    'Signal utan underlag viktas bort (nämnaren minskar — "4/6 spårade"). Sortering, grindar och alla rankningsnycklar följer <a href="REGELVERK.md" target="_blank" rel="noopener">REGELVERK.md</a> — ingen lista sorteras på annat sätt.</p>';
 }
 
 /* ---- RRG-rendering (P5: position = långt läge, puls = kort avvikelse) ---- */
@@ -2183,13 +2209,206 @@ function renderaRadar(data, analys, kort, slut){
   $("#geo-slutsats").textContent = slut.geo;
 }
 
-function renderaAktier(data, slut){
+/* ============ Konvergenskedjan → KÖPREK (REGELVERK §6) ============
+   Fyra grindar i ordning; konvergens = samma bolag överlever alla. Ren funktion
+   över snapshot + screenerlista (faller tillbaka på kurerade aktier[] — samma fält). */
+var KOPREK_MAX = 5;
+function beraknaKoprek(data, analys, kort, regim, screen){
+  var lista = (screen && screen.lista && screen.lista.length) ? screen.lista : data.aktier;
+  var kallnamn = (screen && screen.lista && screen.lista.length) ? "screener v1" : "kurerat urval";
+  var okaSekt = {};
+  kort.forEach(function(k){ if(k.handling === "oka") okaSekt[k.s.id] = true; });
+  var tidigTopp4 = {};
+  analys.tidigOrdning.slice(0, 4).forEach(function(x){ tidigTopp4[x.s.id] = true; });
+  var topp2tema = {};
+  beraknaMegaRank(data).slice(0, 2).forEach(function(r){ topp2tema[r.tema.id] = true; });
+
+  /* Grind 1 — regim */
+  var lage = regim.poang >= 50 ? "oppen" : regim.poang >= 40 ? "bevaka" : "stangd";
+  var ut = { lage: lage, regimPoang: regim.poang, kalla: kallnamn, rek: [], kandidater: [], forklaring: null };
+  if(lage === "stangd"){
+    ut.forklaring = "Regimgrind stängd · riskaptit " + regim.poang + "/100 (< 40) — inga nya rekommendationer; befintliga omprövas.";
+    return ut;
+  }
+
+  var kandidater = [];
+  lista.forEach(function(a){
+    if(!a.sektorId) return;
+    /* Grind 2 — sektor: ÖKA eller topp 4 på tidig-cykel */
+    if(!okaSekt[a.sektorId] && !tidigTopp4[a.sektorId]) return;
+    /* Grind 3 — aktie: konvergens ≥ 4 av spårade, styrka ≥ 60, minst en av IN/ES */
+    var sparade = a.sparade || Object.keys(data.parlnyckel).length;
+    if(a.parlor.length < 4 || a.styrka < 60) return;
+    if(a.parlor.indexOf("IN") === -1 && a.parlor.indexOf("ES") === -1) return;
+    /* Temabonus (ej grind) */
+    var teman = a.tema || [];
+    var temabonus = teman.some(function(t){ return topp2tema[t]; }) ? 100 : 0;
+    var sektorTidig = analys.perSektor[a.sektorId] ? analys.perSektor[a.sektorId].tidig : 0;
+    var regimmarginal = Math.max(0, Math.min(50, regim.poang - 50)) * 2;
+    var konviktion = Math.round(
+      0.35 * a.styrka + 0.25 * sektorTidig + 0.20 * (a.parlor.length / sparade * 100) +
+      0.10 * temabonus + 0.10 * regimmarginal);
+    kandidater.push({
+      aktie: a, konviktion: konviktion, temabonus: temabonus > 0,
+      komponenter: { styrka: a.styrka, sektorTidig: sektorTidig,
+                     konvergens: a.parlor.length + "/" + sparade,
+                     regimmarginal: regimmarginal },
+      grindar: [
+        { text: "Regim " + regim.poang + "/100" + (lage === "bevaka" ? " (40–49: endast bevakning)" : " ≥ 50"), ok: true },
+        { text: okaSekt[a.sektorId] ? "Sektor i ÖKA" : "Sektor topp 4 tidig-cykel", ok: true },
+        { text: "Konvergens " + a.parlor.length + "/" + sparade + " · styrka " + a.styrka + " · " +
+                (a.parlor.indexOf("IN") > -1 ? "IN" : "ES") + " aktiv", ok: true },
+        { text: temabonus ? "Temakoppling till topp 2-megatrend (+10)" : "Ingen topp 2-temakoppling (±0)", ok: !!temabonus }
+      ],
+      /* maskinläsbara omprövningsvillkor — utvärderas av motorn vid varje datainläsning,
+         samma mönster som kontrolleraOmprovning */
+      omprovas: [
+        { text: "konvergensen faller under 4 av spårade", ok: a.parlor.length >= 4 },
+        { text: "sektorn lämnar ÖKA/topp 4", ok: !!(okaSekt[a.sektorId] || tidigTopp4[a.sektorId]) },
+        { text: "riskaptiten faller under 40", ok: regim.poang >= 40 }
+      ]
+    });
+  });
+  kandidater.sort(function(a, b){ return b.konviktion - a.konviktion; });
+
+  if(lage === "bevaka"){
+    ut.kandidater = kandidater;
+    ut.forklaring = "Regim 40–49 (" + regim.poang + "/100): endast BEVAKA-kandidater — inga nya köprek.";
+    return ut;
+  }
+  kandidater.forEach(function(k, i){
+    k.etikett = i < KOPREK_MAX
+      ? (k.konviktion >= 70 ? "KÖPREK · HÖG" : k.konviktion >= 55 ? "KÖPREK" : "KANDIDAT")
+      : "KANDIDAT";
+    if(i >= KOPREK_MAX) k.sparr = "max " + KOPREK_MAX + " samtidiga — ersätter lägst konviktion först";
+    (k.etikett.indexOf("KÖPREK") === 0 ? ut.rek : ut.kandidater).push(k);
+  });
+  return ut;
+}
+/* Loggpost (halvmanuell v1): motorn genererar, du committar via lätta-ritualen */
+function koprekLoggpost(k, data){
+  var sekt = data.sektorer.filter(function(s){ return s.id === k.aktie.sektorId; })[0] || {};
+  return {
+    id: "koprek-" + k.aktie.ticker.toLowerCase().replace(/[^a-z0-9]/g, "") + "-" + (data.asOfDatum || ""),
+    datum: data.asOfDatum, lins: "koprek", handling: "oka",
+    etf: k.aktie.ticker, sektor: sekt.namn || k.aktie.sektorId,
+    ingang: { rsRank: sekt.rsRank != null ? sekt.rsRank : null,
+              fwdPE: sekt.fwdPE ? sekt.fwdPE.v : null,
+              revQ2: sekt.revQ2 ? sekt.revQ2.v : null },
+    konviktion: k.konviktion,
+    utfall: { v1: null, v4: null, v12: null },
+    omprovningTriggad: false,
+    kommentar: k.etikett + " · " + k.komponenter.konvergens + " konvergens · " + k.aktie.skal
+  };
+}
+
+function renderaKoprek(kr, data){
+  var mal = $("#koprekdel");
+  if(!mal) return;
+  var html = '<div class="msek">Köprek-motorn · konvergenskedjan (REGELVERK §6) · ' + esc(kr.kalla) + "</div>";
+  if(kr.forklaring){
+    html += '<p class="tpastatus"><b>' + esc(kr.forklaring.split("—")[0]) + "</b>" +
+      (kr.forklaring.indexOf("—") > -1 ? " — " + esc(kr.forklaring.split("—").slice(1).join("—")) : "") + "</p>";
+  }
+  var alla = kr.rek.concat(kr.kandidater).slice(0, 8);
+  if(!alla.length && !kr.forklaring){
+    html += '<p class="tpastatus">Inga bolag klarar alla grindar just nu — kedjan är ett filter, inte en garanti på idéer.</p>';
+  }
+  html += alla.map(function(k){
+    var badgeKlass = k.etikett && k.etikett.indexOf("KÖPREK") === 0 ? "oka" : "bevaka";
+    var titel = "Konviktion " + k.konviktion + "/100 = 0,35·styrka " + k.komponenter.styrka +
+      " + 0,25·sektorns tidig-cykel " + k.komponenter.sektorTidig + " + 0,20·konvergens " + k.komponenter.konvergens +
+      " + 0,10·temabonus " + (k.temabonus ? "100" : "0") + " + 0,10·regimmarginal " + k.komponenter.regimmarginal +
+      (k.sparr ? " · SPÄRR: " + k.sparr : "");
+    return '<div class="koprekrad" title="' + esc(titel) + '">' +
+      '<div class="nrad"><span class="badge ' + badgeKlass + '">' + esc(k.etikett || "BEVAKA") + "</span>" +
+      '<span class="etikett">' + esc(k.aktie.ticker) + "</span>" +
+      '<span class="beskr">' + esc(k.aktie.namn) + "</span>" +
+      '<span class="varde">' + k.konviktion + "</span></div>" +
+      '<p class="koprekvillkor">Omprövas om: ' + k.omprovas.map(function(v){
+        return esc(v.text) + ' <span class="vst ' + (v.ok ? "ok" : "utlost") + '">' + (v.ok ? "✓" : "✗") + "</span>";
+      }).join(" · ") + "</p>" +
+      '<details class="koprek-logg"><summary>Loggpost till track_record.json</summary><pre>' +
+      esc(JSON.stringify(koprekLoggpost(k, data), null, 1)) + "</pre></details>" +
+      "</div>";
+  }).join("");
+  mal.innerHTML = html;
+}
+
+/* ---- Screenerlistan (data/screen.json) — egen lineage, filter utan beroenden ---- */
+var screenFilter = { text: "", marknad: "", signal: "" };
+function renderaScreener(screen, data){
+  var mal = $("#screenerdel");
+  if(!mal) return;
+  if(!screen){
+    mal.innerHTML = '<p class="tpastatus"><b>Screenerlistan saknas.</b> data/screen.json kunde inte läsas — på file:// eller innan första screen-körningen visas bara det kurerade urvalet ovan. Inga mockade screenerdata finns.</p>';
+    return;
+  }
+  var nycklar = Object.keys(data.parlnyckel);
+  mal.innerHTML =
+    '<div class="msek">Screenerlistan · hela universum</div>' +
+    '<p class="underrad"><span class="lineage live" title="Daglig pipeline scripts/screen_data.py · vikter enligt REGELVERK §2 · täckning ' +
+      Math.round((screen.tackning || 0) * 100) + ' %"><b>LIVE</b> · screener v1 · ' + esc(screen.vintage) + "</span> " +
+    screen.lista.length + " bolag · sorterade på konvergens → styrka → IN → ES → VÄ</p>" +
+    '<div class="screenfilter">' +
+      '<input type="text" id="scr-text" placeholder="ticker eller namn …" value="' + esc(screenFilter.text) + '" aria-label="Filtrera på ticker eller namn">' +
+      '<select id="scr-marknad" aria-label="Marknadsfilter"><option value="">Alla marknader</option><option value="US"' + (screenFilter.marknad === "US" ? " selected" : "") + '>US</option><option value="SE"' + (screenFilter.marknad === "SE" ? " selected" : "") + ">SE</option></select>" +
+      '<select id="scr-signal" aria-label="Signalfilter"><option value="">Alla signaler</option>' +
+        nycklar.map(function(k){ return '<option value="' + k + '"' + (screenFilter.signal === k ? " selected" : "") + ">" + k + " · " + esc(data.parlnyckel[k].namn) + "</option>"; }).join("") +
+      "</select></div>" +
+    '<div id="screenerlista"></div>';
+  var rita = function(){
+    var f = screenFilter;
+    var traffar = screen.lista.filter(function(p){
+      if(f.marknad && p.marknad !== f.marknad) return false;
+      if(f.signal && p.parlor.indexOf(f.signal) === -1) return false;
+      if(f.text){
+        var t = f.text.toLowerCase();
+        if(p.ticker.toLowerCase().indexOf(t) === -1 && p.namn.toLowerCase().indexOf(t) === -1) return false;
+      }
+      return true;
+    });
+    var visa = traffar.slice(0, 30);
+    $("#screenerlista").innerHTML = visa.map(function(a){
+      var rang = screen.lista.indexOf(a) + 1;
+      var parlor = nycklar.map(function(k){
+        var aktiv = a.parlor.indexOf(k) > -1;
+        return '<span class="parla' + (aktiv ? " aktiv" : "") + '" title="' + esc(data.parlnyckel[k].namn) + (aktiv ? " (aktiv" + (a.delpoang[k] != null ? " · delpoäng " + a.delpoang[k] : "") + ")" : " (ej aktiv)") + '">' + esc(k) + "</span>";
+      }).join("");
+      return '<div class="aktie">' +
+        '<span class="rang">#' + rang + "</span>" +
+        '<span class="tick">' + esc(a.ticker) + "<small>" + esc(a.marknad) + "</small></span>" +
+        '<div class="mitt">' +
+          '<div class="namnrad"><span class="namn">' + esc(a.namn) + "</span>" +
+          '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + a.sparade + ' spårade signaler · styrka ' + a.styrka + '/100">' + a.parlor.length + "/" + a.sparade + " · " + a.styrka + "</span></div>" +
+          '<div class="skal" title="' + esc(a.skal) + '">' + esc(a.skal) + "</div>" +
+          '<div class="parlor">' + parlor + "</div>" +
+        "</div>" +
+        '<a class="oppna" href="' + esc(a.url) + '" target="_blank" rel="noopener">Öppna →</a>' +
+      "</div>";
+    }).join("") +
+    (traffar.length > visa.length
+      ? '<p class="tpastatus">Visar ' + visa.length + " av " + traffar.length + " träffar — förfina filtret.</p>" : "");
+  };
+  rita();
+  $("#scr-text").addEventListener("input", function(){ screenFilter.text = this.value; rita(); });
+  $("#scr-marknad").addEventListener("change", function(){ screenFilter.marknad = this.value; rita(); });
+  $("#scr-signal").addEventListener("change", function(){ screenFilter.signal = this.value; rita(); });
+}
+
+function renderaAktier(data, slut, screen){
   satLin("lin-aktier", data.aktierLineage.kalla, data.aktierLineage.vintage);
   var nycklar = Object.keys(data.parlnyckel);
   var rankade = rankadeAktier(data);
   $("#aktier-slutsats").textContent = slut.aktier;
-  $("#aktier-underrad").innerHTML = "Topp " + rankade.length + " av " + data.screenadeAntal +
-    ' screenade · rankade på konvergens × signalstyrka · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
+  /* A5-ärlighet: underraden påstår aldrig screening som inte skett */
+  $("#aktier-underrad").innerHTML = (screen
+    ? "Screener v1 · " + esc(screen.vintage) + ": " + screen.lista.length + " poängsatta av " +
+      screen.universum.antal + " i universum · kurerat urval ovan för jämförelse"
+    : "Kurerat urval · " + esc(data.aktierLineage.vintage) +
+      " · screenerlistan kräver server (data/screen.json)") +
+    ' · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
+  renderaScreener(screen, data);
   $("#legendinre").innerHTML = nycklar.map(function(k){
     return "<p><b>" + esc(k) + "</b> — " + esc(data.parlnyckel[k].namn) + ". " + esc(data.parlnyckel[k].besk) + "</p>";
   }).join("");
@@ -2724,6 +2943,12 @@ function laddaTrack(){
     .then(function(r){ if(!r.ok) throw new Error("saknas"); return r.json(); })
     .catch(function(){ return lasInline("trackrecordlager"); });
 }
+function laddaScreen(){
+  /* inga mockade screenerdata: saknas filen (file://, före första körningen) => null */
+  return fetch("data/screen.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("saknas"); return r.json(); })
+    .catch(function(){ return null; });
+}
 
 /* ============ TP-acceleration — läser datapanelen (Supabase) i webbläsaren ============ */
 /* Enda modulen med extern körtidskälla: datapanelen har egen kadens (dagliga
@@ -2962,7 +3187,7 @@ function uppdateraKortTpa(tpa){
     : toppAcc ? toppAcc.ticker + " +" + svTal(toppAcc.accBp, 1) + " bp/d²"
     : tpa.lage === "LIVE" ? "inga accelererar" : "testblock";
 }
-function renderaOversikt(data, analys, kort, regim, slut){
+function renderaOversikt(data, analys, kort, regim, slut, koprek){
   var heroEl = $("#hero");
   if(!heroEl) return;
   var topp3 = rankadeAktier(data).slice(0, 3);
@@ -2971,14 +3196,19 @@ function renderaOversikt(data, analys, kort, regim, slut){
   var trangst = (mrank.length && mrank[0].rader.length && mrank[0].rader[0].poang != null)
     ? mrank[0].rader[0].rad
     : toppFlaskhals({ rader: allaMegaRader(data) });
+  var toppRek = koprek && koprek.rek && koprek.rek.length ? koprek.rek[0] : null;
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
+    (toppRek
+      ? '<p class="slutsats"><span class="badge oka">' + esc(toppRek.etikett) + "</span> <b>" +
+        esc(toppRek.aktie.ticker) + "</b> · konviktion " + toppRek.konviktion + "/100 — hela kedjan under Aktier &amp; Konsensus.</p>"
+      : (koprek && koprek.forklaring ? '<p class="slutsats">' + esc(koprek.forklaring) + "</p>" : "")) +
     '<div class="heromatt">' +
       '<span class="heromattdel" title="' + esc(slut.regim) + '">Riskaptit <b>' + regim.poang + "</b>/100 · " +
         data.tripwires.map(function(t){
           return esc(t.etikett) + ' <span class="punkt ' + tripwireStatus(t) + '"></span>';
         }).join(" ") + "</span>" +
-      '<span class="heromattdel" title="Topp 3 av ' + data.screenadeAntal + ' screenade — hela listan under Aktier &amp; Konsensus.">Konvergens: ' +
+      '<span class="heromattdel" title="' + (screenGlobal ? "Topp 3 av " + screenGlobal.lista.length + " poängsatta (screener v1 · " + screenGlobal.vintage + ")" : "Topp 3 ur kurerade urvalet") + ' — hela listan under Aktier &amp; Konsensus.">Konvergens: ' +
         topp3.map(function(a){ return "<b>" + esc(a.ticker) + "</b> " + a.styrka; }).join(" · ") + "</span>" +
       '<span class="heromattdel" title="Megatrendens mest ansträngda flaskhals — detaljer under Trångsektorer.">Trängst: <b>' +
         esc(trangst.namn) + "</b> " + esc(trangst.celler[1].v) + " väntan · kö " + esc(trangst.celler[0].v) + "</span>" +
@@ -3022,6 +3252,8 @@ function renderaOversikt(data, analys, kort, regim, slut){
       slut.regim) +
     kortSkal("#/aktier-konsensus", "Aktier & insyn",
       linBadge(data.aktierLineage.kalla, data.aktierLineage.vintage),
+      (toppRek ? krad("Högsta rek: " + esc(toppRek.aktie.ticker), toppRek.etikett + " · " + toppRek.konviktion)
+               : krad("Köprek-motorn", koprek && koprek.lage === "stangd" ? "regimgrind stängd" : "inga rek ännu")) +
       topp3.map(function(a){ return krad("#" + (topp3.indexOf(a) + 1) + " " + esc(a.ticker), a.parlor.length + "/7 · " + a.styrka); }).join("") +
       '<span class="krad"><span>TP-acceleration</span><b id="kort-tpa-rad">' +
         (tpaS ? "" : "läser …") + "</b></span>",
@@ -3035,8 +3267,9 @@ function renderaOversikt(data, analys, kort, regim, slut){
   if(tpaS) uppdateraKortTpa(tpaS);
 }
 
-var dataGlobal = null;
-function renderaAllt(data, tr){
+var dataGlobal = null, screenGlobal = null;
+function renderaAllt(data, tr, screen){
+  if(screen !== undefined) screenGlobal = screen;
   dataGlobal = data;
   AKTIVT_LAGE = data.lage === "LIVE" ? "LIVE" : "TEST";
   var mark = $("#lagesmark");
@@ -3055,18 +3288,20 @@ function renderaAllt(data, tr){
   var kort = byggKort(analys, data);
   var regim = beraknaRegim(data);
   var slut = slutsatser(data, analys, regim, kort);
-  assertions(data, analys, kort);
+  var koprek = beraknaKoprek(data, analys, kort, regim, screenGlobal);
+  assertions(data, analys, kort, regim);
   renderaVanster(data, analys, kort, slut);
   renderaMetod(data, regim);
   renderaRadar(data, analys, kort, slut);
-  renderaAktier(data, slut);
+  renderaAktier(data, slut, screenGlobal);
+  renderaKoprek(koprek, data);
   renderaTrack(tr);
   initTpa(data);
   renderaRegim(data, regim, slut);
   renderaFloden(data, analys, slut);
   renderaMakro(data, analys, slut);
   renderaMegatrend(data, analys, kort);
-  renderaOversikt(data, analys, kort, regim, slut);
+  renderaOversikt(data, analys, kort, regim, slut, koprek);
   sattStampel(data);
   senastLast = new Date();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
@@ -3075,14 +3310,14 @@ function renderaAllt(data, tr){
   }); });
 }
 
-renderaAllt(lasInline("datalager"), lasInline("trackrecordlager"));
-Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); });
+renderaAllt(lasInline("datalager"), lasInline("trackrecordlager"), undefined);
+Promise.all([laddaData(), laddaTrack(), laddaScreen()]).then(function(res){ renderaAllt(res[0], res[1], res[2]); });
 uppdateraKlocka();
 setInterval(uppdateraKlocka, 30 * 1000);
-setInterval(function(){ Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); }); }, 30 * 60 * 1000);
+setInterval(function(){ Promise.all([laddaData(), laddaTrack(), laddaScreen()]).then(function(res){ renderaAllt(res[0], res[1], res[2]); }); }, 30 * 60 * 1000);
 document.addEventListener("visibilitychange", function(){
   if(!document.hidden && senastLast && Date.now() - senastLast.getTime() > 30 * 60 * 1000){
-    Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); });
+    Promise.all([laddaData(), laddaTrack(), laddaScreen()]).then(function(res){ renderaAllt(res[0], res[1], res[2]); });
   }
 });
 
