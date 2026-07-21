@@ -2,9 +2,10 @@ name: Uppdatera data
 
 on:
   schedule:
-    # Var 30:e minut. OBS: Actions-cron är inte sekundprecis — körningar kan
-    # försenas några minuter vid hög last på GitHub. Acceptabelt här.
-    - cron: "*/30 * * * *"
+    # Var 30:e minut, på udda minuter (07/37): GitHubs schemaläggare tappar
+    # oftare högtrafikslots som :00/:30, och cron är ändå inte sekundprecis —
+    # körningar kan glida några minuter vid hög last. Acceptabelt här.
+    - cron: "7,37 * * * *"
   workflow_dispatch: {}   # manuell körning från Actions-fliken
 
 permissions:
