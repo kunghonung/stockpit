@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-21",
-  "genererad": "2026-07-21T12:55+02:00",
+  "genererad": "2026-07-21T12:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.6,
-      "delta": "+1,1 · 1 v",
+      "varde": 17.7,
+      "delta": "+1,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 108,
+        "index": 109,
         "pil": "upp",
         "status": "gron"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.6,
+      "varde": 17.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4073",
+      "varde": "4061",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,6 %",
+      "delta4v": "−2,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,35",
+      "varde": "59,13",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−9,4 %",
+      "delta4v": "−9,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,52",
+      "varde": "6,53",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,6 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-21"
     },
     "olja": {
-      "v": 89.71,
+      "v": 90.81,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-21"
     }
@@ -1415,13 +1415,13 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
+          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
         },
         {
           "datum": "2026-07-20",
-          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
+          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
         },
         {
           "datum": "2026-07-20",
@@ -1430,18 +1430,18 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
-        },
-        {
-          "datum": "2026-07-20",
-          "namn": "Callahan Jennifer L.  (CIK 0001883523); Cingulate Inc.  (CIK 0001862150)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1883523/000149315226033963"
+          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
         },
         {
           "datum": "2026-07-20",
           "namn": "Rodman David Malcom  (CIK 0001672659); Mineralys Therapeutics, Inc.  (CIK 0001933414)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1672659/000167265926000036"
+        },
+        {
+          "datum": "2026-07-20",
+          "namn": "Callahan Jennifer L.  (CIK 0001883523); Cingulate Inc.  (CIK 0001862150)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1883523/000149315226033963"
         },
         {
           "datum": "2026-07-20",
@@ -1455,10 +1455,76 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-21T10:55+00:00"
+      "vintage": "2026-07-21T12:03+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-21 14:00:22",
+          "emittent": "Bufab AB (publ)",
+          "person": "Erik Karl Oskar Lundén",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "7091,0",
+          "enhet": "Antal",
+          "pris": "282,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 13:59:40",
+          "emittent": "Humble Group AB",
+          "person": "Noel Abdayem",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "35904,0",
+          "enhet": "Antal",
+          "pris": "6,026",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 13:18:02",
+          "emittent": "Volvo Car AB",
+          "person": "Erik Severinson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "15306,0",
+          "enhet": "Antal",
+          "pris": "19,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 13:08:01",
+          "emittent": "Billerud AB (publ)",
+          "person": "Douglas Schwartz",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "5020,0",
+          "enhet": "Antal",
+          "pris": "69,2095",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 13:07:35",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Mahmood Ladha",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "61936,0",
+          "enhet": "Antal",
+          "pris": "457,047220",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 13:07:35",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Mahmood Ladha",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "61936,0",
+          "enhet": "Antal",
+          "pris": "235,15",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-21 12:50:46",
           "emittent": "Gomero Group AB",
@@ -1942,77 +2008,11 @@
           "enhet": "Antal",
           "pris": "139,1063",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 17:54:16",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Fredrik Lundberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2000000,0",
-          "enhet": "Antal",
-          "pris": "139,0453",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 17:54:16",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Fredrik Lundberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "139,2095",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 17:41:17",
-          "emittent": "INVISIO AB",
-          "person": "Roger Kristiansson Skaaby",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "200,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 17:19:30",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Josephine Bernadotte",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "23797,0",
-          "enhet": "Antal",
-          "pris": "31,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 15:34:40",
-          "emittent": "BONESUPPORT HOLDING AB",
-          "person": "Björn Odlander",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "197,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 15:34:40",
-          "emittent": "BONESUPPORT HOLDING AB",
-          "person": "Björn Odlander",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "197,40",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 88,
+      "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-21T10:55+00:00"
+      "vintage": "2026-07-21T12:03+00:00"
     }
   }
 }
