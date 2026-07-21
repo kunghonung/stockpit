@@ -6,8 +6,9 @@ name: Daglig TPA-ingest
 
 on:
   schedule:
-    # Vardagar 22:00 UTC — efter USA-stängning (16:00 ET sommartid = 20:00 UTC)
-    - cron: "0 22 * * 1-5"
+    # Vardagar 22:11 UTC — efter USA-stängning. Udda minut: GitHubs schemaläggare
+    # tappar heltimmesslots för färska scheman (samma fix som update.yml).
+    - cron: "11 22 * * 1-5"
   workflow_dispatch: {}   # manuell körning från Actions-fliken
 
 permissions:
