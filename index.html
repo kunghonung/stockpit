@@ -1766,9 +1766,11 @@ function kontrolleraOmprovning(villkor, data, analys){
 }
 
 /* ============ Riskmotor & regim (oförändrad logik) ============ */
+/* REGELVERK §4: närhet till tröskel × konsekvensvikt (kurerad per regel, 1–3; saknas → 1) */
 function riskTopp(data, antal){
-  return data.riskregler.map(function(r){ return { regel: r, avvikelse: (r.varde - r.komfort) / r.komfort }; })
-    .sort(function(a, b){ return b.avvikelse - a.avvikelse; }).slice(0, antal);
+  return data.riskregler.map(function(r){
+    return { regel: r, avvikelse: (r.varde - r.komfort) / r.komfort * (r.vikt != null ? r.vikt : 1) };
+  }).sort(function(a, b){ return b.avvikelse - a.avvikelse; }).slice(0, antal);
 }
 function riskText(r){
   return r.mall.replace("{namn}", r.namn).replace("{varde}", svTal(r.varde, r.dec)).replace("{komfort}", svTal(r.komfort, 0));
@@ -1804,8 +1806,20 @@ function sentimentDivergens(data){
 
 /* ============ Slutsatser ============ */
 /* Delade hjälpare — används av både fullvyer och översiktens kort (ingen dubblerad logik) */
+/* REGELVERK §2: konvergens → styrka → IN → ES → VÄ. Delpoäng används när de finns
+   (screenerlistan); kurerade poster utan delpoäng får binär närvaro som tie-breaker. */
+function signalNyckel(a, s){
+  if(a.delpoang && a.delpoang[s] != null) return a.delpoang[s];
+  return a.parlor.indexOf(s) > -1 ? 1 : 0;
+}
+function aktieJamforelse(a, b){
+  return b.parlor.length - a.parlor.length || b.styrka - a.styrka ||
+    signalNyckel(b, "IN") - signalNyckel(a, "IN") ||
+    signalNyckel(b, "ES") - signalNyckel(a, "ES") ||
+    signalNyckel(b, "VÄ") - signalNyckel(a, "VÄ");
+}
 function rankadeAktier(data){
-  return data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+  return data.aktier.slice().sort(aktieJamforelse);
 }
 function toppFlaskhals(m){
   var kandidater = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
@@ -1932,8 +1946,12 @@ function renderaVanster(data, analys, kort, slut){
   $("#deltarad").innerHTML = "Linserna: tidig cykel toppar <b>" + esc(t1.s.namn) + "</b> " + t1.tidig + " · <b>" + esc(t2.s.namn) + "</b> " + t2.tidig +
     " — momentum toppar <b>" + esc(m1.s.namn) + "</b> " + m1.momentum + " · <b>" + esc(m2.s.namn) + "</b> " + m2.momentum + ".";
 
-  /* P4: alla 11 sektorer */
-  var rader = analys.lista.slice().sort(function(a, b){ return b.tidig - a.tidig; }).map(function(x){
+  /* P4: alla 11 sektorer — REGELVERK §1: tidig fallande, tie-breakers revQ2 → PE-rabatt → lägre rsRank */
+  var rader = analys.lista.slice().sort(function(a, b){
+    return b.tidig - a.tidig || b.s.revQ2.v - a.s.revQ2.v ||
+      (b.s.fwdPE10y.v - b.s.fwdPE.v) - (a.s.fwdPE10y.v - a.s.fwdPE.v) ||
+      a.s.rsRank - b.s.rsRank;
+  }).map(function(x){
     var flagg = [];
     if(x.divergens) flagg.push('<span class="flagg" title="Linsdivergens: tidig cykel och momentum ger olika handling.">⇄</span>');
     if(x.prisForeFundamenta) flagg.push('<span class="flagg" title="Pris före fundamenta: RS-rank upp ' + (x.s.rsRankForra - x.s.rsRank) + ' steg medan revideringarna är sektorns sämsta.">!</span>');
@@ -2218,14 +2236,36 @@ function renderaTrack(tr){
       "<td>" + f(p.utfall.v1) + "</td><td>" + f(p.utfall.v4) + "</td><td>" + f(p.utfall.v12) + "</td>" +
       "<td>" + (p.omprovningTriggad ? '<span class="neg" title="Omprövningsvillkor triggades">✗</span>' : "·") + "</td></tr>";
   }).join("");
+  /* REGELVERK §5: procent först vid n ≥ 10 — låt aldrig 2/2 se ut som 100 % */
   var hit = function(lins, horisont){
     var rel = tr.poster.filter(function(p){ return p.lins === lins && p.utfall[horisont] != null; });
     var traff = rel.filter(function(p){ return p.handling === "minska" ? p.utfall[horisont] < 0 : p.utfall[horisont] > 0; });
-    return rel.length ? traff.length + "/" + rel.length : "—";
+    if(!rel.length) return "—";
+    return rel.length >= 10 ? Math.round(traff.length / rel.length * 100) + " %" : traff.length + " av " + rel.length;
   };
+  /* §5: linser rankas på träffsäkerhet × √antal (alla horisonter sammanvägda) */
+  var linsScore = function(lins){
+    var rel = [], traff = 0;
+    tr.poster.forEach(function(p){
+      if(p.lins !== lins) return;
+      ["v1", "v4", "v12"].forEach(function(h){
+        if(p.utfall[h] == null) return;
+        rel.push(1);
+        if(p.handling === "minska" ? p.utfall[h] < 0 : p.utfall[h] > 0) traff++;
+      });
+    });
+    return rel.length ? (traff / rel.length) * Math.sqrt(rel.length) : -1;
+  };
+  var linsDel = function(lins, namn){
+    return "<b>" + namn + "</b> " + hit(lins, "v1") + " på 1 v · " + hit(lins, "v4") + " på 4 v · " + hit(lins, "v12") + " på 12 v";
+  };
+  var linsOrdnade = [["tidig", "tidig cykel"], ["momentum", "momentum"]]
+    .sort(function(a, b){ return linsScore(b[0]) - linsScore(a[0]); });
   $("#trackkropp").innerHTML =
     '<table class="trtab"><tr><th>Datum</th><th>Rek</th><th title="Lins: T = tidig cykel, M = momentum">L</th><th>1 v</th><th>4 v</th><th>12 v</th><th title="Omprövning triggad">Ompr.</th></tr>' + rader + "</table>" +
-    '<p class="trsummering">Träffsäkerhet (relativt S&P 500): <b>tidig cykel</b> ' + hit("tidig", "v1") + " på 1 v · " + hit("tidig", "v4") + " på 4 v · " + hit("tidig", "v12") + " på 12 v — <b>momentum</b> " + hit("momentum", "v1") + " · " + hit("momentum", "v4") + " · " + hit("momentum", "v12") + ". Mönstret är poängen: momentum vinner veckan, tidig cykel vinner kvartalet.</p>";
+    '<p class="trsummering" title="Linserna ordnas på träffsäkerhet × √antal utfall (REGELVERK §5); procent visas först vid ≥ 10 utfall per cell.">Träffsäkerhet (relativt S&P 500): ' +
+    linsDel(linsOrdnade[0][0], linsOrdnade[0][1]) + " — " + linsDel(linsOrdnade[1][0], linsOrdnade[1][1]) +
+    ". Mönstret är poängen: momentum vinner veckan, tidig cykel vinner kvartalet.</p>";
 }
 
 /* ---- Regim (P1-lineage + oförändrad anatomi) ---- */
@@ -2269,7 +2309,15 @@ function renderaRegim(data, regim, slut){
     '<span class="meter" role="img" aria-label="Riskaptit ' + regim.poang + ' av 100"><i data-niva="' + regim.poang + '"></i></span>' +
     '<span class="rtal">' + testTal(regim.poang) + '</span><span class="rmax">/100</span></div>';
   html += '<p class="slutsats">' + esc(slut.regim) + "</p>";
-  html += data.tripwires.map(bulletHtml).join("");
+  /* REGELVERK §4: tripwires på procentuellt avstånd till tröskeln — närmast brott överst */
+  html += data.tripwires.slice().sort(function(a, b){
+    var av = function(t){ return t.trosklar && t.trosklar[0] ? (t.trosklar[0] - t.varde) / t.trosklar[0] : null; };
+    var x = av(a), y = av(b);
+    if(x == null && y == null) return 0;
+    if(x == null) return 1;
+    if(y == null) return -1;
+    return x - y;
+  }).map(bulletHtml).join("");
   var c = data.regim.aiCapex;
   html += '<div class="nrad" title="' + esc("AI-capexcykel: SOX/SPX + hyperscaler-capex å/å. Källa: " + c.kalla + " · " + c.vintage) + '">' +
     '<span class="punkt ' + (c.pil === "upp" ? "gul" : "gron") + '"></span>' +
@@ -2294,11 +2342,32 @@ function renderaRegim(data, regim, slut){
     return '<p class="riskrad"><b>' + esc(x.regel.namn) + ":</b> " + esc(riskText(x.regel).split(": ")[1] || riskText(x.regel)) +
       ' <span class="kalla-chip">' + esc(x.regel.kalla) + "</span></p>";
   }).join("") + "</details>";
-  html += '<div class="sektionsrub" title="' + esc("Källa: spot/LME · vintage blandad — se radernas tooltips") + '">Metaller</div>';
-  html += [data.makro.guld, data.makro.silver, data.makro.koppar].map(function(m){ return metallRad(m, data); }).join("");
-  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %.") + '">Cross-asset-kvoter · 13 v-index</div>';
-  html += '<div class="kvoter">' + data.regim.kvoter.map(function(k){
-    return '<div class="nrad" title="' + esc(k.grupp + " — " + k.namn + ": index " + k.index) + '">' +
+  html += '<div class="sektionsrub" title="' + esc("Källa: spot/LME · vintage blandad — se radernas tooltips. Ordning: handlingsrelevans (ÖKA → BEVAKA → övrigt), därefter |Δ4v| (REGELVERK §4).") + '">Metaller</div>';
+  /* REGELVERK §4: metaller på handlingsrelevans, därefter störst 4-veckorsrörelse */
+  var metallOrd = { oka: 0, bevaka: 1 };
+  var metallLista = [data.makro.guld, data.makro.silver, data.makro.koppar].slice().sort(function(a, b){
+    var ao = metallOrd[a.atgard] != null ? metallOrd[a.atgard] : 2;
+    var bo = metallOrd[b.atgard] != null ? metallOrd[b.atgard] : 2;
+    var ad = Math.abs(parseFloat(String(a.delta4v || "").replace(",", ".").replace(/[^0-9.\-]/g, "")) || 0);
+    var bd = Math.abs(parseFloat(String(b.delta4v || "").replace(",", ".").replace(/[^0-9.\-]/g, "")) || 0);
+    return ao - bo || bd - ad;
+  });
+  html += metallLista.map(function(m){ return metallRad(m, data); }).join("");
+  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %. Ordning: |index − 100| fallande — störst avvikelse från 13 v-snittet överst; pil mot avvikelsens riktning flyttar ned ett steg (REGELVERK §4).") + '">Cross-asset-kvoter · 13 v-index</div>';
+  /* REGELVERK §4: kvoter på |index − 100| fallande; pil-inkonsekvens flyttar ned ett steg.
+     Risk-på-/risk-av-gruppering vid lika aktiveras när kvoterna bär ett riskPa-fält — grupp-
+     etiketten räcker inte för klassning, och vi gissar aldrig. */
+  var kvoterRank = data.regim.kvoter.slice().sort(function(a, b){
+    return Math.abs(b.index - 100) - Math.abs(a.index - 100) || (a.id < b.id ? -1 : 1);
+  });
+  for(var qi = 0; qi < kvoterRank.length - 1; qi++){
+    var q = kvoterRank[qi];
+    if((q.index > 100 && q.pil === "ned") || (q.index < 100 && q.pil === "upp")){
+      kvoterRank.splice(qi, 1); kvoterRank.splice(qi + 1, 0, q); qi++;
+    }
+  }
+  html += '<div class="kvoter">' + kvoterRank.map(function(k){
+    return '<div class="nrad" title="' + esc(k.grupp + " — " + k.namn + ": index " + k.index + " · avvikelse " + Math.abs(k.index - 100) + " från 13 v-snittet") + '">' +
       '<span class="punkt ' + k.status + '"></span><span class="etikett">' + esc(k.namn) + "</span>" +
       '<span class="varde">' + k.index + '</span><span class="riktpil ' + k.pil + '">' + PIL[k.pil] + "</span></div>";
   }).join("") + "</div>";
@@ -2313,7 +2382,8 @@ function renderaFloden(data, analys, slut){
   var kanda = data.sektorer.filter(function(s){ return s.flodeM; });
   var okanda = data.sektorer.filter(function(s){ return !s.flodeM; });
   var max = Math.max.apply(null, kanda.map(function(s){ return Math.abs(s.flodeM.v); }));
-  var rader = kanda.sort(function(a, b){ return b.flodeM.v - a.flodeM.v; }).map(function(s){
+  /* REGELVERK §4: staplar på |flöde| fallande — största rörelsen överst oavsett riktning */
+  var rader = kanda.sort(function(a, b){ return Math.abs(b.flodeM.v) - Math.abs(a.flodeM.v); }).map(function(s){
     var x = analys.perSektor[s.id];
     var div = s.flodeM.v > 0 && x.rrg.yKort < 0;
     var w = Math.abs(s.flodeM.v) / max * 48;
