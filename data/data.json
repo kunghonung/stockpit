@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-21",
-  "genererad": "2026-07-21T17:00+00:00",
+  "genererad": "2026-07-21T18:38+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
+        "index": 99,
         "pil": "upp",
         "status": "gul"
       },
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 109,
+        "index": 108,
         "pil": "upp",
         "status": "gron"
       },
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4077",
+      "varde": "4089",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,5 %",
+      "delta4v": "−2,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,19",
+      "varde": "59,26",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−9,7 %",
+      "delta4v": "−9,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,56",
+      "varde": "6,53",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,2 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-21"
     },
     "olja": {
-      "v": 91.32,
+      "v": 90.98,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-21"
     }
@@ -1644,8 +1644,8 @@
   },
   "geo": {
     "benchmark": "MSCI ACWI",
-    "kalla": "statisk illustration (ej seedad mot verifierade fakta)",
-    "vintage": "2026-W29",
+    "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
+    "vintage": "2026-07-21",
     "marknader": [
       {
         "namn": "USA",
@@ -1665,6 +1665,27 @@
             0.74,
             -0.18
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          99.8,
+          99.41,
+          99.86,
+          100.67,
+          100.83,
+          100.73,
+          101.8,
+          101.43,
+          101.25,
+          101.37,
+          100.59,
+          100.45,
+          100.26,
+          101.21,
+          101.6,
+          101.76,
+          101.93,
+          101.58
         ]
       },
       {
@@ -1685,6 +1706,27 @@
             1.8,
             -0.7
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          100.34,
+          100.76,
+          102.84,
+          105.51,
+          106.31,
+          109.47,
+          110.04,
+          110.01,
+          111.38,
+          109.22,
+          110.26,
+          112.29,
+          109.53,
+          109.14,
+          110.04,
+          107.29,
+          107.76,
+          108.55
         ]
       },
       {
@@ -1705,6 +1747,27 @@
             -0.95,
             0.7
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          100.07,
+          99.14,
+          97.11,
+          94.9,
+          94.31,
+          92.14,
+          92.12,
+          93.73,
+          92.35,
+          94.32,
+          94.65,
+          94.24,
+          96.4,
+          97.77,
+          95.09,
+          96.8,
+          96.83,
+          96.26
         ]
       },
       {
@@ -1725,6 +1788,27 @@
             0.3,
             0.55
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          96.49,
+          92.33,
+          95.1,
+          97.96,
+          99.26,
+          96.56,
+          102.61,
+          99.24,
+          100.72,
+          108.31,
+          107.28,
+          105.51,
+          116.42,
+          111.98,
+          111.51,
+          111.5,
+          104.67,
+          106.84
         ]
       },
       {
@@ -1745,6 +1829,27 @@
             -0.42,
             0.35
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          98.92,
+          101.78,
+          102.8,
+          103.24,
+          103.07,
+          106.58,
+          102.94,
+          102.94,
+          105.47,
+          101.97,
+          105.74,
+          109.39,
+          106.15,
+          102.56,
+          103.42,
+          99.53,
+          100.29,
+          101.95
         ]
       },
       {
@@ -1765,6 +1870,27 @@
             -1.55,
             -0.72
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          98.29,
+          96.76,
+          96.44,
+          94.28,
+          93.41,
+          92.12,
+          90.22,
+          87.39,
+          85.3,
+          86.55,
+          86.01,
+          82.11,
+          80.31,
+          80.02,
+          82.7,
+          83.85,
+          85.92,
+          84.86
         ]
       },
       {
@@ -1785,6 +1911,27 @@
             0.8,
             -0.95
           ]
+        ],
+        "relSerie19": [
+          100.0,
+          98.24,
+          99.89,
+          99.79,
+          96.74,
+          95.11,
+          94.19,
+          91.46,
+          91.09,
+          89.94,
+          90.04,
+          90.7,
+          92.3,
+          94.33,
+          93.2,
+          91.81,
+          92.66,
+          92.29,
+          91.68
         ]
       }
     ],
@@ -1845,10 +1992,285 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-21T17:00+00:00"
+      "vintage": "2026-07-21T18:38+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-21 19:46:35",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "748491,0",
+          "enhet": "Antal",
+          "pris": "35,93703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:46:35",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "1271840,0",
+          "enhet": "Antal",
+          "pris": "32,12930",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:46:35",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "467442,0",
+          "enhet": "Antal",
+          "pris": "33,26608",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:46:35",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "393380,0",
+          "enhet": "Antal",
+          "pris": "36,64951",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:46:35",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utdelning lämnad",
+          "volym": "303980,0",
+          "enhet": "Antal",
+          "pris": "35,93703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:19:33",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "130990,0",
+          "enhet": "Antal",
+          "pris": "35,93703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:19:33",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "222579,0",
+          "enhet": "Antal",
+          "pris": "32,12930",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:19:33",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "142609,0",
+          "enhet": "Antal",
+          "pris": "33,26608",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:19:33",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "180004,0",
+          "enhet": "Antal",
+          "pris": "36,64951",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:16:47",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Bamdad Bastani",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "275000,0",
+          "enhet": "Antal",
+          "pris": "3,55",
+          "valuta": "USD"
+        },
+        {
+          "publicerad": "2026-07-21 19:16:47",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Bamdad Bastani",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Gåva lämnad",
+          "volym": "130000,0",
+          "enhet": "Antal",
+          "pris": "3,55",
+          "valuta": "USD"
+        },
+        {
+          "publicerad": "2026-07-21 19:14:03",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "34045,0",
+          "enhet": "Antal",
+          "pris": "35,93703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:14:03",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "57848,0",
+          "enhet": "Antal",
+          "pris": "32,12930",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:14:03",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "23768,0",
+          "enhet": "Antal",
+          "pris": "33,26608",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:14:03",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "144238,0",
+          "enhet": "Antal",
+          "pris": "36,64951",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:08:16",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "241488,0",
+          "enhet": "Antal",
+          "pris": "35,93703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:08:16",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "410338,0",
+          "enhet": "Antal",
+          "pris": "32,12930",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:08:16",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "158455,0",
+          "enhet": "Antal",
+          "pris": "33,26608",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:08:16",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "163581,0",
+          "enhet": "Antal",
+          "pris": "36,64951",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:03:55",
+          "emittent": "Atlas Copco AB",
+          "person": "Sara Hägg Liljedal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "18850,0",
+          "enhet": "Antal",
+          "pris": "143,94",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:03:55",
+          "emittent": "Atlas Copco AB",
+          "person": "Sara Hägg Liljedal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "18850,0",
+          "enhet": "Antal",
+          "pris": "143,94",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:03:55",
+          "emittent": "Atlas Copco AB",
+          "person": "Sara Hägg Liljedal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "18850,0",
+          "enhet": "Antal",
+          "pris": "197,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:03:55",
+          "emittent": "Atlas Copco AB",
+          "person": "Sara Hägg Liljedal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "42762,0",
+          "enhet": "Antal",
+          "pris": "138,21",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:03:55",
+          "emittent": "Atlas Copco AB",
+          "person": "Sara Hägg Liljedal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "42762,0",
+          "enhet": "Antal",
+          "pris": "138,21",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 19:03:55",
+          "emittent": "Atlas Copco AB",
+          "person": "Sara Hägg Liljedal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "42762,0",
+          "enhet": "Antal",
+          "pris": "197,5",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-21 18:53:25",
           "emittent": "Sivers Semiconductors AB",
@@ -2123,286 +2545,11 @@
           "enhet": "Antal",
           "pris": "12,61",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:50:46",
-          "emittent": "Gomero Group AB",
-          "person": "Johan Sigfrid Rask",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "296,0",
-          "enhet": "Antal",
-          "pris": "13,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:50:46",
-          "emittent": "Gomero Group AB",
-          "person": "Johan Sigfrid Rask",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "901,0",
-          "enhet": "Antal",
-          "pris": "13,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:13:01",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Andreas Morfiadakis",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "13,29",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:13:01",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Andreas Morfiadakis",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "13,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 11:11:04",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Benjamin Hogg",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "411143,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:59:25",
-          "emittent": "Thule Group AB",
-          "person": "Curt Per-Arne Blomquist",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "213,16",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:55:49",
-          "emittent": "HANZA AB",
-          "person": "Erik Ivar Bertil Stenfors",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "130,75",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:55:10",
-          "emittent": "HANZA AB",
-          "person": "Francesco Franzé",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "9000,0",
-          "enhet": "Antal",
-          "pris": "129,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:40:02",
-          "emittent": "Alleima AB",
-          "person": "Tom Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "5762,0",
-          "enhet": "Antal",
-          "pris": "103,85",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:40:02",
-          "emittent": "Alleima AB",
-          "person": "Tom Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "2617,0",
-          "enhet": "Antal",
-          "pris": "104,1417",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:20:16",
-          "emittent": "White Pearl Technology Group AB",
-          "person": "Arne Nabseth",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4519,0",
-          "enhet": "Antal",
-          "pris": "14,413",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:11:50",
-          "emittent": "NORDIC LEVEL GROUP AB",
-          "person": "Fredrik Crafoord",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "7031732,0",
-          "enhet": "Antal",
-          "pris": "0,32",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:08:29",
-          "emittent": "BONESUPPORT HOLDING AB",
-          "person": "Torbjörn Sköld",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1950,0",
-          "enhet": "Antal",
-          "pris": "199,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 10:05:11",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Mark Simon",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "52500,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:50:19",
-          "emittent": "Cibus Nordic Real Estate AB (publ)",
-          "person": "Louise Richnau",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1600,0",
-          "enhet": "Antal",
-          "pris": "142,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:46:00",
-          "emittent": "OODA AI",
-          "person": "Johan Königslehner",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "33,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:46:00",
-          "emittent": "OODA AI",
-          "person": "Johan Königslehner",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1150,0",
-          "enhet": "Antal",
-          "pris": "34,87",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:46:00",
-          "emittent": "OODA AI",
-          "person": "Johan Königslehner",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "680,0",
-          "enhet": "Antal",
-          "pris": "33,99",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:45:16",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Karin Mellegård Djärf",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2200,0",
-          "enhet": "Antal",
-          "pris": "235,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:42:59",
-          "emittent": "Zinzino AB",
-          "person": "Daniel Vennerstrand",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "2,22",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:30:35",
-          "emittent": "Viaplay Group AB (publ)",
-          "person": "Johan Johansson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "369395,0",
-          "enhet": "Antal",
-          "pris": "1,36",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:14:40",
-          "emittent": "CAG Group AB",
-          "person": "Johan Sunmo",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "220,0",
-          "enhet": "Antal",
-          "pris": "99,60",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 09:13:39",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Anna Schmidt Almlöf",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "433,0",
-          "enhet": "Antal",
-          "pris": "230,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 08:23:33",
-          "emittent": "Arlandastad Group AB (publ)",
-          "person": "Per Taube",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "9934,0",
-          "enhet": "Antal",
-          "pris": "35,8856",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 04:37:33",
-          "emittent": "Enad Global 7 AB (publ)",
-          "person": "Jason Epstein",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "11424,0",
-          "enhet": "Antal",
-          "pris": "17,6003",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 25,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-21T17:00+00:00"
+      "vintage": "2026-07-21T18:38+00:00"
     }
   }
 }
