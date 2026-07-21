@@ -455,6 +455,9 @@ li.oppen .sigdetalj{ display:block; }
 .hjalpmark{ cursor:help; border-bottom:1px dotted var(--svag); }
 .korslank{ color:var(--accent); text-decoration:none; }
 .korslank:hover{ text-decoration:underline; }
+.kadensflagg{ font-family:var(--mono); font-size:var(--fs11); cursor:help; }
+.kadensflagg.forfallen{ color:var(--gul-text); }
+.kadensflagg.rutten{ color:var(--svag); text-decoration:line-through; }
 .meganot{ font-size:var(--fs11); color:var(--damp); line-height:1.4; margin-top:var(--s4); }
 .koprekrad{ border:1px solid var(--linje); border-radius:var(--radie); padding:var(--s4) var(--s8); margin-bottom:var(--s4); }
 .koprekvillkor{ font-size:var(--fs11); color:var(--damp); line-height:1.5; margin:2px 0; }
@@ -1595,7 +1598,33 @@ function linBadge(kalla, vintage, fullKalla){
   var lage = AKTIVT_LAGE === "LIVE" ? "LIVE" : "TEST";
   return '<span class="lineage' + (lage === "LIVE" ? " live" : "") + '" title="Källa: ' + esc(fullKalla || kalla) + " · Vintage: " + esc(vintage) + " · Status: " + lage + (lage === "TEST" ? " (testdata — inte handlingsunderlag)" : "") + '"><b>' + lage + "</b> · " + esc(kalla) + " · " + esc(vintage) + "</span>";
 }
-function satLin(id, kalla, vintage, fullKalla){ var el = $("#" + id); if(el) el.innerHTML = linBadge(kalla, vintage, fullKalla); }
+var LIN_MODULVAGAR = {
+  "lin-rek": /^sektorer\[\]\.(revQ2|fwdPE|fwdPE10y|flodeM)/,
+  "lin-radar": /^(sektorer\[\]\.perfH1|geo)$/,
+  "lin-floden": /^(sektorer\[\]\.flodeM|flodenNoter\[\])/,
+  "lin-makro": /^makro\.(rantekurva|sentiment|bredd)/,
+  "lin-regim": /^(tripwires\[\]|regim\.(kvoterLineage|crowding|aiCapex)|makro\.(guld|silver|koppar|realranta))/,
+  "lin-mega": /^megatrender\[\]$/,
+  "lin-aktier": /^aktierLineage$/
+};
+function modulKadensNiva(id){
+  var monster = LIN_MODULVAGAR[id];
+  if(!monster || !kadensKarta) return 0;
+  var varsta = 0, varstaPost = null;
+  kadensKarta.lista.forEach(function(p){
+    if(monster.test(p.vag) && p.niva > varsta){ varsta = p.niva; varstaPost = p; }
+  });
+  return { niva: varsta, post: varstaPost };
+}
+function satLin(id, kalla, vintage, fullKalla){
+  var el = $("#" + id);
+  if(!el) return;
+  var mk = modulKadensNiva(id);
+  var extra = "";
+  if(mk && mk.niva === 2) extra = ' <span class="kadensflagg rutten" title="' + esc(mk.post.vag + " är " + mk.post.alder + " d gammal (gräns " + mk.post.dagar + " d, 2×-regeln) — fältet behandlas som null i poängen. KADENS.md.") + '">inaktuell</span>';
+  else if(mk && mk.niva === 1) extra = ' <span class="kadensflagg forfallen" title="' + esc(mk.post.vag + (mk.post.alder != null ? " är " + mk.post.alder + " d gammal (gräns " + mk.post.dagar + " d)" : " har otolkbar/okontrakterad vintage") + " — förfallen enligt KADENS.md.") + '">⚠</span>';
+  el.innerHTML = linBadge(kalla, vintage, fullKalla) + extra;
+}
 /* diskret markering på sammansatta poäng byggda på TEST-data */
 function testTal(varde){
   return varde + (AKTIVT_LAGE === "TEST" ? '<span class="testmark" title="Beräknad på TEST-data — inte handlingsunderlag.">°</span>' : "");
@@ -1636,11 +1665,19 @@ function klamp(v, a, b){ return Math.max(a, Math.min(b, v)); }
 function analysera(data){
   var sektorer = data.sektorer;
   var n = sektorer.length;
-  var revMin = Math.min.apply(null, sektorer.map(function(s){ return s.revQ2.v; }));
-  var revMax = Math.max.apply(null, sektorer.map(function(s){ return s.revQ2.v; }));
-  var peMin = Math.min.apply(null, sektorer.map(function(s){ return s.fwdPE.v; }));
-  var rabattMax = Math.max.apply(null, sektorer.map(function(s){ return (s.fwdPE10y.v - s.fwdPE.v) / s.fwdPE10y.v; }));
-  var flodPos = sektorer.filter(function(s){ return s.flodeM && s.flodeM.v > 0; })
+  /* KADENS nivå 2: förfallna fält läses som null — medNull viktar om (princip 3) */
+  var fV = function(s, falt){ return farskV(s[falt]); };
+  var revVarden = sektorer.map(function(s){ return fV(s, "revQ2"); }).filter(function(v){ return v != null; });
+  var revMin = Math.min.apply(null, revVarden);
+  var revMax = Math.max.apply(null, revVarden);
+  var peVarden = sektorer.map(function(s){ return fV(s, "fwdPE"); }).filter(function(v){ return v != null; });
+  var peMin = Math.min.apply(null, peVarden);
+  var rabattMax = Math.max.apply(null, sektorer.map(function(s){
+    var pe = fV(s, "fwdPE"), pe10 = fV(s, "fwdPE10y");
+    return pe != null && pe10 ? (pe10 - pe) / pe10 : -1;
+  }));
+  var flodeAv = function(s){ return kadensNivaFor(s.flodeM) === 2 ? null : s.flodeM; };
+  var flodPos = sektorer.filter(function(s){ var f = flodeAv(s); return f && f.v > 0; })
     .reduce(function(a, s){ return a + s.flodeM.v; }, 0);
   var brantning = kurvBrantning(data);
   var RIKTBONUS = { accelererar: 20, "vänder": 15, stiger: 10, flat: 0, faller: -10 };
@@ -1649,12 +1686,14 @@ function analysera(data){
   var a = {};
   sektorer.forEach(function(s){
     var rrg = beraknaRRG(s.relSerie19, data.rrgMetod);
+    var revV = fV(s, "revQ2"), peV = fV(s, "fwdPE"), pe10V = fV(s, "fwdPE10y");
+    var flodeObj = flodeAv(s);
     /* — tidig-cykel-linsen — */
     var efterslapning = (s.rsRank - 1) / (n - 1) * 100;
-    var rabatt = (s.fwdPE10y.v - s.fwdPE.v) / s.fwdPE10y.v;
-    var vardering = rabatt > 0 && rabattMax > 0 ? klamp(rabatt / rabattMax * 100, 0, 100) : 0;
-    var rev = klamp((s.revQ2.v - revMin) / ((revMax - revMin) || 1) * 100 + (RIKTBONUS[s.revRiktning] || 0), 0, 100);
-    var flodesvandning = s.flodeM == null ? null : (s.flodeM.v > 0 && s.rsRank >= 6 ? 100 : 0);
+    var rabatt = peV != null && pe10V ? (pe10V - peV) / pe10V : null;
+    var vardering = rabatt == null ? null : (rabatt > 0 && rabattMax > 0 ? klamp(rabatt / rabattMax * 100, 0, 100) : 0);
+    var rev = revV == null ? null : klamp((revV - revMin) / ((revMax - revMin) || 1) * 100 + (RIKTBONUS[s.revRiktning] || 0), 0, 100);
+    var flodesvandning = flodeObj == null ? null : (flodeObj.v > 0 && s.rsRank >= 6 ? 100 : 0);
     var vT = data.linsvikter.tidig;
     var makro = 0, makroNot = null;
     if(brantning > 0 && s.id === identifieraRantekanslig(data)){ makro = 8; makroNot = "Brantning +" + brantning + " bp/mån stöder räntenettot: +8 på tidig-linsen."; }
@@ -1663,18 +1702,18 @@ function analysera(data){
     var vM = data.linsvikter.momentum;
     var rs = (n - s.rsRank) / (n - 1) * 100;
     var kv = KVADRANT[rrg.kvadrantLang];
-    var flode = s.flodeM == null ? null : klamp(Math.abs(s.flodeM.v) / (flodPos || 1) * 100 * (s.flodeM.v > 0 ? 1 : 0), 0, 100);
+    var flode = flodeObj == null ? null : klamp(Math.abs(flodeObj.v) / (flodPos || 1) * 100 * (flodeObj.v > 0 ? 1 : 0), 0, 100);
     var insyn = s.insynKluster > 0 ? 100 : 0;
     var momentum = klamp(Math.round(medNull([[rs, vM.rs], [kv, vM.kvadrant], [flode, vM.flode], [insyn, vM.insyn]])), 0, 100);
 
     a[s.id] = {
       s: s, rrg: rrg, tidig: tidig, momentum: momentum,
-      komp: { efterslapning: Math.round(efterslapning), vardering: Math.round(vardering), rev: Math.round(rev), flodesvandning: flodesvandning, rs: Math.round(rs), kvadrant: kv, insyn: insyn },
+      komp: { efterslapning: Math.round(efterslapning), vardering: vardering == null ? null : Math.round(vardering), rev: rev == null ? null : Math.round(rev), flodesvandning: flodesvandning, rs: Math.round(rs), kvadrant: kv, insyn: insyn },
       makro: makro, makroNot: makroNot,
-      prisForeFundamenta: (s.rsRankForra - s.rsRank) >= 3 && s.revQ2.v === revMin,
-      revArMin: s.revQ2.v === revMin,
-      revArMax: s.revQ2.v === revMax,
-      peArMin: s.fwdPE.v === peMin
+      prisForeFundamenta: (s.rsRankForra - s.rsRank) >= 3 && revV === revMin,
+      revArMin: revV != null && revV === revMin,
+      revArMax: revV != null && revV === revMax,
+      peArMin: peV != null && peV === peMin
     };
   });
 
@@ -1822,6 +1861,92 @@ function sentimentDivergens(data){
 }
 
 /* ============ Slutsatser ============ */
+/* ============ KADENS: färskhetskontraktet (speglar KADENS.md) ============
+   Åldern mäts mot snapshotens egen klocka (data.genererad) — frysta testdata
+   förblir friska relativt sig själva, medan LIVE-fält som slutat uppdateras
+   får växande gap mot den tickande genererad-stämpeln. */
+var KADENSGRANSER = [
+  { monster: /^(tripwires\[\]|makro\.(rantekurva|realranta|guld|silver|koppar)|regim\.kvoterLineage|geo)$/, dagar: 1 },
+  { monster: /^(tpa|makro\.bredd)$/, dagar: 3 },
+  { monster: /^(sektorer\[\]\.(revQ2|fwdPE)|regim\.crowding)$/, dagar: 10 },
+  { monster: /^makro\.sentiment$/, dagar: 14 },
+  { monster: /^aktierLineage$/, dagar: 30 },
+  { monster: /^(sektorer\[\]\.flodeM|flodenNoter\[\])$/, dagar: 45 },
+  { monster: /^(sektorer\[\]\.fwdPE10y|regim\.aiCapex|megatrender\[\])$/, dagar: 120 },
+  { monster: /^sektorer\[\]\.perfH1$/, dagar: 3650 } /* historiskt halvårsfaktum — förfaller inte */
+];
+/* Tolkar alla vintageformat i datat; "approx" = osäkerhetsmärkning, inte ålder. */
+function tolkaVintage(s){
+  if(s == null) return null;
+  s = String(s);
+  if(/approx/i.test(s)) return "approx";
+  var m;
+  if((m = s.match(/^(\d{4})-(\d{2})-(\d{2})/))) return new Date(+m[1], +m[2] - 1, +m[3]);
+  if((m = s.match(/^(\d{4})-W(\d{1,2})$/))){
+    var d = new Date(+m[1], 0, 4);
+    d.setDate(d.getDate() - ((d.getDay() + 6) % 7) + (+m[2] - 1) * 7 + 6);
+    return d;
+  }
+  if((m = s.match(/^(\d{4})-Q([1-4])$/))) return new Date(+m[1], +m[2] * 3, 0);
+  if((m = s.match(/^(\d{4})-H([12])$/))) return new Date(+m[1], +m[2] * 6, 0);
+  if((m = s.match(/^(\d{4})-(\d{2})$/))) return new Date(+m[1], +m[2], 0);
+  /* periodformat: "2026-04→06" = t.o.m. juni · "2026-W28/29" = t.o.m. v29 */
+  if((m = s.match(/^(\d{4})-(\d{2})→(\d{2})$/))) return new Date(+m[1], +m[3], 0);
+  if((m = s.match(/^(\d{4})-W(\d{1,2})\/(\d{1,2})$/))) return tolkaVintage(m[1] + "-W" + m[3]);
+  return null; /* otolkbar → okänd ålder, flaggas gult */
+}
+var kadensKarta = null; /* WeakMap faltobjekt → {niva, alder, dagar, vag} — byggs per datainläsning */
+function byggKadensKarta(data){
+  var karta = new WeakMap(), lista = [], okanda = [];
+  var nu = tolkaVintage((data.genererad || "").slice(0, 10)) || new Date();
+  (function scanna(obj, vag, normVag){
+    if(obj && typeof obj === "object" && !Array.isArray(obj)){
+      if("vintage" in obj){
+        var grans = null;
+        for(var i = 0; i < KADENSGRANSER.length; i++){
+          if(KADENSGRANSER[i].monster.test(normVag)){ grans = KADENSGRANSER[i].dagar; break; }
+        }
+        if(grans == null){ okanda.push(normVag); }
+        var v = tolkaVintage(obj.vintage);
+        var alder = v instanceof Date ? Math.round((nu - v) / 86400000) : null;
+        var niva = 0;
+        if(v === "approx") niva = 0;                       /* osäker, inte gammal */
+        else if(alder == null || grans == null) niva = 1;  /* otolkbar/okontrakterad → gul */
+        else if(alder > 2 * grans) niva = 2;
+        else if(alder > grans) niva = 1;
+        var post = { vag: normVag, dagar: grans, alder: alder, niva: niva, vintage: obj.vintage, kalla: obj.kalla || "" };
+        karta.set(obj, post);
+        lista.push(post);
+      }
+      for(var k in obj){ if(k !== "vintage") scanna(obj[k], vag + "." + k, normVag ? normVag + "." + k : k); }
+    } else if(Array.isArray(obj)){
+      obj.forEach(function(el){ scanna(el, vag + "[]", normVag + "[]"); });
+    }
+  })(data, "", "");
+  return { karta: karta, lista: lista, okanda: okanda };
+}
+/* REGELVERK princip 3 + KADENS nivå 2: förfallet fält läses som null i poäng/linser */
+function farskV(faltobj){
+  if(!faltobj || typeof faltobj !== "object") return faltobj == null ? null : faltobj;
+  var post = kadensKarta && kadensKarta.karta.get(faltobj);
+  if(post && post.niva === 2) return null;
+  return faltobj.v != null ? faltobj.v : null;
+}
+function kadensNivaFor(faltobj){
+  var post = kadensKarta && faltobj ? kadensKarta.karta.get(faltobj) : null;
+  return post ? post.niva : 0;
+}
+
+/* Geo-marknad: beräknad position ur relSerie19 när pipelinen fyllt den (S9-A1),
+   annars kurerade x/y (statisk illustration) — slutsatser och radar delar samma läsning. */
+function geoXY(mk, data){
+  if(mk.relSerie19 && mk.relSerie19.length >= 19){
+    var rrg = beraknaRRG(mk.relSerie19, data.rrgMetod);
+    return { x: rrg.x, y: rrg.yLang, spar: rrg.trail.map(function(t){ return [t.x, t.y]; }), puls: rrg.puls, live: true };
+  }
+  return { x: mk.x, y: mk.y, spar: mk.spar, puls: false, live: false };
+}
+
 /* Delade hjälpare — används av både fullvyer och översiktens kort (ingen dubblerad logik) */
 /* REGELVERK §2: konvergens → styrka → IN → ES → VÄ. Delpoäng används när de finns
    (screenerlistan); kurerade poster utan delpoäng får binär närvaro som tie-breaker. */
@@ -1856,8 +1981,9 @@ function slutsatser(data, analys, regim, kort){
   s.radar = pulser.length
     ? "Obekräftade vändningar (puls): " + pulser.join(" · ") + " — kort fönster har bytt kvadrant, långt har inte hunnit med."
     : "Inga obekräftade kvadrantbyten just nu.";
-  var geoLedareSvag = data.geo.marknader.filter(function(m){ return m.x > 0.5 && m.y < 0; }).sort(function(a, b){ return b.x - a.x; })[0];
-  var geoForb = data.geo.marknader.filter(function(m){ return m.x < 0 && m.y > 0; }).map(function(m){ return m.namn; });
+  var geoPos = data.geo.marknader.map(function(m){ var p = geoXY(m, data); p.namn = m.namn; return p; });
+  var geoLedareSvag = geoPos.filter(function(m){ return m.x > 0.5 && m.y < 0; }).sort(function(a, b){ return b.x - a.x; })[0];
+  var geoForb = geoPos.filter(function(m){ return m.x < 0 && m.y > 0; }).map(function(m){ return m.namn; });
   s.geo = (geoLedareSvag ? geoLedareSvag.namn + " leder men försvagas; " : "") +
     (geoForb.length ? geoForb.join(" & ") + " förbättras — men juniflödena lämnade Europa (vintage-gap: flöden 2026-06, RRG v.29)." : "ingen tydlig geografisk rotation.");
   var kanda = data.sektorer.filter(function(x){ return x.flodeM; });
@@ -1904,6 +2030,41 @@ function assertions(data, analys, kort, regim){
   data.sektorer.forEach(function(s){
     if((klusterRaknat[s.id] || 0) !== s.insynKluster) varningar.push("insynKluster " + s.id + " (" + s.insynKluster + ") ≠ aktielistan (" + (klusterRaknat[s.id] || 0) + ")");
   });
+  /* P10 — KADENS: kontraktet uttömmande + trenivåbeteendet med manipulerat vintage */
+  if(kadensKarta && kadensKarta.okanda.length){
+    varningar.push("KADENS: sökvägar utan gräns: " + kadensKarta.okanda.slice(0, 3).join(", "));
+  }
+  if(data.lage !== "LIVE"){
+    try{
+      var p10data = JSON.parse(JSON.stringify(data));
+      p10data.sektorer[0].flodeM = { v: 5, kalla: "test", vintage: "2024-01" };
+      var p10karta = byggKadensKarta(p10data);
+      var p10post = null;
+      p10karta.lista.forEach(function(p){ if(p.vag === "sektorer[].flodeM" && p.niva === 2) p10post = p; });
+      if(!p10post) varningar.push("P10: manipulerat vintage (2024-01) gav inte nivå 2");
+      var sparadKarta = kadensKarta;
+      kadensKarta = p10karta;
+      var p10analys = analysera(p10data);
+      kadensKarta = sparadKarta;
+      var p10s0 = p10analys.lista[0];
+      if(p10s0.komp.flodesvandning !== null) varningar.push("P10: förfallet flodeM viktades inte bort ur linsen");
+    }catch(fel){ varningar.push("P10: " + fel.message); }
+  }
+  /* P11 — paritet: pipelinens rek-spegel (screen.json.meta.koprek) ska ge samma
+     regimpoäng, topp-4-sektorer och konviktioner som frontendmotorn. Divergens =
+     röd flagga (portering har driftat). Hoppar om kadensvakten nollat fält. */
+  if(regim && screenGlobal && screenGlobal.meta && screenGlobal.meta.koprek &&
+     kadensKarta && !kadensKarta.lista.some(function(p){ return p.niva === 2; })){
+    var p11 = screenGlobal.meta.koprek;
+    if(p11.regimPoang !== regim.poang){
+      varningar.push("P11: pipelinens regimpoäng " + p11.regimPoang + " ≠ frontendens " + regim.poang);
+    }
+    var p11analys = analysera(data);
+    var p11topp4 = p11analys.tidigOrdning.slice(0, 4).map(function(x){ return x.s.id; }).sort().join(",");
+    if(p11topp4 !== (p11.tidigTopp4 || []).slice().sort().join(",")){
+      varningar.push("P11: tidigTopp4 divergerar (pipeline " + (p11.tidigTopp4 || []).join("/") + ")");
+    }
+  }
   /* P9 — regimgrinden: med syntetisk riskaptit 35 ska motorn vägra nya rek */
   try{
     var p9 = beraknaKoprek(data, analys, kort, { poang: 35 }, null);
@@ -2198,13 +2359,17 @@ function renderaRadar(data, analys, kort, slut){
     "<span>⇄ flödesdivergens</span></div>";
   $("#radar-slutsats").textContent = slut.radar;
 
+  var geoLive = false;
   var geopunkter = data.geo.marknader.map(function(mk){
-    return { namn: mk.kort, x: mk.x, y: mk.y, spar: mk.spar, handling: null, puls: false, div: false,
-      aria: mk.namn + ": " + kvadrantAv(mk.x, mk.y), titel: mk.namn + " — " + kvadrantAv(mk.x, mk.y) + " (statisk illustration)" };
+    var xy = geoXY(mk, data);
+    if(xy.live) geoLive = true;
+    return { namn: mk.kort, x: xy.x, y: xy.y, spar: xy.spar, handling: null, puls: xy.puls, div: false,
+      aria: mk.namn + ": " + kvadrantAv(xy.x, xy.y),
+      titel: mk.namn + " — " + kvadrantAv(xy.x, xy.y) + (xy.live ? " · beräknad ur relSerie19 mot " + data.geo.benchmark : " (statisk illustration)") };
   });
   $("#radarhall-geo").innerHTML = renderRRGSvg(geopunkter, {
     id: "G", S: 340, RMAX: 120, RMIN: 18, skala: 3, svep: false, fasEtiketter: true, axelOrd: true, mono: true,
-    aria: "Geografisk rotationsradar mot " + data.geo.benchmark + " (statisk illustration)."
+    aria: "Geografisk rotationsradar mot " + data.geo.benchmark + (geoLive ? "." : " (statisk illustration).")
   });
   $("#geo-slutsats").textContent = slut.geo;
 }
@@ -3196,6 +3361,35 @@ function renderaOversikt(data, analys, kort, regim, slut, koprek){
   var trangst = (mrank.length && mrank[0].rader.length && mrank[0].rader[0].poang != null)
     ? mrank[0].rader[0].rad
     : toppFlaskhals({ rader: allaMegaRader(data) });
+  /* D3: Datahälsa — ren lins över befintliga vintage (inga nya källor) */
+  var KALLGRUPPER = [
+    { namn: "FRED", m: /FRED/i }, { namn: "Yahoo", m: /Yahoo|spot|LME/i },
+    { namn: "EDGAR", m: /EDGAR|SEC/i }, { namn: "FI", m: /FI|insyn|blankning|marknadssok/i },
+    { namn: "FMP/Supabase", m: /FMP|Supabase|Datapanelen|riktkurs/i },
+    { namn: "SSGA-ritual", m: /SSGA/i }, { namn: "Megatrend-ritual", m: /branschdata|GridStatus|bolagsrapport/i },
+    { namn: "AAII", m: /AAII/i }, { namn: "CFTC", m: /CFTC|COT/i }
+  ];
+  var halsa = {};
+  if(kadensKarta){
+    kadensKarta.lista.forEach(function(p){
+      var grupp = null;
+      for(var gi = 0; gi < KALLGRUPPER.length; gi++){
+        if(KALLGRUPPER[gi].m.test(p.kalla || "") || (KALLGRUPPER[gi].namn === "Megatrend-ritual" && /^megatrender/.test(p.vag))){ grupp = KALLGRUPPER[gi].namn; break; }
+      }
+      if(!grupp) grupp = "Kurerat";
+      var h = halsa[grupp] || (halsa[grupp] = { yngst: null, varsta: 0, antal: 0 });
+      h.antal++;
+      if(p.alder != null && (h.yngst == null || p.alder < h.yngst)) h.yngst = p.alder;
+      if(p.niva > h.varsta) h.varsta = p.niva;
+    });
+  }
+  var halsoHtml = Object.keys(halsa).sort().map(function(g){
+    var h = halsa[g];
+    var punkt = h.varsta === 2 ? "rod" : h.varsta === 1 ? "gul" : "gron";
+    return krad('<span class="punkt ' + punkt + '"></span> ' + esc(g),
+      (h.yngst == null ? "—" : h.yngst + " d") + " · " + h.antal + " fält");
+  }).join("");
+
   var toppRek = koprek && koprek.rek && koprek.rek.length ? koprek.rek[0] : null;
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
@@ -3263,13 +3457,19 @@ function renderaOversikt(data, analys, kort, regim, slut, koprek){
         hamtaMegatrender(data).map(function(t){ return t.namn + " (" + t.vintage + ")"; }).join(" · ")),
       krad(esc(trangst.namn), esc(trangst.celler[0].v) + " kö · " + esc(trangst.celler[1].v)) +
       krad("Väntetiderna", allaMegaRader(data).filter(function(r){ return r.celler[1] && r.celler[1].pil === "upp"; }).length + " av " + allaMegaRader(data).length + " växer"),
-      "Pengarna i en megatrend finns där kön är längst.");
+      "Pengarna i en megatrend finns där kön är längst.") +
+    '<div class="modulkort" title="Datahälsa: senaste uppdatering och värsta förfallonivå per källgrupp — genererad ur fältens vintage mot KADENS.md-gränserna. Pipelinefel syns här inom en kadensperiod.">' +
+      '<span class="krubrik">Datahälsa</span>' +
+      '<span class="knyckeltal">' + halsoHtml + "</span>" +
+      '<span class="kslutsats">Grön = inom kadens · gul = förfallen · röd = 2× gräns (viktas bort ur poängen).</span>' +
+    "</div>";
   if(tpaS) uppdateraKortTpa(tpaS);
 }
 
 var dataGlobal = null, screenGlobal = null;
 function renderaAllt(data, tr, screen){
   if(screen !== undefined) screenGlobal = screen;
+  kadensKarta = byggKadensKarta(data); /* KADENS: före all analys — vakterna gäller allt */
   dataGlobal = data;
   AKTIVT_LAGE = data.lage === "LIVE" ? "LIVE" : "TEST";
   var mark = $("#lagesmark");

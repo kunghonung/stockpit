@@ -1,26 +1,25 @@
-name: Daglig screening
+name: Veckojobbet
 
-# Konvergensscreenern: poängsätter hela universum mot de sju signalerna
-# (REGELVERK.md §2) och skriver data/screen.json. Vardagar 04:30 UTC —
-# efter US-stängning, före svensk börsöppning. Udda minut av samma skäl
-# som update.yml (GitHubs schemaläggare tappar högtrafikslots).
+# S9: de långsamma fälten — estimatproxy, PE-historik, AAII, COT-crowding,
+# AI-capex och track record-utfall. Fredagar efter US-stängning; udda minut
+# av samma skäl som update.yml.
 
 on:
   schedule:
-    - cron: "23 4 * * 1-5"
+    - cron: "43 23 * * 5"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: daglig-screening
+  group: veckojobbet
   cancel-in-progress: false
 
 jobs:
-  screena:
+  vecka:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 15
     steps:
       - name: Hämta koden
         uses: actions/checkout@v5
@@ -30,20 +29,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Kör screenern
+      - name: Kör veckojobbet
         env:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-        run: python scripts/screen_data.py
+        run: python scripts/weekly.py
 
       - name: Committa vid förändring
         run: |
           git config user.name "stockpit-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash
-          git add data/screen.json data/screen_state.json data/data.json
+          git add data/data.json data/state.json data/pe_historik.json data/cot_historik.json data/track_record.json
           if git diff --cached --quiet; then
             echo "Ingen förändring — ingen commit."
           else
-            git commit -m "data: daglig screening $(date -u +'%Y-%m-%d')"
+            git commit -m "data: veckojobbet $(date -u +'%Y-%m-%d')"
             git push
           fi

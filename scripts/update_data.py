@@ -279,6 +279,33 @@ def uppdatera_sektorserier(data, idag, forra):
             s["rsRank"] = rank[s["id"]]
 
 
+GEO_SYMBOLER = {"SXXP": "^STOXX", "EEM": "EEM", "NKY": "^N225", "MCHI": "MCHI",
+                "SPX": "SPY", "NDX": "QQQ", "INDA": "INDA"}
+
+
+def uppdatera_geo(data, idag):
+    """Geo-RRG mot ACWI — samma relSerie19-matte som sektorerna (S9-A1).
+    Frontendens beraknaRRG räknar position ur serierna; kurerade x/y blir fallback."""
+    _, acwi = yahoo_chart("ACWI", "8mo", "1wk")
+    geo = data.setdefault("geo", {})
+    per_kort = {m.get("kort"): m for m in geo.get("marknader", [])}
+    for kort, symbol in GEO_SYMBOLER.items():
+        _, c = yahoo_chart(symbol, "8mo", "1wk")
+        n = min(len(c), len(acwi))
+        rel = [c[len(c) - n + i] / acwi[len(acwi) - n + i] for i in range(n)]
+        if len(rel) < 19:
+            raise ValueError(f"{symbol}: för kort veckoserie ({len(rel)})")
+        rel19 = rel[-19:]
+        bas = rel19[0]
+        m = per_kort.get(kort)
+        if m is not None:
+            m["relSerie19"] = [round(v / bas * 100, 2) for v in rel19]
+        time.sleep(0.4)
+    geo["kalla"] = ("Yahoo veckoserier mot ACWI (proxys: "
+                    + ", ".join(f"{k}={v}" for k, v in GEO_SYMBOLER.items()) + ")")
+    geo["vintage"] = idag.isoformat()
+
+
 def uppdatera_edgar(data, idag):
     igar = (idag - timedelta(days=3)).isoformat()
     r = hamta("https://efts.sec.gov/LATEST/search-index"
@@ -378,6 +405,7 @@ def main():
                      ("metaller/olja (Yahoo)", lambda: uppdatera_metaller(data, idag)),
                      ("kvoter (Yahoo)", lambda: uppdatera_kvoter(data, idag)),
                      ("sektorserier (Yahoo)", lambda: uppdatera_sektorserier(data, idag, forra)),
+                     ("geo-RRG (Yahoo)", lambda: uppdatera_geo(data, idag)),
                      ("US-insyn (EDGAR)", lambda: uppdatera_edgar(data, idag)),
                      ("SE-insyn (FI-export)", lambda: uppdatera_fi(data, state, idag))):
         try:
