@@ -414,9 +414,13 @@ li.oppen .sigdetalj{ display:block; }
 .kallradtext{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); flex:none; }
 
 .matris{ width:100%; }
+.mingress{ font-size:var(--fs11); color:var(--damp); line-height:1.4; margin-bottom:var(--s4); }
+.msek{ font-size:var(--fs11); font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--svag); margin:var(--s8) 0 2px; }
+.msek::first-letter{ color:var(--accent); }
+.hjalpmark{ cursor:help; border-bottom:1px dotted var(--svag); }
 .mrad{ display:grid; grid-template-columns:92px 1fr 1fr 1fr; gap:var(--s4); align-items:center; }
 .mrad.huvud{ margin-bottom:var(--s4); }
-.mrad.huvud span{ font-size:var(--fs11); font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--svag); text-align:right; white-space:nowrap; }
+.mrad.huvud span{ font-size:var(--fs11); font-weight:600; letter-spacing:.02em; text-transform:uppercase; color:var(--svag); text-align:right; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .mrad.huvud span:first-child{ text-align:left; }
 .mrad .fnamn{ font-size:var(--fs12); font-weight:500; color:var(--navy); white-space:nowrap; overflow:hidden; }
 .cell{
@@ -1805,6 +1809,23 @@ function renderaMakro(data, analys, slut){
 }
 
 /* ---- Megatrend ---- */
+/* Klarspråkslager: datat behåller facktermerna, vyn översätter och förklarar.
+   Okända namn/kolumner faller tillbaka på råtexten — hellre oformaterat än fel. */
+var MEGA_VAD_AR = {
+  "Transformatorer": "Omvandlar ström mellan elnätet och datacentret. Utan en ny transformator kan hallen inte kopplas in — och väntetiden är flera år.",
+  "HVDC-kabel": "Högspänningskabel som flyttar stora mängder el långa sträckor — till havsvind och mellan länder.",
+  "Kylsystem": "AI-servrar drar så mycket ström att hallarna måste vätskekylas — vanlig luftkyla räcker inte.",
+  "Elnätskapacitet": "Elnätets förmåga att ansluta nya storförbrukare. Kön här mäts i år, inte månader.",
+  "Hyperscalers": "Molnjättarna: Microsoft, Google, Amazon och Meta. Deras byggbudgetar är efterfrågan som skapar alla köer nedanför."
+};
+var MEGA_VISNING = { "Hyperscalers": "Molnjättarna" };
+var MEGA_KOLUMN = {
+  "Backl. å/å": { namn: "Kö", tips: "Kön växer: orderböckerna är så här mycket större än för ett år sedan (backlogg å/å) — kön blir längre trots att fabrikerna går för fullt." },
+  "Ledtid": { namn: "Väntan", tips: "Väntetid från beställning till leverans (ledtid). Pil upp = kön växer fortfarande." },
+  "Marg-Δ": { namn: "Vinst", tips: "Tillverkarnas vinstmarginal, förändring i procentenheter. Kvittot på prismakt: en kö utan marginallyft är bara en kö — med marginallyft kan säljaren ta betalt." }
+};
+var MEGA_EFTERFRAGAN = { "Hyperscalers": true };
+
 function renderaMegatrend(data, analys, kort){
   var m = data.megatrend;
   satLin("lin-mega", "branschdata", m.vintage);
@@ -1815,46 +1836,66 @@ function renderaMegatrend(data, analys, kort){
       .filter(function(x){ return x.a.tema.indexOf(tema) > -1; })
       .map(function(x){ return x.a.ticker + " #" + x.rank; });
   };
-  var rader = m.rader.map(function(rad, ri){
-    var celler = rad.celler.map(function(c, ci){
-      return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
-        esc(rad.namn) + " · " + esc(m.kolumner[ci]) + ": " + esc(c.v) + " · Källa: " + esc(c.k) + " · " + esc(m.vintage) + '">' +
-        esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
-    }).join("");
-    var ut = '<div class="mrad"><span class="fnamn" title="' + esc(rad.namn) + '">' + esc(rad.namn) + "</span>" + celler + "</div>";
-    var nasta = m.rader[ri + 1];
-    if(!nasta || nasta.sektor !== rad.sektor){
-      var rek = rekFor(rad.sektor);
-      var grupp = m.rader.filter(function(r){ return r.sektor === rad.sektor; });
-      var teman = [];
-      grupp.forEach(function(r){ if(teman.indexOf(r.tema) === -1) teman.push(r.tema); });
-      var refs = [];
-      teman.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
-      refs = refs.slice(0, 2).join(" · ");
-      var kons;
-      if(rek){
-        kons = rek.handling === "minska"
-          ? "Stark flaskhals — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Exponering via " + refs + "." : "")
-          : (grupp.length > 1 ? "Alla " + grupp.length + " stöder " : "Stöder ") + "<b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · " + refs : "");
-      } else {
-        kons = (grupp.length > 1 ? grupp.length + " flaskhalsar utan aktiv rekommendation för " : "Ingen aktiv rekommendation för ") + esc(rad.sektor) + (refs ? " · exponering: " + refs : "");
+  var kolNamn = function(kol){ return MEGA_KOLUMN[kol] ? MEGA_KOLUMN[kol].namn : kol; };
+
+  function renderaGrupp(lista){
+    return lista.map(function(rad, ri){
+      var celler = rad.celler.map(function(c, ci){
+        return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
+          esc(rad.namn) + " · " + esc(kolNamn(m.kolumner[ci])) + ": " + esc(c.v) + " · " + esc(c.k) + " · " + esc(m.vintage) + '">' +
+          esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
+      }).join("");
+      var visning = MEGA_VISNING[rad.namn] || rad.namn;
+      var vadAr = MEGA_VAD_AR[rad.namn] || rad.namn;
+      var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr) + '">' + esc(visning) + "</span>" + celler + "</div>";
+      var nasta = lista[ri + 1];
+      if(!nasta || nasta.sektor !== rad.sektor){
+        var rek = rekFor(rad.sektor);
+        var grupp = lista.filter(function(r){ return r.sektor === rad.sektor; });
+        var teman = [];
+        grupp.forEach(function(r){ if(teman.indexOf(r.tema) === -1) teman.push(r.tema); });
+        var refs = [];
+        teman.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
+        refs = refs.slice(0, 2).join(" · ");
+        var kons;
+        if(rek){
+          kons = rek.handling === "minska"
+            ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + refs + "." : "")
+            : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + refs : "");
+        } else {
+          kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs || "se konvergenslistan");
+        }
+        ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
       }
-      ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
-    }
-    return ut;
-  }).join("");
-  var topp = m.rader.slice().sort(function(a, b){
+      return ut;
+    }).join("");
+  }
+
+  var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
+  var flaskhalsar = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
+
+  var topp = flaskhalsar.slice().sort(function(a, b){
     return b.celler.reduce(function(x, c){ return x + c.i; }, 0) - a.celler.reduce(function(x, c){ return x + c.i; }, 0);
-  })[0];
+  })[0] || m.rader[0];
   var rekT = rekFor(topp.sektor);
   var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
-  var syntes = "<b>" + esc(topp.namn) + ":</b> " + esc(m.kolumner[1].toLowerCase()) + " " + esc(topp.celler[1].v) +
-    " och " + esc(m.kolumner[0].toLowerCase()) + " " + esc(topp.celler[0].v) +
-    (rekT ? " — stöder <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
-      : " — ingen aktiv sektorrekommendation" + (toppRefs ? "; exponering via " + toppRefs + "." : "."));
+  var syntes = "<b>3 · Slutsats — trängst: " + esc(topp.namn) + ".</b> " +
+    esc(topp.celler[1].v) + " väntetid och kön +" + esc(topp.celler[0].v.replace(/^\+/, "")) + "/år" +
+    (rekT ? " — talar för <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
+      : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? toppRefs + "." : "enskilda aktier."));
+
   $("#megakropp").innerHTML =
-    '<div class="matris"><div class="mrad huvud"><span>Flaskhals</span>' + m.kolumner.map(function(kol){ return "<span>" + esc(kol) + "</span>"; }).join("") + "</div>" +
-    rader + "</div>" + '<p class="syntes">' + syntes + "</p>";
+    '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera.</p>' +
+    '<div class="msek">1 · Efterfrågan: molnjättarna bygger</div>' +
+    '<div class="matris">' + renderaGrupp(efterfragan) + "</div>" +
+    '<div class="msek">2 · Köerna det skapar</div>' +
+    '<div class="matris"><div class="mrad huvud"><span>Flaskhals</span>' +
+    m.kolumner.map(function(kol){
+      var k = MEGA_KOLUMN[kol];
+      return '<span title="' + esc(k ? k.tips : kol) + '"' + (k ? ' class="hjalpmark"' : "") + ">" + esc(kolNamn(kol)) + "</span>";
+    }).join("") + "</div>" +
+    renderaGrupp(flaskhalsar) + "</div>" +
+    '<p class="syntes">' + syntes + "</p>";
 }
 
 /* ============ Klocka, stämpel, inläsning ============ */
