@@ -1,0 +1,48 @@
+name: Veckojobbet
+
+# S9: de långsamma fälten — estimatproxy, PE-historik, AAII, COT-crowding,
+# AI-capex och track record-utfall. Fredagar efter US-stängning; udda minut
+# av samma skäl som update.yml.
+
+on:
+  schedule:
+    - cron: "43 23 * * 5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veckojobbet
+  cancel-in-progress: false
+
+jobs:
+  vecka:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v5
+
+      - name: Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Kör veckojobbet
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: python scripts/weekly.py
+
+      - name: Committa vid förändring
+        run: |
+          git config user.name "stockpit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash
+          git add data/data.json data/state.json data/pe_historik.json data/cot_historik.json data/track_record.json
+          if git diff --cached --quiet; then
+            echo "Ingen förändring — ingen commit."
+          else
+            git commit -m "data: veckojobbet $(date -u +'%Y-%m-%d')"
+            git push
+          fi
