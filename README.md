@@ -1,7 +1,10 @@
 # Stockpit
 
-AI-driven investeringscockpit på en skärm. En enda `index.html`, noll beroenden i frontend —
-all data läses från `data/data.json` som uppdateras automatiskt var 30:e minut av GitHub Actions.
+AI-driven analysplattform i fem vyer bakom en hash-router: **Översikt** (hero + modulkort),
+**Sektorrotation**, **Makro & Likviditet**, **Aktier & Konsensus** och **Trångsektorer**.
+Fortfarande en enda `index.html`, noll beroenden i frontend — all data läses från
+`data/data.json` som uppdateras automatiskt var 30:e minut av GitHub Actions.
+Gamla panelankare (`#rek`, `#aktier` …) redirectar till rätt vy.
 
 **Live:** aktiveras via GitHub Pages (Settings → Pages → Deploy from a branch → `main` / root).
 
@@ -28,7 +31,7 @@ Kontraktet för varje fält finns i [DATA_SCHEMA.md](DATA_SCHEMA.md).
 
 | Fil | Roll |
 |---|---|
-| `index.html` | Hela cockpiten — motor, vy och en inbäddad TEST-kopia av datat |
+| `index.html` | Hela plattformen — router, fem vyer, motor och en inbäddad TEST-kopia av datat |
 | `data/data.json` | LIVE-ögonblicksbilden (skrivs av botten) |
 | `data/sample_data.json` | Testdatat — byte-identiskt med det inbäddade blocket |
 | `data/state.json` | Bottens minne (senast sedda FI-publicering, felräknare) |
