@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-21",
-  "genererad": "2026-07-21T18:38+00:00",
+  "genererad": "2026-07-21T20:24+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         115.56,
-        117.71
+        117.91
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.6,
-        95.65
+        95.09
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 11,
+      "rsRank": 9,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         88.45,
-        87.12
+        87.1
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 11,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         87.4,
-        87.33
+        86.8
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         88.66,
-        86.98
+        87.1
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.98,
-        94.24
+        94.79
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         84.23,
-        83.37
+        83.49
       ]
     },
     {
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         96.59,
-        95.77
+        95.73
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.14,
-        78.77
+        79.25
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         100.16,
-        99.74
+        99.45
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         92.67,
-        92.23
+        92.1
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.1,
-      "delta": "+0,6 · 1 v",
+      "varde": 17.0,
+      "delta": "+0,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 73.0,
+      "delta": "−5 · 1 v",
       "trosklar": [
         100,
         130
@@ -828,7 +828,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 73.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.1,
+      "varde": 17.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -863,22 +863,22 @@
         "30Y"
       ],
       "nu": [
-        3.71,
-        4.18,
-        4.28,
-        4.55,
-        5.06
+        3.73,
+        4.21,
+        4.33,
+        4.6,
+        5.11
       ],
       "forr": [
-        3.64,
-        4.05,
-        4.16,
-        4.43,
+        3.68,
+        4.2,
+        4.27,
+        4.49,
         4.93
       ],
       "kalla": "FRED",
-      "vintage": "2026-07-17",
-      "not": "Flackande 2s10s: −1 bp/mån."
+      "vintage": "2026-07-20",
+      "not": "Brantande 2s10s: +10 bp/mån."
     },
     "bredd": {
       "over50": 62,
@@ -957,16 +957,16 @@
       "vintage": "2026-W29"
     },
     "realranta": {
-      "varde": "2,31 %",
+      "varde": "2,35 %",
       "pil": "upp",
-      "delta": "+17 bp · 1 mån",
+      "delta": "+12 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-07-17"
+      "vintage": "2026-07-20"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4089",
+      "varde": "4088",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−2,2 %",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,26",
+      "varde": "59,03",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−9,6 %",
+      "delta4v": "−9,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,53",
+      "varde": "6,52",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,7 %",
+      "delta4v": "+2,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-21"
     },
     "olja": {
-      "v": 90.98,
+      "v": 91.37,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-21"
     }
@@ -1685,7 +1685,7 @@
           101.6,
           101.76,
           101.93,
-          101.58
+          101.6
         ]
       },
       {
@@ -1726,7 +1726,7 @@
           110.04,
           107.29,
           107.76,
-          108.55
+          108.49
         ]
       },
       {
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.83,
-          96.26
+          96.25
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           111.51,
           111.5,
           104.67,
-          106.84
+          106.83
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           103.42,
           99.53,
           100.29,
-          101.95
+          101.9
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           82.7,
           83.85,
           85.92,
-          84.86
+          84.8
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           91.81,
           92.66,
           92.29,
-          91.68
+          91.65
         ]
       }
     ],
@@ -1957,13 +1957,13 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
+          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
         },
         {
           "datum": "2026-07-20",
-          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
+          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
         },
         {
           "datum": "2026-07-20",
@@ -1972,8 +1972,8 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
+          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
         },
         {
           "datum": "2026-07-20",
@@ -1992,10 +1992,153 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-21T18:38+00:00"
+      "vintage": "2026-07-21T20:24+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-21 21:34:49",
+          "emittent": "Knowit AB (publ)",
+          "person": "Carin Strindmark",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3150,0",
+          "enhet": "Antal",
+          "pris": "88,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 21:21:39",
+          "emittent": "Cint Group AB (publ)",
+          "person": "Patrick Comer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "302538,0",
+          "enhet": "Antal",
+          "pris": "6,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 21:21:22",
+          "emittent": "Cint Group AB (publ)",
+          "person": "Patrick Comer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "302538,0",
+          "enhet": "Antal",
+          "pris": "6,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 21:21:05",
+          "emittent": "Cint Group AB (publ)",
+          "person": "Patrick Comer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "302538,0",
+          "enhet": "Antal",
+          "pris": "6,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 21:20:33",
+          "emittent": "Cint Group AB (publ)",
+          "person": "Patrick Comer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "11197325,0",
+          "enhet": "Antal",
+          "pris": "6,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "666866,0",
+          "enhet": "Antal",
+          "pris": "140,4792",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "188772,0",
+          "enhet": "Antal",
+          "pris": "140,5494",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "210061,0",
+          "enhet": "Antal",
+          "pris": "140,5558",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "33002,0",
+          "enhet": "Antal",
+          "pris": "139,1500",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1029,0",
+          "enhet": "Antal",
+          "pris": "140,8702",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "270,0",
+          "enhet": "Antal",
+          "pris": "140,8000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "650000,0",
+          "enhet": "Antal",
+          "pris": "140,6462",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 20:55:40",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Pär Boman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "750000,0",
+          "enhet": "Antal",
+          "pris": "140,5150",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-21 19:46:35",
           "emittent": "Sivers Semiconductors AB",
@@ -2402,154 +2545,11 @@
           "enhet": "Antal",
           "pris": "13,5932",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 15:22:53",
-          "emittent": "CTEK AB (publ)",
-          "person": "Henrik Fagrenius",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "57648,0",
-          "enhet": "Antal",
-          "pris": "14,3389",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 15:17:24",
-          "emittent": "Alimak Group AB (publ)",
-          "person": "Olof Stålnacke",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "6000,0",
-          "enhet": "Antal",
-          "pris": "123,22",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 14:08:24",
-          "emittent": "Bufab AB (publ)",
-          "person": "Erik Karl Oskar Lundén",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen ökning",
-          "volym": "24545,0",
-          "enhet": "Antal",
-          "pris": "81,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 14:03:25",
-          "emittent": "Bufab AB (publ)",
-          "person": "Erik Karl Oskar Lundén",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen minskning",
-          "volym": "4909,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 14:00:22",
-          "emittent": "Bufab AB (publ)",
-          "person": "Erik Karl Oskar Lundén",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "7091,0",
-          "enhet": "Antal",
-          "pris": "282,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 13:59:40",
-          "emittent": "Humble Group AB",
-          "person": "Noel Abdayem",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "35904,0",
-          "enhet": "Antal",
-          "pris": "6,026",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 13:18:02",
-          "emittent": "Volvo Car AB",
-          "person": "Erik Severinson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "15306,0",
-          "enhet": "Antal",
-          "pris": "19,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 13:08:01",
-          "emittent": "Billerud AB (publ)",
-          "person": "Douglas Schwartz",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "5020,0",
-          "enhet": "Antal",
-          "pris": "69,2095",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 13:07:35",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Mahmood Ladha",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "61936,0",
-          "enhet": "Antal",
-          "pris": "457,047220",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 13:07:35",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Mahmood Ladha",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "61936,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:50:46",
-          "emittent": "Gomero Group AB",
-          "person": "Johan Sigfrid Rask",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "13,21",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:50:46",
-          "emittent": "Gomero Group AB",
-          "person": "Johan Sigfrid Rask",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "766,0",
-          "enhet": "Antal",
-          "pris": "12,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 12:50:46",
-          "emittent": "Gomero Group AB",
-          "person": "Johan Sigfrid Rask",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10779,0",
-          "enhet": "Antal",
-          "pris": "12,61",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 25,
+      "nyaSenasteKorning": 13,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-21T18:38+00:00"
+      "vintage": "2026-07-21T20:24+00:00"
     }
   }
 }
