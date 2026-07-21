@@ -1937,6 +1937,16 @@ function kadensNivaFor(faltobj){
   return post ? post.niva : 0;
 }
 
+/* Geo-marknad: beräknad position ur relSerie19 när pipelinen fyllt den (S9-A1),
+   annars kurerade x/y (statisk illustration) — slutsatser och radar delar samma läsning. */
+function geoXY(mk, data){
+  if(mk.relSerie19 && mk.relSerie19.length >= 19){
+    var rrg = beraknaRRG(mk.relSerie19, data.rrgMetod);
+    return { x: rrg.x, y: rrg.yLang, spar: rrg.trail.map(function(t){ return [t.x, t.y]; }), puls: rrg.puls, live: true };
+  }
+  return { x: mk.x, y: mk.y, spar: mk.spar, puls: false, live: false };
+}
+
 /* Delade hjälpare — används av både fullvyer och översiktens kort (ingen dubblerad logik) */
 /* REGELVERK §2: konvergens → styrka → IN → ES → VÄ. Delpoäng används när de finns
    (screenerlistan); kurerade poster utan delpoäng får binär närvaro som tie-breaker. */
@@ -1971,8 +1981,9 @@ function slutsatser(data, analys, regim, kort){
   s.radar = pulser.length
     ? "Obekräftade vändningar (puls): " + pulser.join(" · ") + " — kort fönster har bytt kvadrant, långt har inte hunnit med."
     : "Inga obekräftade kvadrantbyten just nu.";
-  var geoLedareSvag = data.geo.marknader.filter(function(m){ return m.x > 0.5 && m.y < 0; }).sort(function(a, b){ return b.x - a.x; })[0];
-  var geoForb = data.geo.marknader.filter(function(m){ return m.x < 0 && m.y > 0; }).map(function(m){ return m.namn; });
+  var geoPos = data.geo.marknader.map(function(m){ var p = geoXY(m, data); p.namn = m.namn; return p; });
+  var geoLedareSvag = geoPos.filter(function(m){ return m.x > 0.5 && m.y < 0; }).sort(function(a, b){ return b.x - a.x; })[0];
+  var geoForb = geoPos.filter(function(m){ return m.x < 0 && m.y > 0; }).map(function(m){ return m.namn; });
   s.geo = (geoLedareSvag ? geoLedareSvag.namn + " leder men försvagas; " : "") +
     (geoForb.length ? geoForb.join(" & ") + " förbättras — men juniflödena lämnade Europa (vintage-gap: flöden 2026-06, RRG v.29)." : "ingen tydlig geografisk rotation.");
   var kanda = data.sektorer.filter(function(x){ return x.flodeM; });
@@ -2333,13 +2344,17 @@ function renderaRadar(data, analys, kort, slut){
     "<span>⇄ flödesdivergens</span></div>";
   $("#radar-slutsats").textContent = slut.radar;
 
+  var geoLive = false;
   var geopunkter = data.geo.marknader.map(function(mk){
-    return { namn: mk.kort, x: mk.x, y: mk.y, spar: mk.spar, handling: null, puls: false, div: false,
-      aria: mk.namn + ": " + kvadrantAv(mk.x, mk.y), titel: mk.namn + " — " + kvadrantAv(mk.x, mk.y) + " (statisk illustration)" };
+    var xy = geoXY(mk, data);
+    if(xy.live) geoLive = true;
+    return { namn: mk.kort, x: xy.x, y: xy.y, spar: xy.spar, handling: null, puls: xy.puls, div: false,
+      aria: mk.namn + ": " + kvadrantAv(xy.x, xy.y),
+      titel: mk.namn + " — " + kvadrantAv(xy.x, xy.y) + (xy.live ? " · beräknad ur relSerie19 mot " + data.geo.benchmark : " (statisk illustration)") };
   });
   $("#radarhall-geo").innerHTML = renderRRGSvg(geopunkter, {
     id: "G", S: 340, RMAX: 120, RMIN: 18, skala: 3, svep: false, fasEtiketter: true, axelOrd: true, mono: true,
-    aria: "Geografisk rotationsradar mot " + data.geo.benchmark + " (statisk illustration)."
+    aria: "Geografisk rotationsradar mot " + data.geo.benchmark + (geoLive ? "." : " (statisk illustration).")
   });
   $("#geo-slutsats").textContent = slut.geo;
 }
