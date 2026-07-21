@@ -37,7 +37,9 @@ Kontraktet för varje fält finns i [DATA_SCHEMA.md](DATA_SCHEMA.md).
 | `data/state.json` | Bottens minne (senast sedda FI-publicering, felräknare) |
 | `data/track_record.json` | Utfallslogg för track record-fliken |
 | `scripts/update_data.py` | Datainsamlaren (Python 3.12, endast `requests`) |
-| `scripts/screen_data.py` | Konvergensscreenern: hela universum mot sju signaler dagligen (`screen.yml`, vardagar 04:23 UTC) → `data/screen.json` |
+| `scripts/screen_data.py` | Konvergensscreenern: hela universum mot sju signaler dagligen (`screen.yml`, vardagar 04:23 UTC) → `data/screen.json` + bredd + rek-loggning |
+| `scripts/weekly.py` | Veckojobbet (`weekly.yml`, fredagar 23:43 UTC): estimatproxy, PE-historik, AAII-sentiment, COT-crowding, AI-capex, track record-utfall |
+| `KADENS.md` | Färskhetskontraktet: kadens och åldersvakt per fält, trenivåförfall |
 | `scripts/bygg_universum.py` | Bygger `data/universum.json` (S&P 500 ur Wikipedia + kurerad Sthlm-seed) — körs vid behov |
 | `REGELVERK.md` | Normerande: alla listors rankningsnycklar, vikter och konvergenskedjan till KÖPREK |
 | `tpa/` | Backend för TP-acc-fliken: Node-ingest (FMP + Yahoo → Supabase) + SQL-schema; körs av `daily-ingest.yml` vardagar 22:00 UTC med secrets `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY`/`FMP_API_KEY`. Frontenden läser samma Supabase direkt med publik läsnyckel. |

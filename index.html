@@ -1914,7 +1914,7 @@ function byggKadensKarta(data){
         else if(alder == null || grans == null) niva = 1;  /* otolkbar/okontrakterad → gul */
         else if(alder > 2 * grans) niva = 2;
         else if(alder > grans) niva = 1;
-        var post = { vag: normVag, dagar: grans, alder: alder, niva: niva, vintage: obj.vintage };
+        var post = { vag: normVag, dagar: grans, alder: alder, niva: niva, vintage: obj.vintage, kalla: obj.kalla || "" };
         karta.set(obj, post);
         lista.push(post);
       }
@@ -3361,6 +3361,35 @@ function renderaOversikt(data, analys, kort, regim, slut, koprek){
   var trangst = (mrank.length && mrank[0].rader.length && mrank[0].rader[0].poang != null)
     ? mrank[0].rader[0].rad
     : toppFlaskhals({ rader: allaMegaRader(data) });
+  /* D3: Datahälsa — ren lins över befintliga vintage (inga nya källor) */
+  var KALLGRUPPER = [
+    { namn: "FRED", m: /FRED/i }, { namn: "Yahoo", m: /Yahoo|spot|LME/i },
+    { namn: "EDGAR", m: /EDGAR|SEC/i }, { namn: "FI", m: /FI|insyn|blankning|marknadssok/i },
+    { namn: "FMP/Supabase", m: /FMP|Supabase|Datapanelen|riktkurs/i },
+    { namn: "SSGA-ritual", m: /SSGA/i }, { namn: "Megatrend-ritual", m: /branschdata|GridStatus|bolagsrapport/i },
+    { namn: "AAII", m: /AAII/i }, { namn: "CFTC", m: /CFTC|COT/i }
+  ];
+  var halsa = {};
+  if(kadensKarta){
+    kadensKarta.lista.forEach(function(p){
+      var grupp = null;
+      for(var gi = 0; gi < KALLGRUPPER.length; gi++){
+        if(KALLGRUPPER[gi].m.test(p.kalla || "") || (KALLGRUPPER[gi].namn === "Megatrend-ritual" && /^megatrender/.test(p.vag))){ grupp = KALLGRUPPER[gi].namn; break; }
+      }
+      if(!grupp) grupp = "Kurerat";
+      var h = halsa[grupp] || (halsa[grupp] = { yngst: null, varsta: 0, antal: 0 });
+      h.antal++;
+      if(p.alder != null && (h.yngst == null || p.alder < h.yngst)) h.yngst = p.alder;
+      if(p.niva > h.varsta) h.varsta = p.niva;
+    });
+  }
+  var halsoHtml = Object.keys(halsa).sort().map(function(g){
+    var h = halsa[g];
+    var punkt = h.varsta === 2 ? "rod" : h.varsta === 1 ? "gul" : "gron";
+    return krad('<span class="punkt ' + punkt + '"></span> ' + esc(g),
+      (h.yngst == null ? "—" : h.yngst + " d") + " · " + h.antal + " fält");
+  }).join("");
+
   var toppRek = koprek && koprek.rek && koprek.rek.length ? koprek.rek[0] : null;
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
@@ -3428,7 +3457,12 @@ function renderaOversikt(data, analys, kort, regim, slut, koprek){
         hamtaMegatrender(data).map(function(t){ return t.namn + " (" + t.vintage + ")"; }).join(" · ")),
       krad(esc(trangst.namn), esc(trangst.celler[0].v) + " kö · " + esc(trangst.celler[1].v)) +
       krad("Väntetiderna", allaMegaRader(data).filter(function(r){ return r.celler[1] && r.celler[1].pil === "upp"; }).length + " av " + allaMegaRader(data).length + " växer"),
-      "Pengarna i en megatrend finns där kön är längst.");
+      "Pengarna i en megatrend finns där kön är längst.") +
+    '<div class="modulkort" title="Datahälsa: senaste uppdatering och värsta förfallonivå per källgrupp — genererad ur fältens vintage mot KADENS.md-gränserna. Pipelinefel syns här inom en kadensperiod.">' +
+      '<span class="krubrik">Datahälsa</span>' +
+      '<span class="knyckeltal">' + halsoHtml + "</span>" +
+      '<span class="kslutsats">Grön = inom kadens · gul = förfallen · röd = 2× gräns (viktas bort ur poängen).</span>' +
+    "</div>";
   if(tpaS) uppdateraKortTpa(tpaS);
 }
 

@@ -35,8 +35,8 @@ Ett viktigt förtydligande: **alla beräknade lager är automatiska per definiti
 | Fält/panel | Källa | Färskhetsgräns | Status |
 |---|---|---|---|
 | Sektorestimat `revQ2`/`revRiktning` — i dag kurerade | FMP-aggregat per sektor (andel upprevideringar + medelrevidering, cap-viktat över universum). Märks `kalla: "FMP-aggregat (proxy för FactSet EI)"` — FactSet EI förblir referens vid kurering | 10 d | **S9** |
-| `fwdPE` per sektor — i dag kurerad | FMP, cap-viktat ur universum | 10 d | **S9** |
-| Sentiment (AAII) — i dag kurerad | AAII:s publika undersökningssida (artig hämtning, UA med kontakt); vid fetchfel: behåll föregående + åldersflagga | 14 d | **S9** |
+| `fwdPE` per sektor — kurerad | **Utfall S9:** FMP-gratis saknar forward-P/E; trailing i ett forward-fält vore hittepå. Förblir MANUELL Ö (vakt 120 d); `pe_historik.json` ackumulerar trailing-aggregat som grund för framtida egenberäkning | 120 d | MANUELL Ö |
+| Sentiment (AAII) — i dag kurerad | AAII:s publika undersökningssida — veckostaplarna parsas; 403 på ärlig UA löses med en (1) browserprofil-retry per vecka; vid fetchfel: behåll föregående + åldersflagga | 14 d | **S9** |
 | Crowding/trängsel (`regim.crowding`) — i dag kurerad | CFTC COT (officiell, fri, publiceras fredagar): spekulativ nettopositionering → percentil 0–100. BAML-komponenten utgår ur autoflödet (stängd källa) och noteras i `kalla` | 10 d | **S9** |
 | Track record-utfall (`utfall.v1/v4/v12`) | Yahoo: relativavkastning mot SPY från loggpostens datum; `null` tills mätbart | 8 d | **S9** |
 
@@ -50,7 +50,7 @@ Ett viktigt förtydligande: **alla beräknade lager är automatiska per definiti
 
 | Fält/panel | Ritual | Färskhetsgräns | Status |
 |---|---|---|---|
-| Sektorflöden `flodeM` + `flodenNoter` | Månadsritual (SSGA månadsdata). **S10-utredning:** om SSGA:s flödesrapport finns maskinläsbart (XLSX/CSV) → automatisera; tills det verifierats är detta en ö | 45 d | MANUELL Ö |
+| Sektorflöden `flodeM` + `flodenNoter` | Månadsritual (SSGA månadsdata). **UTREDD 2026-07-21 (S9-D4):** ingen maskinläsbar export hittad — tre URL:er + redirect probade, sidan är JS-driven utan xlsx/csv-länkar. Förblir ö med vakt; omprövas om SSGA publicerar dataexport | 45 d | MANUELL Ö |
 | `fwdPE10y` (10-årssnitt per sektor) | Kvartalsritual; kan på sikt ackumuleras ur egen sparad `fwdPE`-historik i stället för Koyfin | 120 d | MANUELL Ö |
 | Megatrendceller (`megatrender[].rader`) | Kvartalsritual efter rapportsäsong (backloggar/ledtider/marginaler ur bolagsrapporter). Rad-/temaRANKEN räknas automatiskt ur befintliga celler — det är cellinnehållet som är kurerat. S10-kandidat: Marg-Δ-celler via FMP för namngivna leverantörer | 1 kvartal + 30 d | MANUELL Ö |
 | Konvergensidéer `aktier[]` (kurerade topp 5) | Behålls som redaktionellt urval bredvid screenern tills screenern validerats; därefter beslut om avveckling | 30 d | MANUELL Ö (ersätts gradvis av S8) |
