@@ -456,7 +456,9 @@ li.oppen .sigdetalj{ display:block; }
 .korslank{ color:var(--accent); text-decoration:none; }
 .korslank:hover{ text-decoration:underline; }
 .meganot{ font-size:var(--fs11); color:var(--damp); line-height:1.4; margin-top:var(--s4); }
-.megaflikar{ margin:0 0 var(--s8); }
+.megaflikar{ margin:0 0 var(--s8); flex-wrap:wrap; }
+.megaflikar .megarank{ font-family:var(--mono); font-size:var(--fs11); opacity:.7; }
+.megaflikar .megapoang{ font-family:var(--mono); font-size:var(--fs11); font-variant-numeric:tabular-nums; }
 #sida-trang .mrad{ grid-template-columns:128px 1fr 1fr 1fr; }
 #sida-trang .fnamn{ text-overflow:ellipsis; }
 .mrad{ display:grid; grid-template-columns:92px 1fr 1fr 1fr; gap:var(--s4); align-items:center; }
@@ -1871,6 +1873,22 @@ function assertions(data, analys, kort){
   data.sektorer.forEach(function(s){
     if((klusterRaknat[s.id] || 0) !== s.insynKluster) varningar.push("insynKluster " + s.id + " (" + s.insynKluster + ") ≠ aktielistan (" + (klusterRaknat[s.id] || 0) + ")");
   });
+  /* P8 — regressionstest av megatrendpoängen (REGELVERK §3) mot fastställda referensvärden.
+     Körs bara när testdatats fyra teman är lastade — avviker beräkningen är KODEN fel, inte datat. */
+  if(data.lage !== "LIVE" && data.megatrender && data.megatrender.length === 4){
+    var p8ref = { forsvar: 76.1, glp1: 67.5, ai: 62.8, demografi: 18.8 };
+    var p8rank = beraknaMegaRank(data);
+    var p8ordning = p8rank.map(function(r){ return r.tema.id; }).join(",");
+    if(p8ordning !== "forsvar,glp1,ai,demografi"){
+      varningar.push("P8: temaordning " + p8ordning + " ≠ forsvar,glp1,ai,demografi");
+    }
+    p8rank.forEach(function(r){
+      var ref = p8ref[r.tema.id];
+      if(ref != null && (r.poang == null || Math.abs(r.poang - ref) > 0.15)){
+        varningar.push("P8: " + r.tema.id + " = " + (r.poang == null ? "null" : r.poang.toFixed(1)) + " ≠ ref " + ref);
+      }
+    });
+  }
   /* Testkriterierna gäller den seedade TESTDATAN — i LIVE-läge är utfallen
      marknadens sak, inte kriteriers. P3-spärren (rendering) gäller alltid. */
   if(data.lage !== "LIVE"){
@@ -2423,10 +2441,76 @@ function allaMegaRader(data){
   return ut;
 }
 
+/* ============ Megatrendpoäng — REGELVERK.md §3 (beräknas här, aldrig i filen) ============ */
+function megaCellpoang(cell, kolIndex){
+  if(!cell || cell.n == null) return null;
+  var bas;
+  if(kolIndex === 0){ bas = cell.enhet === "man" ? cell.n / 48 * 100 : cell.n / 60 * 100; }
+  else if(kolIndex === 1){ bas = (cell.n - 3) / 45 * 100; }
+  else { bas = cell.n / 4 * 100; }
+  bas = Math.max(0, Math.min(100, bas));
+  if(cell.pil === "upp") bas += 10;
+  else if(cell.pil === "ned") bas -= 10;
+  return Math.max(0, Math.min(100, bas));
+}
+var MEGA_RADVIKT = [0.4, 0.3, 0.2]; /* kö / ledtid / marginal — renormeras vid null */
+function megaRadpoang(rad){
+  var summa = 0, vikt = 0, medN = 0, utanApprox = 0;
+  rad.celler.forEach(function(c, i){
+    var p = megaCellpoang(c, i);
+    if(p != null){ summa += p * MEGA_RADVIKT[i]; vikt += MEGA_RADVIKT[i]; medN++; }
+    if(!c || !/approx/i.test(c.k || "")) utanApprox++;
+  });
+  if(!vikt) return { poang: null, approx: rad.celler.some(function(c){ return /approx/i.test((c && c.k) || ""); }) };
+  var basp = summa / vikt;
+  var verifiering = 0.85 + 0.15 * (utanApprox / rad.celler.length);
+  var tackning = 0.70 + 0.30 * (medN / rad.celler.length);
+  return { poang: basp * verifiering * tackning, approx: utanApprox < rad.celler.length };
+}
+function megaCrowdingFlagga(temaId, data){
+  if(temaId !== "ai" || !data.regim) return false;
+  var f = data.regim.aiCapex;
+  var v = f == null ? null : (typeof f === "number" ? f : f.v);
+  return v != null && v > 1.3;
+}
+/* Rankar teman + rader. Returnerar fallande lista:
+   [{tema, poang, komponenter:{topp3, bredd, crowding}, approx, rader:[{rad, poang, approx}]}] */
+function beraknaMegaRank(data){
+  return hamtaMegatrender(data).map(function(m){
+    var poangRader = m.rader
+      .filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; })
+      .map(function(r){ var rp = megaRadpoang(r); return { rad: r, poang: rp.poang, approx: rp.approx }; })
+      .sort(function(a, b){
+        if(a.poang == null && b.poang == null) return 0;
+        if(a.poang == null) return 1;
+        if(b.poang == null) return -1;
+        return b.poang - a.poang;
+      });
+    var medPoang = poangRader.filter(function(r){ return r.poang != null; });
+    var topp3 = medPoang.slice(0, 3);
+    var topp3snitt = topp3.length ? topp3.reduce(function(s, r){ return s + r.poang; }, 0) / topp3.length : null;
+    var bredd = topp3snitt == null ? 0 : Math.min(Math.max(medPoang.filter(function(r){ return r.poang >= 60; }).length - 1, 0), 3) * 5;
+    var crowding = megaCrowdingFlagga(m.id, data) ? -10 : 0;
+    return {
+      tema: m,
+      poang: topp3snitt == null ? null : topp3snitt + bredd + crowding,
+      komponenter: { topp3: topp3snitt, bredd: bredd, crowding: crowding },
+      approx: topp3.some(function(r){ return r.approx; }),
+      rader: poangRader
+    };
+  }).sort(function(a, b){
+    if(a.poang == null && b.poang == null) return 0;
+    if(a.poang == null) return 1;
+    if(b.poang == null) return -1;
+    return b.poang - a.poang;
+  });
+}
+
 var megaAktivtTema = null, megaSenasteArgs = null;
 function renderaMegatrend(data, analys, kort){
   megaSenasteArgs = [data, analys, kort];
-  var teman = hamtaMegatrender(data);
+  var rank = beraknaMegaRank(data);
+  var teman = rank.map(function(r){ return r.tema; }); /* flikordningen ÄR rankingen (§3) */
   if(!teman.length){ $("#megakropp").innerHTML = ""; return; }
   if(!megaAktivtTema || !teman.some(function(t){ return t.id === megaAktivtTema; })) megaAktivtTema = teman[0].id;
 
@@ -2443,7 +2527,9 @@ function renderaMegatrend(data, analys, kort){
     return refs.replace(/([A-ZÅÄÖ]{2,6}) #(\d+)/g, '<a class="korslank" href="#/aktier-konsensus" title="Öppna konvergenslistan — $1 är #$2 i rankingen">$1 #$2</a>');
   };
 
-  function temaHtml(m){
+  function temaHtml(m, temaRank){
+    var radPoang = {};
+    (temaRank ? temaRank.rader : []).forEach(function(r){ radPoang[r.rad.namn] = r; });
     function renderaGrupp(lista){
       return lista.map(function(rad, ri){
         var celler = rad.celler.map(function(c, ci){
@@ -2453,7 +2539,11 @@ function renderaMegatrend(data, analys, kort){
         }).join("");
         var visning = MEGA_VISNING[rad.namn] || rad.namn;
         var vadAr = MEGA_VAD_AR[rad.namn] || rad.namn;
-        var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr) + '">' + esc(visning) + "</span>" + celler + "</div>";
+        var rp = radPoang[rad.namn];
+        var poangTitel = rp && rp.poang != null
+          ? " · Radpoäng " + svTal(rp.poang, 1) + "/100 (REGELVERK §3)" + (rp.approx ? " · vilar delvis på approx-celler" : "")
+          : (rp ? " · Radpoäng — (saknar numeriska celler, rankas sist)" : "");
+        var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr + poangTitel) + '">' + esc(visning) + "</span>" + celler + "</div>";
         var nasta = lista[ri + 1];
         if(!nasta || nasta.sektor !== rad.sektor){
           var rek = rekFor(rad.sektor);
@@ -2478,8 +2568,13 @@ function renderaMegatrend(data, analys, kort){
     }
 
     var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
-    var flaskhalsar = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
-    var topp = toppFlaskhals(m);
+    /* radordning = radpoäng fallande (§3); rader utan poäng sist i sin dataordning */
+    var flaskhalsar = temaRank
+      ? temaRank.rader.map(function(r){ return r.rad; })
+      : m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
+    var toppRad = temaRank && temaRank.rader.length && temaRank.rader[0].poang != null
+      ? temaRank.rader[0].rad : toppFlaskhals(m);
+    var topp = toppRad;
     var rekT = rekFor(topp.sektor);
     var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
     var slutrubrik = efterfragan.length ? "3 · Slutsats" : "Slutsats";
@@ -2508,13 +2603,22 @@ function renderaMegatrend(data, analys, kort){
   satLin("lin-mega", aktivt.kalla.split("(")[0].trim(), aktivt.vintage, aktivt.kalla);
 
   $("#megakropp").innerHTML =
-    '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera.</p>' +
-    '<div class="flikar megaflikar" role="tablist" aria-label="Megatrender">' +
-    teman.map(function(t){
-      return '<button class="flik" role="tab" type="button" data-tema="' + esc(t.id) + '" aria-selected="' + (t.id === aktivt.id ? "true" : "false") + '">' + esc(t.namn) + "</button>";
+    '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera. Flikordningen är rankingen (REGELVERK §3).</p>' +
+    '<div class="flikar megaflikar" role="tablist" aria-label="Megatrender, rankade">' +
+    rank.map(function(r, i){
+      var titel = r.poang == null
+        ? r.tema.namn + " — utan poäng (saknar numeriska celler)"
+        : "#" + (i + 1) + " " + r.tema.namn + " · " + svTal(r.poang, 1) + "/100 = topp-3-snitt " + svTal(r.komponenter.topp3, 1) +
+          (r.komponenter.bredd ? " + breddbonus " + r.komponenter.bredd : "") +
+          (r.komponenter.crowding ? " − trängselavdrag " + (-r.komponenter.crowding) : "") +
+          (r.approx ? " · rankingen vilar delvis på approx-celler" : "") + " · REGELVERK §3";
+      return '<button class="flik" role="tab" type="button" data-tema="' + esc(r.tema.id) + '" aria-selected="' + (r.tema.id === aktivt.id ? "true" : "false") + '" title="' + esc(titel) + '">' +
+        '<span class="megarank">#' + (i + 1) + "</span> " + esc(r.tema.namn) +
+        (r.poang != null ? ' <span class="megapoang">' + Math.round(r.poang) + "</span>" : "") +
+        (r.approx ? "*" : "") + "</button>";
     }).join("") + "</div>" +
-    teman.map(function(t){
-      return '<div class="megatema"' + (t.id === aktivt.id ? "" : " hidden") + ">" + temaHtml(t) + "</div>";
+    rank.map(function(r){
+      return '<div class="megatema"' + (r.tema.id === aktivt.id ? "" : " hidden") + ">" + temaHtml(r.tema, r) + "</div>";
     }).join("");
 }
 /* delegerad flikväxling — flikarna återskapas vid varje datarendering */
@@ -2792,7 +2896,11 @@ function renderaOversikt(data, analys, kort, regim, slut){
   var heroEl = $("#hero");
   if(!heroEl) return;
   var topp3 = rankadeAktier(data).slice(0, 3);
-  var trangst = toppFlaskhals({ rader: allaMegaRader(data) });
+  /* trängst = topprankade temats topprankade rad (§3); fallback intensitet om poäng saknas */
+  var mrank = beraknaMegaRank(data);
+  var trangst = (mrank.length && mrank[0].rader.length && mrank[0].rader[0].poang != null)
+    ? mrank[0].rader[0].rad
+    : toppFlaskhals({ rader: allaMegaRader(data) });
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
     '<div class="heromatt">' +
