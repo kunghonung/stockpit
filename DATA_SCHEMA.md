@@ -22,7 +22,7 @@ var DATALAGE = "TEST";   // "TEST" → data/sample_data.json · "LIVE" → data/
 | `flodenNoter[]` | flödesfakta som inte är sektorstaplar (regioner, småbolag) |
 | `tripwires[]`, `regim`, `riskregler[]` | riskpanelens underlag (som tidigare sprintar) |
 | `makro` | räntekurva, bredd, sentiment (26 v-serier), realränta, guld/silver/koppar |
-| `megatrend` | flaskhalsmatrisen (rader × 3 celler, tema→sektor-koppling) |
+| `megatrender[]` | fyra temamatriser (rader × 3 celler, tema→sektor-koppling) — se avsnittet nedan |
 | `aktier[]`, `parlnyckel`, `screenadeAntal`, `aktierLineage` | konvergenslistan; `sektorId` kopplar aktie→sektor (insynskluster per sektor räknas härifrån — måste stämma med `insynKluster`) |
 | `geo` | geografisk RRG (statisk illustration i testdatan) |
 
@@ -72,7 +72,7 @@ Poster: `{id, datum, lins, handling, etf, sektor, ingang:{rsRank, fwdPE, revQ2},
 | `sektorer[].flodeM` (+ framtida `flodeV`) | SSGA månadsrapport / VettaFi |
 | `aktier[]`, `insynKluster` | SEC EDGAR Form 4 + FI:s insynsregister (Excel-export) |
 | `tripwires`, `makro.rantekurva`, `realranta` | FRED |
-| `megatrend` | bolagsrapporter/branschdata (halvmanuellt) |
+| `megatrender[]` | bolagsrapporter/branschdata (halvmanuellt, kurerad per tema) |
 
 ## `tpa` — TP-acceleration (Aktier-fliken TP-acc)
 
@@ -85,3 +85,40 @@ Blockets form: `{lage, kalla, vintage, fonsterDagar, kommentar, regim:[{id, namn
 - **Mot regimen-flaggan** (⇄): positiv `accBp` i en ticker ur `TPA_AI_KORG` samtidigt som SOX/SPY-deltat är negativt. Okända tickers flaggas aldrig.
 - Modulens lineage-badge speglar **TPA-källans** läge, inte sidans globala — Supabase-LIVE kan vara aktiv i TEST-läge och tvärtom.
 - Nyckeln i `TPA_KONFIG` ska vara projektets **publishable-nyckel** (publik per design, RLS tillåter endast SELECT) — aldrig service-nyckeln.
+
+## `megatrender[]` — fyra temamatriser (ersätter `megatrend` fr.o.m. Sprint 8)
+
+Lista av teman: `{id, namn, kalla, vintage, kolumner[3], not?, rader[]}`. Radformat:
+`{namn, sektor, tema, celler[3]}` där varje cell är `{v, i, pil?, k, n, enhet}`.
+
+- **`n` + `enhet`** är nya: cellens numeriska värde (`null` när ett ärligt tal saknas) och enhet
+  (`"pct_aa"` = procent år/år · `"man"` = månader · `"pp"` = procentenheter · `null`).
+  Kvalitativa celler har `n: null` och deltar inte i poängen — aldrig hittepå.
+- **Kolumnroller är positionella** (0 = kö/backlogg, 1 = ledtid, 2 = marginal/trend) oavsett
+  kolumnnamn — poängformlerna i `REGELVERK.md` §3 går på position, visningen på namn.
+- Celler med "approx" i `k`-fältet har `i ≤ 3` och ärver approx-märkning i rank-tooltips.
+- `rader[].sektor` måste matcha `sektorer[].namn` (konsekvensraden/rekFor kräver det).
+- `not` renderas som dämpad rad under temats matris.
+- Rad- och temapoäng beräknas i frontenden enligt `REGELVERK.md` §3 — aldrig förberäknade i filen.
+- Bakåtkompatibilitet: frontenden läser `megatrender[]` i första hand och faller tillbaka på
+  gamla `megatrend`-objektet (visas då som enda temat) tills LIVE-datats kurerade post migrerats.
+
+## `data/screen.json` — konvergensscreenern (daglig pipeline, Sprint 8)
+
+Skrivs av `scripts/screen_data.py` (screen.yml, vardagar 04:23 UTC). Toppnivå:
+`{schemaVersion, vintage, genererad, universum:{antal, kalla}, vikter, tackning, rotation, lista[]}`.
+Listposter: `{ticker, namn, marknad, sektorId, parlor[], sparade, delpoang{}, styrka, skal, url}` —
+`sparade` = antal signaler med underlag (null-signaler krymper nämnaren: "4/6 spårade"),
+`delpoang` endast för aktiva signaler, `skal` genereras ur aktiva signalers faktiska siffror.
+
+- Sortering: konvergens → styrka → IN → ES → VÄ (REGELVERK §2). Hela listan, inte topp 5.
+- Skrivregel: filen skrivs ENDAST vid ≥ 90 % TK-täckning av universum — annars behålls
+  gårdagens fil och orsaken loggas i workflowen. Aldrig en halvtom lista.
+- Källbeslut v1 (dokumenterade proxies, aldrig tysta): FL = sektorflöde (proxy),
+  VÄ = P/E mot sektorns 10-årssnitt (proxy tills egen historik finns), MA = sektor
+  topp 4 på revQ2-/RS-rank (proxy för linserna), ES i FMP-5-dagarsrotation
+  (gratisplanens anropstak), BL null för US och tills ~4 v blankningshistorik byggts (SE).
+- `data/screen_state.json` är pipelinens minne (EDGAR-accessioncache, FMP-rotation,
+  blankningshistorik) — committas av workflowen, läses aldrig av frontenden.
+- Frontenden läser filen med egen lineage-badge (`screener v1 · vintage`); saknas filen
+  visas kurerade urvalet med ärlig underrad — inga mockade screenerdata i testblocket.

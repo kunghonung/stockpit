@@ -455,6 +455,26 @@ li.oppen .sigdetalj{ display:block; }
 .hjalpmark{ cursor:help; border-bottom:1px dotted var(--svag); }
 .korslank{ color:var(--accent); text-decoration:none; }
 .korslank:hover{ text-decoration:underline; }
+.meganot{ font-size:var(--fs11); color:var(--damp); line-height:1.4; margin-top:var(--s4); }
+.koprekrad{ border:1px solid var(--linje); border-radius:var(--radie); padding:var(--s4) var(--s8); margin-bottom:var(--s4); }
+.koprekvillkor{ font-size:var(--fs11); color:var(--damp); line-height:1.5; margin:2px 0; }
+.koprekvillkor .vst.ok{ color:var(--gron-text); } .koprekvillkor .vst.utlost{ color:var(--rod-text); }
+.koprek-logg summary{ font-size:var(--fs11); color:var(--svag); cursor:pointer; list-style:none; }
+.koprek-logg summary::before{ content:"▸ "; } .koprek-logg[open] summary::before{ content:"▾ "; }
+.koprek-logg pre{ font-family:var(--mono); font-size:var(--fs11); background:var(--panel2); border-radius:var(--radie); padding:var(--s8); overflow-x:auto; margin:var(--s4) 0 0; }
+.screenfilter{ display:flex; gap:var(--s8); margin:var(--s4) 0 var(--s8); flex-wrap:wrap; }
+.screenfilter input, .screenfilter select{
+  font-family:var(--sans); font-size:var(--fs12); color:var(--navy);
+  background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie);
+  padding:2px var(--s8); min-height:24px;
+}
+.screenfilter input{ flex:1; min-width:140px; }
+.screenfilter input:focus, .screenfilter select:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+.megaflikar{ margin:0 0 var(--s8); flex-wrap:wrap; }
+.megaflikar .megarank{ font-family:var(--mono); font-size:var(--fs11); opacity:.7; }
+.megaflikar .megapoang{ font-family:var(--mono); font-size:var(--fs11); font-variant-numeric:tabular-nums; }
+#sida-trang .mrad{ grid-template-columns:128px 1fr 1fr 1fr; }
+#sida-trang .fnamn{ text-overflow:ellipsis; }
 .mrad{ display:grid; grid-template-columns:92px 1fr 1fr 1fr; gap:var(--s4); align-items:center; }
 .mrad.huvud{ margin-bottom:var(--s4); }
 .mrad.huvud span{ font-size:var(--fs11); font-weight:600; letter-spacing:.02em; text-transform:uppercase; color:var(--svag); text-align:right; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
@@ -681,7 +701,10 @@ li.oppen .sigdetalj{ display:block; }
       <div id="vy-konv" role="tabpanel" aria-labelledby="flik-konv" style="display:flex;flex-direction:column;min-height:0;flex:1">
         <p class="slutsats" id="aktier-slutsats"></p>
         <p class="underrad" id="aktier-underrad"></p>
+        <div id="koprekdel"></div>
+        <div class="msek">Konvergensidéer · kurerat urval</div>
         <div class="panelkropp" id="aktielista"></div>
+        <div id="screenerdel"></div>
       </div>
       <div id="vy-track" role="tabpanel" aria-labelledby="flik-track" hidden style="display:flex;flex-direction:column;min-height:0;flex:1">
         <p class="underrad" id="track-underrad"></p>
@@ -910,32 +933,522 @@ li.oppen .sigdetalj{ display:block; }
     "koppar": { "namn": "Koppar", "kort": "HG1", "varde": "9 640", "enhet": "USD/t", "pil": "upp", "delta4v": "+2,1 %", "over200d": true, "status": "gul", "atgard": "bevaka", "kalla": "LME 3 mån", "vintage": "approx" }
   },
 
-  "megatrend": {
-    "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)", "vintage": "2026-Q2",
-    "kolumner": ["Backl. å/å", "Ledtid", "Marg-Δ"],
-    "rader": [
-      { "namn": "Transformatorer", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+42 %", "i": 4, "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy" },
-                    { "v": "38 m", "pil": "upp", "i": 4, "k": "Ledtid 38 månader — stora krafttransformatorer" },
-                    { "v": "+3,2", "i": 3, "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna" } ] },
-      { "namn": "HVDC-kabel", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+31 %", "i": 3, "k": "Backlogg å/å — Prysmian/NKT/Nexans" },
-                    { "v": "30 m", "pil": "upp", "i": 3, "k": "Ledtid 30 månader — högspänningskabel" },
-                    { "v": "+2,1", "i": 2, "k": "Prispåslag +2,1 procentenheter i nya kontrakt" } ] },
-      { "namn": "Kylsystem", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+34 %", "i": 3, "k": "Backlogg å/å — datacenter-kyla (vätskekyla)" },
-                    { "v": "9 m", "pil": "upp", "i": 2, "k": "Ledtid 9 månader — kylsystem för AI-täta hallar" },
-                    { "v": "+2,8", "i": 3, "k": "Prismakt +2,8 procentenheter hos kylleverantörer" } ] },
-      { "namn": "Elnätskapacitet", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+19 %", "i": 2, "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)" },
-                    { "v": "44 m", "pil": "upp", "i": 4, "k": "Kötid 44 månader — nätanslutning datacenter" },
-                    { "v": "+0,9", "i": 1, "k": "Nättariffer +0,9 procentenheter" } ] },
-      { "namn": "Hyperscalers", "sektor": "Teknik", "tema": "ai",
-        "celler": [ { "v": "+38 %", "i": 4, "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)" },
-                    { "v": "26 v", "pil": "hoger", "i": 2, "k": "Leveranstid 26 veckor — GPU/serverutrustning" },
-                    { "v": "+4,1", "i": 4, "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)" } ] }
-    ]
-  },
+  "megatrender": [
+    {
+      "id": "ai",
+      "namn": "AI & Datacenter",
+      "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)",
+      "vintage": "2026-Q2",
+      "kolumner": [
+        "Backl. å/å",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "rader": [
+        {
+          "namn": "Transformatorer",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+42 %",
+              "i": 4,
+              "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy",
+              "n": 42.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "38 m",
+              "pil": "upp",
+              "i": 4,
+              "k": "Ledtid 38 månader — stora krafttransformatorer",
+              "n": 38.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+3,2",
+              "i": 3,
+              "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna",
+              "n": 3.2,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "HVDC-kabel",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+31 %",
+              "i": 3,
+              "k": "Backlogg å/å — Prysmian/NKT/Nexans",
+              "n": 31.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "30 m",
+              "pil": "upp",
+              "i": 3,
+              "k": "Ledtid 30 månader — högspänningskabel",
+              "n": 30.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+2,1",
+              "i": 2,
+              "k": "Prispåslag +2,1 procentenheter i nya kontrakt",
+              "n": 2.1,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Kylsystem",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+34 %",
+              "i": 3,
+              "k": "Backlogg å/å — datacenter-kyla (vätskekyla)",
+              "n": 34.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "9 m",
+              "pil": "upp",
+              "i": 2,
+              "k": "Ledtid 9 månader — kylsystem för AI-täta hallar",
+              "n": 9.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+2,8",
+              "i": 3,
+              "k": "Prismakt +2,8 procentenheter hos kylleverantörer",
+              "n": 2.8,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Elnätskapacitet",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+19 %",
+              "i": 2,
+              "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)",
+              "n": 19.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "44 m",
+              "pil": "upp",
+              "i": 4,
+              "k": "Kötid 44 månader — nätanslutning datacenter",
+              "n": 44.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+0,9",
+              "i": 1,
+              "k": "Nättariffer +0,9 procentenheter",
+              "n": 0.9,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Hyperscalers",
+          "sektor": "Teknik",
+          "tema": "ai",
+          "celler": [
+            {
+              "v": "+38 %",
+              "i": 4,
+              "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)",
+              "n": 38.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "26 v",
+              "pil": "hoger",
+              "i": 2,
+              "k": "Leveranstid 26 veckor — GPU/serverutrustning",
+              "n": 26.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+4,1",
+              "i": 4,
+              "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)",
+              "n": 4.1,
+              "enhet": "pp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forsvar",
+      "namn": "Försvar & Upprustning",
+      "kalla": "Bolagsrapporter Q1–Q2 2026 (Rheinmetall, Saab) + FPRI/CSIS + branschmedia",
+      "vintage": "2026-Q2",
+      "kolumner": [
+        "Kö/backl.",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "not": "Rheinmetall orderstock 73 md€ (+30 % å/å) Q1 2026 — systemhusens böcker fulla; trängst är robotar och raketmotorer.",
+      "rader": [
+        {
+          "namn": "Luftvärnsrobotar",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "7 år",
+              "i": 5,
+              "k": "FMS-kö 4 300+ PAC-3 ≈ 7 årsproduktioner (600/år 2025, mål 2 000/år 2030) — FPRI maj 2026",
+              "n": 84,
+              "enhet": "man"
+            },
+            {
+              "v": "24–30 m",
+              "pil": "upp",
+              "i": 5,
+              "k": "Robot 24 mån, raketmotor 30 mån — nya kontrakt levereras tidigast mitten av 2028",
+              "n": 27,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 3,
+              "k": "Marginal ej särredovisad hos US-primes; sole-source-läge i motorer och sökare",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Raketmotorer",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "4 program",
+              "i": 5,
+              "k": "L3Harris/Aerojet enda källan för Patriot, THAAD, Tomahawk och SM — kön delas av fyra robotprogram",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "30 m",
+              "i": 5,
+              "k": "Längsta delkomponentledtiden i luftvärnskedjan (FPRI); sökare: ~650–700/år ur en enda Boeing-fabrik",
+              "n": 30,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 3,
+              "k": "Underleverantörsled utan öppen marginalredovisning",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Artillerammunition",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "8× på 4 år",
+              "i": 4,
+              "k": "Europakapacitet mot ~2 M granater 155 mm/år 2026 (Rheinmetall 750 t → 1,1 M 2027) — sekundärkälla — 8× på 4 år ≈ +68 %/år CAGR",
+              "n": 68,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "12–24 m",
+              "i": 3,
+              "k": "Krut/sprängämnen (nitrocellulosa) begränsar — approx",
+              "n": 18,
+              "enhet": "man"
+            },
+            {
+              "v": "+1,0 pp",
+              "i": 3,
+              "k": "Rheinmetall rörelsemarginal 11,6 % Q1 2026 (10,6 % Q1 2025); helårsmål ~19 %",
+              "n": 1.0,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Plattformar (varv)",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "+141 %",
+              "i": 4,
+              "k": "Saab orderingång å/å Kv2 2026: 68,4 mdr SEK, varav ubåtar till Polen 47 mdr",
+              "n": 141,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "~8 år",
+              "pil": "upp",
+              "i": 3,
+              "k": "Ubåtsleveranser in på 2030-talet — approx utifrån varvskapacitet",
+              "n": 96,
+              "enhet": "man"
+            },
+            {
+              "v": "+1,0 pp",
+              "i": 3,
+              "k": "Saab EBIT-marginal 11,0 % Kv2 2026 (10,0 % Kv2 2025)",
+              "n": 1.0,
+              "enhet": "pp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glp1",
+      "namn": "GLP-1 & Biologika",
+      "kalla": "Bolags- och branschkällor H1 2026 (Lilly, Novo/Ypsomed, CDMO-branschen)",
+      "vintage": "2026-H1",
+      "kolumner": [
+        "Kapacitet",
+        "Ledtid",
+        "Trend"
+      ],
+      "not": "Prissättningsmakten smalnar: köerna flyttar från API och fill-finish till devices och oral kapacitet. Marknadsprognoser ~150–200 md$/år 2030–31.",
+      "rader": [
+        {
+          "namn": "Peptid-API",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": ">50 md$",
+              "i": 4,
+              "k": "Lillys ackumulerade USA-tillverkningskapex sedan 2020 (dubblad): Texas 6,5 + Virginia 5 md$ till API/injektabler",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "2–3 år",
+              "i": 3,
+              "k": "Nybyggd API-kapacitet till drift — approx",
+              "n": 30,
+              "enhet": "man"
+            },
+            {
+              "v": "lättar",
+              "pil": "ned",
+              "i": 3,
+              "k": "Akut brist 2023–24 över; kapaciteten dock fortsatt stram mot efterfrågan",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Steril fill-finish",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "stram",
+              "i": 4,
+              "k": "'Förbättrad men fortsatt begränsad relativt efterfrågan' (2026); Novo köpte Catalents tre fill-finish-siter (16,5 md$, klart dec 2024)",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "4–5 år",
+              "i": 3,
+              "k": "Greenfield steril linje till GMP-godkänd drift — approx branschpraxis",
+              "n": 54,
+              "enhet": "man"
+            },
+            {
+              "v": "uppbokad",
+              "pil": "hoger",
+              "i": 3,
+              "k": "CDMO-slots fortsatt fyllda; mindre kunder trängs undan",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Autoinjektorer",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "utbyggnad",
+              "i": 4,
+              "k": "Ypsomed×Novo: leveranser från 2025, kapacitetsplan till 2031, Novo delfinansierar nya linjer",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "12–18 m",
+              "i": 3,
+              "k": "Verktyg, formsprutning och montagelinjer — approx",
+              "n": 15,
+              "enhet": "man"
+            },
+            {
+              "v": "kvarstår",
+              "pil": "upp",
+              "i": 4,
+              "k": "Devices är den kvarvarande flaskhalsen när API/fill-finish lättar",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Oral kapacitet",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "6 md$",
+              "i": 3,
+              "k": "Lillys Alabama-site för orforglipron; + 1,2 md$ Puerto Rico och 3 md$ Leiden",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "3–4 år",
+              "i": 3,
+              "k": "Site till kommersiell volym — approx",
+              "n": 42,
+              "enhet": "man"
+            },
+            {
+              "v": "byggs",
+              "pil": "upp",
+              "i": 3,
+              "k": "Oral våg 2026–28 flyttar volym från injektabler",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demografi",
+      "namn": "Demografi & Automation",
+      "kalla": "Kion Q1 2026, IFR World Robotics 2025, Deloitte/NAM 2024",
+      "vintage": "2026-Q1",
+      "kolumner": [
+        "Order å/å",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "not": "Strukturell efterfrågan (arbetskraftsbrist) men mjuk hårdvarucykel — vändningen syns först i lagerautomationens order.",
+      "rader": [
+        {
+          "namn": "Lagerautomation",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "+25,9 %",
+              "i": 4,
+              "k": "Kion Intelligent Automation Solutions orderingång Q1 2026 (951 M€)",
+              "n": 25.9,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "12–24 m",
+              "i": 3,
+              "k": "Projekt från order till driftsatt anläggning — approx",
+              "n": 18,
+              "enhet": "man"
+            },
+            {
+              "v": "+0,7 pp",
+              "i": 3,
+              "k": "Kion IAS justerad EBIT-marginal 6,0 % Q1 2026 (5,3 % Q1 2025)",
+              "n": 0.7,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Industrirobotar",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "+6 %",
+              "i": 2,
+              "k": "IFR-prognos 2025: 575 000 installationer (542 000 år 2024); >700 000/år 2028",
+              "n": 6,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "3–6 m",
+              "i": 2,
+              "k": "Normaliserade leveranstider efter 2021–22 — approx",
+              "n": 4.5,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 2,
+              "k": "Mjuk cykel utanför Kina: USA −9 %, Japan −4 % installationer 2024",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Integrationskapacitet",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "1,9 M",
+              "i": 4,
+              "k": "Ofyllda US-industrijobb till 2033 (Deloitte/NAM 2024) — strukturell efterfrågan på automation",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "9–18 m",
+              "i": 3,
+              "k": "Integratörs- och ingenjörskapacitet, inte hårdvaran, sätter takten — approx",
+              "n": 13.5,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 2,
+              "k": "Fragmenterat led utan öppen marginalredovisning",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
 
   "screenadeAntal": 214,
   "aktierLineage": { "kalla": "FI/SEC", "vintage": "2026-W29" },
@@ -1270,9 +1783,11 @@ function kontrolleraOmprovning(villkor, data, analys){
 }
 
 /* ============ Riskmotor & regim (oförändrad logik) ============ */
+/* REGELVERK §4: närhet till tröskel × konsekvensvikt (kurerad per regel, 1–3; saknas → 1) */
 function riskTopp(data, antal){
-  return data.riskregler.map(function(r){ return { regel: r, avvikelse: (r.varde - r.komfort) / r.komfort }; })
-    .sort(function(a, b){ return b.avvikelse - a.avvikelse; }).slice(0, antal);
+  return data.riskregler.map(function(r){
+    return { regel: r, avvikelse: (r.varde - r.komfort) / r.komfort * (r.vikt != null ? r.vikt : 1) };
+  }).sort(function(a, b){ return b.avvikelse - a.avvikelse; }).slice(0, antal);
 }
 function riskText(r){
   return r.mall.replace("{namn}", r.namn).replace("{varde}", svTal(r.varde, r.dec)).replace("{komfort}", svTal(r.komfort, 0));
@@ -1308,8 +1823,20 @@ function sentimentDivergens(data){
 
 /* ============ Slutsatser ============ */
 /* Delade hjälpare — används av både fullvyer och översiktens kort (ingen dubblerad logik) */
+/* REGELVERK §2: konvergens → styrka → IN → ES → VÄ. Delpoäng används när de finns
+   (screenerlistan); kurerade poster utan delpoäng får binär närvaro som tie-breaker. */
+function signalNyckel(a, s){
+  if(a.delpoang && a.delpoang[s] != null) return a.delpoang[s];
+  return a.parlor.indexOf(s) > -1 ? 1 : 0;
+}
+function aktieJamforelse(a, b){
+  return b.parlor.length - a.parlor.length || b.styrka - a.styrka ||
+    signalNyckel(b, "IN") - signalNyckel(a, "IN") ||
+    signalNyckel(b, "ES") - signalNyckel(a, "ES") ||
+    signalNyckel(b, "VÄ") - signalNyckel(a, "VÄ");
+}
 function rankadeAktier(data){
-  return data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+  return data.aktier.slice().sort(aktieJamforelse);
 }
 function toppFlaskhals(m){
   var kandidater = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
@@ -1360,7 +1887,7 @@ function slutsatser(data, analys, regim, kort){
 }
 
 /* ============ Dev-assertions inkl. testkriterier P2/P3/P5 ============ */
-function assertions(data, analys, kort){
+function assertions(data, analys, kort, regim){
   var varningar = [];
   var iRim = function(nyckel, v){
     var r = data.rimlighet[nyckel];
@@ -1377,6 +1904,27 @@ function assertions(data, analys, kort){
   data.sektorer.forEach(function(s){
     if((klusterRaknat[s.id] || 0) !== s.insynKluster) varningar.push("insynKluster " + s.id + " (" + s.insynKluster + ") ≠ aktielistan (" + (klusterRaknat[s.id] || 0) + ")");
   });
+  /* P9 — regimgrinden: med syntetisk riskaptit 35 ska motorn vägra nya rek */
+  try{
+    var p9 = beraknaKoprek(data, analys, kort, { poang: 35 }, null);
+    if(p9.lage !== "stangd" || p9.rek.length) varningar.push("P9: regimgrind < 40 stänger inte motorn");
+  }catch(fel){ varningar.push("P9: beraknaKoprek kastade: " + fel.message); }
+  /* P8 — regressionstest av megatrendpoängen (REGELVERK §3) mot fastställda referensvärden.
+     Körs bara när testdatats fyra teman är lastade — avviker beräkningen är KODEN fel, inte datat. */
+  if(data.lage !== "LIVE" && data.megatrender && data.megatrender.length === 4){
+    var p8ref = { forsvar: 76.1, glp1: 67.5, ai: 62.8, demografi: 18.8 };
+    var p8rank = beraknaMegaRank(data);
+    var p8ordning = p8rank.map(function(r){ return r.tema.id; }).join(",");
+    if(p8ordning !== "forsvar,glp1,ai,demografi"){
+      varningar.push("P8: temaordning " + p8ordning + " ≠ forsvar,glp1,ai,demografi");
+    }
+    p8rank.forEach(function(r){
+      var ref = p8ref[r.tema.id];
+      if(ref != null && (r.poang == null || Math.abs(r.poang - ref) > 0.15)){
+        varningar.push("P8: " + r.tema.id + " = " + (r.poang == null ? "null" : r.poang.toFixed(1)) + " ≠ ref " + ref);
+      }
+    });
+  }
   /* Testkriterierna gäller den seedade TESTDATAN — i LIVE-läge är utfallen
      marknadens sak, inte kriteriers. P3-spärren (rendering) gäller alltid. */
   if(data.lage !== "LIVE"){
@@ -1420,8 +1968,12 @@ function renderaVanster(data, analys, kort, slut){
   $("#deltarad").innerHTML = "Linserna: tidig cykel toppar <b>" + esc(t1.s.namn) + "</b> " + t1.tidig + " · <b>" + esc(t2.s.namn) + "</b> " + t2.tidig +
     " — momentum toppar <b>" + esc(m1.s.namn) + "</b> " + m1.momentum + " · <b>" + esc(m2.s.namn) + "</b> " + m2.momentum + ".";
 
-  /* P4: alla 11 sektorer */
-  var rader = analys.lista.slice().sort(function(a, b){ return b.tidig - a.tidig; }).map(function(x){
+  /* P4: alla 11 sektorer — REGELVERK §1: tidig fallande, tie-breakers revQ2 → PE-rabatt → lägre rsRank */
+  var rader = analys.lista.slice().sort(function(a, b){
+    return b.tidig - a.tidig || b.s.revQ2.v - a.s.revQ2.v ||
+      (b.s.fwdPE10y.v - b.s.fwdPE.v) - (a.s.fwdPE10y.v - a.s.fwdPE.v) ||
+      a.s.rsRank - b.s.rsRank;
+  }).map(function(x){
     var flagg = [];
     if(x.divergens) flagg.push('<span class="flagg" title="Linsdivergens: tidig cykel och momentum ger olika handling.">⇄</span>');
     if(x.prisForeFundamenta) flagg.push('<span class="flagg" title="Pris före fundamenta: RS-rank upp ' + (x.s.rsRankForra - x.s.rsRank) + ' steg medan revideringarna är sektorns sämsta.">!</span>');
@@ -1456,7 +2008,7 @@ function renderaVanster(data, analys, kort, slut){
     var revVarning = k.revVarning ? '<span class="divflagga" title="VARNING: sektorn har störst nedrevideringar — ÖKA tillåts aldrig utan denna flagga (estimatregeln).">! estimat</span>' : "";
     var konflikt = "";
     if(k.handling === "minska"){
-      var mega = data.megatrend.rader.filter(function(r){ return r.sektor === s.namn; });
+      var mega = allaMegaRader(data).filter(function(r){ return r.sektor === s.namn; });
       if(mega.length){
         konflikt = '<p class="konfliktrad"><b>Motsägelse:</b> flaskhalsarna stöder efterfrågan (+' + mega[0].celler[0].v.replace("+", "") + " backlogg) — men trängsel " + data.regim.crowding.score + "/100 och tidig-cykel " + x.tidig + "/100 väger tyngre. <b>Flippas om:</b> trängsel &lt; " + data.regim.crowding.komfort + " och tidig-poäng &gt; 40.</p>";
       }
@@ -1509,7 +2061,11 @@ function renderaMetod(data, regim){
     "<p><b>Handling:</b> tidig-cykelns topp 2 → ÖKA · momentum-topp med tidig &lt; 25 och bruten trängselregel → MINSKA · RS-hopp ≥ 3 steg med sektorns sämsta revideringar → BEVAKA (»pris före fundamenta«). Reglerna är fältbaserade — inga sektornamn i koden.</p>" +
     "<p><b>Estimatreglerna:</b> störst nedrevidering får aldrig ÖKA utan synlig flagga · störst upprevidering + lägst värdering ska alltid upp bland ÖKA-korten. Båda körs som assertions mot testdatan.</p>" +
     "<p><b>RRG-fönster:</b> ratio 12 v · momentum 2 v (kort) och 6 v (långt). Position = långa läget; puls = obekräftat kvadrantbyte i korta.</p>" +
-    "<p><b>Riskaptit</b> (0–100) = 35 % tripwires + 35 % kvoter + 30 % inverterad trängsel. Nu: " + regim.poang + "/100. <b>Screening:</b> " + data.screenadeAntal + " bolag mot sju signaltyper, topp 5 på konvergens × styrka.</p>";
+    "<p><b>Riskaptit</b> (0–100) = 35 % tripwires + 35 % kvoter + 30 % inverterad trängsel. Nu: " + regim.poang + "/100.</p>" +
+    "<p><b>Screeningen</b> är daglig kod (scripts/screen_data.py): " +
+    (screenGlobal ? screenGlobal.universum.antal + " bolag i universum, " + screenGlobal.lista.length + " poängsatta " + esc(screenGlobal.vintage) : "S&P 500 + Sthlm Large Cap (körs på servern — ingen färsk fil läst nu)") +
+    " mot sju signaler med öppna vikter: IN 0,25 · ES 0,20 · TK 0,15 · VÄ 0,15 · BL 0,10 · FL 0,10 · MA 0,05. " +
+    'Signal utan underlag viktas bort (nämnaren minskar — "4/6 spårade"). Sortering, grindar och alla rankningsnycklar följer <a href="REGELVERK.md" target="_blank" rel="noopener">REGELVERK.md</a> — ingen lista sorteras på annat sätt.</p>';
 }
 
 /* ---- RRG-rendering (P5: position = långt läge, puls = kort avvikelse) ---- */
@@ -1653,13 +2209,206 @@ function renderaRadar(data, analys, kort, slut){
   $("#geo-slutsats").textContent = slut.geo;
 }
 
-function renderaAktier(data, slut){
+/* ============ Konvergenskedjan → KÖPREK (REGELVERK §6) ============
+   Fyra grindar i ordning; konvergens = samma bolag överlever alla. Ren funktion
+   över snapshot + screenerlista (faller tillbaka på kurerade aktier[] — samma fält). */
+var KOPREK_MAX = 5;
+function beraknaKoprek(data, analys, kort, regim, screen){
+  var lista = (screen && screen.lista && screen.lista.length) ? screen.lista : data.aktier;
+  var kallnamn = (screen && screen.lista && screen.lista.length) ? "screener v1" : "kurerat urval";
+  var okaSekt = {};
+  kort.forEach(function(k){ if(k.handling === "oka") okaSekt[k.s.id] = true; });
+  var tidigTopp4 = {};
+  analys.tidigOrdning.slice(0, 4).forEach(function(x){ tidigTopp4[x.s.id] = true; });
+  var topp2tema = {};
+  beraknaMegaRank(data).slice(0, 2).forEach(function(r){ topp2tema[r.tema.id] = true; });
+
+  /* Grind 1 — regim */
+  var lage = regim.poang >= 50 ? "oppen" : regim.poang >= 40 ? "bevaka" : "stangd";
+  var ut = { lage: lage, regimPoang: regim.poang, kalla: kallnamn, rek: [], kandidater: [], forklaring: null };
+  if(lage === "stangd"){
+    ut.forklaring = "Regimgrind stängd · riskaptit " + regim.poang + "/100 (< 40) — inga nya rekommendationer; befintliga omprövas.";
+    return ut;
+  }
+
+  var kandidater = [];
+  lista.forEach(function(a){
+    if(!a.sektorId) return;
+    /* Grind 2 — sektor: ÖKA eller topp 4 på tidig-cykel */
+    if(!okaSekt[a.sektorId] && !tidigTopp4[a.sektorId]) return;
+    /* Grind 3 — aktie: konvergens ≥ 4 av spårade, styrka ≥ 60, minst en av IN/ES */
+    var sparade = a.sparade || Object.keys(data.parlnyckel).length;
+    if(a.parlor.length < 4 || a.styrka < 60) return;
+    if(a.parlor.indexOf("IN") === -1 && a.parlor.indexOf("ES") === -1) return;
+    /* Temabonus (ej grind) */
+    var teman = a.tema || [];
+    var temabonus = teman.some(function(t){ return topp2tema[t]; }) ? 100 : 0;
+    var sektorTidig = analys.perSektor[a.sektorId] ? analys.perSektor[a.sektorId].tidig : 0;
+    var regimmarginal = Math.max(0, Math.min(50, regim.poang - 50)) * 2;
+    var konviktion = Math.round(
+      0.35 * a.styrka + 0.25 * sektorTidig + 0.20 * (a.parlor.length / sparade * 100) +
+      0.10 * temabonus + 0.10 * regimmarginal);
+    kandidater.push({
+      aktie: a, konviktion: konviktion, temabonus: temabonus > 0,
+      komponenter: { styrka: a.styrka, sektorTidig: sektorTidig,
+                     konvergens: a.parlor.length + "/" + sparade,
+                     regimmarginal: regimmarginal },
+      grindar: [
+        { text: "Regim " + regim.poang + "/100" + (lage === "bevaka" ? " (40–49: endast bevakning)" : " ≥ 50"), ok: true },
+        { text: okaSekt[a.sektorId] ? "Sektor i ÖKA" : "Sektor topp 4 tidig-cykel", ok: true },
+        { text: "Konvergens " + a.parlor.length + "/" + sparade + " · styrka " + a.styrka + " · " +
+                (a.parlor.indexOf("IN") > -1 ? "IN" : "ES") + " aktiv", ok: true },
+        { text: temabonus ? "Temakoppling till topp 2-megatrend (+10)" : "Ingen topp 2-temakoppling (±0)", ok: !!temabonus }
+      ],
+      /* maskinläsbara omprövningsvillkor — utvärderas av motorn vid varje datainläsning,
+         samma mönster som kontrolleraOmprovning */
+      omprovas: [
+        { text: "konvergensen faller under 4 av spårade", ok: a.parlor.length >= 4 },
+        { text: "sektorn lämnar ÖKA/topp 4", ok: !!(okaSekt[a.sektorId] || tidigTopp4[a.sektorId]) },
+        { text: "riskaptiten faller under 40", ok: regim.poang >= 40 }
+      ]
+    });
+  });
+  kandidater.sort(function(a, b){ return b.konviktion - a.konviktion; });
+
+  if(lage === "bevaka"){
+    ut.kandidater = kandidater;
+    ut.forklaring = "Regim 40–49 (" + regim.poang + "/100): endast BEVAKA-kandidater — inga nya köprek.";
+    return ut;
+  }
+  kandidater.forEach(function(k, i){
+    k.etikett = i < KOPREK_MAX
+      ? (k.konviktion >= 70 ? "KÖPREK · HÖG" : k.konviktion >= 55 ? "KÖPREK" : "KANDIDAT")
+      : "KANDIDAT";
+    if(i >= KOPREK_MAX) k.sparr = "max " + KOPREK_MAX + " samtidiga — ersätter lägst konviktion först";
+    (k.etikett.indexOf("KÖPREK") === 0 ? ut.rek : ut.kandidater).push(k);
+  });
+  return ut;
+}
+/* Loggpost (halvmanuell v1): motorn genererar, du committar via lätta-ritualen */
+function koprekLoggpost(k, data){
+  var sekt = data.sektorer.filter(function(s){ return s.id === k.aktie.sektorId; })[0] || {};
+  return {
+    id: "koprek-" + k.aktie.ticker.toLowerCase().replace(/[^a-z0-9]/g, "") + "-" + (data.asOfDatum || ""),
+    datum: data.asOfDatum, lins: "koprek", handling: "oka",
+    etf: k.aktie.ticker, sektor: sekt.namn || k.aktie.sektorId,
+    ingang: { rsRank: sekt.rsRank != null ? sekt.rsRank : null,
+              fwdPE: sekt.fwdPE ? sekt.fwdPE.v : null,
+              revQ2: sekt.revQ2 ? sekt.revQ2.v : null },
+    konviktion: k.konviktion,
+    utfall: { v1: null, v4: null, v12: null },
+    omprovningTriggad: false,
+    kommentar: k.etikett + " · " + k.komponenter.konvergens + " konvergens · " + k.aktie.skal
+  };
+}
+
+function renderaKoprek(kr, data){
+  var mal = $("#koprekdel");
+  if(!mal) return;
+  var html = '<div class="msek">Köprek-motorn · konvergenskedjan (REGELVERK §6) · ' + esc(kr.kalla) + "</div>";
+  if(kr.forklaring){
+    html += '<p class="tpastatus"><b>' + esc(kr.forklaring.split("—")[0]) + "</b>" +
+      (kr.forklaring.indexOf("—") > -1 ? " — " + esc(kr.forklaring.split("—").slice(1).join("—")) : "") + "</p>";
+  }
+  var alla = kr.rek.concat(kr.kandidater).slice(0, 8);
+  if(!alla.length && !kr.forklaring){
+    html += '<p class="tpastatus">Inga bolag klarar alla grindar just nu — kedjan är ett filter, inte en garanti på idéer.</p>';
+  }
+  html += alla.map(function(k){
+    var badgeKlass = k.etikett && k.etikett.indexOf("KÖPREK") === 0 ? "oka" : "bevaka";
+    var titel = "Konviktion " + k.konviktion + "/100 = 0,35·styrka " + k.komponenter.styrka +
+      " + 0,25·sektorns tidig-cykel " + k.komponenter.sektorTidig + " + 0,20·konvergens " + k.komponenter.konvergens +
+      " + 0,10·temabonus " + (k.temabonus ? "100" : "0") + " + 0,10·regimmarginal " + k.komponenter.regimmarginal +
+      (k.sparr ? " · SPÄRR: " + k.sparr : "");
+    return '<div class="koprekrad" title="' + esc(titel) + '">' +
+      '<div class="nrad"><span class="badge ' + badgeKlass + '">' + esc(k.etikett || "BEVAKA") + "</span>" +
+      '<span class="etikett">' + esc(k.aktie.ticker) + "</span>" +
+      '<span class="beskr">' + esc(k.aktie.namn) + "</span>" +
+      '<span class="varde">' + k.konviktion + "</span></div>" +
+      '<p class="koprekvillkor">Omprövas om: ' + k.omprovas.map(function(v){
+        return esc(v.text) + ' <span class="vst ' + (v.ok ? "ok" : "utlost") + '">' + (v.ok ? "✓" : "✗") + "</span>";
+      }).join(" · ") + "</p>" +
+      '<details class="koprek-logg"><summary>Loggpost till track_record.json</summary><pre>' +
+      esc(JSON.stringify(koprekLoggpost(k, data), null, 1)) + "</pre></details>" +
+      "</div>";
+  }).join("");
+  mal.innerHTML = html;
+}
+
+/* ---- Screenerlistan (data/screen.json) — egen lineage, filter utan beroenden ---- */
+var screenFilter = { text: "", marknad: "", signal: "" };
+function renderaScreener(screen, data){
+  var mal = $("#screenerdel");
+  if(!mal) return;
+  if(!screen){
+    mal.innerHTML = '<p class="tpastatus"><b>Screenerlistan saknas.</b> data/screen.json kunde inte läsas — på file:// eller innan första screen-körningen visas bara det kurerade urvalet ovan. Inga mockade screenerdata finns.</p>';
+    return;
+  }
+  var nycklar = Object.keys(data.parlnyckel);
+  mal.innerHTML =
+    '<div class="msek">Screenerlistan · hela universum</div>' +
+    '<p class="underrad"><span class="lineage live" title="Daglig pipeline scripts/screen_data.py · vikter enligt REGELVERK §2 · täckning ' +
+      Math.round((screen.tackning || 0) * 100) + ' %"><b>LIVE</b> · screener v1 · ' + esc(screen.vintage) + "</span> " +
+    screen.lista.length + " bolag · sorterade på konvergens → styrka → IN → ES → VÄ</p>" +
+    '<div class="screenfilter">' +
+      '<input type="text" id="scr-text" placeholder="ticker eller namn …" value="' + esc(screenFilter.text) + '" aria-label="Filtrera på ticker eller namn">' +
+      '<select id="scr-marknad" aria-label="Marknadsfilter"><option value="">Alla marknader</option><option value="US"' + (screenFilter.marknad === "US" ? " selected" : "") + '>US</option><option value="SE"' + (screenFilter.marknad === "SE" ? " selected" : "") + ">SE</option></select>" +
+      '<select id="scr-signal" aria-label="Signalfilter"><option value="">Alla signaler</option>' +
+        nycklar.map(function(k){ return '<option value="' + k + '"' + (screenFilter.signal === k ? " selected" : "") + ">" + k + " · " + esc(data.parlnyckel[k].namn) + "</option>"; }).join("") +
+      "</select></div>" +
+    '<div id="screenerlista"></div>';
+  var rita = function(){
+    var f = screenFilter;
+    var traffar = screen.lista.filter(function(p){
+      if(f.marknad && p.marknad !== f.marknad) return false;
+      if(f.signal && p.parlor.indexOf(f.signal) === -1) return false;
+      if(f.text){
+        var t = f.text.toLowerCase();
+        if(p.ticker.toLowerCase().indexOf(t) === -1 && p.namn.toLowerCase().indexOf(t) === -1) return false;
+      }
+      return true;
+    });
+    var visa = traffar.slice(0, 30);
+    $("#screenerlista").innerHTML = visa.map(function(a){
+      var rang = screen.lista.indexOf(a) + 1;
+      var parlor = nycklar.map(function(k){
+        var aktiv = a.parlor.indexOf(k) > -1;
+        return '<span class="parla' + (aktiv ? " aktiv" : "") + '" title="' + esc(data.parlnyckel[k].namn) + (aktiv ? " (aktiv" + (a.delpoang[k] != null ? " · delpoäng " + a.delpoang[k] : "") + ")" : " (ej aktiv)") + '">' + esc(k) + "</span>";
+      }).join("");
+      return '<div class="aktie">' +
+        '<span class="rang">#' + rang + "</span>" +
+        '<span class="tick">' + esc(a.ticker) + "<small>" + esc(a.marknad) + "</small></span>" +
+        '<div class="mitt">' +
+          '<div class="namnrad"><span class="namn">' + esc(a.namn) + "</span>" +
+          '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + a.sparade + ' spårade signaler · styrka ' + a.styrka + '/100">' + a.parlor.length + "/" + a.sparade + " · " + a.styrka + "</span></div>" +
+          '<div class="skal" title="' + esc(a.skal) + '">' + esc(a.skal) + "</div>" +
+          '<div class="parlor">' + parlor + "</div>" +
+        "</div>" +
+        '<a class="oppna" href="' + esc(a.url) + '" target="_blank" rel="noopener">Öppna →</a>' +
+      "</div>";
+    }).join("") +
+    (traffar.length > visa.length
+      ? '<p class="tpastatus">Visar ' + visa.length + " av " + traffar.length + " träffar — förfina filtret.</p>" : "");
+  };
+  rita();
+  $("#scr-text").addEventListener("input", function(){ screenFilter.text = this.value; rita(); });
+  $("#scr-marknad").addEventListener("change", function(){ screenFilter.marknad = this.value; rita(); });
+  $("#scr-signal").addEventListener("change", function(){ screenFilter.signal = this.value; rita(); });
+}
+
+function renderaAktier(data, slut, screen){
   satLin("lin-aktier", data.aktierLineage.kalla, data.aktierLineage.vintage);
   var nycklar = Object.keys(data.parlnyckel);
   var rankade = rankadeAktier(data);
   $("#aktier-slutsats").textContent = slut.aktier;
-  $("#aktier-underrad").innerHTML = "Topp " + rankade.length + " av " + data.screenadeAntal +
-    ' screenade · rankade på konvergens × signalstyrka · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
+  /* A5-ärlighet: underraden påstår aldrig screening som inte skett */
+  $("#aktier-underrad").innerHTML = (screen
+    ? "Screener v1 · " + esc(screen.vintage) + ": " + screen.lista.length + " poängsatta av " +
+      screen.universum.antal + " i universum · kurerat urval ovan för jämförelse"
+    : "Kurerat urval · " + esc(data.aktierLineage.vintage) +
+      " · screenerlistan kräver server (data/screen.json)") +
+    ' · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
+  renderaScreener(screen, data);
   $("#legendinre").innerHTML = nycklar.map(function(k){
     return "<p><b>" + esc(k) + "</b> — " + esc(data.parlnyckel[k].namn) + ". " + esc(data.parlnyckel[k].besk) + "</p>";
   }).join("");
@@ -1706,14 +2455,36 @@ function renderaTrack(tr){
       "<td>" + f(p.utfall.v1) + "</td><td>" + f(p.utfall.v4) + "</td><td>" + f(p.utfall.v12) + "</td>" +
       "<td>" + (p.omprovningTriggad ? '<span class="neg" title="Omprövningsvillkor triggades">✗</span>' : "·") + "</td></tr>";
   }).join("");
+  /* REGELVERK §5: procent först vid n ≥ 10 — låt aldrig 2/2 se ut som 100 % */
   var hit = function(lins, horisont){
     var rel = tr.poster.filter(function(p){ return p.lins === lins && p.utfall[horisont] != null; });
     var traff = rel.filter(function(p){ return p.handling === "minska" ? p.utfall[horisont] < 0 : p.utfall[horisont] > 0; });
-    return rel.length ? traff.length + "/" + rel.length : "—";
+    if(!rel.length) return "—";
+    return rel.length >= 10 ? Math.round(traff.length / rel.length * 100) + " %" : traff.length + " av " + rel.length;
   };
+  /* §5: linser rankas på träffsäkerhet × √antal (alla horisonter sammanvägda) */
+  var linsScore = function(lins){
+    var rel = [], traff = 0;
+    tr.poster.forEach(function(p){
+      if(p.lins !== lins) return;
+      ["v1", "v4", "v12"].forEach(function(h){
+        if(p.utfall[h] == null) return;
+        rel.push(1);
+        if(p.handling === "minska" ? p.utfall[h] < 0 : p.utfall[h] > 0) traff++;
+      });
+    });
+    return rel.length ? (traff / rel.length) * Math.sqrt(rel.length) : -1;
+  };
+  var linsDel = function(lins, namn){
+    return "<b>" + namn + "</b> " + hit(lins, "v1") + " på 1 v · " + hit(lins, "v4") + " på 4 v · " + hit(lins, "v12") + " på 12 v";
+  };
+  var linsOrdnade = [["tidig", "tidig cykel"], ["momentum", "momentum"]]
+    .sort(function(a, b){ return linsScore(b[0]) - linsScore(a[0]); });
   $("#trackkropp").innerHTML =
     '<table class="trtab"><tr><th>Datum</th><th>Rek</th><th title="Lins: T = tidig cykel, M = momentum">L</th><th>1 v</th><th>4 v</th><th>12 v</th><th title="Omprövning triggad">Ompr.</th></tr>' + rader + "</table>" +
-    '<p class="trsummering">Träffsäkerhet (relativt S&P 500): <b>tidig cykel</b> ' + hit("tidig", "v1") + " på 1 v · " + hit("tidig", "v4") + " på 4 v · " + hit("tidig", "v12") + " på 12 v — <b>momentum</b> " + hit("momentum", "v1") + " · " + hit("momentum", "v4") + " · " + hit("momentum", "v12") + ". Mönstret är poängen: momentum vinner veckan, tidig cykel vinner kvartalet.</p>";
+    '<p class="trsummering" title="Linserna ordnas på träffsäkerhet × √antal utfall (REGELVERK §5); procent visas först vid ≥ 10 utfall per cell.">Träffsäkerhet (relativt S&P 500): ' +
+    linsDel(linsOrdnade[0][0], linsOrdnade[0][1]) + " — " + linsDel(linsOrdnade[1][0], linsOrdnade[1][1]) +
+    ". Mönstret är poängen: momentum vinner veckan, tidig cykel vinner kvartalet.</p>";
 }
 
 /* ---- Regim (P1-lineage + oförändrad anatomi) ---- */
@@ -1757,7 +2528,15 @@ function renderaRegim(data, regim, slut){
     '<span class="meter" role="img" aria-label="Riskaptit ' + regim.poang + ' av 100"><i data-niva="' + regim.poang + '"></i></span>' +
     '<span class="rtal">' + testTal(regim.poang) + '</span><span class="rmax">/100</span></div>';
   html += '<p class="slutsats">' + esc(slut.regim) + "</p>";
-  html += data.tripwires.map(bulletHtml).join("");
+  /* REGELVERK §4: tripwires på procentuellt avstånd till tröskeln — närmast brott överst */
+  html += data.tripwires.slice().sort(function(a, b){
+    var av = function(t){ return t.trosklar && t.trosklar[0] ? (t.trosklar[0] - t.varde) / t.trosklar[0] : null; };
+    var x = av(a), y = av(b);
+    if(x == null && y == null) return 0;
+    if(x == null) return 1;
+    if(y == null) return -1;
+    return x - y;
+  }).map(bulletHtml).join("");
   var c = data.regim.aiCapex;
   html += '<div class="nrad" title="' + esc("AI-capexcykel: SOX/SPX + hyperscaler-capex å/å. Källa: " + c.kalla + " · " + c.vintage) + '">' +
     '<span class="punkt ' + (c.pil === "upp" ? "gul" : "gron") + '"></span>' +
@@ -1782,11 +2561,32 @@ function renderaRegim(data, regim, slut){
     return '<p class="riskrad"><b>' + esc(x.regel.namn) + ":</b> " + esc(riskText(x.regel).split(": ")[1] || riskText(x.regel)) +
       ' <span class="kalla-chip">' + esc(x.regel.kalla) + "</span></p>";
   }).join("") + "</details>";
-  html += '<div class="sektionsrub" title="' + esc("Källa: spot/LME · vintage blandad — se radernas tooltips") + '">Metaller</div>';
-  html += [data.makro.guld, data.makro.silver, data.makro.koppar].map(function(m){ return metallRad(m, data); }).join("");
-  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %.") + '">Cross-asset-kvoter · 13 v-index</div>';
-  html += '<div class="kvoter">' + data.regim.kvoter.map(function(k){
-    return '<div class="nrad" title="' + esc(k.grupp + " — " + k.namn + ": index " + k.index) + '">' +
+  html += '<div class="sektionsrub" title="' + esc("Källa: spot/LME · vintage blandad — se radernas tooltips. Ordning: handlingsrelevans (ÖKA → BEVAKA → övrigt), därefter |Δ4v| (REGELVERK §4).") + '">Metaller</div>';
+  /* REGELVERK §4: metaller på handlingsrelevans, därefter störst 4-veckorsrörelse */
+  var metallOrd = { oka: 0, bevaka: 1 };
+  var metallLista = [data.makro.guld, data.makro.silver, data.makro.koppar].slice().sort(function(a, b){
+    var ao = metallOrd[a.atgard] != null ? metallOrd[a.atgard] : 2;
+    var bo = metallOrd[b.atgard] != null ? metallOrd[b.atgard] : 2;
+    var ad = Math.abs(parseFloat(String(a.delta4v || "").replace(",", ".").replace(/[^0-9.\-]/g, "")) || 0);
+    var bd = Math.abs(parseFloat(String(b.delta4v || "").replace(",", ".").replace(/[^0-9.\-]/g, "")) || 0);
+    return ao - bo || bd - ad;
+  });
+  html += metallLista.map(function(m){ return metallRad(m, data); }).join("");
+  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %. Ordning: |index − 100| fallande — störst avvikelse från 13 v-snittet överst; pil mot avvikelsens riktning flyttar ned ett steg (REGELVERK §4).") + '">Cross-asset-kvoter · 13 v-index</div>';
+  /* REGELVERK §4: kvoter på |index − 100| fallande; pil-inkonsekvens flyttar ned ett steg.
+     Risk-på-/risk-av-gruppering vid lika aktiveras när kvoterna bär ett riskPa-fält — grupp-
+     etiketten räcker inte för klassning, och vi gissar aldrig. */
+  var kvoterRank = data.regim.kvoter.slice().sort(function(a, b){
+    return Math.abs(b.index - 100) - Math.abs(a.index - 100) || (a.id < b.id ? -1 : 1);
+  });
+  for(var qi = 0; qi < kvoterRank.length - 1; qi++){
+    var q = kvoterRank[qi];
+    if((q.index > 100 && q.pil === "ned") || (q.index < 100 && q.pil === "upp")){
+      kvoterRank.splice(qi, 1); kvoterRank.splice(qi + 1, 0, q); qi++;
+    }
+  }
+  html += '<div class="kvoter">' + kvoterRank.map(function(k){
+    return '<div class="nrad" title="' + esc(k.grupp + " — " + k.namn + ": index " + k.index + " · avvikelse " + Math.abs(k.index - 100) + " från 13 v-snittet") + '">' +
       '<span class="punkt ' + k.status + '"></span><span class="etikett">' + esc(k.namn) + "</span>" +
       '<span class="varde">' + k.index + '</span><span class="riktpil ' + k.pil + '">' + PIL[k.pil] + "</span></div>";
   }).join("") + "</div>";
@@ -1801,7 +2601,8 @@ function renderaFloden(data, analys, slut){
   var kanda = data.sektorer.filter(function(s){ return s.flodeM; });
   var okanda = data.sektorer.filter(function(s){ return !s.flodeM; });
   var max = Math.max.apply(null, kanda.map(function(s){ return Math.abs(s.flodeM.v); }));
-  var rader = kanda.sort(function(a, b){ return b.flodeM.v - a.flodeM.v; }).map(function(s){
+  /* REGELVERK §4: staplar på |flöde| fallande — största rörelsen överst oavsett riktning */
+  var rader = kanda.sort(function(a, b){ return Math.abs(b.flodeM.v) - Math.abs(a.flodeM.v); }).map(function(s){
     var x = analys.perSektor[s.id];
     var div = s.flodeM.v > 0 && x.rrg.yKort < 0;
     var w = Math.abs(s.flodeM.v) / max * 48;
@@ -1888,19 +2689,120 @@ var MEGA_VAD_AR = {
   "HVDC-kabel": "Högspänningskabel som flyttar stora mängder el långa sträckor — till havsvind och mellan länder.",
   "Kylsystem": "AI-servrar drar så mycket ström att hallarna måste vätskekylas — vanlig luftkyla räcker inte.",
   "Elnätskapacitet": "Elnätets förmåga att ansluta nya storförbrukare. Kön här mäts i år, inte månader.",
-  "Hyperscalers": "Molnjättarna: Microsoft, Google, Amazon och Meta. Deras byggbudgetar är efterfrågan som skapar alla köer nedanför."
+  "Hyperscalers": "Molnjättarna: Microsoft, Google, Amazon och Meta. Deras byggbudgetar är efterfrågan som skapar alla köer nedanför.",
+  "Luftvärnsrobotar": "Patriot-robotar och deras syskon. Beställningskön motsvarar ungefär sju års produktion — köparen står i kö till 2030-talet.",
+  "Raketmotorer": "Motorn i roboten. En enda leverantör delar sin kapacitet mellan fyra robotprogram — kedjans trängsta punkt.",
+  "Artillerammunition": "155 mm-granater. Europa åttafaldigar produktionen på fyra år, men kruttillverkningen hinner inte med.",
+  "Plattformar (varv)": "Ubåtar och örlogsfartyg. Saabs orderingång växte 141 % — leveranserna sträcker sig in på 2030-talet.",
+  "Peptid-API": "Själva läkemedelssubstansen i GLP-1-behandlingarna. Akutbristen 2023–24 är över men kapaciteten är fortsatt stram.",
+  "Steril fill-finish": "Att fylla sprutorna sterilt är en egen industrigren — Novo köpte tre fabriker för 16,5 md$ för att säkra sina platser.",
+  "Autoinjektorer": "Sprutpennan patienten använder. När substansen räcker till blir pennan flaskhalsen.",
+  "Oral kapacitet": "Tablettversionen av GLP-1 — nästa våg. Fabrikerna byggs nu; kommersiell volym om 3–4 år.",
+  "Lagerautomation": "Robotlager åt e-handel och industri. Kions orderingång +26 % — första tecknet på cykelvändning.",
+  "Industrirobotar": "Klassiska fabriksrobotar. Strukturell efterfrågan av arbetskraftsbrist, men mjuk cykel utanför Kina just nu.",
+  "Integrationskapacitet": "Ingenjörerna som får automationen att fungera ihop — bristvaran är folk, inte hårdvara."
 };
-var MEGA_VISNING = { "Hyperscalers": "Molnjättarna" };
+var MEGA_VISNING = { "Hyperscalers": "Molnjättarna", "Integrationskapacitet": "Integratörer" };
 var MEGA_KOLUMN = {
   "Backl. å/å": { namn: "Kö", tips: "Kön växer: orderböckerna är så här mycket större än för ett år sedan (backlogg å/å) — kön blir längre trots att fabrikerna går för fullt." },
+  "Kö/backl.": { namn: "Kö", tips: "Köns storlek: orderstock eller beställningskö relativt produktionstakten — ju större kö, desto starkare säljarens läge." },
+  "Kapacitet": { namn: "Kapacitet", tips: "Utbyggnadsläget: investeringar och kapacitet relativt efterfrågan — stram kapacitet är kön i denna kedja." },
+  "Order å/å": { namn: "Order", tips: "Orderingångens tillväxt år över år — efterfrågetrycket in i kön." },
   "Ledtid": { namn: "Väntan", tips: "Väntetid från beställning till leverans (ledtid). Pil upp = kön växer fortfarande." },
-  "Marg-Δ": { namn: "Vinst", tips: "Tillverkarnas vinstmarginal, förändring i procentenheter. Kvittot på prismakt: en kö utan marginallyft är bara en kö — med marginallyft kan säljaren ta betalt." }
+  "Marg-Δ": { namn: "Vinst", tips: "Tillverkarnas vinstmarginal, förändring i procentenheter. Kvittot på prismakt: en kö utan marginallyft är bara en kö — med marginallyft kan säljaren ta betalt." },
+  "Trend": { namn: "Trend", tips: "Trängselns riktning: växer kön eller lättar den? Pil ned = prissättningsmakten smalnar (lättande kö ska kosta poäng)." }
 };
 var MEGA_EFTERFRAGAN = { "Hyperscalers": true };
 
+/* Bakåtkompatibel läsning under migrationen: LIVE-datat kan bära gamla
+   "megatrend"-objektet tills dess kurerade post uppdaterats (main-commit efter merge). */
+function hamtaMegatrender(data){
+  if(data.megatrender) return data.megatrender;
+  if(data.megatrend){
+    var m = data.megatrend;
+    return [{ id: "ai", namn: "AI & Datacenter", kalla: m.kalla, vintage: m.vintage, kolumner: m.kolumner, rader: m.rader }];
+  }
+  return [];
+}
+function allaMegaRader(data){
+  var ut = [];
+  hamtaMegatrender(data).forEach(function(t){ ut = ut.concat(t.rader); });
+  return ut;
+}
+
+/* ============ Megatrendpoäng — REGELVERK.md §3 (beräknas här, aldrig i filen) ============ */
+function megaCellpoang(cell, kolIndex){
+  if(!cell || cell.n == null) return null;
+  var bas;
+  if(kolIndex === 0){ bas = cell.enhet === "man" ? cell.n / 48 * 100 : cell.n / 60 * 100; }
+  else if(kolIndex === 1){ bas = (cell.n - 3) / 45 * 100; }
+  else { bas = cell.n / 4 * 100; }
+  bas = Math.max(0, Math.min(100, bas));
+  if(cell.pil === "upp") bas += 10;
+  else if(cell.pil === "ned") bas -= 10;
+  return Math.max(0, Math.min(100, bas));
+}
+var MEGA_RADVIKT = [0.4, 0.3, 0.2]; /* kö / ledtid / marginal — renormeras vid null */
+function megaRadpoang(rad){
+  var summa = 0, vikt = 0, medN = 0, utanApprox = 0;
+  rad.celler.forEach(function(c, i){
+    var p = megaCellpoang(c, i);
+    if(p != null){ summa += p * MEGA_RADVIKT[i]; vikt += MEGA_RADVIKT[i]; medN++; }
+    if(!c || !/approx/i.test(c.k || "")) utanApprox++;
+  });
+  if(!vikt) return { poang: null, approx: rad.celler.some(function(c){ return /approx/i.test((c && c.k) || ""); }) };
+  var basp = summa / vikt;
+  var verifiering = 0.85 + 0.15 * (utanApprox / rad.celler.length);
+  var tackning = 0.70 + 0.30 * (medN / rad.celler.length);
+  return { poang: basp * verifiering * tackning, approx: utanApprox < rad.celler.length };
+}
+function megaCrowdingFlagga(temaId, data){
+  if(temaId !== "ai" || !data.regim) return false;
+  var f = data.regim.aiCapex;
+  var v = f == null ? null : (typeof f === "number" ? f : f.v);
+  return v != null && v > 1.3;
+}
+/* Rankar teman + rader. Returnerar fallande lista:
+   [{tema, poang, komponenter:{topp3, bredd, crowding}, approx, rader:[{rad, poang, approx}]}] */
+function beraknaMegaRank(data){
+  return hamtaMegatrender(data).map(function(m){
+    var poangRader = m.rader
+      .filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; })
+      .map(function(r){ var rp = megaRadpoang(r); return { rad: r, poang: rp.poang, approx: rp.approx }; })
+      .sort(function(a, b){
+        if(a.poang == null && b.poang == null) return 0;
+        if(a.poang == null) return 1;
+        if(b.poang == null) return -1;
+        return b.poang - a.poang;
+      });
+    var medPoang = poangRader.filter(function(r){ return r.poang != null; });
+    var topp3 = medPoang.slice(0, 3);
+    var topp3snitt = topp3.length ? topp3.reduce(function(s, r){ return s + r.poang; }, 0) / topp3.length : null;
+    var bredd = topp3snitt == null ? 0 : Math.min(Math.max(medPoang.filter(function(r){ return r.poang >= 60; }).length - 1, 0), 3) * 5;
+    var crowding = megaCrowdingFlagga(m.id, data) ? -10 : 0;
+    return {
+      tema: m,
+      poang: topp3snitt == null ? null : topp3snitt + bredd + crowding,
+      komponenter: { topp3: topp3snitt, bredd: bredd, crowding: crowding },
+      approx: topp3.some(function(r){ return r.approx; }),
+      rader: poangRader
+    };
+  }).sort(function(a, b){
+    if(a.poang == null && b.poang == null) return 0;
+    if(a.poang == null) return 1;
+    if(b.poang == null) return -1;
+    return b.poang - a.poang;
+  });
+}
+
+var megaAktivtTema = null, megaSenasteArgs = null;
 function renderaMegatrend(data, analys, kort){
-  var m = data.megatrend;
-  satLin("lin-mega", "branschdata", m.vintage);
+  megaSenasteArgs = [data, analys, kort];
+  var rank = beraknaMegaRank(data);
+  var teman = rank.map(function(r){ return r.tema; }); /* flikordningen ÄR rankingen (§3) */
+  if(!teman.length){ $("#megakropp").innerHTML = ""; return; }
+  if(!megaAktivtTema || !teman.some(function(t){ return t.id === megaAktivtTema; })) megaAktivtTema = teman[0].id;
+
   var rankade = rankadeAktier(data);
   var rekFor = function(sektor){ return kort.filter(function(k){ return k.s.namn === sektor; })[0]; };
   var aktierFor = function(tema){
@@ -1914,63 +2816,107 @@ function renderaMegatrend(data, analys, kort){
     return refs.replace(/([A-ZÅÄÖ]{2,6}) #(\d+)/g, '<a class="korslank" href="#/aktier-konsensus" title="Öppna konvergenslistan — $1 är #$2 i rankingen">$1 #$2</a>');
   };
 
-  function renderaGrupp(lista){
-    return lista.map(function(rad, ri){
-      var celler = rad.celler.map(function(c, ci){
-        return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
-          esc(rad.namn) + " · " + esc(kolNamn(m.kolumner[ci])) + ": " + esc(c.v) + " · " + esc(c.k) + " · " + esc(m.vintage) + '">' +
-          esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
-      }).join("");
-      var visning = MEGA_VISNING[rad.namn] || rad.namn;
-      var vadAr = MEGA_VAD_AR[rad.namn] || rad.namn;
-      var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr) + '">' + esc(visning) + "</span>" + celler + "</div>";
-      var nasta = lista[ri + 1];
-      if(!nasta || nasta.sektor !== rad.sektor){
-        var rek = rekFor(rad.sektor);
-        var grupp = lista.filter(function(r){ return r.sektor === rad.sektor; });
-        var teman = [];
-        grupp.forEach(function(r){ if(teman.indexOf(r.tema) === -1) teman.push(r.tema); });
-        var refs = [];
-        teman.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
-        refs = refs.slice(0, 2).join(" · ");
-        var kons;
-        if(rek){
-          kons = rek.handling === "minska"
-            ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + lankaRefs(refs) + "." : "")
-            : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + lankaRefs(refs) : "");
-        } else {
-          kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs ? lankaRefs(refs) : "se konvergenslistan");
+  function temaHtml(m, temaRank){
+    var radPoang = {};
+    (temaRank ? temaRank.rader : []).forEach(function(r){ radPoang[r.rad.namn] = r; });
+    function renderaGrupp(lista){
+      return lista.map(function(rad, ri){
+        var celler = rad.celler.map(function(c, ci){
+          return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
+            esc(rad.namn) + " · " + esc(kolNamn(m.kolumner[ci])) + ": " + esc(c.v) + " · " + esc(c.k) + " · " + esc(m.vintage) + '">' +
+            esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
+        }).join("");
+        var visning = MEGA_VISNING[rad.namn] || rad.namn;
+        var vadAr = MEGA_VAD_AR[rad.namn] || rad.namn;
+        var rp = radPoang[rad.namn];
+        var poangTitel = rp && rp.poang != null
+          ? " · Radpoäng " + svTal(rp.poang, 1) + "/100 (REGELVERK §3)" + (rp.approx ? " · vilar delvis på approx-celler" : "")
+          : (rp ? " · Radpoäng — (saknar numeriska celler, rankas sist)" : "");
+        var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr + poangTitel) + '">' + esc(visning) + "</span>" + celler + "</div>";
+        var nasta = lista[ri + 1];
+        if(!nasta || nasta.sektor !== rad.sektor){
+          var rek = rekFor(rad.sektor);
+          var grupp = lista.filter(function(r){ return r.sektor === rad.sektor; });
+          var teman2 = [];
+          grupp.forEach(function(r){ if(teman2.indexOf(r.tema) === -1) teman2.push(r.tema); });
+          var refs = [];
+          teman2.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
+          refs = refs.slice(0, 2).join(" · ");
+          var kons;
+          if(rek){
+            kons = rek.handling === "minska"
+              ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + lankaRefs(refs) + "." : "")
+              : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + lankaRefs(refs) : "");
+          } else {
+            kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs ? lankaRefs(refs) : "se konvergenslistan");
+          }
+          ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
         }
-        ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
-      }
-      return ut;
-    }).join("");
+        return ut;
+      }).join("");
+    }
+
+    var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
+    /* radordning = radpoäng fallande (§3); rader utan poäng sist i sin dataordning */
+    var flaskhalsar = temaRank
+      ? temaRank.rader.map(function(r){ return r.rad; })
+      : m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
+    var toppRad = temaRank && temaRank.rader.length && temaRank.rader[0].poang != null
+      ? temaRank.rader[0].rad : toppFlaskhals(m);
+    var topp = toppRad;
+    var rekT = rekFor(topp.sektor);
+    var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
+    var slutrubrik = efterfragan.length ? "3 · Slutsats" : "Slutsats";
+    var syntes = "<b>" + slutrubrik + " — trängst: " + esc(topp.namn) + ".</b> " +
+      esc(topp.celler[1].v) + " väntetid, kö " + esc(topp.celler[0].v) +
+      (rekT ? " — talar för <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
+        : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? lankaRefs(toppRefs) + "." : "enskilda aktier."));
+
+    var kolumnhuvud = '<div class="mrad huvud"><span>Flaskhals</span>' +
+      m.kolumner.map(function(kol){
+        var k = MEGA_KOLUMN[kol];
+        return '<span title="' + esc(k ? k.tips : kol) + '"' + (k ? ' class="hjalpmark"' : "") + ">" + esc(kolNamn(kol)) + "</span>";
+      }).join("") + "</div>";
+
+    return (efterfragan.length
+        ? '<div class="msek">1 · Efterfrågan: molnjättarna bygger</div>' +
+          '<div class="matris">' + renderaGrupp(efterfragan) + "</div>" +
+          '<div class="msek">2 · Köerna det skapar</div>'
+        : "") +
+      '<div class="matris">' + kolumnhuvud + renderaGrupp(flaskhalsar) + "</div>" +
+      (m.not ? '<p class="meganot">' + esc(m.not) + "</p>" : "") +
+      '<p class="syntes">' + syntes + "</p>";
   }
 
-  var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
-  var flaskhalsar = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
-
-  var topp = toppFlaskhals(m);
-  var rekT = rekFor(topp.sektor);
-  var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
-  var syntes = "<b>3 · Slutsats — trängst: " + esc(topp.namn) + ".</b> " +
-    esc(topp.celler[1].v) + " väntetid och kön +" + esc(topp.celler[0].v.replace(/^\+/, "")) + "/år" +
-    (rekT ? " — talar för <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
-      : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? lankaRefs(toppRefs) + "." : "enskilda aktier."));
+  var aktivt = teman.filter(function(t){ return t.id === megaAktivtTema; })[0] || teman[0];
+  satLin("lin-mega", aktivt.kalla.split("(")[0].trim(), aktivt.vintage, aktivt.kalla);
 
   $("#megakropp").innerHTML =
-    '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera.</p>' +
-    '<div class="msek">1 · Efterfrågan: molnjättarna bygger</div>' +
-    '<div class="matris">' + renderaGrupp(efterfragan) + "</div>" +
-    '<div class="msek">2 · Köerna det skapar</div>' +
-    '<div class="matris"><div class="mrad huvud"><span>Flaskhals</span>' +
-    m.kolumner.map(function(kol){
-      var k = MEGA_KOLUMN[kol];
-      return '<span title="' + esc(k ? k.tips : kol) + '"' + (k ? ' class="hjalpmark"' : "") + ">" + esc(kolNamn(kol)) + "</span>";
+    '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera. Flikordningen är rankingen (REGELVERK §3).</p>' +
+    '<div class="flikar megaflikar" role="tablist" aria-label="Megatrender, rankade">' +
+    rank.map(function(r, i){
+      var titel = r.poang == null
+        ? r.tema.namn + " — utan poäng (saknar numeriska celler)"
+        : "#" + (i + 1) + " " + r.tema.namn + " · " + svTal(r.poang, 1) + "/100 = topp-3-snitt " + svTal(r.komponenter.topp3, 1) +
+          (r.komponenter.bredd ? " + breddbonus " + r.komponenter.bredd : "") +
+          (r.komponenter.crowding ? " − trängselavdrag " + (-r.komponenter.crowding) : "") +
+          (r.approx ? " · rankingen vilar delvis på approx-celler" : "") + " · REGELVERK §3";
+      return '<button class="flik" role="tab" type="button" data-tema="' + esc(r.tema.id) + '" aria-selected="' + (r.tema.id === aktivt.id ? "true" : "false") + '" title="' + esc(titel) + '">' +
+        '<span class="megarank">#' + (i + 1) + "</span> " + esc(r.tema.namn) +
+        (r.poang != null ? ' <span class="megapoang">' + Math.round(r.poang) + "</span>" : "") +
+        (r.approx ? "*" : "") + "</button>";
     }).join("") + "</div>" +
-    renderaGrupp(flaskhalsar) + "</div>" +
-    '<p class="syntes">' + syntes + "</p>";
+    rank.map(function(r){
+      return '<div class="megatema"' + (r.tema.id === aktivt.id ? "" : " hidden") + ">" + temaHtml(r.tema, r) + "</div>";
+    }).join("");
 }
+/* delegerad flikväxling — flikarna återskapas vid varje datarendering */
+document.addEventListener("click", function(ev){
+  var knapp = ev.target.closest ? ev.target.closest(".megaflikar [data-tema]") : null;
+  if(!knapp || !megaSenasteArgs) return;
+  megaAktivtTema = knapp.dataset.tema;
+  renderaMegatrend.apply(null, megaSenasteArgs);
+});
 
 /* ============ Klocka, stämpel, inläsning ============ */
 function uppdateraKlocka(){
@@ -1996,6 +2942,12 @@ function laddaTrack(){
   return fetch(TRACKKALLA, {cache:"no-store"})
     .then(function(r){ if(!r.ok) throw new Error("saknas"); return r.json(); })
     .catch(function(){ return lasInline("trackrecordlager"); });
+}
+function laddaScreen(){
+  /* inga mockade screenerdata: saknas filen (file://, före första körningen) => null */
+  return fetch("data/screen.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("saknas"); return r.json(); })
+    .catch(function(){ return null; });
 }
 
 /* ============ TP-acceleration — läser datapanelen (Supabase) i webbläsaren ============ */
@@ -2235,19 +3187,28 @@ function uppdateraKortTpa(tpa){
     : toppAcc ? toppAcc.ticker + " +" + svTal(toppAcc.accBp, 1) + " bp/d²"
     : tpa.lage === "LIVE" ? "inga accelererar" : "testblock";
 }
-function renderaOversikt(data, analys, kort, regim, slut){
+function renderaOversikt(data, analys, kort, regim, slut, koprek){
   var heroEl = $("#hero");
   if(!heroEl) return;
   var topp3 = rankadeAktier(data).slice(0, 3);
-  var trangst = toppFlaskhals(data.megatrend);
+  /* trängst = topprankade temats topprankade rad (§3); fallback intensitet om poäng saknas */
+  var mrank = beraknaMegaRank(data);
+  var trangst = (mrank.length && mrank[0].rader.length && mrank[0].rader[0].poang != null)
+    ? mrank[0].rader[0].rad
+    : toppFlaskhals({ rader: allaMegaRader(data) });
+  var toppRek = koprek && koprek.rek && koprek.rek.length ? koprek.rek[0] : null;
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
+    (toppRek
+      ? '<p class="slutsats"><span class="badge oka">' + esc(toppRek.etikett) + "</span> <b>" +
+        esc(toppRek.aktie.ticker) + "</b> · konviktion " + toppRek.konviktion + "/100 — hela kedjan under Aktier &amp; Konsensus.</p>"
+      : (koprek && koprek.forklaring ? '<p class="slutsats">' + esc(koprek.forklaring) + "</p>" : "")) +
     '<div class="heromatt">' +
       '<span class="heromattdel" title="' + esc(slut.regim) + '">Riskaptit <b>' + regim.poang + "</b>/100 · " +
         data.tripwires.map(function(t){
           return esc(t.etikett) + ' <span class="punkt ' + tripwireStatus(t) + '"></span>';
         }).join(" ") + "</span>" +
-      '<span class="heromattdel" title="Topp 3 av ' + data.screenadeAntal + ' screenade — hela listan under Aktier &amp; Konsensus.">Konvergens: ' +
+      '<span class="heromattdel" title="' + (screenGlobal ? "Topp 3 av " + screenGlobal.lista.length + " poängsatta (screener v1 · " + screenGlobal.vintage + ")" : "Topp 3 ur kurerade urvalet") + ' — hela listan under Aktier &amp; Konsensus.">Konvergens: ' +
         topp3.map(function(a){ return "<b>" + esc(a.ticker) + "</b> " + a.styrka; }).join(" · ") + "</span>" +
       '<span class="heromattdel" title="Megatrendens mest ansträngda flaskhals — detaljer under Trångsektorer.">Trängst: <b>' +
         esc(trangst.namn) + "</b> " + esc(trangst.celler[1].v) + " väntan · kö " + esc(trangst.celler[0].v) + "</span>" +
@@ -2291,20 +3252,24 @@ function renderaOversikt(data, analys, kort, regim, slut){
       slut.regim) +
     kortSkal("#/aktier-konsensus", "Aktier & insyn",
       linBadge(data.aktierLineage.kalla, data.aktierLineage.vintage),
+      (toppRek ? krad("Högsta rek: " + esc(toppRek.aktie.ticker), toppRek.etikett + " · " + toppRek.konviktion)
+               : krad("Köprek-motorn", koprek && koprek.lage === "stangd" ? "regimgrind stängd" : "inga rek ännu")) +
       topp3.map(function(a){ return krad("#" + (topp3.indexOf(a) + 1) + " " + esc(a.ticker), a.parlor.length + "/7 · " + a.styrka); }).join("") +
       '<span class="krad"><span>TP-acceleration</span><b id="kort-tpa-rad">' +
         (tpaS ? "" : "läser …") + "</b></span>",
       slut.aktier) +
     kortSkal("#/trangsektorer", "Trångsektorer",
-      linBadge("branschdata", data.megatrend.vintage),
+      linBadge("branschdata · " + hamtaMegatrender(data).length + " teman", "per tema",
+        hamtaMegatrender(data).map(function(t){ return t.namn + " (" + t.vintage + ")"; }).join(" · ")),
       krad(esc(trangst.namn), esc(trangst.celler[0].v) + " kö · " + esc(trangst.celler[1].v)) +
-      krad("Väntetiderna", data.megatrend.rader.filter(function(r){ return r.celler[1].pil === "upp"; }).length + " av " + data.megatrend.rader.length + " växer"),
+      krad("Väntetiderna", allaMegaRader(data).filter(function(r){ return r.celler[1] && r.celler[1].pil === "upp"; }).length + " av " + allaMegaRader(data).length + " växer"),
       "Pengarna i en megatrend finns där kön är längst.");
   if(tpaS) uppdateraKortTpa(tpaS);
 }
 
-var dataGlobal = null;
-function renderaAllt(data, tr){
+var dataGlobal = null, screenGlobal = null;
+function renderaAllt(data, tr, screen){
+  if(screen !== undefined) screenGlobal = screen;
   dataGlobal = data;
   AKTIVT_LAGE = data.lage === "LIVE" ? "LIVE" : "TEST";
   var mark = $("#lagesmark");
@@ -2323,18 +3288,20 @@ function renderaAllt(data, tr){
   var kort = byggKort(analys, data);
   var regim = beraknaRegim(data);
   var slut = slutsatser(data, analys, regim, kort);
-  assertions(data, analys, kort);
+  var koprek = beraknaKoprek(data, analys, kort, regim, screenGlobal);
+  assertions(data, analys, kort, regim);
   renderaVanster(data, analys, kort, slut);
   renderaMetod(data, regim);
   renderaRadar(data, analys, kort, slut);
-  renderaAktier(data, slut);
+  renderaAktier(data, slut, screenGlobal);
+  renderaKoprek(koprek, data);
   renderaTrack(tr);
   initTpa(data);
   renderaRegim(data, regim, slut);
   renderaFloden(data, analys, slut);
   renderaMakro(data, analys, slut);
   renderaMegatrend(data, analys, kort);
-  renderaOversikt(data, analys, kort, regim, slut);
+  renderaOversikt(data, analys, kort, regim, slut, koprek);
   sattStampel(data);
   senastLast = new Date();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
@@ -2343,14 +3310,14 @@ function renderaAllt(data, tr){
   }); });
 }
 
-renderaAllt(lasInline("datalager"), lasInline("trackrecordlager"));
-Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); });
+renderaAllt(lasInline("datalager"), lasInline("trackrecordlager"), undefined);
+Promise.all([laddaData(), laddaTrack(), laddaScreen()]).then(function(res){ renderaAllt(res[0], res[1], res[2]); });
 uppdateraKlocka();
 setInterval(uppdateraKlocka, 30 * 1000);
-setInterval(function(){ Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); }); }, 30 * 60 * 1000);
+setInterval(function(){ Promise.all([laddaData(), laddaTrack(), laddaScreen()]).then(function(res){ renderaAllt(res[0], res[1], res[2]); }); }, 30 * 60 * 1000);
 document.addEventListener("visibilitychange", function(){
   if(!document.hidden && senastLast && Date.now() - senastLast.getTime() > 30 * 60 * 1000){
-    Promise.all([laddaData(), laddaTrack()]).then(function(res){ renderaAllt(res[0], res[1]); });
+    Promise.all([laddaData(), laddaTrack(), laddaScreen()]).then(function(res){ renderaAllt(res[0], res[1], res[2]); });
   }
 });
 
