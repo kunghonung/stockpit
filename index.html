@@ -455,6 +455,10 @@ li.oppen .sigdetalj{ display:block; }
 .hjalpmark{ cursor:help; border-bottom:1px dotted var(--svag); }
 .korslank{ color:var(--accent); text-decoration:none; }
 .korslank:hover{ text-decoration:underline; }
+.meganot{ font-size:var(--fs11); color:var(--damp); line-height:1.4; margin-top:var(--s4); }
+.megaflikar{ margin:0 0 var(--s8); }
+#sida-trang .mrad{ grid-template-columns:128px 1fr 1fr 1fr; }
+#sida-trang .fnamn{ text-overflow:ellipsis; }
 .mrad{ display:grid; grid-template-columns:92px 1fr 1fr 1fr; gap:var(--s4); align-items:center; }
 .mrad.huvud{ margin-bottom:var(--s4); }
 .mrad.huvud span{ font-size:var(--fs11); font-weight:600; letter-spacing:.02em; text-transform:uppercase; color:var(--svag); text-align:right; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
@@ -910,32 +914,522 @@ li.oppen .sigdetalj{ display:block; }
     "koppar": { "namn": "Koppar", "kort": "HG1", "varde": "9 640", "enhet": "USD/t", "pil": "upp", "delta4v": "+2,1 %", "over200d": true, "status": "gul", "atgard": "bevaka", "kalla": "LME 3 mån", "vintage": "approx" }
   },
 
-  "megatrend": {
-    "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)", "vintage": "2026-Q2",
-    "kolumner": ["Backl. å/å", "Ledtid", "Marg-Δ"],
-    "rader": [
-      { "namn": "Transformatorer", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+42 %", "i": 4, "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy" },
-                    { "v": "38 m", "pil": "upp", "i": 4, "k": "Ledtid 38 månader — stora krafttransformatorer" },
-                    { "v": "+3,2", "i": 3, "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna" } ] },
-      { "namn": "HVDC-kabel", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+31 %", "i": 3, "k": "Backlogg å/å — Prysmian/NKT/Nexans" },
-                    { "v": "30 m", "pil": "upp", "i": 3, "k": "Ledtid 30 månader — högspänningskabel" },
-                    { "v": "+2,1", "i": 2, "k": "Prispåslag +2,1 procentenheter i nya kontrakt" } ] },
-      { "namn": "Kylsystem", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+34 %", "i": 3, "k": "Backlogg å/å — datacenter-kyla (vätskekyla)" },
-                    { "v": "9 m", "pil": "upp", "i": 2, "k": "Ledtid 9 månader — kylsystem för AI-täta hallar" },
-                    { "v": "+2,8", "i": 3, "k": "Prismakt +2,8 procentenheter hos kylleverantörer" } ] },
-      { "namn": "Elnätskapacitet", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+19 %", "i": 2, "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)" },
-                    { "v": "44 m", "pil": "upp", "i": 4, "k": "Kötid 44 månader — nätanslutning datacenter" },
-                    { "v": "+0,9", "i": 1, "k": "Nättariffer +0,9 procentenheter" } ] },
-      { "namn": "Hyperscalers", "sektor": "Teknik", "tema": "ai",
-        "celler": [ { "v": "+38 %", "i": 4, "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)" },
-                    { "v": "26 v", "pil": "hoger", "i": 2, "k": "Leveranstid 26 veckor — GPU/serverutrustning" },
-                    { "v": "+4,1", "i": 4, "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)" } ] }
-    ]
-  },
+  "megatrender": [
+    {
+      "id": "ai",
+      "namn": "AI & Datacenter",
+      "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)",
+      "vintage": "2026-Q2",
+      "kolumner": [
+        "Backl. å/å",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "rader": [
+        {
+          "namn": "Transformatorer",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+42 %",
+              "i": 4,
+              "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy",
+              "n": 42.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "38 m",
+              "pil": "upp",
+              "i": 4,
+              "k": "Ledtid 38 månader — stora krafttransformatorer",
+              "n": 38.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+3,2",
+              "i": 3,
+              "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna",
+              "n": 3.2,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "HVDC-kabel",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+31 %",
+              "i": 3,
+              "k": "Backlogg å/å — Prysmian/NKT/Nexans",
+              "n": 31.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "30 m",
+              "pil": "upp",
+              "i": 3,
+              "k": "Ledtid 30 månader — högspänningskabel",
+              "n": 30.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+2,1",
+              "i": 2,
+              "k": "Prispåslag +2,1 procentenheter i nya kontrakt",
+              "n": 2.1,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Kylsystem",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+34 %",
+              "i": 3,
+              "k": "Backlogg å/å — datacenter-kyla (vätskekyla)",
+              "n": 34.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "9 m",
+              "pil": "upp",
+              "i": 2,
+              "k": "Ledtid 9 månader — kylsystem för AI-täta hallar",
+              "n": 9.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+2,8",
+              "i": 3,
+              "k": "Prismakt +2,8 procentenheter hos kylleverantörer",
+              "n": 2.8,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Elnätskapacitet",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+19 %",
+              "i": 2,
+              "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)",
+              "n": 19.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "44 m",
+              "pil": "upp",
+              "i": 4,
+              "k": "Kötid 44 månader — nätanslutning datacenter",
+              "n": 44.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+0,9",
+              "i": 1,
+              "k": "Nättariffer +0,9 procentenheter",
+              "n": 0.9,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Hyperscalers",
+          "sektor": "Teknik",
+          "tema": "ai",
+          "celler": [
+            {
+              "v": "+38 %",
+              "i": 4,
+              "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)",
+              "n": 38.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "26 v",
+              "pil": "hoger",
+              "i": 2,
+              "k": "Leveranstid 26 veckor — GPU/serverutrustning",
+              "n": 26.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+4,1",
+              "i": 4,
+              "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)",
+              "n": 4.1,
+              "enhet": "pp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forsvar",
+      "namn": "Försvar & Upprustning",
+      "kalla": "Bolagsrapporter Q1–Q2 2026 (Rheinmetall, Saab) + FPRI/CSIS + branschmedia",
+      "vintage": "2026-Q2",
+      "kolumner": [
+        "Kö/backl.",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "not": "Rheinmetall orderstock 73 md€ (+30 % å/å) Q1 2026 — systemhusens böcker fulla; trängst är robotar och raketmotorer.",
+      "rader": [
+        {
+          "namn": "Luftvärnsrobotar",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "7 år",
+              "i": 5,
+              "k": "FMS-kö 4 300+ PAC-3 ≈ 7 årsproduktioner (600/år 2025, mål 2 000/år 2030) — FPRI maj 2026",
+              "n": 84,
+              "enhet": "man"
+            },
+            {
+              "v": "24–30 m",
+              "pil": "upp",
+              "i": 5,
+              "k": "Robot 24 mån, raketmotor 30 mån — nya kontrakt levereras tidigast mitten av 2028",
+              "n": 27,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 3,
+              "k": "Marginal ej särredovisad hos US-primes; sole-source-läge i motorer och sökare",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Raketmotorer",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "4 program",
+              "i": 5,
+              "k": "L3Harris/Aerojet enda källan för Patriot, THAAD, Tomahawk och SM — kön delas av fyra robotprogram",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "30 m",
+              "i": 5,
+              "k": "Längsta delkomponentledtiden i luftvärnskedjan (FPRI); sökare: ~650–700/år ur en enda Boeing-fabrik",
+              "n": 30,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 3,
+              "k": "Underleverantörsled utan öppen marginalredovisning",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Artillerammunition",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "8× på 4 år",
+              "i": 4,
+              "k": "Europakapacitet mot ~2 M granater 155 mm/år 2026 (Rheinmetall 750 t → 1,1 M 2027) — sekundärkälla — 8× på 4 år ≈ +68 %/år CAGR",
+              "n": 68,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "12–24 m",
+              "i": 3,
+              "k": "Krut/sprängämnen (nitrocellulosa) begränsar — approx",
+              "n": 18,
+              "enhet": "man"
+            },
+            {
+              "v": "+1,0 pp",
+              "i": 3,
+              "k": "Rheinmetall rörelsemarginal 11,6 % Q1 2026 (10,6 % Q1 2025); helårsmål ~19 %",
+              "n": 1.0,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Plattformar (varv)",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "+141 %",
+              "i": 4,
+              "k": "Saab orderingång å/å Kv2 2026: 68,4 mdr SEK, varav ubåtar till Polen 47 mdr",
+              "n": 141,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "~8 år",
+              "pil": "upp",
+              "i": 3,
+              "k": "Ubåtsleveranser in på 2030-talet — approx utifrån varvskapacitet",
+              "n": 96,
+              "enhet": "man"
+            },
+            {
+              "v": "+1,0 pp",
+              "i": 3,
+              "k": "Saab EBIT-marginal 11,0 % Kv2 2026 (10,0 % Kv2 2025)",
+              "n": 1.0,
+              "enhet": "pp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glp1",
+      "namn": "GLP-1 & Biologika",
+      "kalla": "Bolags- och branschkällor H1 2026 (Lilly, Novo/Ypsomed, CDMO-branschen)",
+      "vintage": "2026-H1",
+      "kolumner": [
+        "Kapacitet",
+        "Ledtid",
+        "Trend"
+      ],
+      "not": "Prissättningsmakten smalnar: köerna flyttar från API och fill-finish till devices och oral kapacitet. Marknadsprognoser ~150–200 md$/år 2030–31.",
+      "rader": [
+        {
+          "namn": "Peptid-API",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": ">50 md$",
+              "i": 4,
+              "k": "Lillys ackumulerade USA-tillverkningskapex sedan 2020 (dubblad): Texas 6,5 + Virginia 5 md$ till API/injektabler",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "2–3 år",
+              "i": 3,
+              "k": "Nybyggd API-kapacitet till drift — approx",
+              "n": 30,
+              "enhet": "man"
+            },
+            {
+              "v": "lättar",
+              "pil": "ned",
+              "i": 3,
+              "k": "Akut brist 2023–24 över; kapaciteten dock fortsatt stram mot efterfrågan",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Steril fill-finish",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "stram",
+              "i": 4,
+              "k": "'Förbättrad men fortsatt begränsad relativt efterfrågan' (2026); Novo köpte Catalents tre fill-finish-siter (16,5 md$, klart dec 2024)",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "4–5 år",
+              "i": 3,
+              "k": "Greenfield steril linje till GMP-godkänd drift — approx branschpraxis",
+              "n": 54,
+              "enhet": "man"
+            },
+            {
+              "v": "uppbokad",
+              "pil": "hoger",
+              "i": 3,
+              "k": "CDMO-slots fortsatt fyllda; mindre kunder trängs undan",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Autoinjektorer",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "utbyggnad",
+              "i": 4,
+              "k": "Ypsomed×Novo: leveranser från 2025, kapacitetsplan till 2031, Novo delfinansierar nya linjer",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "12–18 m",
+              "i": 3,
+              "k": "Verktyg, formsprutning och montagelinjer — approx",
+              "n": 15,
+              "enhet": "man"
+            },
+            {
+              "v": "kvarstår",
+              "pil": "upp",
+              "i": 4,
+              "k": "Devices är den kvarvarande flaskhalsen när API/fill-finish lättar",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Oral kapacitet",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "6 md$",
+              "i": 3,
+              "k": "Lillys Alabama-site för orforglipron; + 1,2 md$ Puerto Rico och 3 md$ Leiden",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "3–4 år",
+              "i": 3,
+              "k": "Site till kommersiell volym — approx",
+              "n": 42,
+              "enhet": "man"
+            },
+            {
+              "v": "byggs",
+              "pil": "upp",
+              "i": 3,
+              "k": "Oral våg 2026–28 flyttar volym från injektabler",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demografi",
+      "namn": "Demografi & Automation",
+      "kalla": "Kion Q1 2026, IFR World Robotics 2025, Deloitte/NAM 2024",
+      "vintage": "2026-Q1",
+      "kolumner": [
+        "Order å/å",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "not": "Strukturell efterfrågan (arbetskraftsbrist) men mjuk hårdvarucykel — vändningen syns först i lagerautomationens order.",
+      "rader": [
+        {
+          "namn": "Lagerautomation",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "+25,9 %",
+              "i": 4,
+              "k": "Kion Intelligent Automation Solutions orderingång Q1 2026 (951 M€)",
+              "n": 25.9,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "12–24 m",
+              "i": 3,
+              "k": "Projekt från order till driftsatt anläggning — approx",
+              "n": 18,
+              "enhet": "man"
+            },
+            {
+              "v": "+0,7 pp",
+              "i": 3,
+              "k": "Kion IAS justerad EBIT-marginal 6,0 % Q1 2026 (5,3 % Q1 2025)",
+              "n": 0.7,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Industrirobotar",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "+6 %",
+              "i": 2,
+              "k": "IFR-prognos 2025: 575 000 installationer (542 000 år 2024); >700 000/år 2028",
+              "n": 6,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "3–6 m",
+              "i": 2,
+              "k": "Normaliserade leveranstider efter 2021–22 — approx",
+              "n": 4.5,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 2,
+              "k": "Mjuk cykel utanför Kina: USA −9 %, Japan −4 % installationer 2024",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Integrationskapacitet",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "1,9 M",
+              "i": 4,
+              "k": "Ofyllda US-industrijobb till 2033 (Deloitte/NAM 2024) — strukturell efterfrågan på automation",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "9–18 m",
+              "i": 3,
+              "k": "Integratörs- och ingenjörskapacitet, inte hårdvaran, sätter takten — approx",
+              "n": 13.5,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 2,
+              "k": "Fragmenterat led utan öppen marginalredovisning",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
 
   "screenadeAntal": 214,
   "aktierLineage": { "kalla": "FI/SEC", "vintage": "2026-W29" },
@@ -1456,7 +1950,7 @@ function renderaVanster(data, analys, kort, slut){
     var revVarning = k.revVarning ? '<span class="divflagga" title="VARNING: sektorn har störst nedrevideringar — ÖKA tillåts aldrig utan denna flagga (estimatregeln).">! estimat</span>' : "";
     var konflikt = "";
     if(k.handling === "minska"){
-      var mega = data.megatrend.rader.filter(function(r){ return r.sektor === s.namn; });
+      var mega = allaMegaRader(data).filter(function(r){ return r.sektor === s.namn; });
       if(mega.length){
         konflikt = '<p class="konfliktrad"><b>Motsägelse:</b> flaskhalsarna stöder efterfrågan (+' + mega[0].celler[0].v.replace("+", "") + " backlogg) — men trängsel " + data.regim.crowding.score + "/100 och tidig-cykel " + x.tidig + "/100 väger tyngre. <b>Flippas om:</b> trängsel &lt; " + data.regim.crowding.komfort + " och tidig-poäng &gt; 40.</p>";
       }
@@ -1888,19 +2382,54 @@ var MEGA_VAD_AR = {
   "HVDC-kabel": "Högspänningskabel som flyttar stora mängder el långa sträckor — till havsvind och mellan länder.",
   "Kylsystem": "AI-servrar drar så mycket ström att hallarna måste vätskekylas — vanlig luftkyla räcker inte.",
   "Elnätskapacitet": "Elnätets förmåga att ansluta nya storförbrukare. Kön här mäts i år, inte månader.",
-  "Hyperscalers": "Molnjättarna: Microsoft, Google, Amazon och Meta. Deras byggbudgetar är efterfrågan som skapar alla köer nedanför."
+  "Hyperscalers": "Molnjättarna: Microsoft, Google, Amazon och Meta. Deras byggbudgetar är efterfrågan som skapar alla köer nedanför.",
+  "Luftvärnsrobotar": "Patriot-robotar och deras syskon. Beställningskön motsvarar ungefär sju års produktion — köparen står i kö till 2030-talet.",
+  "Raketmotorer": "Motorn i roboten. En enda leverantör delar sin kapacitet mellan fyra robotprogram — kedjans trängsta punkt.",
+  "Artillerammunition": "155 mm-granater. Europa åttafaldigar produktionen på fyra år, men kruttillverkningen hinner inte med.",
+  "Plattformar (varv)": "Ubåtar och örlogsfartyg. Saabs orderingång växte 141 % — leveranserna sträcker sig in på 2030-talet.",
+  "Peptid-API": "Själva läkemedelssubstansen i GLP-1-behandlingarna. Akutbristen 2023–24 är över men kapaciteten är fortsatt stram.",
+  "Steril fill-finish": "Att fylla sprutorna sterilt är en egen industrigren — Novo köpte tre fabriker för 16,5 md$ för att säkra sina platser.",
+  "Autoinjektorer": "Sprutpennan patienten använder. När substansen räcker till blir pennan flaskhalsen.",
+  "Oral kapacitet": "Tablettversionen av GLP-1 — nästa våg. Fabrikerna byggs nu; kommersiell volym om 3–4 år.",
+  "Lagerautomation": "Robotlager åt e-handel och industri. Kions orderingång +26 % — första tecknet på cykelvändning.",
+  "Industrirobotar": "Klassiska fabriksrobotar. Strukturell efterfrågan av arbetskraftsbrist, men mjuk cykel utanför Kina just nu.",
+  "Integrationskapacitet": "Ingenjörerna som får automationen att fungera ihop — bristvaran är folk, inte hårdvara."
 };
-var MEGA_VISNING = { "Hyperscalers": "Molnjättarna" };
+var MEGA_VISNING = { "Hyperscalers": "Molnjättarna", "Integrationskapacitet": "Integratörer" };
 var MEGA_KOLUMN = {
   "Backl. å/å": { namn: "Kö", tips: "Kön växer: orderböckerna är så här mycket större än för ett år sedan (backlogg å/å) — kön blir längre trots att fabrikerna går för fullt." },
+  "Kö/backl.": { namn: "Kö", tips: "Köns storlek: orderstock eller beställningskö relativt produktionstakten — ju större kö, desto starkare säljarens läge." },
+  "Kapacitet": { namn: "Kapacitet", tips: "Utbyggnadsläget: investeringar och kapacitet relativt efterfrågan — stram kapacitet är kön i denna kedja." },
+  "Order å/å": { namn: "Order", tips: "Orderingångens tillväxt år över år — efterfrågetrycket in i kön." },
   "Ledtid": { namn: "Väntan", tips: "Väntetid från beställning till leverans (ledtid). Pil upp = kön växer fortfarande." },
-  "Marg-Δ": { namn: "Vinst", tips: "Tillverkarnas vinstmarginal, förändring i procentenheter. Kvittot på prismakt: en kö utan marginallyft är bara en kö — med marginallyft kan säljaren ta betalt." }
+  "Marg-Δ": { namn: "Vinst", tips: "Tillverkarnas vinstmarginal, förändring i procentenheter. Kvittot på prismakt: en kö utan marginallyft är bara en kö — med marginallyft kan säljaren ta betalt." },
+  "Trend": { namn: "Trend", tips: "Trängselns riktning: växer kön eller lättar den? Pil ned = prissättningsmakten smalnar (lättande kö ska kosta poäng)." }
 };
 var MEGA_EFTERFRAGAN = { "Hyperscalers": true };
 
+/* Bakåtkompatibel läsning under migrationen: LIVE-datat kan bära gamla
+   "megatrend"-objektet tills dess kurerade post uppdaterats (main-commit efter merge). */
+function hamtaMegatrender(data){
+  if(data.megatrender) return data.megatrender;
+  if(data.megatrend){
+    var m = data.megatrend;
+    return [{ id: "ai", namn: "AI & Datacenter", kalla: m.kalla, vintage: m.vintage, kolumner: m.kolumner, rader: m.rader }];
+  }
+  return [];
+}
+function allaMegaRader(data){
+  var ut = [];
+  hamtaMegatrender(data).forEach(function(t){ ut = ut.concat(t.rader); });
+  return ut;
+}
+
+var megaAktivtTema = null, megaSenasteArgs = null;
 function renderaMegatrend(data, analys, kort){
-  var m = data.megatrend;
-  satLin("lin-mega", "branschdata", m.vintage);
+  megaSenasteArgs = [data, analys, kort];
+  var teman = hamtaMegatrender(data);
+  if(!teman.length){ $("#megakropp").innerHTML = ""; return; }
+  if(!megaAktivtTema || !teman.some(function(t){ return t.id === megaAktivtTema; })) megaAktivtTema = teman[0].id;
+
   var rankade = rankadeAktier(data);
   var rekFor = function(sektor){ return kort.filter(function(k){ return k.s.namn === sektor; })[0]; };
   var aktierFor = function(tema){
@@ -1914,63 +2443,87 @@ function renderaMegatrend(data, analys, kort){
     return refs.replace(/([A-ZÅÄÖ]{2,6}) #(\d+)/g, '<a class="korslank" href="#/aktier-konsensus" title="Öppna konvergenslistan — $1 är #$2 i rankingen">$1 #$2</a>');
   };
 
-  function renderaGrupp(lista){
-    return lista.map(function(rad, ri){
-      var celler = rad.celler.map(function(c, ci){
-        return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
-          esc(rad.namn) + " · " + esc(kolNamn(m.kolumner[ci])) + ": " + esc(c.v) + " · " + esc(c.k) + " · " + esc(m.vintage) + '">' +
-          esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
-      }).join("");
-      var visning = MEGA_VISNING[rad.namn] || rad.namn;
-      var vadAr = MEGA_VAD_AR[rad.namn] || rad.namn;
-      var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr) + '">' + esc(visning) + "</span>" + celler + "</div>";
-      var nasta = lista[ri + 1];
-      if(!nasta || nasta.sektor !== rad.sektor){
-        var rek = rekFor(rad.sektor);
-        var grupp = lista.filter(function(r){ return r.sektor === rad.sektor; });
-        var teman = [];
-        grupp.forEach(function(r){ if(teman.indexOf(r.tema) === -1) teman.push(r.tema); });
-        var refs = [];
-        teman.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
-        refs = refs.slice(0, 2).join(" · ");
-        var kons;
-        if(rek){
-          kons = rek.handling === "minska"
-            ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + lankaRefs(refs) + "." : "")
-            : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + lankaRefs(refs) : "");
-        } else {
-          kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs ? lankaRefs(refs) : "se konvergenslistan");
+  function temaHtml(m){
+    function renderaGrupp(lista){
+      return lista.map(function(rad, ri){
+        var celler = rad.celler.map(function(c, ci){
+          return '<span class="cell" style="background:var(--int' + c.i + ')" title="' +
+            esc(rad.namn) + " · " + esc(kolNamn(m.kolumner[ci])) + ": " + esc(c.v) + " · " + esc(c.k) + " · " + esc(m.vintage) + '">' +
+            esc(c.v) + (c.pil ? ' <span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span>" : "") + "</span>";
+        }).join("");
+        var visning = MEGA_VISNING[rad.namn] || rad.namn;
+        var vadAr = MEGA_VAD_AR[rad.namn] || rad.namn;
+        var ut = '<div class="mrad"><span class="fnamn" title="' + esc(vadAr) + '">' + esc(visning) + "</span>" + celler + "</div>";
+        var nasta = lista[ri + 1];
+        if(!nasta || nasta.sektor !== rad.sektor){
+          var rek = rekFor(rad.sektor);
+          var grupp = lista.filter(function(r){ return r.sektor === rad.sektor; });
+          var teman2 = [];
+          grupp.forEach(function(r){ if(teman2.indexOf(r.tema) === -1) teman2.push(r.tema); });
+          var refs = [];
+          teman2.forEach(function(t){ aktierFor(t).forEach(function(ref){ if(refs.indexOf(ref) === -1) refs.push(ref); }); });
+          refs = refs.slice(0, 2).join(" · ");
+          var kons;
+          if(rek){
+            kons = rek.handling === "minska"
+              ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + lankaRefs(refs) + "." : "")
+              : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + lankaRefs(refs) : "");
+          } else {
+            kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs ? lankaRefs(refs) : "se konvergenslistan");
+          }
+          ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
         }
-        ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
-      }
-      return ut;
-    }).join("");
+        return ut;
+      }).join("");
+    }
+
+    var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
+    var flaskhalsar = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
+    var topp = toppFlaskhals(m);
+    var rekT = rekFor(topp.sektor);
+    var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
+    var slutrubrik = efterfragan.length ? "3 · Slutsats" : "Slutsats";
+    var syntes = "<b>" + slutrubrik + " — trängst: " + esc(topp.namn) + ".</b> " +
+      esc(topp.celler[1].v) + " väntetid, kö " + esc(topp.celler[0].v) +
+      (rekT ? " — talar för <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
+        : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? lankaRefs(toppRefs) + "." : "enskilda aktier."));
+
+    var kolumnhuvud = '<div class="mrad huvud"><span>Flaskhals</span>' +
+      m.kolumner.map(function(kol){
+        var k = MEGA_KOLUMN[kol];
+        return '<span title="' + esc(k ? k.tips : kol) + '"' + (k ? ' class="hjalpmark"' : "") + ">" + esc(kolNamn(kol)) + "</span>";
+      }).join("") + "</div>";
+
+    return (efterfragan.length
+        ? '<div class="msek">1 · Efterfrågan: molnjättarna bygger</div>' +
+          '<div class="matris">' + renderaGrupp(efterfragan) + "</div>" +
+          '<div class="msek">2 · Köerna det skapar</div>'
+        : "") +
+      '<div class="matris">' + kolumnhuvud + renderaGrupp(flaskhalsar) + "</div>" +
+      (m.not ? '<p class="meganot">' + esc(m.not) + "</p>" : "") +
+      '<p class="syntes">' + syntes + "</p>";
   }
 
-  var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
-  var flaskhalsar = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
-
-  var topp = toppFlaskhals(m);
-  var rekT = rekFor(topp.sektor);
-  var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
-  var syntes = "<b>3 · Slutsats — trängst: " + esc(topp.namn) + ".</b> " +
-    esc(topp.celler[1].v) + " väntetid och kön +" + esc(topp.celler[0].v.replace(/^\+/, "")) + "/år" +
-    (rekT ? " — talar för <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
-      : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? lankaRefs(toppRefs) + "." : "enskilda aktier."));
+  var aktivt = teman.filter(function(t){ return t.id === megaAktivtTema; })[0] || teman[0];
+  satLin("lin-mega", aktivt.kalla.split("(")[0].trim(), aktivt.vintage, aktivt.kalla);
 
   $("#megakropp").innerHTML =
     '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera.</p>' +
-    '<div class="msek">1 · Efterfrågan: molnjättarna bygger</div>' +
-    '<div class="matris">' + renderaGrupp(efterfragan) + "</div>" +
-    '<div class="msek">2 · Köerna det skapar</div>' +
-    '<div class="matris"><div class="mrad huvud"><span>Flaskhals</span>' +
-    m.kolumner.map(function(kol){
-      var k = MEGA_KOLUMN[kol];
-      return '<span title="' + esc(k ? k.tips : kol) + '"' + (k ? ' class="hjalpmark"' : "") + ">" + esc(kolNamn(kol)) + "</span>";
+    '<div class="flikar megaflikar" role="tablist" aria-label="Megatrender">' +
+    teman.map(function(t){
+      return '<button class="flik" role="tab" type="button" data-tema="' + esc(t.id) + '" aria-selected="' + (t.id === aktivt.id ? "true" : "false") + '">' + esc(t.namn) + "</button>";
     }).join("") + "</div>" +
-    renderaGrupp(flaskhalsar) + "</div>" +
-    '<p class="syntes">' + syntes + "</p>";
+    teman.map(function(t){
+      return '<div class="megatema"' + (t.id === aktivt.id ? "" : " hidden") + ">" + temaHtml(t) + "</div>";
+    }).join("");
 }
+/* delegerad flikväxling — flikarna återskapas vid varje datarendering */
+document.addEventListener("click", function(ev){
+  var knapp = ev.target.closest ? ev.target.closest(".megaflikar [data-tema]") : null;
+  if(!knapp || !megaSenasteArgs) return;
+  megaAktivtTema = knapp.dataset.tema;
+  renderaMegatrend.apply(null, megaSenasteArgs);
+});
 
 /* ============ Klocka, stämpel, inläsning ============ */
 function uppdateraKlocka(){
@@ -2239,7 +2792,7 @@ function renderaOversikt(data, analys, kort, regim, slut){
   var heroEl = $("#hero");
   if(!heroEl) return;
   var topp3 = rankadeAktier(data).slice(0, 3);
-  var trangst = toppFlaskhals(data.megatrend);
+  var trangst = toppFlaskhals({ rader: allaMegaRader(data) });
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
     '<div class="heromatt">' +
@@ -2296,9 +2849,10 @@ function renderaOversikt(data, analys, kort, regim, slut){
         (tpaS ? "" : "läser …") + "</b></span>",
       slut.aktier) +
     kortSkal("#/trangsektorer", "Trångsektorer",
-      linBadge("branschdata", data.megatrend.vintage),
+      linBadge("branschdata · " + hamtaMegatrender(data).length + " teman", "per tema",
+        hamtaMegatrender(data).map(function(t){ return t.namn + " (" + t.vintage + ")"; }).join(" · ")),
       krad(esc(trangst.namn), esc(trangst.celler[0].v) + " kö · " + esc(trangst.celler[1].v)) +
-      krad("Väntetiderna", data.megatrend.rader.filter(function(r){ return r.celler[1].pil === "upp"; }).length + " av " + data.megatrend.rader.length + " växer"),
+      krad("Väntetiderna", allaMegaRader(data).filter(function(r){ return r.celler[1] && r.celler[1].pil === "upp"; }).length + " av " + allaMegaRader(data).length + " växer"),
       "Pengarna i en megatrend finns där kön är längst.");
   if(tpaS) uppdateraKortTpa(tpaS);
 }

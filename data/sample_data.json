@@ -206,32 +206,522 @@
     "koppar": { "namn": "Koppar", "kort": "HG1", "varde": "9 640", "enhet": "USD/t", "pil": "upp", "delta4v": "+2,1 %", "over200d": true, "status": "gul", "atgard": "bevaka", "kalla": "LME 3 mån", "vintage": "approx" }
   },
 
-  "megatrend": {
-    "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)", "vintage": "2026-Q2",
-    "kolumner": ["Backl. å/å", "Ledtid", "Marg-Δ"],
-    "rader": [
-      { "namn": "Transformatorer", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+42 %", "i": 4, "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy" },
-                    { "v": "38 m", "pil": "upp", "i": 4, "k": "Ledtid 38 månader — stora krafttransformatorer" },
-                    { "v": "+3,2", "i": 3, "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna" } ] },
-      { "namn": "HVDC-kabel", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+31 %", "i": 3, "k": "Backlogg å/å — Prysmian/NKT/Nexans" },
-                    { "v": "30 m", "pil": "upp", "i": 3, "k": "Ledtid 30 månader — högspänningskabel" },
-                    { "v": "+2,1", "i": 2, "k": "Prispåslag +2,1 procentenheter i nya kontrakt" } ] },
-      { "namn": "Kylsystem", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+34 %", "i": 3, "k": "Backlogg å/å — datacenter-kyla (vätskekyla)" },
-                    { "v": "9 m", "pil": "upp", "i": 2, "k": "Ledtid 9 månader — kylsystem för AI-täta hallar" },
-                    { "v": "+2,8", "i": 3, "k": "Prismakt +2,8 procentenheter hos kylleverantörer" } ] },
-      { "namn": "Elnätskapacitet", "sektor": "Kraftförsörjning", "tema": "el",
-        "celler": [ { "v": "+19 %", "i": 2, "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)" },
-                    { "v": "44 m", "pil": "upp", "i": 4, "k": "Kötid 44 månader — nätanslutning datacenter" },
-                    { "v": "+0,9", "i": 1, "k": "Nättariffer +0,9 procentenheter" } ] },
-      { "namn": "Hyperscalers", "sektor": "Teknik", "tema": "ai",
-        "celler": [ { "v": "+38 %", "i": 4, "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)" },
-                    { "v": "26 v", "pil": "hoger", "i": 2, "k": "Leveranstid 26 veckor — GPU/serverutrustning" },
-                    { "v": "+4,1", "i": 4, "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)" } ] }
-    ]
-  },
+  "megatrender": [
+    {
+      "id": "ai",
+      "namn": "AI & Datacenter",
+      "kalla": "branschdata (Hitachi/Siemens Energy, Prysmian/NKT, FERC/GridStatus, hyperscaler-guidance)",
+      "vintage": "2026-Q2",
+      "kolumner": [
+        "Backl. å/å",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "rader": [
+        {
+          "namn": "Transformatorer",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+42 %",
+              "i": 4,
+              "k": "Backlogg å/å — orderböcker Hitachi Energy/Siemens Energy",
+              "n": 42.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "38 m",
+              "pil": "upp",
+              "i": 4,
+              "k": "Ledtid 38 månader — stora krafttransformatorer",
+              "n": 38.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+3,2",
+              "i": 3,
+              "k": "Bruttomarginal +3,2 procentenheter hos leverantörerna",
+              "n": 3.2,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "HVDC-kabel",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+31 %",
+              "i": 3,
+              "k": "Backlogg å/å — Prysmian/NKT/Nexans",
+              "n": 31.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "30 m",
+              "pil": "upp",
+              "i": 3,
+              "k": "Ledtid 30 månader — högspänningskabel",
+              "n": 30.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+2,1",
+              "i": 2,
+              "k": "Prispåslag +2,1 procentenheter i nya kontrakt",
+              "n": 2.1,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Kylsystem",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+34 %",
+              "i": 3,
+              "k": "Backlogg å/å — datacenter-kyla (vätskekyla)",
+              "n": 34.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "9 m",
+              "pil": "upp",
+              "i": 2,
+              "k": "Ledtid 9 månader — kylsystem för AI-täta hallar",
+              "n": 9.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+2,8",
+              "i": 3,
+              "k": "Prismakt +2,8 procentenheter hos kylleverantörer",
+              "n": 2.8,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Elnätskapacitet",
+          "sektor": "Kraftförsörjning",
+          "tema": "el",
+          "celler": [
+            {
+              "v": "+19 %",
+              "i": 2,
+              "k": "Anslutningsköernas tillväxt å/å (FERC/GridStatus)",
+              "n": 19.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "44 m",
+              "pil": "upp",
+              "i": 4,
+              "k": "Kötid 44 månader — nätanslutning datacenter",
+              "n": 44.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+0,9",
+              "i": 1,
+              "k": "Nättariffer +0,9 procentenheter",
+              "n": 0.9,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Hyperscalers",
+          "sektor": "Teknik",
+          "tema": "ai",
+          "celler": [
+            {
+              "v": "+38 %",
+              "i": 4,
+              "k": "Capex-guidance å/å, sammanvägd (MSFT/GOOG/AMZN/META)",
+              "n": 38.0,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "26 v",
+              "pil": "hoger",
+              "i": 2,
+              "k": "Leveranstid 26 veckor — GPU/serverutrustning",
+              "n": 26.0,
+              "enhet": "man"
+            },
+            {
+              "v": "+4,1",
+              "i": 4,
+              "k": "Leverantörsmarginaler +4,1 procentenheter (infrastruktur)",
+              "n": 4.1,
+              "enhet": "pp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forsvar",
+      "namn": "Försvar & Upprustning",
+      "kalla": "Bolagsrapporter Q1–Q2 2026 (Rheinmetall, Saab) + FPRI/CSIS + branschmedia",
+      "vintage": "2026-Q2",
+      "kolumner": [
+        "Kö/backl.",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "not": "Rheinmetall orderstock 73 md€ (+30 % å/å) Q1 2026 — systemhusens böcker fulla; trängst är robotar och raketmotorer.",
+      "rader": [
+        {
+          "namn": "Luftvärnsrobotar",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "7 år",
+              "i": 5,
+              "k": "FMS-kö 4 300+ PAC-3 ≈ 7 årsproduktioner (600/år 2025, mål 2 000/år 2030) — FPRI maj 2026",
+              "n": 84,
+              "enhet": "man"
+            },
+            {
+              "v": "24–30 m",
+              "pil": "upp",
+              "i": 5,
+              "k": "Robot 24 mån, raketmotor 30 mån — nya kontrakt levereras tidigast mitten av 2028",
+              "n": 27,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 3,
+              "k": "Marginal ej särredovisad hos US-primes; sole-source-läge i motorer och sökare",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Raketmotorer",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "4 program",
+              "i": 5,
+              "k": "L3Harris/Aerojet enda källan för Patriot, THAAD, Tomahawk och SM — kön delas av fyra robotprogram",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "30 m",
+              "i": 5,
+              "k": "Längsta delkomponentledtiden i luftvärnskedjan (FPRI); sökare: ~650–700/år ur en enda Boeing-fabrik",
+              "n": 30,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 3,
+              "k": "Underleverantörsled utan öppen marginalredovisning",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Artillerammunition",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "8× på 4 år",
+              "i": 4,
+              "k": "Europakapacitet mot ~2 M granater 155 mm/år 2026 (Rheinmetall 750 t → 1,1 M 2027) — sekundärkälla — 8× på 4 år ≈ +68 %/år CAGR",
+              "n": 68,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "12–24 m",
+              "i": 3,
+              "k": "Krut/sprängämnen (nitrocellulosa) begränsar — approx",
+              "n": 18,
+              "enhet": "man"
+            },
+            {
+              "v": "+1,0 pp",
+              "i": 3,
+              "k": "Rheinmetall rörelsemarginal 11,6 % Q1 2026 (10,6 % Q1 2025); helårsmål ~19 %",
+              "n": 1.0,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Plattformar (varv)",
+          "sektor": "Industri",
+          "tema": "forsvar",
+          "celler": [
+            {
+              "v": "+141 %",
+              "i": 4,
+              "k": "Saab orderingång å/å Kv2 2026: 68,4 mdr SEK, varav ubåtar till Polen 47 mdr",
+              "n": 141,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "~8 år",
+              "pil": "upp",
+              "i": 3,
+              "k": "Ubåtsleveranser in på 2030-talet — approx utifrån varvskapacitet",
+              "n": 96,
+              "enhet": "man"
+            },
+            {
+              "v": "+1,0 pp",
+              "i": 3,
+              "k": "Saab EBIT-marginal 11,0 % Kv2 2026 (10,0 % Kv2 2025)",
+              "n": 1.0,
+              "enhet": "pp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glp1",
+      "namn": "GLP-1 & Biologika",
+      "kalla": "Bolags- och branschkällor H1 2026 (Lilly, Novo/Ypsomed, CDMO-branschen)",
+      "vintage": "2026-H1",
+      "kolumner": [
+        "Kapacitet",
+        "Ledtid",
+        "Trend"
+      ],
+      "not": "Prissättningsmakten smalnar: köerna flyttar från API och fill-finish till devices och oral kapacitet. Marknadsprognoser ~150–200 md$/år 2030–31.",
+      "rader": [
+        {
+          "namn": "Peptid-API",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": ">50 md$",
+              "i": 4,
+              "k": "Lillys ackumulerade USA-tillverkningskapex sedan 2020 (dubblad): Texas 6,5 + Virginia 5 md$ till API/injektabler",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "2–3 år",
+              "i": 3,
+              "k": "Nybyggd API-kapacitet till drift — approx",
+              "n": 30,
+              "enhet": "man"
+            },
+            {
+              "v": "lättar",
+              "pil": "ned",
+              "i": 3,
+              "k": "Akut brist 2023–24 över; kapaciteten dock fortsatt stram mot efterfrågan",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Steril fill-finish",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "stram",
+              "i": 4,
+              "k": "'Förbättrad men fortsatt begränsad relativt efterfrågan' (2026); Novo köpte Catalents tre fill-finish-siter (16,5 md$, klart dec 2024)",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "4–5 år",
+              "i": 3,
+              "k": "Greenfield steril linje till GMP-godkänd drift — approx branschpraxis",
+              "n": 54,
+              "enhet": "man"
+            },
+            {
+              "v": "uppbokad",
+              "pil": "hoger",
+              "i": 3,
+              "k": "CDMO-slots fortsatt fyllda; mindre kunder trängs undan",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Autoinjektorer",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "utbyggnad",
+              "i": 4,
+              "k": "Ypsomed×Novo: leveranser från 2025, kapacitetsplan till 2031, Novo delfinansierar nya linjer",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "12–18 m",
+              "i": 3,
+              "k": "Verktyg, formsprutning och montagelinjer — approx",
+              "n": 15,
+              "enhet": "man"
+            },
+            {
+              "v": "kvarstår",
+              "pil": "upp",
+              "i": 4,
+              "k": "Devices är den kvarvarande flaskhalsen när API/fill-finish lättar",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Oral kapacitet",
+          "sektor": "Hälsovård",
+          "tema": "glp1",
+          "celler": [
+            {
+              "v": "6 md$",
+              "i": 3,
+              "k": "Lillys Alabama-site för orforglipron; + 1,2 md$ Puerto Rico och 3 md$ Leiden",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "3–4 år",
+              "i": 3,
+              "k": "Site till kommersiell volym — approx",
+              "n": 42,
+              "enhet": "man"
+            },
+            {
+              "v": "byggs",
+              "pil": "upp",
+              "i": 3,
+              "k": "Oral våg 2026–28 flyttar volym från injektabler",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demografi",
+      "namn": "Demografi & Automation",
+      "kalla": "Kion Q1 2026, IFR World Robotics 2025, Deloitte/NAM 2024",
+      "vintage": "2026-Q1",
+      "kolumner": [
+        "Order å/å",
+        "Ledtid",
+        "Marg-Δ"
+      ],
+      "not": "Strukturell efterfrågan (arbetskraftsbrist) men mjuk hårdvarucykel — vändningen syns först i lagerautomationens order.",
+      "rader": [
+        {
+          "namn": "Lagerautomation",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "+25,9 %",
+              "i": 4,
+              "k": "Kion Intelligent Automation Solutions orderingång Q1 2026 (951 M€)",
+              "n": 25.9,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "12–24 m",
+              "i": 3,
+              "k": "Projekt från order till driftsatt anläggning — approx",
+              "n": 18,
+              "enhet": "man"
+            },
+            {
+              "v": "+0,7 pp",
+              "i": 3,
+              "k": "Kion IAS justerad EBIT-marginal 6,0 % Q1 2026 (5,3 % Q1 2025)",
+              "n": 0.7,
+              "enhet": "pp"
+            }
+          ]
+        },
+        {
+          "namn": "Industrirobotar",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "+6 %",
+              "i": 2,
+              "k": "IFR-prognos 2025: 575 000 installationer (542 000 år 2024); >700 000/år 2028",
+              "n": 6,
+              "enhet": "pct_aa"
+            },
+            {
+              "v": "3–6 m",
+              "i": 2,
+              "k": "Normaliserade leveranstider efter 2021–22 — approx",
+              "n": 4.5,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 2,
+              "k": "Mjuk cykel utanför Kina: USA −9 %, Japan −4 % installationer 2024",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        },
+        {
+          "namn": "Integrationskapacitet",
+          "sektor": "Industri",
+          "tema": "automation",
+          "celler": [
+            {
+              "v": "1,9 M",
+              "i": 4,
+              "k": "Ofyllda US-industrijobb till 2033 (Deloitte/NAM 2024) — strukturell efterfrågan på automation",
+              "n": null,
+              "enhet": null
+            },
+            {
+              "v": "9–18 m",
+              "i": 3,
+              "k": "Integratörs- och ingenjörskapacitet, inte hårdvaran, sätter takten — approx",
+              "n": 13.5,
+              "enhet": "man"
+            },
+            {
+              "v": "—",
+              "i": 2,
+              "k": "Fragmenterat led utan öppen marginalredovisning",
+              "n": null,
+              "enhet": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
 
   "screenadeAntal": 214,
   "aktierLineage": { "kalla": "FI/SEC", "vintage": "2026-W29" },
