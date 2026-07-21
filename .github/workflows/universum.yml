@@ -1,0 +1,39 @@
+name: Bygg universum
+
+# Manuell körning: bygger om data/universum.json (S&P 500 ur Wikipedia +
+# kurerad SE-seed) och committar vid förändring. Körs vid behov — universum
+# ändras några gånger per år, inte dagligen.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  bygg:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v5
+
+      - name: Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Bygg universum
+        run: python scripts/bygg_universum.py
+
+      - name: Committa vid förändring
+        run: |
+          git config user.name "stockpit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/universum.json
+          if git diff --cached --quiet; then
+            echo "Universum oförändrat — ingen commit."
+          else
+            git commit -m "data: universum ombyggt $(date -u +'%Y-%m-%d')"
+            git push
+          fi
