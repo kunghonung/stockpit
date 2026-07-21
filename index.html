@@ -160,26 +160,47 @@ a{ color:inherit; }
 .popinnehall p:last-child{ margin-bottom:0; }
 .popinnehall b{ color:var(--navy); font-weight:600; }
 
-@media (min-width:1120px) and (min-height:700px){
-  body{ height:100dvh; overflow:hidden; }
-  .cockpit{
-    display:grid; overflow:hidden;
-    grid-template-columns:318px minmax(0,1fr) 332px;
-    grid-template-rows:minmax(0,1fr);
-    grid-template-areas:"rek center hoger";
-  }
-  #rek{ grid-area:rek; }
-  .center{ grid-area:center; display:grid; gap:var(--s8); min-height:0; min-width:0; grid-template-rows:minmax(0,1.32fr) minmax(0,1fr); }
-  .botten{ display:grid; grid-template-columns:0.98fr 0.95fr 1.25fr; gap:var(--s8); min-height:0; min-width:0; }
-  .hoger{ grid-area:hoger; display:flex; flex-direction:column; gap:var(--s8); min-height:0; }
-  #aktier{ flex:none; }
-  #regim{ flex:1; }
+/* ============ Vyer (Sprint 7): fem sidor bakom hash-routern ============ */
+/* Panelernas inre är orört — reglerna här är enbart layoutcontainrar per vy.
+   Fördjupningsvyer får växa vertikalt (sidscroll); horisontell scroll aldrig. */
+.vy[hidden]{ display:none !important; }
+.vyrubrik{
+  font-size:var(--fs11); font-weight:600; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--damp); margin:0 0 var(--s8); outline:none; flex:none;
+}
+.vy{ display:flex; flex-direction:column; min-width:0; }
+.vy .panel{ margin-bottom:var(--s8); }
+/* Översiktens hero + modulkort */
+.hero{ background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie); padding:var(--s12); margin-bottom:var(--s8); }
+.hero .slutsats:last-child{ padding-bottom:0; }
+.kortgrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:var(--s8); align-items:stretch; }
+.modulkort{
+  display:flex; flex-direction:column; gap:var(--s4);
+  background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie);
+  padding:var(--s12); text-decoration:none; color:var(--sek); transition:background .12s;
+}
+.modulkort:hover{ background:var(--panel2); }
+.modulkort .krubrik{
+  display:flex; align-items:center; gap:var(--s8);
+  font-size:var(--fs11); font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--damp);
+}
+.modulkort .krubrik .oppnapil{ margin-left:auto; color:var(--accent); font-weight:500; letter-spacing:0; text-transform:none; font-size:var(--fs12); }
+.modulkort .kslutsats{ font-size:var(--fs12); color:var(--sek); line-height:1.45; }
+.modulkort .knyckeltal{ display:flex; flex-direction:column; gap:2px; }
+@media (min-width:1120px){
+  .vy-tvakol{ display:grid; grid-template-columns:318px minmax(0,1fr); gap:var(--s8); align-items:start; }
+  .vy-spalt{ display:flex; flex-direction:column; gap:var(--s8); min-width:0; }
+  .vy-spalt .panel{ margin-bottom:0; }
+  .vy-makro{ display:grid; grid-template-columns:minmax(0,1fr) 420px; gap:var(--s8); align-items:start; }
+  #sida-aktier .panel{ width:100%; max-width:680px; margin:0 auto; }
+  #sida-trang .panel{ width:100%; max-width:620px; margin:0 auto; }
+  /* Fördjupning: radarytorna får riktig höjd i stället för cockpitens 1.32fr-lås */
+  #sida-sektorrotation .radarhall{ min-height:430px; }
   .aktie .skal{ -webkit-line-clamp:1; }
 }
 @media (min-width:1120px) and (max-height:940px){
   .cockpit{ gap:var(--s8); padding:var(--s8); }
   .panel{ padding:var(--s8) var(--s12); }
-  .center{ grid-template-rows:minmax(0,1.2fr) minmax(0,1fr); }
 }
 
 /* ================= VÄNSTER: KAPITALALLOKERING ================= */
@@ -461,20 +482,18 @@ li.oppen .sigdetalj{ display:block; }
 </style>
 </head>
 <body>
-<a class="hopp" href="#rek">Hoppa till innehåll</a>
+<a class="hopp" href="#huvud">Hoppa till innehåll</a>
 
 <header class="topp">
-  <a class="marke" href="#rek" aria-label="Stockpit — till kapitalallokering">
+  <a class="marke" href="#/" aria-label="Stockpit — till översikten">
     <b>STOCKPIT</b><span class="stampeltext" id="lagesmark" title="Datalage styrs av en konfigurationsrad i koden. TEST = data/sample_data.json (seedad med verifierade fakta per 2026-07-17). LIVE kopplas in senare utan frontendändring.">TEST</span>
   </a>
-  <nav class="toppnav" aria-label="Cockpitens paneler">
-    <a href="#rek" aria-current="page">Cockpit</a>
-    <a href="#radar">Sektorer</a>
-    <a href="#aktier">Aktier</a>
-    <a href="#aktier" data-panel="aktier">Insyn</a>
-    <a href="#makro">Makro</a>
-    <a href="#floden">Flöden</a>
-    <a href="#regim">Regim</a>
+  <nav class="toppnav" aria-label="Vyer">
+    <a href="#/" data-vy="oversikt">Översikt</a>
+    <a href="#/sektorrotation" data-vy="sektorrotation">Sektorrotation</a>
+    <a href="#/makro-likviditet" data-vy="makro-likviditet">Makro &amp; Likviditet</a>
+    <a href="#/aktier-konsensus" data-vy="aktier-konsensus">Aktier &amp; Konsensus</a>
+    <a href="#/trangsektorer" data-vy="trangsektorer">Trångsektorer</a>
   </nav>
   <div class="toppstatus">
     <span class="exempel" title="TEST-läge: all marknadsdata kommer ur data/sample_data.json — seedad med verifierade fakta per 17 juli 2026 (fält utan verifierad siffra är märkta approx). Fatta beslut på strukturen, inte på siffrorna.">Testdata</span>
@@ -483,9 +502,20 @@ li.oppen .sigdetalj{ display:block; }
   </div>
 </header>
 
-<main class="cockpit">
+<main class="cockpit" id="huvud" tabindex="-1">
 
-  <!-- ===== VÄNSTER ===== -->
+  <!-- ===== VY: ÖVERSIKT ===== -->
+  <section class="vy" id="sida-oversikt" aria-labelledby="oversikt-rubrik">
+    <h1 class="vyrubrik" id="oversikt-rubrik" tabindex="-1">Översikt</h1>
+    <div class="hero" id="hero"></div>
+    <div class="kortgrid" id="kortgrid"></div>
+  </section>
+
+  <!-- ===== VY: SEKTORROTATION ===== -->
+  <section class="vy" id="sida-sektorrotation" aria-labelledby="sr-rubrik" hidden>
+  <h1 class="vyrubrik" id="sr-rubrik" tabindex="-1">Sektorrotation</h1>
+  <div class="vy-tvakol">
+
   <section class="panel" id="rek" tabindex="-1" aria-labelledby="rek-rubrik">
     <div class="panelhuvud">
       <h2 id="rek-rubrik">Kapitalallokering</h2>
@@ -505,8 +535,7 @@ li.oppen .sigdetalj{ display:block; }
     </div>
   </section>
 
-  <!-- ===== MITTEN ===== -->
-  <div class="center">
+  <div class="vy-spalt">
     <section class="panel" id="radar" tabindex="-1" aria-labelledby="radar-rubrik">
       <div class="panelhuvud">
         <h2 id="radar-rubrik">Rotationsradar</h2>
@@ -541,7 +570,6 @@ li.oppen .sigdetalj{ display:block; }
       </div>
     </section>
 
-    <div class="botten">
       <section class="panel" id="floden" tabindex="-1" aria-labelledby="floden-rubrik">
         <div class="panelhuvud">
           <h2 id="floden-rubrik">Flöden</h2>
@@ -560,6 +588,14 @@ li.oppen .sigdetalj{ display:block; }
         <p class="slutsats" id="flod-slutsats"></p>
         <div class="panelkropp" id="flodkropp"></div>
       </section>
+  </div><!-- /vy-spalt -->
+  </div><!-- /vy-tvakol -->
+  </section><!-- /sida-sektorrotation -->
+
+  <!-- ===== VY: MAKRO & LIKVIDITET ===== -->
+  <section class="vy" id="sida-makro" aria-labelledby="ml-rubrik" hidden>
+  <h1 class="vyrubrik" id="ml-rubrik" tabindex="-1">Makro &amp; Likviditet</h1>
+  <div class="vy-makro">
 
       <section class="panel" id="makro" tabindex="-1" aria-labelledby="makro-rubrik">
         <div class="panelhuvud">
@@ -576,6 +612,23 @@ li.oppen .sigdetalj{ display:block; }
         </div>
       </section>
 
+    <section class="panel" id="regim" tabindex="-1" aria-labelledby="regim-rubrik">
+      <div class="panelhuvud">
+        <h2 id="regim-rubrik">Marknadsregim &amp; risk</h2>
+        <div class="fordjupning">
+          <span class="lineage" id="lin-regim"></span>
+          <a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2" target="_blank" rel="noopener" title="Öppna FRED-grafen för HY-spreaden">Öppna FRED →</a>
+        </div>
+      </div>
+      <div class="panelkropp" id="regimkropp"></div>
+    </section>
+  </div><!-- /vy-makro -->
+  </section><!-- /sida-makro -->
+
+  <!-- ===== VY: TRÅNGSEKTORER ===== -->
+  <section class="vy" id="sida-trang" aria-labelledby="tr-rubrik" hidden>
+  <h1 class="vyrubrik" id="tr-rubrik" tabindex="-1">Trångsektorer &amp; Prissättningsmakt</h1>
+
       <section class="panel" id="megatrend" tabindex="-1" aria-labelledby="megatrend-rubrik">
         <div class="panelhuvud">
           <h2 id="megatrend-rubrik">Megatrend · flaskhalsar</h2>
@@ -586,11 +639,12 @@ li.oppen .sigdetalj{ display:block; }
         </div>
         <div class="panelkropp" id="megakropp"></div>
       </section>
-    </div>
-  </div>
+  </section><!-- /sida-trang -->
 
-  <!-- ===== HÖGER ===== -->
-  <div class="hoger">
+  <!-- ===== VY: AKTIER & KONSENSUS ===== -->
+  <section class="vy" id="sida-aktier" aria-labelledby="ak-rubrik" hidden>
+  <h1 class="vyrubrik" id="ak-rubrik" tabindex="-1">Aktier &amp; Konsensus</h1>
+
     <section class="panel" id="aktier" tabindex="-1" aria-labelledby="aktier-rubrik">
       <div class="panelhuvud">
         <h2 id="aktier-rubrik">Aktier</h2>
@@ -624,18 +678,7 @@ li.oppen .sigdetalj{ display:block; }
         <div class="panelkropp" id="tpakropp"></div>
       </div>
     </section>
-
-    <section class="panel" id="regim" tabindex="-1" aria-labelledby="regim-rubrik">
-      <div class="panelhuvud">
-        <h2 id="regim-rubrik">Marknadsregim &amp; risk</h2>
-        <div class="fordjupning">
-          <span class="lineage" id="lin-regim"></span>
-          <a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2" target="_blank" rel="noopener" title="Öppna FRED-grafen för HY-spreaden">Öppna FRED →</a>
-        </div>
-      </div>
-      <div class="panelkropp" id="regimkropp"></div>
-    </section>
-  </div>
+  </section><!-- /sida-aktier -->
 
 </main>
 
@@ -1589,7 +1632,7 @@ function renderaAktier(data, slut){
   var rankade = data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
   $("#aktier-slutsats").textContent = slut.aktier;
   $("#aktier-underrad").innerHTML = "Topp " + rankade.length + " av " + data.screenadeAntal +
-    ' screenade · rankade på konvergens × signalstyrka · <a href="#metod" data-oppnametod="1">så görs screeningen</a>';
+    ' screenade · rankade på konvergens × signalstyrka · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
   $("#legendinre").innerHTML = nycklar.map(function(k){
     return "<p><b>" + esc(k) + "</b> — " + esc(data.parlnyckel[k].namn) + ". " + esc(data.parlnyckel[k].besk) + "</p>";
   }).join("");
@@ -1613,8 +1656,10 @@ function renderaAktier(data, slut){
   var metodlank = $('[data-oppnametod]');
   if(metodlank){
     metodlank.addEventListener("click", function(){
+      /* metodpanelen bor i Sektorrotation-vyn — navigera dit först */
+      if(location.hash !== "#/sektorrotation") location.hash = "#/sektorrotation";
       var mm = $("#metod"); mm.open = true;
-      setTimeout(function(){ mm.querySelector("summary").focus(); }, 60);
+      setTimeout(function(){ mm.querySelector("summary").focus(); mm.scrollIntoView({block:"nearest"}); }, 80);
     });
   }
 }
@@ -2135,6 +2180,25 @@ function initTpa(data){
   });
 }
 
+/* ---- Översikten (Fas 1-stub: hero + länkkort; modulkorten fylls i Fas 2) ---- */
+function renderaOversikt(data, analys, kort, regim, slut){
+  var heroEl = $("#hero");
+  if(!heroEl) return;
+  heroEl.innerHTML =
+    '<p class="slutsats">' + esc(slut.rek) + "</p>" +
+    '<p class="slutsats">' + esc(slut.regim) + "</p>";
+  $("#kortgrid").innerHTML = [
+    ["#/sektorrotation", "Sektorrotation", "Linserna, rotationsradarn och flödena — var i cykeln kapitalet ska ligga."],
+    ["#/makro-likviditet", "Makro & Likviditet", "Räntekurva, sentiment, regim, kvoter och metaller."],
+    ["#/aktier-konsensus", "Aktier & Konsensus", "Konvergensidéerna, track record och riktkursaccelerationen."],
+    ["#/trangsektorer", "Trångsektorer", "Megatrendens flaskhalsar — var kön är längst."]
+  ].map(function(k){
+    return '<a class="modulkort" href="' + k[0] + '">' +
+      '<span class="krubrik">' + esc(k[1]) + '<span class="oppnapil">Öppna →</span></span>' +
+      '<span class="kslutsats">' + esc(k[2]) + "</span></a>";
+  }).join("");
+}
+
 var dataGlobal = null;
 function renderaAllt(data, tr){
   dataGlobal = data;
@@ -2166,6 +2230,7 @@ function renderaAllt(data, tr){
   renderaFloden(data, analys, slut);
   renderaMakro(data, analys, slut);
   renderaMegatrend(data, analys, kort);
+  renderaOversikt(data, analys, kort, regim, slut);
   sattStampel(data);
   senastLast = new Date();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
@@ -2206,18 +2271,55 @@ document.querySelectorAll('[role="tablist"]').forEach(function(lista){
   if(knapp) knapp.click();
 })();
 
-/* nav: belys och fokusera panelen */
-document.querySelectorAll(".toppnav a").forEach(function(a){
-  a.addEventListener("click", function(){
-    var id = a.getAttribute("href").slice(1);
-    var panel = document.getElementById(id);
-    if(!panel) return;
-    document.querySelectorAll(".panel.belyst").forEach(function(p){ p.classList.remove("belyst"); });
-    panel.classList.add("belyst");
-    panel.focus({preventScroll: false});
-    setTimeout(function(){ panel.classList.remove("belyst"); }, 1600);
+/* ============ Router: fem vyer bakom hash (Sprint 7) ============ */
+/* Hash — inte History API — så att GitHub Pages slipper SPA-fallback. */
+var VYER = {
+  "oversikt":        { sida: "sida-oversikt",       rubrik: "oversikt-rubrik", titel: "Översikt" },
+  "sektorrotation":  { sida: "sida-sektorrotation", rubrik: "sr-rubrik",       titel: "Sektorrotation" },
+  "makro-likviditet":{ sida: "sida-makro",          rubrik: "ml-rubrik",       titel: "Makro & Likviditet" },
+  "aktier-konsensus":{ sida: "sida-aktier",         rubrik: "ak-rubrik",       titel: "Aktier & Konsensus" },
+  "trangsektorer":   { sida: "sida-trang",          rubrik: "tr-rubrik",       titel: "Trångsektorer" }
+};
+/* Gamla panelankare lever vidare som inlänkar — de byter bara adress. */
+var GAMLA_ANKARE = {
+  rek: "sektorrotation", radar: "sektorrotation", floden: "sektorrotation", metod: "sektorrotation",
+  makro: "makro-likviditet", regim: "makro-likviditet",
+  aktier: "aktier-konsensus", megatrend: "trangsektorer"
+};
+function tolkaHash(){
+  var h = location.hash.replace(/^#/, "");
+  if(h === "" || h === "/") return "oversikt";
+  if(h.charAt(0) === "/"){ var namn = h.slice(1); return VYER[namn] ? namn : null; }
+  return GAMLA_ANKARE[h] ? "GAMMAL:" + GAMLA_ANKARE[h] : null;
+}
+function visaVy(namn, flyttaFokus){
+  var vy = VYER[namn];
+  Object.keys(VYER).forEach(function(n){
+    var el = document.getElementById(VYER[n].sida);
+    if(el) el.hidden = n !== namn;
   });
-});
+  document.querySelectorAll(".toppnav a").forEach(function(a){
+    if(a.dataset.vy === namn) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  });
+  document.title = "Stockpit — " + vy.titel;
+  window.__stockpitVy = namn;
+  if(flyttaFokus){
+    var rub = document.getElementById(vy.rubrik);
+    if(rub){ rub.focus({preventScroll: true}); }
+    window.scrollTo(0, 0);
+    var kropp = document.querySelector(".cockpit");
+    if(kropp) kropp.scrollTop = 0;
+  }
+}
+function ruttar(flyttaFokus){
+  var mal = tolkaHash();
+  if(mal === null){ location.replace("#/"); return; }
+  if(mal.indexOf("GAMMAL:") === 0){ location.replace("#/" + mal.slice(7)); return; }
+  visaVy(mal, flyttaFokus);
+}
+window.addEventListener("hashchange", function(){ ruttar(true); });
+ruttar(false);
 
 /* Mätverktyg för QC (?debug=1) */
 if(location.search.indexOf("debug=1") > -1){
@@ -2233,7 +2335,8 @@ if(location.search.indexOf("debug=1") > -1){
     var d = document.createElement("div");
     d.id = "debughook";
     d.style.cssText = "position:fixed;left:0;bottom:0;z-index:999;background:var(--navy);color:var(--sida);font-family:var(--mono);font-size:var(--fs11);padding:0 var(--s4);max-width:100%;";
-    d.textContent = "innerW=" + window.innerWidth + " innerH=" + window.innerHeight +
+    d.textContent = "vy=" + (window.__stockpitVy || "-") +
+      " innerW=" + window.innerWidth + " innerH=" + window.innerHeight +
       " scrollW=" + document.documentElement.scrollWidth + " scrollH=" + document.body.scrollHeight +
       " assertions=" + (a.length ? "VARNING(" + a.length + "): " + a.join("; ") : "gröna") +
       " | RRG: " + (window.__stockpitRRG || "") +
