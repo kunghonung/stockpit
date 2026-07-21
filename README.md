@@ -34,6 +34,7 @@ Kontraktet för varje fält finns i [DATA_SCHEMA.md](DATA_SCHEMA.md).
 | `data/state.json` | Bottens minne (senast sedda FI-publicering, felräknare) |
 | `data/track_record.json` | Utfallslogg för track record-fliken |
 | `scripts/update_data.py` | Datainsamlaren (Python 3.12, endast `requests`) |
+| `tpa/` | Backend för TP-acc-fliken: Node-ingest (FMP + Yahoo → Supabase) + SQL-schema; körs av `daily-ingest.yml` vardagar 22:00 UTC med secrets `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY`/`FMP_API_KEY`. Frontenden läser samma Supabase direkt med publik läsnyckel. |
 
 ## TEST eller LIVE
 
