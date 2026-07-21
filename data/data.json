@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-21",
-  "genererad": "2026-07-21T15:15+00:00",
+  "genererad": "2026-07-21T17:00+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         115.56,
-        117.7
+        117.71
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.6,
-        95.41
+        95.65
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 11,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         88.45,
-        87.29
+        87.12
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 9,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         87.4,
-        87.26
+        87.33
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         88.66,
-        87.19
+        86.98
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 3,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.98,
-        94.49
+        94.24
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         84.23,
-        83.32
+        83.37
       ]
     },
     {
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         96.59,
-        96.02
+        95.77
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.14,
-        78.82
+        78.77
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         100.16,
-        99.42
+        99.74
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 11,
+      "rsRank": 10,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         92.67,
-        92.25
+        92.23
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.4,
-      "delta": "+0,9 · 1 v",
+      "varde": 17.1,
+      "delta": "+0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 98,
         "pil": "upp",
         "status": "gul"
       },
@@ -742,15 +742,15 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 97,
-        "pil": "upp",
-        "status": "gron"
+        "index": 99,
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 95,
+        "index": 98,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,7 +766,7 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 98,
+        "index": 99,
         "pil": "ned",
         "status": "gul"
       }
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.4,
+      "varde": 17.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4071",
+      "varde": "4077",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,7 %",
+      "delta4v": "−2,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,7 +978,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,15",
+      "varde": "59,19",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−9,7 %",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,52",
+      "varde": "6,56",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,6 %",
+      "delta4v": "+3,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-21"
     },
     "olja": {
-      "v": 91.74,
+      "v": 91.32,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-21"
     }
@@ -1804,14 +1804,19 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1320490/000132049026000003"
         },
         {
-          "datum": "2026-07-20",
-          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
+          "datum": "2026-07-21",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         },
         {
           "datum": "2026-07-20",
-          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
+          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
+        },
+        {
+          "datum": "2026-07-20",
+          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
         },
         {
           "datum": "2026-07-20",
@@ -1820,8 +1825,8 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
+          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
         },
         {
           "datum": "2026-07-20",
@@ -1834,21 +1839,71 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1883523/000149315226033963"
         },
         {
-          "datum": "2026-07-20",
-          "namn": "Issa Mohamed Khairie  (CIK 0002050035); INCYTE CORP  (CIK 0000879169)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2050035/000205003526000011"
-        },
-        {
-          "datum": "2026-07-20",
-          "namn": "GOLDBERG MARK A  (CIK 0001278042); INTENSITY THERAPEUTICS, INC.  (CIK 0001567264)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1278042/000127804226000002"
+          "datum": "2026-07-21",
+          "namn": "ANGELO MARK  (CIK 0001271848); Yorkville Acquisition Sponsor LLC  (CIK 0002074603)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1271848/000127184826000003"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-21T15:15+00:00"
+      "vintage": "2026-07-21T17:00+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-21 18:53:25",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Vickram Vathulya",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "70000,0",
+          "enhet": "Antal",
+          "pris": "3,80",
+          "valuta": "USD"
+        },
+        {
+          "publicerad": "2026-07-21 17:54:59",
+          "emittent": "Midsummer AB",
+          "person": "Patrik Boman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "192500,0",
+          "enhet": "Antal",
+          "pris": "1,50736",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 17:32:57",
+          "emittent": "desenio group ab",
+          "person": "Erik Flinck",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "14371462,0",
+          "enhet": "Antal",
+          "pris": "0,0763",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 17:32:57",
+          "emittent": "desenio group ab",
+          "person": "Erik Flinck",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2323445,0",
+          "enhet": "Antal",
+          "pris": "0,0764",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 17:32:57",
+          "emittent": "desenio group ab",
+          "person": "Erik Flinck",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "398674,0",
+          "enhet": "Antal",
+          "pris": "0,08",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-21 16:58:35",
           "emittent": "Cint Group AB (publ)",
@@ -2343,66 +2398,11 @@
           "enhet": "Antal",
           "pris": "17,6003",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 04:37:33",
-          "emittent": "Enad Global 7 AB (publ)",
-          "person": "Jason Epstein",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "135051,0",
-          "enhet": "Antal",
-          "pris": "17,8894",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 04:37:33",
-          "emittent": "Enad Global 7 AB (publ)",
-          "person": "Jason Epstein",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "118525,0",
-          "enhet": "Antal",
-          "pris": "18,3775",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 22:13:32",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Lena Bjurner",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "29833,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 21:59:29",
-          "emittent": "Transferator AB (publ)",
-          "person": "Skywall AB",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "767,0",
-          "enhet": "Antal",
-          "pris": "1,32",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-20 21:23:23",
-          "emittent": "BE Group AB (publ)",
-          "person": "Petter Stillström",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "7792,0",
-          "enhet": "Antal",
-          "pris": "27,70",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 11,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-21T15:15+00:00"
+      "vintage": "2026-07-21T17:00+00:00"
     }
   }
 }
