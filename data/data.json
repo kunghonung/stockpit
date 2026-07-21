@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-21",
-  "genererad": "2026-07-21T21:44+00:00",
+  "genererad": "2026-07-21T23:09+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4082",
+      "varde": "4085",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,4 %",
+      "delta4v": "−2,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,07",
+      "varde": "59,08",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−9,9 %",
+      "delta4v": "−9,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-21"
     },
     "olja": {
-      "v": 91.44,
+      "v": 91.6,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-21"
     }
@@ -1976,6 +1976,11 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
+          "datum": "2026-07-21",
+          "namn": "Lasda Bridget McCarthy  (CIK 0002145361); Laird Superfood, Inc.  (CIK 0001650696)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2145361/000143774926024015"
+        },
+        {
           "datum": "2026-07-20",
           "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
@@ -1984,18 +1989,24 @@
           "datum": "2026-07-20",
           "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
-        },
-        {
-          "datum": "2026-07-20",
-          "namn": "West Tony  (CIK 0001626201); Uber Technologies, Inc  (CIK 0001543151)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626201/000162620126000018"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-21T21:44+00:00"
+      "vintage": "2026-07-21T23:09+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 00:08:40",
+          "emittent": "Cint Group AB (publ)",
+          "person": "Patrick Comer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "473956,0",
+          "enhet": "Antal",
+          "pris": "6,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-21 23:31:25",
           "emittent": "Viaplay Group AB (publ)",
@@ -2534,22 +2545,11 @@
           "enhet": "Antal",
           "pris": "6,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 16:29:45",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Josephine Bernadotte",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "50037,0",
-          "enhet": "Antal",
-          "pris": "33,9971",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-21T21:44+00:00"
+      "vintage": "2026-07-21T23:09+00:00"
     }
   }
 }
