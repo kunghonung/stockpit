@@ -417,9 +417,9 @@ def main():
         if "IN" in aktiva:
             skal_delar.append("Insynskluster (%d köpare 30 d)" % signaler["IN"]["kopare"])
         if "ES" in aktiva:
-            skal_delar.append("riktkurs %+.1f %% (%s)" % (signaler["ES"]["riktning"], signaler["ES"]["vintage"]))
+            skal_delar.append(("riktkurs %+.1f %% (%s)" % (signaler["ES"]["riktning"], signaler["ES"]["vintage"])).replace(".", ","))
         if "TK" in aktiva:
-            skal_delar.append("RS +%.1f %% mot SMA12, över 40 v-snittet" % signaler["TK"]["avst12"])
+            skal_delar.append(("RS +%.1f %% mot SMA12, över 40 v-snittet" % signaler["TK"]["avst12"]).replace(".", ","))
         if "VÄ" in aktiva:
             skal_delar.append("P/E-rabatt %.0f %% mot sektorns 10-årssnitt (proxy)" % signaler["VÄ"]["rabatt"])
         if "FL" in aktiva:
@@ -427,7 +427,7 @@ def main():
         if "MA" in aktiva:
             skal_delar.append("sektor i topp 4")
         if "BL" in aktiva:
-            skal_delar.append("blankning %.1f %% och fallande" % signaler["BL"]["niva"])
+            skal_delar.append(("blankning %.1f %% och fallande" % signaler["BL"]["niva"]).replace(".", ","))
 
         if b["marknad"] == "US":
             url = "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=%s&type=4" % b["cik"]
