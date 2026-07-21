@@ -2,6 +2,10 @@
 .env
 .env.*
 *.env
+!.env.example
+
+# Node (tpa-backendens beroenden installeras med npm ci)
+node_modules/
 
 # OS-skräp
 Thumbs.db
@@ -10,3 +14,4 @@ Thumbs.db
 # Lokalt arbetsmaterial — publiceras inte
 _arkiv/
 NOTES.md
+mall*.txt

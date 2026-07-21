@@ -1,0 +1,74 @@
+name: Daglig TPA-ingest
+
+# Backend för TP-acc-fliken: hämtar riktkurser (FMP) + makrokvoter (Yahoo)
+# och skriver till Supabase. Frontenden läser samma databas direkt.
+# Koden bor i tpa/ (flyttad hit från repot target-price-acceleration).
+
+on:
+  schedule:
+    # Vardagar 22:00 UTC — efter USA-stängning (16:00 ET sommartid = 20:00 UTC)
+    - cron: "0 22 * * 1-5"
+  workflow_dispatch: {}   # manuell körning från Actions-fliken
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daglig-tpa-ingest
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: tpa
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v5
+
+      # Failar tidigt med tydligt besked om repo-secrets saknas —
+      # annars ser skriptets "Saknade miljövariabler" ut som ett env-fel i workflowen.
+      - name: Kontrollera secrets
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: |
+          saknas=""
+          if [ -z "$SUPABASE_URL" ]; then saknas="$saknas SUPABASE_URL"; fi
+          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then saknas="$saknas SUPABASE_SERVICE_ROLE_KEY"; fi
+          if [ -z "$FMP_API_KEY" ]; then saknas="$saknas FMP_API_KEY"; fi
+          if [ -n "$saknas" ]; then
+            echo "::error::Saknade Actions-secrets:$saknas — lägg in dem under Settings → Secrets and variables → Actions → New repository secret."
+            exit 1
+          fi
+          case "$SUPABASE_URL" in
+            https://*) : ;;
+            *) echo "::warning::SUPABASE_URL börjar inte med https:// — skriptet normaliserar, men rätta gärna värdet till exakt https://DITT-PROJEKT.supabase.co" ;;
+          esac
+          if echo "$SUPABASE_URL" | grep -q "[\"']"; then
+            echo "::warning::SUPABASE_URL innehåller citattecken — klistra in värdet utan citattecken."
+          fi
+          echo "Alla tre secrets är satta."
+
+      - name: Node 22
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tpa/package-lock.json
+
+      - name: Installera beroenden
+        run: npm ci --no-audit --no-fund
+
+      - name: Kör ingest
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          # Valfri: sätt repo-variabeln TICKERS för att styra universum utan kodändring
+          TICKERS: ${{ vars.TICKERS }}
+        run: node scripts/ingest-data.js

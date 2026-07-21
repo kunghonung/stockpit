@@ -1,0 +1,17 @@
+{
+  "name": "datapanel-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend-motor för den finansiella datapanelen: Supabase-schema + daglig dataingest (Yahoo makrokvoter, FMP analytikerkonsensus).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "ingest": "node scripts/ingest-data.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  }
+}
