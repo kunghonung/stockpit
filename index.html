@@ -187,6 +187,14 @@ a{ color:inherit; }
 .modulkort .krubrik .oppnapil{ margin-left:auto; color:var(--accent); font-weight:500; letter-spacing:0; text-transform:none; font-size:var(--fs12); }
 .modulkort .kslutsats{ font-size:var(--fs12); color:var(--sek); line-height:1.45; }
 .modulkort .knyckeltal{ display:flex; flex-direction:column; gap:2px; }
+.modulkort .krad{ display:flex; align-items:baseline; gap:var(--s8); font-size:var(--fs12); color:var(--sek); min-height:20px; }
+.modulkort .krad b{ margin-left:auto; font-family:var(--mono); font-size:var(--fs12); font-weight:500; font-variant-numeric:tabular-nums; color:var(--navy); white-space:nowrap; }
+.modulkort .lineage{ align-self:flex-start; }
+.modulkort .kslutsats{ margin-top:auto; padding-top:var(--s4); border-top:1px solid var(--linje); }
+.hero .heromatt{ display:flex; flex-wrap:wrap; gap:var(--s4) var(--s16); align-items:center; font-size:var(--fs12); color:var(--sek); padding-top:var(--s4); border-top:1px solid var(--linje); }
+.hero .heromatt b{ font-family:var(--mono); font-weight:500; font-variant-numeric:tabular-nums; color:var(--navy); }
+.hero .heromatt .punkt{ display:inline-block; width:7px; height:7px; border-radius:50%; }
+.hero .heromattdel{ display:inline-flex; align-items:center; gap:var(--s4); cursor:help; }
 @media (min-width:1120px){
   .vy-tvakol{ display:grid; grid-template-columns:318px minmax(0,1fr); gap:var(--s8); align-items:start; }
   .vy-spalt{ display:flex; flex-direction:column; gap:var(--s8); min-width:0; }
@@ -1291,6 +1299,17 @@ function sentimentDivergens(data){
 }
 
 /* ============ Slutsatser ============ */
+/* Delade hjälpare — används av både fullvyer och översiktens kort (ingen dubblerad logik) */
+function rankadeAktier(data){
+  return data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+}
+function toppFlaskhals(m){
+  var kandidater = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
+  return kandidater.slice().sort(function(a, b){
+    return b.celler.reduce(function(x, c){ return x + c.i; }, 0) - a.celler.reduce(function(x, c){ return x + c.i; }, 0);
+  })[0] || m.rader[0];
+}
+
 function slutsatser(data, analys, regim, kort){
   var s = {};
   var oka = kort.filter(function(k){ return k.handling === "oka"; }).map(function(k){ return k.s.namn; });
@@ -1629,7 +1648,7 @@ function renderaRadar(data, analys, kort, slut){
 function renderaAktier(data, slut){
   satLin("lin-aktier", data.aktierLineage.kalla, data.aktierLineage.vintage);
   var nycklar = Object.keys(data.parlnyckel);
-  var rankade = data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+  var rankade = rankadeAktier(data);
   $("#aktier-slutsats").textContent = slut.aktier;
   $("#aktier-underrad").innerHTML = "Topp " + rankade.length + " av " + data.screenadeAntal +
     ' screenade · rankade på konvergens × signalstyrka · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
@@ -1874,7 +1893,7 @@ var MEGA_EFTERFRAGAN = { "Hyperscalers": true };
 function renderaMegatrend(data, analys, kort){
   var m = data.megatrend;
   satLin("lin-mega", "branschdata", m.vintage);
-  var rankade = data.aktier.slice().sort(function(a, b){ return b.parlor.length - a.parlor.length || b.styrka - a.styrka; });
+  var rankade = rankadeAktier(data);
   var rekFor = function(sektor){ return kort.filter(function(k){ return k.s.namn === sektor; })[0]; };
   var aktierFor = function(tema){
     return rankade.map(function(a, i){ return { a: a, rank: i + 1 }; })
@@ -1919,9 +1938,7 @@ function renderaMegatrend(data, analys, kort){
   var efterfragan = m.rader.filter(function(r){ return MEGA_EFTERFRAGAN[r.namn]; });
   var flaskhalsar = m.rader.filter(function(r){ return !MEGA_EFTERFRAGAN[r.namn]; });
 
-  var topp = flaskhalsar.slice().sort(function(a, b){
-    return b.celler.reduce(function(x, c){ return x + c.i; }, 0) - a.celler.reduce(function(x, c){ return x + c.i; }, 0);
-  })[0] || m.rader[0];
+  var topp = toppFlaskhals(m);
   var rekT = rekFor(topp.sektor);
   var toppRefs = aktierFor(topp.tema).slice(0, 1).join("");
   var syntes = "<b>3 · Slutsats — trängst: " + esc(topp.namn) + ".</b> " +
@@ -2151,6 +2168,9 @@ function renderaTpa(tpa, status){
       "</div>";
   }).join("");
 
+  window.__tpaSenast = tpa;
+  uppdateraKortTpa(tpa);
+
   /* statusrad — säger alltid ärligt varifrån innehållet kommer */
   if(status === "nyckel"){
     kroppEl.innerHTML += '<p class="tpastatus"><b>Livekoppling av.</b> Klistra in projektets publishable-nyckel i TPA_KONFIG i index.html (läsnyckel, publik per design — RLS tillåter endast läsning). Tills dess visas ett illustrativt testblock.</p>';
@@ -2180,23 +2200,95 @@ function initTpa(data){
   });
 }
 
-/* ---- Översikten (Fas 1-stub: hero + länkkort; modulkorten fylls i Fas 2) ---- */
+/* ---- Översikten: hero + ett modulkort per panel ----
+   Korten FORMATERAR endast — all beräkning kommer ur samma analys/kort/slut/
+   regim-objekt som fullvyerna, och lineage-badgarna får identiska argument. */
+function kortSkal(href, rubrik, lineageHtml, inre, slutsatsText){
+  return '<a class="modulkort" href="' + href + '">' +
+    '<span class="krubrik">' + esc(rubrik) + '<span class="oppnapil">Öppna →</span></span>' +
+    (lineageHtml || "") +
+    '<span class="knyckeltal">' + inre + "</span>" +
+    (slutsatsText ? '<span class="kslutsats">' + esc(slutsatsText) + "</span>" : "") + "</a>";
+}
+function krad(etikett, varde){
+  return '<span class="krad"><span>' + etikett + "</span><b>" + varde + "</b></span>";
+}
+function uppdateraKortTpa(tpa){
+  var el = $("#kort-tpa-rad");
+  if(!el || !tpa) return;
+  var samlar = tpa.lage === "LIVE" && tpa.samlarDagar != null && tpa.samlarDagar < 3;
+  var toppAcc = null;
+  tpa.rader.forEach(function(r){ if(!toppAcc && r.accBp != null && r.accBp > 0) toppAcc = r; });
+  el.textContent = samlar ? "samlar " + tpa.samlarDagar + "/3 d"
+    : toppAcc ? toppAcc.ticker + " +" + svTal(toppAcc.accBp, 1) + " bp/d²"
+    : tpa.lage === "LIVE" ? "inga accelererar" : "testblock";
+}
 function renderaOversikt(data, analys, kort, regim, slut){
   var heroEl = $("#hero");
   if(!heroEl) return;
+  var topp3 = rankadeAktier(data).slice(0, 3);
+  var trangst = toppFlaskhals(data.megatrend);
   heroEl.innerHTML =
     '<p class="slutsats">' + esc(slut.rek) + "</p>" +
-    '<p class="slutsats">' + esc(slut.regim) + "</p>";
-  $("#kortgrid").innerHTML = [
-    ["#/sektorrotation", "Sektorrotation", "Linserna, rotationsradarn och flödena — var i cykeln kapitalet ska ligga."],
-    ["#/makro-likviditet", "Makro & Likviditet", "Räntekurva, sentiment, regim, kvoter och metaller."],
-    ["#/aktier-konsensus", "Aktier & Konsensus", "Konvergensidéerna, track record och riktkursaccelerationen."],
-    ["#/trangsektorer", "Trångsektorer", "Megatrendens flaskhalsar — var kön är längst."]
-  ].map(function(k){
-    return '<a class="modulkort" href="' + k[0] + '">' +
-      '<span class="krubrik">' + esc(k[1]) + '<span class="oppnapil">Öppna →</span></span>' +
-      '<span class="kslutsats">' + esc(k[2]) + "</span></a>";
+    '<div class="heromatt">' +
+      '<span class="heromattdel" title="' + esc(slut.regim) + '">Riskaptit <b>' + regim.poang + "</b>/100 · " +
+        data.tripwires.map(function(t){
+          return esc(t.etikett) + ' <span class="punkt ' + tripwireStatus(t) + '"></span>';
+        }).join(" ") + "</span>" +
+      '<span class="heromattdel" title="Topp 3 av ' + data.screenadeAntal + ' screenade — hela listan under Aktier &amp; Konsensus.">Konvergens: ' +
+        topp3.map(function(a){ return "<b>" + esc(a.ticker) + "</b> " + a.styrka; }).join(" · ") + "</span>" +
+      '<span class="heromattdel" title="Megatrendens mest ansträngda flaskhals — detaljer under Trångsektorer.">Trängst: <b>' +
+        esc(trangst.namn) + "</b> " + esc(trangst.celler[1].v) + " väntan · kö " + esc(trangst.celler[0].v) + "</span>" +
+    "</div>";
+
+  var handlingar = kort.map(function(k){
+    return krad(HANDLING[k.handling] + " " + esc(k.s.namn), String(beraknaOvertygelse(k.signaler)));
   }).join("");
+  var tidigT = analys.lista.slice().sort(function(a, b){ return b.tidig - a.tidig; })[0];
+  var momT = analys.lista.slice().sort(function(a, b){ return b.momentum - a.momentum; })[0];
+  var toppFlode = null;
+  data.sektorer.forEach(function(x){ if(x.flodeM && (!toppFlode || x.flodeM.v > toppFlode.flodeM.v)) toppFlode = x; });
+  var grona = data.tripwires.filter(function(t){ return tripwireStatus(t) === "gron"; }).length;
+  var tpaS = window.__tpaSenast;
+
+  $("#kortgrid").innerHTML =
+    kortSkal("#/sektorrotation", "Kapitalallokering",
+      linBadge("4 källor", "2026-06→W29", "FactSet · Koyfin · SSGA · RRG"),
+      handlingar,
+      "Tidig cykel toppar " + tidigT.s.namn + " " + tidigT.tidig + " — momentum toppar " + momT.s.namn + " " + momT.momentum + ".") +
+    kortSkal("#/sektorrotation", "Rotationsradar",
+      linBadge("relSerie19", "v." + veckoNr(data.asOfWeek), "beräknad i frontenden ur relSerie19 (sektor/SPX)"),
+      krad("Obekräftade vändningar", String(analys.lista.filter(function(x){ return x.rrg.puls; }).length)) +
+      krad("Geografi", esc(slut.geo.split(";")[0] || "—")),
+      slut.radar) +
+    kortSkal("#/sektorrotation", "Flöden",
+      linBadge("SSGA månadsdata", "2026-06"),
+      (toppFlode ? krad("Störst inflöde", esc(toppFlode.namn) + " +" + svTal(toppFlode.flodeM.v, 1)) : krad("Sektorflöden", "—")) +
+      (toppFlode ? krad("Andel av inflödena", toppFlode.flodeM.andelInflode + " %") : ""),
+      slut.flod) +
+    kortSkal("#/makro-likviditet", "Makro",
+      linBadge("FRED · AAII", data.makro.rantekurva.vintage, data.makro.rantekurva.kalla + " · AAII bull-bear · CFTC-netto"),
+      krad("Kurva", (analys.brantning > 0 ? "+" : "") + analys.brantning + " bp/mån") +
+      krad("Bredd över 50d", data.makro.bredd.over50 + " %"),
+      slut.kurva) +
+    kortSkal("#/makro-likviditet", "Marknadsregim & risk",
+      linBadge("4 källor", "07-17/W29", "FRED · ICE · CFTC · CBOE"),
+      krad("Riskaptit", regim.poang + "/100") +
+      krad("Tripwires gröna", grona + " av " + data.tripwires.length) +
+      krad("Trängsel", data.regim.crowding.score + "/100"),
+      slut.regim) +
+    kortSkal("#/aktier-konsensus", "Aktier & insyn",
+      linBadge(data.aktierLineage.kalla, data.aktierLineage.vintage),
+      topp3.map(function(a){ return krad("#" + (topp3.indexOf(a) + 1) + " " + esc(a.ticker), a.parlor.length + "/7 · " + a.styrka); }).join("") +
+      '<span class="krad"><span>TP-acceleration</span><b id="kort-tpa-rad">' +
+        (tpaS ? "" : "läser …") + "</b></span>",
+      slut.aktier) +
+    kortSkal("#/trangsektorer", "Trångsektorer",
+      linBadge("branschdata", data.megatrend.vintage),
+      krad(esc(trangst.namn), esc(trangst.celler[0].v) + " kö · " + esc(trangst.celler[1].v)) +
+      krad("Väntetiderna", data.megatrend.rader.filter(function(r){ return r.celler[1].pil === "upp"; }).length + " av " + data.megatrend.rader.length + " växer"),
+      "Pengarna i en megatrend finns där kön är längst.");
+  if(tpaS) uppdateraKortTpa(tpaS);
 }
 
 var dataGlobal = null;
