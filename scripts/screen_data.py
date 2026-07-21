@@ -84,14 +84,20 @@ def klamp(v, lo=0.0, hi=100.0):
     return max(lo, min(hi, v))
 
 
-# ---------------------------------------------------------------- Yahoo (TK)
-def yahoo_veckoserie(symbol):
+# ---------------------------------------------------------------- Yahoo (TK + bredd)
+def yahoo_dagserie(symbol):
+    """1 år dagliga stängningar — EN hämtning per ticker ger både veckoserien
+    (TK-signalen) och SMA50/200 (breddmåttet, S9-B1)."""
     url = ("https://query1.finance.yahoo.com/v8/finance/chart/%s"
-           "?range=1y&interval=1wk&events=div%%2Csplit" % urllib.parse.quote(symbol))
+           "?range=1y&interval=1d&events=div%%2Csplit" % urllib.parse.quote(symbol))
     d = hamta_json(url)
     res = d["chart"]["result"][0]
-    stang = [v for v in res["indicators"]["quote"][0]["close"] if v is not None]
-    return stang
+    return [v for v in res["indicators"]["quote"][0]["close"] if v is not None]
+
+
+def veckoserie_ur_dagar(dagar):
+    """Var 5:e handelsdag räknat bakifrån — senaste punkten alltid med."""
+    return dagar[::-1][::5][::-1]
 
 
 def sma(serie, n):
@@ -246,15 +252,16 @@ def main():
                key=lambda s: (s.get("rsRank") or 99))]
     ma_topp = set(rev_rank[:4]) | set(rs_rank[:4])
 
-    # index-serier för RS
+    # index-serier för RS (dagliga → veckovisa)
     index_serier = {}
     for marknad, symbol in (("US", "SPY"), ("SE", "^OMX")):
         try:
-            index_serier[marknad] = yahoo_veckoserie(symbol)
+            index_serier[marknad] = veckoserie_ur_dagar(yahoo_dagserie(symbol))
             time.sleep(YAHOO_PAUS)
         except Exception as fel:
             print("indexserie %s: FEL %s" % (symbol, fel))
             index_serier[marknad] = None
+    bredd = {"over50": 0, "over200": 0, "antal": 0}
 
     # SE-insyn + blankning (en hämtning var, inte per bolag)
     try:
@@ -279,14 +286,19 @@ def main():
         tick = b["ticker"]
         signaler = {}
 
-        # --- TK
+        # --- TK (+ breddunderlag ur samma dagserie)
         tk = None
         try:
-            stang = yahoo_veckoserie(b["yahooSymbol"])
+            dagar = yahoo_dagserie(b["yahooSymbol"])
             time.sleep(YAHOO_PAUS)
+            stang = veckoserie_ur_dagar(dagar)
             ixs = index_serier.get(b["marknad"])
             if ixs:
                 tk = tk_signal(stang, ixs)
+            if b["marknad"] == "US" and len(dagar) >= 200:
+                bredd["antal"] += 1
+                if dagar[-1] > sum(dagar[-50:]) / 50: bredd["over50"] += 1
+                if dagar[-1] > sum(dagar[-200:]) / 200: bredd["over200"] += 1
         except Exception:
             tk = None
         if tk:
