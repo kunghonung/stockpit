@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-21",
-  "genererad": "2026-07-21T20:24+00:00",
+  "genererad": "2026-07-21T21:44+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.6,
-        95.09
+        95.1
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         88.45,
-        87.1
+        87.11
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.14,
-        79.25
+        79.24
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         92.67,
-        92.1
+        92.11
       ]
     }
   ],
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 73.0,
-      "delta": "−5 · 1 v",
+      "varde": 75.0,
+      "delta": "−3 · 1 v",
       "trosklar": [
         100,
         130
@@ -828,7 +828,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 73.0,
+      "varde": 75.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4088",
+      "varde": "4082",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,2 %",
+      "delta4v": "−2,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,7 +978,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,03",
+      "varde": "59,07",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−9,9 %",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,52",
+      "varde": "6,53",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,6 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-21"
     },
     "olja": {
-      "v": 91.37,
+      "v": 91.44,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-21"
     }
@@ -1685,7 +1685,7 @@
           101.6,
           101.76,
           101.93,
-          101.6
+          101.59
         ]
       },
       {
@@ -1956,19 +1956,24 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         },
         {
-          "datum": "2026-07-20",
-          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
+          "datum": "2026-07-21",
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
-          "datum": "2026-07-20",
-          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
+          "datum": "2026-07-21",
+          "namn": "RA Capital Healthcare Fund LP  (CIK 0001315082); RA CAPITAL MANAGEMENT, L.P.  (CIK 0001346824)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
-          "datum": "2026-07-20",
-          "namn": "West Tony  (CIK 0001626201); Uber Technologies, Inc  (CIK 0001543151)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626201/000162620126000018"
+          "datum": "2026-07-21",
+          "namn": "Baumgartner Jeffrey W  (CIK 0001777830); CIRRUS LOGIC, INC.  (CIK 0000772406)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1777830/000177783026000014"
+        },
+        {
+          "datum": "2026-07-21",
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-20",
@@ -1977,25 +1982,53 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Rodman David Malcom  (CIK 0001672659); Mineralys Therapeutics, Inc.  (CIK 0001933414)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1672659/000167265926000036"
+          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
         },
         {
           "datum": "2026-07-20",
-          "namn": "Callahan Jennifer L.  (CIK 0001883523); Cingulate Inc.  (CIK 0001862150)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1883523/000149315226033963"
-        },
-        {
-          "datum": "2026-07-21",
-          "namn": "ANGELO MARK  (CIK 0001271848); Yorkville Acquisition Sponsor LLC  (CIK 0002074603)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1271848/000127184826000003"
+          "namn": "West Tony  (CIK 0001626201); Uber Technologies, Inc  (CIK 0001543151)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1626201/000162620126000018"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-21T20:24+00:00"
+      "vintage": "2026-07-21T21:44+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-21 23:31:25",
+          "emittent": "Viaplay Group AB (publ)",
+          "person": "Andrea Gisle Joosen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "14705,0",
+          "enhet": "Antal",
+          "pris": "1,365",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 23:31:25",
+          "emittent": "Viaplay Group AB (publ)",
+          "person": "Andrea Gisle Joosen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4127,0",
+          "enhet": "Antal",
+          "pris": "1,379",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-21 23:31:25",
+          "emittent": "Viaplay Group AB (publ)",
+          "person": "Andrea Gisle Joosen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "18037,0",
+          "enhet": "Antal",
+          "pris": "1,385",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-21 21:34:49",
           "emittent": "Knowit AB (publ)",
@@ -2512,44 +2545,11 @@
           "enhet": "Antal",
           "pris": "33,9971",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 16:18:05",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "Åsa Tamsons",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "23918,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 15:28:00",
-          "emittent": "Physitrack Plc",
-          "person": "Per Henrik Molin",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "30000,0",
-          "enhet": "Antal",
-          "pris": "8,2116",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 15:22:53",
-          "emittent": "CTEK AB (publ)",
-          "person": "Henrik Fagrenius",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "92352,0",
-          "enhet": "Antal",
-          "pris": "13,5932",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 13,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-21T20:24+00:00"
+      "vintage": "2026-07-21T21:44+00:00"
     }
   }
 }
