@@ -203,8 +203,14 @@ a{ color:inherit; }
   #sida-aktier .panel{ width:100%; max-width:680px; margin:0 auto; }
   #sida-trang .panel{ width:100%; max-width:620px; margin:0 auto; }
   /* Fördjupning: radarytorna får riktig höjd i stället för cockpitens 1.32fr-lås */
+  #sida-sektorrotation .radarytor{ grid-template-columns:1.25fr 1fr; }
   #sida-sektorrotation .radarhall{ min-height:430px; }
+  #sida-sektorrotation .radarhall svg{ width:100%; height:auto; max-height:560px; }
+  /* Makro i fullbredd: kurvorna skalar som vektorer men hålls läsbara */
+  #sida-makro #vy-kurva svg, #sida-makro #vy-sentiment svg{ display:block; width:100%; max-width:680px; height:auto; margin:0 auto; }
   .aktie .skal{ -webkit-line-clamp:1; }
+  /* Aktier i fördjupning: släpp enradsklippet — hela resonemanget får synas */
+  #sida-aktier .aktie .skal{ -webkit-line-clamp:3; }
 }
 @media (min-width:1120px) and (max-height:940px){
   .cockpit{ gap:var(--s8); padding:var(--s8); }
@@ -447,6 +453,8 @@ li.oppen .sigdetalj{ display:block; }
 .msek{ font-size:var(--fs11); font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--svag); margin:var(--s8) 0 2px; }
 .msek::first-letter{ color:var(--accent); }
 .hjalpmark{ cursor:help; border-bottom:1px dotted var(--svag); }
+.korslank{ color:var(--accent); text-decoration:none; }
+.korslank:hover{ text-decoration:underline; }
 .mrad{ display:grid; grid-template-columns:92px 1fr 1fr 1fr; gap:var(--s4); align-items:center; }
 .mrad.huvud{ margin-bottom:var(--s4); }
 .mrad.huvud span{ font-size:var(--fs11); font-weight:600; letter-spacing:.02em; text-transform:uppercase; color:var(--svag); text-align:right; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
@@ -1901,6 +1909,10 @@ function renderaMegatrend(data, analys, kort){
       .map(function(x){ return x.a.ticker + " #" + x.rank; });
   };
   var kolNamn = function(kol){ return MEGA_KOLUMN[kol] ? MEGA_KOLUMN[kol].namn : kol; };
+  /* korslänk: aktiereferenser i konsekvens/syntes leder till Aktier & Konsensus-vyn */
+  var lankaRefs = function(refs){
+    return refs.replace(/([A-ZÅÄÖ]{2,6}) #(\d+)/g, '<a class="korslank" href="#/aktier-konsensus" title="Öppna konvergenslistan — $1 är #$2 i rankingen">$1 #$2</a>');
+  };
 
   function renderaGrupp(lista){
     return lista.map(function(rad, ri){
@@ -1924,10 +1936,10 @@ function renderaMegatrend(data, analys, kort){
         var kons;
         if(rek){
           kons = rek.handling === "minska"
-            ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + refs + "." : "")
-            : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + refs : "");
+            ? "Stark kö — men trängsel och tidig-cykel väger tyngre: <b>MINSKA " + esc(rad.sektor) + "</b> kvarstår." + (refs ? " Närmast exponering: " + lankaRefs(refs) + "." : "")
+            : "Talar för <b>" + HANDLING[rek.handling] + " " + esc(rad.sektor) + "</b>" + (refs ? " · via " + lankaRefs(refs) : "");
         } else {
-          kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs || "se konvergenslistan");
+          kons = esc(rad.sektor) + " saknar ÖKA-rek just nu — köerna spelas via enskilda aktier: " + (refs ? lankaRefs(refs) : "se konvergenslistan");
         }
         ut += '<div class="mrad"><span class="konsekvens">' + kons + "</span></div>";
       }
@@ -1944,7 +1956,7 @@ function renderaMegatrend(data, analys, kort){
   var syntes = "<b>3 · Slutsats — trängst: " + esc(topp.namn) + ".</b> " +
     esc(topp.celler[1].v) + " väntetid och kön +" + esc(topp.celler[0].v.replace(/^\+/, "")) + "/år" +
     (rekT ? " — talar för <b>" + HANDLING[rekT.handling] + " " + esc(rekT.s.namn) + "</b>."
-      : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? toppRefs + "." : "enskilda aktier."));
+      : " — sektorn saknar ÖKA-rek, så kön spelas via " + (toppRefs ? lankaRefs(toppRefs) + "." : "enskilda aktier."));
 
   $("#megakropp").innerHTML =
     '<p class="mingress">Pengarna i en megatrend finns där kön är längst — hos dem som säljer det få kan leverera.</p>' +
