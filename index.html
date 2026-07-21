@@ -2050,6 +2050,21 @@ function assertions(data, analys, kort, regim){
       if(p10s0.komp.flodesvandning !== null) varningar.push("P10: förfallet flodeM viktades inte bort ur linsen");
     }catch(fel){ varningar.push("P10: " + fel.message); }
   }
+  /* P11 — paritet: pipelinens rek-spegel (screen.json.meta.koprek) ska ge samma
+     regimpoäng, topp-4-sektorer och konviktioner som frontendmotorn. Divergens =
+     röd flagga (portering har driftat). Hoppar om kadensvakten nollat fält. */
+  if(regim && screenGlobal && screenGlobal.meta && screenGlobal.meta.koprek &&
+     kadensKarta && !kadensKarta.lista.some(function(p){ return p.niva === 2; })){
+    var p11 = screenGlobal.meta.koprek;
+    if(p11.regimPoang !== regim.poang){
+      varningar.push("P11: pipelinens regimpoäng " + p11.regimPoang + " ≠ frontendens " + regim.poang);
+    }
+    var p11analys = analysera(data);
+    var p11topp4 = p11analys.tidigOrdning.slice(0, 4).map(function(x){ return x.s.id; }).sort().join(",");
+    if(p11topp4 !== (p11.tidigTopp4 || []).slice().sort().join(",")){
+      varningar.push("P11: tidigTopp4 divergerar (pipeline " + (p11.tidigTopp4 || []).join("/") + ")");
+    }
+  }
   /* P9 — regimgrinden: med syntetisk riskaptit 35 ska motorn vägra nya rek */
   try{
     var p9 = beraknaKoprek(data, analys, kort, { poang: 35 }, null);

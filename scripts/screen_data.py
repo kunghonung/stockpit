@@ -228,6 +228,102 @@ def fmp(endpoint, symbol):
         return None
 
 
+# ---------------------------------------------------------------- B2: rek-spegling
+def koprek_spegel(snapshot, lista, idag):
+    """§6-kedjan speglad för LOGGNING (S9-B2). Frontenden är kanonisk —
+    P11-assertionen där jämför resultaten; divergens är röd flagga.
+    Formlerna är portade 1:1 ur index.html (beraknaRegim, tidig-linsen §1)."""
+    def tw_status(t):
+        if t["varde"] >= t["trosklar"][1]: return "rod"
+        if t["varde"] >= t["trosklar"][0]: return "gul"
+        return "gron"
+    tws = [tw_status(t) for t in snapshot["tripwires"]]
+    trip = sum(1 if s == "gron" else 0.5 if s == "gul" else 0 for s in tws) / len(tws)
+    kv = snapshot["regim"]["kvoter"]
+    kvot = sum(1 if k["status"] == "gron" else 0.5 if k["status"] == "gul" else 0 for k in kv) / len(kv)
+    regim_poang = round(35 * trip + 35 * kvot + 30 * (1 - snapshot["regim"]["crowding"]["score"] / 100))
+
+    sekt = snapshot["sektorer"]
+    n = len(sekt)
+    RIKTBONUS = {"accelererar": 20, "vänder": 15, "stiger": 10, "flat": 0, "faller": -10}
+    revs = [s["revQ2"]["v"] for s in sekt]
+    rev_min, rev_max = min(revs), max(revs)
+    rab_max = max((s["fwdPE10y"]["v"] - s["fwdPE"]["v"]) / s["fwdPE10y"]["v"] for s in sekt)
+    k = snapshot["makro"]["rantekurva"]
+    brant = round(((k["nu"][3] - k["nu"][1]) - (k["forr"][3] - k["forr"][1])) * 100)
+    rk_kand = sorted([s for s in sekt if s.get("revRiktning") == "vänder"
+                      and s["fwdPE"]["v"] < s["fwdPE10y"]["v"]],
+                     key=lambda s: -s["rsRank"])
+    rk_id = rk_kand[0]["id"] if rk_kand else None
+    vt = snapshot["linsvikter"]["tidig"]
+    tidig_av = {}
+    for s in sekt:
+        efterslapning = (s["rsRank"] - 1) / (n - 1) * 100
+        rabatt = (s["fwdPE10y"]["v"] - s["fwdPE"]["v"]) / s["fwdPE10y"]["v"]
+        vardering = klamp(rabatt / rab_max * 100) if rabatt > 0 and rab_max > 0 else 0
+        rev = klamp((s["revQ2"]["v"] - rev_min) / ((rev_max - rev_min) or 1) * 100
+                    + RIKTBONUS.get(s.get("revRiktning"), 0))
+        flode = s.get("flodeM")
+        flodesv = None if flode is None else (100 if flode["v"] > 0 and s["rsRank"] >= 6 else 0)
+        par = [(efterslapning, vt["efterslapning"]), (vardering, vt["vardering"]),
+               (rev, vt["revideringar"]), (flodesv, vt["flodesvandning"])]
+        su = sum(p * v for p, v in par if p is not None)
+        vi = sum(v for p, v in par if p is not None)
+        makro = 8 if brant > 0 and s["id"] == rk_id else 0
+        tidig_av[s["id"]] = klamp(round(su / vi + makro)) if vi else 0
+    topp4 = [sid for sid, _ in sorted(tidig_av.items(), key=lambda x: -x[1])[:4]]
+
+    lage = "oppen" if regim_poang >= 50 else "bevaka" if regim_poang >= 40 else "stangd"
+    rek = []
+    if lage == "oppen":
+        for a in lista:
+            if not a.get("sektorId") or a["sektorId"] not in topp4:
+                continue
+            if len(a["parlor"]) < 4 or a["styrka"] < 60:
+                continue
+            if "IN" not in a["parlor"] and "ES" not in a["parlor"]:
+                continue
+            sparade = a.get("sparade", 7)
+            regimmarg = max(0, min(50, regim_poang - 50)) * 2
+            konv = round(0.35 * a["styrka"] + 0.25 * tidig_av[a["sektorId"]] +
+                         0.20 * (len(a["parlor"]) / sparade * 100) + 0.10 * 0 + 0.10 * regimmarg)
+            rek.append({"ticker": a["ticker"], "sektorId": a["sektorId"], "konviktion": konv})
+        rek.sort(key=lambda r: -r["konviktion"])
+        for i, r in enumerate(rek):
+            r["etikett"] = ("KÖPREK · HÖG" if r["konviktion"] >= 70 else
+                            "KÖPREK" if r["konviktion"] >= 55 else "KANDIDAT") if i < 5 else "KANDIDAT"
+    return {"regimPoang": regim_poang, "lage": lage, "tidigTopp4": topp4,
+            "rek": rek[:8], "beraknad": idag.isoformat(),
+            "not": "temabonus utelämnad i spegeln (aktier[].tema är frontenddata) — "
+                   "P11 jämför konviktion utan bonusens 10-delar"}
+
+
+def logga_rek(spegel, snapshot, idag):
+    tr = las_json(ROT / "data" / "track_record.json", None)
+    if not tr or spegel["lage"] != "oppen":
+        return 0
+    sedda = set((p.get("etf"), p.get("lins")) for p in tr["poster"])
+    nya = 0
+    for r in spegel["rek"]:
+        if r["etikett"].startswith("KÖPREK") and (r["ticker"], "koprek") not in sedda:
+            s = next((x for x in snapshot["sektorer"] if x["id"] == r["sektorId"]), {})
+            tr["poster"].append({
+                "id": "koprek-%s-%s" % (r["ticker"].lower().replace(" ", ""), idag.isoformat()),
+                "datum": idag.isoformat(), "lins": "koprek", "handling": "oka",
+                "etf": r["ticker"], "sektor": s.get("namn", r["sektorId"]),
+                "ingang": {"rsRank": s.get("rsRank"), "fwdPE": (s.get("fwdPE") or {}).get("v"),
+                           "revQ2": (s.get("revQ2") or {}).get("v")},
+                "konviktion": r["konviktion"],
+                "utfall": {"v1": None, "v4": None, "v12": None},
+                "omprovningTriggad": False,
+                "kommentar": r["etikett"] + " · loggad av pipelinen (B2)"})
+            nya += 1
+    if nya:
+        (ROT / "data" / "track_record.json").write_text(
+            json.dumps(tr, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return nya
+
+
 # ---------------------------------------------------------------- huvudflöde
 def main():
     idag = date.today()
@@ -475,6 +571,16 @@ def main():
         return (-len(p["parlor"]), -p["styrka"], -dp.get("IN", 0), -dp.get("ES", 0), -dp.get("VÄ", 0))
     lista.sort(key=nyckel)
 
+    spegel = None
+    try:
+        spegel = koprek_spegel(snapshot, lista, idag) if snapshot else None
+        if spegel:
+            nya = logga_rek(spegel, snapshot, idag)
+            print("B2: rek-spegeln %s · %d rek · %d nya loggposter"
+                  % (spegel["lage"], len([r for r in spegel["rek"] if r.get("etikett", "").startswith("KÖPREK")]), nya))
+    except Exception as fel:
+        print("B2: spegeln föll: %s" % fel)
+
     ut = {
         "schemaVersion": "1.0",
         "vintage": idag.isoformat(),
@@ -484,6 +590,7 @@ def main():
         "tackning": round(tackning, 3),
         "rotation": {"delar": ROTATIONSDELAR, "dagensDel": rotdag,
                      "kommentar": "ES/VÄ via FMP i rotation — gratisplanens anropstak"},
+        "meta": {"koprek": spegel},
         "lista": lista,
     }
     UTFIL.write_text(json.dumps(ut, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

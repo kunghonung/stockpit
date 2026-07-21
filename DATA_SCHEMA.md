@@ -122,3 +122,20 @@ Listposter: `{ticker, namn, marknad, sektorId, parlor[], sparade, delpoang{}, st
   blankningshistorik) — committas av workflowen, läses aldrig av frontenden.
 - Frontenden läser filen med egen lineage-badge (`screener v1 · vintage`); saknas filen
   visas kurerade urvalet med ärlig underrad — inga mockade screenerdata i testblocket.
+
+## Sprint 9 — nya filer och ändrade kontrakt
+
+- **`data/pe_historik.json`** — veckovisa trailing-P/E-aggregat per sektor (likaviktade ur
+  FMP-rotationen); grund för framtida egenberäknat 10-årssnitt. `fwdPE` i data.json förblir
+  kurerad ö tills forward-källa finns.
+- **`data/cot_historik.json`** — CFTC COT: E-mini S&P 500 noncommercial netto/OI per rapportvecka;
+  `regim.crowding.score` = percentil av senaste mot 3-årsfönstret. BAML-komponenten utgår (stängd källa).
+- **`regim.aiCapex`** blir numeriskt (1 + TTM-capex-å/å för `AI_CAPEX_KORG`); detaljer i
+  `regim.aiCapexDetalj {capexYoY, korg, ttmMdUsd, kalla, vintage}`. §3-crowdingflaggan läser talet.
+- **`makro.bredd`** skrivs av screen-jobbet (US-delen av universum, ≥300 bolag); `makro.sentiment`
+  av veckojobbet (AAII-veckostaplarna); `geo.marknader[].relSerie19` av 30-min-jobbet mot ACWI.
+- **Track record-utfall**: relativavkastning mot SPY i procentenheter, båda benen i lokal valuta
+  (SE-bolag jämförs ocurrency-justerat mot SPY:s procentuella förändring — medvetet val, dokumenterat här).
+- **Fältägarskap**: tre jobb skriver data.json (update 30 min · screen dagligen · weekly fredagar),
+  vart och ett rör bara sina fält och committar med pull-rebase; merge-principen i update_data.py
+  bevarar allt den inte känner.
