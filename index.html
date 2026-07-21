@@ -455,6 +455,13 @@ li.oppen .sigdetalj{ display:block; }
 .hjalpmark{ cursor:help; border-bottom:1px dotted var(--svag); }
 .korslank{ color:var(--accent); text-decoration:none; }
 .korslank:hover{ text-decoration:underline; }
+.listforklaring{
+  font-size:var(--fs11); color:var(--damp); line-height:1.6;
+  padding:var(--s4); border:1px dashed var(--linje); border-radius:var(--radie);
+  margin:0 0 var(--s4); flex:none;
+}
+.listforklaring b{ color:var(--sek); font-weight:600; font-family:var(--mono); }
+.poang b{ color:var(--navy); font-weight:600; }
 .kadensflagg{ font-family:var(--mono); font-size:var(--fs11); cursor:help; }
 .kadensflagg.forfallen{ color:var(--gul-text); }
 .kadensflagg.rutten{ color:var(--svag); text-decoration:line-through; }
@@ -706,6 +713,7 @@ li.oppen .sigdetalj{ display:block; }
         <p class="underrad" id="aktier-underrad"></p>
         <div id="koprekdel"></div>
         <div class="msek">Konvergensidéer · kurerat urval</div>
+        <div id="aktieforklaring"></div>
         <div class="panelkropp" id="aktielista"></div>
         <div id="screenerdel"></div>
       </div>
@@ -2147,7 +2155,7 @@ function renderaVanster(data, analys, kort, slut){
       "<td>" + svTal(x.s.revQ2.v, x.s.revQ2.v % 1 ? 1 : 0) + " %</td>" +
       "<td>" + (flagg.join(" ") || "·") + "</td></tr>";
   }).join("");
-  $("#stabinre").innerHTML = '<table class="stab"><tr><th>Sektor</th><th title="Tidig-cykel-linsen (huvudlins)">Tidig</th><th title="Momentum-linsen (bekräftelse)">Mom.</th><th title="Månadsflöde, mdr USD">Flöde M</th><th title="Estimatrevideringar Q2">Est.</th><th>Flagg</th></tr>' + rader + "</table>";
+  $("#stabinre").innerHTML = '<p class="listforklaring"><b>Tidig</b>/<b>Mom.</b> = linspoäng 0–100 (huvudlins/bekräftelse) · <b>fet</b> = topp 2 · <b>Flöde M</b> i mdr USD · <b>Est.</b> = estimatrevideringar · flaggor: ⇄ linsdivergens · ! pris före fundamenta · ◉ obekräftat RRG-byte</p>' + '<table class="stab"><tr><th>Sektor</th><th title="Tidig-cykel-linsen (huvudlins)">Tidig</th><th title="Momentum-linsen (bekräftelse)">Mom.</th><th title="Månadsflöde, mdr USD">Flöde M</th><th title="Estimatrevideringar Q2">Est.</th><th>Flagg</th></tr>' + rader + "</table>";
 
   $("#reklista").innerHTML = kort.map(function(k){
     var x = k.analys, s = k.s;
@@ -2467,6 +2475,17 @@ function koprekLoggpost(k, data){
   };
 }
 
+/* UX: synlig nyckel i stället för dold ?-popover — värden ska bära sina etiketter */
+function signalnyckelHtml(data, extraNot){
+  var nycklar = Object.keys(data.parlnyckel);
+  return '<p class="listforklaring">' +
+    '<b>Konv</b> = aktiva signaler av spårade (signal utan underlag räknas bort ur nämnaren) · ' +
+    '<b>styrka</b> 0–100 = viktad delpoängssumma · <b>fet</b> bokstav = aktiv signal' +
+    (extraNot ? " · " + extraNot : "") + "<br>" +
+    nycklar.map(function(k){ return "<b>" + esc(k) + "</b> " + esc(data.parlnyckel[k].namn); }).join(" · ") +
+    "</p>";
+}
+
 function renderaKoprek(kr, data){
   var mal = $("#koprekdel");
   if(!mal) return;
@@ -2489,7 +2508,7 @@ function renderaKoprek(kr, data){
       '<div class="nrad"><span class="badge ' + badgeKlass + '">' + esc(k.etikett || "BEVAKA") + "</span>" +
       '<span class="etikett">' + esc(k.aktie.ticker) + "</span>" +
       '<span class="beskr">' + esc(k.aktie.namn) + "</span>" +
-      '<span class="varde">' + k.konviktion + "</span></div>" +
+      '<span class="varde">konviktion <b>' + k.konviktion + "</b></span></div>" +
       '<p class="koprekvillkor">Omprövas om: ' + k.omprovas.map(function(v){
         return esc(v.text) + ' <span class="vst ' + (v.ok ? "ok" : "utlost") + '">' + (v.ok ? "✓" : "✗") + "</span>";
       }).join(" · ") + "</p>" +
@@ -2515,6 +2534,7 @@ function renderaScreener(screen, data){
     '<p class="underrad"><span class="lineage live" title="Daglig pipeline scripts/screen_data.py · vikter enligt REGELVERK §2 · täckning ' +
       Math.round((screen.tackning || 0) * 100) + ' %"><b>LIVE</b> · screener v1 · ' + esc(screen.vintage) + "</span> " +
     screen.lista.length + " bolag · sorterade på konvergens → styrka → IN → ES → VÄ</p>" +
+    signalnyckelHtml(data, "nämnaren varierar: ES/VÄ/BL saknar underlag för många bolag ännu (rotationen fyller på)") +
     '<div class="screenfilter">' +
       '<input type="text" id="scr-text" placeholder="ticker eller namn …" value="' + esc(screenFilter.text) + '" aria-label="Filtrera på ticker eller namn">' +
       '<select id="scr-marknad" aria-label="Marknadsfilter"><option value="">Alla marknader</option><option value="US"' + (screenFilter.marknad === "US" ? " selected" : "") + '>US</option><option value="SE"' + (screenFilter.marknad === "SE" ? " selected" : "") + ">SE</option></select>" +
@@ -2545,7 +2565,7 @@ function renderaScreener(screen, data){
         '<span class="tick">' + esc(a.ticker) + "<small>" + esc(a.marknad) + "</small></span>" +
         '<div class="mitt">' +
           '<div class="namnrad"><span class="namn">' + esc(a.namn) + "</span>" +
-          '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + a.sparade + ' spårade signaler · styrka ' + a.styrka + '/100">' + a.parlor.length + "/" + a.sparade + " · " + a.styrka + "</span></div>" +
+          '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + a.sparade + ' spårade signaler · styrka ' + a.styrka + '/100">konv <b>' + a.parlor.length + "/" + a.sparade + "</b> · styrka <b>" + a.styrka + "</b></span></div>" +
           '<div class="skal" title="' + esc(a.skal) + '">' + esc(a.skal) + "</div>" +
           '<div class="parlor">' + parlor + "</div>" +
         "</div>" +
@@ -2574,6 +2594,8 @@ function renderaAktier(data, slut, screen){
       " · screenerlistan kräver server (data/screen.json)") +
     ' · <a href="#/sektorrotation" data-oppnametod="1">så görs screeningen</a>';
   renderaScreener(screen, data);
+  var fk = $("#aktieforklaring");
+  if(fk) fk.innerHTML = signalnyckelHtml(data);
   $("#legendinre").innerHTML = nycklar.map(function(k){
     return "<p><b>" + esc(k) + "</b> — " + esc(data.parlnyckel[k].namn) + ". " + esc(data.parlnyckel[k].besk) + "</p>";
   }).join("");
@@ -2587,7 +2609,7 @@ function renderaAktier(data, slut, screen){
       '<span class="tick">' + esc(a.ticker) + "<small>" + esc(a.marknad) + "</small></span>" +
       '<div class="mitt">' +
         '<div class="namnrad"><span class="namn">' + esc(a.namn) + "</span>" +
-        '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + nycklar.length + ' spårade signaltyper · signalstyrka ' + a.styrka + '/100">' + a.parlor.length + "/" + nycklar.length + " · " + a.styrka + "</span></div>" +
+        '<span class="poang" title="Konvergens ' + a.parlor.length + " av " + nycklar.length + ' spårade signaltyper · signalstyrka ' + a.styrka + '/100">konv <b>' + a.parlor.length + "/" + nycklar.length + "</b> · styrka <b>" + a.styrka + "</b></span></div>" +
         '<div class="skal" title="' + esc(a.skal) + '">' + esc(a.skal) + "</div>" +
         '<div class="parlor" role="img" aria-label="Aktiva signaler: ' + a.parlor.map(function(k){ return data.parlnyckel[k].namn; }).join(", ") + '">' + parlor + "</div>" +
       "</div>" +
@@ -2737,7 +2759,7 @@ function renderaRegim(data, regim, slut){
     return ao - bo || bd - ad;
   });
   html += metallLista.map(function(m){ return metallRad(m, data); }).join("");
-  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %. Ordning: |index − 100| fallande — störst avvikelse från 13 v-snittet överst; pil mot avvikelsens riktning flyttar ned ett steg (REGELVERK §4).") + '">Cross-asset-kvoter · 13 v-index</div>';
+  html += '<div class="sektionsrub" title="' + esc(data.regim.kvoterLineage.kalla + " · " + data.regim.kvoterLineage.vintage + " · Vägs in i riskaptiten med 35 %. Ordning: |index − 100| fallande — störst avvikelse från 13 v-snittet överst; pil mot avvikelsens riktning flyttar ned ett steg (REGELVERK §4).") + '">Cross-asset-kvoter · index mot 13 v-snitt (100 = snittet)</div>';
   /* REGELVERK §4: kvoter på |index − 100| fallande; pil-inkonsekvens flyttar ned ett steg.
      Risk-på-/risk-av-gruppering vid lika aktiveras när kvoterna bär ett riskPa-fält — grupp-
      etiketten räcker inte för klassning, och vi gissar aldrig. */
@@ -2775,7 +2797,7 @@ function renderaFloden(data, analys, slut){
     return '<div class="flod" title="' + esc(s.namn + " " + (pos ? "+" : "−") + svTal(Math.abs(s.flodeM.v), 1) + " mdr USD · JUN månadsdata · " + s.flodeM.kalla + (div ? ". ⇄ Inflöde (juni) mot vikande momentum (v.29) — vintage-gapet är en del av signalen." : "")) + '">' +
       '<span class="namn">' + esc(s.namn) + (div ? ' <span class="div-ikon">⇄</span>' : "") + "</span>" +
       '<span class="divtrack"><span class="mittlinje"></span><span class="stapel ' + (pos ? "in" : "ut") + '" data-w="' + w.toFixed(1) + '"></span></span>' +
-      '<span class="tal">' + (pos ? "+" : "−") + svTal(Math.abs(s.flodeM.v), 1) + "</span></div>";
+      '<span class="tal">' + (pos ? "+" : "−") + svTal(Math.abs(s.flodeM.v), 1) + ' <span class="enhet">mdr</span></span></div>';
   }).join("");
   rader += '<div class="flod" title="Underlag saknas i testdatan för ' + okanda.length + ' sektorer — hellre — än påhitt."><span class="namn">Övriga ' + okanda.length + ' sektorer</span><span class="divtrack"><span class="mittlinje"></span></span><span class="tal">—</span></div>';
   var noter = data.flodenNoter.map(function(nt){
@@ -3281,7 +3303,7 @@ function renderaTpa(tpa, status){
   kroppEl.innerHTML = tpa.rader.map(function(r){
     var pil = r.accBp == null ? "→" : r.accBp > 0.2 ? "▲" : r.accBp < -0.2 ? "▼" : "→";
     var pilklass = r.accBp == null ? "hoger" : r.accBp > 0.2 ? "upp" : r.accBp < -0.2 ? "ned" : "hoger";
-    var varde = r.accBp == null ? "—" : (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
+    var varde = r.accBp == null ? "—" : "acc " + (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
     var beskr = (r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %") +
       (r.accBp == null && r.dagar != null ? " · samlar " + r.dagar + "/3 d" : "");
     return '<div class="nrad" title="' + esc(r.ticker) + ": tidsviktad riktkursacceleration" +
@@ -3293,7 +3315,7 @@ function renderaTpa(tpa, status){
       (motregim.indexOf(r.ticker) !== -1 ? '<span class="tpa-motregim" title="Accelererar mot fallande AI-kvot.">⇄</span>' : "") +
       '<span class="beskr">' + beskr + "</span>" +
       '<span class="varde">' + varde + "</span>" +
-      (r.analytiker != null ? '<span class="meta">' + r.analytiker + " an</span>" : "") +
+      (r.analytiker != null ? '<span class="meta">' + r.analytiker + " analytiker</span>" : "") +
       "</div>";
   }).join("");
 
@@ -3402,7 +3424,7 @@ function renderaOversikt(data, analys, kort, regim, slut, koprek){
         data.tripwires.map(function(t){
           return esc(t.etikett) + ' <span class="punkt ' + tripwireStatus(t) + '"></span>';
         }).join(" ") + "</span>" +
-      '<span class="heromattdel" title="' + (screenGlobal ? "Topp 3 av " + screenGlobal.lista.length + " poängsatta (screener v1 · " + screenGlobal.vintage + ")" : "Topp 3 ur kurerade urvalet") + ' — hela listan under Aktier &amp; Konsensus.">Konvergens: ' +
+      '<span class="heromattdel" title="' + (screenGlobal ? "Topp 3 av " + screenGlobal.lista.length + " poängsatta (screener v1 · " + screenGlobal.vintage + ")" : "Topp 3 ur kurerade urvalet") + ' — hela listan under Aktier &amp; Konsensus.">Topp 3 konvergens (styrka): ' +
         topp3.map(function(a){ return "<b>" + esc(a.ticker) + "</b> " + a.styrka; }).join(" · ") + "</span>" +
       '<span class="heromattdel" title="Megatrendens mest ansträngda flaskhals — detaljer under Trångsektorer.">Trängst: <b>' +
         esc(trangst.namn) + "</b> " + esc(trangst.celler[1].v) + " väntan · kö " + esc(trangst.celler[0].v) + "</span>" +
