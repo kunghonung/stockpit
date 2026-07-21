@@ -89,7 +89,7 @@ a{ color:inherit; }
 .nrad .punkt{ width:7px; height:7px; border-radius:50%; flex:none; }
 .punkt.gron{ background:var(--gron-fyll); } .punkt.gul{ background:var(--gul-fyll); } .punkt.rod{ background:var(--rod-fyll); }
 .nrad .etikett{ color:var(--navy); font-weight:500; white-space:nowrap; }
-.nrad .beskr{ color:var(--damp); font-size:var(--fs11); white-space:nowrap; overflow:hidden; }
+.nrad .beskr{ color:var(--damp); font-size:var(--fs11); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .nrad .varde{ margin-left:auto; font-family:var(--mono); font-size:var(--fs12); font-weight:500; font-variant-numeric:tabular-nums; color:var(--navy); white-space:nowrap; text-align:right; }
 .nrad .meta{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); font-variant-numeric:tabular-nums; white-space:nowrap; }
 .riktpil{ font-family:var(--mono); font-size:var(--fs11); font-weight:600; flex:none; }
@@ -312,8 +312,10 @@ li.oppen .sigdetalj{ display:block; }
 .flik{
   font-family:var(--sans); font-size:var(--fs11); font-weight:500; color:var(--damp);
   background:none; border:0; border-radius:var(--radie); padding:0 var(--s8); line-height:1.8;
-  cursor:pointer; transition:background .12s;
+  cursor:pointer; transition:background .12s; white-space:nowrap;
 }
+/* Aktier-huvudet bär tre flikar — fördjupningen får bryta till egen rad i stället för att klippas */
+#aktier .panelhuvud{ flex-wrap:wrap; row-gap:var(--s4); }
 .flik:hover{ background:var(--panel2); color:var(--navy); }
 .flik[aria-selected="true"]{ background:var(--navy); color:var(--sida); }
 .aktie{
@@ -373,6 +375,14 @@ li.oppen .sigdetalj{ display:block; }
 .kvoter{ display:grid; grid-template-columns:1fr 1fr; gap:0 var(--s16); }
 .kvoter .nrad{ min-height:20px; font-size:var(--fs11); padding:0 var(--s4); }
 .kvoter .etikett{ font-family:var(--mono); font-size:var(--fs11); font-weight:500; }
+
+/* ---------- TP-acceleration (Aktier-fliken TP-acc) ---------- */
+.tparegim{ display:flex; gap:var(--s8); flex-wrap:wrap; padding:var(--s4) var(--s4) var(--s8); border-bottom:1px solid var(--linje); margin-bottom:var(--s4); }
+.tparegim .rchip{ display:inline-flex; align-items:center; gap:var(--s4); font-family:var(--mono); font-size:var(--fs11); color:var(--sek); cursor:help; }
+.tparegim .rchip b{ color:var(--navy); font-weight:500; }
+.tpa-motregim{ font-size:var(--fs11); color:var(--gul-text); flex:none; cursor:help; }
+.tpastatus{ font-size:var(--fs11); color:var(--damp); line-height:1.5; padding:var(--s4); }
+.tpastatus b{ color:var(--navy); font-weight:500; }
 .crowd summary{ list-style:none; cursor:pointer; }
 .crowd summary::-webkit-details-marker{ display:none; }
 .crowd .komp{ margin:var(--s4) 0 var(--s4) var(--s24); font-size:var(--fs11); line-height:1.5; color:var(--sek); }
@@ -583,6 +593,7 @@ li.oppen .sigdetalj{ display:block; }
         <div class="flikar" role="tablist" aria-label="Aktievyer">
           <button class="flik" role="tab" id="flik-konv" aria-selected="true" aria-controls="vy-konv" type="button">Konvergens</button>
           <button class="flik" role="tab" id="flik-track" aria-selected="false" aria-controls="vy-track" type="button">Track record</button>
+          <button class="flik" role="tab" id="flik-tpa" aria-selected="false" aria-controls="vy-tpa" type="button" title="Riktkursacceleration ur datapanelen — accelererar analytikernas upprevideringar?">TP-acc</button>
         </div>
         <div class="fordjupning">
           <span class="lineage" id="lin-aktier"></span>
@@ -601,6 +612,12 @@ li.oppen .sigdetalj{ display:block; }
       <div id="vy-track" role="tabpanel" aria-labelledby="flik-track" hidden style="display:flex;flex-direction:column;min-height:0;flex:1">
         <p class="underrad" id="track-underrad"></p>
         <div class="panelkropp" id="trackkropp"></div>
+      </div>
+      <div id="vy-tpa" role="tabpanel" aria-labelledby="flik-tpa" hidden style="display:flex;flex-direction:column;min-height:0;flex:1">
+        <p class="slutsats" id="tpa-slutsats"></p>
+        <p class="underrad" id="tpa-underrad"></p>
+        <div class="tparegim" id="tpa-regim" aria-label="Makroregim ur datapanelen"></div>
+        <div class="panelkropp" id="tpakropp"></div>
       </div>
     </section>
 
@@ -903,6 +920,27 @@ li.oppen .sigdetalj{ display:block; }
       { "namn": "Indien", "kort": "INDA", "x": 0.7,  "y": -1.1, "spar": [[1.0,-0.5],[0.9,-0.75],[0.8,-0.95]] }
     ],
     "not": "Europa-regionala ETF:er hade utflöden i juni (SSGA) — divergens mot Europas RRG-förbättring."
+  },
+
+  "tpa": {
+    "lage": "TEST",
+    "kalla": "Datapanelen · Supabase/FMP",
+    "vintage": "2026-07-18",
+    "fonsterDagar": 30,
+    "kommentar": "Illustrativ fallback. I LIVE hämtar webbläsaren direkt från Supabase (egen kadens: dagliga snapshots vardagar 22:00 UTC) och ersätter detta block.",
+    "regim": [
+      { "id": "hygTlt", "namn": "HYG/TLT", "mekanik": "Kreditaptit: high yield mot statsobligationer — stigande kvot = risk-on.", "delta5d": 0.6 },
+      { "id": "soxSpy", "namn": "SOX/SPY", "mekanik": "AI-cykeln: halvledare mot breda marknaden — leder ofta estimatrevideringarna.", "delta5d": -1.4 },
+      { "id": "hgXau", "namn": "HG/GULD", "mekanik": "Tillväxt mot skydd: koppar mot guld — stigande kvot = konjunkturtro.", "delta5d": 0.9 }
+    ],
+    "rader": [
+      { "ticker": "NVDA", "accBp": 2.4, "uppsida": 9.1, "analytiker": 64, "dagar": 22 },
+      { "ticker": "GOOGL", "accBp": 1.2, "uppsida": 6.8, "analytiker": 52, "dagar": 22 },
+      { "ticker": "MSFT", "accBp": 0.9, "uppsida": 11.4, "analytiker": 58, "dagar": 22 },
+      { "ticker": "AMZN", "accBp": 0.4, "uppsida": 14.2, "analytiker": 61, "dagar": 21 },
+      { "ticker": "AAPL", "accBp": -0.3, "uppsida": 3.6, "analytiker": 47, "dagar": 22 },
+      { "ticker": "META", "accBp": -1.1, "uppsida": 5.2, "analytiker": 55, "dagar": 20 }
+    ]
   }
 }
 </script>
@@ -1845,6 +1883,217 @@ function laddaTrack(){
     .catch(function(){ return lasInline("trackrecordlager"); });
 }
 
+/* ============ TP-acceleration — läser datapanelen (Supabase) i webbläsaren ============ */
+/* Enda modulen med extern körtidskälla: datapanelen har egen kadens (dagliga
+   snapshots vardagar 22:00 UTC) och hör inte hemma i 30-minuterssnapshoten.
+   Läsnyckeln är publik per design (sb_publishable_*, RLS tillåter endast SELECT).
+   Tom nyckel = modulen visar testblocket ur datalagret — den lämnas aldrig tom. */
+var TPA_KONFIG = {
+  url: "https://belunslfoshbvewdfzok.supabase.co",
+  nyckel: ""  /* Supabase → Project Settings → API Keys → Publishable key. ALDRIG service-nyckeln. */
+};
+/* Mot regimen-flaggan sätts bara på entydiga halvledar-/AI-infrastrukturnamn.
+   Okända tickers flaggas aldrig — hellre ingen markering än en gissad. */
+var TPA_AI_KORG = ["NVDA", "AVGO", "ASML", "AMD", "TSM", "MU", "ARM", "SMCI", "MRVL"];
+
+function tpaRest(sokvag){
+  return fetch(TPA_KONFIG.url + "/rest/v1/" + sokvag, {
+    headers: { apikey: TPA_KONFIG.nyckel, Authorization: "Bearer " + TPA_KONFIG.nyckel }
+  }).then(function(r){
+    if(!r.ok) throw new Error("Supabase svarade " + r.status);
+    return r.json();
+  });
+}
+
+/* Tidsviktad andra-derivata av konsensusriktkursen. Samma algoritm som
+   get_target_price_acceleration i datapanel-repots schema.sql — den SQL-funktionen
+   är kanonisk definition; ändras den ska denna ändras likadant.
+   null vid < 3 punkter: hellre inget svar än ett hittat. */
+function tpaAcceleration(punkter, fonster){
+  if(punkter.length < 3) return null;
+  var v = [], i, DAG = 86400000;
+  for(i = 1; i < punkter.length; i++){
+    var dt = (punkter[i].t - punkter[i - 1].t) / DAG;
+    if(dt > 0) v.push({ t: punkter[i].t, dt: dt, v: (punkter[i].tp - punkter[i - 1].tp) / dt });
+  }
+  var summa = 0, vikt = 0, nu = Date.now();
+  for(i = 1; i < v.length; i++){
+    var snitt = (v[i].dt + v[i - 1].dt) / 2;
+    if(snitt <= 0) continue;
+    var a = (v[i].v - v[i - 1].v) / snitt;
+    var w = Math.max(fonster - (nu - v[i].t) / DAG, 1);
+    summa += a * w; vikt += w;
+  }
+  return vikt > 0 ? summa / vikt : null;
+}
+
+function hamtaTpaLive(){
+  var fonster = 30;
+  var fran = new Date(Date.now() - (fonster + 5) * 86400000).toISOString().slice(0, 10);
+  return Promise.all([
+    tpaRest("consensus_snapshots?select=ticker,as_of_date,target_consensus,price_at_snapshot,analyst_count" +
+            "&as_of_date=gte." + fran + "&target_consensus=not.is.null&order=ticker.asc,as_of_date.asc&limit=2000"),
+    tpaRest("macro_regimes?select=as_of_date,hyg_tlt_ratio,sox_spy_ratio,hg1_xau_ratio&order=as_of_date.desc&limit=8")
+  ]).then(function(res){
+    var perTicker = {}, senasteDatum = "";
+    res[0].forEach(function(rad){
+      if(!perTicker[rad.ticker]) perTicker[rad.ticker] = [];
+      perTicker[rad.ticker].push({
+        t: Date.parse(rad.as_of_date), tp: +rad.target_consensus,
+        pris: rad.price_at_snapshot == null ? null : +rad.price_at_snapshot,
+        antal: rad.analyst_count == null ? null : +rad.analyst_count
+      });
+      if(rad.as_of_date > senasteDatum) senasteDatum = rad.as_of_date;
+    });
+    var rader = [], maxDagar = 0;
+    Object.keys(perTicker).forEach(function(tick){
+      var p = perTicker[tick], sist = p[p.length - 1];
+      if(p.length > maxDagar) maxDagar = p.length;
+      var acc = tpaAcceleration(p, fonster);
+      rader.push({
+        ticker: tick,
+        accBp: acc == null || !sist.tp ? null : acc / sist.tp * 10000,
+        uppsida: sist.pris ? (sist.tp - sist.pris) / sist.pris * 100 : null,
+        analytiker: sist.antal, dagar: p.length
+      });
+    });
+    rader.sort(function(a, b){
+      if(a.accBp == null && b.accBp == null) return (b.uppsida || 0) - (a.uppsida || 0);
+      if(a.accBp == null) return 1;
+      if(b.accBp == null) return -1;
+      return b.accBp - a.accBp;
+    });
+    var kvoter = res[1].slice().reverse(); /* äldst → nyast */
+    function kvotDelta(falt){
+      if(kvoter.length < 2) return null;
+      var sista = +kvoter[kvoter.length - 1][falt], bak = Math.max(kvoter.length - 6, 0);
+      var ref = +kvoter[bak][falt];
+      return ref ? (sista / ref - 1) * 100 : null;
+    }
+    return {
+      lage: "LIVE", kalla: "Datapanelen · Supabase/FMP",
+      vintage: senasteDatum || (kvoter.length ? kvoter[kvoter.length - 1].as_of_date : "—"),
+      fonsterDagar: fonster, samlarDagar: maxDagar,
+      regim: [
+        { id: "hygTlt", namn: "HYG/TLT", mekanik: "Kreditaptit: high yield mot statsobligationer — stigande kvot = risk-on.", delta5d: kvotDelta("hyg_tlt_ratio") },
+        { id: "soxSpy", namn: "SOX/SPY", mekanik: "AI-cykeln: halvledare mot breda marknaden — leder ofta estimatrevideringarna.", delta5d: kvotDelta("sox_spy_ratio") },
+        { id: "hgXau", namn: "HG/GULD", mekanik: "Tillväxt mot skydd: koppar mot guld — stigande kvot = konjunkturtro.", delta5d: kvotDelta("hg1_xau_ratio") }
+      ],
+      rader: rader
+    };
+  });
+}
+
+function tpaMotRegim(tpa){
+  var sox = null;
+  tpa.regim.forEach(function(k){ if(k.id === "soxSpy") sox = k.delta5d; });
+  if(sox == null || sox >= 0) return [];
+  return tpa.rader.filter(function(r){
+    return r.accBp != null && r.accBp > 0 && TPA_AI_KORG.indexOf(r.ticker) !== -1;
+  }).map(function(r){ return r.ticker; });
+}
+
+function renderaTpa(tpa, status){
+  var slutEl = $("#tpa-slutsats"), underEl = $("#tpa-underrad"),
+      regimEl = $("#tpa-regim"), kroppEl = $("#tpakropp");
+  if(!kroppEl) return;
+  if(!tpa){
+    slutEl.textContent = "";
+    underEl.innerHTML = ""; regimEl.innerHTML = "";
+    kroppEl.innerHTML = '<p class="tpastatus"><b>Ingen TPA-data.</b> Datalagret saknar tpa-blocket och livekopplingen är av.</p>';
+    return;
+  }
+  var motregim = tpaMotRegim(tpa);
+  var samlar = tpa.lage === "LIVE" && tpa.samlarDagar != null && tpa.samlarDagar < 3;
+
+  /* slutsats — genereras ur objektet, aldrig handskriven */
+  var slut;
+  if(samlar){
+    slut = "Samlar historik: " + tpa.samlarDagar + "/3 snapshotdagar — accelerationen (d²TP/dt²) kräver tre. Nivåbilden visas så länge.";
+  } else {
+    var topp = null;
+    tpa.rader.forEach(function(r){ if(!topp && r.accBp != null && r.accBp > 0) topp = r; });
+    if(topp){
+      slut = "Riktkursrevideringarna accelererar snabbast i " + topp.ticker + " (+" + svTal(topp.accBp, 1) + " bp/d²)" +
+        (motregim.indexOf(topp.ticker) !== -1 ? " — mot fallande AI-kvot: konflikt värd att bevaka." : ".");
+    } else {
+      slut = "Inga accelererande riktkurser i universumet — revideringscykeln bromsar just nu.";
+    }
+  }
+  slutEl.textContent = slut;
+
+  /* underrad med egen lineage — TPA:s källäge är oberoende av sidans globala läge */
+  var lage = tpa.lage === "LIVE" ? "LIVE" : "TEST";
+  underEl.innerHTML =
+    '<span class="lineage' + (lage === "LIVE" ? " live" : "") + '" title="Källa: ' + esc(tpa.kalla) +
+    " · Vintage: " + esc(String(tpa.vintage)) + " · Status: " + lage +
+    (lage === "TEST" ? " (testdata — inte handlingsunderlag)" : "") + '"><b>' + lage + "</b> · " +
+    esc(tpa.kalla) + " · " + esc(String(tpa.vintage)) + "</span> " +
+    "Tidsviktad d²TP/dt² över " + tpa.fonsterDagar + " d · " + tpa.rader.length + " tickers";
+
+  /* regimstrip */
+  regimEl.innerHTML = tpa.regim.map(function(k){
+    var pil = k.delta5d == null ? "→" : k.delta5d > 0 ? "▲" : k.delta5d < 0 ? "▼" : "→";
+    var pilklass = k.delta5d == null ? "hoger" : k.delta5d > 0 ? "upp" : k.delta5d < 0 ? "ned" : "hoger";
+    var tal = k.delta5d == null ? "—" : (k.delta5d > 0 ? "+" : "") + svTal(k.delta5d, 1) + " %";
+    return '<span class="rchip" title="' + esc(k.mekanik) + ' · Förändring ca 5 handelsdagar."><b>' +
+      esc(k.namn) + '</b> <span class="riktpil ' + pilklass + '">' + pil + "</span> " + tal + "</span>";
+  }).join("") +
+  (motregim.length
+    ? '<span class="tpa-motregim" title="Positiv TP-acceleration i ' + motregim.join(", ") +
+      ' samtidigt som SOX/SPY faller — riktkurser släpar ofta priset; fallande AI-kvot har historiskt lett estimaten. Kontracyklisk konflikt, inte en säljsignal.">⇄ mot AI-kvoten: ' +
+      motregim.join(", ") + "</span>"
+    : "");
+
+  /* rader */
+  kroppEl.innerHTML = tpa.rader.map(function(r){
+    var pil = r.accBp == null ? "→" : r.accBp > 0.2 ? "▲" : r.accBp < -0.2 ? "▼" : "→";
+    var pilklass = r.accBp == null ? "hoger" : r.accBp > 0.2 ? "upp" : r.accBp < -0.2 ? "ned" : "hoger";
+    var varde = r.accBp == null ? "—" : (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
+    var beskr = (r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %") +
+      (r.accBp == null && r.dagar != null ? " · samlar " + r.dagar + "/3 d" : "");
+    return '<div class="nrad" title="' + esc(r.ticker) + ": tidsviktad riktkursacceleration" +
+      (r.accBp == null ? " kräver 3 snapshotdagar — har " + r.dagar : " " + varde) +
+      (r.analytiker != null ? " · " + r.analytiker + " analytiker" : "") +
+      (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "") + '">' +
+      '<span class="riktpil ' + pilklass + '">' + pil + "</span>" +
+      '<span class="etikett">' + esc(r.ticker) + "</span>" +
+      (motregim.indexOf(r.ticker) !== -1 ? '<span class="tpa-motregim" title="Accelererar mot fallande AI-kvot.">⇄</span>' : "") +
+      '<span class="beskr">' + beskr + "</span>" +
+      '<span class="varde">' + varde + "</span>" +
+      (r.analytiker != null ? '<span class="meta">' + r.analytiker + " an</span>" : "") +
+      "</div>";
+  }).join("");
+
+  /* statusrad — säger alltid ärligt varifrån innehållet kommer */
+  if(status === "nyckel"){
+    kroppEl.innerHTML += '<p class="tpastatus"><b>Livekoppling av.</b> Klistra in projektets publishable-nyckel i TPA_KONFIG i index.html (läsnyckel, publik per design — RLS tillåter endast läsning). Tills dess visas ett illustrativt testblock.</p>';
+  } else if(status === "laddar"){
+    kroppEl.innerHTML += '<p class="tpastatus">Hämtar live från datapanelen …</p>';
+  } else if(status){
+    kroppEl.innerHTML += '<p class="tpastatus"><b>Livekopplingen föll:</b> ' + esc(status) + ' — visar testblocket i stället.</p>';
+  }
+}
+
+var tpaCache = null, tpaTid = 0, tpaTestblock = null;
+function tpaTest(data){
+  if(data && data.tpa) return data.tpa;
+  if(!tpaTestblock) tpaTestblock = lasInline("datalager").tpa || null;
+  return tpaTestblock;
+}
+function initTpa(data){
+  if(!$("#vy-tpa")) return;
+  if(!TPA_KONFIG.nyckel){ renderaTpa(tpaTest(data), "nyckel"); return; }
+  if(tpaCache && Date.now() - tpaTid < 30 * 60 * 1000){ renderaTpa(tpaCache, null); return; }
+  renderaTpa(tpaTest(data), "laddar");
+  hamtaTpaLive().then(function(tpa){
+    tpaCache = tpa; tpaTid = Date.now();
+    renderaTpa(tpa, null);
+  }).catch(function(fel){
+    renderaTpa(tpaTest(data), String(fel && fel.message || fel));
+  });
+}
+
 var dataGlobal = null;
 function renderaAllt(data, tr){
   dataGlobal = data;
@@ -1871,6 +2120,7 @@ function renderaAllt(data, tr){
   renderaRadar(data, analys, kort, slut);
   renderaAktier(data, slut);
   renderaTrack(tr);
+  initTpa(data);
   renderaRegim(data, regim, slut);
   renderaFloden(data, analys, slut);
   renderaMakro(data, analys, slut);
@@ -1894,16 +2144,26 @@ document.addEventListener("visibilitychange", function(){
   }
 });
 
-/* flikar */
-[["flik-kurva", "vy-kurva", "flik-sentiment", "vy-sentiment"], ["flik-sentiment", "vy-sentiment", "flik-kurva", "vy-kurva"],
- ["flik-konv", "vy-konv", "flik-track", "vy-track"], ["flik-track", "vy-track", "flik-konv", "vy-konv"]].forEach(function(par){
-  $("#" + par[0]).addEventListener("click", function(){
-    $("#" + par[0]).setAttribute("aria-selected", "true");
-    $("#" + par[2]).setAttribute("aria-selected", "false");
-    $("#" + par[1]).hidden = false;
-    $("#" + par[3]).hidden = true;
+/* flikar — generisk: varje tablist växlar sina egna flikar/paneler */
+document.querySelectorAll('[role="tablist"]').forEach(function(lista){
+  var flikar = lista.querySelectorAll('[role="tab"]');
+  flikar.forEach(function(f){
+    f.addEventListener("click", function(){
+      flikar.forEach(function(g){
+        var vald = g === f;
+        g.setAttribute("aria-selected", vald ? "true" : "false");
+        var vy = document.getElementById(g.getAttribute("aria-controls"));
+        if(vy) vy.hidden = !vald;
+      });
+    });
   });
 });
+/* ?flik=tpa (eller sentiment/track …) öppnar en flik direkt — delbara lägen */
+(function(){
+  var vald = new URLSearchParams(location.search).get("flik");
+  var knapp = vald && document.getElementById("flik-" + vald);
+  if(knapp) knapp.click();
+})();
 
 /* nav: belys och fokusera panelen */
 document.querySelectorAll(".toppnav a").forEach(function(a){

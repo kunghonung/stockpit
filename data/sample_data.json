@@ -279,5 +279,26 @@
       { "namn": "Indien", "kort": "INDA", "x": 0.7,  "y": -1.1, "spar": [[1.0,-0.5],[0.9,-0.75],[0.8,-0.95]] }
     ],
     "not": "Europa-regionala ETF:er hade utflöden i juni (SSGA) — divergens mot Europas RRG-förbättring."
+  },
+
+  "tpa": {
+    "lage": "TEST",
+    "kalla": "Datapanelen · Supabase/FMP",
+    "vintage": "2026-07-18",
+    "fonsterDagar": 30,
+    "kommentar": "Illustrativ fallback. I LIVE hämtar webbläsaren direkt från Supabase (egen kadens: dagliga snapshots vardagar 22:00 UTC) och ersätter detta block.",
+    "regim": [
+      { "id": "hygTlt", "namn": "HYG/TLT", "mekanik": "Kreditaptit: high yield mot statsobligationer — stigande kvot = risk-on.", "delta5d": 0.6 },
+      { "id": "soxSpy", "namn": "SOX/SPY", "mekanik": "AI-cykeln: halvledare mot breda marknaden — leder ofta estimatrevideringarna.", "delta5d": -1.4 },
+      { "id": "hgXau", "namn": "HG/GULD", "mekanik": "Tillväxt mot skydd: koppar mot guld — stigande kvot = konjunkturtro.", "delta5d": 0.9 }
+    ],
+    "rader": [
+      { "ticker": "NVDA", "accBp": 2.4, "uppsida": 9.1, "analytiker": 64, "dagar": 22 },
+      { "ticker": "GOOGL", "accBp": 1.2, "uppsida": 6.8, "analytiker": 52, "dagar": 22 },
+      { "ticker": "MSFT", "accBp": 0.9, "uppsida": 11.4, "analytiker": 58, "dagar": 22 },
+      { "ticker": "AMZN", "accBp": 0.4, "uppsida": 14.2, "analytiker": 61, "dagar": 21 },
+      { "ticker": "AAPL", "accBp": -0.3, "uppsida": 3.6, "analytiker": 47, "dagar": 22 },
+      { "ticker": "META", "accBp": -1.1, "uppsida": 5.2, "analytiker": 55, "dagar": 20 }
+    ]
   }
 }

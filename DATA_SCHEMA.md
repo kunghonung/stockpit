@@ -73,3 +73,15 @@ Poster: `{id, datum, lins, handling, etf, sektor, ingang:{rsRank, fwdPE, revQ2},
 | `aktier[]`, `insynKluster` | SEC EDGAR Form 4 + FI:s insynsregister (Excel-export) |
 | `tripwires`, `makro.rantekurva`, `realranta` | FRED |
 | `megatrend` | bolagsrapporter/branschdata (halvmanuellt) |
+
+## `tpa` — TP-acceleration (Aktier-fliken TP-acc)
+
+Enda modulen med **extern körtidskälla**: i LIVE hämtar webbläsaren direkt från datapanelens Supabase (egen kadens — dagliga snapshots vardagar 22:00 UTC, hör inte hemma i 30-minuterssnapshoten). `tpa`-blocket i `sample_data.json` är därför bara **fallback**: det visas när läsnyckeln saknas i `TPA_KONFIG` (index.html), när anropet faller, eller på `file://`.
+
+Blockets form: `{lage, kalla, vintage, fonsterDagar, kommentar, regim:[{id, namn, mekanik, delta5d}], rader:[{ticker, accBp, uppsida, analytiker, dagar}]}`.
+
+- `accBp` = tidsviktad d²TP/dt² normerad mot TP-nivån, i **baspunkter/dag²**. Kanonisk algoritm: `get_target_price_acceleration` i target-price-acceleration-repots `schema.sql` — JS-kopian (`tpaAcceleration`) ska hållas i synk. `null` vid < 3 snapshotdagar (visas som "samlar X/3 d" — förstklassigt tillstånd, inte ett fel).
+- `regim[].delta5d` = kvotens förändring i % över ca 5 handelsdagar; `null` när < 2 makrorader finns (visas "—").
+- **Mot regimen-flaggan** (⇄): positiv `accBp` i en ticker ur `TPA_AI_KORG` samtidigt som SOX/SPY-deltat är negativt. Okända tickers flaggas aldrig.
+- Modulens lineage-badge speglar **TPA-källans** läge, inte sidans globala — Supabase-LIVE kan vara aktiv i TEST-läge och tvärtom.
+- Nyckeln i `TPA_KONFIG` ska vara projektets **publishable-nyckel** (publik per design, RLS tillåter endast SELECT) — aldrig service-nyckeln.
