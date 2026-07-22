@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T14:19+00:00",
+  "genererad": "2026-07-22T16:06+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 9,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.91,
-        117.34
+        117.92
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.1,
-        95.59
+        95.32
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         87.11,
-        87.17
+        86.8
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         86.8,
-        88.28
+        87.86
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.1,
-        87.91
+        87.33
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.79,
-        94.92
+        94.57
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         83.49,
-        85.08
+        84.7
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         95.73,
-        95.96
+        95.17
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.24,
-        80.52
+        79.9
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         99.45,
-        99.45
+        99.26
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         92.11,
-        91.92
+        91.6
       ]
     }
   ],
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.9,
+      "varde": 16.8,
       "delta": "+1,2 · 1 v",
       "trosklar": [
         20,
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 98,
         "pil": "upp",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 99,
+        "index": 100,
         "pil": "upp",
         "status": "gron"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 102,
+        "index": 101,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 97,
+        "index": 99,
         "pil": "ned",
         "status": "gul"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.9,
+      "varde": 16.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4163",
+      "varde": "4167",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,8 %",
+      "delta4v": "+0,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,06",
+      "varde": "60,58",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,6 %",
+      "delta4v": "−2,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,51",
+      "varde": "6,50",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,0 %",
+      "delta4v": "+5,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 93.86,
+      "v": 93.23,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1685,7 +1685,7 @@
           101.6,
           101.76,
           101.59,
-          101.5
+          101.59
         ]
       },
       {
@@ -1726,7 +1726,7 @@
           110.04,
           107.29,
           108.49,
-          108.11
+          108.32
         ]
       },
       {
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.25,
-          97.01
+          96.6
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.83,
-          106.6
+          106.41
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           103.42,
           99.53,
           101.9,
-          101.38
+          101.42
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           82.7,
           83.85,
           84.8,
-          84.34
+          84.15
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           91.81,
           92.66,
           91.65,
-          90.95
+          90.75
         ]
       }
     ],
@@ -1962,11 +1962,6 @@
         },
         {
           "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
-        },
-        {
-          "datum": "2026-07-21",
           "namn": "Lasda Bridget McCarthy  (CIK 0002145361); Laird Superfood, Inc.  (CIK 0001650696)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2145361/000143774926024015"
         },
@@ -1981,6 +1976,11 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
+          "datum": "2026-07-21",
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+        },
+        {
           "datum": "2026-07-22",
           "namn": "Chernett Jorey  (CIK 0002042077); Oncology Institute, Inc.  (CIK 0001799191)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2042077/000092189526001852"
@@ -1992,10 +1992,109 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T14:19+00:00"
+      "vintage": "2026-07-22T16:06+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 18:02:14",
+          "emittent": "Nelly Group AB (publ)",
+          "person": "Josephine Bernadotte",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "26166,0",
+          "enhet": "Antal",
+          "pris": "34,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 18:02:14",
+          "emittent": "Nelly Group AB (publ)",
+          "person": "Josephine Bernadotte",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "34,367",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 18:02:14",
+          "emittent": "Nelly Group AB (publ)",
+          "person": "Josephine Bernadotte",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10170,0",
+          "enhet": "Antal",
+          "pris": "34,3294",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 17:12:03",
+          "emittent": "Wyld Networks AB",
+          "person": "Chenshun Tang",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lån återgång ökning",
+          "volym": "833333,0",
+          "enhet": "Antal",
+          "pris": "0,4",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 17:04:56",
+          "emittent": "Wyld Networks AB",
+          "person": "Kjell Bertil Olovsson",
+          "befattning": "Verkställande direktör (VD), Styrelseledamot",
+          "karaktar": "Lån återgång ökning",
+          "volym": "15833333,0",
+          "enhet": "Antal",
+          "pris": "0,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 16:54:42",
+          "emittent": "B3 Consulting Group AB (publ)",
+          "person": "Martin Stenström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "19,48",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 16:46:26",
+          "emittent": "ChargePanel AB",
+          "person": "Olof Peter Persson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "125000,0",
+          "enhet": "Antal",
+          "pris": "0,19",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 16:45:50",
+          "emittent": "Munters Group AB",
+          "person": "Elizabeth Carey",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500,0",
+          "enhet": "Antal",
+          "pris": "16,90",
+          "valuta": "EUR"
+        },
+        {
+          "publicerad": "2026-07-22 16:26:22",
+          "emittent": "Evolution AB (publ)",
+          "person": "Louise Wiwen-Nilsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "17,0",
+          "enhet": "Antal",
+          "pris": "18,8",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 14:55:02",
           "emittent": "SSAB AB",
@@ -2446,110 +2545,11 @@
           "enhet": "Antal",
           "pris": "6,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "666866,0",
-          "enhet": "Antal",
-          "pris": "140,4792",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "188772,0",
-          "enhet": "Antal",
-          "pris": "140,5494",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "210061,0",
-          "enhet": "Antal",
-          "pris": "140,5558",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "33002,0",
-          "enhet": "Antal",
-          "pris": "139,1500",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1029,0",
-          "enhet": "Antal",
-          "pris": "140,8702",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "270,0",
-          "enhet": "Antal",
-          "pris": "140,8000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "650000,0",
-          "enhet": "Antal",
-          "pris": "140,6462",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 20:55:40",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Pär Boman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "750000,0",
-          "enhet": "Antal",
-          "pris": "140,5150",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 19:46:35",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "748491,0",
-          "enhet": "Antal",
-          "pris": "35,93703",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 9,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T14:19+00:00"
+      "vintage": "2026-07-22T16:06+00:00"
     }
   }
 }
