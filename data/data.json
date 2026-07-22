@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T10:05+00:00",
+  "genererad": "2026-07-22T12:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.5,
-      "delta": "+1,8 · 1 v",
+      "varde": 17.6,
+      "delta": "+1,9 · 1 v",
       "trosklar": [
         20,
         28
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.5,
+      "varde": 17.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4119",
+      "varde": "4123",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,3 %",
+      "delta4v": "−0,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,70",
+      "varde": "59,62",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,7 %",
+      "delta4v": "−3,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 84.39,
+      "v": 85.14,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.25,
-          96.59
+          96.71
         ]
       },
       {
@@ -1962,6 +1962,11 @@
         },
         {
           "datum": "2026-07-21",
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+        },
+        {
+          "datum": "2026-07-21",
           "namn": "Lasda Bridget McCarthy  (CIK 0002145361); Laird Superfood, Inc.  (CIK 0001650696)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2145361/000143774926024015"
         },
@@ -1976,26 +1981,87 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
-        },
-        {
           "datum": "2026-07-20",
           "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
         },
         {
           "datum": "2026-07-20",
-          "namn": "West Tony  (CIK 0001626201); Uber Technologies, Inc  (CIK 0001543151)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626201/000162620126000018"
+          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T10:05+00:00"
+      "vintage": "2026-07-22T12:03+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 13:10:13",
+          "emittent": "Xvivo Perfusion Aktiebolag",
+          "person": "Emil Billbäck",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2007,0",
+          "enhet": "Antal",
+          "pris": "235,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 13:10:13",
+          "emittent": "Xvivo Perfusion Aktiebolag",
+          "person": "Emil Billbäck",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1643,0",
+          "enhet": "Antal",
+          "pris": "235,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 13:08:43",
+          "emittent": "HANZA Holding AB",
+          "person": "Lars-Ola Lundkvist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "600,0",
+          "enhet": "Antal",
+          "pris": "125,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 13:01:25",
+          "emittent": "Biovica International AB",
+          "person": "Fredrik Alpsten",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "525000,0",
+          "enhet": "Antal",
+          "pris": "0,4615",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 12:54:08",
+          "emittent": "Modelon AB (publ)",
+          "person": "Jonas Eborn",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "10,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 12:48:15",
+          "emittent": "Biovica International AB",
+          "person": "Theis Kipling",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "633332,0",
+          "enhet": "Antal",
+          "pris": "0,45",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 11:39:56",
           "emittent": "SSAB AB",
@@ -2479,77 +2545,11 @@
           "enhet": "Antal",
           "pris": "3,55",
           "valuta": "USD"
-        },
-        {
-          "publicerad": "2026-07-21 19:16:47",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Bamdad Bastani",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Gåva lämnad",
-          "volym": "130000,0",
-          "enhet": "Antal",
-          "pris": "3,55",
-          "valuta": "USD"
-        },
-        {
-          "publicerad": "2026-07-21 19:14:03",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "34045,0",
-          "enhet": "Antal",
-          "pris": "35,93703",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 19:14:03",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "57848,0",
-          "enhet": "Antal",
-          "pris": "32,12930",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 19:14:03",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "23768,0",
-          "enhet": "Antal",
-          "pris": "33,26608",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 19:14:03",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "144238,0",
-          "enhet": "Antal",
-          "pris": "36,64951",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 19:08:16",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "241488,0",
-          "enhet": "Antal",
-          "pris": "35,93703",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 15,
+      "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T10:05+00:00"
+      "vintage": "2026-07-22T12:03+00:00"
     }
   }
 }
