@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T04:31+00:00",
+  "genererad": "2026-07-22T07:18+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4133",
+      "varde": "4119",
       "enhet": "USD/oz",
-      "pil": "upp",
-      "delta4v": "+0,1 %",
+      "pil": "ned",
+      "delta4v": "−0,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,01",
+      "varde": "59,53",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,2 %",
+      "delta4v": "−4,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,52",
+      "varde": "6,50",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,2 %",
+      "delta4v": "+5,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 92.29,
+      "v": 93.42,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.25,
-          96.25
+          95.95
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.83,
-          108.06
+          106.64
         ]
       },
       {
@@ -1982,20 +1982,42 @@
         },
         {
           "datum": "2026-07-20",
-          "namn": "Nearhos Barry R  (CIK 0001671237); MERCURY SYSTEMS INC  (CIK 0001049521)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1671237/000104952126000034"
+          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
         },
         {
           "datum": "2026-07-20",
-          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
+          "namn": "Kalowski Lee  (CIK 0001618273); Q32 Bio Inc.  (CIK 0001661998)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618273/000119312526309324"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T04:31+00:00"
+      "vintage": "2026-07-22T07:18+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 09:17:38",
+          "emittent": "HANZA AB",
+          "person": "Mattias Lindhe",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "3750,0",
+          "enhet": "Antal",
+          "pris": "129,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 09:17:38",
+          "emittent": "HANZA AB",
+          "person": "Mattias Lindhe",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "250,0",
+          "enhet": "Antal",
+          "pris": "127,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 00:08:40",
           "emittent": "Cint Group AB (publ)",
@@ -2523,33 +2545,11 @@
           "enhet": "Antal",
           "pris": "6,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 16:57:11",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "302538,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 16:55:12",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "302538,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T04:31+00:00"
+      "vintage": "2026-07-22T07:18+00:00"
     }
   }
 }
