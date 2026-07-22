@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T17:41+00:00",
+  "genererad": "2026-07-22T19:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.91,
-        117.9
+        117.82
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.1,
-        95.21
+        95.23
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         87.11,
-        86.81
+        86.58
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         86.8,
-        87.89
+        88.0
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.1,
-        87.33
+        87.46
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.79,
-        94.41
+        94.21
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         83.49,
-        85.19
+        85.32
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.24,
-        80.17
+        80.3
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         99.45,
-        99.19
+        99.32
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.8,
-      "delta": "+1,1 · 1 v",
+      "varde": 16.9,
+      "delta": "+1,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
+        "index": 99,
         "pil": "upp",
         "status": "gul"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.8,
+      "varde": 16.9,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4150",
+      "varde": "4138",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,5 %",
+      "delta4v": "+0,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,26",
+      "varde": "60,17",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,8 %",
+      "delta4v": "−3,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,49",
+      "varde": "6,48",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,7 %",
+      "delta4v": "+5,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 93.96,
+      "v": 94.22,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1726,7 +1726,7 @@
           110.04,
           107.29,
           108.49,
-          108.29
+          108.17
         ]
       },
       {
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.25,
-          96.68
+          96.88
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.83,
-          106.5
+          106.72
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           103.42,
           99.53,
           101.9,
-          101.38
+          101.39
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           82.7,
           83.85,
           84.8,
-          84.24
+          84.2
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           91.81,
           92.66,
           91.65,
-          90.59
+          90.66
         ]
       }
     ],
@@ -1992,10 +1992,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T17:41+00:00"
+      "vintage": "2026-07-22T19:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 21:32:34",
+          "emittent": "Volati AB",
+          "person": "Rikard Ahlin",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "35584,0",
+          "enhet": "Antal",
+          "pris": "23,51",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 21:14:38",
+          "emittent": "Transferator AB (publ)",
+          "person": "Skywall AB",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2866,0",
+          "enhet": "Antal",
+          "pris": "1,36",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 21:14:38",
+          "emittent": "Transferator AB (publ)",
+          "person": "Skywall AB",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1833,0",
+          "enhet": "Antal",
+          "pris": "1,31",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 19:06:25",
           "emittent": "Arbona AB",
@@ -2512,44 +2545,11 @@
           "enhet": "Antal",
           "pris": "129,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 09:17:38",
-          "emittent": "HANZA AB",
-          "person": "Mattias Lindhe",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "250,0",
-          "enhet": "Antal",
-          "pris": "127,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 00:08:40",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "473956,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 23:31:25",
-          "emittent": "Viaplay Group AB (publ)",
-          "person": "Andrea Gisle Joosen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "14705,0",
-          "enhet": "Antal",
-          "pris": "1,365",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T17:41+00:00"
+      "vintage": "2026-07-22T19:40+00:00"
     }
   }
 }
