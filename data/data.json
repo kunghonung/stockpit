@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T21:25+00:00",
+  "genererad": "2026-07-22T22:39+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4135",
+      "varde": "4130",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,1 %",
+      "delta4v": "+0,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,03",
+      "varde": "59,92",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,2 %",
+      "delta4v": "−3,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -993,7 +993,7 @@
       "varde": "6,49",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,7 %",
+      "delta4v": "+5,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 93.88,
+      "v": 95.64,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1992,10 +1992,65 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T21:25+00:00"
+      "vintage": "2026-07-22T22:39+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-23 00:00:56",
+          "emittent": "Zinzino AB",
+          "person": "Henrik Hammargren",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "2,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 23:42:29",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utdelning lämnad",
+          "volym": "911950,0",
+          "enhet": "Antal",
+          "pris": "37,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 23:36:41",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "251567,0",
+          "enhet": "Antal",
+          "pris": "35,93480",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 23:36:41",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Gåva lämnad",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "37,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 23:36:41",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "22251,0",
+          "enhet": "Antal",
+          "pris": "39,10570",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 22:31:45",
           "emittent": "Fastpartner AB",
@@ -2490,66 +2545,11 @@
           "enhet": "Antal",
           "pris": "0,4",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:33:00",
-          "emittent": "JM AB",
-          "person": "Anders Wimmerstedt",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "127,0",
-          "enhet": "Antal",
-          "pris": "121,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:30:33",
-          "emittent": "Green Landscaping Group AB (publ)",
-          "person": "Clein Johansson Ullenvik",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "23,99",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:26:08",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Kristian Mäkelä",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "500,0",
-          "enhet": "Antal",
-          "pris": "235,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:14:58",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Henrik Stenqvist",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "57232,0",
-          "enhet": "Antal",
-          "pris": "455,67",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:14:58",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Henrik Stenqvist",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "57232,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T21:25+00:00"
+      "vintage": "2026-07-22T22:39+00:00"
     }
   }
 }
