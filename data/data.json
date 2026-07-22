@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T16:06+00:00",
+  "genererad": "2026-07-22T17:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.91,
-        117.92
+        117.9
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.1,
-        95.32
+        95.21
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         87.11,
-        86.8
+        86.81
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         86.8,
-        87.86
+        87.89
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.79,
-        94.57
+        94.41
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         83.49,
-        84.7
+        85.19
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         95.73,
-        95.17
+        95.3
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.24,
-        79.9
+        80.17
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         99.45,
-        99.26
+        99.19
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         92.11,
-        91.6
+        91.43
       ]
     }
   ],
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 16.8,
-      "delta": "+1,2 · 1 v",
+      "delta": "+1,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4167",
+      "varde": "4150",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,9 %",
+      "delta4v": "+0,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,58",
+      "varde": "60,26",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,3 %",
+      "delta4v": "−2,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,50",
+      "varde": "6,49",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,9 %",
+      "delta4v": "+5,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 93.23,
+      "v": 93.96,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1685,7 +1685,7 @@
           101.6,
           101.76,
           101.59,
-          101.59
+          101.57
         ]
       },
       {
@@ -1726,7 +1726,7 @@
           110.04,
           107.29,
           108.49,
-          108.32
+          108.29
         ]
       },
       {
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.25,
-          96.6
+          96.68
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.83,
-          106.41
+          106.5
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           103.42,
           99.53,
           101.9,
-          101.42
+          101.38
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           82.7,
           83.85,
           84.8,
-          84.15
+          84.24
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           91.81,
           92.66,
           91.65,
-          90.75
+          90.59
         ]
       }
     ],
@@ -1992,10 +1992,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T16:06+00:00"
+      "vintage": "2026-07-22T17:41+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 19:06:25",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "24130,0",
+          "enhet": "Antal",
+          "pris": "3,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 19:06:25",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "110,0",
+          "enhet": "Antal",
+          "pris": "3,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 19:06:25",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "59510,0",
+          "enhet": "Antal",
+          "pris": "3,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 18:34:49",
+          "emittent": "Sonetel AB (publ)",
+          "person": "Martin Jönsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "125733,0",
+          "enhet": "Antal",
+          "pris": "5,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 18:19:10",
+          "emittent": "Ratos AB",
+          "person": "Magnus Stephensen",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "125000,0",
+          "enhet": "Antal",
+          "pris": "9,89",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 18:11:33",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "2630300,0",
+          "enhet": "Antal",
+          "pris": "34,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 18:06:34",
+          "emittent": "Sivers Semiconductors AB",
+          "person": "Todd Thomson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "869700,0",
+          "enhet": "Antal",
+          "pris": "34,70",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 18:02:14",
           "emittent": "Nelly Group AB (publ)",
@@ -2468,88 +2545,11 @@
           "enhet": "Antal",
           "pris": "1,365",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 23:31:25",
-          "emittent": "Viaplay Group AB (publ)",
-          "person": "Andrea Gisle Joosen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4127,0",
-          "enhet": "Antal",
-          "pris": "1,379",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 23:31:25",
-          "emittent": "Viaplay Group AB (publ)",
-          "person": "Andrea Gisle Joosen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "18037,0",
-          "enhet": "Antal",
-          "pris": "1,385",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 21:34:49",
-          "emittent": "Knowit AB (publ)",
-          "person": "Carin Strindmark",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3150,0",
-          "enhet": "Antal",
-          "pris": "88,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 21:21:39",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "302538,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 21:21:22",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "302538,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 21:21:05",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "302538,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-21 21:20:33",
-          "emittent": "Cint Group AB (publ)",
-          "person": "Patrick Comer",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "11197325,0",
-          "enhet": "Antal",
-          "pris": "6,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 9,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T16:06+00:00"
+      "vintage": "2026-07-22T17:41+00:00"
     }
   }
 }
