@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-22",
-  "genererad": "2026-07-22T19:40+00:00",
+  "genererad": "2026-07-22T21:25+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.91,
-        117.82
+        117.72
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.1,
-        95.23
+        95.31
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         87.11,
-        86.58
+        86.55
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         86.8,
-        88.0
+        88.15
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.1,
-        87.46
+        87.54
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.79,
-        94.21
+        94.41
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         83.49,
-        85.32
+        85.47
       ]
     },
     {
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         95.73,
-        95.3
+        95.44
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         79.24,
-        80.3
+        80.28
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         99.45,
-        99.32
+        99.46
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         92.11,
-        91.43
+        91.53
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.9,
-      "delta": "+1,2 · 1 v",
+      "varde": 16.6,
+      "delta": "+1,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 76.0,
+      "delta": "−1 · 1 v",
       "trosklar": [
         100,
         130
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 99,
+        "index": 98,
         "pil": "ned",
         "status": "gul"
       },
@@ -828,7 +828,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 76.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.9,
+      "varde": 16.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -863,21 +863,21 @@
         "30Y"
       ],
       "nu": [
-        3.73,
-        4.21,
-        4.33,
-        4.6,
-        5.11
+        3.74,
+        4.26,
+        4.37,
+        4.63,
+        5.13
       ],
       "forr": [
-        3.68,
-        4.2,
-        4.27,
-        4.49,
-        4.93
+        3.67,
+        4.19,
+        4.23,
+        4.46,
+        4.9
       ],
       "kalla": "FRED",
-      "vintage": "2026-07-20",
+      "vintage": "2026-07-21",
       "not": "Brantande 2s10s: +10 bp/mån."
     },
     "bredd": {
@@ -957,19 +957,19 @@
       "vintage": "2026-W29"
     },
     "realranta": {
-      "varde": "2,35 %",
+      "varde": "2,37 %",
       "pil": "upp",
-      "delta": "+12 bp · 1 mån",
+      "delta": "+16 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-07-20"
+      "vintage": "2026-07-21"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4138",
+      "varde": "4135",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,2 %",
+      "delta4v": "+0,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,17",
+      "varde": "60,03",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,0 %",
+      "delta4v": "−3,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,48",
+      "varde": "6,49",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,5 %",
+      "delta4v": "+5,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-22"
     },
     "olja": {
-      "v": 94.22,
+      "v": 93.88,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-22"
     }
@@ -1685,7 +1685,7 @@
           101.6,
           101.76,
           101.59,
-          101.57
+          101.54
         ]
       },
       {
@@ -1726,7 +1726,7 @@
           110.04,
           107.29,
           108.49,
-          108.17
+          108.01
         ]
       },
       {
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.25,
-          96.88
+          96.87
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.83,
-          106.72
+          106.71
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           103.42,
           99.53,
           101.9,
-          101.39
+          101.42
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           82.7,
           83.85,
           84.8,
-          84.2
+          84.18
         ]
       },
       {
@@ -1952,13 +1952,13 @@
         },
         {
           "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
           "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-21",
@@ -1976,26 +1976,59 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+          "datum": "2026-07-22",
+          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
         },
         {
           "datum": "2026-07-22",
-          "namn": "Chernett Jorey  (CIK 0002042077); Oncology Institute, Inc.  (CIK 0001799191)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2042077/000092189526001852"
+          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
         },
         {
-          "datum": "2026-07-20",
-          "namn": "Castetter Andrea  (CIK 0001998739); Inotiv, Inc.  (CIK 0000720154)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1998739/000199873926000006"
+          "datum": "2026-07-21",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-22T19:40+00:00"
+      "vintage": "2026-07-22T21:25+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-22 22:31:45",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "106900,0",
+          "enhet": "Antal",
+          "pris": "39,8122",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 22:31:45",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "90000,0",
+          "enhet": "Antal",
+          "pris": "40,4182",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-22 21:48:04",
+          "emittent": "Qbim Aktiebolag",
+          "person": "Fredric Forsman",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "5872641,0",
+          "enhet": "Antal",
+          "pris": "0,28",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-22 21:32:34",
           "emittent": "Volati AB",
@@ -2512,44 +2545,11 @@
           "enhet": "Antal",
           "pris": "235,15",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:08:36",
-          "emittent": "MilDef Group AB",
-          "person": "Viveca Johnsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1130,0",
-          "enhet": "Antal",
-          "pris": "221,978",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 09:33:03",
-          "emittent": "Fabege AB",
-          "person": "Charlotta Liljefors Rosell",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "1400,0",
-          "enhet": "Antal",
-          "pris": "73,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 09:17:38",
-          "emittent": "HANZA AB",
-          "person": "Mattias Lindhe",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "3750,0",
-          "enhet": "Antal",
-          "pris": "129,0",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-22T19:40+00:00"
+      "vintage": "2026-07-22T21:25+00:00"
     }
   }
 }
