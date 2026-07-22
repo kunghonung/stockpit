@@ -306,6 +306,36 @@ def uppdatera_geo(data, idag):
     geo["vintage"] = idag.isoformat()
 
 
+def uppdatera_sidofiler(data):
+    """Sidofilsprincipen: screen-/weekly-jobben skriver egna små filer i stället för
+    data.json (git-race med denna bot, upptäckt 2026-07-22). Denna bot är ensam
+    skribent och mergar in fälten här — inom en 30-minuterscykel."""
+    bredd = las_json(ROT / "data" / "bredd.json", None)
+    if bredd and bredd.get("vintage"):
+        gamla = data.get("makro", {}).get("bredd", {}) or {}
+        if gamla.get("vintage") != bredd["vintage"] or gamla.get("over50") != bredd["over50"]:
+            bredd = dict(bredd)
+            bredd["zoner"] = gamla.get("zoner", [45, 75])
+            data.setdefault("makro", {})["bredd"] = bredd
+    vecko = las_json(ROT / "data" / "vecko.json", None)
+    if vecko:
+        for sid, rev in (vecko.get("sektorRev") or {}).items():
+            for s in data["sektorer"]:
+                if s["id"] == sid:
+                    s["revQ2"] = rev["revQ2"]
+                    s["revRiktning"] = rev["revRiktning"]
+        if vecko.get("sentiment"):
+            befintlig = data.setdefault("makro", {}).get("sentiment") or {}
+            befintlig.update(vecko["sentiment"])
+            data["makro"]["sentiment"] = befintlig
+        if vecko.get("crowding"):
+            data.setdefault("regim", {})["crowding"] = vecko["crowding"]
+        if vecko.get("aiCapex") is not None:
+            data.setdefault("regim", {})["aiCapex"] = vecko["aiCapex"]
+            if vecko.get("aiCapexDetalj"):
+                data["regim"]["aiCapexDetalj"] = vecko["aiCapexDetalj"]
+
+
 def uppdatera_edgar(data, idag):
     igar = (idag - timedelta(days=3)).isoformat()
     r = hamta("https://efts.sec.gov/LATEST/search-index"
@@ -406,6 +436,7 @@ def main():
                      ("kvoter (Yahoo)", lambda: uppdatera_kvoter(data, idag)),
                      ("sektorserier (Yahoo)", lambda: uppdatera_sektorserier(data, idag, forra)),
                      ("geo-RRG (Yahoo)", lambda: uppdatera_geo(data, idag)),
+                     ("sidofiler (bredd/vecko)", lambda: uppdatera_sidofiler(data)),
                      ("US-insyn (EDGAR)", lambda: uppdatera_edgar(data, idag)),
                      ("SE-insyn (FI-export)", lambda: uppdatera_fi(data, state, idag))):
         try:

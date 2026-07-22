@@ -40,7 +40,7 @@ jobs:
           git config user.name "stockpit-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash
-          git add data/screen.json data/screen_state.json data/data.json
+          git add data/screen.json data/screen_state.json data/bredd.json data/track_record.json
           if git diff --cached --quiet; then
             echo "Ingen förändring — ingen commit."
           else

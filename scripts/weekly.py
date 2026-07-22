@@ -317,6 +317,14 @@ def main():
     if not data:
         print("data.json saknas")
         sys.exit(1)
+    # Sidofilsprincipen (lärdom 2026-07-22): weekly skriver ALDRIG data.json —
+    # ändringarna samlas här och mergas av 30-min-jobbet via data/vecko.json.
+    fore = json.loads(json.dumps({"sektorer": [{"id": s["id"], "revQ2": s.get("revQ2"),
+                                                "revRiktning": s.get("revRiktning")} for s in data["sektorer"]],
+                                  "sentiment": data.get("makro", {}).get("sentiment"),
+                                  "crowding": data.get("regim", {}).get("crowding"),
+                                  "aiCapex": data.get("regim", {}).get("aiCapex"),
+                                  "aiCapexDetalj": data.get("regim", {}).get("aiCapexDetalj")}))
     lyckade, fallerade = [], []
     for namn, fn in (("C1 estimatproxy", lambda: estimat_aggregat(data, state, idag)),
                      ("C2 pe-historik", lambda: pe_historik(data, idag)),
@@ -330,7 +338,21 @@ def main():
         except Exception as fel:
             fallerade.append(namn)
             print("MISSLYCKADES: %s — %s" % (namn, fel))
-    skriv_json(DATAFIL, data)
+    vecko = {"genererad": datetime.now(timezone.utc).isoformat(timespec="minutes")}
+    for s in data["sektorer"]:
+        f = next(x for x in fore["sektorer"] if x["id"] == s["id"])
+        if s.get("revQ2") != f["revQ2"] or s.get("revRiktning") != f["revRiktning"]:
+            vecko.setdefault("sektorRev", {})[s["id"]] = {"revQ2": s["revQ2"], "revRiktning": s["revRiktning"]}
+    if data.get("makro", {}).get("sentiment") != fore["sentiment"]:
+        vecko["sentiment"] = data["makro"]["sentiment"]
+    if data.get("regim", {}).get("crowding") != fore["crowding"]:
+        vecko["crowding"] = data["regim"]["crowding"]
+    if data.get("regim", {}).get("aiCapex") != fore["aiCapex"]:
+        vecko["aiCapex"] = data["regim"]["aiCapex"]
+        vecko["aiCapexDetalj"] = data["regim"].get("aiCapexDetalj")
+    if len(vecko) > 1:
+        skriv_json(ROT / "data" / "vecko.json", vecko)
+        print("vecko.json: %s" % ", ".join(k for k in vecko if k != "genererad"))
     skriv_json(STATEFIL, state)
     print("FMP: %d/%d anrop. Klart: %d block OK, %d fallerade."
           % (fmp_anvant, FMP_BUDGET, len(lyckade), len(fallerade)))
