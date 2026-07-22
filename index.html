@@ -30,7 +30,7 @@
   --mono:"Geist Mono", ui-monospace, monospace;
   --fs11:11px; --fs12:12px; --fs13:13px; --fs15:15px; --fs-score:21px;
   --s4:4px; --s8:8px; --s12:12px; --s16:16px; --s24:24px;
-  --radie:6px; --topphojd:48px;
+  --radie:6px; --topphojd:48px; --maxvy:1640px;
 }
 html, body{ height:100%; }
 body{
@@ -168,12 +168,13 @@ a{ color:inherit; }
   font-size:var(--fs11); font-weight:600; letter-spacing:.07em; text-transform:uppercase;
   color:var(--damp); margin:0 0 var(--s8); outline:none; flex:none;
 }
-.vy{ display:flex; flex-direction:column; min-width:0; }
+.vy{ display:flex; flex-direction:column; min-width:0; width:100%; max-width:var(--maxvy); margin-inline:auto; }
 .vy .panel{ margin-bottom:var(--s8); }
 /* Översiktens hero + modulkort */
 .hero{ background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie); padding:var(--s12); margin-bottom:var(--s8); }
 .hero .slutsats:last-child{ padding-bottom:0; }
-.kortgrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:var(--s8); align-items:stretch; }
+.kortgrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:var(--s8); align-items:stretch; }
+@media (min-width:1120px){ .kortgrid{ grid-template-columns:repeat(4, minmax(0, 1fr)); } }
 .modulkort{
   display:flex; flex-direction:column; gap:var(--s4);
   background:var(--panel); border:1px solid var(--linje); border-radius:var(--radie);
@@ -196,22 +197,27 @@ a{ color:inherit; }
 .hero .heromatt .punkt{ display:inline-block; width:7px; height:7px; border-radius:50%; }
 .hero .heromattdel{ display:inline-flex; align-items:center; gap:var(--s4); cursor:help; }
 @media (min-width:1120px){
-  .vy-tvakol{ display:grid; grid-template-columns:318px minmax(0,1fr); gap:var(--s8); align-items:start; }
+  .vy-tvakol{ display:grid; grid-template-columns:340px minmax(0,1fr); gap:var(--s8); align-items:start; }
   .vy-spalt{ display:flex; flex-direction:column; gap:var(--s8); min-width:0; }
   .vy-spalt .panel{ margin-bottom:0; }
-  .vy-makro{ display:grid; grid-template-columns:minmax(0,1fr) 420px; gap:var(--s8); align-items:start; }
-  #sida-aktier .panel{ width:100%; max-width:680px; margin:0 auto; }
-  #sida-trang .panel{ width:100%; max-width:620px; margin:0 auto; }
-  /* Fördjupning: radarytorna får riktig höjd i stället för cockpitens 1.32fr-lås */
-  #sida-sektorrotation .radarytor{ grid-template-columns:1.25fr 1fr; }
-  #sida-sektorrotation .radarhall{ min-height:430px; }
-  #sida-sektorrotation .radarhall svg{ width:100%; height:auto; max-height:560px; }
-  /* Makro i fullbredd: kurvorna skalar som vektorer men hålls läsbara */
-  #sida-makro #vy-kurva svg, #sida-makro #vy-sentiment svg{ display:block; width:100%; max-width:680px; height:auto; margin:0 auto; }
+  /* Makro & likviditet: centrerad, inte utsträckt över hela vidden */
+  .vy-makro{ display:grid; grid-template-columns:minmax(0,1fr) 380px; gap:var(--s8); align-items:start; max-width:1160px; margin-inline:auto; width:100%; }
+  #sida-aktier .panel{ width:100%; max-width:860px; margin:0 auto; }
+  #sida-trang .panel{ width:100%; max-width:640px; margin:0 auto; }
+  /* Radarytorna: en centrerad radar per vy, samma storlek i sektor och geo */
+  .radarhall-full{ min-height:460px; }
+  .radarhall-full svg{ display:block; width:100%; height:auto; max-height:540px; margin:0 auto; }
+  /* Makrograferna: kapade så de inte sträcks till oläslig storlek */
+  #sida-makro #vy-kurva svg, #sida-makro #vy-sentiment svg{ display:block; width:100%; max-width:600px; height:auto; margin:0 auto; }
   .aktie .skal{ -webkit-line-clamp:1; }
-  /* Aktier i fördjupning: släpp enradsklippet — hela resonemanget får synas */
-  #sida-aktier .aktie .skal{ -webkit-line-clamp:3; }
+  #sida-aktier .aktie .skal{ -webkit-line-clamp:2; }
 }
+/* Rekommendationsremsan: de fyra korten horisontellt i stället för en hög kolumn */
+.rekstrip{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:var(--s8); }
+.rekstrip .rek{ margin:0; border:1px solid var(--linje); border-radius:var(--radie); padding:var(--s8) var(--s12); }
+#rekpanel .panelhuvud .stampeltext{ margin-left:var(--s8); }
+.geotab td.talcell{ text-align:right; font-family:var(--mono); font-variant-numeric:tabular-nums; }
+.geotab .statusord{ font-size:var(--fs11); }
 @media (min-width:1120px) and (max-height:940px){
   .cockpit{ gap:var(--s8); padding:var(--s8); }
   .panel{ padding:var(--s8) var(--s12); }
@@ -462,6 +468,22 @@ li.oppen .sigdetalj{ display:block; }
 }
 .listforklaring b{ color:var(--sek); font-weight:600; font-family:var(--mono); }
 .poang b{ color:var(--navy); font-weight:600; }
+.listhuvud{
+  display:flex; align-items:center; gap:var(--s8); padding:2px var(--s4) var(--s4);
+  border-bottom:1px solid var(--linje); margin-bottom:2px;
+  font-size:var(--fs11); font-weight:600; letter-spacing:.03em; text-transform:uppercase; color:var(--svag);
+}
+.listhuvud span:first-child{ width:20px; flex:none; }
+.listhuvud span:nth-child(2){ flex:1; }
+.listhuvud .lh-sig{ width:132px; flex:none; }
+.listhuvud .lh-poang{ width:120px; flex:none; text-align:right; }
+.listhuvud .lh-oppna{ width:54px; flex:none; }
+.visaallaknapp{
+  display:inline-block; margin-top:var(--s4); font-family:var(--sans); font-size:var(--fs11);
+  color:var(--accent); background:none; border:1px solid var(--linje); border-radius:var(--radie);
+  padding:var(--s4) var(--s8); cursor:pointer; transition:background .12s;
+}
+.visaallaknapp:hover{ background:var(--panel2); }
 .kadensflagg{ font-family:var(--mono); font-size:var(--fs11); cursor:help; }
 .kadensflagg.forfallen{ color:var(--gul-text); }
 .kadensflagg.rutten{ color:var(--svag); text-decoration:line-through; }
@@ -537,6 +559,7 @@ li.oppen .sigdetalj{ display:block; }
   <nav class="toppnav" aria-label="Vyer">
     <a href="#/" data-vy="oversikt">Översikt</a>
     <a href="#/sektorrotation" data-vy="sektorrotation">Sektorrotation</a>
+    <a href="#/geografi" data-vy="geografi">Geografi</a>
     <a href="#/makro-likviditet" data-vy="makro-likviditet">Makro &amp; Likviditet</a>
     <a href="#/aktier-konsensus" data-vy="aktier-konsensus">Aktier &amp; Konsensus</a>
     <a href="#/trangsektorer" data-vy="trangsektorer">Trångsektorer</a>
@@ -576,7 +599,6 @@ li.oppen .sigdetalj{ display:block; }
         <summary>Alla 11 sektorer · båda linserna</summary>
         <div id="stabinre"></div>
       </details>
-      <div id="reklista"></div>
       <details class="metod" id="metod"><summary>Så räknas linserna, reglerna &amp; screeningen</summary><div class="inre" id="metodinre"></div></details>
     </div>
   </section>
@@ -601,42 +623,71 @@ li.oppen .sigdetalj{ display:block; }
       </div>
       <p class="radar-subtitel">Relativ styrka mot jämförelseindex — inte absolut avkastning. En sektor kan leda i en fallande marknad.</p>
       <div class="panelkropp">
-        <div class="radarytor">
-          <div class="radarcell">
-            <span class="cellrub" id="radar-cellrub">Sektorer · mot S&amp;P 500</span>
-            <div class="radarhall" id="radarhall-sektor"></div>
-            <p class="slutsats" id="radar-slutsats"></p>
-          </div>
-          <div class="radarcell">
-            <span class="cellrub">Geografi · mot MSCI ACWI</span>
-            <div class="radarhall" id="radarhall-geo"></div>
-            <p class="slutsats" id="geo-slutsats"></p>
-          </div>
-        </div>
+        <span class="cellrub" id="radar-cellrub">Sektorer · mot S&amp;P 500</span>
+        <div class="radarhall radarhall-full" id="radarhall-sektor"></div>
+        <p class="slutsats" id="radar-slutsats"></p>
       </div>
     </section>
-
-      <section class="panel" id="floden" tabindex="-1" aria-labelledby="floden-rubrik">
-        <div class="panelhuvud">
-          <h2 id="floden-rubrik">Flöden</h2>
-          <div class="fordjupning">
-            <span class="lineage" id="lin-floden"></span>
-            <a href="https://www.ssga.com/us/en/intermediary/insights" target="_blank" rel="noopener" title="Öppna SSGA:s flödesrapporter">SSGA →</a>
-            <details class="infopop">
-              <summary aria-label="Om flödesdata" title="Om flödesdata">i</summary>
-              <div class="popinnehall">
-                <p><b>Institutionella ETF-flöden.</b> Negativt = institutionellt kapital lämnar sektorn — priset kan ändå stiga på retail-köp.</p>
-                <p>Divergens mellan flöde och momentum markeras med <b>⇄</b> här och i radarn. Månads- och veckodata blandas aldrig under samma etikett — testdatan innehåller medvetet bara månadsflöden, och då säger panelen det.</p>
-              </div>
-            </details>
-          </div>
-        </div>
-        <p class="slutsats" id="flod-slutsats"></p>
-        <div class="panelkropp" id="flodkropp"></div>
-      </section>
   </div><!-- /vy-spalt -->
   </div><!-- /vy-tvakol -->
+
+  <section class="panel" id="rekpanel" aria-label="Rekommendationer">
+    <div class="panelhuvud">
+      <h2>Rekommendationer</h2>
+      <span class="stampeltext">ÖKA · BEVAKA · MINSKA — ur linserna &amp; regelmotorn</span>
+    </div>
+    <div id="reklista" class="rekstrip"></div>
+  </section>
+
+  <section class="panel" id="floden" tabindex="-1" aria-labelledby="floden-rubrik">
+    <div class="panelhuvud">
+      <h2 id="floden-rubrik">Flöden</h2>
+      <div class="fordjupning">
+        <span class="lineage" id="lin-floden"></span>
+        <a href="https://www.ssga.com/us/en/intermediary/insights" target="_blank" rel="noopener" title="Öppna SSGA:s flödesrapporter">SSGA →</a>
+        <details class="infopop">
+          <summary aria-label="Om flödesdata" title="Om flödesdata">i</summary>
+          <div class="popinnehall">
+            <p><b>Institutionella ETF-flöden.</b> Negativt = institutionellt kapital lämnar sektorn — priset kan ändå stiga på retail-köp.</p>
+            <p>Divergens mellan flöde och momentum markeras med <b>⇄</b> här och i radarn. Månads- och veckodata blandas aldrig under samma etikett — testdatan innehåller medvetet bara månadsflöden, och då säger panelen det.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+    <p class="slutsats" id="flod-slutsats"></p>
+    <div class="panelkropp" id="flodkropp"></div>
+  </section>
   </section><!-- /sida-sektorrotation -->
+
+  <!-- ===== VY: GEOGRAFI ===== -->
+  <section class="vy" id="sida-geografi" aria-labelledby="geo-rubrik" hidden>
+  <h1 class="vyrubrik" id="geo-rubrik" tabindex="-1">Geografi · rotation mot MSCI ACWI</h1>
+  <div class="vy-tvakol">
+    <section class="panel" id="geo-tabellpanel" aria-label="Marknader">
+      <div class="panelhuvud">
+        <h2>Marknader</h2>
+        <div class="fordjupning"><span class="lineage" id="lin-geo"></span></div>
+      </div>
+      <p class="radar-subtitel">Relativ styrka mot MSCI ACWI — samma läsning som sektorradarn: kvadrant = läge, radie = rang.</p>
+      <div class="panelkropp" id="geo-tabell"></div>
+    </section>
+    <div class="vy-spalt">
+      <section class="panel" id="geo-radarpanel" aria-label="Geografisk rotationsradar">
+        <div class="panelhuvud">
+          <h2>Rotationsradar · geografi</h2>
+          <div class="fordjupning">
+            <a href="https://stockcharts.com/freecharts/rrg/" target="_blank" rel="noopener" title="Öppna interaktiv RRG hos StockCharts">Öppna RRG →</a>
+          </div>
+        </div>
+        <p class="radar-subtitel">Sju marknader mot världsindex — samma dubbla fönster som sektorradarn.</p>
+        <div class="panelkropp">
+          <div class="radarhall radarhall-full" id="radarhall-geo"></div>
+          <p class="slutsats" id="geo-slutsats"></p>
+        </div>
+      </section>
+    </div>
+  </div>
+  </section><!-- /sida-geografi -->
 
   <!-- ===== VY: MAKRO & LIKVIDITET ===== -->
   <section class="vy" id="sida-makro" aria-labelledby="ml-rubrik" hidden>
@@ -2367,19 +2418,64 @@ function renderaRadar(data, analys, kort, slut){
     "<span>⇄ flödesdivergens</span></div>";
   $("#radar-slutsats").textContent = slut.radar;
 
+  renderaGeo(data, slut);
+}
+
+/* Geo-radarn: samma polära läsning som sektorradarn (kvadrant-spridd vinkel,
+   radie efter styrkerang) i stället för råa x/y — så de blir visuella syskon. */
+function renderaGeo(data, slut){
+  if(!$("#radarhall-geo")) return;
+  var arLive = data.geo.marknader.some(function(m){ return m.relSerie19 && m.relSerie19.length >= 19; });
+  satLin("lin-geo", arLive ? "relSerie19" : "illustration", data.geo.vintage || "—",
+    data.geo.kalla || "geografisk rotation mot " + data.geo.benchmark);
+  var VINKELSPANN = { leder: [12, 78], "förbättras": [102, 168], "släpar": [192, 258], "försvagas": [282, 348] };
   var geoLive = false;
-  var geopunkter = data.geo.marknader.map(function(mk){
-    var xy = geoXY(mk, data);
+  var mk = data.geo.marknader.map(function(m){
+    var xy = geoXY(m, data);
     if(xy.live) geoLive = true;
-    return { namn: mk.kort, x: xy.x, y: xy.y, spar: xy.spar, handling: null, puls: xy.puls, div: false,
-      aria: mk.namn + ": " + kvadrantAv(xy.x, xy.y),
-      titel: mk.namn + " — " + kvadrantAv(xy.x, xy.y) + (xy.live ? " · beräknad ur relSerie19 mot " + data.geo.benchmark : " (statisk illustration)") };
+    return { m: m, xy: xy, kvadrant: kvadrantAv(xy.x, xy.y), styrka: xy.x };
+  });
+  /* styrkerang: starkast x → längst ut, precis som sektorernas rsRank-radie */
+  var rankad = mk.slice().sort(function(a, b){ return b.styrka - a.styrka; });
+  var N = rankad.length;
+  rankad.forEach(function(o, i){ o.rank = i + 1; });
+  var grupper = { leder: [], "förbättras": [], "släpar": [], "försvagas": [] };
+  mk.forEach(function(o){ grupper[o.kvadrant].push(o); });
+  var vinkelFor = {};
+  Object.keys(grupper).forEach(function(kv){
+    var g = grupper[kv].slice().sort(function(a, b){ return a.rank - b.rank; });
+    var span = VINKELSPANN[kv];
+    g.forEach(function(o, i){ vinkelFor[o.m.kort] = (span[0] + (i + 0.5) / g.length * (span[1] - span[0])) * Math.PI / 180; });
+  });
+  var geopunkter = mk.map(function(o){
+    var v = vinkelFor[o.m.kort];
+    var r = 0.25 + (N - o.rank) / (N - 1) * 0.75;
+    var dir = o.xy.puls ? 1 : -1;
+    var sparV = [18, 12, 6].map(function(g){ return v + dir * g * Math.PI / 180; });
+    return {
+      namn: o.m.kort, x: r * Math.cos(v), y: r * Math.sin(v),
+      spar: sparV.map(function(sv){ return [r * Math.cos(sv), r * Math.sin(sv)]; }),
+      handling: null, puls: o.xy.puls, div: false,
+      aria: o.m.namn + ": " + o.kvadrant + (o.xy.live ? "" : " (illustration)"),
+      titel: o.m.namn + " — " + o.kvadrant + (o.xy.live ? " · beräknad mot " + data.geo.benchmark : " (statisk illustration)")
+    };
   });
   $("#radarhall-geo").innerHTML = renderRRGSvg(geopunkter, {
-    id: "G", S: 340, RMAX: 120, RMIN: 18, skala: 3, svep: false, fasEtiketter: true, axelOrd: true, mono: true,
+    id: "G", S: 560, RMAX: 226, RMIN: 26, skala: 1.02, svep: true, fasEtiketter: true, axelOrd: true, mono: false,
     aria: "Geografisk rotationsradar mot " + data.geo.benchmark + (geoLive ? "." : " (statisk illustration).")
-  });
+  }) + '<div class="radar-legend" aria-hidden="true">' +
+    "<span>position = 12 v-läget</span><span>radie = styrkerang</span><span>puls = obekräftad vändning</span></div>";
   $("#geo-slutsats").textContent = slut.geo;
+  /* marknadstabell — speglar sektortabellen (namn · kvadrant · rang) */
+  var kvOrd = { leder: 1, "förbättras": 2, "försvagas": 3, "släpar": 4 };
+  var rader = mk.slice().sort(function(a, b){ return (kvOrd[a.kvadrant] - kvOrd[b.kvadrant]) || a.rank - b.rank; }).map(function(o){
+    var kl = o.kvadrant === "leder" ? "gron" : o.kvadrant === "släpar" ? "rod" : "gul";
+    return "<tr title=\"" + esc(o.m.namn + " — " + o.kvadrant + ", styrkerang " + o.rank + "/" + N) + "\">" +
+      "<td><b>" + esc(o.m.kort) + "</b></td><td>" + esc(o.m.namn) + "</td>" +
+      '<td><span class="statusord ' + kl + '">' + esc(o.kvadrant) + "</span></td>" +
+      '<td class="talcell">#' + o.rank + "</td></tr>";
+  }).join("");
+  $("#geo-tabell").innerHTML = '<table class="stab geotab"><tr><th>Kort</th><th>Marknad</th><th>Läge</th><th title="Styrkerang efter relativt läge">Rang</th></tr>' + rader + "</table>";
 }
 
 /* ============ Konvergenskedjan → KÖPREK (REGELVERK §6) ============
@@ -2521,6 +2617,7 @@ function renderaKoprek(kr, data){
 
 /* ---- Screenerlistan (data/screen.json) — egen lineage, filter utan beroenden ---- */
 var screenFilter = { text: "", marknad: "", signal: "" };
+var screenVisaAlla = false;
 function renderaScreener(screen, data){
   var mal = $("#screenerdel");
   if(!mal) return;
@@ -2541,6 +2638,7 @@ function renderaScreener(screen, data){
       '<select id="scr-signal" aria-label="Signalfilter"><option value="">Alla signaler</option>' +
         nycklar.map(function(k){ return '<option value="' + k + '"' + (screenFilter.signal === k ? " selected" : "") + ">" + k + " · " + esc(data.parlnyckel[k].namn) + "</option>"; }).join("") +
       "</select></div>" +
+    '<div class="listhuvud"><span>#</span><span>Bolag &amp; skäl</span><span class="lh-sig">Signaler</span><span class="lh-poang">Konv · styrka</span><span class="lh-oppna"></span></div>' +
     '<div id="screenerlista"></div>';
   var rita = function(){
     var f = screenFilter;
@@ -2553,7 +2651,7 @@ function renderaScreener(screen, data){
       }
       return true;
     });
-    var visa = traffar.slice(0, 30);
+    var visa = screenVisaAlla ? traffar : traffar.slice(0, 14);
     $("#screenerlista").innerHTML = visa.map(function(a){
       var rang = screen.lista.indexOf(a) + 1;
       var parlor = nycklar.map(function(k){
@@ -2573,7 +2671,10 @@ function renderaScreener(screen, data){
       "</div>";
     }).join("") +
     (traffar.length > visa.length
-      ? '<p class="tpastatus">Visar ' + visa.length + " av " + traffar.length + " träffar — förfina filtret.</p>" : "");
+      ? '<button type="button" class="visaallaknapp" id="scr-mer">Visa alla ' + traffar.length + " träffar →</button>"
+      : (screenVisaAlla && traffar.length > 14 ? '<button type="button" class="visaallaknapp" id="scr-mer">Visa färre ↑</button>' : ""));
+    var mer = $("#scr-mer");
+    if(mer) mer.addEventListener("click", function(){ screenVisaAlla = !screenVisaAlla; rita(); });
   };
   rita();
   $("#scr-text").addEventListener("input", function(){ screenFilter.text = this.value; rita(); });
@@ -3569,6 +3670,7 @@ document.querySelectorAll('[role="tablist"]').forEach(function(lista){
 var VYER = {
   "oversikt":        { sida: "sida-oversikt",       rubrik: "oversikt-rubrik", titel: "Översikt" },
   "sektorrotation":  { sida: "sida-sektorrotation", rubrik: "sr-rubrik",       titel: "Sektorrotation" },
+  "geografi":        { sida: "sida-geografi",       rubrik: "geo-rubrik",      titel: "Geografi" },
   "makro-likviditet":{ sida: "sida-makro",          rubrik: "ml-rubrik",       titel: "Makro & Likviditet" },
   "aktier-konsensus":{ sida: "sida-aktier",         rubrik: "ak-rubrik",       titel: "Aktier & Konsensus" },
   "trangsektorer":   { sida: "sida-trang",          rubrik: "tr-rubrik",       titel: "Trångsektorer" }
