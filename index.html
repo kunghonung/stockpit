@@ -200,8 +200,8 @@ a{ color:inherit; }
   .vy-tvakol{ display:grid; grid-template-columns:340px minmax(0,1fr); gap:var(--s8); align-items:start; }
   .vy-spalt{ display:flex; flex-direction:column; gap:var(--s8); min-width:0; }
   .vy-spalt .panel{ margin-bottom:0; }
-  /* Makro & likviditet: centrerad, inte utsträckt över hela vidden */
-  .vy-makro{ display:grid; grid-template-columns:minmax(0,1fr) 380px; gap:var(--s8); align-items:start; max-width:1160px; margin-inline:auto; width:100%; }
+  /* Makro & likviditet: två paneler som hugger sitt innehåll, centrerade */
+  .vy-makro{ display:grid; grid-template-columns:minmax(0,540px) minmax(320px,380px); gap:var(--s8); align-items:start; justify-content:center; max-width:960px; margin-inline:auto; width:100%; }
   #sida-aktier .panel{ width:100%; max-width:860px; margin:0 auto; }
   #sida-trang .panel{ width:100%; max-width:640px; margin:0 auto; }
   /* Radarytorna: en centrerad radar per vy, samma storlek i sektor och geo */
@@ -541,6 +541,20 @@ li.oppen .sigdetalj{ display:block; }
   .panelhuvud .fordjupning{ margin-left:0; flex-basis:100%; flex-wrap:wrap; }
   .aktie .skal{ -webkit-line-clamp:3; }
   #radarhall-sektor .blip-namn{ font-size:var(--fs15); }
+}
+/* Nya rutnät (UX-svep) staplar på smala skärmar */
+@media (max-width:720px){
+  .aktie{ grid-template-columns:24px minmax(0,1fr) auto; gap:2px var(--s8);
+    grid-template-areas:"rang tick poang" "rang namn namn" "rang sig oppna"; }
+  .aktie .rang{ grid-area:rang; align-self:start; padding-top:3px; }
+  .aktie .tick{ grid-area:tick; }
+  .aktie .tick small{ display:inline; margin-left:var(--s4); }
+  .aktie .a-namn{ grid-area:namn; }
+  .aktie .parlor{ grid-area:sig; }
+  .aktie .poang{ grid-area:poang; }
+  .aktie .oppna{ grid-area:oppna; justify-self:end; align-self:center; }
+  .listhuvud{ display:none; }
+  .rekstrip{ grid-template-columns:1fr; }
 }
 @media (max-width:640px){
   .topp{ flex-wrap:wrap; height:auto; min-height:var(--topphojd); padding:var(--s4) var(--s12); row-gap:0; }
