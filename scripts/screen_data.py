@@ -599,6 +599,23 @@ def main():
              ", ".join("%s %d/%d·%d" % (p["ticker"], len(p["parlor"]), p["sparade"], p["styrka"])
                        for p in lista[:5])))
 
+    # --- S9-B1: marknadsbredd → data/bredd.json (sidofil; update_data.py mergar in
+    # den i data.json). Skrivningen SAKNADES sedan sidofix-committen — bredd har
+    # räknats fram men aldrig persisterats. US-delen, minst 300 bolag med 200d-historik.
+    if bredd["antal"] >= 300:
+        (ROT / "data" / "bredd.json").write_text(json.dumps({
+            "over50": round(bredd["over50"] / bredd["antal"] * 100),
+            "over200": round(bredd["over200"] / bredd["antal"] * 100),
+            "antal": bredd["antal"],
+            "kalla": "beräknad ur screenernuniversum (S&P 500-delen, %d bolag)" % bredd["antal"],
+            "vintage": idag.isoformat(),
+        }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print("bredd.json: %d %% > 50d · %d %% > 200d (%d bolag)"
+              % (round(bredd["over50"] / bredd["antal"] * 100),
+                 round(bredd["over200"] / bredd["antal"] * 100), bredd["antal"]))
+    else:
+        print("bredd: bara %d US-bolag med 200d-historik (<300) — hoppar bredd.json" % bredd["antal"])
+
 
 if __name__ == "__main__":
     main()
