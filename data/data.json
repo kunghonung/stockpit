@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-23",
-  "genererad": "2026-07-23T22:35+00:00",
+  "genererad": "2026-07-23T23:38+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -966,7 +966,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4052",
+      "varde": "4051",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+1,5 %",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,94",
+      "varde": "57,86",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,2 %",
+      "delta4v": "−0,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -993,7 +993,7 @@
       "varde": "6,33",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,6 %",
+      "delta4v": "+6,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1952,13 +1952,13 @@
         },
         {
           "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
           "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-21",
@@ -1976,23 +1976,23 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
-        },
-        {
-          "datum": "2026-07-22",
-          "namn": "Chernett Jorey  (CIK 0002042077); Oncology Institute, Inc.  (CIK 0001799191)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2042077/000092189526001852"
-        },
-        {
           "datum": "2026-07-22",
           "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
+        },
+        {
+          "datum": "2026-07-21",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-23T22:35+00:00"
+      "vintage": "2026-07-23T23:38+00:00"
     },
     "se": {
       "poster": [
@@ -2549,7 +2549,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-23T22:35+00:00"
+      "vintage": "2026-07-23T23:38+00:00"
     }
   }
 }
