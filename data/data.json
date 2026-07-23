@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-23",
-  "genererad": "2026-07-23T19:59+00:00",
+  "genererad": "2026-07-23T21:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.72,
-        117.93
+        117.99
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         95.31,
-        98.15
+        98.17
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         86.55,
-        84.58
+        84.57
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         88.15,
-        88.31
+        88.32
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.54,
-        87.41
+        87.4
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         94.41,
-        96.78
+        96.8
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         95.44,
-        96.5
+        96.51
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         80.28,
-        81.5
+        81.53
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         99.46,
-        100.29
+        100.31
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         91.53,
-        88.42
+        88.4
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.4,
-      "delta": "+2,7 · 1 v",
+      "varde": 18.7,
+      "delta": "+2,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 76.0,
-      "delta": "−1 · 1 v",
+      "varde": 80.0,
+      "delta": "+2 · 1 v",
       "trosklar": [
         100,
         130
@@ -828,7 +828,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 76.0,
+      "varde": 80.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.4,
+      "varde": 18.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -863,22 +863,22 @@
         "30Y"
       ],
       "nu": [
-        3.74,
-        4.26,
-        4.37,
-        4.63,
-        5.13
+        3.75,
+        4.31,
+        4.41,
+        4.67,
+        5.15
       ],
       "forr": [
-        3.67,
-        4.19,
-        4.23,
-        4.46,
-        4.9
+        3.7,
+        4.24,
+        4.29,
+        4.51,
+        4.95
       ],
       "kalla": "FRED",
-      "vintage": "2026-07-21",
-      "not": "Brantande 2s10s: +10 bp/mån."
+      "vintage": "2026-07-22",
+      "not": "Brantande 2s10s: +9 bp/mån."
     },
     "bredd": {
       "over50": 62,
@@ -957,19 +957,19 @@
       "vintage": "2026-W29"
     },
     "realranta": {
-      "varde": "2,37 %",
+      "varde": "2,39 %",
       "pil": "upp",
-      "delta": "+16 bp · 1 mån",
+      "delta": "+11 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-07-21"
+      "vintage": "2026-07-22"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4048",
+      "varde": "4052",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,4 %",
+      "delta4v": "+1,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,74",
+      "varde": "57,90",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,5 %",
+      "delta4v": "−0,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,31",
+      "varde": "6,34",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,2 %",
+      "delta4v": "+6,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-23"
     },
     "olja": {
-      "v": 100.18,
+      "v": 100.55,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-23"
     }
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.87,
-          96.84
+          96.87
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.71,
-          108.46
+          108.49
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           103.42,
           99.53,
           101.42,
-          101.98
+          102.02
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           91.81,
           92.66,
           90.66,
-          90.59
+          90.62
         ]
       }
     ],
@@ -1992,10 +1992,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-23T19:59+00:00"
+      "vintage": "2026-07-23T21:19+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-23 22:08:32",
+          "emittent": "Eltel AB",
+          "person": "Håkan Dahlström",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "24843,0",
+          "enhet": "Antal",
+          "pris": "12,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 22:08:32",
+          "emittent": "Eltel AB",
+          "person": "Håkan Dahlström",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "6203,0",
+          "enhet": "Antal",
+          "pris": "12,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 22:08:32",
+          "emittent": "Eltel AB",
+          "person": "Håkan Dahlström",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "11782,0",
+          "enhet": "Antal",
+          "pris": "12,33",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-23 19:58:30",
           "emittent": "Spectrumone AB (publ)",
@@ -2512,44 +2545,11 @@
           "enhet": "Antal",
           "pris": "96,05",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 14:33:03",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Jan Wahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "66,28",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 14:33:03",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Jan Wahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "66,0854",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 14:31:28",
-          "emittent": "Billerud AB (publ)",
-          "person": "Brian Boland",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "69,2095",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-23T19:59+00:00"
+      "vintage": "2026-07-23T21:19+00:00"
     }
   }
 }
