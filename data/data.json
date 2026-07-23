@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-23",
-  "genererad": "2026-07-23T06:38+00:00",
+  "genererad": "2026-07-23T09:33+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.6,
-      "delta": "+1,0 · 1 v",
+      "varde": 17.6,
+      "delta": "+0,8 · 1 v",
       "trosklar": [
         20,
         28
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 100,
+        "index": 101,
         "pil": "upp",
         "status": "gron"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.6,
+      "varde": 17.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4125",
+      "varde": "4097",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+3,4 %",
+      "delta4v": "+2,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,81",
+      "varde": "59,15",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+3,0 %",
+      "delta4v": "+1,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,50",
+      "varde": "6,46",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+9,4 %",
+      "delta4v": "+8,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-23"
     },
     "olja": {
-      "v": 96.24,
+      "v": 86.4,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-23"
     }
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.87,
-          96.87
+          96.37
         ]
       },
       {
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           106.71,
-          106.89
+          107.21
         ]
       },
       {
@@ -1992,10 +1992,76 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-23T06:38+00:00"
+      "vintage": "2026-07-23T09:33+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-23 11:23:41",
+          "emittent": "JM AB",
+          "person": "Anders Wimmerstedt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "127,0",
+          "enhet": "Antal",
+          "pris": "121,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 11:22:18",
+          "emittent": "JM AB",
+          "person": "Anders Wimmerstedt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "190,0",
+          "enhet": "Antal",
+          "pris": "121,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 11:20:01",
+          "emittent": "Vimian Group AB (publ)",
+          "person": "Gabriel Fitzgerald",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "81253,0",
+          "enhet": "Antal",
+          "pris": "34,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 10:03:15",
+          "emittent": "SSAB AB",
+          "person": "Magnus Groth",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "96,93",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 09:21:41",
+          "emittent": "Krona Public Real Estate AB",
+          "person": "Tomas Georgiadis",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1160,0",
+          "enhet": "Antal",
+          "pris": "41,2",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 08:52:55",
+          "emittent": "Arlandastad Group AB (publ)",
+          "person": "Per Taube",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1796,0",
+          "enhet": "Antal",
+          "pris": "36,1439",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-23 07:44:12",
           "emittent": "Skandinaviska Enskilda Banken AB",
@@ -2479,77 +2545,11 @@
           "enhet": "Antal",
           "pris": "10,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 12:48:15",
-          "emittent": "Biovica International AB",
-          "person": "Theis Kipling",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "633332,0",
-          "enhet": "Antal",
-          "pris": "0,45",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 11:39:56",
-          "emittent": "SSAB AB",
-          "person": "Leena Craelius",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "740,0",
-          "enhet": "Antal",
-          "pris": "8,778",
-          "valuta": "EUR"
-        },
-        {
-          "publicerad": "2026-07-22 11:13:09",
-          "emittent": "Cereno Scientific AB",
-          "person": "Sten Sörensen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "48496,0",
-          "enhet": "Antal",
-          "pris": "5,155",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:55:27",
-          "emittent": "Alpcot Holding AB (publ)",
-          "person": "Katre Saard",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "17499,0",
-          "enhet": "Antal",
-          "pris": "1,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:48:42",
-          "emittent": "Aktiebolaget SKF",
-          "person": "Richard Almer Nilsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "247,1",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 10:47:38",
-          "emittent": "Nordnet AB (publ)",
-          "person": "Rasmus Järborg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "4081,0",
-          "enhet": "Antal",
-          "pris": "364,2397",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-23T06:38+00:00"
+      "vintage": "2026-07-23T09:33+00:00"
     }
   }
 }
