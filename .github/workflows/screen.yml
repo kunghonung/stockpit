@@ -40,10 +40,15 @@ jobs:
           git config user.name "stockpit-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash
-          git add data/screen.json data/screen_state.json data/bredd.json data/track_record.json
+          # Lägg bara till filer som faktiskt skrevs — bredd.json/track_record.json
+          # är villkorliga, och git add på en saknad sökväg dödar hela steget (exit 128)
+          # och slänger screen.json som just räknades fram.
+          for f in data/screen.json data/screen_state.json data/bredd.json data/track_record.json; do
+            [ -f "$f" ] && git add "$f"
+          done
           if git diff --cached --quiet; then
             echo "Ingen förändring — ingen commit."
           else
             git commit -m "data: daglig screening $(date -u +'%Y-%m-%d')"
-            git push
+            git push || { echo "push raceade — rebasar och försöker igen"; git pull --rebase --autostash; git push; }
           fi

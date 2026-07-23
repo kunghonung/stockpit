@@ -39,10 +39,14 @@ jobs:
           git config user.name "stockpit-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash
-          git add data/vecko.json data/state.json data/pe_historik.json data/cot_historik.json data/track_record.json
+          # Bara filer som faktiskt skrevs — vecko.json/pe_historik.json är villkorliga;
+          # git add på saknad sökväg dödar steget (exit 128) och slänger veckans arbete.
+          for f in data/vecko.json data/state.json data/pe_historik.json data/cot_historik.json data/track_record.json; do
+            [ -f "$f" ] && git add "$f"
+          done
           if git diff --cached --quiet; then
             echo "Ingen förändring — ingen commit."
           else
             git commit -m "data: veckojobbet $(date -u +'%Y-%m-%d')"
-            git push
+            git push || { echo "push raceade — rebasar och försöker igen"; git pull --rebase --autostash; git push; }
           fi
