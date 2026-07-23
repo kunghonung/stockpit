@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-23",
-  "genererad": "2026-07-23T11:29+00:00",
+  "genererad": "2026-07-23T13:11+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.7,
-      "delta": "+1,0 · 1 v",
+      "varde": 19.0,
+      "delta": "+2,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.7,
+      "varde": 19.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4090",
+      "varde": "4062",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,5 %",
+      "delta4v": "+1,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,87",
+      "varde": "57,98",
       "enhet": "USD/oz",
-      "pil": "upp",
-      "delta4v": "+1,4 %",
+      "pil": "ned",
+      "delta4v": "−0,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,47",
+      "varde": "6,43",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+8,9 %",
+      "delta4v": "+8,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-23"
     },
     "olja": {
-      "v": 93.01,
+      "v": 86.83,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-23"
     }
@@ -1767,7 +1767,7 @@
           95.09,
           96.8,
           96.87,
-          96.17
+          95.71
         ]
       },
       {
@@ -1992,10 +1992,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-23T11:29+00:00"
+      "vintage": "2026-07-23T13:11+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-23 13:36:26",
+          "emittent": "Mendus AB",
+          "person": "Sijmen de Vries",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9300,0",
+          "enhet": "Antal",
+          "pris": "6,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-23 13:34:27",
+          "emittent": "Precise Biometrics AB",
+          "person": "Christian Lagerling",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utbyte ökning",
+          "volym": "159426,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-23 13:27:26",
           "emittent": "Fingerprint Cards AB",
@@ -2523,33 +2545,11 @@
           "enhet": "Antal",
           "pris": "8,20",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 14:04:06",
-          "emittent": "Heba Fastighets AB",
-          "person": "Lena Hedlund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "24,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 13:10:13",
-          "emittent": "Xvivo Perfusion Aktiebolag",
-          "person": "Emil Billbäck",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2007,0",
-          "enhet": "Antal",
-          "pris": "235,80",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-23T11:29+00:00"
+      "vintage": "2026-07-23T13:11+00:00"
     }
   }
 }
