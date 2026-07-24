@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-24T16:56+00:00",
+  "genererad": "2026-07-24T18:43+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.99,
-        116.99
+        116.29
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         98.17,
-        98.28
+        98.36
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         84.57,
-        84.99
+        85.62
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         88.32,
-        88.85
+        89.7
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.4,
-        87.75
+        88.3
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         96.8,
-        97.15
+        97.4
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         87.03,
-        86.78
+        86.98
       ]
     },
     {
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         96.51,
-        98.19
+        98.63
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         81.53,
-        81.61
+        82.01
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         100.31,
-        100.45
+        100.82
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         88.4,
-        88.55
+        88.64
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.7,
-      "delta": "−1,0 · 1 v",
+      "varde": 18.4,
+      "delta": "−0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 100,
         "pil": "upp",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 99,
+        "index": 100,
         "pil": "upp",
         "status": "gron"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 95,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 96,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.7,
+      "varde": 18.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -962,10 +962,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4070",
+      "varde": "4057",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,0 %",
+      "delta4v": "+0,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -974,10 +974,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,92",
+      "varde": "58,65",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,0 %",
+      "delta4v": "+0,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -986,10 +986,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,36",
+      "varde": "6,34",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,7 %",
+      "delta4v": "+4,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -997,7 +997,7 @@
       "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 95.6,
+      "v": 96.54,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-24"
     }
@@ -1681,7 +1681,7 @@
           101.6,
           101.76,
           101.49,
-          101.58
+          101.56
         ]
       },
       {
@@ -1722,7 +1722,7 @@
           110.04,
           107.29,
           107.23,
-          106.42
+          106.12
         ]
       },
       {
@@ -1763,7 +1763,7 @@
           95.09,
           96.8,
           96.87,
-          97.35
+          97.76
         ]
       },
       {
@@ -1804,7 +1804,7 @@
           109.61,
           104.32,
           108.49,
-          105.19
+          105.64
         ]
       },
       {
@@ -1845,7 +1845,7 @@
           103.42,
           99.53,
           102.02,
-          100.32
+          100.24
         ]
       },
       {
@@ -1886,7 +1886,7 @@
           82.7,
           83.85,
           84.84,
-          84.69
+          84.91
         ]
       },
       {
@@ -1927,7 +1927,7 @@
           91.81,
           92.66,
           90.62,
-          91.39
+          91.48
         ]
       }
     ],
@@ -1988,10 +1988,164 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-24T16:56+00:00"
+      "vintage": "2026-07-24T18:43+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1200000,0",
+          "enhet": "Antal",
+          "pris": "157,4378",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1200000,0",
+          "enhet": "Antal",
+          "pris": "157,4378",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Utbyte minskning",
+          "volym": "2660000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Utbyte ökning",
+          "volym": "2660000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "30000000,0",
+          "enhet": "Antal",
+          "pris": "180,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "30000000,0",
+          "enhet": "Antal",
+          "pris": "180,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "160,5896",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "160,5896",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "550000,0",
+          "enhet": "Antal",
+          "pris": "160,8811",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "550000,0",
+          "enhet": "Antal",
+          "pris": "160,8811",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "667267,0",
+          "enhet": "Antal",
+          "pris": "162,9546",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:56:43",
+          "emittent": "Tele2 AB",
+          "person": "Thomas Reynaud",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "667267,0",
+          "enhet": "Antal",
+          "pris": "162,9546",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:38:31",
+          "emittent": "Mangold AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "29,0",
+          "enhet": "Antal",
+          "pris": "1697,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 19:38:31",
+          "emittent": "Mangold AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "9,0",
+          "enhet": "Antal",
+          "pris": "1700,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-24 18:43:45",
           "emittent": "Nordnet AB (publ)",
@@ -2387,165 +2541,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 22:08:32",
-          "emittent": "Eltel AB",
-          "person": "Håkan Dahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "24843,0",
-          "enhet": "Antal",
-          "pris": "12,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 22:08:32",
-          "emittent": "Eltel AB",
-          "person": "Håkan Dahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "6203,0",
-          "enhet": "Antal",
-          "pris": "12,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 22:08:32",
-          "emittent": "Eltel AB",
-          "person": "Håkan Dahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "11782,0",
-          "enhet": "Antal",
-          "pris": "12,33",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 19:58:30",
-          "emittent": "Spectrumone AB (publ)",
-          "person": "Fredric Forsman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "6356000,0",
-          "enhet": "Antal",
-          "pris": "0,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 16:57:45",
-          "emittent": "Axfood AB",
-          "person": "Christian Luiga",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "231,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 16:31:19",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Josephine Bernadotte",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "33,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 15:16:47",
-          "emittent": "MEKO AB",
-          "person": "Pehr Oscarsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "76,19",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 13:36:26",
-          "emittent": "Mendus AB",
-          "person": "Sijmen de Vries",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "9300,0",
-          "enhet": "Antal",
-          "pris": "6,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 13:34:27",
-          "emittent": "Precise Biometrics AB",
-          "person": "Christian Lagerling",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "159426,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 13:27:26",
-          "emittent": "Fingerprint Cards AB",
-          "person": "Christian Lagerling",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Utbyte minskning",
-          "volym": "17714,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 12:01:33",
-          "emittent": "Embellence Group AB (publ)",
-          "person": "Johan Andgren",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "31,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 12:01:33",
-          "emittent": "Embellence Group AB (publ)",
-          "person": "Johan Andgren",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9000,0",
-          "enhet": "Antal",
-          "pris": "31,43",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 11:41:19",
-          "emittent": "Munters Group AB",
-          "person": "Katharina Fischer",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2491,0",
-          "enhet": "Antal",
-          "pris": "183,11",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 11:23:41",
-          "emittent": "JM AB",
-          "person": "Anders Wimmerstedt",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "127,0",
-          "enhet": "Antal",
-          "pris": "121,35",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 14,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-24T16:56+00:00"
+      "vintage": "2026-07-24T18:43+00:00"
     }
   }
 }
