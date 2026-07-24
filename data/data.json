@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
-  "asOfDatum": "2026-07-23",
-  "genererad": "2026-07-23T23:38+00:00",
+  "asOfDatum": "2026-07-24",
+  "genererad": "2026-07-24T03:38+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         118.34,
         120.1,
         115.3,
-        117.72,
+        117.99,
         117.99
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         98.35,
         95.98,
         96.14,
-        95.31,
+        98.17,
         98.17
       ]
     },
@@ -221,7 +221,7 @@
         87.17,
         87.6,
         88.19,
-        86.55,
+        84.57,
         84.57
       ]
     },
@@ -272,7 +272,7 @@
         90.53,
         87.39,
         88.13,
-        88.15,
+        88.32,
         88.32
       ]
     },
@@ -323,7 +323,7 @@
         88.48,
         86.39,
         88.87,
-        87.54,
+        87.4,
         87.4
       ]
     },
@@ -374,7 +374,7 @@
         97.31,
         94.3,
         95.93,
-        94.41,
+        96.8,
         96.8
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         85.46,
         83.66,
         84.52,
-        85.47,
+        87.03,
         87.03
       ]
     },
@@ -477,7 +477,7 @@
         95.08,
         93.31,
         96.84,
-        95.44,
+        96.51,
         96.51
       ]
     },
@@ -528,7 +528,7 @@
         72.43,
         73.95,
         78.65,
-        80.28,
+        81.53,
         81.53
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         99.05,
         97.87,
         100.39,
-        99.46,
+        100.31,
         100.31
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         94.35,
         93.18,
         93.19,
-        91.53,
+        88.4,
         88.4
       ]
     }
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-07-23",
+      "vintage": "2026-07-24",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-07-23",
+      "vintage": "2026-07-24",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-07-23"
+      "vintage": "2026-07-24"
     },
     "crowding": {
       "score": 72,
@@ -966,44 +966,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4051",
+      "varde": "4032",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,5 %",
+      "delta4v": "+0,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-07-23"
+      "vintage": "2026-07-24"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,86",
+      "varde": "57,60",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,3 %",
+      "delta4v": "−1,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-07-23"
+      "vintage": "2026-07-24"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,33",
+      "varde": "6,32",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,5 %",
+      "delta4v": "+4,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-07-23"
+      "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 100.5,
+      "v": 101.0,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-07-23"
+      "vintage": "2026-07-24"
     }
   },
   "megatrender": [
@@ -1645,7 +1645,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-07-23",
+    "vintage": "2026-07-24",
     "marknader": [
       {
         "namn": "USA",
@@ -1684,7 +1684,7 @@
           101.21,
           101.6,
           101.76,
-          101.54,
+          101.49,
           101.49
         ]
       },
@@ -1725,7 +1725,7 @@
           109.14,
           110.04,
           107.29,
-          108.01,
+          107.23,
           107.23
         ]
       },
@@ -1807,8 +1807,8 @@
           112.6,
           109.61,
           104.32,
-          106.71,
-          108.49
+          108.49,
+          105.46
         ]
       },
       {
@@ -1848,7 +1848,7 @@
           102.56,
           103.42,
           99.53,
-          101.42,
+          102.02,
           102.02
         ]
       },
@@ -1889,7 +1889,7 @@
           80.02,
           82.7,
           83.85,
-          84.18,
+          84.84,
           84.84
         ]
       },
@@ -1930,7 +1930,7 @@
           93.2,
           91.81,
           92.66,
-          90.66,
+          90.62,
           90.62
         ]
       }
@@ -1940,16 +1940,6 @@
   "insynFlode": {
     "us": {
       "poster": [
-        {
-          "datum": "2026-07-20",
-          "namn": "Jacobs William R.  (CIK 0001565566); Northfield Bancorp, Inc.  (CIK 0001493225)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1565566/000149322526000079"
-        },
-        {
-          "datum": "2026-07-20",
-          "namn": "Nelson Steven H  (CIK 0001320490); Health Catalyst, Inc.  (CIK 0001636422)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1320490/000132049026000003"
-        },
         {
           "datum": "2026-07-21",
           "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
@@ -1989,10 +1979,20 @@
           "datum": "2026-07-21",
           "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Chernett Jorey  (CIK 0002042077); Oncology Institute, Inc.  (CIK 0001799191)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2042077/000092189526001852"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Zak Heidi  (CIK 0002037046); Cricut, Inc.  (CIK 0001828962)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2037046/000203704626000007"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-23T23:38+00:00"
+      "vintage": "2026-07-24T03:38+00:00"
     },
     "se": {
       "poster": [
@@ -2549,7 +2549,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-23T23:38+00:00"
+      "vintage": "2026-07-24T03:38+00:00"
     }
   }
 }
