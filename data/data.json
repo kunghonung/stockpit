@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-24T06:37+00:00",
+  "genererad": "2026-07-24T09:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 18.7,
-      "delta": "+2,0 · 1 v",
+      "varde": 18.8,
+      "delta": "+0,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 102,
+        "index": 101,
         "pil": "upp",
         "status": "gron"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 18.7,
+      "varde": 18.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -881,19 +881,15 @@
       "not": "Brantande 2s10s: +9 bp/mån."
     },
     "bredd": {
-      "over50": 62,
-      "delta": "+4 · 1 v",
-      "over200": 58,
-      "skala": [
-        20,
-        90
-      ],
+      "over50": 58,
+      "over200": 64,
+      "antal": 500,
+      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
+      "vintage": "2026-07-24",
       "zoner": [
         35,
         72
-      ],
-      "kalla": "StockCharts",
-      "vintage": "2026-W29"
+      ]
     },
     "sentiment": {
       "spx26": [
@@ -966,10 +962,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4040",
+      "varde": "4060",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,2 %",
+      "delta4v": "+0,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +974,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,97",
+      "varde": "58,60",
       "enhet": "USD/oz",
-      "pil": "ned",
-      "delta4v": "−0,6 %",
+      "pil": "upp",
+      "delta4v": "+0,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1001,7 +997,7 @@
       "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 99.82,
+      "v": 91.72,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-24"
     }
@@ -1767,7 +1763,7 @@
           95.09,
           96.8,
           96.87,
-          96.87
+          97.3
         ]
       },
       {
@@ -1808,7 +1804,7 @@
           109.61,
           104.32,
           108.49,
-          105.51
+          105.53
         ]
       },
       {
@@ -1942,13 +1938,13 @@
       "poster": [
         {
           "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         },
         {
           "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
           "datum": "2026-07-21",
@@ -1966,19 +1962,9 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
-          "datum": "2026-07-22",
-          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
-        },
-        {
-          "datum": "2026-07-22",
-          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
-        },
-        {
           "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-22",
@@ -1987,15 +1973,212 @@
         },
         {
           "datum": "2026-07-22",
+          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
+        },
+        {
+          "datum": "2026-07-22",
           "namn": "Zak Heidi  (CIK 0002037046); Cricut, Inc.  (CIK 0001828962)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2037046/000203704626000007"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-24T06:37+00:00"
+      "vintage": "2026-07-24T09:10+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-24 11:08:30",
+          "emittent": "ATLAS COPCO AKTIEBOLAG",
+          "person": "Henrik Elmin",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "79442,0",
+          "enhet": "Antal",
+          "pris": "138,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 11:08:30",
+          "emittent": "ATLAS COPCO AKTIEBOLAG",
+          "person": "Henrik Elmin",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "79442,0",
+          "enhet": "Antal",
+          "pris": "138,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 11:08:30",
+          "emittent": "ATLAS COPCO AKTIEBOLAG",
+          "person": "Henrik Elmin",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "79442,0",
+          "enhet": "Antal",
+          "pris": "199,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 11:06:44",
+          "emittent": "Ovzon AB",
+          "person": "Harri Larsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2606,0",
+          "enhet": "Antal",
+          "pris": "38,36",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 11:06:44",
+          "emittent": "Ovzon AB",
+          "person": "Harri Larsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2613,0",
+          "enhet": "Antal",
+          "pris": "38,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:55:14",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1810,0",
+          "enhet": "Antal",
+          "pris": "124,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:55:14",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "3190,0",
+          "enhet": "Antal",
+          "pris": "127,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:52:37",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "200,0",
+          "enhet": "Antal",
+          "pris": "124,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:52:37",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "2524,0",
+          "enhet": "Antal",
+          "pris": "127,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:52:37",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "2276,0",
+          "enhet": "Antal",
+          "pris": "127,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:47:02",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "200,0",
+          "enhet": "Antal",
+          "pris": "124,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:47:02",
+          "emittent": "Zinzino AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "4800,0",
+          "enhet": "Antal",
+          "pris": "127,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:41:23",
+          "emittent": "Zinizno AB",
+          "person": "Finn Ørjan Rismyhr Sæle",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "2,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 10:24:39",
+          "emittent": "Arlandastad Group AB (publ)",
+          "person": "Per Taube",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2452,0",
+          "enhet": "Antal",
+          "pris": "36,598",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 09:58:19",
+          "emittent": "Mendus AB",
+          "person": "Johannes Preusting",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9185,0",
+          "enhet": "Antal",
+          "pris": "6,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 09:33:27",
+          "emittent": "Mendus AB",
+          "person": "Dharminder Chahal",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10673,0",
+          "enhet": "Antal",
+          "pris": "6,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 08:55:08",
+          "emittent": "Lasernet Group AB (publ)",
+          "person": "Anders Terp",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "15515,0",
+          "enhet": "Antal",
+          "pris": "30,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-24 07:40:40",
           "emittent": "Precise Biometrics AB",
@@ -2358,198 +2541,11 @@
           "enhet": "Antal",
           "pris": "1,36",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 21:14:38",
-          "emittent": "Transferator AB (publ)",
-          "person": "Skywall AB",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1833,0",
-          "enhet": "Antal",
-          "pris": "1,31",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 19:06:25",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "24130,0",
-          "enhet": "Antal",
-          "pris": "3,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 19:06:25",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "110,0",
-          "enhet": "Antal",
-          "pris": "3,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 19:06:25",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "59510,0",
-          "enhet": "Antal",
-          "pris": "3,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:34:49",
-          "emittent": "Sonetel AB (publ)",
-          "person": "Martin Jönsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "125733,0",
-          "enhet": "Antal",
-          "pris": "5,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:19:10",
-          "emittent": "Ratos AB",
-          "person": "Magnus Stephensen",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "125000,0",
-          "enhet": "Antal",
-          "pris": "9,89",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:11:33",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "2630300,0",
-          "enhet": "Antal",
-          "pris": "34,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:06:34",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "869700,0",
-          "enhet": "Antal",
-          "pris": "34,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:02:14",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Josephine Bernadotte",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "26166,0",
-          "enhet": "Antal",
-          "pris": "34,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:02:14",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Josephine Bernadotte",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "34,367",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 18:02:14",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Josephine Bernadotte",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10170,0",
-          "enhet": "Antal",
-          "pris": "34,3294",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 17:12:03",
-          "emittent": "Wyld Networks AB",
-          "person": "Chenshun Tang",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lån återgång ökning",
-          "volym": "833333,0",
-          "enhet": "Antal",
-          "pris": "0,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 17:04:56",
-          "emittent": "Wyld Networks AB",
-          "person": "Kjell Bertil Olovsson",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Lån återgång ökning",
-          "volym": "15833333,0",
-          "enhet": "Antal",
-          "pris": "0,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 16:54:42",
-          "emittent": "B3 Consulting Group AB (publ)",
-          "person": "Martin Stenström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "19,48",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 16:46:26",
-          "emittent": "ChargePanel AB",
-          "person": "Olof Peter Persson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "125000,0",
-          "enhet": "Antal",
-          "pris": "0,19",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 16:45:50",
-          "emittent": "Munters Group AB",
-          "person": "Elizabeth Carey",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "500,0",
-          "enhet": "Antal",
-          "pris": "16,90",
-          "valuta": "EUR"
-        },
-        {
-          "publicerad": "2026-07-22 16:26:22",
-          "emittent": "Evolution AB (publ)",
-          "person": "Louise Wiwen-Nilsson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "17,0",
-          "enhet": "Antal",
-          "pris": "18,8",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 17,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-24T06:37+00:00"
+      "vintage": "2026-07-24T09:10+00:00"
     }
   }
 }
