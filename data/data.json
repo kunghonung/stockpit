@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-24T15:05+00:00",
+  "genererad": "2026-07-24T16:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.99,
-        116.45
+        116.99
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         98.17,
-        98.56
+        98.28
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         84.57,
-        85.26
+        84.99
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         88.32,
-        88.63
+        88.85
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.4,
-        88.26
+        87.75
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         96.8,
-        97.69
+        97.15
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         87.03,
-        87.53
+        86.78
       ]
     },
     {
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         96.51,
-        98.92
+        98.19
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         81.53,
-        82.76
+        81.61
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         100.31,
-        100.53
+        100.45
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         88.4,
-        88.42
+        88.55
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 18.6,
-      "delta": "−0,1 · 1 v",
+      "varde": 17.7,
+      "delta": "−1,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 99,
         "pil": "upp",
         "status": "gul"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 94,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       },
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 18.6,
+      "varde": 17.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -962,10 +962,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4063",
+      "varde": "4070",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,8 %",
+      "delta4v": "+1,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -974,10 +974,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,58",
+      "varde": "58,92",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,4 %",
+      "delta4v": "+1,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -986,10 +986,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,35",
+      "varde": "6,36",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,6 %",
+      "delta4v": "+4,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -997,7 +997,7 @@
       "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 97.23,
+      "v": 95.6,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-24"
     }
@@ -1681,7 +1681,7 @@
           101.6,
           101.76,
           101.49,
-          101.49
+          101.58
         ]
       },
       {
@@ -1722,7 +1722,7 @@
           110.04,
           107.29,
           107.23,
-          106.31
+          106.42
         ]
       },
       {
@@ -1763,7 +1763,7 @@
           95.09,
           96.8,
           96.87,
-          97.28
+          97.35
         ]
       },
       {
@@ -1804,7 +1804,7 @@
           109.61,
           104.32,
           108.49,
-          105.53
+          105.19
         ]
       },
       {
@@ -1845,7 +1845,7 @@
           103.42,
           99.53,
           102.02,
-          100.2
+          100.32
         ]
       },
       {
@@ -1886,7 +1886,7 @@
           82.7,
           83.85,
           84.84,
-          84.6
+          84.69
         ]
       },
       {
@@ -1927,7 +1927,7 @@
           91.81,
           92.66,
           90.62,
-          91.6
+          91.39
         ]
       }
     ],
@@ -1938,13 +1938,13 @@
       "poster": [
         {
           "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         },
         {
           "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
           "datum": "2026-07-21",
@@ -1962,19 +1962,9 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
-          "datum": "2026-07-22",
-          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
-        },
-        {
-          "datum": "2026-07-22",
-          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
-        },
-        {
           "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-22",
@@ -1983,15 +1973,80 @@
         },
         {
           "datum": "2026-07-22",
+          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
+        },
+        {
+          "datum": "2026-07-22",
           "namn": "Zak Heidi  (CIK 0002037046); Cricut, Inc.  (CIK 0001828962)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2037046/000203704626000007"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-24T15:05+00:00"
+      "vintage": "2026-07-24T16:56+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-24 18:43:45",
+          "emittent": "Nordnet AB (publ)",
+          "person": "Lennart Krän",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "7263,0",
+          "enhet": "Antal",
+          "pris": "370,3069",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 18:28:01",
+          "emittent": "Munters Group AB",
+          "person": "Henrik Teiwik",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "800,0",
+          "enhet": "Antal",
+          "pris": "179,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 18:13:27",
+          "emittent": "Lagercrantz Group AB",
+          "person": "Elisabet Ålander",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "176,0",
+          "enhet": "Antal",
+          "pris": "225,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 18:03:47",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "124180,0",
+          "enhet": "Antal",
+          "pris": "40,7961",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 18:03:47",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "73533,0",
+          "enhet": "Antal",
+          "pris": "40,8745",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-24 16:36:17",
           "emittent": "Knowit AB (publ)",
@@ -2486,66 +2541,11 @@
           "enhet": "Antal",
           "pris": "121,35",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 11:22:18",
-          "emittent": "JM AB",
-          "person": "Anders Wimmerstedt",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "190,0",
-          "enhet": "Antal",
-          "pris": "121,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 11:20:01",
-          "emittent": "Vimian Group AB (publ)",
-          "person": "Gabriel Fitzgerald",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "81253,0",
-          "enhet": "Antal",
-          "pris": "34,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 10:03:15",
-          "emittent": "SSAB AB",
-          "person": "Magnus Groth",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "96,93",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 09:21:41",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1160,0",
-          "enhet": "Antal",
-          "pris": "41,2",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 08:52:55",
-          "emittent": "Arlandastad Group AB (publ)",
-          "person": "Per Taube",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1796,0",
-          "enhet": "Antal",
-          "pris": "36,1439",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 6,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-24T15:05+00:00"
+      "vintage": "2026-07-24T16:56+00:00"
     }
   }
 }
