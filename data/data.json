@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-24T03:38+00:00",
+  "genererad": "2026-07-24T06:37+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 80.0,
-      "delta": "+2 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -828,7 +828,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 80.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -966,10 +966,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4032",
+      "varde": "4040",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,0 %",
+      "delta4v": "+0,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -978,10 +978,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,60",
+      "varde": "57,97",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,3 %",
+      "delta4v": "−0,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -990,10 +990,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,32",
+      "varde": "6,34",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,2 %",
+      "delta4v": "+4,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1001,7 +1001,7 @@
       "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 101.0,
+      "v": 99.82,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-24"
     }
@@ -1808,7 +1808,7 @@
           109.61,
           104.32,
           108.49,
-          105.46
+          105.51
         ]
       },
       {
@@ -1992,10 +1992,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-24T03:38+00:00"
+      "vintage": "2026-07-24T06:37+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-24 07:40:40",
+          "emittent": "Precise Biometrics AB",
+          "person": "Adam Philpott",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utbyte ökning",
+          "volym": "494244,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-23 22:08:32",
           "emittent": "Eltel AB",
@@ -2534,22 +2545,11 @@
           "enhet": "Antal",
           "pris": "18,8",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 14:55:02",
-          "emittent": "SSAB AB",
-          "person": "Maria Långberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "1100,0",
-          "enhet": "Antal",
-          "pris": "96,05",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-24T03:38+00:00"
+      "vintage": "2026-07-24T06:37+00:00"
     }
   }
 }
