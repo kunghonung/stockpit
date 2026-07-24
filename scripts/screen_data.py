@@ -377,7 +377,7 @@ def main():
 
     lista = []
     tk_ok = 0
-    fmp_budget = 230  # marginal under gratisplanens tak
+    fmp_budget = 200  # lämnar plats för TP-acc-ingesten i samma dygnskvot (~250 tak)
     for idx, b in enumerate(bolag):
         tick = b["ticker"]
         signaler = {}

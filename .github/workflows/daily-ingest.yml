@@ -6,9 +6,14 @@ name: Daglig TPA-ingest
 
 on:
   schedule:
-    # Vardagar 22:11 UTC — efter USA-stängning. Udda minut: GitHubs schemaläggare
-    # tappar heltimmesslots för färska scheman (samma fix som update.yml).
-    - cron: "11 22 * * 1-5"
+    # Vardagar 00:15 UTC — strax efter FMP:s dygnskvot nollställs (midnatt UTC) och
+    # LÅNGT före screenern (04:23). TP-acc-ingesten och screenern delar samma FMP-
+    # gratisnyckel (~250 anrop/dygn); tidigare kolliderade de: screenern tömde kvoten
+    # på morgonen och kvällens ingest fick 402 på allt → inga nya consensus-snapshots,
+    # så accelerationen fastnade på "samlar 1/3". Ingesten går nu först på färsk kvot.
+    # 00:15 fångar föregående handelsdags stängning (USA stänger ~21:00 UTC) — helt ok
+    # för dagliga riktkurser.
+    - cron: "15 0 * * 1-5"
   workflow_dispatch: {}   # manuell körning från Actions-fliken
 
 permissions:
