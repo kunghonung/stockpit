@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-24T13:05+00:00",
+  "genererad": "2026-07-24T15:05+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         117.99,
-        117.99
+        116.45
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         98.17,
-        98.17
+        98.56
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         84.57,
-        84.57
+        85.26
       ]
     },
     {
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         88.32,
-        88.32
+        88.63
       ]
     },
     {
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         87.4,
-        87.4
+        88.26
       ]
     },
     {
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         96.8,
-        96.8
+        97.69
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         87.03,
-        87.03
+        87.53
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 4,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         96.51,
-        96.51
+        98.92
       ]
     },
     {
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         81.53,
-        81.53
+        82.76
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         100.31,
-        100.31
+        100.53
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         88.4,
-        88.4
+        88.42
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 2.68,
-      "delta": "−3 bp · 1 v",
+      "varde": 2.77,
+      "delta": "+6 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-07-22",
+      "vintage": "2026-07-23",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 18.8,
-      "delta": "+0,0 · 1 v",
+      "varde": 18.6,
+      "delta": "−0,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 100,
+        "index": 99,
         "pil": "upp",
         "status": "gron"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 95,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 102,
+        "index": 101,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 99,
+        "index": 96,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,7 +766,7 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 98,
+        "index": 97,
         "pil": "ned",
         "status": "gul"
       }
@@ -837,7 +837,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 18.8,
+      "varde": 18.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -846,7 +846,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 2.68,
+      "varde": 2.77,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -962,10 +962,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4057",
+      "varde": "4063",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,7 %",
+      "delta4v": "+0,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -974,10 +974,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,67",
+      "varde": "58,58",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,6 %",
+      "delta4v": "+0,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -986,10 +986,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,34",
+      "varde": "6,35",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,4 %",
+      "delta4v": "+4,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -997,7 +997,7 @@
       "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 91.6,
+      "v": 97.23,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-24"
     }
@@ -1722,7 +1722,7 @@
           110.04,
           107.29,
           107.23,
-          107.23
+          106.31
         ]
       },
       {
@@ -1763,7 +1763,7 @@
           95.09,
           96.8,
           96.87,
-          97.31
+          97.28
         ]
       },
       {
@@ -1845,7 +1845,7 @@
           103.42,
           99.53,
           102.02,
-          102.02
+          100.2
         ]
       },
       {
@@ -1886,7 +1886,7 @@
           82.7,
           83.85,
           84.84,
-          84.84
+          84.6
         ]
       },
       {
@@ -1927,7 +1927,7 @@
           91.81,
           92.66,
           90.62,
-          90.62
+          91.6
         ]
       }
     ],
@@ -1988,10 +1988,76 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-24T13:05+00:00"
+      "vintage": "2026-07-24T15:05+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-24 16:36:17",
+          "emittent": "Knowit AB (publ)",
+          "person": "Christina Johansson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3120,0",
+          "enhet": "Antal",
+          "pris": "87,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 16:06:42",
+          "emittent": "Nelly Group AB (publ)",
+          "person": "Josephine Bernadotte",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "37264,0",
+          "enhet": "Antal",
+          "pris": "34,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 15:43:18",
+          "emittent": "Lasernet Group AB (publ)",
+          "person": "Annikki Schaeferdiek",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "98676,0",
+          "enhet": "Antal",
+          "pris": "30,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 15:14:21",
+          "emittent": "USWE Sports AB",
+          "person": "Carl-Fredrik Streiby",
+          "befattning": "Vice VD",
+          "karaktar": "Interntransaktion – Förvärv",
+          "volym": "40000,0",
+          "enhet": "Antal",
+          "pris": "10,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 15:12:29",
+          "emittent": "USWE Sports AB",
+          "person": "Carl-Fredrik Streiby",
+          "befattning": "Vice VD",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "40000,0",
+          "enhet": "Antal",
+          "pris": "10,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-24 15:12:28",
+          "emittent": "Scandic Hotels Group AB",
+          "person": "Pär Christiansen",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "80,15",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-24 14:47:14",
           "emittent": "AAK AB (PUBL)",
@@ -2475,77 +2541,11 @@
           "enhet": "Antal",
           "pris": "36,1439",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 07:44:12",
-          "emittent": "Skandinaviska Enskilda Banken AB",
-          "person": "Niina Äikäs",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "4015,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 07:44:12",
-          "emittent": "Skandinaviska Enskilda Banken AB",
-          "person": "Niina Äikäs",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "4015,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 07:44:12",
-          "emittent": "Skandinaviska Enskilda Banken AB",
-          "person": "Niina Äikäs",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "4015,0",
-          "enhet": "Antal",
-          "pris": "212,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-23 00:00:56",
-          "emittent": "Zinzino AB",
-          "person": "Henrik Hammargren",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "2,22",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 23:42:29",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utdelning lämnad",
-          "volym": "911950,0",
-          "enhet": "Antal",
-          "pris": "37,76",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 23:36:41",
-          "emittent": "Sivers Semiconductors AB",
-          "person": "Todd Thomson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "251567,0",
-          "enhet": "Antal",
-          "pris": "35,93480",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-24T13:05+00:00"
+      "vintage": "2026-07-24T15:05+00:00"
     }
   }
 }
