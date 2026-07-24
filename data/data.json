@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-24T09:10+00:00",
+  "genererad": "2026-07-24T11:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -962,10 +962,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4060",
+      "varde": "4063",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,7 %",
+      "delta4v": "+0,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -974,10 +974,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,60",
+      "varde": "58,71",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,4 %",
+      "delta4v": "+0,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -986,10 +986,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,34",
+      "varde": "6,36",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,5 %",
+      "delta4v": "+4,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -997,7 +997,7 @@
       "vintage": "2026-07-24"
     },
     "olja": {
-      "v": 91.72,
+      "v": 92.12,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-24"
     }
@@ -1938,13 +1938,13 @@
       "poster": [
         {
           "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
           "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-21",
@@ -1962,9 +1962,19 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
+          "datum": "2026-07-22",
+          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
+        },
+        {
           "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         },
         {
           "datum": "2026-07-22",
@@ -1973,25 +1983,26 @@
         },
         {
           "datum": "2026-07-22",
-          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
-        },
-        {
-          "datum": "2026-07-22",
           "namn": "Zak Heidi  (CIK 0002037046); Cricut, Inc.  (CIK 0001828962)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2037046/000203704626000007"
-        },
-        {
-          "datum": "2026-07-22",
-          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-24T09:10+00:00"
+      "vintage": "2026-07-24T11:21+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-24 13:03:04",
+          "emittent": "Lasernet Group AB",
+          "person": "Martin Bjäringer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "2666669,0",
+          "enhet": "Antal",
+          "pris": "30,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-24 11:08:30",
           "emittent": "ATLAS COPCO AKTIEBOLAG",
@@ -2530,22 +2541,11 @@
           "enhet": "Antal",
           "pris": "23,51",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-22 21:14:38",
-          "emittent": "Transferator AB (publ)",
-          "person": "Skywall AB",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2866,0",
-          "enhet": "Antal",
-          "pris": "1,36",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 17,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-24T09:10+00:00"
+      "vintage": "2026-07-24T11:21+00:00"
     }
   }
 }
