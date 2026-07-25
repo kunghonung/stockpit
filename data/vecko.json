@@ -1,0 +1,81 @@
+{
+  "genererad": "2026-07-25T01:06+00:00",
+  "sentiment": {
+    "spx26": [
+      100,
+      100.8,
+      101.5,
+      101.1,
+      102.2,
+      103.0,
+      102.6,
+      103.8,
+      104.5,
+      104.1,
+      105.2,
+      106.0,
+      105.5,
+      106.8,
+      107.4,
+      106.9,
+      108.1,
+      108.8,
+      108.3,
+      109.5,
+      110.2,
+      109.8,
+      110.9,
+      111.6,
+      111.2,
+      111.8
+    ],
+    "high52": 112.4,
+    "spread26": [
+      15,
+      12,
+      14,
+      10,
+      8,
+      11,
+      9,
+      12,
+      7,
+      9,
+      6,
+      8,
+      5,
+      7,
+      9,
+      6,
+      8,
+      5,
+      7,
+      4,
+      6,
+      11,
+      9,
+      8,
+      4,
+      1
+    ],
+    "kalla": "AAII Sentiment Survey (publika sidan, veckostaplarna)",
+    "vintage": "2026-07-22",
+    "bull": 29.6,
+    "neutral": 28.1,
+    "bear": 42.3,
+    "spread": -12.7
+  },
+  "crowding": {
+    "score": 7,
+    "komfort": 60,
+    "kalla": "CFTC COT (percentil 3 år). BAML-komponenten utgår ur autoflödet (stängd källa).",
+    "vintage": "2026-07-25",
+    "komponenter": [
+      {
+        "namn": "E-mini S&P 500 noncommercial netto",
+        "varde": "-22.4 % av OI · percentil 7/100 (3 år)",
+        "kalla": "CFTC COT 2026-07-21"
+      }
+    ]
+  }
+}
