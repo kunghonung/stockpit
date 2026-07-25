@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-25T08:22+00:00",
+  "genererad": "2026-07-25T10:14+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1982,10 +1982,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-25T08:22+00:00"
+      "vintage": "2026-07-25T10:14+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-25 11:56:19",
+          "emittent": "QBNK HOLDING AB (publ)",
+          "person": "Jörgen Karlsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2228,0",
+          "enhet": "Antal",
+          "pris": "6,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-25 11:56:19",
+          "emittent": "QBNK HOLDING AB (publ)",
+          "person": "Jörgen Karlsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "5688,0",
+          "enhet": "Antal",
+          "pris": "6,7176",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-25 10:05:20",
           "emittent": "Mendus AB",
@@ -2513,33 +2535,11 @@
           "enhet": "Antal",
           "pris": "36,598",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 09:58:19",
-          "emittent": "Mendus AB",
-          "person": "Johannes Preusting",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "9185,0",
-          "enhet": "Antal",
-          "pris": "6,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 09:33:27",
-          "emittent": "Mendus AB",
-          "person": "Dharminder Chahal",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10673,0",
-          "enhet": "Antal",
-          "pris": "6,5",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-25T08:22+00:00"
+      "vintage": "2026-07-25T10:14+00:00"
     }
   }
 }
