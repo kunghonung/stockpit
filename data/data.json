@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-26T17:40+00:00",
+  "genererad": "2026-07-26T19:32+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -426,7 +426,7 @@
         85.46,
         83.66,
         84.52,
-        86.94,
+        87.13,
         87.13
       ]
     },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 94,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       },
@@ -1982,10 +1982,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-26T17:40+00:00"
+      "vintage": "2026-07-26T19:32+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-26 19:46:51",
+          "emittent": "LASERNET GROUP AB",
+          "person": "helena Bjäringer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "30,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-26 14:39:26",
           "emittent": "K-Fast Holding AB",
@@ -2524,22 +2535,11 @@
           "enhet": "Antal",
           "pris": "30,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 11:08:30",
-          "emittent": "ATLAS COPCO AKTIEBOLAG",
-          "person": "Henrik Elmin",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "79442,0",
-          "enhet": "Antal",
-          "pris": "138,8",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-26T17:40+00:00"
+      "vintage": "2026-07-26T19:32+00:00"
     }
   }
 }
