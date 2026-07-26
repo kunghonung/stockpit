@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W30",
   "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-26T11:07+00:00",
+  "genererad": "2026-07-26T12:42+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -956,10 +956,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4071",
+      "varde": "4068",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,0 %",
+      "delta4v": "+0,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -968,10 +968,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,91",
+      "varde": "58,66",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,0 %",
+      "delta4v": "+0,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -980,10 +980,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,36",
+      "varde": "6,32",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,7 %",
+      "delta4v": "+4,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1932,13 +1932,13 @@
       "poster": [
         {
           "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
         },
         {
           "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
         },
         {
           "datum": "2026-07-21",
@@ -1956,9 +1956,19 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
         },
         {
+          "datum": "2026-07-22",
+          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
+        },
+        {
+          "datum": "2026-07-22",
+          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
+        },
+        {
           "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
         },
         {
           "datum": "2026-07-22",
@@ -1967,25 +1977,48 @@
         },
         {
           "datum": "2026-07-22",
-          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
-        },
-        {
-          "datum": "2026-07-22",
           "namn": "Zak Heidi  (CIK 0002037046); Cricut, Inc.  (CIK 0001828962)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2037046/000203704626000007"
-        },
-        {
-          "datum": "2026-07-22",
-          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-26T11:07+00:00"
+      "vintage": "2026-07-26T12:42+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-26 14:39:26",
+          "emittent": "K-Fast Holding AB",
+          "person": "Leif Håkan Astikainen",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "20501,0",
+          "enhet": "Antal",
+          "pris": "11,5348563",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-26 14:09:43",
+          "emittent": "Nolato AB",
+          "person": "Carina Margareta van den Berg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "47,95",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-26 13:23:23",
+          "emittent": "Enity Holding AB (publ)",
+          "person": "Mikael Walther",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5960,0",
+          "enhet": "Antal",
+          "pris": "76,47",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-26 12:06:55",
           "emittent": "Swedish Orphan Biovitrum AB (publ)",
@@ -2502,44 +2535,11 @@
           "enhet": "Antal",
           "pris": "138,8",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 11:08:30",
-          "emittent": "ATLAS COPCO AKTIEBOLAG",
-          "person": "Henrik Elmin",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "79442,0",
-          "enhet": "Antal",
-          "pris": "138,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 11:08:30",
-          "emittent": "ATLAS COPCO AKTIEBOLAG",
-          "person": "Henrik Elmin",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "79442,0",
-          "enhet": "Antal",
-          "pris": "199,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 11:06:44",
-          "emittent": "Ovzon AB",
-          "person": "Harri Larsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2606,0",
-          "enhet": "Antal",
-          "pris": "38,36",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-26T11:07+00:00"
+      "vintage": "2026-07-26T12:42+00:00"
     }
   }
 }
