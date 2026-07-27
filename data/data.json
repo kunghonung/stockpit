@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-27",
-  "genererad": "2026-07-27T11:37+00:00",
+  "genererad": "2026-07-27T15:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 11,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         120.1,
         115.3,
         116.17,
-        116.17
+        114.56
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         95.98,
         96.14,
         98.46,
-        98.46
+        97.87
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 9,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         87.6,
         88.19,
         85.22,
-        85.22
+        86.82
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         87.39,
         88.13,
         89.93,
-        89.93
+        90.05
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         86.39,
         88.87,
         88.28,
-        88.28
+        89.44
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         94.3,
         95.93,
         97.38,
-        97.38
+        98.3
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.66,
         84.52,
         87.13,
-        87.13
+        86.46
       ]
     },
     {
@@ -478,7 +478,7 @@
         93.31,
         96.84,
         98.55,
-        98.55
+        98.46
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 1,
+      "rsRank": 3,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         73.95,
         78.65,
         81.78,
-        81.78
+        80.33
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 1,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         97.87,
         100.39,
         101.07,
-        101.07
+        102.09
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 11,
+      "rsRank": 10,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         93.18,
         93.19,
         88.84,
-        88.84
+        89.96
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.7,
-      "delta": "−1,0 · 1 v",
+      "varde": 19.3,
+      "delta": "+0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 95,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 102,
+        "index": 101,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 95,
+        "index": 92,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,7 +766,7 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 97,
+        "index": 96,
         "pil": "ned",
         "status": "gul"
       }
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.7,
+      "varde": 19.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -956,10 +956,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4102",
+      "varde": "4078",
       "enhet": "USD/oz",
-      "pil": "upp",
-      "delta4v": "+0,6 %",
+      "pil": "ned",
+      "delta4v": "−0,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -968,10 +968,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,51",
+      "varde": "58,97",
       "enhet": "USD/oz",
-      "pil": "upp",
-      "delta4v": "+0,5 %",
+      "pil": "ned",
+      "delta4v": "−0,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -980,10 +980,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,40",
+      "varde": "6,39",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,2 %",
+      "delta4v": "+4,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -991,7 +991,7 @@
       "vintage": "2026-07-27"
     },
     "olja": {
-      "v": 89.43,
+      "v": 90.03,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-27"
     }
@@ -1675,7 +1675,7 @@
           101.6,
           101.76,
           101.62,
-          101.62
+          101.5
         ]
       },
       {
@@ -1716,7 +1716,7 @@
           110.04,
           107.29,
           106.06,
-          106.06
+          105.39
         ]
       },
       {
@@ -1757,7 +1757,7 @@
           95.09,
           96.8,
           97.69,
-          98.56
+          97.88
         ]
       },
       {
@@ -1798,7 +1798,7 @@
           109.61,
           104.32,
           105.56,
-          106.08
+          105.92
         ]
       },
       {
@@ -1839,7 +1839,7 @@
           103.42,
           99.53,
           100.04,
-          100.04
+          99.78
         ]
       },
       {
@@ -1880,7 +1880,7 @@
           82.7,
           83.85,
           84.83,
-          84.83
+          86.1
         ]
       },
       {
@@ -1921,7 +1921,7 @@
           91.81,
           92.66,
           91.39,
-          91.39
+          92.54
         ]
       }
     ],
@@ -1962,13 +1962,13 @@
         },
         {
           "datum": "2026-07-24",
-          "namn": "Bojanowski Carolyn  (CIK 0001964380); GENESCO INC  (CIK 0000018498)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1964380/000119312526316050"
+          "namn": "Meixelsperger Mary E  (CIK 0001606006); GENESCO INC  (CIK 0000018498)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1606006/000119312526316049"
         },
         {
           "datum": "2026-07-24",
-          "namn": "Meixelsperger Mary E  (CIK 0001606006); GENESCO INC  (CIK 0000018498)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1606006/000119312526316049"
+          "namn": "Bojanowski Carolyn  (CIK 0001964380); GENESCO INC  (CIK 0000018498)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1964380/000119312526316050"
         },
         {
           "datum": "2026-07-24",
@@ -1982,10 +1982,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-27T11:37+00:00"
+      "vintage": "2026-07-27T15:10+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-27 16:46:06",
+          "emittent": "Mometum Group AB",
+          "person": "Lars Fredin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "3443,0",
+          "enhet": "Antal",
+          "pris": "145,33",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 16:21:13",
+          "emittent": "4C Group AB",
+          "person": "Andreas Hedskog",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "821332,0",
+          "enhet": "Antal",
+          "pris": "7,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 15:00:30",
+          "emittent": "Lasernet Group AB",
+          "person": "Sophie Reinius",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "7469,0",
+          "enhet": "Antal",
+          "pris": "30,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-27 13:36:35",
           "emittent": "Lasernet Group AB (publ)",
@@ -2502,44 +2535,11 @@
           "enhet": "Antal",
           "pris": "6,50",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 21:24:47",
-          "emittent": "4C Group AB",
-          "person": "Mikael Grape",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "19000,0",
-          "enhet": "Antal",
-          "pris": "7,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 19:56:43",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1200000,0",
-          "enhet": "Antal",
-          "pris": "157,4378",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-24 19:56:43",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1200000,0",
-          "enhet": "Antal",
-          "pris": "157,4378",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-27T11:37+00:00"
+      "vintage": "2026-07-27T15:10+00:00"
     }
   }
 }
