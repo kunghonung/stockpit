@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "lage": "LIVE",
-  "asOfWeek": "2026-W30",
-  "asOfDatum": "2026-07-24",
-  "genererad": "2026-07-26T22:41+00:00",
+  "asOfWeek": "2026-W31",
+  "asOfDatum": "2026-07-27",
+  "genererad": "2026-07-27T00:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -95,7 +95,7 @@
       },
       "insynKluster": 0,
       "rsRank": 9,
-      "rsRankForra": 2,
+      "rsRankForra": 9,
       "relSerie19": [
         100.0,
         101.2,
@@ -151,7 +151,7 @@
       },
       "insynKluster": 1,
       "rsRank": 5,
-      "rsRankForra": 1,
+      "rsRankForra": 5,
       "relSerie19": [
         100.0,
         99.46,
@@ -202,7 +202,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 10,
-      "rsRankForra": 3,
+      "rsRankForra": 10,
       "relSerie19": [
         100.0,
         100.89,
@@ -253,7 +253,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 7,
-      "rsRankForra": 4,
+      "rsRankForra": 7,
       "relSerie19": [
         100.0,
         99.65,
@@ -304,7 +304,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 8,
-      "rsRankForra": 5,
+      "rsRankForra": 8,
       "relSerie19": [
         100.0,
         96.82,
@@ -355,7 +355,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 3,
-      "rsRankForra": 6,
+      "rsRankForra": 3,
       "relSerie19": [
         100.0,
         99.08,
@@ -407,7 +407,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 6,
-      "rsRankForra": 7,
+      "rsRankForra": 6,
       "relSerie19": [
         100.0,
         98.28,
@@ -458,7 +458,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 4,
-      "rsRankForra": 8,
+      "rsRankForra": 4,
       "relSerie19": [
         100.0,
         100.55,
@@ -509,7 +509,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 1,
-      "rsRankForra": 9,
+      "rsRankForra": 1,
       "relSerie19": [
         100.0,
         91.57,
@@ -561,7 +561,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 2,
-      "rsRankForra": 10,
+      "rsRankForra": 2,
       "relSerie19": [
         100.0,
         100.16,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-07-24",
+      "vintage": "2026-07-27",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-07-24",
+      "vintage": "2026-07-27",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 106,
+        "index": 105,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 100,
         "pil": "upp",
         "status": "gron"
       },
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-07-24"
+      "vintage": "2026-07-27"
     },
     "crowding": {
       "score": 7,
@@ -956,26 +956,26 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4089",
+      "varde": "4097",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,3 %",
+      "delta4v": "+0,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-07-24"
+      "vintage": "2026-07-27"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,88",
+      "varde": "59,95",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,1 %",
+      "delta4v": "+1,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-07-24"
+      "vintage": "2026-07-27"
     },
     "koppar": {
       "namn": "Koppar",
@@ -988,12 +988,12 @@
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-07-24"
+      "vintage": "2026-07-27"
     },
     "olja": {
-      "v": 91.21,
+      "v": 91.96,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-07-24"
+      "vintage": "2026-07-27"
     }
   },
   "megatrender": [
@@ -1635,7 +1635,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-07-24",
+    "vintage": "2026-07-27",
     "marknader": [
       {
         "namn": "USA",
@@ -1781,23 +1781,23 @@
         ],
         "relSerie19": [
           100.0,
-          96.04,
-          98.94,
-          97.69,
-          100.03,
-          98.92,
-          101.75,
-          100.47,
-          102.36,
-          105.47,
-          108.73,
-          106.37,
-          113.87,
-          113.34,
-          112.6,
-          109.61,
-          104.32,
-          105.56,
+          96.49,
+          92.33,
+          95.1,
+          97.96,
+          99.26,
+          96.56,
+          102.61,
+          99.24,
+          100.72,
+          108.31,
+          107.28,
+          105.51,
+          116.42,
+          111.98,
+          111.51,
+          111.5,
+          104.79,
           105.56
         ]
       },
@@ -1931,58 +1931,58 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-07-21",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); RENN Fund, Inc.  (CIK 0000919567)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926023926"
+          "datum": "2026-07-24",
+          "namn": "Markley John D. Jr.  (CIK 0001491492); InterDigital, Inc.  (CIK 0001405495)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1491492/000162828026049483"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Hamilton Paul  (CIK 0001938019); GameSquare Holdings, Inc.  (CIK 0001714562)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1938019/000149315226034090"
+          "datum": "2026-07-24",
+          "namn": "Karbon Capital Partners Core Holdings, LLC  (CIK 0002100658); Karbon Capital Partners Corp.  (CIK 0002088749)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2100658/000119312526316057"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Lasda Bridget McCarthy  (CIK 0002145361); Laird Superfood, Inc.  (CIK 0001650696)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2145361/000143774926024015"
+          "datum": "2026-07-24",
+          "namn": "Brock Charisse  (CIK 0001657787); CONAGRA BRANDS INC.  (CIK 0000023217)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1657787/000165778726000004"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Baumgartner Jeffrey W  (CIK 0001777830); CIRRUS LOGIC, INC.  (CIK 0000772406)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1777830/000177783026000014"
+          "datum": "2026-07-24",
+          "namn": "Hasiba Adam  (CIK 0001814687); ONESPAWORLD HOLDINGS Ltd  (CIK 0001758488)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1814687/000119312526316589"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "RA Capital Healthcare Fund LP  (CIK 0001315082); RA CAPITAL MANAGEMENT, L.P.  (CIK 0001346824)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1315082/000123191926000776"
+          "datum": "2026-07-24",
+          "namn": "STIEFLER JEFFREY E  (CIK 0001227965); ONESPAWORLD HOLDINGS Ltd  (CIK 0001758488)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1227965/000119312526316313"
         },
         {
-          "datum": "2026-07-21",
-          "namn": "Anderson Joshua Joseph  (CIK 0001886368); Workhorse Group Inc.  (CIK 0001425287)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1886368/000188636826000002"
+          "datum": "2026-07-24",
+          "namn": "Ritter Matthew John  (CIK 0002146309); FIRST INTERSTATE BANCSYSTEM INC  (CIK 0000860413)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2146309/000214630926000004"
         },
         {
-          "datum": "2026-07-22",
-          "namn": "Chernett Jorey  (CIK 0002042077); Oncology Institute, Inc.  (CIK 0001799191)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2042077/000092189526001852"
+          "datum": "2026-07-24",
+          "namn": "Bojanowski Carolyn  (CIK 0001964380); GENESCO INC  (CIK 0000018498)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1964380/000119312526316050"
         },
         {
-          "datum": "2026-07-22",
-          "namn": "KIM AGNES C  (CIK 0001158840); AMKOR TECHNOLOGY, INC.  (CIK 0001047127)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1158840/000115884026000001"
+          "datum": "2026-07-24",
+          "namn": "Meixelsperger Mary E  (CIK 0001606006); GENESCO INC  (CIK 0000018498)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1606006/000119312526316049"
         },
         {
-          "datum": "2026-07-22",
-          "namn": "Zak Heidi  (CIK 0002037046); Cricut, Inc.  (CIK 0001828962)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2037046/000203704626000007"
+          "datum": "2026-07-24",
+          "namn": "Cooper Kerry Whorton  (CIK 0001817263); PG&E Corp  (CIK 0001004980)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1817263/000162828026049606"
         },
         {
-          "datum": "2026-07-22",
-          "namn": "Schwartz Sanford Harold  (CIK 0001891751); Rivian Automotive, Inc. / DE  (CIK 0001874178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891751/000189175126000008"
+          "datum": "2026-07-24",
+          "namn": "Ye Gang  (CIK 0001729171); Sea Ltd  (CIK 0001703399)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1729171/000119312526314996"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-26T22:41+00:00"
+      "vintage": "2026-07-27T00:10+00:00"
     },
     "se": {
       "poster": [
@@ -2539,7 +2539,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-26T22:41+00:00"
+      "vintage": "2026-07-27T00:10+00:00"
     }
   }
 }
