@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-27",
-  "genererad": "2026-07-27T20:41+00:00",
+  "genererad": "2026-07-27T22:15+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         118.34,
         120.1,
         115.3,
-        117.99,
+        116.17,
         115.1
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         98.35,
         95.98,
         96.14,
-        98.17,
+        98.46,
         98.73
       ]
     },
@@ -221,7 +221,7 @@
         87.17,
         87.6,
         88.19,
-        84.57,
+        85.22,
         86.29
       ]
     },
@@ -272,7 +272,7 @@
         90.53,
         87.39,
         88.13,
-        88.32,
+        89.93,
         90.14
       ]
     },
@@ -323,7 +323,7 @@
         88.48,
         86.39,
         88.87,
-        87.4,
+        88.28,
         89.55
       ]
     },
@@ -374,7 +374,7 @@
         97.31,
         94.3,
         95.93,
-        96.8,
+        97.38,
         97.85
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         85.46,
         83.66,
         84.52,
-        87.03,
+        87.13,
         85.96
       ]
     },
@@ -477,7 +477,7 @@
         95.08,
         93.31,
         96.84,
-        96.51,
+        98.55,
         98.12
       ]
     },
@@ -528,7 +528,7 @@
         72.43,
         73.95,
         78.65,
-        81.53,
+        81.78,
         80.03
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         99.05,
         97.87,
         100.39,
-        100.31,
+        101.07,
         102.07
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         94.35,
         93.18,
         93.19,
-        88.4,
+        88.84,
         89.98
       ]
     }
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 18.7,
-      "delta": "−0,1 · 1 v",
+      "delta": "+0,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -956,7 +956,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4081",
+      "varde": "4083",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+0,1 %",
@@ -968,10 +968,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,69",
+      "varde": "58,80",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,9 %",
+      "delta4v": "−0,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -980,10 +980,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,40",
+      "varde": "6,39",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,2 %",
+      "delta4v": "+4,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -991,7 +991,7 @@
       "vintage": "2026-07-27"
     },
     "olja": {
-      "v": 87.66,
+      "v": 87.83,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-27"
     }
@@ -1674,7 +1674,7 @@
           101.21,
           101.6,
           101.76,
-          101.49,
+          101.62,
           101.44
         ]
       },
@@ -1715,7 +1715,7 @@
           109.14,
           110.04,
           107.29,
-          107.23,
+          106.06,
           105.52
         ]
       },
@@ -1756,7 +1756,7 @@
           97.77,
           95.09,
           96.8,
-          96.87,
+          97.69,
           97.51
         ]
       },
@@ -1797,7 +1797,7 @@
           112.6,
           109.61,
           104.32,
-          108.49,
+          105.56,
           105.87
         ]
       },
@@ -1838,7 +1838,7 @@
           102.56,
           103.42,
           99.53,
-          102.02,
+          100.04,
           100.3
         ]
       },
@@ -1879,7 +1879,7 @@
           80.02,
           82.7,
           83.85,
-          84.84,
+          84.83,
           86.14
         ]
       },
@@ -1920,7 +1920,7 @@
           93.2,
           91.81,
           92.66,
-          90.62,
+          91.39,
           92.86
         ]
       }
@@ -1982,10 +1982,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-27T20:41+00:00"
+      "vintage": "2026-07-27T22:15+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-27 23:58:52",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Aya Hosamaldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "302720,0",
+          "enhet": "Antal",
+          "pris": "0,1",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 23:58:52",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Aya Hosamaldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "104905,0",
+          "enhet": "Antal",
+          "pris": "0,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 23:58:52",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Aya Hosamaldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "301728,0",
+          "enhet": "Antal",
+          "pris": "0,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 23:58:52",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Aya Hosamaldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "480563,0",
+          "enhet": "Antal",
+          "pris": "0,103",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 23:58:52",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Aya Hosamaldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "263754,0",
+          "enhet": "Antal",
+          "pris": "0,102",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 23:58:52",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Aya Hosamaldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "294734,0",
+          "enhet": "Antal",
+          "pris": "0,1",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-27 23:18:19",
+          "emittent": "Mresell Holding",
+          "person": "Jan Blomquist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9982,0",
+          "enhet": "Antal",
+          "pris": "1,81",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-27 21:57:52",
           "emittent": "AB Volvo",
@@ -2458,88 +2535,11 @@
           "enhet": "Antal",
           "pris": "2,22",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 19:46:51",
-          "emittent": "LASERNET GROUP AB",
-          "person": "helena Bjäringer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "8000,0",
-          "enhet": "Antal",
-          "pris": "30,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 14:39:26",
-          "emittent": "K-Fast Holding AB",
-          "person": "Leif Håkan Astikainen",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "20501,0",
-          "enhet": "Antal",
-          "pris": "11,5348563",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 14:09:43",
-          "emittent": "Nolato AB",
-          "person": "Carina Margareta van den Berg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "47,95",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 13:23:23",
-          "emittent": "Enity Holding AB (publ)",
-          "person": "Mikael Walther",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5960,0",
-          "enhet": "Antal",
-          "pris": "76,47",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 12:06:55",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Norbert Oppitz",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "66702,0",
-          "enhet": "Antal",
-          "pris": "454,443909",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 12:02:07",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Norbert Oppitz",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "66702,0",
-          "enhet": "Antal",
-          "pris": "454,443909",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-26 11:55:49",
-          "emittent": "FASTIGHETS AKTIEBOLAGET TRIANON",
-          "person": "olof andersson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "500000,0",
-          "enhet": "Antal",
-          "pris": "17,6",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-27T20:41+00:00"
+      "vintage": "2026-07-27T22:15+00:00"
     }
   }
 }
