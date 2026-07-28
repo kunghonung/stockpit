@@ -11,11 +11,11 @@ Käll- och budgetbeslut (v1 — dokumenterade avvikelser, inte tysta):
   IN  US: EDGAR submissions + Form 4-XML (transaktionskod P), cache per accession
       i screen_state.json så bara nya dokument hämtas. SE: FI:s insyns-CSV,
       EN export per körning (samma mönster som update_data.py), "Förvärv".
-  ES  FMP price-target-consensus i 5-dagarsrotation (gratisplanens ~250 anrop/dag
-      räcker inte för 543 bolag dagligen). Riktkursriktningen byggs organiskt ur
-      state-historiken — ES är null tills ≥2 observationer ≥14 dagar isär finns.
-  VÄ  FMP quote (P/E) mot sektorns fwdPE10y ur data/data.json — SEKTORPROXY:
-      "egen 5-årsmedian" kräver betald historik; byts när sådan finns. Märkt i skal.
+  ES  FMP price-target-summary (Starter): riktkurssnittets 30 d-snitt mot
+      90 d-snittet — direkt riktning för hela universum varje dag.
+  VÄ  Forward P/E = senaste pris (Yahoo) / nästa räkenskapsårs epsAvg
+      (FMP analyst-estimates, Starter) mot sektorns fwdPE10y. Ersatte
+      quote.pe som aldrig existerade i /stable/quote (buggfix 2026-07-28).
   FL  Sektorns flodeM ur data/data.json (sektorproxy per brief).
   MA  Sektor i topp 4 på revQ2-rank ELLER RS-rank — proxy för linserna tills
       sektorpoängen exponeras i datat (full portering = dubblerad logik utan vakt).
@@ -50,7 +50,7 @@ import os
 FMP_NYCKEL = os.environ.get("FMP_API_KEY", "")
 
 VIKTER = {"IN": 0.25, "ES": 0.20, "TK": 0.15, "VÄ": 0.15, "BL": 0.10, "FL": 0.10, "MA": 0.05}
-ROTATIONSDELAR = 5          # ES/VÄ-rotation: full FMP-täckning var 5:e vardag
+ROTATIONSDELAR = 1          # Starter-plan: hela universum varje dag (rotation kvar som struktur)
 ES_FARSK_DAGAR = 7          # cachade FMP-delpoäng räknas färska så länge
 IN_FONSTER_DAGAR = 30
 IN_DIPP_PROCENT = 15
@@ -217,9 +217,9 @@ def fi_blankning(state, idag):
 
 
 # ---------------------------------------------------------------- FMP (ES + VÄ)
-def fmp(endpoint, symbol):
-    url = ("https://financialmodelingprep.com/stable/%s?symbol=%s&apikey=%s"
-           % (endpoint, urllib.parse.quote(symbol), FMP_NYCKEL))
+def fmp(endpoint, symbol, extra=""):
+    url = ("https://financialmodelingprep.com/stable/%s?symbol=%s%s&apikey=%s"
+           % (endpoint, urllib.parse.quote(symbol), extra, FMP_NYCKEL))
     try:
         return hamta_json(url, timeout=20)
     except urllib.error.HTTPError:
@@ -377,15 +377,17 @@ def main():
 
     lista = []
     tk_ok = 0
-    fmp_budget = 200  # lämnar plats för TP-acc-ingesten i samma dygnskvot (~250 tak)
+    fmp_budget = 1200  # Starter: 543 bolag × 2 anrop ryms; taket är per minut (300), inte per dygn
     for idx, b in enumerate(bolag):
         tick = b["ticker"]
         signaler = {}
 
-        # --- TK (+ breddunderlag ur samma dagserie)
+        # --- TK (+ breddunderlag + senaste pris ur samma dagserie)
         tk = None
+        senaste_pris = None
         try:
             dagar = yahoo_dagserie(b["yahooSymbol"])
+            senaste_pris = dagar[-1] if dagar else None
             time.sleep(YAHOO_PAUS)
             stang = veckoserie_ur_dagar(dagar)
             ixs = index_serier.get(b["marknad"])
@@ -429,41 +431,51 @@ def main():
             in_sig = None
         signaler["IN"] = in_sig
 
-        # --- ES + VÄ (FMP-rotation + färskhetscache)
+        # --- ES + VÄ (Starter: hela universum dagligen, riktiga endpoints)
         es = es_cache.get(tick)
         va = va_cache.get(tick)
-        min_rotdag = hash(tick) % ROTATIONSDELAR
-        if min_rotdag == rotdag and FMP_NYCKEL and fmp_budget >= 2:
+        if FMP_NYCKEL and fmp_budget >= 2:
             fmp_budget -= 2
-            symbol = b["yahooSymbol"] if b["marknad"] == "US" else b["yahooSymbol"]
-            ptc = fmp("price-target-consensus", symbol)
-            kvot = fmp("quote", symbol)
-            nu = None
-            if isinstance(ptc, list) and ptc and ptc[0].get("targetConsensus"):
-                nu = float(ptc[0]["targetConsensus"])
-            historik = (es or {}).get("historik", [])
-            if nu is not None:
-                historik = (historik + [{"d": idag.isoformat(), "tp": nu}])[-12:]
-            riktning = None
-            for aldre in reversed(historik[:-1]):
-                if (idag - date.fromisoformat(aldre["d"])).days >= 14:
-                    riktning = (historik[-1]["tp"] / aldre["tp"] - 1) * 100 if aldre["tp"] else None
-                    break
-            es = {"datum": idag.isoformat(), "historik": historik, "riktning": riktning}
-            es_cache[tick] = es
-            pe = None
-            if isinstance(kvot, list) and kvot and kvot[0].get("pe"):
-                pe = float(kvot[0]["pe"])
-            va = {"datum": idag.isoformat(), "pe": pe}
-            va_cache[tick] = va
+            symbol = b["yahooSymbol"]
+            # ES: riktkurssnittets riktning = 30 d-snitt mot 90 d-snitt ur
+            # price-target-summary — direkt, ingen egen historikuppbyggnad.
+            try:
+                pts = fmp("price-target-summary", symbol)
+                p0 = pts[0] if isinstance(pts, list) and pts else {}
+                m_avg = p0.get("lastMonthAvgPriceTarget")
+                q_avg = p0.get("lastQuarterAvgPriceTarget")
+                m_n = p0.get("lastMonthCount") or 0
+                q_n = p0.get("lastQuarterCount") or 0
+                riktning = None
+                if m_avg and q_avg and m_n >= 1 and q_n >= 3:
+                    riktning = round((m_avg / q_avg - 1) * 100, 1)
+                es = {"datum": idag.isoformat(), "riktning": riktning}
+                es_cache[tick] = es
+            except Exception:
+                pass  # behåll cachad es
+            # VÄ: forward P/E = senaste pris / nästa räkenskapsårs epsAvg.
+            # analyst-estimates sorteras FALLANDE på datum — välj minsta datum
+            # >= idag. Ersätter quote.pe som aldrig fanns i /stable/quote
+            # (fältbuggen som gjorde VÄ permanent null, hittad 2026-07-27).
+            try:
+                est = fmp("analyst-estimates", symbol, "&period=annual&limit=10")  # Starter: limit max 10 (12 ger 402)
+                eps_next = None
+                if isinstance(est, list):
+                    kommande = [p for p in est
+                                if p.get("date", "") >= idag.isoformat() and (p.get("epsAvg") or 0) > 0]
+                    if kommande:
+                        eps_next = float(min(kommande, key=lambda p: p["date"])["epsAvg"])
+                fwd_pe = round(senaste_pris / eps_next, 1) if (eps_next and senaste_pris) else None
+                va = {"datum": idag.isoformat(), "pe": fwd_pe}
+                va_cache[tick] = va
+            except Exception:
+                pass  # behåll cachad va
 
         es_sig = None
         if es and es.get("riktning") is not None:
-            farsk = (idag - date.fromisoformat(es["datum"])).days <= ES_FARSK_DAGAR
-            if farsk or True:  # riktningen bygger på historik — vintage redovisas i skal
-                r = es["riktning"]
-                es_sig = {"aktiv": r >= 0, "delpoang": round(klamp(55 + r * 8)),
-                          "riktning": round(r, 1), "vintage": es["datum"]}
+            r = es["riktning"]
+            es_sig = {"aktiv": r >= 0, "delpoang": round(klamp(55 + r * 4)),
+                      "riktning": round(r, 1), "vintage": es["datum"]}
         signaler["ES"] = es_sig
 
         va_sig = None
@@ -525,11 +537,11 @@ def main():
         if "IN" in aktiva:
             skal_delar.append("Insynskluster (%d köpare 30 d)" % signaler["IN"]["kopare"])
         if "ES" in aktiva:
-            skal_delar.append(("riktkurs %+.1f %% (%s)" % (signaler["ES"]["riktning"], signaler["ES"]["vintage"])).replace(".", ","))
+            skal_delar.append(("riktkurssnitt %+.1f %% (30 d mot 90 d)" % signaler["ES"]["riktning"]).replace(".", ","))
         if "TK" in aktiva:
             skal_delar.append(("RS +%.1f %% mot SMA12, över 40 v-snittet" % signaler["TK"]["avst12"]).replace(".", ","))
         if "VÄ" in aktiva:
-            skal_delar.append("P/E-rabatt %.0f %% mot sektorns 10-årssnitt (proxy)" % signaler["VÄ"]["rabatt"])
+            skal_delar.append("fwd P/E-rabatt %.0f %% mot sektorns 10-årssnitt" % signaler["VÄ"]["rabatt"])
         if "FL" in aktiva:
             skal_delar.append("sektorinflöde (proxy)")
         if "MA" in aktiva:
@@ -589,7 +601,7 @@ def main():
         "vikter": VIKTER,
         "tackning": round(tackning, 3),
         "rotation": {"delar": ROTATIONSDELAR, "dagensDel": rotdag,
-                     "kommentar": "ES/VÄ via FMP i rotation — gratisplanens anropstak"},
+                     "kommentar": "Starter-plan: ES/VÄ för hela universum varje dag"},
         "meta": {"koprek": spegel},
         "lista": lista,
     }

@@ -1904,7 +1904,14 @@ function kontrolleraOmprovning(villkor, data, analys){
 /* REGELVERK §4: närhet till tröskel × konsekvensvikt (kurerad per regel, 1–3; saknas → 1) */
 function riskTopp(data, antal){
   return data.riskregler.map(function(r){
-    return { regel: r, avvikelse: (r.varde - r.komfort) / r.komfort * (r.vikt != null ? r.vikt : 1) };
+    var varde = r.varde;
+    /* crowding-regeln speglar regim.crowding.score (COT-percentilen) — annars
+       visar risklistan ett kurerat 72 medan regimpanelen visar levande 7 */
+    if(r.id === "crowding" && data.regim && data.regim.crowding && data.regim.crowding.score != null){
+      varde = data.regim.crowding.score;
+    }
+    var regel = varde === r.varde ? r : Object.assign({}, r, { varde: varde });
+    return { regel: regel, avvikelse: (varde - r.komfort) / r.komfort * (r.vikt != null ? r.vikt : 1) };
   }).sort(function(a, b){ return b.avvikelse - a.avvikelse; }).slice(0, antal);
 }
 function riskText(r){
@@ -1945,13 +1952,13 @@ function sentimentDivergens(data){
    förblir friska relativt sig själva, medan LIVE-fält som slutat uppdateras
    får växande gap mot den tickande genererad-stämpeln. */
 var KADENSGRANSER = [
-  { monster: /^(tripwires\[\]|makro\.(rantekurva|realranta|guld|silver|koppar)|regim\.kvoterLineage|geo)$/, dagar: 1 },
+  { monster: /^(tripwires\[\]|makro\.(rantekurva|realranta|guld|silver|koppar|olja)|regim\.kvoterLineage|geo|insynFlode\.(us|se))$/, dagar: 1 },
   { monster: /^(tpa|makro\.bredd)$/, dagar: 3 },
   { monster: /^(sektorer\[\]\.(revQ2|fwdPE)|regim\.crowding)$/, dagar: 10 },
   { monster: /^makro\.sentiment$/, dagar: 14 },
   { monster: /^aktierLineage$/, dagar: 30 },
   { monster: /^(sektorer\[\]\.flodeM|flodenNoter\[\])$/, dagar: 45 },
-  { monster: /^(sektorer\[\]\.fwdPE10y|regim\.aiCapex|megatrender\[\])$/, dagar: 120 },
+  { monster: /^(sektorer\[\]\.fwdPE10y|regim\.aiCapex(Detalj)?|megatrender\[\])$/, dagar: 120 },
   { monster: /^sektorer\[\]\.perfH1$/, dagar: 3650 } /* historiskt halvårsfaktum — förfaller inte */
 ];
 /* Tolkar alla vintageformat i datat; "approx" = osäkerhetsmärkning, inte ålder. */
@@ -2842,11 +2849,15 @@ function renderaRegim(data, regim, slut){
     if(y == null) return -1;
     return x - y;
   }).map(bulletHtml).join("");
-  var c = data.regim.aiCapex;
+  var cRaw = data.regim.aiCapex, cDet = data.regim.aiCapexDetalj || {};
+  var c = (typeof cRaw === "number")
+    ? { kvot: cRaw, capexYoY: cDet.capexYoY, pil: cRaw > 1.3 ? "upp" : "hoger",
+        kalla: cDet.kalla || "FMP cash-flow TTM", vintage: cDet.vintage || "—" }
+    : cRaw;
   html += '<div class="nrad" title="' + esc("AI-capexcykel: SOX/SPX + hyperscaler-capex å/å. Källa: " + c.kalla + " · " + c.vintage) + '">' +
     '<span class="punkt ' + (c.pil === "upp" ? "gul" : "gron") + '"></span>' +
     '<span class="etikett">AI-capexcykel</span>' +
-    '<span class="beskr">capex +' + c.capexYoY + " % å/å</span>" +
+    '<span class="beskr">' + (c.capexYoY != null ? "capex " + (c.capexYoY > 0 ? "+" : "") + c.capexYoY + " % å/å" : "capex å/å") + "</span>" +
     '<span class="varde">' + svTal(c.kvot, 2) + "</span>" +
     '<span class="riktpil ' + c.pil + '">' + PIL[c.pil] + "</span></div>";
   var cr = data.regim.crowding;
@@ -2943,12 +2954,14 @@ function renderaMakro(data, analys, slut){
   s += "</svg></div>";
   s += '<div class="kurvlegend" aria-hidden="true"><span><i class="ln-nu"></i>nu</span><span><i class="ln-forr"></i>för 1 mån</span></div>';
   var b = data.makro.bredd;
-  var span = b.skala[1] - b.skala[0];
-  var pct = function(v){ return Math.max(0, Math.min(100, (v - b.skala[0]) / span * 100)); };
+  /* bredd är procent — skala saknas när sidofilen mergats utan kurerad skala */
+  var bSkala = b.skala || [0, 100];
+  var span = bSkala[1] - bSkala[0];
+  var pct = function(v){ return Math.max(0, Math.min(100, (v - bSkala[0]) / span * 100)); };
   var breddHtml = '<div class="bullet" title="' + esc("Marknadsbredd. Källa: " + b.kalla + " · " + b.vintage) + '">' +
     '<div class="nrad"><span class="etikett">S&amp;P&gt;50d</span>' +
       '<span class="varde">' + b.over50 + ' <span class="enhet">%</span></span>' +
-      '<span class="meta">' + esc(b.delta) + "</span>" +
+      '<span class="meta">' + esc(b.delta || "") + "</span>" +
       '<span class="meta">200d ' + b.over200 + " %</span></div>" +
     '<div class="spar" role="img" aria-label="Marknadsbredd ' + b.over50 + ' procent över 50-dagarssnittet">' +
       '<span class="zon rod" style="left:0;width:' + pct(b.zoner[0]) + '%"></span>' +

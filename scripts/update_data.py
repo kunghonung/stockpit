@@ -313,10 +313,17 @@ def uppdatera_sidofiler(data):
     bredd = las_json(ROT / "data" / "bredd.json", None)
     if bredd and bredd.get("vintage"):
         gamla = data.get("makro", {}).get("bredd", {}) or {}
-        if gamla.get("vintage") != bredd["vintage"] or gamla.get("over50") != bredd["over50"]:
-            bredd = dict(bredd)
-            bredd["zoner"] = gamla.get("zoner", [45, 75])
-            data.setdefault("makro", {})["bredd"] = bredd
+        # "skala" not in gamla självläker snapshots där en tidigare merge tappade fälten
+        if (gamla.get("vintage") != bredd["vintage"] or gamla.get("over50") != bredd["over50"]
+                or "skala" not in gamla):
+            ny = dict(bredd)
+            ny["zoner"] = gamla.get("zoner", [45, 75])
+            ny["skala"] = gamla.get("skala", [0, 100])  # bredd är procent — 0–100 är rätt skala
+            if gamla.get("over50") is not None and gamla.get("vintage") != bredd["vintage"]:
+                ny["delta"] = "%+d sedan förra" % (bredd["over50"] - gamla["over50"])
+            else:
+                ny["delta"] = gamla.get("delta", "")
+            data.setdefault("makro", {})["bredd"] = ny
     vecko = las_json(ROT / "data" / "vecko.json", None)
     if vecko:
         for sid, rev in (vecko.get("sektorRev") or {}).items():

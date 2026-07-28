@@ -167,15 +167,33 @@ def sentiment_aaii(data, idag):
     if len(tal) != 3 or not (80 <= sum(tal.values()) <= 120):
         raise ValueError("AAII-parsningen gav orimligt resultat: %s — behåller föregående." % tal)
     sn = data.setdefault("makro", {}).setdefault("sentiment", {})
+    ny_vintage = ("%s-%02d-%02d" % (vecka.group(3), int(vecka.group(1)), int(vecka.group(2)))
+                  if vecka else idag.isoformat())
+    ny_vecka = sn.get("vintage") != ny_vintage
     sn["bull"] = tal["bullish"]
     sn["neutral"] = tal["neutral"]
     sn["bear"] = tal["bearish"]
     sn["spread"] = round(tal["bullish"] - tal["bearish"], 1)
     sn["kalla"] = "AAII Sentiment Survey (publika sidan, veckostaplarna)"
-    sn["vintage"] = ("%s-%02d-%02d" % (vecka.group(3), int(vecka.group(1)), int(vecka.group(2)))
-                     if vecka else idag.isoformat())
-    print("C3: AAII bull %s / neutral %s / bear %s (v. %s)."
-          % (tal["bullish"], tal["neutral"], tal["bearish"], sn["vintage"]))
+    sn["vintage"] = ny_vintage
+    # Serierna som sentimentfliken RITAR (spx26/spread26/high52) ska också leva —
+    # annars uppdateras vintage medan kurvan är frusen testhistorik (upptäckt 2026-07-28).
+    # Append endast vid NY AAII-vecka så en omkörning inte dubblerar punkter.
+    if ny_vecka and isinstance(sn.get("spx26"), list) and sn["spx26"]:
+        try:
+            r = json.loads(hamta("https://query1.finance.yahoo.com/v8/finance/chart/SPY"
+                                 "?range=3mo&interval=1wk").decode("utf-8"))["chart"]["result"][0]
+            c = [v for v in r["indicators"]["quote"][0]["close"] if v is not None]
+            if len(c) >= 2 and c[-2]:
+                ny_spx = round(sn["spx26"][-1] * (c[-1] / c[-2]), 1)
+                sn["spx26"] = (sn["spx26"] + [ny_spx])[-26:]
+                sn["spread26"] = ((sn.get("spread26") or []) + [round(sn["spread"])])[-26:]
+                sn["high52"] = round(max(sn.get("high52") or 0, ny_spx), 1)
+        except Exception as fel:
+            print("C3: serie-append hoppades (%s) — bull/bear uppdaterade ändå." % fel)
+    print("C3: AAII bull %s / neutral %s / bear %s (v. %s)%s."
+          % (tal["bullish"], tal["neutral"], tal["bearish"], sn["vintage"],
+             "" if ny_vecka else " — samma vecka, serier oförändrade"))
 
 
 # ---------------------------------------------------------------- C4: COT
