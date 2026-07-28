@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-28",
-  "genererad": "2026-07-28T14:31+00:00",
+  "genererad": "2026-07-28T16:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.93,
         114.79,
         113.73,
-        110.13
+        111.59
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 6,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         99.26,
-        98.8
+        98.55
       ]
     },
     {
@@ -220,9 +220,9 @@
         86.4,
         86.82,
         87.4,
-        84.46,
+        83.73,
         85.53,
-        87.13
+        86.98
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         88.44,
         90.25,
         90.46,
-        92.71
+        92.02
       ]
     },
     {
@@ -322,9 +322,9 @@
         91.39,
         89.24,
         91.79,
-        91.18,
+        90.18,
         92.49,
-        96.27
+        94.4
       ]
     },
     {
@@ -375,7 +375,7 @@
         96.82,
         98.28,
         98.76,
-        101.81
+        100.49
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         87.47,
-        88.9
+        87.52
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -476,9 +476,9 @@
         94.55,
         92.8,
         96.31,
-        98.01,
+        95.88,
         97.58,
-        99.07
+        98.11
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 8,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         85.9,
         89.31,
         87.4,
-        87.73
+        85.56
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         101.9,
-        102.87
+        102.55
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -631,9 +631,9 @@
         95.36,
         94.17,
         94.18,
-        89.79,
+        89.25,
         90.94,
-        91.92
+        91.82
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.0,
-      "delta": "+1,9 · 1 v",
+      "varde": 18.0,
+      "delta": "−0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 99,
         "pil": "upp",
         "status": "gul"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 93,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -750,15 +750,15 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
-        "pil": "upp",
-        "status": "gron"
+        "index": 100,
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 88,
+        "index": 89,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,7 +766,7 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 95,
+        "index": 96,
         "pil": "ned",
         "status": "gul"
       }
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.0,
+      "varde": 18.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -961,10 +961,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4014",
+      "varde": "4044",
       "enhet": "USD/oz",
-      "pil": "ned",
-      "delta4v": "−0,2 %",
+      "pil": "upp",
+      "delta4v": "+0,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "56,95",
+      "varde": "57,72",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,1 %",
+      "delta4v": "−0,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,31",
+      "varde": "6,36",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,5 %",
+      "delta4v": "+4,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-28"
     },
     "olja": {
-      "v": 86.65,
+      "v": 83.89,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-28"
     }
@@ -1678,9 +1678,9 @@
           101.41,
           101.8,
           101.96,
-          101.82,
+          101.79,
           101.64,
-          101.89
+          101.87
         ]
       },
       {
@@ -1719,9 +1719,9 @@
           108.78,
           109.68,
           106.93,
-          105.7,
+          105.67,
           105.16,
-          103.78
+          104.39
         ]
       },
       {
@@ -1760,9 +1760,9 @@
           97.7,
           95.02,
           96.73,
-          97.62,
+          96.8,
           97.44,
-          98.15
+          97.64
         ]
       },
       {
@@ -1801,9 +1801,9 @@
           117.24,
           114.12,
           108.62,
-          112.99,
+          112.96,
           110.23,
-          106.39
+          105.72
         ]
       },
       {
@@ -1842,9 +1842,9 @@
           103.67,
           104.54,
           100.61,
-          101.13,
+          101.11,
           101.39,
-          99.33
+          99.76
         ]
       },
       {
@@ -1883,9 +1883,9 @@
           81.41,
           84.14,
           85.31,
-          86.31,
+          86.32,
           87.64,
-          88.29
+          87.8
         ]
       },
       {
@@ -1924,7 +1924,7 @@
           94.87,
           93.46,
           94.32,
-          93.02,
+          92.24,
           94.52,
           95.53
         ]
@@ -1967,11 +1967,6 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Connolly Thomas  (CIK 0001776597); 5C Lending Partners Corp.  (CIK 0001998387)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1776597/000093041326002187"
-        },
-        {
-          "datum": "2026-07-27",
           "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
         },
@@ -1984,13 +1979,40 @@
           "datum": "2026-07-27",
           "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
+        },
+        {
+          "datum": "2026-07-27",
+          "namn": "HUTTON GEORGE THOMPSON  (CIK 0001196460); SoFi Technologies, Inc.  (CIK 0001818874)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1196460/000119646026000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-28T14:31+00:00"
+      "vintage": "2026-07-28T16:21+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-28 17:47:02",
+          "emittent": "Hultström Group AB",
+          "person": "Petter Stillström",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "3,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-28 17:42:31",
+          "emittent": "Hultström Group AB",
+          "person": "Petter Stillström",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "108138,0",
+          "enhet": "Antal",
+          "pris": "3,89977103",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-28 14:29:27",
           "emittent": "Nordisk Bergteknik AB (publ)",
@@ -2518,33 +2540,11 @@
           "enhet": "Antal",
           "pris": "145,33",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-27 16:21:13",
-          "emittent": "4C Group AB",
-          "person": "Andreas Hedskog",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "821332,0",
-          "enhet": "Antal",
-          "pris": "7,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-27 15:00:30",
-          "emittent": "Lasernet Group AB",
-          "person": "Sophie Reinius",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "7469,0",
-          "enhet": "Antal",
-          "pris": "30,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-28T14:31+00:00"
+      "vintage": "2026-07-28T16:21+00:00"
     }
   }
 }
