@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
-  "asOfDatum": "2026-07-28",
-  "genererad": "2026-07-28T22:40+00:00",
+  "asOfDatum": "2026-07-29",
+  "genererad": "2026-07-29T00:07+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -220,7 +220,7 @@
         86.4,
         86.82,
         87.4,
-        83.73,
+        84.46,
         85.53,
         86.91
       ]
@@ -322,7 +322,7 @@
         91.39,
         89.24,
         91.79,
-        90.18,
+        91.18,
         92.49,
         94.11
       ]
@@ -476,7 +476,7 @@
         94.55,
         92.8,
         96.31,
-        95.88,
+        98.01,
         97.58,
         97.88
       ]
@@ -631,7 +631,7 @@
         95.36,
         94.17,
         94.18,
-        89.25,
+        89.79,
         90.94,
         92.07
       ]
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 18.2,
-      "delta": "−0,4 · 1 v",
+      "delta": "+1,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-07-28",
+      "vintage": "2026-07-29",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-07-28",
+      "vintage": "2026-07-29",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-07-28"
+      "vintage": "2026-07-29"
     },
     "crowding": {
       "score": 7,
@@ -961,26 +961,26 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4020",
+      "varde": "4024",
       "enhet": "USD/oz",
-      "pil": "ned",
-      "delta4v": "−0,0 %",
+      "pil": "upp",
+      "delta4v": "+0,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-07-28"
+      "vintage": "2026-07-29"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,28",
+      "varde": "57,46",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,5 %",
+      "delta4v": "−1,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-07-28"
+      "vintage": "2026-07-29"
     },
     "koppar": {
       "namn": "Koppar",
@@ -988,17 +988,17 @@
       "varde": "6,34",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,9 %",
+      "delta4v": "+4,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-07-28"
+      "vintage": "2026-07-29"
     },
     "olja": {
-      "v": 87.42,
+      "v": 86.95,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-07-28"
+      "vintage": "2026-07-29"
     }
   },
   "megatrender": [
@@ -1640,7 +1640,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-07-28",
+    "vintage": "2026-07-29",
     "marknader": [
       {
         "namn": "USA",
@@ -1678,7 +1678,7 @@
           101.41,
           101.8,
           101.96,
-          101.79,
+          101.82,
           101.64,
           101.93
         ]
@@ -1719,7 +1719,7 @@
           108.78,
           109.68,
           106.93,
-          105.67,
+          105.7,
           105.16,
           104.19
         ]
@@ -1760,7 +1760,7 @@
           97.7,
           95.02,
           96.73,
-          96.8,
+          97.62,
           97.44,
           97.83
         ]
@@ -1801,7 +1801,7 @@
           117.24,
           114.12,
           108.62,
-          112.96,
+          109.91,
           110.23,
           105.93
         ]
@@ -1842,7 +1842,7 @@
           103.67,
           104.54,
           100.61,
-          101.11,
+          101.13,
           101.39,
           99.43
         ]
@@ -1883,7 +1883,7 @@
           81.41,
           84.14,
           85.31,
-          86.32,
+          86.31,
           87.64,
           87.92
         ]
@@ -1924,7 +1924,7 @@
           94.87,
           93.46,
           94.32,
-          92.24,
+          93.02,
           94.52,
           95.51
         ]
@@ -1987,7 +1987,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-28T22:40+00:00"
+      "vintage": "2026-07-29T00:07+00:00"
     },
     "se": {
       "poster": [
@@ -2544,7 +2544,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-28T22:40+00:00"
+      "vintage": "2026-07-29T00:07+00:00"
     }
   }
 }
