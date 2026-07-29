@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-29",
-  "genererad": "2026-07-29T18:14+00:00",
+  "genererad": "2026-07-29T19:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,8 +114,8 @@
         118.68,
         113.93,
         114.79,
-        113.46,
-        111.18
+        111.37,
+        110.21
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         98.64,
-        96.76
+        96.95
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -220,9 +220,9 @@
         86.4,
         86.82,
         87.4,
-        83.73,
-        85.32,
-        87.73
+        84.46,
+        86.91,
+        88.02
       ]
     },
     {
@@ -272,8 +272,8 @@
         87.7,
         88.44,
         90.25,
-        90.24,
-        91.35
+        91.91,
+        92.17
       ]
     },
     {
@@ -324,7 +324,7 @@
         91.79,
         91.18,
         94.11,
-        94.78
+        95.93
       ]
     },
     {
@@ -374,8 +374,8 @@
         95.17,
         96.82,
         98.28,
-        98.53,
-        101.01
+        100.85,
+        101.8
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 7,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         86.96,
-        86.41
+        87.11
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.31,
         98.01,
         97.88,
-        98.19
+        99.22
       ]
     },
     {
@@ -528,8 +528,8 @@
         80.76,
         85.9,
         89.31,
-        87.19,
-        88.01
+        86.01,
+        88.96
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         102.95,
-        102.3
+        102.85
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         94.18,
         89.79,
         92.07,
-        92.81
+        92.69
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.4,
-      "delta": "+0,8 · 1 v",
+      "varde": 19.8,
+      "delta": "+3,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 76.0,
+      "delta": "−2 · 1 v",
       "trosklar": [
         100,
         130
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 101,
         "pil": "upp",
         "status": "gul"
       },
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 104,
+        "index": 103,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,15 +734,15 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 99,
-        "pil": "upp",
-        "status": "gron"
+        "index": 98,
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 95,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 88,
+        "index": 86,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,7 +766,7 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 96,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       }
@@ -818,7 +818,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 76.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.4,
+      "varde": 19.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -961,7 +961,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4126",
+      "varde": "4127",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+2,6 %",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,68",
+      "varde": "58,13",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,3 %",
+      "delta4v": "−2,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,39",
+      "varde": "6,36",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,3 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-29"
     },
     "olja": {
-      "v": 90.69,
+      "v": 90.5,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-29"
     }
@@ -1678,9 +1678,9 @@
           101.41,
           101.8,
           101.96,
-          101.79,
-          101.64,
-          101.81
+          101.82,
+          101.93,
+          101.77
         ]
       },
       {
@@ -1719,9 +1719,9 @@
           108.78,
           109.68,
           106.93,
-          105.67,
-          104.14,
-          104.13
+          105.7,
+          104.19,
+          103.52
         ]
       },
       {
@@ -1760,9 +1760,9 @@
           97.7,
           95.02,
           96.73,
-          97.6,
-          97.79,
-          97.92
+          97.62,
+          97.83,
+          98.88
         ]
       },
       {
@@ -1801,9 +1801,9 @@
           117.24,
           114.12,
           108.62,
-          109.88,
-          105.88,
-          104.74
+          109.91,
+          105.93,
+          105.78
         ]
       },
       {
@@ -1842,9 +1842,9 @@
           103.67,
           104.54,
           100.61,
-          101.11,
-          99.38,
-          99.17
+          101.13,
+          99.43,
+          98.77
         ]
       },
       {
@@ -1883,9 +1883,9 @@
           81.41,
           84.14,
           85.31,
-          86.28,
-          87.88,
-          89.8
+          86.31,
+          87.92,
+          90.25
         ]
       },
       {
@@ -1924,9 +1924,9 @@
           94.87,
           93.46,
           94.32,
-          93.0,
-          95.47,
-          95.8
+          93.02,
+          95.51,
+          96.38
         ]
       }
     ],
@@ -1947,13 +1947,18 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Marino Anthony S  (CIK 0001654616); WESCO INTERNATIONAL INC  (CIK 0000929008)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1654616/000119312526318196"
+          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
         },
         {
           "datum": "2026-07-27",
-          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
+          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
+        },
+        {
+          "datum": "2026-07-27",
+          "namn": "Marino Anthony S  (CIK 0001654616); WESCO INTERNATIONAL INC  (CIK 0000929008)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1654616/000119312526318196"
         },
         {
           "datum": "2026-07-27",
@@ -1962,13 +1967,8 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "Isowa Akio  (CIK 0002115904); SUMITOMO MITSUI FINANCIAL GROUP, INC.  (CIK 0001022837)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2115904/000095010326011243"
+          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
         },
         {
           "datum": "2026-07-27",
@@ -1977,20 +1977,86 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
+          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
         },
         {
           "datum": "2026-07-27",
-          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
+          "namn": "HUTTON GEORGE THOMPSON  (CIK 0001196460); SoFi Technologies, Inc.  (CIK 0001818874)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1196460/000119646026000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-29T18:14+00:00"
+      "vintage": "2026-07-29T19:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-29 21:34:33",
+          "emittent": "Hansa Biopharma AB",
+          "person": "Michael Bologna",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "271230,0",
+          "enhet": "Antal",
+          "pris": "37,9322",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-29 21:34:33",
+          "emittent": "Hansa Biopharma AB",
+          "person": "Michael Bologna",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "172655,0",
+          "enhet": "Antal",
+          "pris": "38,1294",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-29 21:34:33",
+          "emittent": "Hansa Biopharma AB",
+          "person": "Michael Bologna",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "23281,0",
+          "enhet": "Antal",
+          "pris": "37,7036",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-29 21:26:55",
+          "emittent": "K-Fast Hoöding AB",
+          "person": "Magnus Persson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "12715,0",
+          "enhet": "Antal",
+          "pris": "11,967",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-29 20:49:28",
+          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
+          "person": "Henrik Bjerklin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Tilldelning",
+          "volym": "239900,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-29 20:42:20",
+          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
+          "person": "Henrik Bjerklin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Tilldelning",
+          "volym": "623740,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-29 20:01:33",
           "emittent": "Stockholm Nordtech Group AB (publ)",
@@ -2474,77 +2540,11 @@
           "enhet": "Antal",
           "pris": "53,69",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 14:01:12",
-          "emittent": "Bulten AB",
-          "person": "Axel Berntsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "7086,0",
-          "enhet": "Antal",
-          "pris": "51,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 12:03:10",
-          "emittent": "Lappland Guldprospektering AB",
-          "person": "Krim Talia",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "774,0",
-          "enhet": "Antal",
-          "pris": "159,8677",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 12:01:16",
-          "emittent": "Lappland Guldprospektering AB",
-          "person": "Krim Talia",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "901,0",
-          "enhet": "Antal",
-          "pris": "160,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 11:59:59",
-          "emittent": "Salix Group AB",
-          "person": "Christina Tillman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "60,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 11:58:40",
-          "emittent": "Lappland Guldprospektering AB",
-          "person": "Krim Talia",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "518,0",
-          "enhet": "Antal",
-          "pris": "160,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 11:48:05",
-          "emittent": "Apotea AB (Publ)",
-          "person": "Eva Nilsagård",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "72,9970",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 10,
+      "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-29T18:14+00:00"
+      "vintage": "2026-07-29T19:57+00:00"
     }
   }
 }
