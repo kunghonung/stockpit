@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-30",
-  "genererad": "2026-07-30T11:31+00:00",
+  "genererad": "2026-07-30T13:12+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.4,
-      "delta": "+0,7 · 1 v",
+      "varde": 19.0,
+      "delta": "+0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 104,
+        "index": 105,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 99,
+        "index": 100,
         "pil": "upp",
         "status": "gron"
       },
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.4,
+      "varde": 19.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -961,7 +961,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4135",
+      "varde": "4131",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+1,6 %",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,24",
+      "varde": "58,28",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,1 %",
+      "delta4v": "−3,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,44",
+      "varde": "6,45",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,1 %",
+      "delta4v": "+5,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-30"
     },
     "olja": {
-      "v": 90.27,
+      "v": 90.41,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-30"
     }
@@ -1762,7 +1762,7 @@
           96.73,
           97.62,
           98.87,
-          99.38
+          99.54
         ]
       },
       {
@@ -1947,13 +1947,18 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Marino Anthony S  (CIK 0001654616); WESCO INTERNATIONAL INC  (CIK 0000929008)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1654616/000119312526318196"
+          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
         },
         {
           "datum": "2026-07-27",
-          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
+          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
+        },
+        {
+          "datum": "2026-07-27",
+          "namn": "Marino Anthony S  (CIK 0001654616); WESCO INTERNATIONAL INC  (CIK 0000929008)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1654616/000119312526318196"
         },
         {
           "datum": "2026-07-27",
@@ -1962,13 +1967,8 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "Isowa Akio  (CIK 0002115904); SUMITOMO MITSUI FINANCIAL GROUP, INC.  (CIK 0001022837)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2115904/000095010326011243"
+          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
         },
         {
           "datum": "2026-07-27",
@@ -1977,20 +1977,108 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
+          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
         },
         {
           "datum": "2026-07-27",
-          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
+          "namn": "HUTTON GEORGE THOMPSON  (CIK 0001196460); SoFi Technologies, Inc.  (CIK 0001818874)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1196460/000119646026000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-30T11:31+00:00"
+      "vintage": "2026-07-30T13:12+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-30 14:27:02",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Alireza Etemad",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "52272,0",
+          "enhet": "Antal",
+          "pris": "3,13",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 14:27:02",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Alireza Etemad",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "3,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 14:27:02",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Alireza Etemad",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "3,23",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 14:27:02",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Alireza Etemad",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "3,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 14:27:02",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Alireza Etemad",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "3,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 14:27:02",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Alireza Etemad",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "3,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 14:05:49",
+          "emittent": "Arlandastad Group AB (publ)",
+          "person": "Per Taube",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2425,0",
+          "enhet": "Antal",
+          "pris": "36,8216",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 13:50:55",
+          "emittent": "Nicoccino Holding AB (publ)",
+          "person": "Fredrik Laurell",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "90909,0",
+          "enhet": "Antal",
+          "pris": "1,1",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-30 12:12:02",
           "emittent": "Transferator AB (publ)",
@@ -2452,99 +2540,11 @@
           "enhet": "Antal",
           "pris": "13,25",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 19:10:17",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1545,0",
-          "enhet": "Antal",
-          "pris": "61,64",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 19:07:00",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1738,0",
-          "enhet": "Antal",
-          "pris": "2,22",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 19:07:00",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3316,0",
-          "enhet": "Antal",
-          "pris": "222,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 18:38:42",
-          "emittent": "Bulten AB",
-          "person": "Ulf Liljedahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "12395,0",
-          "enhet": "Antal",
-          "pris": "52,069",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 18:38:42",
-          "emittent": "Bulten AB",
-          "person": "Ulf Liljedahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1393,0",
-          "enhet": "Antal",
-          "pris": "53,000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 18:38:42",
-          "emittent": "Bulten AB",
-          "person": "Ulf Liljedahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "511,0",
-          "enhet": "Antal",
-          "pris": "54,500",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 18:07:10",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Peter Hjorth",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "823529,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 18:03:55",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Peter Hjorth",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "823529,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 16,
+      "nyaSenasteKorning": 8,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-30T11:31+00:00"
+      "vintage": "2026-07-30T13:12+00:00"
     }
   }
 }
