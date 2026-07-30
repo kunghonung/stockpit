@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-30",
-  "genererad": "2026-07-30T06:11+00:00",
+  "genererad": "2026-07-30T09:17+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 20.7,
-      "delta": "+4,0 · 1 v",
+      "varde": 19.8,
+      "delta": "+1,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 20.7,
+      "varde": 19.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -871,11 +871,11 @@
       "not": "Brantande 2s10s: +4 bp/mån."
     },
     "bredd": {
-      "over50": 72,
-      "over200": 71,
+      "over50": 66,
+      "over200": 69,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-07-29",
+      "vintage": "2026-07-30",
       "zoner": [
         35,
         72
@@ -884,7 +884,7 @@
         0,
         100
       ],
-      "delta": "+4 sedan förra"
+      "delta": "-6 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -1762,7 +1762,7 @@
           96.73,
           97.62,
           98.87,
-          98.87
+          99.23
         ]
       },
       {
@@ -1803,7 +1803,7 @@
           108.62,
           109.91,
           105.76,
-          106.53
+          106.51
         ]
       },
       {
@@ -1987,10 +1987,120 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-30T06:11+00:00"
+      "vintage": "2026-07-30T09:16+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-30 11:06:11",
+          "emittent": "Goodbye Kansas Group AB",
+          "person": "Ulf Hammarmyr",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "38000,0",
+          "enhet": "Antal",
+          "pris": "1,87",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 10:56:42",
+          "emittent": "Odinwell AB",
+          "person": "Marcus Andersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Teckning",
+          "volym": "1067073,0",
+          "enhet": "Antal",
+          "pris": "0,164",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 10:32:17",
+          "emittent": "Knowit Aktiebolag (publ)",
+          "person": "Fredrik Walde Ekerhovd",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "92,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 10:32:17",
+          "emittent": "Knowit Aktiebolag (publ)",
+          "person": "Fredrik Walde Ekerhovd",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1208,0",
+          "enhet": "Antal",
+          "pris": "96,12",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 10:32:17",
+          "emittent": "Knowit Aktiebolag (publ)",
+          "person": "Fredrik Walde Ekerhovd",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "95,99",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 10:01:46",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Guido Oelkers",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "464,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 10:01:46",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Guido Oelkers",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "235,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 09:55:30",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Guido Oelkers",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "457,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 09:55:30",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Guido Oelkers",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "235,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 09:46:12",
+          "emittent": "Medivir AB",
+          "person": "Anders Hallberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "6097560,0",
+          "enhet": "Antal",
+          "pris": "1,64",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-30 07:27:42",
           "emittent": "4C Group AB",
@@ -2430,121 +2540,11 @@
           "enhet": "Antal",
           "pris": "457,34",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 08:44:54",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Christin Wesström",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "37292,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 08:22:21",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Christin Wesström",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "10050,0",
-          "enhet": "Antal",
-          "pris": "456,79",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 22:14:08",
-          "emittent": "Saab AB",
-          "person": "Annika Bäremo",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "25000,0",
-          "enhet": "Antal",
-          "pris": "616,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 21:47:14",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "300,0",
-          "enhet": "Antal",
-          "pris": "222,46",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 21:47:14",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "200,0",
-          "enhet": "Antal",
-          "pris": "222,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 21:39:10",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "61,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 21:39:10",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "62,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 20:33:57",
-          "emittent": "Qbim Aktiebolag",
-          "person": "Fredric Forsman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "6423706,0",
-          "enhet": "Antal",
-          "pris": "0,28",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 20:33:57",
-          "emittent": "Qbim Aktiebolag",
-          "person": "Fredric Forsman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "4000000,0",
-          "enhet": "Antal",
-          "pris": "0,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-28 19:24:01",
-          "emittent": "Knowit AB (publ)",
-          "person": "Kenneth Gvein",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "90,99",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 10,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-30T06:11+00:00"
+      "vintage": "2026-07-30T09:17+00:00"
     }
   }
 }
