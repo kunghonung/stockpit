@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-30",
-  "genererad": "2026-07-30T18:59+00:00",
+  "genererad": "2026-07-30T20:23+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.93,
         114.79,
         110.12,
-        114.03
+        114.21
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         96.98,
-        96.05
+        96.32
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.4,
         84.46,
         88.14,
-        84.43
+        84.37
       ]
     },
     {
@@ -273,7 +273,7 @@
         88.44,
         90.25,
         92.28,
-        90.57
+        90.58
       ]
     },
     {
@@ -324,7 +324,7 @@
         91.79,
         91.18,
         95.91,
-        92.35
+        92.29
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 3,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         96.82,
         98.28,
         101.81,
-        98.73
+        98.49
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         87.13,
-        85.36
+        85.22
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.31,
         98.01,
         99.31,
-        96.29
+        96.27
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         85.9,
         89.31,
         89.0,
-        87.85
+        87.99
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         102.88,
-        101.81
+        101.76
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         94.18,
         89.79,
         92.78,
-        92.05
+        91.89
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.8,
-      "delta": "−0,9 · 1 v",
+      "varde": 17.1,
+      "delta": "−1,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 74.0,
+      "delta": "−4 · 1 v",
       "trosklar": [
         100,
         130
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 105,
+        "index": 104,
         "pil": "upp",
         "status": "gron"
       },
@@ -735,8 +735,8 @@
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
         "index": 99,
-        "pil": "upp",
-        "status": "gron"
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "xlyxlp",
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 91,
+        "index": 92,
         "pil": "ned",
         "status": "gul"
       },
@@ -818,7 +818,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 74.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.8,
+      "varde": 17.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -853,22 +853,22 @@
         "30Y"
       ],
       "nu": [
-        3.77,
-        4.26,
-        4.35,
-        4.61,
-        5.09
+        3.7,
+        4.22,
+        4.37,
+        4.67,
+        5.2
       ],
       "forr": [
-        3.67,
-        4.07,
-        4.12,
+        3.74,
+        4.1,
+        4.14,
         4.38,
-        4.87
+        4.86
       ],
       "kalla": "FRED",
-      "vintage": "2026-07-28",
-      "not": "Brantande 2s10s: +4 bp/mån."
+      "vintage": "2026-07-29",
+      "not": "Brantande 2s10s: +17 bp/mån."
     },
     "bredd": {
       "over50": 66,
@@ -954,17 +954,17 @@
     "realranta": {
       "varde": "2,41 %",
       "pil": "upp",
-      "delta": "+23 bp · 1 mån",
+      "delta": "+25 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-07-28"
+      "vintage": "2026-07-29"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4160",
+      "varde": "4173",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,2 %",
+      "delta4v": "+2,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,07",
+      "varde": "59,51",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,7 %",
+      "delta4v": "−1,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,49",
+      "varde": "6,50",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,9 %",
+      "delta4v": "+6,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-30"
     },
     "olja": {
-      "v": 88.99,
+      "v": 88.91,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-30"
     }
@@ -1680,7 +1680,7 @@
           101.96,
           101.82,
           101.72,
-          101.32
+          101.31
         ]
       },
       {
@@ -1721,7 +1721,7 @@
           106.93,
           105.7,
           103.45,
-          104.62
+          104.67
         ]
       },
       {
@@ -1762,7 +1762,7 @@
           96.73,
           97.62,
           98.87,
-          97.73
+          97.59
         ]
       },
       {
@@ -1803,7 +1803,7 @@
           108.62,
           109.91,
           105.76,
-          104.48
+          104.32
         ]
       },
       {
@@ -1844,7 +1844,7 @@
           100.61,
           101.13,
           98.69,
-          100.54
+          100.66
         ]
       },
       {
@@ -1885,7 +1885,7 @@
           85.31,
           86.31,
           90.19,
-          89.11
+          89.03
         ]
       },
       {
@@ -1926,7 +1926,7 @@
           94.32,
           93.02,
           96.39,
-          95.58
+          95.44
         ]
       }
     ],
@@ -1987,10 +1987,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-30T18:59+00:00"
+      "vintage": "2026-07-30T20:23+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-30 22:08:55",
+          "emittent": "PILA PHARMA AB",
+          "person": "Dorte Gram",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5000010,0",
+          "enhet": "Antal",
+          "pris": "1,18",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 21:40:16",
+          "emittent": "Hexagon Aktiebolag",
+          "person": "Thomas De Muynck",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "95,66",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-30 20:42:20",
           "emittent": "Tele2 AB",
@@ -2518,33 +2540,11 @@
           "enhet": "Antal",
           "pris": "13,22",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 11:46:56",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "7944,0",
-          "enhet": "Antal",
-          "pris": "66,98",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 11:41:04",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "481525,0",
-          "enhet": "Antal",
-          "pris": "2,29",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 12,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-30T18:59+00:00"
+      "vintage": "2026-07-30T20:23+00:00"
     }
   }
 }
