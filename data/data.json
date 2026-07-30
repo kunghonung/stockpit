@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-30",
-  "genererad": "2026-07-30T15:35+00:00",
+  "genererad": "2026-07-30T17:08+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.93,
         114.79,
         110.12,
-        114.22
+        114.2
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         96.98,
-        95.92
+        95.99
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.4,
         84.46,
         88.14,
-        84.44
+        84.27
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         88.44,
         90.25,
         92.28,
-        91.0
+        90.61
       ]
     },
     {
@@ -324,7 +324,7 @@
         91.79,
         91.18,
         95.91,
-        92.84
+        92.33
       ]
     },
     {
@@ -375,7 +375,7 @@
         96.82,
         98.28,
         101.81,
-        98.62
+        98.55
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         87.13,
-        85.5
+        85.44
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         96.31,
         98.01,
         99.31,
-        96.49
+        96.43
       ]
     },
     {
@@ -529,7 +529,7 @@
         85.9,
         89.31,
         89.0,
-        87.7
+        87.58
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         102.88,
-        101.43
+        101.82
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         94.18,
         89.79,
         92.78,
-        92.29
+        92.03
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.0,
-      "delta": "+0,3 · 1 v",
+      "varde": 18.1,
+      "delta": "−0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 99,
         "pil": "upp",
         "status": "gul"
       },
@@ -735,8 +735,8 @@
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
         "index": 99,
-        "pil": "upp",
-        "status": "gron"
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "xlyxlp",
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.0,
+      "varde": 18.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -961,10 +961,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4153",
+      "varde": "4169",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,1 %",
+      "delta4v": "+2,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,62",
+      "varde": "58,92",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,4 %",
+      "delta4v": "−1,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,45",
+      "varde": "6,48",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,3 %",
+      "delta4v": "+5,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-30"
     },
     "olja": {
-      "v": 89.94,
+      "v": 89.68,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-30"
     }
@@ -1680,7 +1680,7 @@
           101.96,
           101.82,
           101.72,
-          101.3
+          101.34
         ]
       },
       {
@@ -1721,7 +1721,7 @@
           106.93,
           105.7,
           103.45,
-          104.87
+          104.73
         ]
       },
       {
@@ -1762,7 +1762,7 @@
           96.73,
           97.62,
           98.87,
-          98.31
+          97.87
         ]
       },
       {
@@ -1803,7 +1803,7 @@
           108.62,
           109.91,
           105.76,
-          105.11
+          104.63
         ]
       },
       {
@@ -1844,7 +1844,7 @@
           100.61,
           101.13,
           98.69,
-          100.63
+          100.7
         ]
       },
       {
@@ -1885,7 +1885,7 @@
           85.31,
           86.31,
           90.19,
-          89.34
+          89.23
         ]
       },
       {
@@ -1926,7 +1926,7 @@
           94.32,
           93.02,
           96.39,
-          96.17
+          95.74
         ]
       }
     ],
@@ -1936,61 +1936,204 @@
     "us": {
       "poster": [
         {
+          "datum": "2026-07-29",
+          "namn": "HAWKINS JAMES B  (CIK 0000898243); OSI SYSTEMS INC  (CIK 0001039065)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/898243/000089824326000017"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "DILLARD ALEX  (CIK 0001180004); DILLARD'S, INC.  (CIK 0000028917)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1180004/000118000426000013"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "Howard Kevin D  (CIK 0001359115); CHARTER COMMUNICATIONS, INC. /MO/  (CIK 0001091667)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1359115/000135911526000009"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "Assis Alessandra Faccin  (CIK 0001931500); ASHLAND INC.  (CIK 0001674862)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1931500/000119312526323842"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "BIDZOS D JAMES  (CIK 0001204816); VERISIGN INC/CA  (CIK 0001014473)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1204816/000120481626000028"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "McKeehan Jennifer  (CIK 0002120899); TheRealReal, Inc.  (CIK 0001573221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2120899/000212089926000006"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "Farrow Jeffrey S  (CIK 0001405253); ACHIEVE LIFE SCIENCES, INC.  (CIK 0000949858)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1405253/000119312526324238"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "COX MATTHEW J  (CIK 0001206911); Matson, Inc.  (CIK 0000003453)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1206911/000122520826006826"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "Zeronda Tyler  (CIK 0001867033); Yarrow Bioscience, Inc.  (CIK 0001566044)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1867033/000110465926088370"
+        },
+        {
           "datum": "2026-07-27",
           "namn": "Fleming John Turman  (CIK 0001824992); USANA HEALTH SCIENCES INC  (CIK 0000896264)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1824992/000182499226000008"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "Enslin Jeffrey D.  (CIK 0001871267); Glimpse Group, Inc.  (CIK 0001854445)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1871267/000089183926000308"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "Marino Anthony S  (CIK 0001654616); WESCO INTERNATIONAL INC  (CIK 0000929008)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1654616/000119312526318196"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "GLANVILLE THOMAS S  (CIK 0001192319); DEEP FISSION, INC.  (CIK 0001918102)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1192319/000110465926087136"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "Heeson Lee  (CIK 0002039219); INCYTE CORP  (CIK 0000879169)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2039219/000203921926000008"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "HUTTON GEORGE THOMPSON  (CIK 0001196460); SoFi Technologies, Inc.  (CIK 0001818874)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1196460/000119646026000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-30T15:35+00:00"
+      "vintage": "2026-07-30T17:08+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "21213,0",
+          "enhet": "Antal",
+          "pris": "227,7072",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "236,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "214,8121",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "3340,0",
+          "enhet": "Antal",
+          "pris": "203,7317",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "205,2534",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "207,0420",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "205,7499",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1331,0",
+          "enhet": "Antal",
+          "pris": "204,4887",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10157,0",
+          "enhet": "Antal",
+          "pris": "207,4768",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "18470,0",
+          "enhet": "Antal",
+          "pris": "204,2251",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:42:41",
+          "emittent": "Studsvik AB",
+          "person": "Adam Rodman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "207,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 18:07:32",
+          "emittent": "Stockholm Nordtech Group AB (publ)",
+          "person": "Per Asplund",
+          "befattning": "Vice VD",
+          "karaktar": "Avyttring",
+          "volym": "27840,0",
+          "enhet": "Antal",
+          "pris": "62,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 17:44:58",
+          "emittent": "Stockholm Nordtech Group AB (publ)",
+          "person": "pål hodann",
+          "befattning": "Styrelseledamot, Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "167890,0",
+          "enhet": "Antal",
+          "pris": "62,15",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-30 17:04:02",
           "emittent": "Careium AB (publ)",
@@ -2397,154 +2540,11 @@
           "enhet": "Antal",
           "pris": "235,15",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 09:46:12",
-          "emittent": "Medivir AB",
-          "person": "Anders Hallberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "6097560,0",
-          "enhet": "Antal",
-          "pris": "1,64",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 07:27:42",
-          "emittent": "4C Group AB",
-          "person": "Mikael Grape",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "7388,0",
-          "enhet": "Antal",
-          "pris": "7,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 06:46:37",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Christin Wesström",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "37292,0",
-          "enhet": "Antal",
-          "pris": "457,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 06:46:37",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Christin Wesström",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "37292,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 23:54:31",
-          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
-          "person": "Henrik Bjerklin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "119950,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 23:50:25",
-          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
-          "person": "Henrik Bjerklin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "119950,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 22:55:56",
-          "emittent": "Modern Times Group MTG AB (publ)",
-          "person": "florian schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1800,0",
-          "enhet": "Antal",
-          "pris": "11,6",
-          "valuta": "EUR"
-        },
-        {
-          "publicerad": "2026-07-29 21:34:33",
-          "emittent": "Hansa Biopharma AB",
-          "person": "Michael Bologna",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "271230,0",
-          "enhet": "Antal",
-          "pris": "37,9322",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 21:34:33",
-          "emittent": "Hansa Biopharma AB",
-          "person": "Michael Bologna",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "172655,0",
-          "enhet": "Antal",
-          "pris": "38,1294",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 21:34:33",
-          "emittent": "Hansa Biopharma AB",
-          "person": "Michael Bologna",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "23281,0",
-          "enhet": "Antal",
-          "pris": "37,7036",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 21:26:55",
-          "emittent": "K-Fast Hoöding AB",
-          "person": "Magnus Persson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "12715,0",
-          "enhet": "Antal",
-          "pris": "11,967",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 20:49:28",
-          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
-          "person": "Henrik Bjerklin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "239900,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 20:42:20",
-          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
-          "person": "Henrik Bjerklin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "623740,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 13,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-30T15:35+00:00"
+      "vintage": "2026-07-30T17:08+00:00"
     }
   }
 }
