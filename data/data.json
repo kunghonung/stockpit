@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-30",
-  "genererad": "2026-07-30T09:17+00:00",
+  "genererad": "2026-07-30T11:31+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.8,
-      "delta": "+1,1 · 1 v",
+      "varde": 19.4,
+      "delta": "+0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.8,
+      "varde": 19.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -961,10 +961,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4092",
+      "varde": "4135",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,6 %",
+      "delta4v": "+1,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,28",
+      "varde": "58,24",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,7 %",
+      "delta4v": "−3,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,37",
+      "varde": "6,44",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,0 %",
+      "delta4v": "+5,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-30"
     },
     "olja": {
-      "v": 92.39,
+      "v": 90.27,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-30"
     }
@@ -1762,7 +1762,7 @@
           96.73,
           97.62,
           98.87,
-          99.23
+          99.38
         ]
       },
       {
@@ -1947,18 +1947,13 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
-        },
-        {
-          "datum": "2026-07-27",
-          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
-        },
-        {
-          "datum": "2026-07-27",
           "namn": "Marino Anthony S  (CIK 0001654616); WESCO INTERNATIONAL INC  (CIK 0000929008)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1654616/000119312526318196"
+        },
+        {
+          "datum": "2026-07-27",
+          "namn": "Bagley Stephen James  (CIK 0001330694); SONO TEK CORP  (CIK 0000806172)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1330694/000117152026000197"
         },
         {
           "datum": "2026-07-27",
@@ -1967,8 +1962,13 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
+          "namn": "FERTITTA TILMAN J  (CIK 0001080301); Hospitality Headquarters Inc  (CIK 0001319392)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1080301/000110465926087109"
+        },
+        {
+          "datum": "2026-07-28",
+          "namn": "Isowa Akio  (CIK 0002115904); SUMITOMO MITSUI FINANCIAL GROUP, INC.  (CIK 0001022837)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2115904/000095010326011243"
         },
         {
           "datum": "2026-07-27",
@@ -1977,20 +1977,196 @@
         },
         {
           "datum": "2026-07-27",
-          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
+          "namn": "Parekh Sonalee Elizabeth  (CIK 0001849122); SentinelOne, Inc.  (CIK 0001583708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1849122/000184912226000012"
         },
         {
           "datum": "2026-07-27",
-          "namn": "HUTTON GEORGE THOMPSON  (CIK 0001196460); SoFi Technologies, Inc.  (CIK 0001818874)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1196460/000119646026000004"
+          "namn": "Harmon Cyrus  (CIK 0001831410); Olema Pharmaceuticals, Inc.  (CIK 0001750284)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1831410/000183141026000008"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-30T09:16+00:00"
+      "vintage": "2026-07-30T11:31+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-07-30 12:12:02",
+          "emittent": "Transferator AB (publ)",
+          "person": "Fredrik Vojbacke",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "205,0",
+          "enhet": "Antal",
+          "pris": "1,28",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 12:12:02",
+          "emittent": "Transferator AB (publ)",
+          "person": "Fredrik Vojbacke",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2148,0",
+          "enhet": "Antal",
+          "pris": "1,275",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 12:12:02",
+          "emittent": "Transferator AB (publ)",
+          "person": "Fredrik Vojbacke",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "329,0",
+          "enhet": "Antal",
+          "pris": "1,275",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 12:12:02",
+          "emittent": "Transferator AB (publ)",
+          "person": "Fredrik Vojbacke",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "25929,0",
+          "enhet": "Antal",
+          "pris": "1,49",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 12:12:02",
+          "emittent": "Transferator AB (publ)",
+          "person": "Fredrik Vojbacke",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2240,0",
+          "enhet": "Antal",
+          "pris": "1,54",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 12:04:01",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2345,0",
+          "enhet": "Antal",
+          "pris": "227,23",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 12:04:01",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "2,41",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:58:35",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "90000,0",
+          "enhet": "Antal",
+          "pris": "13,29",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:55:00",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "560,0",
+          "enhet": "Antal",
+          "pris": "225,58",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:55:00",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "192851,0",
+          "enhet": "Antal",
+          "pris": "2,34",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:49:42",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "14122,0",
+          "enhet": "Antal",
+          "pris": "13,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:46:56",
+          "emittent": "Devyser Diagnostics AB",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "7944,0",
+          "enhet": "Antal",
+          "pris": "66,98",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:41:04",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "481525,0",
+          "enhet": "Antal",
+          "pris": "2,29",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:38:28",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1283,0",
+          "enhet": "Antal",
+          "pris": "223,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:35:12",
+          "emittent": "Devyser Diagnostics AB",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "14364,0",
+          "enhet": "Antal",
+          "pris": "64,62",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-07-30 11:32:24",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "54071,0",
+          "enhet": "Antal",
+          "pris": "13,18",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-07-30 11:06:11",
           "emittent": "Goodbye Kansas Group AB",
@@ -2364,187 +2540,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 17:56:03",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Peter Hjorth",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2470587,0",
-          "enhet": "Antal",
-          "pris": "1,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 16:54:19",
-          "emittent": "Nicoccino Holding AB (publ)",
-          "person": "Fredrik Laurell",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "45454,0",
-          "enhet": "Antal",
-          "pris": "1,1",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 16:52:38",
-          "emittent": "Nicoccino Holding AB (publ)",
-          "person": "Hakasan AB Hakasan AB",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "90909,0",
-          "enhet": "Antal",
-          "pris": "1,1",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 15:48:35",
-          "emittent": "Sveafastigheter AB (publ)",
-          "person": "Leiv Synnes",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Pantsättning",
-          "volym": "78500000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 15:47:31",
-          "emittent": "Stockholm Nordtech Group AB (publ)",
-          "person": "David Frykman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "41973,0",
-          "enhet": "Antal",
-          "pris": "62,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 15:45:02",
-          "emittent": "PPI Public Property Invest AB (publ)",
-          "person": "Ilija Batljan",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Pantsättning",
-          "volym": "119360688,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 15:13:23",
-          "emittent": "Lagercrantz Group Aktiebolag",
-          "person": "Anna Schmidt Almlöf",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "408,0",
-          "enhet": "Antal",
-          "pris": "220,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 14:12:03",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "457,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 14:12:03",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 11:33:12",
-          "emittent": "Storytel AB (publ)",
-          "person": "Stefan Fredrik Gunnar Wård",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "105,96",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 11:09:01",
-          "emittent": "Munters Group AB",
-          "person": "Henrik Teiwik",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "1300,0",
-          "enhet": "Antal",
-          "pris": "162,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 09:59:00",
-          "emittent": "Precise Biometrics AB",
-          "person": "Adam Philpott",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "17999984,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 09:56:42",
-          "emittent": "Fingerprint Cards AB",
-          "person": "Adam Philpott",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte minskning",
-          "volym": "54916,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 09:56:42",
-          "emittent": "Fingerprint Cards AB",
-          "person": "Adam Philpott",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte minskning",
-          "volym": "17999984,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 09:41:29",
-          "emittent": "Arlandastad Group AB (publ)",
-          "person": "Per Taube",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "7195,0",
-          "enhet": "Antal",
-          "pris": "37,263",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-29 08:44:54",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Christin Wesström",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "37292,0",
-          "enhet": "Antal",
-          "pris": "457,34",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 10,
+      "nyaSenasteKorning": 16,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-30T09:17+00:00"
+      "vintage": "2026-07-30T11:31+00:00"
     }
   }
 }
