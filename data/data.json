@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-31",
-  "genererad": "2026-07-31T17:50+00:00",
+  "genererad": "2026-07-31T19:48+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.93,
         114.79,
         114.26,
-        113.51
+        113.36
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         96.32,
-        96.75
+        96.57
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.4,
         84.46,
         84.37,
-        84.79
+        84.9
       ]
     },
     {
@@ -273,7 +273,7 @@
         88.44,
         90.25,
         90.58,
-        88.2
+        87.91
       ]
     },
     {
@@ -324,7 +324,7 @@
         91.79,
         91.18,
         92.29,
-        91.48
+        91.21
       ]
     },
     {
@@ -375,7 +375,7 @@
         96.82,
         98.28,
         98.49,
-        97.51
+        97.4
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         85.22,
-        84.59
+        84.31
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.31,
         98.01,
         96.27,
-        95.32
+        95.23
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 2,
+      "rsRank": 1,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         85.9,
         89.31,
         87.99,
-        87.85
+        88.27
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 1,
+      "rsRank": 2,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         101.76,
-        101.29
+        101.02
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         94.18,
         89.79,
         91.89,
-        94.42
+        94.18
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 2.87,
-      "delta": "+19 bp · 1 v",
+      "varde": 2.84,
+      "delta": "+7 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-07-29",
+      "vintage": "2026-07-30",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.5,
-      "delta": "−2,1 · 1 v",
+      "varde": 16.2,
+      "delta": "−2,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 77.0,
+      "delta": "−1 · 1 v",
       "trosklar": [
         100,
         130
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 92,
+        "index": 91,
         "pil": "ned",
         "status": "gul"
       },
@@ -818,7 +818,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 77.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -827,7 +827,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.5,
+      "varde": 16.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -836,7 +836,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 2.87,
+      "varde": 2.84,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -961,10 +961,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4107",
+      "varde": "4106",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,1 %",
+      "delta4v": "−0,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -973,10 +973,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,98",
+      "varde": "58,08",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,4 %",
+      "delta4v": "−4,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -985,10 +985,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,48",
+      "varde": "6,52",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,1 %",
+      "delta4v": "+6,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -996,7 +996,7 @@
       "vintage": "2026-07-31"
     },
     "olja": {
-      "v": 90.01,
+      "v": 90.12,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-07-31"
     }
@@ -1680,7 +1680,7 @@
           101.96,
           101.82,
           101.31,
-          101.51
+          101.68
         ]
       },
       {
@@ -1721,7 +1721,7 @@
           106.93,
           105.7,
           104.67,
-          105.11
+          105.12
         ]
       },
       {
@@ -1762,7 +1762,7 @@
           96.73,
           97.62,
           97.59,
-          97.19
+          96.98
         ]
       },
       {
@@ -1803,7 +1803,7 @@
           108.62,
           109.91,
           104.32,
-          108.22
+          107.98
         ]
       },
       {
@@ -1844,7 +1844,7 @@
           100.61,
           101.13,
           100.66,
-          101.45
+          100.99
         ]
       },
       {
@@ -1885,7 +1885,7 @@
           85.31,
           86.31,
           89.03,
-          88.97
+          88.95
         ]
       },
       {
@@ -1926,7 +1926,7 @@
           94.32,
           93.02,
           95.44,
-          95.46
+          95.19
         ]
       }
     ],
@@ -1947,47 +1947,47 @@
         },
         {
           "datum": "2026-07-29",
+          "namn": "Howard Kevin D  (CIK 0001359115); CHARTER COMMUNICATIONS, INC. /MO/  (CIK 0001091667)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1359115/000135911526000009"
+        },
+        {
+          "datum": "2026-07-29",
           "namn": "Assis Alessandra Faccin  (CIK 0001931500); ASHLAND INC.  (CIK 0001674862)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1931500/000119312526323842"
         },
         {
-          "datum": "2026-07-30",
-          "namn": "Schneider Paul J.  (CIK 0001701588); Schneider National, Inc.  (CIK 0001692063)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1701588/000170158826000005"
+          "datum": "2026-07-29",
+          "namn": "BIDZOS D JAMES  (CIK 0001204816); VERISIGN INC/CA  (CIK 0001014473)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1204816/000120481626000028"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "McKeehan Jennifer  (CIK 0002120899); TheRealReal, Inc.  (CIK 0001573221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2120899/000212089926000006"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "Farrow Jeffrey S  (CIK 0001405253); ACHIEVE LIFE SCIENCES, INC.  (CIK 0000949858)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1405253/000119312526324238"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "COX MATTHEW J  (CIK 0001206911); Matson, Inc.  (CIK 0000003453)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1206911/000122520826006826"
+        },
+        {
+          "datum": "2026-07-29",
+          "namn": "Zeronda Tyler  (CIK 0001867033); Yarrow Bioscience, Inc.  (CIK 0001566044)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1867033/000110465926088370"
         },
         {
           "datum": "2026-07-30",
-          "namn": "Niri Sagi  (CIK 0001980194); Nexxen International Ltd.  (CIK 0001849396)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1980194/000117891326003699"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "Keefer James H JR  (CIK 0001717672); AMERICAN EAGLE OUTFITTERS INC  (CIK 0000919012)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1717672/000122520826006760"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "CHURCHILL BRUCE  (CIK 0001273861); WYNDHAM HOTELS & RESORTS, INC.  (CIK 0001722684)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1273861/000127386126000005"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "Feld Michael  (CIK 0002034349); BECTON DICKINSON & CO  (CIK 0000010795)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2034349/000162828026049989"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "Williams La Vonda  (CIK 0001889998); PITNEY BOWES INC /DE/  (CIK 0000078814)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1889998/000188999826000006"
-        },
-        {
-          "datum": "2026-07-28",
-          "namn": "BANK OF AMERICA CORP /DE/  (BAC, BAC-PB, BAC-PE, BAC-PK, BAC-PL, BAC-PM, BAC-PN, BAC-PO, BAC-PP, BAC-PQ, BAC-PS, BML-PG, BML-PL)  (CIK 0000070858); MERRILL LYNCH, PIERCE, FENNER & SMITH INC.  (CIK 0000728612)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000368"
+          "namn": "Rahmer Peter  (CIK 0001959229); Relay Therapeutics, Inc.  (CIK 0001812364)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1959229/000119312526326142"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-31T17:50+00:00"
+      "vintage": "2026-07-31T19:48+00:00"
     },
     "se": {
       "poster": [
@@ -2544,7 +2544,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-31T17:50+00:00"
+      "vintage": "2026-07-31T19:48+00:00"
     }
   }
 }
