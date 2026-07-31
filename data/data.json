@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-31",
-  "genererad": "2026-07-31T21:18+00:00",
+  "genererad": "2026-07-31T22:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1987,10 +1987,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-07-31T21:18+00:00"
+      "vintage": "2026-07-31T22:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-01 00:06:24",
+          "emittent": "ABB Ltd",
+          "person": "Peter Terwiesch",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "77,3",
+          "valuta": "CHF"
+        },
         {
           "publicerad": "2026-07-31 22:22:20",
           "emittent": "Avarda Bank AB",
@@ -2529,22 +2540,11 @@
           "enhet": "Antal",
           "pris": "22,25",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 14:27:02",
-          "emittent": "Netel Holding AB (publ)",
-          "person": "Alireza Etemad",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "52272,0",
-          "enhet": "Antal",
-          "pris": "3,13",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-07-31T21:18+00:00"
+      "vintage": "2026-07-31T22:40+00:00"
     }
   }
 }
