@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-31",
-  "genererad": "2026-08-01T04:04+00:00",
+  "genererad": "2026-08-01T06:39+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 106,
+        "index": 105,
         "pil": "upp",
         "status": "gron"
       },
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-01T04:04+00:00"
+      "vintage": "2026-08-01T06:39+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-01 06:56:54",
+          "emittent": "Africa Resources AB (publ)",
+          "person": "Peter Karpinski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "118700,0",
+          "enhet": "Antal",
+          "pris": "0,141",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-01 06:56:54",
+          "emittent": "Africa Resources AB (publ)",
+          "person": "Peter Karpinski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "0,1448",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-01 00:06:24",
           "emittent": "ABB Ltd",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "474,256",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 16:49:59",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Duane Barnes",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "97515,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 16:44:43",
-          "emittent": "Swedencare AB (publ)",
-          "person": "Lars Håkan Lagerberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "12500,0",
-          "enhet": "Antal",
-          "pris": "22,25",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-01T04:04+00:00"
+      "vintage": "2026-08-01T06:39+00:00"
     }
   }
 }
