@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-31",
-  "genererad": "2026-08-02T05:03+00:00",
+  "genererad": "2026-08-02T07:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-02T05:03+00:00"
+      "vintage": "2026-08-02T07:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-02 09:06:52",
+          "emittent": "Lappland Guldprospektering AB",
+          "person": "Daniel Gecer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "638,0",
+          "enhet": "Antal",
+          "pris": "203,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-02 09:06:52",
+          "emittent": "Lappland Guldprospektering AB",
+          "person": "Daniel Gecer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "362,0",
+          "enhet": "Antal",
+          "pris": "205,66",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-02 09:06:15",
+          "emittent": "Lappland Guldprospektering AB",
+          "person": "Daniel Gecer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "456,0",
+          "enhet": "Antal",
+          "pris": "154,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-01 18:40:44",
           "emittent": "Beijer Ref AB (publ)",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "205,7499",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 18:42:41",
-          "emittent": "Studsvik AB",
-          "person": "Adam Rodman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1331,0",
-          "enhet": "Antal",
-          "pris": "204,4887",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 18:42:41",
-          "emittent": "Studsvik AB",
-          "person": "Adam Rodman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10157,0",
-          "enhet": "Antal",
-          "pris": "207,4768",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 18:42:41",
-          "emittent": "Studsvik AB",
-          "person": "Adam Rodman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "18470,0",
-          "enhet": "Antal",
-          "pris": "204,2251",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-02T05:03+00:00"
+      "vintage": "2026-08-02T07:40+00:00"
     }
   }
 }
