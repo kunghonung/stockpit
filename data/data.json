@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W31",
   "asOfDatum": "2026-07-31",
-  "genererad": "2026-08-02T16:10+00:00",
+  "genererad": "2026-08-02T17:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-02T16:10+00:00"
+      "vintage": "2026-08-02T17:41+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-02 18:11:53",
+          "emittent": "Beijer Ref AB (publ)",
+          "person": "David Ericsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "9329157,0",
+          "enhet": "Antal",
+          "pris": "1,1",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-02 15:41:09",
           "emittent": "Arlandastad Group AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "236,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 18:42:41",
-          "emittent": "Studsvik AB",
-          "person": "Adam Rodman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "214,8121",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-02T16:10+00:00"
+      "vintage": "2026-08-02T17:41+00:00"
     }
   }
 }
