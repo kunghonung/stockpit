@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-03",
-  "genererad": "2026-08-03T17:27+00:00",
+  "genererad": "2026-08-03T19:09+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         96.41,
-        96.14
+        96.46
       ]
     },
     {
@@ -222,7 +222,7 @@
         87.4,
         84.46,
         85.07,
-        86.39
+        86.34
       ]
     },
     {
@@ -273,7 +273,7 @@
         88.44,
         90.25,
         87.83,
-        87.14
+        87.35
       ]
     },
     {
@@ -324,7 +324,7 @@
         91.79,
         91.18,
         91.18,
-        89.57
+        89.65
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         96.82,
         98.28,
         97.2,
-        95.44
+        95.61
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         84.02,
-        82.74
+        82.59
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.31,
         98.01,
         95.09,
-        93.72
+        93.93
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 2,
+      "rsRank": 3,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         85.9,
         89.31,
         88.24,
-        86.07
+        85.45
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         100.93,
-        99.81
+        100.01
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         94.18,
         89.79,
         94.24,
-        94.52
+        94.57
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.6,
-      "delta": "−3,1 · 1 v",
+      "varde": 15.8,
+      "delta": "−2,9 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
+        "index": 97,
         "pil": "upp",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.6,
+      "varde": 15.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4090",
+      "varde": "4099",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,6 %",
+      "delta4v": "−1,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,88",
+      "varde": "58,10",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,5 %",
+      "delta4v": "−6,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,53",
+      "varde": "6,54",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,7 %",
+      "delta4v": "+5,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-03"
     },
     "olja": {
-      "v": 83.76,
+      "v": 83.89,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-03"
     }
@@ -1686,7 +1686,7 @@
           101.96,
           101.82,
           101.53,
-          102.07
+          102.06
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           106.93,
           105.7,
           104.84,
-          105.76
+          105.69
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           96.73,
           97.62,
           96.99,
-          96.63
+          96.49
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           108.62,
           109.91,
           108.0,
-          106.11
+          105.96
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           100.61,
           101.13,
           100.95,
-          100.16
+          100.33
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           85.31,
           86.31,
           89.08,
-          88.5
+          88.37
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.32,
           93.02,
           95.16,
-          94.94
+          94.92
         ]
       }
     ],
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-03T17:27+00:00"
+      "vintage": "2026-08-03T19:09+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-03 20:43:35",
+          "emittent": "Gränges AB",
+          "person": "Oskar Hellström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen minskning",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 20:43:35",
+          "emittent": "Gränges AB",
+          "person": "Oskar Hellström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen ökning",
+          "volym": "7179,0",
+          "enhet": "Antal",
+          "pris": "1,34",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-03 17:17:20",
           "emittent": "NCAB Group AB (publ)",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "467,41",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-31 09:32:42",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "79208,0",
-          "enhet": "Antal",
-          "pris": "235,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-31 09:32:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1030257,0",
-          "enhet": "Antal",
-          "pris": "126,80",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-03T17:27+00:00"
+      "vintage": "2026-08-03T19:09+00:00"
     }
   }
 }
