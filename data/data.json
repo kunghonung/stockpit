@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-03",
-  "genererad": "2026-08-03T11:40+00:00",
+  "genererad": "2026-08-03T15:12+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.93,
         114.79,
         113.2,
-        113.2
+        112.9
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         96.66,
         98.99,
         96.41,
-        96.41
+        96.45
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 8,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         87.4,
         84.46,
         85.07,
-        85.07
+        86.51
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         88.44,
         90.25,
         87.83,
-        87.83
+        87.29
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 6,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         91.79,
         91.18,
         91.18,
-        91.18
+        90.32
       ]
     },
     {
@@ -375,7 +375,7 @@
         96.82,
         98.28,
         97.2,
-        97.2
+        95.92
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         86.01,
         88.66,
         84.02,
-        84.02
+        83.31
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         96.31,
         98.01,
         95.09,
-        95.09
+        94.25
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 1,
+      "rsRank": 2,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         85.9,
         89.31,
         88.24,
-        88.24
+        86.75
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 1,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         100.22,
         100.9,
         100.93,
-        100.93
+        100.2
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         94.18,
         89.79,
         94.24,
-        94.24
+        94.92
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.0,
-      "delta": "−2,7 · 1 v",
+      "varde": 15.7,
+      "delta": "−3,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 98,
         "pil": "upp",
         "status": "gul"
       },
@@ -734,15 +734,15 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 97,
-        "pil": "ned",
-        "status": "gul"
+        "index": 99,
+        "pil": "upp",
+        "status": "gron"
       },
       {
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 99,
+        "index": 101,
         "pil": "ned",
         "status": "gul"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 103,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 91,
+        "index": 90,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,7 +766,7 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 96,
+        "index": 97,
         "pil": "ned",
         "status": "gul"
       }
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.0,
+      "varde": 15.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4104",
+      "varde": "4090",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,2 %",
+      "delta4v": "−1,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,08",
+      "varde": "57,49",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,2 %",
+      "delta4v": "−7,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,51",
+      "varde": "6,50",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,4 %",
+      "delta4v": "+5,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-03"
     },
     "olja": {
-      "v": 83.65,
+      "v": 83.91,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-03"
     }
@@ -1686,7 +1686,7 @@
           101.96,
           101.82,
           101.53,
-          101.53
+          102.03
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           106.93,
           105.7,
           104.84,
-          104.84
+          105.52
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           96.73,
           97.62,
           96.99,
-          97.48
+          96.91
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           108.62,
           109.91,
           108.0,
-          106.98
+          106.38
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           100.61,
           101.13,
           100.95,
-          100.95
+          100.09
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           85.31,
           86.31,
           89.08,
-          89.08
+          88.78
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.32,
           93.02,
           95.16,
-          95.16
+          95.19
         ]
       }
     ],
@@ -1982,21 +1982,142 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1361918/000184982026000118"
         },
         {
-          "datum": "2026-07-31",
-          "namn": "LaFrence Andrew D.C.  (CIK 0001850633); SkyWater Technology, LLC  (CIK 0001819974)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1850633/000185063326000004"
+          "datum": "2026-08-03",
+          "namn": "Wang Barney Tianhao  (CIK 0002098635); SharkNinja, Inc.  (CIK 0001957132)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2098635/000110465926089552"
         },
         {
           "datum": "2026-07-31",
-          "namn": "Holmes Robert S  (CIK 0001639156); COMMERCE BANCSHARES INC /MO/  (CIK 0000022356)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1639156/000002235626000187"
+          "namn": "LaFrence Andrew D.C.  (CIK 0001850633); SkyWater Technology, LLC  (CIK 0001819974)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1850633/000185063326000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-03T11:40+00:00"
+      "vintage": "2026-08-03T15:12+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-03 16:25:21",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "847512,0",
+          "enhet": "Antal",
+          "pris": "2,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 16:25:21",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1230,0",
+          "enhet": "Antal",
+          "pris": "229,62",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 16:20:20",
+          "emittent": "Heba Fastighets AB",
+          "person": "Johan Vogel",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Gåva mottagen",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "24,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 16:10:32",
+          "emittent": "Heba Fastighets AB",
+          "person": "Johan Erik Vogel",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Gåva lämnad",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "24,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:50:48",
+          "emittent": "Studsvik AB",
+          "person": "Erik Robert Joakim Lundström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1375,0",
+          "enhet": "Antal",
+          "pris": "30,63",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:50:48",
+          "emittent": "Studsvik AB",
+          "person": "Erik Robert Joakim Lundström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1375,0",
+          "enhet": "Antal",
+          "pris": "16,08",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:50:48",
+          "emittent": "Studsvik AB",
+          "person": "Erik Robert Joakim Lundström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1375,0",
+          "enhet": "Antal",
+          "pris": "6,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:50:48",
+          "emittent": "Studsvik AB",
+          "person": "Erik Robert Joakim Lundström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1375,0",
+          "enhet": "Antal",
+          "pris": "3,14",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:50:48",
+          "emittent": "Studsvik AB",
+          "person": "Erik Robert Joakim Lundström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1375,0",
+          "enhet": "Antal",
+          "pris": "1,33",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:50:48",
+          "emittent": "Studsvik AB",
+          "person": "Erik Robert Joakim Lundström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1375,0",
+          "enhet": "Antal",
+          "pris": "0,61",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-03 15:06:56",
+          "emittent": "Hamlet Biopharma AB (publ)",
+          "person": "Henrik Sundin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "237120,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-03 12:18:46",
           "emittent": "K-Fast Holding AB",
@@ -2425,132 +2546,11 @@
           "enhet": "Antal",
           "pris": "55,8511",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-31 07:49:27",
-          "emittent": "Nordnet AB",
-          "person": "Quincy Curry",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1354,0",
-          "enhet": "Antal",
-          "pris": "366,27",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-31 00:10:45",
-          "emittent": "ABB Ltd",
-          "person": "Peter Terwiesch",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "18799,0",
-          "enhet": "Antal",
-          "pris": "76,76",
-          "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-07-31 00:00:57",
-          "emittent": "Viaplay Group AB (publ)",
-          "person": "Rebecca Stein",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "31191,0",
-          "enhet": "Antal",
-          "pris": "1,329",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 23:45:45",
-          "emittent": "PILA PHARMA AB",
-          "person": "Dorte Gram",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5000010,0",
-          "enhet": "Antal",
-          "pris": "1,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 22:08:55",
-          "emittent": "PILA PHARMA AB",
-          "person": "Dorte Gram",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "5000010,0",
-          "enhet": "Antal",
-          "pris": "1,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 21:40:16",
-          "emittent": "Hexagon Aktiebolag",
-          "person": "Thomas De Muynck",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "95,66",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 20:42:20",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "360982,0",
-          "enhet": "Antal",
-          "pris": "164,3457",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 20:42:20",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "360982,0",
-          "enhet": "Antal",
-          "pris": "164,3457",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 20:42:20",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "245375,0",
-          "enhet": "Antal",
-          "pris": "167,8409",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 20:42:20",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "245375,0",
-          "enhet": "Antal",
-          "pris": "167,8409",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-30 20:42:20",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "214858,0",
-          "enhet": "Antal",
-          "pris": "168,4740",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 6,
+      "nyaSenasteKorning": 11,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-03T11:40+00:00"
+      "vintage": "2026-08-03T15:12+00:00"
     }
   }
 }
