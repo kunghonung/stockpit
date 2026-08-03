@@ -101,15 +101,47 @@ Acc (d²) ensam vilseleder efter stegrörelser: ett brant fall följt av platt l
 av andra-derivatan som **positiv böjning** (META fick rådata-acc +0,22 direkt efter
 ett sänkningskluster). Läsaren behöver riktning OCH böjning tillsammans.
 
-- `net_delta_pct` (**riktning, d¹**) = summan av `delta_pct` för revisionerna i
-  **samma 30 d-fönster som acc** (beräknas i `get_tp_acceleration`s `rev`-CTE, så
-  fönstret aldrig kan driva isär från `n_revisions`). Reiterationer (delta 0) räknas
-  ej. `null` vid 0 revisioner. Formeln är **oförändrad** — detta är ett fält bredvid,
-  inte en ändring av acc.
+- `net_delta_pct` (**riktning, d¹**) = summan av `delta_pct` för de **färska**
+  revisionerna i **samma 30 d-fönster som acc** (beräknas i `get_tp_acceleration`s
+  `rev`-CTE, så fönstret aldrig kan driva isär från `n_revisions`). Reiterationer
+  (delta 0) och reinit (se nedan) räknas ej. `null` vid 0 färska revisioner. Formeln
+  är **oförändrad** — detta är ett fält bredvid, inte en ändring av acc.
 - Panelen (rådata-vägen): `net_delta` styr radens pil och står först, acc blir
   sekundär: `▼ −8,2 % 30d · acc +0,2 bp/d² · 11 hus`. Läsguide i panelen: *"riktning
   = nettodelta 30 d, böjning = acc; efter stora stegrörelser kan acc växla tecken före
   riktningen — läs riktningen först."*
+- **Sum-skalning:** net_delta är en SUMMA, så den växer med antalet hus (25 färska
+  hus × ~4,5 % = +112 %). Stort tal ≠ fel — det speglar bred aktivitet.
+
+## Reinit — stale-prior-föroreningen (`n_reinit`, 0004)
+
+`old_target` härleds via `lag` (föregående post per hus). Utan färskhetskrav ger en
+revision mot ett **flerårigt** gammalt mål ett enormt "delta" som är
+**täckningsåterinitiering**, inte en riktningsändring. En enda sådan kan vända hela
+`net_delta`:s tecken (META Susquehanna `$140 → $650` = **+364 %** vände summan från
+−72 % till +366 %). Fönstret filtrerade `revision_date` men aldrig priorns ålder.
+
+- **Reinit** = härledd prior äldre än `p_reinit_days` (default **365 d**). Sådana
+  revisioner exkluderas ur `net_delta`/`n_revisions`/`n_houses`/kluster och räknas i
+  `n_reinit` (så täckningsexpansion syns). `p_reinit_days` är **frikopplad** från
+  carry-forwardens `p_stale_days` (180 d) med avsikt: analytikerhus uppdaterar ofta
+  halvårsvis, så 180 d skulle klassa normala sänkningar som reinit. 365 d fångar bara
+  fleråriga fossiler. (Konfigurerbar parameter — verifierat att 365 ger rätt tecken.)
+- **acc rörs INTE.** Carry-forward-konsensusen är redan skyddad av stale-fönstret: ett
+  hus vars senaste mål är >180 d gammalt bärs aldrig i konsensusen, så det fossila
+  målet kan inte förorena acc (bekräftat av testet "STALE-FÖNSTER"). Acc-guarden
+  räknar fortfarande alla fönsterrevisioner precis som förr.
+- **Verifierat mot riktig data** (parity på backfillade `tp_revisions`):
+
+  | ticker | net_delta FÖRE | net_delta EFTER (365 d) | reinit exkluderade |
+  |---|---|---|---|
+  | META | +365,7 % | **−72,1 %** (sänkningsklustret) | 6 fleråriga (Susquehanna +364 %, Bernstein, Goldman …) |
+  | ASML | +178,6 % | **+68,5 %** (fyra HÖJNINGAR) | Argus (815 d, +110 %) |
+  | AAPL | +223,4 % | +146,4 % | KeyBanc, Raymond James |
+  | AMZN | +347,4 % | +112,4 % | Rosenblatt (1302 d, +235 %) |
+
+  (ASML:s acc −1,08 mot net_delta +68,5 % är INTE en motsägelse — det är just
+  riktning-vs-böjning-divergensen: fyra höjningar med avtagande takt.)
 
 ## Källfärskhet per ticker — `source_stale_days` (0003)
 
@@ -153,6 +185,10 @@ täcker inte tickern**. `source_stale_days` = dagar sedan tickerns senaste revis
    - `supabase/migrations/0003_net_delta_up.sql` — lägger `net_delta_pct` (riktning,
      i funktionen) och `source_stale_days` (källfärskhet, i vyn). Kräver drop+recreate
      av funktion/vy; återställer SECURITY DEFINER + grants. Acc-formeln oförändrad.
+   - `supabase/migrations/0004_reinit_up.sql` — reinit-klassificering: `prior_date` i
+     `tp_revisions_enriched`, `p_reinit_days` (365) + `n_reinit` i funktionen, `n_reinit`
+     i vyn. Rättar stale-prior-föroreningen av `net_delta`. Acc oförändrad (verifierat:
+     up:s carry-forward = 0003, down = exakt 0003/0001).
 2. Backfilla historiken en gång: `node scripts/backfill_revisions.js` (env satt).
    Skriptet PAGINERAR price-target-news (`page`-parametern, 100 poster/sida) tills
    en tom/partiell sida — annars stannar de mest bevakade tickrarna på sidtaket

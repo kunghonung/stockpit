@@ -428,6 +428,7 @@ li.oppen .sigdetalj{ display:block; }
 .nrad.tpa-tunt{ opacity:.55; }
 .tpa-guide{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); margin:0 0 var(--s8) 0; line-height:1.5; }
 .nrad.tpa-slap{ opacity:.7; }
+.tpa-reinit{ color:var(--svag); cursor:help; }
 .tpastatus{ font-size:var(--fs11); color:var(--damp); line-height:1.5; padding:var(--s4); }
 .tpastatus b{ color:var(--navy); font-weight:500; }
 .crowd summary{ list-style:none; cursor:pointer; }
@@ -3397,7 +3398,8 @@ function hamtaTpaRaw(){
         nHusLive: r.n_houses_live == null ? 0 : +r.n_houses_live,
         largest: r.largest_single_contribution_pct == null ? null : +r.largest_single_contribution_pct,
         nRev: r.n_revisions == null ? 0 : +r.n_revisions,
-        netDelta: r.net_delta_pct == null ? null : +r.net_delta_pct,        /* d¹: riktning (Σdelta% 30 d) */
+        nReinit: r.n_reinit == null ? 0 : +r.n_reinit,                       /* revisioner mot flerårig prior (>365 d) */
+        netDelta: r.net_delta_pct == null ? null : +r.net_delta_pct,        /* d¹: riktning (Σdelta% färska 30 d) */
         sourceStale: r.source_stale_days == null ? null : +r.source_stale_days, /* dagar sedan senaste revision */
         tunt: r.analyst_count != null && r.analyst_count > 0 && r.analyst_count < TPA_TUNT_TROSKEL
       };
@@ -3484,22 +3486,31 @@ function renderaTpa(tpa, status){
     var uppTxt = r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %";
     var pil, pilklass, varde, beskr;
     if(raw){
-      /* RIKTNING styrs av net_delta (d¹), inte acc — acc blir sekundär */
+      /* RIKTNING styrs av net_delta (d¹), inte acc — acc blir sekundär.
+         Reinit = revision mot flerårig prior (>365 d), täckningsåterinitiering, ej riktning. */
+      var reinitTxt = r.nReinit ? ' · <span class="tpa-reinit" title="' + r.nReinit +
+        ' revision(er) mot en flerårig prior (>365 d) = täckningsåterinitiering, inte en riktningsändring — räknas ej i nettodelta.">' +
+        r.nReinit + " reinit</span>" : "";
       if(slap){
         pil = "→"; pilklass = "hoger";
         varde = "källa släpar (" + r.sourceStale + " d)";
         beskr = "0 revisioner — källan saknar färska poster · " + uppTxt;
       } else if(r.netDelta == null){
         pil = "→"; pilklass = "hoger";
-        varde = "—";
-        beskr = "inga revisioner i fönstret · " + uppTxt;
+        if(r.nReinit){   /* inga färska, men täckning återupptogs */
+          varde = "återinit (" + r.nReinit + ")";
+          beskr = "ingen färsk riktning — " + r.nReinit + " täckningsåterinitiering · " + uppTxt;
+        } else {
+          varde = "—";
+          beskr = "inga revisioner i fönstret · " + uppTxt;
+        }
       } else {
         pil = r.netDelta > 0 ? "▲" : r.netDelta < 0 ? "▼" : "→";
         pilklass = r.netDelta > 0 ? "upp" : r.netDelta < 0 ? "ned" : "hoger";
         varde = (r.netDelta > 0 ? "+" : "") + svTal(r.netDelta, 1) + " % 30d";
         beskr = accTxt + " · " + r.nHus + " hus" +
           (enskild ? ' <span class="tpa-enskild" title="Största enskilda revisionen står för ' + svTal(r.largest, 0) + ' % av rörelsen — enskild revision, inte ett brett kluster.">◆ ej kluster</span>' : "") +
-          " · " + uppTxt;
+          reinitTxt + " · " + uppTxt;
       }
     } else {
       /* SNAPSHOT-vägen — oförändrad (ingen net_delta förrän flippen) */

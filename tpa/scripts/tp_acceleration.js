@@ -34,7 +34,7 @@ export function berikaRevisioner(rader) {
       a.revision_date.localeCompare(b.revision_date) ||
       String(a.published_at || "").localeCompare(String(b.published_at || "")) ||
       (a.id || 0) - (b.id || 0));
-    let forra = null;
+    let forra = null, forraDatum = null;
     for (const r of grupp) {
       const old_target = r.fmp_prior_target != null ? r.fmp_prior_target : forra;
       const kalla = r.fmp_prior_target != null ? "kalla" : (forra != null ? "harledd" : null);
@@ -42,10 +42,11 @@ export function berikaRevisioner(rader) {
       const delta_pct = (old_target != null && old_target > 0)
         ? Math.round((r.new_target / old_target - 1) * 100 * 100) / 100 : null;
       ut.push({
-        ...r, old_target, old_target_kalla: kalla, delta_abs, delta_pct,
+        ...r, old_target, old_target_kalla: kalla, prior_date: forraDatum, delta_abs, delta_pct,
         is_reiteration: old_target != null && r.new_target === old_target,
       });
       forra = r.new_target;
+      forraDatum = r.revision_date;   // härledda priorns datum för nästa post i huset
     }
   }
   return ut;
@@ -72,7 +73,7 @@ function konsensusForDag(rader, dagStr, staleDays) {
 
 // Bevarar EXAKT get_target_price_acceleration-formeln på carry-forward-serien.
 // idag = Date (default nu). Returnerar samma fält som SQL-funktionen.
-export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, idag = new Date() } = {}) {
+export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, pReinitDays = 365, idag = new Date() } = {}) {
   const idagStr = datumStrang(idag);
   const rader = rawRader.filter((r) => r.new_target != null);
 
@@ -106,23 +107,34 @@ export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, idag
   // metadata ur berikade revisioner i fönstret (delta<>0)
   const berikade = berikaRevisioner(rader);
   const fonsterGrans = datumStrang(new Date(Date.parse(idagStr) - pDays * DAG_MS));
-  const rev = berikade.filter((e) =>
+  const iFonster = berikade.filter((e) =>
     e.ticker != null && e.revision_date > fonsterGrans && e.delta_abs != null && e.delta_abs !== 0);
+  // REINIT: härledd prior äldre än REINIT-tröskeln = ÅTERINITIERING av täckning, inte en
+  // riktningsändring. Ett enormt "delta" mot ett 2021/2022-mål ska inte förorena summan
+  // (t.ex. Susquehanna META $140→$650 = +364 %). Exkluderas ur net_delta/n_revisions/kluster;
+  // räknas i n_reinit så täckningsexpansion syns. pReinitDays (default 365) är FRIKOPPLAD från
+  // carry-forwardens pStaleDays (180): halvårskadens är en färsk revision, inte en reinit —
+  // bara fleråriga fossiler exkluderas. Verifierat mot riktig data (META/ASML, se README).
+  const arReinit = (e) => e.old_target_kalla === "harledd" && e.prior_date != null &&
+    (Date.parse(e.revision_date) - Date.parse(e.prior_date)) / DAG_MS > pReinitDays;
+  const rev = iFonster.filter((e) => !arReinit(e));    // färska riktningsändringar
+  const nReinit = iFonster.length - rev.length;
   const nrev = rev.length;
   const nhouses = new Set(rev.map((e) => e.analyst_house)).size;
   const totalAbs = rev.reduce((s, e) => s + Math.abs(e.delta_abs), 0);
   const largest = totalAbs > 0
     ? Math.round(Math.max(...rev.map((e) => Math.abs(e.delta_abs))) / totalAbs * 100 * 10) / 10 : null;
-  // net_delta_pct (d¹, riktning): summan av delta_pct över SAMMA rev-mängd som n_revisions.
-  // null vid 0 revisioner (aldrig 0,0) — speglar SQL:ens sum() över tomt = null.
+  // net_delta_pct (d¹, riktning): summan av delta_pct över de FÄRSKA revisionerna (ej reinit).
+  // null vid 0 färska revisioner — speglar SQL:ens sum() över tomt = null.
   const netDelta = nrev >= 1
     ? Math.round(rev.reduce((s, e) => s + (e.delta_pct != null ? e.delta_pct : 0), 0) * 100) / 100
     : null;
 
-  // NOLLDATA-SPÄRR: 0 revisioner → acceleration null (aldrig 0)
+  // NOLLDATA-SPÄRR: acc-guarden räknar ALLA fönsterrevisioner (fresh+reinit) precis som förr —
+  // acc-formeln och carry-forwarden är oförändrade (stale-fönstret skyddar dem redan).
   let summaVikt = 0, summaAV = 0;
   for (const x of viktat) { summaVikt += x.vikt; summaAV += x.a * x.vikt; }
-  const acceleration = (nrev >= 1 && viktat.length >= 1 && summaVikt > 0)
+  const acceleration = (iFonster.length >= 1 && viktat.length >= 1 && summaVikt > 0)
     ? Math.round(summaAV / summaVikt * 1e6) / 1e6 : null;
 
   return {
@@ -133,6 +145,7 @@ export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, idag
     n_houses_live: husLiveIdag,
     largest_single_contribution_pct: largest,
     net_delta_pct: netDelta,
+    n_reinit: nReinit,
     points: pts.length,
   };
 }

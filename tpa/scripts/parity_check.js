@@ -36,7 +36,7 @@ function snapshotAcc(punkter) {
 async function main() {
   const sb = createClient(URL, KEY, { auth: { persistSession: false } });
   const { data: raw, error } = await sb.from("tp_acceleration_current")
-    .select("ticker, acceleration, current_consensus, n_houses, n_revisions, net_delta_pct, source_stale_days");
+    .select("ticker, acceleration, current_consensus, n_houses, n_revisions, n_reinit, net_delta_pct, source_stale_days");
   if (error) {
     // Skilj rättighetsfel (grants saknas) från saknad vy (migration ej körd).
     if (error.code === "42501" || /permission denied/i.test(error.message))
@@ -50,8 +50,8 @@ async function main() {
   const rawKarta = Object.fromEntries((raw || []).map((r) => [r.ticker, r]));
 
   const grans = new Date(Date.now() - FONSTER * DAG).toISOString().slice(0, 10);
-  console.log("ticker   rådata-acc   snapshot-acc   diff        net_delta   n_hus/n_rev   källa");
-  console.log("-------  ----------   ------------   ---------   ---------   -----------   ---------");
+  console.log("ticker   rådata-acc   snapshot-acc   diff        net_delta   hus/rev/reinit   källa");
+  console.log("-------  ----------   ------------   ---------   ---------   --------------   ---------");
   for (const ticker of TICKERS) {
     const { data: snaps } = await sb.from("consensus_snapshots")
       .select("as_of_date, target_consensus")
@@ -67,12 +67,13 @@ async function main() {
     // källfärskhet: dagar sedan senaste revision; markera släp när 0 rev + gammal källa
     const stale = r.source_stale_days == null ? "—" : r.source_stale_days + "d";
     const slap = (r.n_revisions === 0 && r.source_stale_days != null && r.source_stale_days > 45) ? " släpar" : "";
+    const hrr = (r.n_houses ?? "—") + "/" + (r.n_revisions ?? "—") + "/" + (r.n_reinit ?? "—");
     console.log(
       ticker.padEnd(7), " ", f(rAcc).padStart(9), "  ", f(sAcc).padStart(9), "  ",
-      f(diff).padStart(9), "  ", nd.padStart(9), "  ",
-      ((r.n_houses ?? "—") + "/" + (r.n_revisions ?? "—")).padStart(11), "  ", stale + slap);
+      f(diff).padStart(9), "  ", nd.padStart(9), "  ", hrr.padStart(14), "  ", stale + slap);
   }
   console.log("\nSkillnader förväntade — granska trenden över ~30 d innan du flippar TPA_KALLA till 'raw'.");
-  console.log("net_delta = riktning (Σdelta% 30 d), acc = böjning. 'släpar' = 0 revisioner men källan är gammal (täcker ej tickern), inte tystnad.");
+  console.log("net_delta = riktning (Σdelta% färska 30 d), acc = böjning. reinit = revisioner mot flerårig prior (>365 d),");
+  console.log("exkluderade ur net_delta/n_rev (täckningsåterinitiering, ej riktning). 'släpar' = 0 rev men gammal källa, ej tystnad.");
 }
 main();

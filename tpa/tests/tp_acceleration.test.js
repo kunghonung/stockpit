@@ -117,6 +117,41 @@ test("net_delta_pct: reiteration (delta=0) påverkar inte summan, null vid 0 rev
   assert.equal(tomt.net_delta_pct, null, "0 revisioner ⇒ net_delta null");
 });
 
+test("REINIT: flerårig prior exkluderas ur net_delta/n_rev, räknas i n_reinit (365 d default)", () => {
+  // Hus A återinitierar täckning: 2024-12-01 @ 200 → 2026-07-15 @ 500 (gap ~591 d, som Susquehanna META).
+  // Det nominella +150 % är ÅTERINITIERING, inte en riktningsändring — ska EJ förorena summan.
+  // Hus B: färsk sänkning 100 → 90 (−10 %, gap 9 d). Enda äkta riktningsändringen i fönstret.
+  const idag = new Date("2026-07-20T00:00:00Z");
+  const rows = [
+    { id: 1, ticker: "X", analyst_house: "A", revision_date: "2024-12-01", new_target: 200 }, // baslinje >1,5 år bort
+    { id: 2, ticker: "X", analyst_house: "A", revision_date: "2026-07-15", new_target: 500 }, // reinit (prior ~591 d)
+    { id: 3, ticker: "X", analyst_house: "B", revision_date: "2026-07-05", new_target: 100 }, // B:s baslinje (delta null)
+    { id: 4, ticker: "X", analyst_house: "B", revision_date: "2026-07-14", new_target: 90 },  // färsk −10 %
+  ];
+  const r = getTpAcceleration(rows, { pDays: 30, idag });   // default pReinitDays = 365
+  assert.equal(r.net_delta_pct, -10, "endast B:s färska −10 % ska summeras (ej A:s +150 % reinit), fick " + r.net_delta_pct);
+  assert.equal(r.n_revisions, 1, "bara den färska räknas");
+  assert.equal(r.n_houses, 1);
+  assert.equal(r.n_reinit, 1, "A:s återinitiering ska räknas separat");
+});
+
+test("REINIT-tröskeln 365 d default, frikopplad + konfigurerbar", () => {
+  // Halvårskadens (~198 d prior) är FÄRSK vid 365 — annars klassas normala META-sänkningar som reinit.
+  const idag = new Date("2026-07-20T00:00:00Z");
+  const rader = [
+    { id: 1, ticker: "X", analyst_house: "A", revision_date: "2026-01-02", new_target: 100 },
+    { id: 2, ticker: "X", analyst_house: "A", revision_date: "2026-07-19", new_target: 80 }, // gap ~198 d, −20 %
+  ];
+  const standard = getTpAcceleration(rader, { pDays: 30, idag });      // 365
+  assert.equal(standard.n_revisions, 1, "~198 d ⇒ färsk vid 365 d");
+  assert.equal(standard.net_delta_pct, -20);
+  assert.equal(standard.n_reinit, 0);
+
+  const strikt = getTpAcceleration(rader, { pDays: 30, pReinitDays: 180, idag }); // snävare
+  assert.equal(strikt.n_reinit, 1, "samma rad ⇒ reinit vid 180 d (198 > 180)");
+  assert.equal(strikt.net_delta_pct, null, "0 färska ⇒ net_delta null");
+});
+
 test("NOLLDATA-SPÄRR: inga revisioner i fönstret ⇒ acc null (aldrig 0)", () => {
   const idag = new Date("2026-08-01T00:00:00Z");
   // enda revision för länge sedan (inom stale men utanför 30d-fönstret)
