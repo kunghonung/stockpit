@@ -83,6 +83,40 @@ test("gles enskild revision ⇒ värde visas MEN flaggas (largest 100 %), inte t
   assert.equal(r.largest_single_contribution_pct, 100, "en revision ⇒ ska flaggas som ej kluster");
 });
 
+test("net_delta_pct mot HANDRÄKNAT facit: två sänkningar −5 % och −3 % ⇒ −8 (acc oberoende)", () => {
+  // Hus A: 100→95 (−5 %). Hus B: 200→194 (−3 %). Baslinjeposterna har delta=null
+  // (första posten/hus) och räknas ej. net_delta = −5 + −3 = −8. Två skilda hus, så
+  // ingen carry-forward-trappa krånglar till d² — net_delta beräknas oberoende av acc.
+  const idag = new Date("2026-07-20T00:00:00Z");
+  const rows = [
+    { id: 1, ticker: "X", analyst_house: "A", revision_date: "2026-07-01", new_target: 100 },
+    { id: 2, ticker: "X", analyst_house: "A", revision_date: "2026-07-10", new_target: 95 },
+    { id: 3, ticker: "X", analyst_house: "B", revision_date: "2026-07-02", new_target: 200 },
+    { id: 4, ticker: "X", analyst_house: "B", revision_date: "2026-07-12", new_target: 194 },
+  ];
+  const r = getTpAcceleration(rows, { pDays: 30, idag });
+  assert.equal(r.net_delta_pct, -8, "handräknat −8, fick " + r.net_delta_pct);
+  assert.equal(r.n_revisions, 2);       // två delta<>0 (baslinjerna räknas ej)
+  assert.equal(r.n_houses, 2);
+});
+
+test("net_delta_pct: reiteration (delta=0) påverkar inte summan, null vid 0 revisioner", () => {
+  const idag = new Date("2026-07-20T00:00:00Z");
+  const medRei = getTpAcceleration([
+    { id: 1, ticker: "X", analyst_house: "A", revision_date: "2026-07-01", new_target: 100 },
+    { id: 2, ticker: "X", analyst_house: "A", revision_date: "2026-07-10", new_target: 90 },  // −10 %
+    { id: 3, ticker: "X", analyst_house: "A", revision_date: "2026-07-15", new_target: 90 },  // reiteration, delta 0
+  ], { pDays: 30, idag });
+  assert.equal(medRei.net_delta_pct, -10, "reiterationen ska inte ändra summan");
+  assert.equal(medRei.n_revisions, 1);
+
+  // 0 revisioner i fönstret ⇒ net_delta null (aldrig 0)
+  const tomt = getTpAcceleration(
+    [{ id: 1, ticker: "X", analyst_house: "A", revision_date: "2026-06-01", new_target: 100 }],
+    { pDays: 30, pStaleDays: 180, idag: new Date("2026-08-01T00:00:00Z") });
+  assert.equal(tomt.net_delta_pct, null, "0 revisioner ⇒ net_delta null");
+});
+
 test("NOLLDATA-SPÄRR: inga revisioner i fönstret ⇒ acc null (aldrig 0)", () => {
   const idag = new Date("2026-08-01T00:00:00Z");
   // enda revision för länge sedan (inom stale men utanför 30d-fönstret)

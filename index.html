@@ -426,6 +426,8 @@ li.oppen .sigdetalj{ display:block; }
 .tpa-motregim{ font-size:var(--fs11); color:var(--gul-text); flex:none; cursor:help; }
 .tpa-enskild{ font-size:var(--fs11); color:var(--gul-text); cursor:help; }
 .nrad.tpa-tunt{ opacity:.55; }
+.tpa-guide{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); margin:0 0 var(--s8) 0; line-height:1.5; }
+.nrad.tpa-slap{ opacity:.7; }
 .tpastatus{ font-size:var(--fs11); color:var(--damp); line-height:1.5; padding:var(--s4); }
 .tpastatus b{ color:var(--navy); font-weight:500; }
 .crowd summary{ list-style:none; cursor:pointer; }
@@ -1587,19 +1589,20 @@ li.oppen .sigdetalj{ display:block; }
     "kalla": "Datapanelen · Supabase/FMP",
     "vintage": "2026-07-18",
     "fonsterDagar": 30,
-    "kommentar": "Illustrativ fallback. I LIVE hämtar webbläsaren direkt från Supabase (egen kadens: dagliga snapshots vardagar 22:00 UTC) och ersätter detta block.",
+    "raw": true,
+    "kommentar": "Illustrativ fallback som förhandsvisar rådata-vyn (riktning/net_delta + böjning/acc + källfärskhet). I LIVE hämtar webbläsaren direkt från Supabase och ersätter detta block.",
     "regim": [
       { "id": "hygTlt", "namn": "HYG/TLT", "mekanik": "Kreditaptit: high yield mot statsobligationer — stigande kvot = risk-on.", "delta5d": 0.6 },
       { "id": "soxSpy", "namn": "SOX/SPY", "mekanik": "AI-cykeln: halvledare mot breda marknaden — leder ofta estimatrevideringarna.", "delta5d": -1.4 },
       { "id": "hgXau", "namn": "HG/GULD", "mekanik": "Tillväxt mot skydd: koppar mot guld — stigande kvot = konjunkturtro.", "delta5d": 0.9 }
     ],
     "rader": [
-      { "ticker": "NVDA", "accBp": 2.4, "uppsida": 9.1, "analytiker": 64, "dagar": 22 },
-      { "ticker": "GOOGL", "accBp": 1.2, "uppsida": 6.8, "analytiker": 52, "dagar": 22 },
-      { "ticker": "MSFT", "accBp": 0.9, "uppsida": 11.4, "analytiker": 58, "dagar": 22 },
-      { "ticker": "AMZN", "accBp": 0.4, "uppsida": 14.2, "analytiker": 61, "dagar": 21 },
-      { "ticker": "AAPL", "accBp": -0.3, "uppsida": 3.6, "analytiker": 47, "dagar": 22 },
-      { "ticker": "META", "accBp": -1.1, "uppsida": 5.2, "analytiker": 55, "dagar": 20 }
+      { "ticker": "NVDA", "accBp": 2.4, "netDelta": 6.5, "nHus": 18, "nRev": 20, "uppsida": 9.1, "analytiker": 64 },
+      { "ticker": "GOOGL", "accBp": 1.2, "netDelta": 3.1, "nHus": 12, "nRev": 13, "uppsida": 6.8, "analytiker": 52 },
+      { "ticker": "MSFT", "accBp": 0.9, "netDelta": 2.0, "nHus": 14, "nRev": 15, "uppsida": 11.4, "analytiker": 58 },
+      { "ticker": "AMZN", "accBp": 0.4, "netDelta": 1.4, "nHus": 10, "nRev": 11, "uppsida": 14.2, "analytiker": 61 },
+      { "ticker": "META", "accBp": 0.2, "netDelta": -8.2, "nHus": 11, "nRev": 12, "uppsida": 5.2, "analytiker": 55 },
+      { "ticker": "AVGO", "accBp": null, "netDelta": null, "nHus": 0, "nRev": 0, "sourceStale": 60, "uppsida": null, "analytiker": null }
     ]
   }
 }
@@ -3286,6 +3289,7 @@ var TPA_AI_KORG = ["NVDA", "AVGO", "ASML", "AMD", "TSM", "MU", "ARM", "SMCI", "M
    flagga + tomt/tunt (Åtgärd 2 & 3). */
 var TPA_KALLA = "snapshot";
 var TPA_TUNT_TROSKEL = 8;   /* < så många analytiker → nedtonat "tunt underlag" */
+var TPA_SLAP_TROSKEL = 45;  /* 0 revisioner + källa äldre än så här (d) → "källa släpar", ej "tyst" */
 
 function tpaRest(sokvag){
   return fetch(TPA_KONFIG.url + "/rest/v1/" + sokvag, {
@@ -3393,6 +3397,8 @@ function hamtaTpaRaw(){
         nHusLive: r.n_houses_live == null ? 0 : +r.n_houses_live,
         largest: r.largest_single_contribution_pct == null ? null : +r.largest_single_contribution_pct,
         nRev: r.n_revisions == null ? 0 : +r.n_revisions,
+        netDelta: r.net_delta_pct == null ? null : +r.net_delta_pct,        /* d¹: riktning (Σdelta% 30 d) */
+        sourceStale: r.source_stale_days == null ? null : +r.source_stale_days, /* dagar sedan senaste revision */
         tunt: r.analyst_count != null && r.analyst_count > 0 && r.analyst_count < TPA_TUNT_TROSKEL
       };
     }).sort(function(a, b){ return (b.accBp || -1e9) - (a.accBp || -1e9); });
@@ -3465,20 +3471,55 @@ function renderaTpa(tpa, status){
       motregim.join(", ") + "</span>"
     : "");
 
-  /* rader */
-  kroppEl.innerHTML = tpa.rader.map(function(r){
+  /* rader — läsguiden (raw) förklarar riktning (d¹) vs böjning (d²) ovanför raderna */
+  var lasguide = tpa.raw
+    ? '<p class="tpa-guide">Riktning = nettodelta 30 d, böjning = acc. Efter stora stegrörelser kan acc växla tecken före riktningen — läs riktningen först.</p>'
+    : "";
+  kroppEl.innerHTML = lasguide + tpa.rader.map(function(r){
     var raw = r.nHus != null;  /* rådata-vägen bär hus-/klustermetadata */
     var enskild = raw && r.largest != null && r.largest > 60;  /* Åtgärd 2: ej kluster */
-    var pil = r.accBp == null ? "→" : r.accBp > 0.2 ? "▲" : r.accBp < -0.2 ? "▼" : "→";
-    var pilklass = r.accBp == null ? "hoger" : r.accBp > 0.2 ? "upp" : r.accBp < -0.2 ? "ned" : "hoger";
-    var varde = r.accBp == null ? "—" : "acc " + (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
-    var beskr = (r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %") +
-      (raw ? " · " + r.nHus + " hus" + (enskild ? ' <span class="tpa-enskild" title="Största enskilda revisionen står för ' + svTal(r.largest, 0) + ' % av rörelsen — enskild revision, inte ett brett kluster.">◆ ej kluster</span>' : "") : "") +
-      (!raw && r.accBp == null && r.dagar != null ? " · samlar " + r.dagar + "/3 d" : "");
-    return '<div class="nrad' + (r.tunt ? " tpa-tunt" : "") + '" title="' + esc(r.ticker) + ": tidsviktad riktkursacceleration" +
-      (r.accBp == null ? (raw ? " — inga revisioner i fönstret" : " kräver 3 snapshotdagar — har " + r.dagar) : " " + varde) +
-      (r.analytiker != null ? " · " + r.analytiker + " analytiker" + (r.tunt ? " (tunt underlag)" : "") : "") +
-      (raw ? " · " + r.nRev + " revisioner, " + r.nHus + " hus i 30 d-fönstret" : (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "")) + '">' +
+    /* källsläp: raw, 0 revisioner MEN källan är gammal → "släpar", inte analytikertystnad */
+    var slap = raw && r.nRev === 0 && r.sourceStale != null && r.sourceStale > TPA_SLAP_TROSKEL;
+    var accTxt = r.accBp == null ? "acc —" : "acc " + (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
+    var uppTxt = r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %";
+    var pil, pilklass, varde, beskr;
+    if(raw){
+      /* RIKTNING styrs av net_delta (d¹), inte acc — acc blir sekundär */
+      if(slap){
+        pil = "→"; pilklass = "hoger";
+        varde = "källa släpar (" + r.sourceStale + " d)";
+        beskr = "0 revisioner — källan saknar färska poster · " + uppTxt;
+      } else if(r.netDelta == null){
+        pil = "→"; pilklass = "hoger";
+        varde = "—";
+        beskr = "inga revisioner i fönstret · " + uppTxt;
+      } else {
+        pil = r.netDelta > 0 ? "▲" : r.netDelta < 0 ? "▼" : "→";
+        pilklass = r.netDelta > 0 ? "upp" : r.netDelta < 0 ? "ned" : "hoger";
+        varde = (r.netDelta > 0 ? "+" : "") + svTal(r.netDelta, 1) + " % 30d";
+        beskr = accTxt + " · " + r.nHus + " hus" +
+          (enskild ? ' <span class="tpa-enskild" title="Största enskilda revisionen står för ' + svTal(r.largest, 0) + ' % av rörelsen — enskild revision, inte ett brett kluster.">◆ ej kluster</span>' : "") +
+          " · " + uppTxt;
+      }
+    } else {
+      /* SNAPSHOT-vägen — oförändrad (ingen net_delta förrän flippen) */
+      pil = r.accBp == null ? "→" : r.accBp > 0.2 ? "▲" : r.accBp < -0.2 ? "▼" : "→";
+      pilklass = r.accBp == null ? "hoger" : r.accBp > 0.2 ? "upp" : r.accBp < -0.2 ? "ned" : "hoger";
+      varde = r.accBp == null ? "—" : "acc " + (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
+      beskr = uppTxt + (r.accBp == null && r.dagar != null ? " · samlar " + r.dagar + "/3 d" : "");
+    }
+    var titel = raw
+      ? esc(r.ticker) + ": riktning (nettodelta 30 d) + böjning (acc)" +
+        (slap ? " — källa släpar " + r.sourceStale + " d (0 revisioner, ej analytikertystnad)"
+              : r.netDelta == null ? " — inga revisioner i fönstret"
+              : " · nettodelta " + (r.netDelta > 0 ? "+" : "") + svTal(r.netDelta, 1) + " %, " + accTxt) +
+        (r.analytiker != null ? " · " + r.analytiker + " analytiker" + (r.tunt ? " (tunt underlag)" : "") : "") +
+        " · " + r.nRev + " revisioner, " + r.nHus + " hus i 30 d-fönstret"
+      : esc(r.ticker) + ": tidsviktad riktkursacceleration" +
+        (r.accBp == null ? " kräver 3 snapshotdagar — har " + r.dagar : " " + varde) +
+        (r.analytiker != null ? " · " + r.analytiker + " analytiker" + (r.tunt ? " (tunt underlag)" : "") : "") +
+        (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "");
+    return '<div class="nrad' + (r.tunt ? " tpa-tunt" : "") + (slap ? " tpa-slap" : "") + '" title="' + titel + '">' +
       '<span class="riktpil ' + pilklass + '">' + pil + "</span>" +
       '<span class="etikett">' + esc(r.ticker) + "</span>" +
       (motregim.indexOf(r.ticker) !== -1 ? '<span class="tpa-motregim" title="Accelererar mot fallande AI-kvot.">⇄</span>' : "") +

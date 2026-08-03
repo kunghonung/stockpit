@@ -86,12 +86,46 @@ Vyn `tp_acceleration_current` ger per ticker:
 - `n_houses_live` — hus med levande mål idag (konsensusens bredd).
 - `largest_single_contribution_pct` — största enskilda `|delta|` / total `|delta|`.
   **> 60 % → panelen flaggar "◆ ej kluster"** (META-typfallet: en ensam revision).
+- `net_delta_pct` — se nedan (riktning).
+- `source_stale_days` — se nedan (källfärskhet).
 - `analyst_count`, `upside_pct`.
 
 **Nolldata-spärr:** 0 revisioner i fönstret → `acceleration` = null → panelen
 renderar "—", aldrig 0,0. `analyst_count` under tröskeln (default 8) → raden
 nedtonad "tunt underlag". Ingesten loggar rader där uppsida är beräkningsbar men
 analytiker = 0 i `ingest_anomalies` — datakvalitetsfel ska synas, inte tyst passera.
+
+## Riktning bredvid böjning — `net_delta_pct` (0003)
+
+Acc (d²) ensam vilseleder efter stegrörelser: ett brant fall följt av platt läses
+av andra-derivatan som **positiv böjning** (META fick rådata-acc +0,22 direkt efter
+ett sänkningskluster). Läsaren behöver riktning OCH böjning tillsammans.
+
+- `net_delta_pct` (**riktning, d¹**) = summan av `delta_pct` för revisionerna i
+  **samma 30 d-fönster som acc** (beräknas i `get_tp_acceleration`s `rev`-CTE, så
+  fönstret aldrig kan driva isär från `n_revisions`). Reiterationer (delta 0) räknas
+  ej. `null` vid 0 revisioner. Formeln är **oförändrad** — detta är ett fält bredvid,
+  inte en ändring av acc.
+- Panelen (rådata-vägen): `net_delta` styr radens pil och står först, acc blir
+  sekundär: `▼ −8,2 % 30d · acc +0,2 bp/d² · 11 hus`. Läsguide i panelen: *"riktning
+  = nettodelta 30 d, böjning = acc; efter stora stegrörelser kan acc växla tecken före
+  riktningen — läs riktningen först."*
+
+## Källfärskhet per ticker — `source_stale_days` (0003)
+
+"0 revisioner i fönstret" är tvetydigt: **analytikerna är tysta** eller **källan
+täcker inte tickern**. `source_stale_days` = dagar sedan tickerns senaste revision
+(vilken som helst) skiljer dem åt.
+
+- Panelen: när `n_revisions = 0` **och** `source_stale_days` > tröskel (`TPA_SLAP_TROSKEL`,
+  default 45) → "källa släpar (X d)" i stället för "—". Kadens-förfallomönstret per källa/ticker.
+- **Känt hål (AVGO):** FMP:s `price-target-news` saknade AVGO:s dokumenterade
+  riktkursvåg 16–27 juli 2026 (senaste posten 2026-06-04) medan andra tickers hade
+  färska poster. Sonderade alternativ på Starter: `grades` bär husnamn+datum men
+  **ingen riktkursnivå** och saknar dessutom samma juli-våg; `grades-historical` är
+  månadsaggregat; `price-target-latest-news` innehöll 0 AVGO; `upgrades-downgrades`
+  = 404. Ingen sekundärkälla kan alltså fylla hålet → **per-ticker-täckning kan inte
+  antas**, och `source_stale_days`-flaggan bär sanningen i panelen.
 
 ## Datatäckning och gränser
 
@@ -116,6 +150,9 @@ analytiker = 0 i `ingest_anomalies` — datakvalitetsfel ska synas, inte tyst pa
      råtabellerna (minsta-privilegium — panelen läser bara vyn
      `tp_acceleration_current`) och gör `get_tp_acceleration` till SECURITY
      DEFINER så vyn är rättighetsgränsen.
+   - `supabase/migrations/0003_net_delta_up.sql` — lägger `net_delta_pct` (riktning,
+     i funktionen) och `source_stale_days` (källfärskhet, i vyn). Kräver drop+recreate
+     av funktion/vy; återställer SECURITY DEFINER + grants. Acc-formeln oförändrad.
 2. Backfilla historiken en gång: `node scripts/backfill_revisions.js` (env satt).
    Skriptet PAGINERAR price-target-news (`page`-parametern, 100 poster/sida) tills
    en tom/partiell sida — annars stannar de mest bevakade tickrarna på sidtaket

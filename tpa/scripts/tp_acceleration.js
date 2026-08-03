@@ -113,6 +113,11 @@ export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, idag
   const totalAbs = rev.reduce((s, e) => s + Math.abs(e.delta_abs), 0);
   const largest = totalAbs > 0
     ? Math.round(Math.max(...rev.map((e) => Math.abs(e.delta_abs))) / totalAbs * 100 * 10) / 10 : null;
+  // net_delta_pct (d¹, riktning): summan av delta_pct över SAMMA rev-mängd som n_revisions.
+  // null vid 0 revisioner (aldrig 0,0) — speglar SQL:ens sum() över tomt = null.
+  const netDelta = nrev >= 1
+    ? Math.round(rev.reduce((s, e) => s + (e.delta_pct != null ? e.delta_pct : 0), 0) * 100) / 100
+    : null;
 
   // NOLLDATA-SPÄRR: 0 revisioner → acceleration null (aldrig 0)
   let summaVikt = 0, summaAV = 0;
@@ -127,6 +132,7 @@ export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, idag
     n_houses: nhouses,
     n_houses_live: husLiveIdag,
     largest_single_contribution_pct: largest,
+    net_delta_pct: netDelta,
     points: pts.length,
   };
 }

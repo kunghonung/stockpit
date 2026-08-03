@@ -78,9 +78,14 @@ Poster: `{id, datum, lins, handling, etf, sektor, ingang:{rsRank, fwdPE, revQ2},
 
 Enda modulen med **extern körtidskälla**: i LIVE hämtar webbläsaren direkt från datapanelens Supabase (egen kadens — dagliga snapshots vardagar 22:00 UTC, hör inte hemma i 30-minuterssnapshoten). `tpa`-blocket i `sample_data.json` är därför bara **fallback**: det visas när läsnyckeln saknas i `TPA_KONFIG` (index.html), när anropet faller, eller på `file://`.
 
-Blockets form: `{lage, kalla, vintage, fonsterDagar, kommentar, regim:[{id, namn, mekanik, delta5d}], rader:[{ticker, accBp, uppsida, analytiker, dagar}]}`.
+Blockets form: `{lage, kalla, vintage, fonsterDagar, raw?, kommentar, regim:[{id, namn, mekanik, delta5d}], rader:[{ticker, accBp, netDelta?, nHus?, nRev?, largest?, sourceStale?, uppsida, analytiker, dagar?}]}`.
 
-- `accBp` = tidsviktad d²TP/dt² normerad mot TP-nivån, i **baspunkter/dag²**. Kanonisk algoritm: `get_target_price_acceleration` i target-price-acceleration-repots `schema.sql` — JS-kopian (`tpaAcceleration`) ska hållas i synk. `null` vid < 3 snapshotdagar (visas som "samlar X/3 d" — förstklassigt tillstånd, inte ett fel).
+Två renderingsvägar delar formen. **Snapshot-vägen** (`hamtaTpaLive`, nuvarande källa): rader med `accBp/uppsida/analytiker/dagar`, `accBp` primärt. **Rådata-vägen** (`hamtaTpaRaw`, `TPA_KALLA="raw"` efter paritetsperioden, och fallback-blocket): `raw:true` + per rad `nHus/nRev/netDelta/sourceStale` — då styr `netDelta` (riktning) raden och `accBp` blir sekundär.
+
+- `accBp` = tidsviktad d²TP/dt² (**böjning**) normerad mot TP-nivån, i **baspunkter/dag²**. Kanonisk algoritm: `get_target_price_acceleration` i target-price-acceleration-repots `schema.sql` (rådata-vägen: `get_tp_acceleration` i `tpa/…/0003`) — JS-kopiorna (`tpaAcceleration`, `tp_acceleration.js`) hålls i synk. `null` vid < 3 snapshotdagar / 0 revisioner (visas "samlar X/3 d" resp. "—" — förstklassiga tillstånd, inte fel).
+- `netDelta` (rådata) = **riktning**: summan av `delta_pct` för revisionerna i samma 30d-fönster som `accBp` (reiterationer med delta 0 räknas ej), i %. `null` vid 0 revisioner. **Styr radens pil** — d² ensam vilseleder efter stegrörelser (brant fall → platt läses som positiv böjning), så riktningen läses först. Panelen: `▼ −8,2 % 30d · acc +0,2 bp/d² · 11 hus`.
+- `sourceStale` (rådata) = dagar sedan tickerns senaste revision (`source_stale_days`). När `nRev = 0` **och** `sourceStale > TPA_SLAP_TROSKEL` (45) → raden visar "källa släpar (X d)" i stället för "—": skiljer analytikertystnad från att FMP inte täcker tickern (kadens-förfall per källa/ticker).
+- `nHus`/`nRev`/`largest` (rådata) = hus resp. delta≠0-revisioner i fönstret, och största enskilda bidraget i % (`> 60` → "◆ ej kluster"). Se `tpa/README.md`.
 - `regim[].delta5d` = kvotens förändring i % över ca 5 handelsdagar; `null` när < 2 makrorader finns (visas "—").
 - **Mot regimen-flaggan** (⇄): positiv `accBp` i en ticker ur `TPA_AI_KORG` samtidigt som SOX/SPY-deltat är negativt. Okända tickers flaggas aldrig.
 - Modulens lineage-badge speglar **TPA-källans** läge, inte sidans globala — Supabase-LIVE kan vara aktiv i TEST-läge och tvärtom.
