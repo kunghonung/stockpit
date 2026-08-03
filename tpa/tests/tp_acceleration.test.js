@@ -1,7 +1,7 @@
 // Tester för rådata-modellen. Kör: node --test (Node >=20). Inga beroenden.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { normalizeHouse, husNyckel, berikaRevisioner, getTpAcceleration } from "../scripts/tp_acceleration.js";
+import { normalizeHouse, husNyckel, berikaRevisioner, getTpAcceleration, analytikerBasandring } from "../scripts/tp_acceleration.js";
 
 const ALIAS = { morganstanley: "Morgan Stanley", ms: "Morgan Stanley", bofasecurities: "BofA Securities", bankofamerica: "BofA Securities" };
 
@@ -193,4 +193,27 @@ test("KLUSTER-FLAGGA: en dominerande revision ⇒ largest ~100 %", () => {
   const rb = getTpAcceleration(brett, { pDays: 30, idag });
   assert.equal(rb.largest_single_contribution_pct, 25, "fyra lika ⇒ 25 %");
   assert.equal(rb.n_houses, 4);
+});
+
+test("SNAPSHOT-ARTEFAKTVARNING: count-hopp flaggas, stabil bas är ren", () => {
+  // META-fallet: 3 analytiker fram till Q2, sedan 12 → kompositionsartefakt.
+  const hopp = analytikerBasandring([
+    { antal: 3, datum: "2026-07-27" }, { antal: 3, datum: "2026-07-30" },
+    { antal: 12, datum: "2026-07-31" }, { antal: 12, datum: "2026-08-03" },
+  ]);
+  assert.ok(hopp, "hopp ska detekteras");
+  assert.equal(hopp.from, 3);
+  assert.equal(hopp.to, 12);
+  assert.equal(hopp.datum, "2026-07-31", "datumet för hoppet");
+  assert.equal(hopp.spannPct, 300);
+  assert.equal(hopp.over, true, "300 % > 25 % ⇒ över tröskeln");
+
+  // stabil analytikerbas ⇒ ingen flagga (ren rad)
+  assert.equal(analytikerBasandring([{ antal: 10, datum: "a" }, { antal: 10, datum: "b" }, { antal: 10, datum: "c" }]),
+    null, "stabil bas ⇒ null");
+
+  // liten ändring registreras men ligger UNDER panelens tröskel (dämpas ej)
+  const liten = analytikerBasandring([{ antal: 10, datum: "a" }, { antal: 11, datum: "b" }]);
+  assert.equal(liten.spannPct, 10);
+  assert.equal(liten.over, false, "10 % < 25 % ⇒ panelen dämpar ej (men parity kan visa hoppet)");
 });

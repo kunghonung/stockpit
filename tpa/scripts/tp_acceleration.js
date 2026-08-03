@@ -149,3 +149,27 @@ export function getTpAcceleration(rawRader, { pDays = 30, pStaleDays = 180, pRei
     points: pts.length,
   };
 }
+
+// ============================================================================
+// SNAPSHOT-ARTEFAKTVARNING — detekterar om analytikermängden ändrats i fönstret.
+// Ett hopp i analyst_count (t.ex. META 3→12 efter Q2) räknar om konsensus-SNITTET
+// över en ANNAN mängd hus → snapshot-acc läser kompositionsskiftet som en
+// riktkursrörelse (META 31/7: −71/dag som var 4x fler analytiker, inte ett fall).
+// Rådata-vägen (carry-forward) är IMMUN. Används av parity_check + panelens
+// snapshot-väg; kan tas bort när TPA_KALLA='raw' permanent.
+// Indata: [{antal, datum}] i datumordning. Returnerar största enskilda hoppet +
+// om fönstrets spännvidd överstiger troskelPct, annars null (stabil bas).
+// ============================================================================
+export function analytikerBasandring(rader, troskelPct = 25) {
+  const c = (rader || []).filter((r) => r.antal != null).map((r) => ({ antal: +r.antal, datum: r.datum }));
+  if (c.length < 2) return null;
+  let storst = null;
+  for (let i = 1; i < c.length; i++) {
+    const d = Math.abs(c[i].antal - c[i - 1].antal);
+    if (d > 0 && (!storst || d > storst.d)) storst = { d, from: c[i - 1].antal, to: c[i].antal, datum: c[i].datum };
+  }
+  if (!storst) return null;   // stabil bas — ingen förändring
+  const antal = c.map((x) => x.antal), min = Math.min(...antal), max = Math.max(...antal);
+  const spannPct = min > 0 ? Math.round((max - min) / min * 100) : Infinity;
+  return { from: storst.from, to: storst.to, datum: storst.datum, spannPct, over: spannPct > troskelPct };
+}

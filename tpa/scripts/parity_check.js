@@ -9,6 +9,7 @@
 // ============================================================================
 import "dotenv/config";
 import { createClient } from "@supabase/supabase-js";
+import { analytikerBasandring } from "./tp_acceleration.js";
 
 const URL = (process.env.SUPABASE_URL || "").trim().replace(/["']/g, "");
 const KEY = (process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
@@ -50,11 +51,12 @@ async function main() {
   const rawKarta = Object.fromEntries((raw || []).map((r) => [r.ticker, r]));
 
   const grans = new Date(Date.now() - FONSTER * DAG).toISOString().slice(0, 10);
-  console.log("ticker   rådata-acc   snapshot-acc   diff        net_delta   hus/rev/reinit   källa");
-  console.log("-------  ----------   ------------   ---------   ---------   --------------   ---------");
+  const dm = (iso) => iso ? (+iso.slice(8, 10)) + "/" + (+iso.slice(5, 7)) : "?";  // 2026-07-31 → 31/7
+  console.log("ticker   rådata-acc   snapshot-acc   diff        net_delta   hus/rev/reinit   källa       snapshot-bas");
+  console.log("-------  ----------   ------------   ---------   ---------   --------------   ---------   ------------");
   for (const ticker of TICKERS) {
     const { data: snaps } = await sb.from("consensus_snapshots")
-      .select("as_of_date, target_consensus")
+      .select("as_of_date, target_consensus, analyst_count")
       .eq("ticker", ticker).gte("as_of_date", grans).order("as_of_date");
     const punkter = (snaps || []).filter((s) => s.target_consensus != null)
       .map((s) => ({ t: Date.parse(s.as_of_date), tp: +s.target_consensus }));
@@ -68,12 +70,16 @@ async function main() {
     const stale = r.source_stale_days == null ? "—" : r.source_stale_days + "d";
     const slap = (r.n_revisions === 0 && r.source_stale_days != null && r.source_stale_days > 45) ? " släpar" : "";
     const hrr = (r.n_houses ?? "—") + "/" + (r.n_revisions ?? "—") + "/" + (r.n_reinit ?? "—");
+    // SNAPSHOT-ARTEFAKTVARNING: ändrades analytikerbasen i fönstret? (kompositionsskifte → opålitlig snapshot-acc)
+    const bas = analytikerBasandring((snaps || []).map((s) => ({ antal: s.analyst_count, datum: s.as_of_date })), 0);
+    const basTxt = bas ? "⚠ " + bas.from + "→" + bas.to + " (" + dm(bas.datum) + ")" : "—";
     console.log(
       ticker.padEnd(7), " ", f(rAcc).padStart(9), "  ", f(sAcc).padStart(9), "  ",
-      f(diff).padStart(9), "  ", nd.padStart(9), "  ", hrr.padStart(14), "  ", stale + slap);
+      f(diff).padStart(9), "  ", nd.padStart(9), "  ", hrr.padStart(14), "  ", (stale + slap).padEnd(11), "  ", basTxt);
   }
   console.log("\nSkillnader förväntade — granska trenden över ~30 d innan du flippar TPA_KALLA till 'raw'.");
   console.log("net_delta = riktning (Σdelta% färska 30 d), acc = böjning. reinit = revisioner mot flerårig prior (>365 d),");
   console.log("exkluderade ur net_delta/n_rev (täckningsåterinitiering, ej riktning). 'släpar' = 0 rev men gammal källa, ej tystnad.");
+  console.log("snapshot-bas ⚠ = analytikerantalet ändrades i fönstret → snapshot-acc är ett kompositionsskifte, inte en riktkursrörelse (jfr META 3→12).");
 }
 main();

@@ -429,6 +429,8 @@ li.oppen .sigdetalj{ display:block; }
 .tpa-guide{ font-family:var(--mono); font-size:var(--fs11); color:var(--svag); margin:0 0 var(--s8) 0; line-height:1.5; }
 .nrad.tpa-slap{ opacity:.7; }
 .tpa-reinit{ color:var(--svag); cursor:help; }
+.nrad.tpa-basandrad{ opacity:.55; }                          /* snapshot-artefaktvarning (self-dör vid flipp till raw) */
+.tpa-basvarning{ color:var(--gul-text); cursor:help; margin-left:2px; }
 .tpastatus{ font-size:var(--fs11); color:var(--damp); line-height:1.5; padding:var(--s4); }
 .tpastatus b{ color:var(--navy); font-weight:500; }
 .crowd summary{ list-style:none; cursor:pointer; }
@@ -3323,6 +3325,27 @@ function tpaAcceleration(punkter, fonster){
   return vikt > 0 ? summa / vikt : null;
 }
 
+/* SNAPSHOT-ARTEFAKTVARNING — spegel av analytikerBasandring i tp_acceleration.js.
+   Ändras analyst_count i fönstret (t.ex. META 3→12 efter Q2) räknas konsensus-
+   snittet om över en annan husmängd → snapshot-acc blir ett kompositionsskifte,
+   inte en riktkursrörelse. Punkter: [{antal, datum}]. Rådata-vägen är immun, så
+   detta gäller BARA snapshot-vägen och kan tas bort när TPA_KALLA='raw' permanent. */
+function tpaBasandring(punkter, troskelPct){
+  troskelPct = troskelPct == null ? 25 : troskelPct;
+  var c = punkter.filter(function(p){ return p.antal != null; });
+  if(c.length < 2) return null;
+  var storst = null;
+  for(var i = 1; i < c.length; i++){
+    var d = Math.abs(c[i].antal - c[i - 1].antal);
+    if(d > 0 && (!storst || d > storst.d)) storst = { d: d, from: c[i - 1].antal, to: c[i].antal, datum: c[i].datum };
+  }
+  if(!storst) return null;
+  var antal = c.map(function(x){ return x.antal; });
+  var min = Math.min.apply(null, antal), max = Math.max.apply(null, antal);
+  var spannPct = min > 0 ? Math.round((max - min) / min * 100) : Infinity;
+  return { from: storst.from, to: storst.to, datum: storst.datum, spannPct: spannPct, over: spannPct > troskelPct };
+}
+
 function hamtaTpaLive(){
   var fonster = 30;
   var fran = new Date(Date.now() - (fonster + 5) * 86400000).toISOString().slice(0, 10);
@@ -3335,7 +3358,7 @@ function hamtaTpaLive(){
     res[0].forEach(function(rad){
       if(!perTicker[rad.ticker]) perTicker[rad.ticker] = [];
       perTicker[rad.ticker].push({
-        t: Date.parse(rad.as_of_date), tp: +rad.target_consensus,
+        t: Date.parse(rad.as_of_date), datum: rad.as_of_date, tp: +rad.target_consensus,
         pris: rad.price_at_snapshot == null ? null : +rad.price_at_snapshot,
         antal: rad.analyst_count == null ? null : +rad.analyst_count
       });
@@ -3346,11 +3369,15 @@ function hamtaTpaLive(){
       var p = perTicker[tick], sist = p[p.length - 1];
       if(p.length > maxDagar) maxDagar = p.length;
       var acc = tpaAcceleration(p, fonster);
+      /* SNAPSHOT-ARTEFAKTVARNING: ändrades analytikerbasen >25 % i fönstret? (self-dör vid flipp) */
+      var bf = tpaBasandring(p);
       rader.push({
         ticker: tick,
         accBp: acc == null || !sist.tp ? null : acc / sist.tp * 10000,
         uppsida: sist.pris ? (sist.tp - sist.pris) / sist.pris * 100 : null,
-        analytiker: sist.antal, dagar: p.length
+        analytiker: sist.antal, dagar: p.length,
+        basAndrad: !!(bf && bf.over),
+        basText: bf ? bf.from + "→" + bf.to + " den " + (+bf.datum.slice(8, 10)) + "/" + (+bf.datum.slice(5, 7)) : null
       });
     });
     rader.sort(function(a, b){
@@ -3482,6 +3509,8 @@ function renderaTpa(tpa, status){
     var enskild = raw && r.largest != null && r.largest > 60;  /* Åtgärd 2: ej kluster */
     /* källsläp: raw, 0 revisioner MEN källan är gammal → "släpar", inte analytikertystnad */
     var slap = raw && r.nRev === 0 && r.sourceStale != null && r.sourceStale > TPA_SLAP_TROSKEL;
+    /* snapshot-artefaktvarning: analytikerbasen ändrades >25 % i fönstret → acc opålitlig (self-dör vid flipp) */
+    var basvarn = !raw && r.basAndrad;
     var accTxt = r.accBp == null ? "acc —" : "acc " + (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
     var uppTxt = r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %";
     var pil, pilklass, varde, beskr;
@@ -3529,11 +3558,13 @@ function renderaTpa(tpa, status){
       : esc(r.ticker) + ": tidsviktad riktkursacceleration" +
         (r.accBp == null ? " kräver 3 snapshotdagar — har " + r.dagar : " " + varde) +
         (r.analytiker != null ? " · " + r.analytiker + " analytiker" + (r.tunt ? " (tunt underlag)" : "") : "") +
-        (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "");
-    return '<div class="nrad' + (r.tunt ? " tpa-tunt" : "") + (slap ? " tpa-slap" : "") + '" title="' + titel + '">' +
+        (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "") +
+        (basvarn ? " · ⚠ konsensusbas ändrad (" + r.basText + ") — acc opålitlig" : "");
+    return '<div class="nrad' + (r.tunt ? " tpa-tunt" : "") + (slap ? " tpa-slap" : "") + (basvarn ? " tpa-basandrad" : "") + '" title="' + titel + '">' +
       '<span class="riktpil ' + pilklass + '">' + pil + "</span>" +
       '<span class="etikett">' + esc(r.ticker) + "</span>" +
       (motregim.indexOf(r.ticker) !== -1 ? '<span class="tpa-motregim" title="Accelererar mot fallande AI-kvot.">⇄</span>' : "") +
+      (basvarn ? '<span class="tpa-basvarning" title="Konsensusbas ändrad (' + esc(r.basText) + ') — analytikermängden ändrades i fönstret, snapshot-acc är ett kompositionsskifte och opålitlig.">⚠</span>' : "") +
       '<span class="beskr">' + beskr + "</span>" +
       '<span class="varde">' + varde + "</span>" +
       (r.analytiker != null ? '<span class="meta">' + r.analytiker + (r.tunt ? " an · tunt" : " analytiker") + "</span>" : (raw ? '<span class="meta">— analytiker</span>' : "")) +
