@@ -36,7 +36,16 @@ function snapshotAcc(punkter) {
 async function main() {
   const sb = createClient(URL, KEY, { auth: { persistSession: false } });
   const { data: raw, error } = await sb.from("tp_acceleration_current").select("ticker, acceleration, current_consensus, n_houses, n_revisions");
-  if (error) { console.error("Vyn saknas — kör migrationen först. " + error.message); process.exit(1); }
+  if (error) {
+    // Skilj rättighetsfel (grants saknas) från saknad vy (migration ej körd).
+    if (error.code === "42501" || /permission denied/i.test(error.message))
+      console.error("Rättighetsfel: service_role saknar SELECT på vyn — kör migration 0002_grants_up.sql.\n  (" + error.message + ")");
+    else if (error.code === "42P01" || error.code === "PGRST205" || /does not exist|could not find/i.test(error.message))
+      console.error("Vyn saknas: kör migration 0001 (och 0002) i SQL-editorn först.\n  (" + error.message + ")");
+    else
+      console.error("Kunde inte läsa tp_acceleration_current: " + error.message + (error.code ? " [" + error.code + "]" : ""));
+    process.exit(1);
+  }
   const rawKarta = Object.fromEntries((raw || []).map((r) => [r.ticker, r]));
 
   const grans = new Date(Date.now() - FONSTER * DAG).toISOString().slice(0, 10);

@@ -93,14 +93,37 @@ renderar "—", aldrig 0,0. `analyst_count` under tröskeln (default 8) → rade
 nedtonad "tunt underlag". Ingesten loggar rader där uppsida är beräkningsbar men
 analytiker = 0 i `ingest_anomalies` — datakvalitetsfel ska synas, inte tyst passera.
 
+## Datatäckning och gränser
+
+- **Icke-US-tickers saknar per-hus-data.** FMP:s price-target-news är US-centrerad;
+  europeiska listningar (t.ex. `OR.PA`, `SIE.DE`) ger "inga poster". De får därför
+  inga `tp_revisions`, och `tp_acceleration_current` ger dem ingen rad → panelen
+  renderar "—" enligt nolldata-regeln. Det är väntat, inte ett fel att felsöka.
+- **Historikdjupet varierar per ticker även efter paginering.** Pagineringen hämtar
+  ALLA sidor FMP har, men FMP:s historik är olika lång per bolag (bevakningsstart,
+  börsintroduktion). Acc räknas alltid på samma 30-dagarsfönster, så acc-jämförelser
+  mellan tickers är rättvisa. Men **leda/följa-analys mellan tickers** kan träffa
+  olika historikdjup — kontrollera täckningen först, t.ex.
+  `select ticker, min(revision_date), max(revision_date), count(*) from tp_revisions group by ticker`.
+
 ## Drift och migration
 
-1. Kör migrationen i Supabase SQL-editorn (service-rollen — DDL går ej via REST):
-   `supabase/migrations/0001_tp_revisions_up.sql`. Reversibel via `..._down.sql`.
+1. Kör migrationerna i Supabase SQL-editorn (service-rollen — DDL går ej via REST),
+   i ordning. Var och en är reversibel via sin `..._down.sql`:
+   - `supabase/migrations/0001_tp_revisions_up.sql` — tabeller, vyer, funktioner.
+   - `supabase/migrations/0002_grants_up.sql` — rättigheter: ger service_role
+     SELECT på vyerna (annars nekas backfill/parity), drar tillbaka anon från
+     råtabellerna (minsta-privilegium — panelen läser bara vyn
+     `tp_acceleration_current`) och gör `get_tp_acceleration` till SECURITY
+     DEFINER så vyn är rättighetsgränsen.
 2. Backfilla historiken en gång: `node scripts/backfill_revisions.js` (env satt).
+   Skriptet PAGINERAR price-target-news (`page`-parametern, 100 poster/sida) tills
+   en tom/partiell sida — annars stannar de mest bevakade tickrarna på sidtaket
+   100 och får för grund historik. Idempotent, kan köras om.
 3. Daglig ingest (`ingest-data.js`) skriver nu BÅDE snapshots (epoch='parity')
    OCH rådata-revisioner — parallellperioden.
-4. Efter ~30 dagars paritetsgranskning: flippa `TPA_KALLA = "raw"` i `index.html`.
+4. Verifiera/diffa vägarna: `node scripts/parity_check.js`.
+5. Efter ~30 dagars paritetsgranskning: flippa `TPA_KALLA = "raw"` i `index.html`.
    Då tänds n_houses + kluster-flagga + tomt/tunt i panelen.
 
 Tester: `node --test tests/` (idempotens, husnormalisering, acc mot handräknat

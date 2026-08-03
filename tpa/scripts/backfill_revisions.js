@@ -14,7 +14,10 @@ const SUPABASE_URL = (process.env.SUPABASE_URL || "").trim().replace(/^SUPABASE_
 const SUPABASE_KEY = (process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
 const FMP_API_KEY = (process.env.FMP_API_KEY || "").trim();
 const TICKERS = (process.env.TICKERS || "AAPL,MSFT,NVDA").split(",").map((t) => t.trim()).filter(Boolean);
-const LIMIT = Number(process.env.BACKFILL_LIMIT || 1000);   // full historik
+// price-target-news ger MAX 100 poster/sida (page-parametern) på Starter — ~100
+// = ett sidtak, INTE historikens slut. Vi paginerar tills tomt/partiellt svar.
+const SID_STORLEK = 100;                                    // endpointens tak/sida
+const MAX_SIDOR = Number(process.env.BACKFILL_MAX_PAGES || 25); // skydd mot oändlig loop
 
 const paus = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -23,6 +26,22 @@ async function fmpJson(vag) {
   const svar = await fetch(url, { headers: { "User-Agent": "Stockpit/1.0 (kontakt: erik.hjalmarson@gmail.com)" } });
   if (!svar.ok) throw new Error("HTTP " + svar.status);
   return svar.json();
+}
+
+// Hämtar HELA per-hus-historiken genom att paginera price-target-news tills en
+// tom eller partiell sida (< SID_STORLEK) — då är vi vid historikens slut.
+// Artig paus mellan sidanrop. Dubbletter på sidgränsen rensas av unika nyckeln.
+async function hamtaAllaSidor(ticker) {
+  const allt = [];
+  for (let sida = 0; sida < MAX_SIDOR; sida++) {
+    const svar = await fmpJson(
+      "price-target-news?symbol=" + encodeURIComponent(ticker) + "&page=" + sida + "&limit=" + SID_STORLEK);
+    if (!Array.isArray(svar) || svar.length === 0) break;   // slut
+    allt.push(...svar);
+    if (svar.length < SID_STORLEK) break;                   // sista (partiella) sidan
+    await paus(300);
+  }
+  return allt;
 }
 
 async function main() {
@@ -37,8 +56,8 @@ async function main() {
   let totalt = 0, hus = new Set();
   for (const ticker of TICKERS) {
     try {
-      const nyheter = await fmpJson("price-target-news?symbol=" + encodeURIComponent(ticker) + "&limit=" + LIMIT);
-      if (!Array.isArray(nyheter) || !nyheter.length) { console.log(ticker + ": inga poster"); await paus(400); continue; }
+      const nyheter = await hamtaAllaSidor(ticker);
+      if (!nyheter.length) { console.log(ticker + ": inga poster"); await paus(400); continue; }
       const rader = [];
       for (const p of nyheter) {
         const target = p.adjPriceTarget ?? p.priceTarget;
