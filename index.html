@@ -424,6 +424,8 @@ li.oppen .sigdetalj{ display:block; }
 .tparegim .rchip{ display:inline-flex; align-items:center; gap:var(--s4); font-family:var(--mono); font-size:var(--fs11); color:var(--sek); cursor:help; }
 .tparegim .rchip b{ color:var(--navy); font-weight:500; }
 .tpa-motregim{ font-size:var(--fs11); color:var(--gul-text); flex:none; cursor:help; }
+.tpa-enskild{ font-size:var(--fs11); color:var(--gul-text); cursor:help; }
+.nrad.tpa-tunt{ opacity:.55; }
 .tpastatus{ font-size:var(--fs11); color:var(--damp); line-height:1.5; padding:var(--s4); }
 .tpastatus b{ color:var(--navy); font-weight:500; }
 .crowd summary{ list-style:none; cursor:pointer; }
@@ -3277,6 +3279,13 @@ var TPA_KONFIG = {
 /* Mot regimen-flaggan sätts bara på entydiga halvledar-/AI-infrastrukturnamn.
    Okända tickers flaggas aldrig — hellre ingen markering än en gissad. */
 var TPA_AI_KORG = ["NVDA", "AVGO", "ASML", "AMD", "TSM", "MU", "ARM", "SMCI", "MRVL"];
+/* Datakälla för TP-acc. "snapshot" = dagliga consensus_snapshots (nuvarande);
+   "raw" = carry-forward ur tp_revisions (per hus). Under paritetsperioden (~30 d)
+   körs BÅDA i pipelinen men panelen står kvar på "snapshot" tills diffen granskats.
+   Flippa till "raw" när paritetsperioden är godkänd — då tänds n_houses + kluster-
+   flagga + tomt/tunt (Åtgärd 2 & 3). */
+var TPA_KALLA = "snapshot";
+var TPA_TUNT_TROSKEL = 8;   /* < så många analytiker → nedtonat "tunt underlag" */
 
 function tpaRest(sokvag){
   return fetch(TPA_KONFIG.url + "/rest/v1/" + sokvag, {
@@ -3366,6 +3375,35 @@ function hamtaTpaLive(){
   });
 }
 
+/* Rådata-vägen: läser den serverberäknade vyn tp_acceleration_current.
+   All acc/metadata kommer redan uträknad ur rådata (carry-forward, stale-fönster). */
+function hamtaTpaRaw(){
+  return tpaRest("tp_acceleration_current?select=*").then(function(rows){
+    if(!Array.isArray(rows)) throw new Error("tp_acceleration_current saknas");
+    var rader = rows.map(function(r){
+      var acc = r.acceleration == null ? null : +r.acceleration;
+      var kons = r.current_consensus == null ? null : +r.current_consensus;
+      /* normalisera till bp/dag² som snapshot-vägen (acc/konsensus·10000) */
+      var accBp = (acc != null && kons) ? acc / kons * 10000 : null;
+      return {
+        ticker: r.ticker, accBp: accBp,
+        uppsida: r.upside_pct == null ? null : +r.upside_pct,
+        analytiker: r.analyst_count == null ? null : +r.analyst_count,
+        nHus: r.n_houses == null ? 0 : +r.n_houses,
+        nHusLive: r.n_houses_live == null ? 0 : +r.n_houses_live,
+        largest: r.largest_single_contribution_pct == null ? null : +r.largest_single_contribution_pct,
+        nRev: r.n_revisions == null ? 0 : +r.n_revisions,
+        tunt: r.analyst_count != null && r.analyst_count > 0 && r.analyst_count < TPA_TUNT_TROSKEL
+      };
+    }).sort(function(a, b){ return (b.accBp || -1e9) - (a.accBp || -1e9); });
+    return {
+      lage: "LIVE", kalla: "Datapanelen · rådata per hus (tp_revisions)",
+      vintage: new Date().toISOString().slice(0, 10), fonsterDagar: 30, raw: true,
+      regim: (window.__tpaSenast && window.__tpaSenast.regim) || [], rader: rader
+    };
+  });
+}
+
 function tpaMotRegim(tpa){
   var sox = null;
   tpa.regim.forEach(function(k){ if(k.id === "soxSpy") sox = k.delta5d; });
@@ -3429,21 +3467,24 @@ function renderaTpa(tpa, status){
 
   /* rader */
   kroppEl.innerHTML = tpa.rader.map(function(r){
+    var raw = r.nHus != null;  /* rådata-vägen bär hus-/klustermetadata */
+    var enskild = raw && r.largest != null && r.largest > 60;  /* Åtgärd 2: ej kluster */
     var pil = r.accBp == null ? "→" : r.accBp > 0.2 ? "▲" : r.accBp < -0.2 ? "▼" : "→";
     var pilklass = r.accBp == null ? "hoger" : r.accBp > 0.2 ? "upp" : r.accBp < -0.2 ? "ned" : "hoger";
     var varde = r.accBp == null ? "—" : "acc " + (r.accBp > 0 ? "+" : "") + svTal(r.accBp, 1) + " bp/d²";
     var beskr = (r.uppsida == null ? "uppsida —" : "uppsida " + (r.uppsida > 0 ? "+" : "") + svTal(r.uppsida, 1) + " %") +
-      (r.accBp == null && r.dagar != null ? " · samlar " + r.dagar + "/3 d" : "");
-    return '<div class="nrad" title="' + esc(r.ticker) + ": tidsviktad riktkursacceleration" +
-      (r.accBp == null ? " kräver 3 snapshotdagar — har " + r.dagar : " " + varde) +
-      (r.analytiker != null ? " · " + r.analytiker + " analytiker" : "") +
-      (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "") + '">' +
+      (raw ? " · " + r.nHus + " hus" + (enskild ? ' <span class="tpa-enskild" title="Största enskilda revisionen står för ' + svTal(r.largest, 0) + ' % av rörelsen — enskild revision, inte ett brett kluster.">◆ ej kluster</span>' : "") : "") +
+      (!raw && r.accBp == null && r.dagar != null ? " · samlar " + r.dagar + "/3 d" : "");
+    return '<div class="nrad' + (r.tunt ? " tpa-tunt" : "") + '" title="' + esc(r.ticker) + ": tidsviktad riktkursacceleration" +
+      (r.accBp == null ? (raw ? " — inga revisioner i fönstret" : " kräver 3 snapshotdagar — har " + r.dagar) : " " + varde) +
+      (r.analytiker != null ? " · " + r.analytiker + " analytiker" + (r.tunt ? " (tunt underlag)" : "") : "") +
+      (raw ? " · " + r.nRev + " revisioner, " + r.nHus + " hus i 30 d-fönstret" : (r.dagar != null ? " · " + r.dagar + " snapshotdagar i fönstret" : "")) + '">' +
       '<span class="riktpil ' + pilklass + '">' + pil + "</span>" +
       '<span class="etikett">' + esc(r.ticker) + "</span>" +
       (motregim.indexOf(r.ticker) !== -1 ? '<span class="tpa-motregim" title="Accelererar mot fallande AI-kvot.">⇄</span>' : "") +
       '<span class="beskr">' + beskr + "</span>" +
       '<span class="varde">' + varde + "</span>" +
-      (r.analytiker != null ? '<span class="meta">' + r.analytiker + " analytiker</span>" : "") +
+      (r.analytiker != null ? '<span class="meta">' + r.analytiker + (r.tunt ? " an · tunt" : " analytiker") + "</span>" : (raw ? '<span class="meta">— analytiker</span>' : "")) +
       "</div>";
   }).join("");
 
@@ -3471,7 +3512,7 @@ function initTpa(data){
   if(!TPA_KONFIG.nyckel){ renderaTpa(tpaTest(data), "nyckel"); return; }
   if(tpaCache && Date.now() - tpaTid < 30 * 60 * 1000){ renderaTpa(tpaCache, null); return; }
   renderaTpa(tpaTest(data), "laddar");
-  hamtaTpaLive().then(function(tpa){
+  (TPA_KALLA === "raw" ? hamtaTpaRaw() : hamtaTpaLive()).then(function(tpa){
     tpaCache = tpa; tpaTid = Date.now();
     renderaTpa(tpa, null);
   }).catch(function(fel){

@@ -20,6 +20,7 @@
 
 import "dotenv/config";
 import { createClient } from "@supabase/supabase-js";
+import { normalizeHouse } from "./tp_acceleration.js";
 
 // ---------- Konfiguration ----------
 // Normalisera URL:en — förlåter de vanligaste inklistringsfelen i secrets:
@@ -175,6 +176,7 @@ async function hamtaKonsensus(ticker) {
   );
   const k = Array.isArray(konsensus) ? konsensus[0] : konsensus;
   if (!k || k.targetConsensus == null) throw new Error("FMP " + ticker + ": ingen riktkursdata");
+  rad.epoch = "parity";  // parallellperiod: snapshots körs jämte rådata för diffning
   rad.target_consensus = k.targetConsensus;
   rad.target_median = k.targetMedian ?? null;
   rad.target_high = k.targetHigh ?? null;
@@ -227,7 +229,14 @@ async function ingestaKonsensus(supabase) {
   const rader = [];
   for (const ticker of TICKERS) {
     try {
-      rader.push(await hamtaKonsensus(ticker));
+      const rad = await hamtaKonsensus(ticker);
+      // Datakvalitetsspärr: uppsida beräkningsbar men 0 analytiker = fel, logga.
+      if (rad.target_consensus != null && rad.price_at_snapshot != null
+          && (rad.analyst_count === 0 || rad.analyst_count == null)) {
+        await loggaAnomali(supabase, ticker, "upside_utan_analytiker",
+          "target=" + rad.target_consensus + " pris=" + rad.price_at_snapshot + " analytiker=" + rad.analyst_count);
+      }
+      rader.push(rad);
       console.log("konsensus OK: " + ticker);
     } catch (fel) {
       console.warn("konsensus MISSLYCKADES: " + ticker + " — " + fel.message);
@@ -241,6 +250,73 @@ async function ingestaKonsensus(supabase) {
     .upsert(rader, { onConflict: "ticker,as_of_date" });
   if (error) throw new Error("Supabase consensus_snapshots: " + error.message);
   return rader.length;
+}
+
+// ---------- FMP: rådata per hus (price-target-news) ----------
+async function hamtaAliasKarta(supabase) {
+  const { data, error } = await supabase.from("analyst_house_alias").select("alias_key, canonical");
+  if (error || !data) return {};
+  const karta = {};
+  for (const r of data) karta[r.alias_key] = r.canonical;
+  return karta;
+}
+
+async function hamtaRevisioner(ticker, aliasKarta, limit = 25) {
+  const nyheter = await hamtaFmp(
+    "/stable/price-target-news?symbol=" + encodeURIComponent(ticker) + "&limit=" + limit,
+    "FMP price-target-news " + ticker
+  );
+  if (!Array.isArray(nyheter)) return [];
+  const rader = [];
+  for (const p of nyheter) {
+    const target = p.adjPriceTarget ?? p.priceTarget;   // split-justerad först
+    const hus = normalizeHouse(p.analystCompany, aliasKarta);
+    if (target == null || !hus || !p.publishedDate) continue;
+    rader.push({
+      ticker,
+      analyst_house: hus,
+      analyst_name: p.analystName ?? null,
+      revision_date: p.publishedDate.slice(0, 10),
+      published_at: p.publishedDate,
+      new_target: target,
+      fmp_prior_target: p.priceTargetPrior ?? null,     // oftast null på Starter
+      price_when_posted: p.priceWhenPosted ?? null,
+      currency: "USD",
+      source: "FMP",
+    });
+  }
+  return rader;
+}
+
+async function ingestaRevisioner(supabase, aliasKarta) {
+  let totalt = 0;
+  for (const ticker of TICKERS) {
+    try {
+      const rader = await hamtaRevisioner(ticker, aliasKarta);
+      if (rader.length) {
+        // Idempotent: unik nyckel (ticker, analyst_house, revision_date, new_target).
+        const { error } = await supabase
+          .from("tp_revisions")
+          .upsert(rader, { onConflict: "ticker,analyst_house,revision_date,new_target", ignoreDuplicates: true });
+        if (error) throw new Error(error.message);
+        totalt += rader.length;
+        console.log("revisioner OK: " + ticker + " (" + rader.length + " poster)");
+      }
+    } catch (fel) {
+      console.warn("revisioner MISSLYCKADES: " + ticker + " — " + fel.message);
+    }
+    await paus(350);
+  }
+  return totalt;
+}
+
+// Datakvalitetsfel: uppsida beräkningsbar men 0 analytiker → logga, passera inte tyst.
+async function loggaAnomali(supabase, ticker, typ, detalj) {
+  try {
+    await supabase.from("ingest_anomalies").insert({ ticker, typ, detalj });
+  } catch (fel) {
+    console.warn("  kunde inte logga anomali (" + ticker + "): " + fel.message);
+  }
 }
 
 // ---------- Huvudflöde ----------
@@ -263,6 +339,15 @@ async function huvud() {
     console.log("konsensus: " + konsensusAntal + " av " + TICKERS.length + " tickers sparade");
   } catch (fel) {
     console.error("konsensus MISSLYCKADES: " + fel.message);
+  }
+
+  // Rådata per hus (Åtgärd 1). Egen try/except — får aldrig fälla snapshot-vägen.
+  try {
+    const aliasKarta = await hamtaAliasKarta(supabase);
+    const revAntal = await ingestaRevisioner(supabase, aliasKarta);
+    console.log("revisioner: " + revAntal + " poster upsertade (idempotent)");
+  } catch (fel) {
+    console.error("revisioner MISSLYCKADES: " + fel.message);
   }
 
   if (!makroOk && konsensusAntal === 0) {
