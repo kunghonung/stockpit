@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-04",
-  "genererad": "2026-08-04T06:14+00:00",
+  "genererad": "2026-08-04T09:25+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.0,
-      "delta": "−2,6 · 1 v",
+      "varde": 15.8,
+      "delta": "−2,9 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 107,
+        "index": 108,
         "pil": "upp",
         "status": "gron"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.0,
+      "varde": 15.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +16 bp/mån."
     },
     "bredd": {
-      "over50": 64,
-      "over200": 68,
+      "over50": 62,
+      "over200": 66,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-07-31",
+      "vintage": "2026-08-04",
       "zoner": [
         35,
         72
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4121",
+      "varde": "4107",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,8 %",
+      "delta4v": "−1,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,32",
+      "varde": "58,83",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,2 %",
+      "delta4v": "−5,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,62",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+7,0 %",
+      "delta4v": "+7,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-04"
     },
     "olja": {
-      "v": 84.79,
+      "v": 86.09,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-04"
     }
@@ -1768,7 +1768,7 @@
           91.75,
           93.77,
           94.88,
-          94.01
+          94.37
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           103.03,
           105.58,
           105.65,
-          103.61
+          103.55
         ]
       },
       {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-04T06:14+00:00"
+      "vintage": "2026-08-04T09:25+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-04 09:52:04",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5787,0",
+          "enhet": "Antal",
+          "pris": "42,50",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-04 08:02:53",
           "emittent": "Beijer Ref AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "124,988",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-07-31 09:56:54",
-          "emittent": "Fastpartner AB",
-          "person": "Sven-Olof Johansson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "22319,0",
-          "enhet": "Antal",
-          "pris": "41,9328",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-04T06:14+00:00"
+      "vintage": "2026-08-04T09:25+00:00"
     }
   }
 }
