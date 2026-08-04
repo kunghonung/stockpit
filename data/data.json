@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-04",
-  "genererad": "2026-08-04T18:16+00:00",
+  "genererad": "2026-08-04T20:12+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.4,
         111.83,
         111.95,
-        115.48
+        115.47
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         97.92,
         95.37,
         95.76,
-        95.56
+        95.73
       ]
     },
     {
@@ -222,7 +222,7 @@
         85.78,
         86.4,
         87.62,
-        86.47
+        86.62
       ]
     },
     {
@@ -273,7 +273,7 @@
         90.71,
         88.28,
         88.04,
-        87.88
+        88.19
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.92,
         93.91,
         92.39,
-        90.99
+        91.28
       ]
     },
     {
@@ -375,7 +375,7 @@
         101.48,
         100.36,
         98.77,
-        96.78
+        96.94
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         90.64,
         85.9,
         84.71,
-        82.58
+        82.74
       ]
     },
     {
@@ -478,7 +478,7 @@
         98.67,
         95.73,
         94.62,
-        92.79
+        92.94
       ]
     },
     {
@@ -529,7 +529,7 @@
         96.28,
         95.12,
         92.59,
-        90.53
+        90.55
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         101.99,
         102.01,
         101.35,
-        100.44
+        100.42
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         89.12,
         93.53,
         93.9,
-        92.26
+        92.32
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 2.85,
-      "delta": "+6 bp · 1 v",
+      "varde": 2.78,
+      "delta": "−3 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-07-31",
+      "vintage": "2026-08-03",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.5,
-      "delta": "−1,7 · 1 v",
+      "varde": 16.4,
+      "delta": "−1,8 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 80.0,
+      "delta": "+3 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 80.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.5,
+      "varde": 16.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 2.85,
+      "varde": 2.78,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4145",
+      "varde": "4136",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,0 %",
+      "delta4v": "−0,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,02",
+      "varde": "59,81",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,5 %",
+      "delta4v": "−1,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,64",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+7,6 %",
+      "delta4v": "+7,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-04"
     },
     "olja": {
-      "v": 79.35,
+      "v": 79.24,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-04"
     }
@@ -1686,7 +1686,7 @@
           102.23,
           101.94,
           102.4,
-          102.51
+          102.49
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           105.25,
           104.39,
           105.21,
-          106.79
+          106.96
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           97.4,
-          96.38
+          96.47
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           102.85,
-          101.36
+          101.45
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           98.3,
           98.12,
           97.53,
-          98.41
+          98.39
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           87.67,
           90.48,
           89.78,
-          88.49
+          88.57
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           91.48,
           93.58,
           93.36,
-          92.37
+          92.42
         ]
       }
     ],
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-04T18:16+00:00"
+      "vintage": "2026-08-04T20:12+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-04 21:24:52",
+          "emittent": "Annehem Fastigheter AB (publ)",
+          "person": "John Henrik Saxborn",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "27693,0",
+          "enhet": "Antal",
+          "pris": "16,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-04 21:06:22",
+          "emittent": "Beijer Ref AB (publ)",
+          "person": "Jonas Steen",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "9329157,0",
+          "enhet": "Antal",
+          "pris": "1,1",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-04 20:11:15",
           "emittent": "HANZA Holding AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,141",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-01 06:56:54",
-          "emittent": "Africa Resources AB (publ)",
-          "person": "Peter Karpinski",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "0,1448",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-01 00:06:24",
-          "emittent": "ABB Ltd",
-          "person": "Peter Terwiesch",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "77,3",
-          "valuta": "CHF"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-04T18:16+00:00"
+      "vintage": "2026-08-04T20:12+00:00"
     }
   }
 }
