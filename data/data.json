@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-05",
-  "genererad": "2026-08-05T16:50+00:00",
+  "genererad": "2026-08-05T18:46+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         113.4,
         111.83,
         115.44,
-        115.82
+        115.77
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         97.92,
         95.37,
         95.73,
-        95.85
+        95.94
       ]
     },
     {
@@ -222,7 +222,7 @@
         85.78,
         86.4,
         86.61,
-        85.21
+        85.19
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         90.71,
         88.28,
         88.16,
-        89.28
+        89.36
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.92,
         93.91,
         91.3,
-        90.99
+        91.13
       ]
     },
     {
@@ -375,7 +375,7 @@
         101.48,
         100.36,
         96.93,
-        97.77
+        97.89
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         90.64,
         85.9,
         82.74,
-        81.64
+        81.73
       ]
     },
     {
@@ -478,7 +478,7 @@
         98.67,
         95.73,
         92.92,
-        92.56
+        92.49
       ]
     },
     {
@@ -529,7 +529,7 @@
         96.28,
         95.12,
         90.53,
-        89.0
+        88.98
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         101.99,
         102.01,
         100.43,
-        100.63
+        100.74
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         89.12,
         93.53,
         92.3,
-        92.48
+        92.17
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.0,
-      "delta": "−4,6 · 1 v",
+      "varde": 15.6,
+      "delta": "−5,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -767,8 +767,8 @@
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
         "index": 98,
-        "pil": "upp",
-        "status": "gron"
+        "pil": "ned",
+        "status": "gul"
       }
     ],
     "kvoterLineage": {
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.0,
+      "varde": 15.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4304",
+      "varde": "4318",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+5,7 %",
+      "delta4v": "+6,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "62,46",
+      "varde": "62,44",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+7,4 %",
+      "delta4v": "+7,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,72",
+      "varde": "6,76",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+11,0 %",
+      "delta4v": "+11,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-05"
     },
     "olja": {
-      "v": 79.55,
+      "v": 79.57,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-05"
     }
@@ -1686,7 +1686,7 @@
           102.23,
           101.94,
           102.5,
-          102.44
+          102.41
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           105.25,
           104.39,
           106.96,
-          106.57
+          106.35
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.47,
-          96.43
+          96.37
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           101.45,
-          105.08
+          105.01
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           98.3,
           98.12,
           98.41,
-          98.19
+          98.12
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           87.67,
           90.48,
           88.57,
-          88.41
+          88.33
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           91.48,
           93.58,
           92.47,
-          92.05
+          91.94
         ]
       }
     ],
@@ -1943,11 +1943,6 @@
       "poster": [
         {
           "datum": "2026-08-03",
-          "namn": "Featherstone Kyle  (CIK 0001815569); Huron Consulting Group Inc.  (CIK 0001289848)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1815569/000128984826000122"
-        },
-        {
-          "datum": "2026-08-03",
           "namn": "Wang Barney Tianhao  (CIK 0002098635); SharkNinja, Inc.  (CIK 0001957132)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2098635/000110465926089552"
         },
@@ -1955,6 +1950,11 @@
           "datum": "2026-08-03",
           "namn": "Garascia Jessica A.  (CIK 0001806647); AAR CORP  (CIK 0000001750)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1806647/000000175026000094"
+        },
+        {
+          "datum": "2026-08-03",
+          "namn": "Featherstone Kyle  (CIK 0001815569); Huron Consulting Group Inc.  (CIK 0001289848)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1815569/000128984826000122"
         },
         {
           "datum": "2026-08-03",
@@ -1968,16 +1968,6 @@
         },
         {
           "datum": "2026-08-03",
-          "namn": "CARROSINO MICHAEL  (CIK 0001262290); IP STRATEGY HOLDINGS, INC.  (CIK 0001788230)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1262290/000126229026000015"
-        },
-        {
-          "datum": "2026-08-03",
-          "namn": "DIXTON GRANT MICHAEL  (CIK 0001866710); General Motors Co  (CIK 0001467858)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1866710/000186671026000007"
-        },
-        {
-          "datum": "2026-08-03",
           "namn": "Machuel Denis  (CIK 0001883309); Kyndryl Holdings, Inc.  (CIK 0001867072)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1883309/000188330926000002"
         },
@@ -1987,16 +1977,48 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1735436/000154452226000129"
         },
         {
+          "datum": "2026-08-05",
+          "namn": "FORD GOLDFARB MAUREEN R  (CIK 0001223373); ABERDEEN GOVERNMENT MARKETS INCOME FUND  (CIK 0000811922)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1223373/000122337326000003"
+        },
+        {
+          "datum": "2026-08-04",
+          "namn": "Hoerter Steven L.  (CIK 0001533451); MBX Biosciences, Inc.  (CIK 0001776111)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1533451/000119312526331639"
+        },
+        {
           "datum": "2026-08-03",
-          "namn": "Eagle Point Credit Management LLC  (CIK 0001607203); Eagle Point DIF GP I LLC  (CIK 0001836609)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1607203/000110465926089920"
+          "namn": "CARROSINO MICHAEL  (CIK 0001262290); IP STRATEGY HOLDINGS, INC.  (CIK 0001788230)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1262290/000126229026000015"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-05T16:50+00:00"
+      "vintage": "2026-08-05T18:46+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-05 19:42:16",
+          "emittent": "Prostatype Genomics BTU",
+          "person": "Jörgen Dahlström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "334000,0",
+          "enhet": "Antal",
+          "pris": "0,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-05 19:37:45",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Michael Häggman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "357500,0",
+          "enhet": "Antal",
+          "pris": "0,80",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-05 17:28:00",
           "emittent": "INTERNATIONAL PETROLEUM CORPORATION",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "36,4222",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-02 15:41:09",
-          "emittent": "Arlandastad Group AB (publ)",
-          "person": "Per Taube",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "53692,0",
-          "enhet": "Antal",
-          "pris": "37,22",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-02 15:41:09",
-          "emittent": "Arlandastad Group AB (publ)",
-          "person": "Per Taube",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1257,0",
-          "enhet": "Antal",
-          "pris": "37,1204",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-05T16:50+00:00"
+      "vintage": "2026-08-05T18:46+00:00"
     }
   }
 }
