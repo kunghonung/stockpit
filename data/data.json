@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-05",
-  "genererad": "2026-08-05T10:14+00:00",
+  "genererad": "2026-08-05T12:26+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.3,
-      "delta": "−4,3 · 1 v",
+      "varde": 16.8,
+      "delta": "−3,9 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 104,
+        "index": 103,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 98,
+        "index": 97,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.3,
+      "varde": 16.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4211",
+      "varde": "4259",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+3,4 %",
+      "delta4v": "+4,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,56",
+      "varde": "62,47",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+5,8 %",
+      "delta4v": "+7,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,65",
+      "varde": "6,67",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+9,8 %",
+      "delta4v": "+10,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-05"
     },
     "olja": {
-      "v": 80.77,
+      "v": 79.91,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-05"
     }
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.47,
-          96.51
+          96.57
         ]
       },
       {
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-05T10:14+00:00"
+      "vintage": "2026-08-05T12:26+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-05 13:52:41",
+          "emittent": "Röko AB (publ)",
+          "person": "Douglas Kressner",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "390,0",
+          "enhet": "Antal",
+          "pris": "1896,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-05 13:28:47",
+          "emittent": "W5 Solutions AB (publ)",
+          "person": "Sara Evelina Hedskog",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1315,0",
+          "enhet": "Antal",
+          "pris": "38,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-05 12:23:32",
+          "emittent": "Bong AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Tilldelning",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "0,30",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-05 11:07:22",
           "emittent": "Norion Bank AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "203,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-02 09:06:52",
-          "emittent": "Lappland Guldprospektering AB",
-          "person": "Daniel Gecer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "362,0",
-          "enhet": "Antal",
-          "pris": "205,66",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-02 09:06:15",
-          "emittent": "Lappland Guldprospektering AB",
-          "person": "Daniel Gecer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "456,0",
-          "enhet": "Antal",
-          "pris": "154,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-01 18:40:44",
-          "emittent": "Beijer Ref AB (publ)",
-          "person": "Yann Talhouet",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "9329157,0",
-          "enhet": "Antal",
-          "pris": "1,1",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-05T10:14+00:00"
+      "vintage": "2026-08-05T12:26+00:00"
     }
   }
 }
