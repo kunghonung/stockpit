@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-05",
-  "genererad": "2026-08-05T04:25+00:00",
+  "genererad": "2026-08-05T07:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 105,
+        "index": 104,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 98,
+        "index": 97,
         "pil": "ned",
         "status": "gul"
       },
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +10 bp/mån."
     },
     "bredd": {
-      "over50": 62,
-      "over200": 66,
+      "over50": 68,
+      "over200": 71,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-04",
+      "vintage": "2026-08-05",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-2 sedan förra"
+      "delta": "+6 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4196",
+      "varde": "4230",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,2 %",
+      "delta4v": "+3,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,05",
+      "varde": "62,03",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,2 %",
+      "delta4v": "+6,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,65",
+      "varde": "6,66",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+7,8 %",
+      "delta4v": "+10,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-05"
     },
     "olja": {
-      "v": 78.72,
+      "v": 79.77,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-05"
     }
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.47,
-          96.47
+          96.85
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           101.45,
-          104.76
+          105.17
         ]
       },
       {
@@ -1943,6 +1943,11 @@
       "poster": [
         {
           "datum": "2026-08-03",
+          "namn": "Featherstone Kyle  (CIK 0001815569); Huron Consulting Group Inc.  (CIK 0001289848)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1815569/000128984826000122"
+        },
+        {
+          "datum": "2026-08-03",
           "namn": "Wang Barney Tianhao  (CIK 0002098635); SharkNinja, Inc.  (CIK 0001957132)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2098635/000110465926089552"
         },
@@ -1950,11 +1955,6 @@
           "datum": "2026-08-03",
           "namn": "Garascia Jessica A.  (CIK 0001806647); AAR CORP  (CIK 0000001750)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1806647/000000175026000094"
-        },
-        {
-          "datum": "2026-08-03",
-          "namn": "Featherstone Kyle  (CIK 0001815569); Huron Consulting Group Inc.  (CIK 0001289848)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1815569/000128984826000122"
         },
         {
           "datum": "2026-08-03",
@@ -1968,6 +1968,16 @@
         },
         {
           "datum": "2026-08-03",
+          "namn": "CARROSINO MICHAEL  (CIK 0001262290); IP STRATEGY HOLDINGS, INC.  (CIK 0001788230)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1262290/000126229026000015"
+        },
+        {
+          "datum": "2026-08-03",
+          "namn": "DIXTON GRANT MICHAEL  (CIK 0001866710); General Motors Co  (CIK 0001467858)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1866710/000186671026000007"
+        },
+        {
+          "datum": "2026-08-03",
           "namn": "Machuel Denis  (CIK 0001883309); Kyndryl Holdings, Inc.  (CIK 0001867072)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1883309/000188330926000002"
         },
@@ -1977,26 +1987,27 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1735436/000154452226000129"
         },
         {
-          "datum": "2026-08-04",
-          "namn": "Hoerter Steven L.  (CIK 0001533451); MBX Biosciences, Inc.  (CIK 0001776111)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1533451/000119312526331639"
-        },
-        {
           "datum": "2026-08-03",
-          "namn": "CARROSINO MICHAEL  (CIK 0001262290); IP STRATEGY HOLDINGS, INC.  (CIK 0001788230)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1262290/000126229026000015"
-        },
-        {
-          "datum": "2026-08-03",
-          "namn": "DIXTON GRANT MICHAEL  (CIK 0001866710); General Motors Co  (CIK 0001467858)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1866710/000186671026000007"
+          "namn": "Eagle Point Credit Management LLC  (CIK 0001607203); Eagle Point DIF GP I LLC  (CIK 0001836609)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1607203/000110465926089920"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-05T04:25+00:00"
+      "vintage": "2026-08-05T07:21+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-05 08:15:29",
+          "emittent": "Bulten AB",
+          "person": "Ulf Liljedahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "58,0194",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-04 21:24:52",
           "emittent": "Annehem Fastigheter AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "12,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-01 06:56:54",
-          "emittent": "Africa Resources AB (publ)",
-          "person": "Peter Karpinski",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "118700,0",
-          "enhet": "Antal",
-          "pris": "0,141",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-05T04:25+00:00"
+      "vintage": "2026-08-05T07:21+00:00"
     }
   }
 }
