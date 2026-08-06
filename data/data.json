@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-06",
-  "genererad": "2026-08-06T04:27+00:00",
+  "genererad": "2026-08-06T07:23+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         112.54,
         113.4,
         111.83,
-        110.19,
+        115.06,
         115.06
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -201,7 +201,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -220,8 +220,8 @@
         88.18,
         88.77,
         85.78,
-        85.07,
-        86.24,
+        86.4,
+        85.88,
         85.88
       ]
     },
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -457,7 +457,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 9,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -477,7 +477,7 @@
         96.96,
         98.67,
         95.73,
-        93.13,
+        93.17,
         93.17
       ]
     },
@@ -580,7 +580,7 @@
         101.3,
         101.99,
         102.01,
-        99.76,
+        100.84,
         100.84
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -631,8 +631,8 @@
         93.47,
         93.48,
         89.12,
-        90.55,
-        92.43,
+        93.53,
+        92.76,
         92.76
       ]
     }
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 15.8,
-      "delta": "−2,9 · 1 v",
+      "delta": "−4,8 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 74.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 96,
+        "index": 97,
         "pil": "ned",
         "status": "gul"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 94,
+        "index": 93,
         "pil": "ned",
         "status": "gul"
       },
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 74.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +8 bp/mån."
     },
     "bredd": {
-      "over50": 68,
-      "over200": 71,
+      "over50": 67,
+      "over200": 70,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-05",
+      "vintage": "2026-08-06",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+6 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -970,7 +970,7 @@
       "varde": "4322",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+4,3 %",
+      "delta4v": "+4,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "62,33",
+      "varde": "62,11",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,3 %",
+      "delta4v": "+2,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,72",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+8,9 %",
+      "delta4v": "+8,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-06"
     },
     "olja": {
-      "v": 79.16,
+      "v": 79.76,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-06"
     }
@@ -1726,7 +1726,7 @@
           106.48,
           105.25,
           104.39,
-          103.53,
+          106.08,
           106.08
         ]
       },
@@ -1766,9 +1766,9 @@
           95.91,
           97.64,
           98.53,
-          98.01,
-          95.84,
-          96.58
+          97.9,
+          96.58,
+          96.81
         ]
       },
       {
@@ -1807,9 +1807,9 @@
           110.78,
           105.44,
           106.69,
-          100.77,
-          101.21,
-          104.13
+          104.83,
+          105.25,
+          104.27
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           97.79,
           98.3,
           98.12,
-          95.98,
+          98.07,
           98.07
         ]
       },
@@ -1889,8 +1889,8 @@
           85.47,
           86.65,
           87.67,
-          89.99,
-          88.34,
+          90.48,
+          88.52,
           88.52
         ]
       },
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-06T04:27+00:00"
+      "vintage": "2026-08-06T07:23+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-06 09:03:58",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Håkan Englund",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2781250,0",
+          "enhet": "Antal",
+          "pris": "0,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-06 08:12:15",
+          "emittent": "Gränges AB (publ)",
+          "person": "Fredrik Spens",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "7179,0",
+          "enhet": "Antal",
+          "pris": "1,34",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-06 08:03:54",
+          "emittent": "Gränges AB (publ)",
+          "person": "Fredrik Spens",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-05 23:59:29",
           "emittent": "Devyser Diagnostics AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,61",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-03 15:06:56",
-          "emittent": "Hamlet Biopharma AB (publ)",
-          "person": "Henrik Sundin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "237120,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-03 12:18:46",
-          "emittent": "K-Fast Holding AB",
-          "person": "Amar Pasovic",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "3914,0",
-          "enhet": "Antal",
-          "pris": "11,76",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-03 12:18:46",
-          "emittent": "K-Fast Holding AB",
-          "person": "Amar Pasovic",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1586,0",
-          "enhet": "Antal",
-          "pris": "11,80",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-06T04:27+00:00"
+      "vintage": "2026-08-06T07:23+00:00"
     }
   }
 }
