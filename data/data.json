@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-07",
-  "genererad": "2026-08-07T16:08+00:00",
+  "genererad": "2026-08-07T17:30+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         113.4,
         111.83,
         114.88,
-        115.77
+        115.64
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 3,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         97.92,
         95.37,
         95.23,
-        94.95
+        95.18
       ]
     },
     {
@@ -222,7 +222,7 @@
         85.78,
         86.4,
         86.26,
-        85.89
+        85.93
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         90.71,
         88.28,
         88.76,
-        89.22
+        89.52
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.92,
         93.91,
         91.35,
-        90.61
+        90.85
       ]
     },
     {
@@ -375,7 +375,7 @@
         101.48,
         100.36,
         98.69,
-        98.19
+        98.52
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         90.64,
         85.9,
         81.67,
-        81.89
+        82.03
       ]
     },
     {
@@ -478,7 +478,7 @@
         98.67,
         95.73,
         92.52,
-        92.62
+        92.61
       ]
     },
     {
@@ -529,7 +529,7 @@
         96.28,
         95.12,
         90.3,
-        89.42
+        89.55
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         101.99,
         102.01,
         100.67,
-        99.63
+        99.87
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 3,
+      "rsRank": 4,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         89.12,
         93.53,
         92.49,
-        93.56
+        93.2
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.9,
-      "delta": "−1,1 · 1 v",
+      "varde": 15.0,
+      "delta": "−1,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.9,
+      "varde": 15.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4403",
+      "varde": "4394",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+7,3 %",
+      "delta4v": "+7,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,60",
+      "varde": "63,35",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+6,3 %",
+      "delta4v": "+5,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,0 %",
+      "delta4v": "+5,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-07"
     },
     "olja": {
-      "v": 83.77,
+      "v": 83.29,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-07"
     }
@@ -1686,7 +1686,7 @@
           102.23,
           101.94,
           102.47,
-          102.3
+          102.27
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           105.25,
           104.39,
           105.95,
-          106.32
+          106.17
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.98,
-          96.53
+          96.64
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           104.53,
-          103.6
+          103.72
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           98.3,
           98.12,
           97.27,
-          97.3
+          97.25
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           87.67,
           90.48,
           88.58,
-          88.98
+          88.96
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           91.48,
           93.58,
           92.03,
-          91.73
+          91.81
         ]
       }
     ],
@@ -1993,10 +1993,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-07T16:08+00:00"
+      "vintage": "2026-08-07T17:29+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "129,0",
+          "enhet": "Antal",
+          "pris": "12,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1124,0",
+          "enhet": "Antal",
+          "pris": "12,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "12,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "100,0",
+          "enhet": "Antal",
+          "pris": "12,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1900,0",
+          "enhet": "Antal",
+          "pris": "12,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "12,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-07 18:39:53",
+          "emittent": "Joy and Inspiration AB",
+          "person": "Catrin Wirfalk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "791,0",
+          "enhet": "Antal",
+          "pris": "12,35",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-07 12:16:11",
           "emittent": "LumenRadio AB",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,80",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 17:28:00",
-          "emittent": "INTERNATIONAL PETROLEUM CORPORATION",
-          "person": "William Axel Walter Lundin",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "33000,0",
-          "enhet": "Antal",
-          "pris": "30,689415",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-08-05 16:49:39",
-          "emittent": "Hunter Capital RTO AB (publ)",
-          "person": "Oliver Aleksov",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "42521,0",
-          "enhet": "Antal",
-          "pris": "0,357",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 13:52:41",
-          "emittent": "Röko AB (publ)",
-          "person": "Douglas Kressner",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "390,0",
-          "enhet": "Antal",
-          "pris": "1896,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 13:28:47",
-          "emittent": "W5 Solutions AB (publ)",
-          "person": "Sara Evelina Hedskog",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1315,0",
-          "enhet": "Antal",
-          "pris": "38,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 12:23:32",
-          "emittent": "Bong AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Tilldelning",
-          "volym": "600000,0",
-          "enhet": "Antal",
-          "pris": "0,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 11:07:22",
-          "emittent": "Norion Bank AB",
-          "person": "Erik Selin",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "186853,0",
-          "enhet": "Antal",
-          "pris": "63,134",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 11:03:25",
-          "emittent": "Norion Bank AB",
-          "person": "Erik Selin",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "70000,0",
-          "enhet": "Antal",
-          "pris": "64,9039",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-07T16:08+00:00"
+      "vintage": "2026-08-07T17:30+00:00"
     }
   }
 }
