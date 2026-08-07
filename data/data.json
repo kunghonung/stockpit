@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-07",
-  "genererad": "2026-08-07T12:26+00:00",
+  "genererad": "2026-08-07T13:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 5,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         113.4,
         111.83,
         114.88,
-        114.88
+        115.64
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         97.92,
         95.37,
         95.23,
-        95.23
+        94.99
       ]
     },
     {
@@ -222,7 +222,7 @@
         85.78,
         86.4,
         86.26,
-        86.26
+        85.62
       ]
     },
     {
@@ -273,7 +273,7 @@
         90.71,
         88.28,
         88.76,
-        88.76
+        89.25
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.92,
         93.91,
         91.35,
-        91.35
+        90.68
       ]
     },
     {
@@ -375,7 +375,7 @@
         101.48,
         100.36,
         98.69,
-        98.69
+        98.37
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         90.64,
         85.9,
         81.67,
-        81.67
+        81.13
       ]
     },
     {
@@ -478,7 +478,7 @@
         98.67,
         95.73,
         92.52,
-        92.52
+        92.56
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 7,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         96.28,
         95.12,
         90.3,
-        90.3
+        88.43
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         101.99,
         102.01,
         100.67,
-        100.67
+        99.82
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 3,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         89.12,
         93.53,
         92.49,
-        92.49
+        93.48
       ]
     }
   ],
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
+      "varde": 15.1,
       "delta": "−0,8 · 1 v",
       "trosklar": [
         20,
@@ -719,14 +719,14 @@
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
         "index": 96,
-        "pil": "upp",
-        "status": "gul"
+        "pil": "ned",
+        "status": "gron"
       },
       {
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 101,
+        "index": 100,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 96,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,9 +758,9 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 94,
-        "pil": "ned",
-        "status": "gul"
+        "index": 95,
+        "pil": "upp",
+        "status": "gron"
       },
       {
         "id": "qqqspy",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4372",
+      "varde": "4415",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+6,5 %",
+      "delta4v": "+7,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,36",
+      "varde": "64,50",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+7,6 %",
+      "delta4v": "+7,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,65",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,6 %",
+      "delta4v": "+6,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-07"
     },
     "olja": {
-      "v": 82.08,
+      "v": 82.1,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-07"
     }
@@ -1686,7 +1686,7 @@
           102.23,
           101.94,
           102.47,
-          102.47
+          102.2
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           105.25,
           104.39,
           105.95,
-          105.95
+          106.08
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.98,
-          97.57
+          96.9
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           104.53,
-          104.41
+          103.75
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           98.3,
           98.12,
           97.27,
-          97.27
+          97.36
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           87.67,
           90.48,
           88.58,
-          88.57
+          88.76
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           91.48,
           93.58,
           92.03,
-          92.03
+          91.97
         ]
       }
     ],
@@ -1942,58 +1942,58 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-04",
-          "namn": "Hoerter Steven L.  (CIK 0001533451); MBX Biosciences, Inc.  (CIK 0001776111)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1533451/000119312526331639"
+          "datum": "2026-08-05",
+          "namn": "Coloma Jason V  (CIK 0001676170); Maze Therapeutics, Inc.  (CIK 0001842295)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1676170/000167617026000016"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "Barrett Peter  (CIK 0001291895); Obsidian Therapeutics, Inc.  (CIK 0002130606)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1291895/000119312526335078"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "KILMAN JAMES W.  (CIK 0001763852); ABERDEEN MUNICIPAL INCOME FUND  (CIK 0000801961)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1763852/000176385226000001"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "FORD GOLDFARB MAUREEN R  (CIK 0001223373); ABERDEEN INTERMEDIATE INCOME FUND  (CIK 0000826735)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1223373/000122337326000004"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "Girod Jon Louis  (CIK 0002128637); RIVERVIEW BANCORP INC  (CIK 0001041368)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2128637/000212863726000007"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "Kodera Tsuyoshi  (CIK 0002114076); Sony Group Corp  (CIK 0000313838)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2114076/000119312526334434"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "Oliver Lawrence T.  (CIK 0001801438); RGC RESOURCES INC  (CIK 0001069533)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1801438/000143774926025877"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "McClanahan Elizabeth A  (CIK 0001909226); RGC RESOURCES INC  (CIK 0001069533)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1909226/000143774926025872"
+        },
+        {
+          "datum": "2026-08-05",
+          "namn": "FORD GOLDFARB MAUREEN R  (CIK 0001223373); ABERDEEN GOVERNMENT MARKETS INCOME FUND  (CIK 0000811922)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1223373/000122337326000003"
         },
         {
           "datum": "2026-08-04",
           "namn": "NOVAES DJALMA JR  (CIK 0001627599); CROWN HOLDINGS, INC.  (CIK 0001219601)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1627599/000143774926025612"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "Dubose Michael J.  (CIK 0001833320); WATTS WATER TECHNOLOGIES INC  (CIK 0000795403)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1833320/000122520826006916"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "Sargent Angela M  (CIK 0001580441); FULTON FINANCIAL CORP  (CIK 0000700564)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1580441/000158044126000003"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "O'Brien Michael Graham  (CIK 0002034804); ZoomInfo Technologies Inc.  (CIK 0001794515)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2034804/000203480426000018"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "Dignam Denise  (CIK 0001848475); Chemours Co  (CIK 0001627223)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1848475/000119312526332806"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "Moglia Peter M  (CIK 0001545076); ALEXANDRIA REAL ESTATE EQUITIES, INC.  (CIK 0001035443)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1545076/000154507626000024"
-        },
-        {
-          "datum": "2026-08-05",
-          "namn": "Fujimura Eiji  (CIK 0002122561); HONDA MOTOR CO LTD  (CIK 0000715153)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2122561/000119312526333818"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "Chandhok Nikhil  (CIK 0002060495); Circle Internet Group, Inc.  (CIK 0001876042)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2060495/000187604226000240"
-        },
-        {
-          "datum": "2026-08-04",
-          "namn": "Masiyiwa Strive  (CIK 0001837857); NETFLIX INC  (CIK 0001065280)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837857/000106528026000232"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-07T12:26+00:00"
+      "vintage": "2026-08-07T13:56+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-07T12:26+00:00"
+      "vintage": "2026-08-07T13:56+00:00"
     }
   }
 }
