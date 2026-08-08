@@ -1,67 +1,67 @@
 {
-  "genererad": "2026-08-01T01:09+00:00",
+  "genererad": "2026-08-08T00:03+00:00",
   "sektorRev": {
     "XLK": {
       "revQ2": {
-        "v": 2.8,
-        "kalla": "FMP-riktkursaggregat 90 d, 57 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.5,
+        "kalla": "FMP-riktkursaggregat 90 d, 59 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger"
     },
     "XLI": {
       "revQ2": {
-        "v": 1.4,
+        "v": 1.1,
         "kalla": "FMP-riktkursaggregat 90 d, 66 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger"
     },
     "XLC": {
       "revQ2": {
-        "v": -3.1,
+        "v": 1.1,
         "kalla": "FMP-riktkursaggregat 90 d, 17 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
-      "revRiktning": "faller"
+      "revRiktning": "accelererar"
     },
     "XLB": {
       "revQ2": {
-        "v": -0.2,
-        "kalla": "FMP-riktkursaggregat 90 d, 22 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 2.9,
+        "kalla": "FMP-riktkursaggregat 90 d, 26 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
-      "revRiktning": "flat"
+      "revRiktning": "accelererar"
     },
     "XLP": {
       "revQ2": {
-        "v": -0.6,
-        "kalla": "FMP-riktkursaggregat 90 d, 26 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 0.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 25 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
-      "revRiktning": "faller"
+      "revRiktning": "accelererar"
     },
     "XLV": {
       "revQ2": {
-        "v": 1.9,
-        "kalla": "FMP-riktkursaggregat 90 d, 48 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.5,
+        "kalla": "FMP-riktkursaggregat 90 d, 50 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger"
     },
     "XLU": {
       "revQ2": {
-        "v": 1.8,
+        "v": 1.4,
         "kalla": "FMP-riktkursaggregat 90 d, 27 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger"
     },
     "XLRE": {
       "revQ2": {
-        "v": 2.3,
-        "kalla": "FMP-riktkursaggregat 90 d, 27 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.8,
+        "kalla": "FMP-riktkursaggregat 90 d, 28 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger"
     },
@@ -69,30 +69,29 @@
       "revQ2": {
         "v": 0.2,
         "kalla": "FMP-riktkursaggregat 90 d, 19 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
       "revRiktning": "flat"
     },
     "XLF": {
       "revQ2": {
-        "v": 0.9,
-        "kalla": "FMP-riktkursaggregat 90 d, 71 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 70 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger"
     },
     "XLY": {
       "revQ2": {
-        "v": -0.1,
-        "kalla": "FMP-riktkursaggregat 90 d, 38 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 0.4,
+        "kalla": "FMP-riktkursaggregat 90 d, 41 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "flat"
     }
   },
   "sentiment": {
     "spx26": [
-      100.8,
       101.5,
       101.1,
       102.2,
@@ -117,11 +116,11 @@
       111.6,
       111.2,
       111.8,
-      112.6
+      112.6,
+      113.3
     ],
-    "high52": 112.6,
+    "high52": 113.3,
     "spread26": [
-      12,
       14,
       10,
       8,
@@ -146,39 +145,27 @@
       8,
       4,
       1,
-      -11
+      -11,
+      -1
     ],
     "kalla": "AAII Sentiment Survey (publika sidan, veckostaplarna)",
-    "vintage": "2026-07-29",
-    "bull": 31.0,
-    "neutral": 26.9,
-    "bear": 42.1,
-    "spread": -11.1
+    "vintage": "2026-08-05",
+    "bull": 37.0,
+    "neutral": 25.0,
+    "bear": 38.0,
+    "spread": -1.0
   },
   "crowding": {
-    "score": 19,
+    "score": 31,
     "komfort": 60,
     "kalla": "CFTC COT (percentil 3 år). BAML-komponenten utgår ur autoflödet (stängd källa).",
-    "vintage": "2026-08-01",
+    "vintage": "2026-08-08",
     "komponenter": [
       {
         "namn": "E-mini S&P 500 noncommercial netto",
-        "varde": "-8.3 % av OI · percentil 19/100 (3 år)",
-        "kalla": "CFTC COT 2026-07-28"
+        "varde": "-3.0 % av OI · percentil 31/100 (3 år)",
+        "kalla": "CFTC COT 2026-08-04"
       }
     ]
-  },
-  "aiCapex": 1.75,
-  "aiCapexDetalj": {
-    "capexYoY": 75.3,
-    "korg": [
-      "MSFT",
-      "GOOGL",
-      "AMZN",
-      "META"
-    ],
-    "ttmMdUsd": 511,
-    "kalla": "FMP cash-flow TTM å/å, korg MSFT+GOOGL+AMZN+META",
-    "vintage": "2026-06-30"
   }
 }
