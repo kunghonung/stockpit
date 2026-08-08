@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W32",
   "asOfDatum": "2026-08-07",
-  "genererad": "2026-08-07T23:15+00:00",
+  "genererad": "2026-08-08T02:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -82,9 +82,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 2.8,
-        "kalla": "FMP-riktkursaggregat 90 d, 57 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.5,
+        "kalla": "FMP-riktkursaggregat 90 d, 59 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger",
       "flodeM": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -114,7 +114,7 @@
         112.54,
         113.4,
         111.83,
-        114.88,
+        115.81,
         115.81
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -139,9 +139,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 1.4,
+        "v": 1.1,
         "kalla": "FMP-riktkursaggregat 90 d, 66 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger",
       "flodeM": {
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -170,7 +170,7 @@
         95.62,
         97.92,
         95.37,
-        95.23,
+        94.87,
         94.87
       ]
     },
@@ -194,11 +194,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -3.1,
+        "v": 1.1,
         "kalla": "FMP-riktkursaggregat 90 d, 17 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
-      "revRiktning": "faller",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 8,
@@ -221,7 +221,7 @@
         88.77,
         85.78,
         86.4,
-        86.26,
+        85.79,
         85.79
       ]
     },
@@ -245,11 +245,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.2,
-        "kalla": "FMP-riktkursaggregat 90 d, 22 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 2.9,
+        "kalla": "FMP-riktkursaggregat 90 d, 26 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
-      "revRiktning": "flat",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 6,
@@ -272,7 +272,7 @@
         88.9,
         90.71,
         88.28,
-        88.76,
+        89.39,
         89.39
       ]
     },
@@ -296,11 +296,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.6,
-        "kalla": "FMP-riktkursaggregat 90 d, 26 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 0.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 25 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
-      "revRiktning": "faller",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 9,
@@ -323,7 +323,7 @@
         94.54,
         93.92,
         93.91,
-        91.35,
+        90.8,
         90.8
       ]
     },
@@ -347,9 +347,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 1.9,
-        "kalla": "FMP-riktkursaggregat 90 d, 48 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.5,
+        "kalla": "FMP-riktkursaggregat 90 d, 50 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger",
       "flodeM": null,
@@ -374,7 +374,7 @@
         99.96,
         101.48,
         100.36,
-        98.69,
+        98.83,
         98.83
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -399,9 +399,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 1.8,
+        "v": 1.4,
         "kalla": "FMP-riktkursaggregat 90 d, 27 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger",
       "flodeM": null,
@@ -426,7 +426,7 @@
         87.93,
         90.64,
         85.9,
-        81.67,
+        81.6,
         81.6
       ]
     },
@@ -450,9 +450,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 2.3,
-        "kalla": "FMP-riktkursaggregat 90 d, 27 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.8,
+        "kalla": "FMP-riktkursaggregat 90 d, 28 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger",
       "flodeM": null,
@@ -477,7 +477,7 @@
         96.96,
         98.67,
         95.73,
-        92.52,
+        92.3,
         92.3
       ]
     },
@@ -503,7 +503,7 @@
       "revQ2": {
         "v": 0.2,
         "kalla": "FMP-riktkursaggregat 90 d, 19 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "vintage": "2026-08-08"
       },
       "revRiktning": "flat",
       "flodeM": null,
@@ -528,7 +528,7 @@
         92.6,
         96.28,
         95.12,
-        90.3,
+        88.73,
         88.73
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -553,9 +553,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.9,
-        "kalla": "FMP-riktkursaggregat 90 d, 71 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 1.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 70 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "stiger",
       "flodeM": null,
@@ -580,7 +580,7 @@
         101.3,
         101.99,
         102.01,
-        100.67,
+        99.69,
         99.69
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -605,9 +605,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.1,
-        "kalla": "FMP-riktkursaggregat 90 d, 38 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-08-01"
+        "v": 0.4,
+        "kalla": "FMP-riktkursaggregat 90 d, 41 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-08-08"
       },
       "revRiktning": "flat",
       "flodeM": null,
@@ -632,7 +632,7 @@
         93.48,
         89.12,
         93.53,
-        92.49,
+        93.29,
         93.29
       ]
     }
@@ -776,15 +776,15 @@
       "vintage": "2026-08-07"
     },
     "crowding": {
-      "score": 19,
+      "score": 31,
       "komfort": 60,
       "kalla": "CFTC COT (percentil 3 år). BAML-komponenten utgår ur autoflödet (stängd källa).",
-      "vintage": "2026-08-01",
+      "vintage": "2026-08-08",
       "komponenter": [
         {
           "namn": "E-mini S&P 500 noncommercial netto",
-          "varde": "-8.3 % av OI · percentil 19/100 (3 år)",
-          "kalla": "CFTC COT 2026-07-28"
+          "varde": "-3.0 % av OI · percentil 31/100 (3 år)",
+          "kalla": "CFTC COT 2026-08-04"
         }
       ]
     },
@@ -894,7 +894,6 @@
     },
     "sentiment": {
       "spx26": [
-        100.8,
         101.5,
         101.1,
         102.2,
@@ -919,11 +918,11 @@
         111.6,
         111.2,
         111.8,
-        112.6
+        112.6,
+        113.3
       ],
-      "high52": 112.6,
+      "high52": 113.3,
       "spread26": [
-        12,
         14,
         10,
         8,
@@ -948,14 +947,15 @@
         8,
         4,
         1,
-        -11
+        -11,
+        -1
       ],
       "kalla": "AAII Sentiment Survey (publika sidan, veckostaplarna)",
-      "vintage": "2026-07-29",
-      "bull": 31.0,
-      "neutral": 26.9,
-      "bear": 42.1,
-      "spread": -11.1
+      "vintage": "2026-08-05",
+      "bull": 37.0,
+      "neutral": 25.0,
+      "bear": 38.0,
+      "spread": -1.0
     },
     "realranta": {
       "varde": "2,43 %",
@@ -1685,7 +1685,7 @@
           102.36,
           102.23,
           101.94,
-          102.47,
+          102.24,
           102.24
         ]
       },
@@ -1726,7 +1726,7 @@
           106.48,
           105.25,
           104.39,
-          105.95,
+          106.3,
           106.3
         ]
       },
@@ -1767,7 +1767,7 @@
           97.64,
           98.53,
           97.9,
-          96.98,
+          96.48,
           96.48
         ]
       },
@@ -1808,7 +1808,7 @@
           105.44,
           106.69,
           104.83,
-          104.53,
+          103.54,
           103.54
         ]
       },
@@ -1849,7 +1849,7 @@
           97.79,
           98.3,
           98.12,
-          97.27,
+          97.38,
           97.38
         ]
       },
@@ -1890,7 +1890,7 @@
           86.65,
           87.67,
           90.48,
-          88.58,
+          88.88,
           88.88
         ]
       },
@@ -1931,7 +1931,7 @@
           92.76,
           91.48,
           93.58,
-          92.03,
+          91.72,
           91.71
         ]
       }
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-07T23:15+00:00"
+      "vintage": "2026-08-08T02:19+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-07T23:15+00:00"
+      "vintage": "2026-08-08T02:19+00:00"
     }
   }
 }
