@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T20:58+00:00",
+  "genererad": "2026-08-10T21:55+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,90",
+      "varde": "65,88",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+14,3 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 87.86,
+      "v": 87.85,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1942,14 +1942,39 @@
     "us": {
       "poster": [
         {
+          "datum": "2026-08-10",
+          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Steik Jason Paul  (CIK 0002078374); Pennant Group, Inc.  (CIK 0001766400)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2078374/000207837426000003"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Meaney William L  (CIK 0001566391); IRON MOUNTAIN INC  (CIK 0001020569)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1566391/000156639126000022"
+        },
+        {
           "datum": "2026-08-07",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
         },
         {
           "datum": "2026-08-07",
           "namn": "Alstead Troy  (CIK 0001450940); LEVI STRAUSS & CO  (CIK 0000094845)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1450940/000199937126017417"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); Texas Pacific Land Corp  (CIK 0001811074)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926026727"
         },
         {
           "datum": "2026-08-07",
@@ -1958,45 +1983,75 @@
         },
         {
           "datum": "2026-08-07",
+          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+        },
+        {
+          "datum": "2026-08-07",
           "namn": "ENRIGHT PATRICK G  (CIK 0001253886); Jazz Pharmaceuticals plc  (CIK 0001232524)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1253886/000125388626000008"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "LOVE TED W  (CIK 0001188919); Jazz Pharmaceuticals plc  (CIK 0001232524)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1188919/000118891926000012"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "Briggs Andrew J  (CIK 0001763764); FARMERS & MERCHANTS BANCORP INC  (CIK 0000792966)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1763764/000119312526340562"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T20:58+00:00"
+      "vintage": "2026-08-10T21:55+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-10 23:51:21",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "29598,0",
+          "enhet": "Antal",
+          "pris": "4,16",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 23:51:21",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "853,0",
+          "enhet": "Antal",
+          "pris": "231,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 23:51:21",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "238,0",
+          "enhet": "Antal",
+          "pris": "229,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 23:44:40",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "13,42",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 23:44:40",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4382,0",
+          "enhet": "Antal",
+          "pris": "13,48",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-10 18:01:16",
           "emittent": "Sveafastigheter AB (publ)",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "279,7",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 22:02:42",
-          "emittent": "Mangold AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2,0",
-          "enhet": "Antal",
-          "pris": "1690,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 22:02:42",
-          "emittent": "Mangold AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "115,0",
-          "enhet": "Antal",
-          "pris": "1696,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 22:02:42",
-          "emittent": "Mangold AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "25,0",
-          "enhet": "Antal",
-          "pris": "1680,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 20:31:07",
-          "emittent": "Linc AB",
-          "person": "Karl Tobieson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "73,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 18:59:57",
-          "emittent": "Guard Therapeutics International AB (publ)",
-          "person": "Alexander Oker-Blom",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "1170595,0",
-          "enhet": "Antal",
-          "pris": "2,48",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T20:58+00:00"
+      "vintage": "2026-08-10T21:55+00:00"
     }
   }
 }
