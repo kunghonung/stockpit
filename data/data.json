@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T11:19+00:00",
+  "genererad": "2026-08-10T12:29+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.5,
+      "varde": 15.4,
       "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 101,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.5,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4393",
+      "varde": "4389",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,9 %",
+      "delta4v": "+9,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,11",
+      "varde": "64,18",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,2 %",
+      "delta4v": "+11,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,1 %",
+      "delta4v": "+6,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 84.8,
+      "v": 84.96,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.48,
-          96.59
+          96.7
         ]
       },
       {
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T11:19+00:00"
+      "vintage": "2026-08-10T12:29+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-10 13:59:51",
+          "emittent": "AAK AB",
+          "person": "Johan Westman",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "10,23",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 13:56:01",
+          "emittent": "Storytel AB (publ)",
+          "person": "Stefan Fredrik Gunnar Wård",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "102,0619",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-10 12:59:01",
           "emittent": "Munters Group AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "8,11",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 11:42:35",
-          "emittent": "USWE Sports AB",
-          "person": "Carl-Fredrik Streiby",
-          "befattning": "Vice VD",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "7613,0",
-          "enhet": "Antal",
-          "pris": "7,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 11:42:35",
-          "emittent": "USWE Sports AB",
-          "person": "Carl-Fredrik Streiby",
-          "befattning": "Vice VD",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "1694,0",
-          "enhet": "Antal",
-          "pris": "7,75",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T11:19+00:00"
+      "vintage": "2026-08-10T12:29+00:00"
     }
   }
 }
