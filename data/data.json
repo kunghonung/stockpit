@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T06:00+00:00",
+  "genererad": "2026-08-10T08:00+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.9,
-      "delta": "−1,1 · 1 v",
+      "varde": 15.4,
+      "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.9,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +9 bp/mån."
     },
     "bredd": {
-      "over50": 64,
-      "over200": 70,
+      "over50": 66,
+      "over200": 73,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-07",
+      "vintage": "2026-08-10",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-3 sedan förra"
+      "delta": "+2 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4406",
+      "varde": "4417",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,2 %",
+      "delta4v": "+10,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,34",
+      "varde": "64,48",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,6 %",
+      "delta4v": "+11,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 83.79,
+      "v": 83.7,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.48,
-          96.48
+          96.55
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           103.54,
-          105.65
+          105.7
         ]
       },
       {
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-07",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
         },
         {
           "datum": "2026-08-07",
@@ -1958,18 +1958,13 @@
         },
         {
           "datum": "2026-08-07",
+          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+        },
+        {
+          "datum": "2026-08-07",
           "namn": "ENRIGHT PATRICK G  (CIK 0001253886); Jazz Pharmaceuticals plc  (CIK 0001232524)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1253886/000125388626000008"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "LOVE TED W  (CIK 0001188919); Jazz Pharmaceuticals plc  (CIK 0001232524)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1188919/000118891926000012"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
         },
         {
           "datum": "2026-08-07",
@@ -1978,25 +1973,85 @@
         },
         {
           "datum": "2026-08-07",
+          "namn": "LOVE TED W  (CIK 0001188919); Jazz Pharmaceuticals plc  (CIK 0001232524)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1188919/000118891926000012"
+        },
+        {
+          "datum": "2026-08-07",
+          "namn": "Zitting Shaun Ellen  (CIK 0002077005); NIQ Global Intelligence plc  (CIK 0002054696)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2077005/000207700526000010"
+        },
+        {
+          "datum": "2026-08-07",
           "namn": "Doxey Tom  (CIK 0002058406); SOUTHWEST AIRLINES CO  (CIK 0000092380)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2058406/000009238026000080"
         },
         {
           "datum": "2026-08-07",
-          "namn": "SULLIVAN FRANK C  (CIK 0001224025); RPM INTERNATIONAL INC/DE/  (CIK 0000110621)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1224025/000119312526340385"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "Volpi Michelangelo  (CIK 0001626464); Aurora Innovation, Inc.  (CIK 0001828108)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626464/000119312526340526"
+          "namn": "Pankaj Rajesh  (CIK 0001936535); InterDigital, Inc.  (CIK 0001405495)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1936535/000162828026054590"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T06:00+00:00"
+      "vintage": "2026-08-10T08:00+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-10 09:56:04",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "906,0",
+          "enhet": "Antal",
+          "pris": "140,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 09:56:04",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "140,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 09:02:05",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "14210,0",
+          "enhet": "Antal",
+          "pris": "42,9154",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 09:02:05",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "32000,0",
+          "enhet": "Antal",
+          "pris": "42,9998",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 08:54:14",
+          "emittent": "Mangold AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "150,0",
+          "enhet": "Antal",
+          "pris": "1663,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-09 22:05:02",
           "emittent": "Gränges AB",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "65,40",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 23:56:06",
-          "emittent": "Logistea AB (publ)",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "60000,0",
-          "enhet": "Antal",
-          "pris": "13,44",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 23:49:27",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "548129,0",
-          "enhet": "Antal",
-          "pris": "2,55",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 23:39:06",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "303028,0",
-          "enhet": "Antal",
-          "pris": "2,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 23:39:06",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "4,09",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 23:33:58",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "250,0",
-          "enhet": "Antal",
-          "pris": "65,8",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T06:00+00:00"
+      "vintage": "2026-08-10T08:00+00:00"
     }
   }
 }
