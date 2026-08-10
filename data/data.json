@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T08:00+00:00",
+  "genererad": "2026-08-10T09:44+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4417",
+      "varde": "4403",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,5 %",
+      "delta4v": "+10,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,48",
+      "varde": "64,38",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,9 %",
+      "delta4v": "+11,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,64",
+      "varde": "6,62",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,6 %",
+      "delta4v": "+6,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 83.7,
+      "v": 84.26,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.48,
-          96.55
+          96.51
         ]
       },
       {
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-07",
-          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
+          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
         },
         {
           "datum": "2026-08-07",
@@ -1958,18 +1958,8 @@
         },
         {
           "datum": "2026-08-07",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
-        },
-        {
-          "datum": "2026-08-07",
           "namn": "ENRIGHT PATRICK G  (CIK 0001253886); Jazz Pharmaceuticals plc  (CIK 0001232524)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1253886/000125388626000008"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "Briggs Andrew J  (CIK 0001763764); FARMERS & MERCHANTS BANCORP INC  (CIK 0000792966)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1763764/000119312526340562"
         },
         {
           "datum": "2026-08-07",
@@ -1978,8 +1968,13 @@
         },
         {
           "datum": "2026-08-07",
-          "namn": "Zitting Shaun Ellen  (CIK 0002077005); NIQ Global Intelligence plc  (CIK 0002054696)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2077005/000207700526000010"
+          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
+        },
+        {
+          "datum": "2026-08-07",
+          "namn": "Briggs Andrew J  (CIK 0001763764); FARMERS & MERCHANTS BANCORP INC  (CIK 0000792966)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1763764/000119312526340562"
         },
         {
           "datum": "2026-08-07",
@@ -1988,15 +1983,97 @@
         },
         {
           "datum": "2026-08-07",
-          "namn": "Pankaj Rajesh  (CIK 0001936535); InterDigital, Inc.  (CIK 0001405495)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1936535/000162828026054590"
+          "namn": "SULLIVAN FRANK C  (CIK 0001224025); RPM INTERNATIONAL INC/DE/  (CIK 0000110621)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1224025/000119312526340385"
+        },
+        {
+          "datum": "2026-08-07",
+          "namn": "Volpi Michelangelo  (CIK 0001626464); Aurora Innovation, Inc.  (CIK 0001828108)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1626464/000119312526340526"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T08:00+00:00"
+      "vintage": "2026-08-10T09:44+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-10 10:49:30",
+          "emittent": "Medicover AB",
+          "person": "Jenny Kristina Brandt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "11000,0",
+          "enhet": "Antal",
+          "pris": "242,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 10:42:44",
+          "emittent": "Bluelake Mineral AB (publ)",
+          "person": "Jonas Dahllöf",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "329409,0",
+          "enhet": "Antal",
+          "pris": "1,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 10:42:44",
+          "emittent": "Bluelake Mineral AB (publ)",
+          "person": "Jonas Dahllöf",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "109803,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 10:42:44",
+          "emittent": "Bluelake Mineral AB (publ)",
+          "person": "Jonas Dahllöf",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "109803,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 10:24:25",
+          "emittent": "Camurus AB",
+          "person": "Richard Jameson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "5800,0",
+          "enhet": "Antal",
+          "pris": "48,14762931",
+          "valuta": "GBP"
+        },
+        {
+          "publicerad": "2026-08-10 10:20:43",
+          "emittent": "K-Fast Holding AB",
+          "person": "Niclas Bagler",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "16000,0",
+          "enhet": "Antal",
+          "pris": "11,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 10:20:43",
+          "emittent": "K-Fast Holding AB",
+          "person": "Niclas Bagler",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "11,5",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-10 09:56:04",
           "emittent": "Scandi Standard AB (publ)",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,185",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 10:43:15",
-          "emittent": "Investment AB Öresund",
-          "person": "Nicklas Arne Paulson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "138,94",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 09:42:32",
-          "emittent": "Adverty AB (publ)",
-          "person": "Carl Sténson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "205222,0",
-          "enhet": "Antal",
-          "pris": "0,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 09:42:32",
-          "emittent": "Adverty AB (publ)",
-          "person": "Carl Sténson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "118500,0",
-          "enhet": "Antal",
-          "pris": "0,1857",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 09:03:58",
-          "emittent": "Prostatype Genomics AB",
-          "person": "Håkan Englund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2781250,0",
-          "enhet": "Antal",
-          "pris": "0,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 08:12:15",
-          "emittent": "Gränges AB (publ)",
-          "person": "Fredrik Spens",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "7179,0",
-          "enhet": "Antal",
-          "pris": "1,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 08:03:54",
-          "emittent": "Gränges AB (publ)",
-          "person": "Fredrik Spens",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-05 23:59:29",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2533,0",
-          "enhet": "Antal",
-          "pris": "65,40",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T08:00+00:00"
+      "vintage": "2026-08-10T09:44+00:00"
     }
   }
 }
