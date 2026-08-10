@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T15:14+00:00",
+  "genererad": "2026-08-10T16:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         113.4,
         111.83,
         115.81,
-        115.36
+        115.56
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         97.92,
         95.37,
         94.87,
-        94.87
+        94.76
       ]
     },
     {
@@ -222,7 +222,7 @@
         85.78,
         86.4,
         85.79,
-        85.78
+        85.89
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 4,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         90.71,
         88.28,
         89.39,
-        89.42
+        89.58
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.92,
         93.91,
         90.8,
-        90.49
+        90.46
       ]
     },
     {
@@ -375,7 +375,7 @@
         101.48,
         100.36,
         98.83,
-        99.92
+        99.89
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         90.64,
         85.9,
         81.6,
-        81.01
+        80.76
       ]
     },
     {
@@ -478,7 +478,7 @@
         98.67,
         95.73,
         92.3,
-        90.91
+        90.88
       ]
     },
     {
@@ -529,7 +529,7 @@
         96.28,
         95.12,
         88.73,
-        91.63
+        91.73
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         101.99,
         102.01,
         99.69,
-        100.24
+        99.97
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         89.12,
         93.53,
         93.29,
-        93.15
+        93.01
       ]
     }
   ],
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
+      "varde": 15.1,
       "delta": "−0,7 · 1 v",
       "trosklar": [
         20,
@@ -759,8 +759,8 @@
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
         "index": 94,
-        "pil": "ned",
-        "status": "gul"
+        "pil": "upp",
+        "status": "gron"
       },
       {
         "id": "qqqspy",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4409",
+      "varde": "4421",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,3 %",
+      "delta4v": "+10,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,04",
+      "varde": "65,35",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+12,9 %",
+      "delta4v": "+13,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,64",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,5 %",
+      "delta4v": "+6,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 86.25,
+      "v": 86.52,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1686,7 +1686,7 @@
           102.23,
           101.94,
           102.24,
-          102.4
+          102.36
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           105.25,
           104.39,
           106.3,
-          106.27
+          106.33
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.48,
-          96.56
+          96.59
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           103.54,
-          105.78
+          105.79
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           98.3,
           98.12,
           97.38,
-          96.85
+          96.98
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           87.67,
           90.48,
           88.88,
-          89.28
+          89.38
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           91.48,
           93.58,
           91.72,
-          91.48
+          91.44
         ]
       }
     ],
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-07",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
         },
         {
           "datum": "2026-08-07",
@@ -1958,6 +1958,11 @@
         },
         {
           "datum": "2026-08-07",
+          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+        },
+        {
+          "datum": "2026-08-07",
           "namn": "ENRIGHT PATRICK G  (CIK 0001253886); Jazz Pharmaceuticals plc  (CIK 0001232524)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1253886/000125388626000008"
         },
@@ -1968,35 +1973,41 @@
         },
         {
           "datum": "2026-08-07",
-          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
-        },
-        {
-          "datum": "2026-08-07",
           "namn": "Briggs Andrew J  (CIK 0001763764); FARMERS & MERCHANTS BANCORP INC  (CIK 0000792966)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1763764/000119312526340562"
         },
         {
+          "datum": "2026-08-10",
+          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+        },
+        {
           "datum": "2026-08-07",
-          "namn": "Doxey Tom  (CIK 0002058406); SOUTHWEST AIRLINES CO  (CIK 0000092380)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2058406/000009238026000080"
+          "namn": "Pankaj Rajesh  (CIK 0001936535); InterDigital, Inc.  (CIK 0001405495)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1936535/000162828026054590"
         },
         {
           "datum": "2026-08-07",
           "namn": "SULLIVAN FRANK C  (CIK 0001224025); RPM INTERNATIONAL INC/DE/  (CIK 0000110621)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1224025/000119312526340385"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "Volpi Michelangelo  (CIK 0001626464); Aurora Innovation, Inc.  (CIK 0001828108)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626464/000119312526340526"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T15:14+00:00"
+      "vintage": "2026-08-10T16:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-10 18:01:16",
+          "emittent": "Sveafastigheter AB (publ)",
+          "person": "Jens-Fredrik Jalland",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4500000,0",
+          "enhet": "Antal",
+          "pris": "31,7305",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-10 17:12:46",
           "emittent": "OEM International Aktiebolag (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "2,48",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 17:38:50",
-          "emittent": "Rottneros AB",
-          "person": "Per Gustav Bjurbom",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "225000,0",
-          "enhet": "Antal",
-          "pris": "2,231",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T15:14+00:00"
+      "vintage": "2026-08-10T16:28+00:00"
     }
   }
 }
