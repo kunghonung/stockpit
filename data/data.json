@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T02:30+00:00",
+  "genererad": "2026-08-10T04:16+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 95,
+        "index": 96,
         "pil": "ned",
         "status": "gul"
       },
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4385",
+      "varde": "4386",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+9,7 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,78",
+      "varde": "63,76",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,7 %",
+      "delta4v": "+10,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,0 %",
+      "delta4v": "+5,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 84.37,
+      "v": 84.41,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1809,7 +1809,7 @@
           106.69,
           104.83,
           103.54,
-          105.69
+          105.66
         ]
       },
       {
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-07",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
         },
         {
           "datum": "2026-08-07",
@@ -1958,18 +1958,13 @@
         },
         {
           "datum": "2026-08-07",
+          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+        },
+        {
+          "datum": "2026-08-07",
           "namn": "ENRIGHT PATRICK G  (CIK 0001253886); Jazz Pharmaceuticals plc  (CIK 0001232524)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1253886/000125388626000008"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "LOVE TED W  (CIK 0001188919); Jazz Pharmaceuticals plc  (CIK 0001232524)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1188919/000118891926000012"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "LINNEMAN PETER  (CIK 0001170994); REGENCY CENTERS CORP  (CIK 0000910606)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1170994/000091060626000067"
         },
         {
           "datum": "2026-08-07",
@@ -1978,22 +1973,27 @@
         },
         {
           "datum": "2026-08-07",
+          "namn": "LOVE TED W  (CIK 0001188919); Jazz Pharmaceuticals plc  (CIK 0001232524)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1188919/000118891926000012"
+        },
+        {
+          "datum": "2026-08-07",
+          "namn": "Zitting Shaun Ellen  (CIK 0002077005); NIQ Global Intelligence plc  (CIK 0002054696)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2077005/000207700526000010"
+        },
+        {
+          "datum": "2026-08-07",
           "namn": "Doxey Tom  (CIK 0002058406); SOUTHWEST AIRLINES CO  (CIK 0000092380)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2058406/000009238026000080"
         },
         {
           "datum": "2026-08-07",
-          "namn": "SULLIVAN FRANK C  (CIK 0001224025); RPM INTERNATIONAL INC/DE/  (CIK 0000110621)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1224025/000119312526340385"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "Volpi Michelangelo  (CIK 0001626464); Aurora Innovation, Inc.  (CIK 0001828108)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626464/000119312526340526"
+          "namn": "Pankaj Rajesh  (CIK 0001936535); InterDigital, Inc.  (CIK 0001405495)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1936535/000162828026054590"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T02:30+00:00"
+      "vintage": "2026-08-10T04:16+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T02:30+00:00"
+      "vintage": "2026-08-10T04:16+00:00"
     }
   }
 }
