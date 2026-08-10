@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T09:44+00:00",
+  "genererad": "2026-08-10T11:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.4,
+      "varde": 15.5,
       "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.4,
+      "varde": 15.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4403",
+      "varde": "4393",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,2 %",
+      "delta4v": "+9,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,38",
+      "varde": "64,11",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,7 %",
+      "delta4v": "+11,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,62",
+      "varde": "6,61",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,3 %",
+      "delta4v": "+6,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-10"
     },
     "olja": {
-      "v": 84.26,
+      "v": 84.8,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-10"
     }
@@ -1768,7 +1768,7 @@
           98.53,
           97.9,
           96.48,
-          96.51
+          96.59
         ]
       },
       {
@@ -1978,8 +1978,8 @@
         },
         {
           "datum": "2026-08-07",
-          "namn": "Doxey Tom  (CIK 0002058406); SOUTHWEST AIRLINES CO  (CIK 0000092380)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2058406/000009238026000080"
+          "namn": "Pankaj Rajesh  (CIK 0001936535); InterDigital, Inc.  (CIK 0001405495)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1936535/000162828026054590"
         },
         {
           "datum": "2026-08-07",
@@ -1988,15 +1988,59 @@
         },
         {
           "datum": "2026-08-07",
-          "namn": "Volpi Michelangelo  (CIK 0001626464); Aurora Innovation, Inc.  (CIK 0001828108)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1626464/000119312526340526"
+          "namn": "Zitting Shaun Ellen  (CIK 0002077005); NIQ Global Intelligence plc  (CIK 0002054696)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2077005/000207700526000010"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T09:44+00:00"
+      "vintage": "2026-08-10T11:19+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-10 12:59:01",
+          "emittent": "Munters Group AB",
+          "person": "Grete Solvang Stoltz",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "2065,0",
+          "enhet": "Antal",
+          "pris": "179,53",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 12:44:07",
+          "emittent": "Sinch AB (publ)",
+          "person": "Johan Hedberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "157327,0",
+          "enhet": "Antal",
+          "pris": "45,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 12:05:03",
+          "emittent": "AAK AB (PUBL)",
+          "person": "Niall Patrick Sands",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "12500,0",
+          "enhet": "Antal",
+          "pris": "10,23",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-10 11:52:35",
+          "emittent": "AAK AB (PUBL)",
+          "person": "Susanne Jaspers",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "60000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-10 10:49:30",
           "emittent": "Medicover AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "7,75",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 11:42:35",
-          "emittent": "USWE Sports AB",
-          "person": "Carl-Fredrik Streiby",
-          "befattning": "Vice VD",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "4293,0",
-          "enhet": "Antal",
-          "pris": "7,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 11:10:17",
-          "emittent": "SpectraCure AB (publ)",
-          "person": "Jörgen Wennberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "13333332,0",
-          "enhet": "Antal",
-          "pris": "0,03",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 11:04:44",
-          "emittent": "Adverty AB",
-          "person": "Jonas Söderqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "633017,0",
-          "enhet": "Antal",
-          "pris": "0,1838",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-06 11:04:44",
-          "emittent": "Adverty AB",
-          "person": "Jonas Söderqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "448064,0",
-          "enhet": "Antal",
-          "pris": "0,185",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T09:44+00:00"
+      "vintage": "2026-08-10T11:19+00:00"
     }
   }
 }
