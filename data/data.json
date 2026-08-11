@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T06:32+00:00",
+  "genererad": "2026-08-11T07:51+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.5,
-      "delta": "−0,4 · 1 v",
+      "varde": 15.4,
+      "delta": "−1,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 100,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 93,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.5,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4428",
+      "varde": "4417",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,0 %",
+      "delta4v": "+8,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,72",
+      "varde": "64,61",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,1 %",
+      "delta4v": "+9,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,65",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,7 %",
+      "delta4v": "+5,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 88.17,
+      "v": 89.37,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1768,7 +1768,7 @@
           97.39,
           97.7,
           94.7,
-          94.9
+          95.0
         ]
       },
       {
@@ -1997,6 +1997,50 @@
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-11 09:30:10",
+          "emittent": "Bong AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "31916018,0",
+          "enhet": "Antal",
+          "pris": "0,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 09:08:05",
+          "emittent": "Arlandastad Group AB (publ)",
+          "person": "Per Taube",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5720,0",
+          "enhet": "Antal",
+          "pris": "37,1858",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 08:51:15",
+          "emittent": "Plejd AB",
+          "person": "Ylwa Karlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "220,0",
+          "enhet": "Antal",
+          "pris": "903,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 08:51:15",
+          "emittent": "Plejd AB",
+          "person": "Ylwa Karlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "240,0",
+          "enhet": "Antal",
+          "pris": "852,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-11 03:42:25",
           "emittent": "AAK AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "12,35",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "791,0",
-          "enhet": "Antal",
-          "pris": "12,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 12:16:11",
-          "emittent": "LumenRadio AB",
-          "person": "Hans Erik Larsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "53,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 11:52:54",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Anna Marsell",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2125,0",
-          "enhet": "Antal",
-          "pris": "235,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 11:25:03",
-          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
-          "person": "Pontus Karsbo",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "239900,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T06:32+00:00"
+      "vintage": "2026-08-11T07:51+00:00"
     }
   }
 }
