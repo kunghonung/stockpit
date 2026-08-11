@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T15:14+00:00",
+  "genererad": "2026-08-11T16:30+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.0,
         111.84,
         110.89,
-        111.13
+        110.9
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         98.53,
         98.01,
         97.74,
-        98.46
+        98.55
       ]
     },
     {
@@ -222,7 +222,7 @@
         86.39,
         85.78,
         86.26,
-        86.45
+        86.41
       ]
     },
     {
@@ -273,7 +273,7 @@
         92.4,
         93.57,
         94.17,
-        94.26
+        94.41
       ]
     },
     {
@@ -324,7 +324,7 @@
         98.05,
         94.8,
         94.64,
-        94.04
+        94.48
       ]
     },
     {
@@ -375,7 +375,7 @@
         103.85,
         102.26,
         103.99,
-        103.78
+        103.87
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         91.33,
         86.76,
         85.83,
-        86.18
+        86.7
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.32,
         92.87,
         91.7,
-        91.26
+        91.62
       ]
     },
     {
@@ -529,7 +529,7 @@
         102.89,
         95.98,
         100.48,
-        101.57
+        101.66
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.24,
         100.89,
         101.29,
-        101.52
+        101.76
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.65,
         91.42,
         91.3,
-        91.17
+        91.2
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
-      "delta": "−1,3 · 1 v",
+      "varde": 15.4,
+      "delta": "−1,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4458",
+      "varde": "4439",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,8 %",
+      "delta4v": "+9,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,31",
+      "varde": "65,14",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,1 %",
+      "delta4v": "+10,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,67",
+      "varde": "6,64",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,3 %",
+      "delta4v": "+4,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 88.2,
+      "v": 88.56,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1686,7 +1686,7 @@
           101.48,
           101.78,
           101.96,
-          101.78
+          101.79
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           102.28,
           104.16,
           104.07,
-          103.85
+          103.74
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           98.73,
-          98.78
+          98.73
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           107.27,
-          107.12
+          107.27
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.15,
           96.41,
           95.92,
-          96.34
+          96.39
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           90.79,
           89.18,
           89.94,
-          87.93
+          88.02
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           93.68,
           91.81,
           91.59,
-          91.45
+          91.56
         ]
       }
     ],
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-11T15:14+00:00"
+      "vintage": "2026-08-11T16:30+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-11 18:26:53",
+          "emittent": "Nivika Fastigheter AB (publ)",
+          "person": "Tim Floderus",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "65000,0",
+          "enhet": "Antal",
+          "pris": "37,98",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 17:30:46",
+          "emittent": "Hemnet Group AB (publ)",
+          "person": "Peter Messner",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "3510,0",
+          "enhet": "Antal",
+          "pris": "90,29",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 17:29:21",
+          "emittent": "Bergman & Beving Aktiebolag",
+          "person": "Malin Nordesjö",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "288,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 17:16:43",
+          "emittent": "AB Sagax",
+          "person": "David Mindus",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "163,28",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-11 17:03:30",
           "emittent": "AAK AB (PUBL)",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 10:42:44",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Jonas Dahllöf",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "109803,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 10:24:25",
-          "emittent": "Camurus AB",
-          "person": "Richard Jameson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "5800,0",
-          "enhet": "Antal",
-          "pris": "48,14762931",
-          "valuta": "GBP"
-        },
-        {
-          "publicerad": "2026-08-10 10:20:43",
-          "emittent": "K-Fast Holding AB",
-          "person": "Niclas Bagler",
-          "befattning": "Vice VD",
-          "karaktar": "Förvärv",
-          "volym": "16000,0",
-          "enhet": "Antal",
-          "pris": "11,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 10:20:43",
-          "emittent": "K-Fast Holding AB",
-          "person": "Niclas Bagler",
-          "befattning": "Vice VD",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "11,5",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T15:14+00:00"
+      "vintage": "2026-08-11T16:30+00:00"
     }
   }
 }
