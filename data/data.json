@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
-  "asOfDatum": "2026-08-10",
-  "genererad": "2026-08-10T23:48+00:00",
+  "asOfDatum": "2026-08-11",
+  "genererad": "2026-08-11T02:24+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-08-10",
+      "vintage": "2026-08-11",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-08-10",
+      "vintage": "2026-08-11",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 98,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 93,
+        "index": 92,
         "pil": "ned",
         "status": "gul"
       },
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-08-10"
+      "vintage": "2026-08-11"
     },
     "crowding": {
       "score": 31,
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4458",
+      "varde": "4493",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,5 %",
+      "delta4v": "+10,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-08-10"
+      "vintage": "2026-08-11"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,90",
+      "varde": "66,46",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+14,4 %",
+      "delta4v": "+13,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-08-10"
+      "vintage": "2026-08-11"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,65",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,4 %",
+      "delta4v": "+5,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-08-10"
+      "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 87.62,
+      "v": 87.94,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-08-10"
+      "vintage": "2026-08-11"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-08-10",
+    "vintage": "2026-08-11",
     "marknader": [
       {
         "namn": "USA",
@@ -1751,24 +1751,24 @@
         ],
         "relSerie19": [
           100.0,
-          97.95,
-          95.72,
-          95.12,
-          92.94,
-          92.92,
-          94.53,
-          93.15,
-          95.14,
-          95.46,
-          95.05,
-          97.23,
-          98.62,
-          95.91,
-          97.64,
-          98.53,
-          97.9,
-          96.48,
-          96.71
+          93.67,
+          94.07,
+          93.43,
+          90.42,
+          93.91,
+          92.89,
+          90.91,
+          94.94,
+          94.03,
+          93.31,
+          97.94,
+          95.04,
+          94.18,
+          96.25,
+          97.39,
+          97.7,
+          94.7,
+          94.9
         ]
       },
       {
@@ -1792,24 +1792,24 @@
         ],
         "relSerie19": [
           100.0,
-          98.74,
-          101.11,
-          99.98,
-          102.84,
-          101.55,
+          98.16,
+          98.09,
+          102.57,
+          98.03,
+          101.96,
+          105.47,
+          104.18,
+          106.06,
+          112.94,
+          109.06,
+          112.13,
+          108.9,
+          100.9,
+          103.39,
           103.46,
-          106.6,
-          109.89,
-          107.51,
-          115.09,
-          114.55,
-          113.8,
-          110.78,
-          105.44,
-          106.69,
-          104.83,
-          103.54,
-          105.92
+          104.03,
+          102.89,
+          103.11
         ]
       },
       {
@@ -1942,34 +1942,29 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-07",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000115"
+          "datum": "2026-08-10",
+          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
         },
         {
-          "datum": "2026-08-07",
-          "namn": "Alstead Troy  (CIK 0001450940); LEVI STRAUSS & CO  (CIK 0000094845)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1450940/000199937126017417"
+          "datum": "2026-08-10",
+          "namn": "Steik Jason Paul  (CIK 0002078374); Pennant Group, Inc.  (CIK 0001766400)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2078374/000207837426000003"
         },
         {
-          "datum": "2026-08-07",
-          "namn": "Sullivan Michael C  (CIK 0002147356); ILLUMINA, INC.  (CIK 0001110803)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2147356/000111080326000169"
+          "datum": "2026-08-10",
+          "namn": "Meaney William L  (CIK 0001566391); IRON MOUNTAIN INC  (CIK 0001020569)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1566391/000156639126000022"
         },
         {
-          "datum": "2026-08-07",
-          "namn": "ENRIGHT PATRICK G  (CIK 0001253886); Jazz Pharmaceuticals plc  (CIK 0001232524)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1253886/000125388626000008"
+          "datum": "2026-08-10",
+          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
         },
         {
-          "datum": "2026-08-07",
-          "namn": "LOVE TED W  (CIK 0001188919); Jazz Pharmaceuticals plc  (CIK 0001232524)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1188919/000118891926000012"
-        },
-        {
-          "datum": "2026-08-07",
-          "namn": "Briggs Andrew J  (CIK 0001763764); FARMERS & MERCHANTS BANCORP INC  (CIK 0000792966)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1763764/000119312526340562"
+          "datum": "2026-08-10",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); Texas Pacific Land Corp  (CIK 0001811074)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926026727"
         },
         {
           "datum": "2026-08-10",
@@ -1983,20 +1978,36 @@
         },
         {
           "datum": "2026-08-10",
-          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
+          "namn": "Cui Jingrong Jean  (CIK 0001772259); BlossomHill Therapeutics, Inc.  (CIK 0001839970)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1772259/000177225926000005"
         },
         {
           "datum": "2026-08-10",
-          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
+          "namn": "Tomsic Steven  (CIK 0001764953); Fox Corp  (CIK 0001754301)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1764953/000162828026055392"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "KAO JOHN E  (CIK 0001222028); Alignment Healthcare, Inc.  (CIK 0001832466)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1222028/000162828026055418"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-10T23:48+00:00"
+      "vintage": "2026-08-11T02:24+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-11 03:42:25",
+          "emittent": "AAK AB",
+          "person": "Marcel  Mensink",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "10,23",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-11 00:29:30",
           "emittent": "AAK AB (PUBL)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 11:13:19",
-          "emittent": "ABB Ltd",
-          "person": "David Meline",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "2456,0",
-          "enhet": "Antal",
-          "pris": "82,12",
-          "valuta": "CHF"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-10T23:48+00:00"
+      "vintage": "2026-08-11T02:24+00:00"
     }
   }
 }
