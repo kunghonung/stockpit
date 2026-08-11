@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T05:21+00:00",
+  "genererad": "2026-08-11T06:32+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 92,
+        "index": 93,
         "pil": "ned",
         "status": "gul"
       },
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +8 bp/mån."
     },
     "bredd": {
-      "over50": 66,
-      "over200": 73,
+      "over50": 65,
+      "over200": 71,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-10",
+      "vintage": "2026-08-11",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+2 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4465",
+      "varde": "4428",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,9 %",
+      "delta4v": "+9,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,65",
+      "varde": "64,72",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,7 %",
+      "delta4v": "+10,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,65",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,0 %",
+      "delta4v": "+4,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 87.83,
+      "v": 88.17,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-11T05:21+00:00"
+      "vintage": "2026-08-11T06:32+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T05:21+00:00"
+      "vintage": "2026-08-11T06:32+00:00"
     }
   }
 }
