@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T22:00+00:00",
+  "genererad": "2026-08-11T22:59+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4428",
+      "varde": "4435",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,0 %",
+      "delta4v": "+9,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,86",
+      "varde": "65,04",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,4 %",
+      "delta4v": "+10,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,64",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,7 %",
+      "delta4v": "+4,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 88.95,
+      "v": 89.2,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1943,6 +1943,31 @@
       "poster": [
         {
           "datum": "2026-08-10",
+          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Steik Jason Paul  (CIK 0002078374); Pennant Group, Inc.  (CIK 0001766400)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2078374/000207837426000003"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Meaney William L  (CIK 0001566391); IRON MOUNTAIN INC  (CIK 0001020569)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1566391/000156639126000022"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); Texas Pacific Land Corp  (CIK 0001811074)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926026727"
+        },
+        {
+          "datum": "2026-08-10",
           "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
         },
@@ -1952,48 +1977,23 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
         },
         {
-          "datum": "2026-08-10",
-          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Tomsic Steven  (CIK 0001764953); Fox Corp  (CIK 0001754301)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1764953/000162828026055392"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "EQUINOX PARTNERS LP  (CIK 0000933897); Equinox Partners Investment Management LLC  (CIK 0000938552)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/933897/000101359426000845"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Cui Jingrong Jean  (CIK 0001772259); BlossomHill Therapeutics, Inc.  (CIK 0001839970)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1772259/000177225926000005"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Conversant Capital LLC  (CIK 0001850901); Simanovsky Michael  (CIK 0001596522)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1850901/000089534526000353"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "KAO JOHN E  (CIK 0001222028); Alignment Healthcare, Inc.  (CIK 0001832466)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1222028/000162828026055418"
+          "datum": "2026-08-11",
+          "namn": "COLTHARP DOUGLAS E  (CIK 0001186879); Encompass Health Corp  (CIK 0000785161)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1186879/000078516126000192"
         },
         {
           "datum": "2026-08-11",
-          "namn": "Kanary MaryAnn Peterson  (CIK 0001986602); Cooper-Standard Holdings Inc.  (CIK 0001320461)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1986602/000132046126000116"
+          "namn": "Zavery Amit  (CIK 0001781064); ServiceNow, Inc.  (CIK 0001373715)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1781064/000178106426000016"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "CRANSTON MARY B  (CIK 0001104268); Chemours Co  (CIK 0001627223)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1104268/000119312526344632"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-11T22:00+00:00"
+      "vintage": "2026-08-11T22:59+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T22:00+00:00"
+      "vintage": "2026-08-11T22:59+00:00"
     }
   }
 }
