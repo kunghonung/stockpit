@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T02:24+00:00",
+  "genererad": "2026-08-11T04:04+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 75.0,
-      "delta": "−2 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
+        "index": 99,
         "pil": "ned",
         "status": "gul"
       },
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 75.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4493",
+      "varde": "4362",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,6 %",
+      "delta4v": "+9,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,46",
+      "varde": "65,11",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+13,1 %",
+      "delta4v": "+13,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,65",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,1 %",
+      "delta4v": "+5,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 87.94,
+      "v": 87.72,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1943,18 +1943,18 @@
       "poster": [
         {
           "datum": "2026-08-10",
+          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
+        },
+        {
+          "datum": "2026-08-10",
           "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Steik Jason Paul  (CIK 0002078374); Pennant Group, Inc.  (CIK 0001766400)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2078374/000207837426000003"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Meaney William L  (CIK 0001566391); IRON MOUNTAIN INC  (CIK 0001020569)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1566391/000156639126000022"
         },
         {
           "datum": "2026-08-10",
@@ -1968,18 +1968,13 @@
         },
         {
           "datum": "2026-08-10",
-          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+          "namn": "Steik Jason Paul  (CIK 0002078374); Pennant Group, Inc.  (CIK 0001766400)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2078374/000207837426000003"
         },
         {
           "datum": "2026-08-10",
-          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Cui Jingrong Jean  (CIK 0001772259); BlossomHill Therapeutics, Inc.  (CIK 0001839970)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1772259/000177225926000005"
+          "namn": "Meaney William L  (CIK 0001566391); IRON MOUNTAIN INC  (CIK 0001020569)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1566391/000156639126000022"
         },
         {
           "datum": "2026-08-10",
@@ -1988,12 +1983,17 @@
         },
         {
           "datum": "2026-08-10",
+          "namn": "EQUINOX PARTNERS LP  (CIK 0000933897); Equinox Partners Investment Management LLC  (CIK 0000938552)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/933897/000101359426000845"
+        },
+        {
+          "datum": "2026-08-10",
           "namn": "KAO JOHN E  (CIK 0001222028); Alignment Healthcare, Inc.  (CIK 0001832466)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1222028/000162828026055418"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-11T02:24+00:00"
+      "vintage": "2026-08-11T04:04+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T02:24+00:00"
+      "vintage": "2026-08-11T04:04+00:00"
     }
   }
 }
