@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T17:36+00:00",
+  "genererad": "2026-08-11T18:35+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.0,
         111.84,
         110.89,
-        110.95
+        110.81
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -222,7 +222,7 @@
         86.39,
         85.78,
         86.26,
-        86.25
+        86.24
       ]
     },
     {
@@ -273,7 +273,7 @@
         92.4,
         93.57,
         94.17,
-        94.17
+        94.58
       ]
     },
     {
@@ -324,7 +324,7 @@
         98.05,
         94.8,
         94.64,
-        94.44
+        94.6
       ]
     },
     {
@@ -375,7 +375,7 @@
         103.85,
         102.26,
         103.99,
-        104.0
+        104.37
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         91.33,
         86.76,
         85.83,
-        86.72
+        86.96
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.32,
         92.87,
         91.7,
-        91.74
+        91.71
       ]
     },
     {
@@ -529,7 +529,7 @@
         102.89,
         95.98,
         100.48,
-        101.78
+        101.92
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.24,
         100.89,
         101.29,
-        101.79
+        101.95
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.65,
         91.42,
         91.3,
-        91.19
+        91.35
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.4,
-      "delta": "−1,1 · 1 v",
+      "varde": 15.3,
+      "delta": "−1,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 96,
+        "index": 97,
         "pil": "ned",
         "status": "gron"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.4,
+      "varde": 15.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4440",
+      "varde": "4424",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,3 %",
+      "delta4v": "+8,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,94",
+      "varde": "64,74",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,5 %",
+      "delta4v": "+10,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,62",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,8 %",
+      "delta4v": "+4,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 88.82,
+      "v": 88.81,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1686,7 +1686,7 @@
           101.48,
           101.78,
           101.96,
-          101.81
+          101.8
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           102.28,
           104.16,
           104.07,
-          103.77
+          103.7
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           98.73,
-          98.84
+          98.96
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           107.27,
-          107.38
+          107.52
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           90.79,
           89.18,
           89.94,
-          88.06
+          88.08
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           93.68,
           91.81,
           91.59,
-          91.63
+          91.72
         ]
       }
     ],
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-11T17:36+00:00"
+      "vintage": "2026-08-11T18:35+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-11 20:32:51",
+          "emittent": "AAK AB (PUBL)",
+          "person": "Susanne Jaspers",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "60000,0",
+          "enhet": "Antal",
+          "pris": "10,23",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-11 18:26:53",
           "emittent": "Nivika Fastigheter AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,70",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 10:42:44",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Jonas Dahllöf",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "109803,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T17:36+00:00"
+      "vintage": "2026-08-11T18:35+00:00"
     }
   }
 }
