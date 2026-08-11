@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-11",
-  "genererad": "2026-08-11T09:11+00:00",
+  "genererad": "2026-08-11T10:29+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4426",
+      "varde": "4432",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,0 %",
+      "delta4v": "+9,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,84",
+      "varde": "65,14",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,3 %",
+      "delta4v": "+10,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,67",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,3 %",
+      "delta4v": "+5,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-11"
     },
     "olja": {
-      "v": 89.93,
+      "v": 89.7,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-11"
     }
@@ -1768,7 +1768,7 @@
           97.39,
           97.7,
           94.7,
-          94.77
+          94.87
         ]
       },
       {
@@ -1943,28 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-10",
-          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
-        },
-        {
-          "datum": "2026-08-10",
           "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); Texas Pacific Land Corp  (CIK 0001811074)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926026727"
         },
         {
           "datum": "2026-08-10",
@@ -1978,13 +1958,33 @@
         },
         {
           "datum": "2026-08-10",
-          "namn": "Tomsic Steven  (CIK 0001764953); Fox Corp  (CIK 0001754301)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1764953/000162828026055392"
+          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
         },
         {
           "datum": "2026-08-10",
-          "namn": "EQUINOX PARTNERS LP  (CIK 0000933897); Equinox Partners Investment Management LLC  (CIK 0000938552)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/933897/000101359426000845"
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); Texas Pacific Land Corp  (CIK 0001811074)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926026727"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Cui Jingrong Jean  (CIK 0001772259); BlossomHill Therapeutics, Inc.  (CIK 0001839970)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1772259/000177225926000005"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Tomsic Steven  (CIK 0001764953); Fox Corp  (CIK 0001754301)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1764953/000162828026055392"
         },
         {
           "datum": "2026-08-10",
@@ -1993,10 +1993,98 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-11T09:11+00:00"
+      "vintage": "2026-08-11T10:29+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-11 11:50:03",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Magnus Söderlund",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "20759,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:47:31",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Mihails Mihailovs",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "41518,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:42:12",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Katarina Meyer",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "31139,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:38:17",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Makram Chebli",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "41518,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:35:34",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Mateusz Poznanski",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "20759,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:32:08",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Fabien Klecha",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "41518,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:27:15",
+          "emittent": "Hoist Finance AB (publ)",
+          "person": "Harry Vranjes",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Teckning",
+          "volym": "41518,0",
+          "enhet": "Antal",
+          "pris": "160,57",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-11 11:17:29",
+          "emittent": "Asker Healthcare Group AB (publ)",
+          "person": "Mattias Jaran",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "250000,0",
+          "enhet": "Antal",
+          "pris": "82,90",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-11 09:30:10",
           "emittent": "Bong AB",
@@ -2458,99 +2546,11 @@
           "enhet": "Antal",
           "pris": "71,20",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-08 13:28:34",
-          "emittent": "Sinch AB (publ)",
-          "person": "Johan Hedberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "157327,0",
-          "enhet": "Antal",
-          "pris": "45,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 20:45:01",
-          "emittent": "K33 AB (publ)",
-          "person": "Middelborg Invest AS",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lån återgång ökning",
-          "volym": "40000000,0",
-          "enhet": "Antal",
-          "pris": "0,026",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "129,0",
-          "enhet": "Antal",
-          "pris": "12,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1124,0",
-          "enhet": "Antal",
-          "pris": "12,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "12,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100,0",
-          "enhet": "Antal",
-          "pris": "12,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1900,0",
-          "enhet": "Antal",
-          "pris": "12,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-07 18:39:53",
-          "emittent": "Joy and Inspiration AB",
-          "person": "Catrin Wirfalk",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "12,35",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 8,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-11T09:11+00:00"
+      "vintage": "2026-08-11T10:29+00:00"
     }
   }
 }
