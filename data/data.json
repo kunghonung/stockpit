@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-12",
-  "genererad": "2026-08-12T02:40+00:00",
+  "genererad": "2026-08-12T04:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        98.53,
+        97.74,
         98.01,
         98.63,
         98.63
@@ -221,7 +221,7 @@
         85.78,
         86.39,
         85.78,
-        86.53,
+        86.1,
         86.1
       ]
     },
@@ -477,7 +477,7 @@
         99.28,
         96.32,
         92.87,
-        91.99,
+        91.33,
         91.33
       ]
     },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 93,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -970,7 +970,7 @@
       "varde": "4461",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,8 %",
+      "delta4v": "+10,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,29",
+      "varde": "65,50",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,1 %",
+      "delta4v": "+14,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,66",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,7 %",
+      "delta4v": "+5,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-12"
     },
     "olja": {
-      "v": 89.45,
+      "v": 89.49,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-12"
     }
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           107.42,
-          107.47
+          107.97
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           91.58,
           93.68,
           91.81,
-          91.71,
+          91.61,
           91.61
         ]
       }
@@ -1940,9 +1940,60 @@
   },
   "insynFlode": {
     "us": {
-      "poster": [],
+      "poster": [
+        {
+          "datum": "2026-08-10",
+          "namn": "Cairns Craig D.  (CIK 0001861690); TRANSCAT INC  (CIK 0000099302)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1861690/000089183926000347"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Steik Jason Paul  (CIK 0002078374); Pennant Group, Inc.  (CIK 0001766400)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2078374/000207837426000003"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Meaney William L  (CIK 0001566391); IRON MOUNTAIN INC  (CIK 0001020569)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1566391/000156639126000022"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "HORIZON KINETICS ASSET MANAGEMENT LLC  (CIK 0001056823); Texas Pacific Land Corp  (CIK 0001811074)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1056823/000143774926026727"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+        },
+        {
+          "datum": "2026-08-10",
+          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "COLTHARP DOUGLAS E  (CIK 0001186879); Encompass Health Corp  (CIK 0000785161)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1186879/000078516126000192"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Zavery Amit  (CIK 0001781064); ServiceNow, Inc.  (CIK 0001373715)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1781064/000178106426000016"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "CRANSTON MARY B  (CIK 0001104268); Chemours Co  (CIK 0001627223)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1104268/000119312526344632"
+        }
+      ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-12T02:40+00:00"
+      "vintage": "2026-08-12T04:57+00:00"
     },
     "se": {
       "poster": [
@@ -2497,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-12T02:40+00:00"
+      "vintage": "2026-08-12T04:57+00:00"
     }
   }
 }
