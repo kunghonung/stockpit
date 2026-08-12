@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-12",
-  "genererad": "2026-08-12T11:09+00:00",
+  "genererad": "2026-08-12T12:29+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        97.74,
+        98.53,
         98.01,
         98.63,
         98.63
@@ -219,9 +219,9 @@
         88.17,
         88.76,
         85.78,
-        85.07,
+        86.39,
         85.78,
-        86.1,
+        86.53,
         86.1
       ]
     },
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        94.62,
+        92.4,
         93.57,
         94.57,
         94.57
@@ -477,7 +477,7 @@
         99.28,
         96.32,
         92.87,
-        91.33,
+        91.99,
         91.33
       ]
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        88.73,
+        91.65,
         91.42,
         91.26,
         91.26
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 15.4,
-      "delta": "−0,4 · 1 v",
+      "delta": "−0,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 78.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 78.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4472",
+      "varde": "4467",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,6 %",
+      "delta4v": "+10,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,44",
+      "varde": "66,27",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,3 %",
+      "delta4v": "+16,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-12"
     },
     "olja": {
-      "v": 88.97,
+      "v": 89.2,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-12"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.98,
+          101.48,
           101.78,
           101.77,
           101.77
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.79,
+          102.28,
           104.16,
           103.85,
           103.85
@@ -1765,10 +1765,10 @@
           97.92,
           99.68,
           100.6,
-          100.56,
+          99.95,
           98.49,
           98.87,
-          99.02
+          98.95
         ]
       },
       {
@@ -1806,7 +1806,7 @@
           112.2,
           106.79,
           108.06,
-          102.56,
+          106.17,
           104.87,
           107.42,
           108.3
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.63,
+          97.15,
           96.41,
           96.43,
           96.43
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.75,
+          90.79,
           89.18,
           87.99,
           87.99
@@ -1929,9 +1929,9 @@
           92.01,
           92.86,
           91.58,
-          93.96,
+          93.68,
           91.81,
-          91.61,
+          91.71,
           91.61
         ]
       }
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-12T11:09+00:00"
+      "vintage": "2026-08-12T12:29+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-12 14:16:12",
+          "emittent": "Arlandastad Group AB (publ)",
+          "person": "Krister Karlsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "950000,0",
+          "enhet": "Antal",
+          "pris": "37,182",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-12 13:38:12",
+          "emittent": "Swedbank AB (publ)",
+          "person": "Rasmus Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "18000000,0",
+          "enhet": "Antal",
+          "pris": "18000000,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-12 13:38:12",
+          "emittent": "Swedbank AB (publ)",
+          "person": "Rasmus Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "200000000,0",
+          "enhet": "Antal",
+          "pris": "200000000,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-12 13:35:53",
+          "emittent": "KlaraBo Sverige AB",
+          "person": "Andreas Morfiadakis",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2795270,0",
+          "enhet": "Antal",
+          "pris": "14,10",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-12 12:15:15",
           "emittent": "Bergman & Beving Aktiebolag",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 16:13:21",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Pär Göting",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "588235,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 15:18:01",
-          "emittent": "OEM International Aktiebolag (publ)",
-          "person": "Daniel Warnholtz",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "86174,52",
-          "enhet": "Antal",
-          "pris": "0,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 14:57:31",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Mathias Kongensøy",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1376470,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-10 14:57:31",
-          "emittent": "Bluelake Mineral AB (publ)",
-          "person": "Mathias Kongensøy",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1376470,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-12T11:09+00:00"
+      "vintage": "2026-08-12T12:29+00:00"
     }
   }
 }
