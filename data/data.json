@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-12",
-  "genererad": "2026-08-12T22:57+00:00",
+  "genererad": "2026-08-12T23:55+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        97.74,
+        98.53,
         98.01,
         98.63,
         98.48
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        94.62,
+        92.4,
         93.57,
         94.57,
         93.17
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        88.73,
+        91.65,
         91.42,
         91.26,
         90.0
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 101,
+        "index": 100,
         "pil": "upp",
         "status": "gron"
       },
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4459",
+      "varde": "4467",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,3 %",
+      "delta4v": "+10,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,24",
+      "varde": "65,43",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+14,2 %",
+      "delta4v": "+14,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,0 %",
+      "delta4v": "+4,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-12"
     },
     "olja": {
-      "v": 88.46,
+      "v": 88.56,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-12"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.98,
+          101.48,
           101.78,
           101.77,
           101.55
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.79,
+          102.28,
           104.16,
           103.85,
           104.12
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          100.56,
+          99.95,
           98.49,
           98.87,
           98.25
@@ -1806,7 +1806,7 @@
           112.2,
           106.79,
           108.06,
-          106.7,
+          106.17,
           104.87,
           107.42,
           107.79
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.63,
+          97.15,
           96.41,
           96.43,
           97.49
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.75,
+          90.79,
           89.18,
           87.99,
           86.72
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          94.14,
+          93.68,
           91.81,
           91.61,
           90.93
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-12T22:57+00:00"
+      "vintage": "2026-08-12T23:55+00:00"
     }
   }
 }
