@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-13",
-  "genererad": "2026-08-13T11:25+00:00",
+  "genererad": "2026-08-13T12:30+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -201,7 +201,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -219,7 +219,7 @@
         88.17,
         88.76,
         85.78,
-        86.39,
+        85.07,
         85.78,
         85.11,
         85.11
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         93.17,
         93.17
@@ -303,7 +303,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        91.65,
+        88.73,
         91.42,
         90.0,
         90.0
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
+        "index": 99,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 93,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4453",
+      "varde": "4445",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,7 %",
+      "delta4v": "+11,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,21",
+      "varde": "65,15",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+16,6 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,5 %",
+      "delta4v": "+4,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-13"
     },
     "olja": {
-      "v": 87.19,
+      "v": 87.38,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-13"
     }
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           98.25,
-          98.47
+          98.39
         ]
       },
       {
@@ -1942,14 +1942,39 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-10",
-          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+          "datum": "2026-08-11",
+          "namn": "Cappello Juan Pablo  (CIK 0002120690); BBB FOODS INC  (CIK 0001978954)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2120690/000119312526344768"
         },
         {
-          "datum": "2026-08-10",
-          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
+          "datum": "2026-08-11",
+          "namn": "Williford William J  (CIK 0001758991); W&T OFFSHORE INC  (CIK 0001288403)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1758991/000110465926094103"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Gizinski Daniel  (CIK 0002034782); COMTECH TELECOMMUNICATIONS CORP /DE/  (CIK 0000023197)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2034782/000203478226000012"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Wong Gregory  (CIK 0001563458); QUINSTREET, INC  (CIK 0001117297)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1563458/000156345826000012"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Keohane Sean D  (CIK 0001435737); CABOT CORP  (CIK 0000016040)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1435737/000119312526345177"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "FELDMAN FREDRIC J  (CIK 0001191704); Capstone Holding Corp.  (CIK 0000887151)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1191704/000143774926027123"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Eichenbaum Kenneth D.  (CIK 0002024404); FEMASYS INC  (CIK 0001339005)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2024404/000114036126032349"
         },
         {
           "datum": "2026-08-10",
@@ -1958,45 +1983,31 @@
         },
         {
           "datum": "2026-08-10",
-          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
+          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
         },
         {
           "datum": "2026-08-10",
-          "namn": "Tomsic Steven  (CIK 0001764953); Fox Corp  (CIK 0001754301)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1764953/000162828026055392"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "EQUINOX PARTNERS LP  (CIK 0000933897); Equinox Partners Investment Management LLC  (CIK 0000938552)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/933897/000101359426000845"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Cui Jingrong Jean  (CIK 0001772259); BlossomHill Therapeutics, Inc.  (CIK 0001839970)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1772259/000177225926000005"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Conversant Capital LLC  (CIK 0001850901); Simanovsky Michael  (CIK 0001596522)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1850901/000089534526000353"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "KAO JOHN E  (CIK 0001222028); Alignment Healthcare, Inc.  (CIK 0001832466)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1222028/000162828026055418"
-        },
-        {
-          "datum": "2026-08-11",
-          "namn": "Kanary MaryAnn Peterson  (CIK 0001986602); Cooper-Standard Holdings Inc.  (CIK 0001320461)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1986602/000132046126000116"
+          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-13T11:25+00:00"
+      "vintage": "2026-08-13T12:30+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-13 14:22:32",
+          "emittent": "Ellos Holding AB (publ)",
+          "person": "Morten Eivindssøn Astrup",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Lån återgång ökning",
+          "volym": "750000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-13 12:32:37",
           "emittent": "Karnell Group AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "12,10",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-11 13:28:25",
-          "emittent": "Litium AB",
-          "person": "Johan Rutgersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "32000,0",
-          "enhet": "Antal",
-          "pris": "12,10",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-13T11:25+00:00"
+      "vintage": "2026-08-13T12:30+00:00"
     }
   }
 }
