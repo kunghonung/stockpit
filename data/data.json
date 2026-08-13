@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-13",
-  "genererad": "2026-08-13T05:01+00:00",
+  "genererad": "2026-08-13T06:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        97.74,
+        98.53,
         98.01,
         98.48,
         98.48
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 72.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 72.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +12 bp/mån."
     },
     "bredd": {
-      "over50": 64,
-      "over200": 71,
+      "over50": 66,
+      "over200": 69,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-12",
+      "vintage": "2026-08-13",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-1 sedan förra"
+      "delta": "+2 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4453",
+      "varde": "4432",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,7 %",
+      "delta4v": "+11,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,47",
+      "varde": "65,03",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,1 %",
+      "delta4v": "+16,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-13"
     },
     "olja": {
-      "v": 88.77,
+      "v": 88.91,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-13"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.48,
+          101.98,
           101.78,
           101.55,
           101.55
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.28,
+          102.79,
           104.16,
           104.12,
           104.12
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.44,
           98.49,
           98.25,
           98.25
@@ -1806,10 +1806,10 @@
           112.2,
           106.79,
           108.06,
-          106.17,
+          106.7,
           104.87,
           107.79,
-          109.56
+          109.2
         ]
       },
       {
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.15,
+          97.63,
           96.41,
           97.49,
           97.49
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.3,
+          91.24,
           89.18,
           86.72,
           86.72
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.49,
+          93.96,
           91.81,
           90.93,
           90.93
@@ -1942,14 +1942,39 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-10",
-          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
+          "datum": "2026-08-11",
+          "namn": "Cappello Juan Pablo  (CIK 0002120690); BBB FOODS INC  (CIK 0001978954)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2120690/000119312526344768"
         },
         {
-          "datum": "2026-08-10",
-          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
+          "datum": "2026-08-11",
+          "namn": "Williford William J  (CIK 0001758991); W&T OFFSHORE INC  (CIK 0001288403)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1758991/000110465926094103"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Gizinski Daniel  (CIK 0002034782); COMTECH TELECOMMUNICATIONS CORP /DE/  (CIK 0000023197)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2034782/000203478226000012"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Wong Gregory  (CIK 0001563458); QUINSTREET, INC  (CIK 0001117297)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1563458/000156345826000012"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Keohane Sean D  (CIK 0001435737); CABOT CORP  (CIK 0000016040)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1435737/000119312526345177"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "FELDMAN FREDRIC J  (CIK 0001191704); Capstone Holding Corp.  (CIK 0000887151)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1191704/000143774926027123"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Eichenbaum Kenneth D.  (CIK 0002024404); FEMASYS INC  (CIK 0001339005)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2024404/000114036126032349"
         },
         {
           "datum": "2026-08-10",
@@ -1958,42 +1983,17 @@
         },
         {
           "datum": "2026-08-10",
-          "namn": "Machado Fernando  (CIK 0001801288); CHIPOTLE MEXICAN GRILL INC  (CIK 0001058090)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1801288/000105809026000071"
+          "namn": "Gama Paul  (CIK 0002110932); PROCTER & GAMBLE Co  (CIK 0000080424)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000113"
         },
         {
           "datum": "2026-08-10",
-          "namn": "Tomsic Steven  (CIK 0001764953); Fox Corp  (CIK 0001754301)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1764953/000162828026055392"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "EQUINOX PARTNERS LP  (CIK 0000933897); Equinox Partners Investment Management LLC  (CIK 0000938552)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/933897/000101359426000845"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Cui Jingrong Jean  (CIK 0001772259); BlossomHill Therapeutics, Inc.  (CIK 0001839970)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1772259/000177225926000005"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "Conversant Capital LLC  (CIK 0001850901); Simanovsky Michael  (CIK 0001596522)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1850901/000089534526000353"
-        },
-        {
-          "datum": "2026-08-10",
-          "namn": "KAO JOHN E  (CIK 0001222028); Alignment Healthcare, Inc.  (CIK 0001832466)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1222028/000162828026055418"
-        },
-        {
-          "datum": "2026-08-11",
-          "namn": "Kanary MaryAnn Peterson  (CIK 0001986602); Cooper-Standard Holdings Inc.  (CIK 0001320461)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1986602/000132046126000116"
+          "namn": "Sheets Jeffrey Wayne  (CIK 0001447712); WESTLAKE CORP  (CIK 0001262823)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1447712/000119312526342011"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-13T05:01+00:00"
+      "vintage": "2026-08-13T06:41+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-13T05:01+00:00"
+      "vintage": "2026-08-13T06:41+00:00"
     }
   }
 }
