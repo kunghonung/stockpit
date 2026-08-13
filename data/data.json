@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-13",
-  "genererad": "2026-08-13T18:37+00:00",
+  "genererad": "2026-08-13T19:44+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.0,
         111.84,
         112.48,
-        113.21
+        112.92
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -168,10 +168,10 @@
         98.62,
         98.79,
         101.17,
-        98.53,
+        97.74,
         98.01,
         98.48,
-        97.98
+        97.72
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 5,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -219,10 +219,10 @@
         88.17,
         88.76,
         85.78,
-        86.39,
+        85.07,
         85.78,
         85.11,
-        85.72
+        86.3
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,10 +270,10 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         93.17,
-        92.12
+        91.98
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         98.05,
         94.8,
         94.85,
-        95.0
+        95.18
       ]
     },
     {
@@ -375,7 +375,7 @@
         103.85,
         102.26,
         104.06,
-        103.09
+        103.11
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         91.33,
         86.76,
         87.31,
-        86.95
+        87.07
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.32,
         92.87,
         91.95,
-        92.51
+        92.65
       ]
     },
     {
@@ -529,7 +529,7 @@
         102.89,
         95.98,
         101.97,
-        101.2
+        101.24
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.24,
         100.89,
         101.55,
-        101.17
+        101.45
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -630,10 +630,10 @@
         91.59,
         91.6,
         87.32,
-        91.65,
+        88.73,
         91.42,
         90.0,
-        89.82
+        89.86
       ]
     }
   ],
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 72.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 72.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4413",
+      "varde": "4408",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,7 %",
+      "delta4v": "+10,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,83",
+      "varde": "64,56",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,0 %",
+      "delta4v": "+15,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,60",
+      "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,8 %",
+      "delta4v": "+4,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-13"
     },
     "olja": {
-      "v": 87.17,
+      "v": 87.07,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-13"
     }
@@ -1683,10 +1683,10 @@
           101.74,
           101.9,
           101.76,
-          101.48,
+          101.98,
           101.78,
           101.55,
-          101.71
+          101.73
         ]
       },
       {
@@ -1724,10 +1724,10 @@
           107.01,
           104.33,
           103.13,
-          102.28,
+          102.79,
           104.16,
           104.12,
-          104.92
+          104.83
         ]
       },
       {
@@ -1765,10 +1765,10 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.56,
           98.49,
           98.25,
-          97.76
+          97.73
         ]
       },
       {
@@ -1806,10 +1806,10 @@
           112.2,
           106.79,
           108.06,
-          106.17,
+          102.56,
           104.87,
           107.79,
-          108.54
+          108.51
         ]
       },
       {
@@ -1847,10 +1847,10 @@
           100.6,
           96.82,
           97.32,
-          97.15,
+          97.63,
           96.41,
           97.49,
-          97.53
+          97.32
         ]
       },
       {
@@ -1888,10 +1888,10 @@
           85.76,
           86.94,
           87.97,
-          90.79,
+          90.75,
           89.18,
           86.72,
-          85.22
+          85.24
         ]
       },
       {
@@ -1929,10 +1929,10 @@
           92.01,
           92.86,
           91.58,
-          93.68,
+          93.96,
           91.81,
           90.93,
-          90.59
+          90.6
         ]
       }
     ],
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-13T18:37+00:00"
+      "vintage": "2026-08-13T19:44+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-13 21:25:40",
+          "emittent": "Studentbostäder i Norden AB (publ)",
+          "person": "yaron zaltsman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "61819083,0",
+          "enhet": "Antal",
+          "pris": "1,25",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-13 20:14:03",
           "emittent": "Mangold AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "37,98",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-11 17:30:46",
-          "emittent": "Hemnet Group AB (publ)",
-          "person": "Peter Messner",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "3510,0",
-          "enhet": "Antal",
-          "pris": "90,29",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-13T18:37+00:00"
+      "vintage": "2026-08-13T19:44+00:00"
     }
   }
 }
