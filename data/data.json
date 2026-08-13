@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-13",
-  "genererad": "2026-08-13T08:40+00:00",
+  "genererad": "2026-08-13T10:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         93.17,
         93.17
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        88.73,
+        91.65,
         91.42,
         90.0,
         90.0
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.7,
+      "varde": 14.6,
       "delta": "−0,5 · 1 v",
       "trosklar": [
         20,
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 72.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 72.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.7,
+      "varde": 14.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4430",
+      "varde": "4442",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,1 %",
+      "delta4v": "+11,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,71",
+      "varde": "64,93",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,8 %",
+      "delta4v": "+16,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,52",
+      "varde": "6,57",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,6 %",
+      "delta4v": "+4,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-13"
     },
     "olja": {
-      "v": 87.69,
+      "v": 87.66,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-13"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.98,
+          101.48,
           101.78,
           101.55,
           101.55
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.79,
+          102.28,
           104.16,
           104.12,
           104.12
@@ -1765,10 +1765,10 @@
           97.92,
           99.68,
           100.6,
-          100.44,
+          100.06,
           98.49,
           98.25,
-          98.42
+          98.49
         ]
       },
       {
@@ -1806,7 +1806,7 @@
           112.2,
           106.79,
           108.06,
-          106.7,
+          102.06,
           104.87,
           107.79,
           109.05
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.63,
+          97.15,
           96.41,
           97.49,
           97.49
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.75,
+          90.3,
           89.18,
           86.72,
           86.72
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          94.14,
+          93.49,
           91.81,
           90.93,
           90.93
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-13T08:40+00:00"
+      "vintage": "2026-08-13T10:19+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-13 11:52:39",
+          "emittent": "Volvo Car AB",
+          "person": "Pieter Nota",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "63000,0",
+          "enhet": "Antal",
+          "pris": "19,60",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-13 10:39:36",
           "emittent": "Space Nord Invest AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "160,57",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-11 11:47:31",
-          "emittent": "Hoist Finance AB (publ)",
-          "person": "Mihails Mihailovs",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "41518,0",
-          "enhet": "Antal",
-          "pris": "160,57",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-13T08:40+00:00"
+      "vintage": "2026-08-13T10:19+00:00"
     }
   }
 }
