@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-14T04:58+00:00",
+  "genererad": "2026-08-14T06:39+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        98.53,
+        97.74,
         98.01,
         97.75,
         97.75
@@ -219,7 +219,7 @@
         88.17,
         88.76,
         85.78,
-        86.39,
+        85.07,
         85.78,
         86.27,
         86.27
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         92.05,
         92.05
@@ -303,7 +303,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        91.65,
+        88.73,
         91.42,
         89.81,
         89.81
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 69.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 69.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +8 bp/mån."
     },
     "bredd": {
-      "over50": 66,
-      "over200": 69,
-      "antal": 500,
-      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-13",
+      "over50": 69,
+      "over200": 73,
+      "antal": 501,
+      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 501 bolag)",
+      "vintage": "2026-08-14",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+2 sedan förra"
+      "delta": "+3 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4379",
+      "varde": "4386",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,1 %",
+      "delta4v": "+9,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,07",
+      "varde": "64,42",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+14,3 %",
+      "delta4v": "+15,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,56",
+      "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,5 %",
+      "delta4v": "+5,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-14"
     },
     "olja": {
-      "v": 87.09,
+      "v": 87.99,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-14"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.48,
+          101.98,
           101.78,
           101.73,
           101.73
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.28,
+          102.79,
           104.16,
           104.78,
           104.78
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.56,
           98.49,
           97.71,
           97.71
@@ -1806,10 +1806,10 @@
           112.2,
           106.79,
           108.06,
-          106.17,
+          102.56,
           104.87,
           108.49,
-          108.96
+          109.12
         ]
       },
       {
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.15,
+          97.63,
           96.41,
           97.31,
           97.31
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.79,
+          90.75,
           89.18,
           85.24,
           85.24
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.68,
+          93.96,
           91.81,
           90.52,
           90.52
@@ -1993,10 +1993,120 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-14T04:58+00:00"
+      "vintage": "2026-08-14T06:39+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-14 08:12:09",
+          "emittent": "Skanska AB",
+          "person": "Malte Fält",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "3,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:11:13",
+          "emittent": "Skanska AB",
+          "person": "Hans Reinholdsson",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "3,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:08:01",
+          "emittent": "Skanska AB",
+          "person": "Fredrik Norrman",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "6,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:06:41",
+          "emittent": "Skanska AB",
+          "person": "Anders Rättgård",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "7,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:05:29",
+          "emittent": "Skanska AB",
+          "person": "Pontus Winqvist",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Tilldelning",
+          "volym": "29,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:03:49",
+          "emittent": "Skanska AB",
+          "person": "Lena Hök",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "125,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:02:51",
+          "emittent": "Skanska AB",
+          "person": "Therese Tegner",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "137,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 08:01:33",
+          "emittent": "Skanska AB",
+          "person": "Staale Roed",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "173,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 07:59:49",
+          "emittent": "Skanska AB",
+          "person": "Claes Larsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "257,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 07:57:28",
+          "emittent": "Skanska AB",
+          "person": "Anders Danielsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "503,0",
+          "enhet": "Antal",
+          "pris": "266,50",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-14 02:55:32",
           "emittent": "Storytel AB (publ)",
@@ -2436,121 +2546,11 @@
           "enhet": "Antal",
           "pris": "200000000,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 13:35:53",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Andreas Morfiadakis",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2795270,0",
-          "enhet": "Antal",
-          "pris": "14,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 12:15:15",
-          "emittent": "Bergman & Beving Aktiebolag",
-          "person": "Malin Nordesjö",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "287,75",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 12:09:17",
-          "emittent": "C-RAD AB",
-          "person": "Linda Maria Elisabet Eixmann Frölén",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "35,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 12:09:17",
-          "emittent": "C-RAD AB",
-          "person": "Linda Maria Elisabet Eixmann Frölén",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "35,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 10:49:49",
-          "emittent": "Storskogen Group AB (publ)",
-          "person": "Annette Brodin Rampe",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "10,89",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 09:43:20",
-          "emittent": "Fastpartner AB",
-          "person": "Sven-Olof Johansson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "41727,0",
-          "enhet": "Antal",
-          "pris": "42,9386",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 07:26:19",
-          "emittent": "ScandiDos AB",
-          "person": "Fredric Eliasson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "641979,0",
-          "enhet": "Antal",
-          "pris": "0,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 01:54:42",
-          "emittent": "AAK AB (PUBL)",
-          "person": "OCTAVIO DIAZ DE LEON CARRILLO",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "60000,0",
-          "enhet": "Antal",
-          "pris": "10,23",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-11 22:45:20",
-          "emittent": "Vaccinium Holding ApS",
-          "person": "Karl Kristian Bergman Jensen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "19,44",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-11 22:45:20",
-          "emittent": "Vaccinium Holding ApS",
-          "person": "Karl Kristian Bergman Jensen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "18,63",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 10,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-14T04:58+00:00"
+      "vintage": "2026-08-14T06:39+00:00"
     }
   }
 }
