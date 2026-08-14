@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-14T11:07+00:00",
+  "genererad": "2026-08-14T11:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4406",
+      "varde": "4418",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,8 %",
+      "delta4v": "+10,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,81",
+      "varde": "65,09",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,7 %",
+      "delta4v": "+16,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,8 %",
+      "delta4v": "+5,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-14"
     },
     "olja": {
-      "v": 86.88,
+      "v": 87.07,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-14"
     }
@@ -1765,10 +1765,10 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.06,
           98.49,
           97.71,
-          97.76
+          97.78
         ]
       },
       {
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.68,
+          93.49,
           91.81,
           90.52,
           90.52
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-14T11:07+00:00"
+      "vintage": "2026-08-14T11:56+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-14 13:21:51",
+          "emittent": "Fabege AB",
+          "person": "Bent Oustad",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "76,45",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-14 11:41:04",
           "emittent": "MilDef Group AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "2,63",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 19:49:42",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "229,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-14T11:07+00:00"
+      "vintage": "2026-08-14T11:57+00:00"
     }
   }
 }
