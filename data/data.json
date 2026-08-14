@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-14T14:39+00:00",
+  "genererad": "2026-08-14T16:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.0,
         111.84,
         112.83,
-        112.69
+        112.39
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         98.53,
         98.01,
         97.75,
-        98.33
+        98.19
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         86.39,
         85.78,
         86.27,
-        86.68
+        86.87
       ]
     },
     {
@@ -273,7 +273,7 @@
         92.4,
         93.57,
         92.05,
-        92.59
+        92.51
       ]
     },
     {
@@ -324,7 +324,7 @@
         98.05,
         94.8,
         95.21,
-        95.28
+        95.57
       ]
     },
     {
@@ -375,7 +375,7 @@
         103.85,
         102.26,
         103.3,
-        102.52
+        102.97
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         91.33,
         86.76,
         87.1,
-        87.44
+        87.74
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.32,
         92.87,
         92.61,
-        92.66
+        93.01
       ]
     },
     {
@@ -529,7 +529,7 @@
         102.89,
         95.98,
         101.31,
-        103.09
+        103.13
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.24,
         100.89,
         101.44,
-        101.23
+        101.6
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -630,10 +630,10 @@
         91.59,
         91.6,
         87.32,
-        88.73,
+        91.65,
         91.42,
         89.81,
-        90.07
+        89.82
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.6,
-      "delta": "−0,3 · 1 v",
+      "varde": 14.7,
+      "delta": "−0,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 98,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 92,
+        "index": 93,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.6,
+      "varde": 14.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4449",
+      "varde": "4450",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+10,9 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,77",
+      "varde": "65,28",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,4 %",
+      "delta4v": "+16,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,62",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,4 %",
+      "delta4v": "+6,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-14"
     },
     "olja": {
-      "v": 87.57,
+      "v": 87.74,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-14"
     }
@@ -1686,7 +1686,7 @@
           101.48,
           101.78,
           101.73,
-          101.68
+          101.69
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           102.28,
           104.16,
           104.78,
-          104.73
+          104.56
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           97.71,
-          97.6
+          97.66
         ]
       },
       {
@@ -1806,10 +1806,10 @@
           112.2,
           106.79,
           108.06,
-          102.06,
+          106.17,
           104.87,
           108.49,
-          109.17
+          109.3
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.15,
           96.41,
           97.31,
-          97.57
+          97.28
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           90.79,
           89.18,
           85.24,
-          85.62
+          85.76
         ]
       },
       {
@@ -1929,10 +1929,10 @@
           92.01,
           92.86,
           91.58,
-          93.49,
+          93.68,
           91.81,
           90.52,
-          90.22
+          90.29
         ]
       }
     ],
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-14T14:39+00:00"
+      "vintage": "2026-08-14T16:03+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-14 17:23:56",
+          "emittent": "Viking Supply Ships AB",
+          "person": "Bengt A. Rem",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "44000,0",
+          "enhet": "Antal",
+          "pris": "123,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 17:23:37",
+          "emittent": "Viking Supply Ships AB",
+          "person": "Lars Petter Utseth",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "44000,0",
+          "enhet": "Antal",
+          "pris": "123,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 17:09:22",
+          "emittent": "Bergman & Beving Aktiebolag",
+          "person": "Henrik Hedelius",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Gåva mottagen",
+          "volym": "123281,0",
+          "enhet": "Antal",
+          "pris": "288,5",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-14 16:31:59",
           "emittent": "NYAB AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "19,60",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-13 10:39:36",
-          "emittent": "Space Nord Invest AB",
-          "person": "Petter Stillström",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1500000,0",
-          "enhet": "Antal",
-          "pris": "0,648",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-13 10:37:08",
-          "emittent": "Rottneros AB",
-          "person": "Roger Mattsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "13100000,0",
-          "enhet": "Antal",
-          "pris": "2,41",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-13 10:01:19",
-          "emittent": "Aino Health AB (publ)",
-          "person": "Jochen Edvard Saxelin",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "9419372,0",
-          "enhet": "Antal",
-          "pris": "0,2",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-14T14:39+00:00"
+      "vintage": "2026-08-14T16:03+00:00"
     }
   }
 }
