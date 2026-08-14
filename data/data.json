@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-14T08:35+00:00",
+  "genererad": "2026-08-14T09:42+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        97.74,
+        98.53,
         98.01,
         97.75,
         97.75
@@ -219,7 +219,7 @@
         88.17,
         88.76,
         85.78,
-        85.07,
+        86.39,
         85.78,
         86.27,
         86.27
@@ -252,7 +252,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        94.62,
+        92.4,
         93.57,
         92.05,
         92.05
@@ -303,7 +303,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 69.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 95,
+        "index": 93,
         "pil": "ned",
         "status": "gul"
       },
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 69.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4400",
+      "varde": "4407",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,6 %",
+      "delta4v": "+9,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,70",
+      "varde": "64,83",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,5 %",
+      "delta4v": "+15,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,7 %",
+      "delta4v": "+5,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-14"
     },
     "olja": {
-      "v": 88.48,
+      "v": 87.44,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-14"
     }
@@ -1765,10 +1765,10 @@
           97.92,
           99.68,
           100.6,
-          100.06,
+          99.95,
           98.49,
           97.71,
-          97.51
+          97.69
         ]
       },
       {
@@ -1806,7 +1806,7 @@
           112.2,
           106.79,
           108.06,
-          102.06,
+          106.17,
           104.87,
           108.49,
           109.13
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.68,
+          93.49,
           91.81,
           90.52,
           90.52
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-14T08:35+00:00"
+      "vintage": "2026-08-14T09:42+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-14 11:41:04",
+          "emittent": "MilDef Group AB",
+          "person": "Karin Svalander",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1135,0",
+          "enhet": "Antal",
+          "pris": "228,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-14 11:19:18",
+          "emittent": "ABB Ltd",
+          "person": "Peter Terwiesch",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "83,46",
+          "valuta": "CHF"
+        },
+        {
+          "publicerad": "2026-08-14 11:02:52",
+          "emittent": "Precise Biometrics AB",
+          "person": "Joakim Nydemark",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Teckning",
+          "volym": "30547,0",
+          "enhet": "Antal",
+          "pris": "0,820",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-14 09:27:32",
           "emittent": "Skanska AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "229,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 19:49:42",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10226,0",
-          "enhet": "Antal",
-          "pris": "227,57",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 18:20:47",
-          "emittent": "Eltel AB",
-          "person": "Håkan Dahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2311,0",
-          "enhet": "Antal",
-          "pris": "12,45",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-12 18:20:47",
-          "emittent": "Eltel AB",
-          "person": "Håkan Dahlström",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10243,0",
-          "enhet": "Antal",
-          "pris": "12,45",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 11,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-14T08:35+00:00"
+      "vintage": "2026-08-14T09:42+00:00"
     }
   }
 }
