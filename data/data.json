@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-15T03:01+00:00",
+  "genererad": "2026-08-15T03:50+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         92.64,
         92.64
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 70.0,
-      "delta": "−8 · 1 v",
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.06,
           98.49,
           97.62,
           97.62
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-15T03:01+00:00"
+      "vintage": "2026-08-15T03:50+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-15 05:33:34",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Tomas Klevbo",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "875,0",
+          "enhet": "Antal",
+          "pris": "7,125",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-14 19:21:49",
           "emittent": "Sinch AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "1650,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-13 20:14:03",
-          "emittent": "Mangold AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "100,0",
-          "enhet": "Antal",
-          "pris": "1650,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-15T03:01+00:00"
+      "vintage": "2026-08-15T03:50+00:00"
     }
   }
 }
