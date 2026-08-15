@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-15T21:54+00:00",
+  "genererad": "2026-08-15T22:34+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        94.62,
+        92.4,
         93.57,
         92.64,
         92.64
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        88.73,
+        91.65,
         91.42,
         89.79,
         89.79
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.3,
+          90.79,
           89.18,
           85.67,
           85.67
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-15T21:54+00:00"
+      "vintage": "2026-08-15T22:34+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-15T21:54+00:00"
+      "vintage": "2026-08-15T22:34+00:00"
     }
   }
 }
