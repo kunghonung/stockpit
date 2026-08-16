@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-16T21:31+00:00",
+  "genererad": "2026-08-16T21:53+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        98.53,
+        97.74,
         98.01,
         98.33,
         98.33
@@ -219,7 +219,7 @@
         88.17,
         88.76,
         85.78,
-        86.39,
+        85.07,
         85.78,
         86.75,
         86.75
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         92.64,
         92.64
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        91.65,
+        88.73,
         91.42,
         89.79,
         89.79
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 70.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 70.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.48,
+          101.98,
           101.78,
           101.65,
           101.65
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.28,
+          102.79,
           104.16,
           104.76,
           104.76
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.56,
           98.49,
           97.62,
           97.62
@@ -1806,7 +1806,7 @@
           112.2,
           106.79,
           108.06,
-          106.17,
+          102.56,
           104.87,
           109.26,
           109.26
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.15,
+          97.63,
           96.41,
           97.32,
           97.32
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.79,
+          90.75,
           89.18,
           85.67,
           85.67
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.68,
+          93.96,
           91.81,
           90.26,
           90.26
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-16T21:31+00:00"
+      "vintage": "2026-08-16T21:53+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-16T21:31+00:00"
+      "vintage": "2026-08-16T21:53+00:00"
     }
   }
 }
