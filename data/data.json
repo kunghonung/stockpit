@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W33",
   "asOfDatum": "2026-08-14",
-  "genererad": "2026-08-16T22:55+00:00",
+  "genererad": "2026-08-16T23:31+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4434",
+      "varde": "4436",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+10,6 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,14",
+      "varde": "65,26",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+14,7 %",
+      "delta4v": "+14,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-14"
     },
     "olja": {
-      "v": 88.62,
+      "v": 88.71,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-14"
     }
@@ -1942,19 +1942,39 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-12",
-          "namn": "Mirsaeedi-Farahani Keyvan  (CIK 0002031256); Adagio Medical Holdings, Inc.  (CIK 0002006986)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2031256/000203125626000002"
+          "datum": "2026-08-11",
+          "namn": "Kanary MaryAnn Peterson  (CIK 0001986602); Cooper-Standard Holdings Inc.  (CIK 0001320461)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1986602/000132046126000116"
         },
         {
-          "datum": "2026-08-12",
-          "namn": "Schechter Adam H  (CIK 0001376841); LABCORP HOLDINGS INC.  (CIK 0000920148)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1376841/000092014826000177"
+          "datum": "2026-08-11",
+          "namn": "Wei Rongguo  (CIK 0001697955); HWH International Inc.  (CIK 0001897245)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1697955/000149315226037011"
         },
         {
-          "datum": "2026-08-12",
-          "namn": "Morin Brit  (CIK 0001932653); Life360, Inc.  (CIK 0001581760)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1932653/000158176026000144"
+          "datum": "2026-08-11",
+          "namn": "DeMedici Thomas  (CIK 0001722984); Kearny Financial Corp.  (CIK 0001617242)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1722984/000172298426000002"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "COLTHARP DOUGLAS E  (CIK 0001186879); Encompass Health Corp  (CIK 0000785161)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1186879/000078516126000192"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Zavery Amit  (CIK 0001781064); ServiceNow, Inc.  (CIK 0001373715)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1781064/000178106426000016"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "CRANSTON MARY B  (CIK 0001104268); Chemours Co  (CIK 0001627223)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1104268/000119312526344632"
+        },
+        {
+          "datum": "2026-08-11",
+          "namn": "Wensveen Maarten  (CIK 0001766117); CIMPRESS plc  (CIK 0001262976)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1766117/000176611726000008"
         },
         {
           "datum": "2026-08-11",
@@ -1970,30 +1990,10 @@
           "datum": "2026-08-11",
           "namn": "Gizinski Daniel  (CIK 0002034782); COMTECH TELECOMMUNICATIONS CORP /DE/  (CIK 0000023197)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2034782/000203478226000012"
-        },
-        {
-          "datum": "2026-08-11",
-          "namn": "Wong Gregory  (CIK 0001563458); QUINSTREET, INC  (CIK 0001117297)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1563458/000156345826000012"
-        },
-        {
-          "datum": "2026-08-11",
-          "namn": "Keohane Sean D  (CIK 0001435737); CABOT CORP  (CIK 0000016040)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1435737/000119312526345177"
-        },
-        {
-          "datum": "2026-08-11",
-          "namn": "FELDMAN FREDRIC J  (CIK 0001191704); Capstone Holding Corp.  (CIK 0000887151)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1191704/000143774926027123"
-        },
-        {
-          "datum": "2026-08-11",
-          "namn": "Eichenbaum Kenneth D.  (CIK 0002024404); FEMASYS INC  (CIK 0001339005)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2024404/000114036126032349"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-16T22:55+00:00"
+      "vintage": "2026-08-16T23:31+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-16T22:55+00:00"
+      "vintage": "2026-08-16T23:31+00:00"
     }
   }
 }
