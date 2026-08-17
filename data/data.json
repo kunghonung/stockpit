@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T16:41+00:00",
+  "genererad": "2026-08-17T17:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.0,
         111.84,
         112.61,
-        113.42
+        113.37
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         98.53,
         98.01,
         98.33,
-        98.89
+        99.01
       ]
     },
     {
@@ -222,7 +222,7 @@
         86.39,
         85.78,
         86.75,
-        85.43
+        85.41
       ]
     },
     {
@@ -273,7 +273,7 @@
         92.4,
         93.57,
         92.64,
-        92.33
+        92.42
       ]
     },
     {
@@ -324,7 +324,7 @@
         98.05,
         94.8,
         95.5,
-        94.35
+        94.38
       ]
     },
     {
@@ -375,7 +375,7 @@
         103.85,
         102.26,
         102.89,
-        103.25
+        103.19
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         91.33,
         86.76,
         87.81,
-        87.5
+        87.74
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.32,
         92.87,
         93.1,
-        92.53
+        92.65
       ]
     },
     {
@@ -529,7 +529,7 @@
         102.89,
         95.98,
         102.93,
-        103.7
+        104.27
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.24,
         100.89,
         101.47,
-        101.3
+        101.28
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.65,
         91.42,
         89.79,
-        89.08
+        88.95
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.0,
-      "delta": "−0,4 · 1 v",
+      "varde": 15.4,
+      "delta": "−0,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 103,
+        "index": 104,
         "pil": "upp",
         "status": "gron"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.0,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4482",
+      "varde": "4474",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,8 %",
+      "delta4v": "+11,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,50",
+      "varde": "66,18",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,1 %",
+      "delta4v": "+16,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,62",
+      "varde": "6,61",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,0 %",
+      "delta4v": "+4,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 88.97,
+      "v": 90.36,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1686,7 +1686,7 @@
           101.48,
           101.78,
           101.65,
-          101.41
+          101.47
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           102.28,
           104.16,
           104.76,
-          104.87
+          104.86
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           97.62,
-          97.34
+          97.63
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           109.26,
-          109.99
+          110.31
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.15,
           96.41,
           97.32,
-          98.89
+          98.66
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           90.79,
           89.18,
           85.67,
-          86.33
+          86.39
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           93.68,
           91.81,
           90.26,
-          90.16
+          90.19
         ]
       }
     ],
@@ -1943,18 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-14",
-          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Stingi Richard John  (CIK 0001846577); BROADRIDGE FINANCIAL SOLUTIONS, INC.  (CIK 0001383312)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1846577/000122520826007122"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
         },
         {
           "datum": "2026-08-14",
@@ -1963,8 +1953,8 @@
         },
         {
           "datum": "2026-08-14",
-          "namn": "Ramani Hitesh  (CIK 0001855764); UiPath, Inc.  (CIK 0001734722)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1855764/000185576426000009"
+          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
         },
         {
           "datum": "2026-08-14",
@@ -1973,18 +1963,28 @@
         },
         {
           "datum": "2026-08-14",
-          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
-        },
-        {
-          "datum": "2026-08-14",
           "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Stingi Richard John  (CIK 0001846577); BROADRIDGE FINANCIAL SOLUTIONS, INC.  (CIK 0001383312)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1846577/000122520826007122"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Ramani Hitesh  (CIK 0001855764); UiPath, Inc.  (CIK 0001734722)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1855764/000185576426000009"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
         },
         {
           "datum": "2026-08-14",
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T16:41+00:00"
+      "vintage": "2026-08-17T17:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-17 19:18:22",
+          "emittent": "Moberg Pharma AB (publ)",
+          "person": "Richard Ding",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "458055,0",
+          "enhet": "Antal",
+          "pris": "11,25",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-17 17:17:24",
           "emittent": "Swedish Orphan Biovitrum AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "76,45",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 11:41:04",
-          "emittent": "MilDef Group AB",
-          "person": "Karin Svalander",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1135,0",
-          "enhet": "Antal",
-          "pris": "228,80",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T16:41+00:00"
+      "vintage": "2026-08-17T17:40+00:00"
     }
   }
 }
