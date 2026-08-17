@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T21:59+00:00",
+  "genererad": "2026-08-17T22:37+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4473",
+      "varde": "4469",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,5 %",
+      "delta4v": "+11,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,90",
+      "varde": "65,76",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,0 %",
+      "delta4v": "+15,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,61",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,0 %",
+      "delta4v": "+4,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 91.1,
+      "v": 91.28,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T21:59+00:00"
+      "vintage": "2026-08-17T22:37+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-18 00:12:19",
+          "emittent": "Hansa Biopharma AB",
+          "person": "Michael Bologna",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "69652,0",
+          "enhet": "Antal",
+          "pris": "40,2811",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 00:12:19",
+          "emittent": "Hansa Biopharma AB",
+          "person": "Michael Bologna",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "120326,0",
+          "enhet": "Antal",
+          "pris": "41,1796",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 00:12:19",
+          "emittent": "Hansa Biopharma AB",
+          "person": "Michael Bologna",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "83827,0",
+          "enhet": "Antal",
+          "pris": "39,6935",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-17 19:18:22",
           "emittent": "Moberg Pharma AB (publ)",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "20,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 14:11:42",
-          "emittent": "BHG Group AB",
-          "person": "Bank Bergström",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 14:08:07",
-          "emittent": "RVRC Holding AB",
-          "person": "Malin Kemi",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "55,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 13:21:51",
-          "emittent": "Fabege AB",
-          "person": "Bent Oustad",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "76,45",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T21:59+00:00"
+      "vintage": "2026-08-17T22:37+00:00"
     }
   }
 }
