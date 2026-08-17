@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T17:40+00:00",
+  "genererad": "2026-08-17T18:55+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 2,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         108.0,
         111.84,
         112.61,
-        113.37
+        113.46
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         98.53,
         98.01,
         98.33,
-        99.01
+        98.87
       ]
     },
     {
@@ -324,7 +324,7 @@
         98.05,
         94.8,
         95.5,
-        94.38
+        94.21
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 3,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         103.85,
         102.26,
         102.89,
-        103.19
+        102.99
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         91.33,
         86.76,
         87.81,
-        87.74
+        87.78
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.32,
         92.87,
         93.1,
-        92.65
+        92.41
       ]
     },
     {
@@ -529,7 +529,7 @@
         102.89,
         95.98,
         102.93,
-        104.27
+        104.47
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 3,
+      "rsRank": 4,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         103.24,
         100.89,
         101.47,
-        101.28
+        101.11
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.65,
         91.42,
         89.79,
-        88.95
+        89.02
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.4,
-      "delta": "−0,1 · 1 v",
+      "varde": 15.2,
+      "delta": "−0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 94,
+        "index": 95,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.4,
+      "varde": 15.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4474",
+      "varde": "4459",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,6 %",
+      "delta4v": "+11,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,18",
+      "varde": "65,90",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,5 %",
+      "delta4v": "+16,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,9 %",
+      "delta4v": "+4,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 90.36,
+      "v": 90.52,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1686,7 +1686,7 @@
           101.48,
           101.78,
           101.65,
-          101.47
+          101.45
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           102.28,
           104.16,
           104.76,
-          104.86
+          104.87
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           97.62,
-          97.63
+          97.57
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           109.26,
-          110.31
+          110.25
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.15,
           96.41,
           97.32,
-          98.66
+          98.54
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           90.79,
           89.18,
           85.67,
-          86.39
+          86.43
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           93.68,
           91.81,
           90.26,
-          90.19
+          90.11
         ]
       }
     ],
@@ -1943,33 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-14",
-          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
         },
         {
           "datum": "2026-08-14",
@@ -1978,13 +1953,38 @@
         },
         {
           "datum": "2026-08-14",
+          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
+        },
+        {
+          "datum": "2026-08-14",
           "namn": "Ramani Hitesh  (CIK 0001855764); UiPath, Inc.  (CIK 0001734722)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1855764/000185576426000009"
         },
         {
           "datum": "2026-08-14",
-          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
+          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
         },
         {
           "datum": "2026-08-14",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T17:40+00:00"
+      "vintage": "2026-08-17T18:55+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T17:40+00:00"
+      "vintage": "2026-08-17T18:55+00:00"
     }
   }
 }
