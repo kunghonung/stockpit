@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T05:19+00:00",
+  "genererad": "2026-08-17T06:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        97.74,
+        98.53,
         98.01,
         98.33,
         98.33
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        94.62,
+        92.4,
         93.57,
         92.64,
         92.64
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 70.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 70.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4449",
+      "varde": "4453",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,9 %",
+      "delta4v": "+11,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,74",
+      "varde": "65,93",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,7 %",
+      "delta4v": "+16,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,72",
+      "varde": "6,73",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,7 %",
+      "delta4v": "+6,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 88.56,
+      "v": 88.37,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.98,
+          101.48,
           101.78,
           101.65,
           101.65
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.79,
+          102.28,
           104.16,
           104.76,
           104.76
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          100.44,
+          99.95,
           98.49,
           97.62,
           97.62
@@ -1806,10 +1806,10 @@
           112.2,
           106.79,
           108.06,
-          102.56,
+          106.17,
           104.87,
           109.26,
-          109.6
+          109.9
         ]
       },
       {
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.63,
+          97.15,
           96.41,
           97.32,
           97.32
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          91.24,
+          90.79,
           89.18,
           85.67,
           85.67
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.96,
+          93.68,
           91.81,
           90.26,
           90.26
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T05:19+00:00"
+      "vintage": "2026-08-17T06:03+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T05:19+00:00"
+      "vintage": "2026-08-17T06:03+00:00"
     }
   }
 }
