@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T11:59+00:00",
+  "genererad": "2026-08-17T13:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.9,
-      "delta": "−0,6 · 1 v",
+      "varde": 15.1,
+      "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 93,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.9,
+      "varde": 15.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4456",
+      "varde": "4440",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,1 %",
+      "delta4v": "+10,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,88",
+      "varde": "65,39",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,0 %",
+      "delta4v": "+15,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,69",
+      "varde": "6,65",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,2 %",
+      "delta4v": "+5,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 88.99,
+      "v": 89.35,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1768,7 +1768,7 @@
           99.95,
           98.49,
           97.62,
-          97.73
+          97.53
         ]
       },
       {
@@ -1943,33 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-14",
-          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
         },
         {
           "datum": "2026-08-14",
@@ -1978,13 +1953,38 @@
         },
         {
           "datum": "2026-08-14",
+          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
+        },
+        {
+          "datum": "2026-08-14",
           "namn": "Ramani Hitesh  (CIK 0001855764); UiPath, Inc.  (CIK 0001734722)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1855764/000185576426000009"
         },
         {
           "datum": "2026-08-14",
-          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
+          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
         },
         {
           "datum": "2026-08-14",
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T11:59+00:00"
+      "vintage": "2026-08-17T13:03+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-17 14:29:31",
+          "emittent": "EQL Pharma AB",
+          "person": "Allan Sylvest  Aasberg",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "26,36",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-17 14:26:31",
+          "emittent": "Freja eID Group AB",
+          "person": "Pär-Ola Gustavsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "21,33",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-17 14:08:30",
+          "emittent": "Norion Bank AB",
+          "person": "Erik Rombin",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "67,10",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-17 13:44:19",
           "emittent": "H & M Hennes & Mauritz AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "83,46",
           "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-08-14 11:02:52",
-          "emittent": "Precise Biometrics AB",
-          "person": "Joakim Nydemark",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "30547,0",
-          "enhet": "Antal",
-          "pris": "0,820",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 09:27:32",
-          "emittent": "Skanska AB",
-          "person": "Fredrik Norrman",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "16,0",
-          "enhet": "Antal",
-          "pris": "267,34047",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 09:23:33",
-          "emittent": "Skanska AB",
-          "person": "Hans Reinholdsson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "9,0",
-          "enhet": "Antal",
-          "pris": "267,34047",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T11:59+00:00"
+      "vintage": "2026-08-17T13:03+00:00"
     }
   }
 }
