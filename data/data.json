@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T22:37+00:00",
+  "genererad": "2026-08-17T23:00+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4469",
+      "varde": "4472",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,4 %",
+      "delta4v": "+11,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,76",
+      "varde": "65,86",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,8 %",
+      "delta4v": "+16,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 91.28,
+      "v": 91.24,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1943,33 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-14",
-          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
-        },
-        {
-          "datum": "2026-08-14",
-          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
         },
         {
           "datum": "2026-08-14",
@@ -1978,13 +1953,38 @@
         },
         {
           "datum": "2026-08-14",
+          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
+        },
+        {
+          "datum": "2026-08-14",
           "namn": "Ramani Hitesh  (CIK 0001855764); UiPath, Inc.  (CIK 0001734722)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1855764/000185576426000009"
         },
         {
           "datum": "2026-08-14",
-          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
+          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
+        },
+        {
+          "datum": "2026-08-14",
+          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
         },
         {
           "datum": "2026-08-14",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T22:37+00:00"
+      "vintage": "2026-08-17T23:00+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T22:37+00:00"
+      "vintage": "2026-08-17T23:00+00:00"
     }
   }
 }
