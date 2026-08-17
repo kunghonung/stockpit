@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T08:22+00:00",
+  "genererad": "2026-08-17T09:22+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -219,7 +219,7 @@
         88.17,
         88.76,
         85.78,
-        85.07,
+        86.39,
         85.78,
         86.75,
         86.75
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        94.62,
+        92.4,
         93.57,
         92.64,
         92.64
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        88.73,
+        91.65,
         91.42,
         89.79,
         89.79
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 70.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 99,
         "pil": "ned",
         "status": "gul"
       },
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 70.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,74",
+      "varde": "65,73",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+15,7 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,67",
+      "varde": "6,69",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,9 %",
+      "delta4v": "+6,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 88.72,
+      "v": 89.37,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1765,10 +1765,10 @@
           97.92,
           99.68,
           100.6,
-          100.56,
+          100.44,
           98.49,
           97.62,
-          97.77
+          97.7
         ]
       },
       {
@@ -1806,7 +1806,7 @@
           112.2,
           106.79,
           108.06,
-          102.56,
+          106.7,
           104.87,
           109.26,
           110.07
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.75,
+          91.24,
           89.18,
           85.67,
           85.67
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.96,
+          94.14,
           91.81,
           90.26,
           90.26
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T08:22+00:00"
+      "vintage": "2026-08-17T09:22+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-17 10:53:20",
+          "emittent": "Preservia Hyresfastigheter AB",
+          "person": "Preservia Holding AB",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lån mottaget",
+          "volym": "3000000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-17 10:25:43",
+          "emittent": "Investment AB Öresund",
+          "person": "Öystein Engebretsen",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1600,0",
+          "enhet": "Antal",
+          "pris": "138,82",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-17 09:23:47",
           "emittent": "Arlandastad Group AB (publ)",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "266,50",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 08:08:01",
-          "emittent": "Skanska AB",
-          "person": "Fredrik Norrman",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Tilldelning",
-          "volym": "6,0",
-          "enhet": "Antal",
-          "pris": "266,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 08:06:41",
-          "emittent": "Skanska AB",
-          "person": "Anders Rättgård",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Tilldelning",
-          "volym": "7,0",
-          "enhet": "Antal",
-          "pris": "266,50",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T08:22+00:00"
+      "vintage": "2026-08-17T09:22+00:00"
     }
   }
 }
