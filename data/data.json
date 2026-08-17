@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T06:03+00:00",
+  "genererad": "2026-08-17T07:13+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4453",
+      "varde": "4459",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,0 %",
+      "delta4v": "+11,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,93",
+      "varde": "65,97",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+16,1 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,73",
+      "varde": "6,71",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,9 %",
+      "delta4v": "+6,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-17"
     },
     "olja": {
-      "v": 88.37,
+      "v": 88.5,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-17"
     }
@@ -1751,24 +1751,24 @@
         ],
         "relSerie19": [
           100.0,
-          97.72,
-          97.11,
-          94.88,
-          94.86,
-          96.51,
-          95.09,
-          97.13,
-          97.46,
-          97.04,
-          99.26,
-          100.68,
-          97.92,
-          99.68,
-          100.6,
-          99.95,
-          98.49,
-          97.62,
-          97.62
+          102.19,
+          98.82,
+          96.6,
+          97.51,
+          95.49,
+          96.77,
+          99.51,
+          97.67,
+          98.52,
+          101.11,
+          99.94,
+          101.6,
+          101.51,
+          102.04,
+          101.12,
+          98.69,
+          99.85,
+          99.49
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           109.26,
-          109.9
+          110.07
         ]
       },
       {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T06:03+00:00"
+      "vintage": "2026-08-17T07:13+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-17 08:55:51",
+          "emittent": "Investment AB Öresund",
+          "person": "Marika Eklund",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "1668,0",
+          "enhet": "Antal",
+          "pris": "138,3663",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-17 07:13:52",
           "emittent": "Candles Scandinavia AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "266,50",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 08:03:49",
-          "emittent": "Skanska AB",
-          "person": "Lena Hök",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "125,0",
-          "enhet": "Antal",
-          "pris": "266,50",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T06:03+00:00"
+      "vintage": "2026-08-17T07:13+00:00"
     }
   }
 }
