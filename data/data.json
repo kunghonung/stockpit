@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T19:57+00:00",
+  "genererad": "2026-08-18T20:37+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.32,
         109.06,
         109.76,
-        107.66
+        107.78
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -167,11 +167,11 @@
         99.75,
         99.92,
         102.33,
-        98.85,
+        99.65,
         99.13,
         99.45,
         99.82,
-        99.16
+        99.01
       ]
     },
     {
@@ -218,11 +218,11 @@
         91.38,
         91.99,
         88.89,
-        88.16,
+        89.53,
         88.9,
         89.9,
         88.62,
-        89.06
+        88.95
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         94.0,
         93.06,
         92.97,
-        92.82
+        92.78
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         94.01,
-        95.73
+        95.65
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         107.06,
-        109.66
+        109.51
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         88.4,
-        88.76
+        88.68
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         94.51,
-        94.88
+        94.73
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         101.68,
-        104.16
+        104.17
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.43,
         104.02,
         103.47,
-        104.7
+        104.64
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -629,11 +629,11 @@
         93.41,
         93.42,
         89.06,
-        90.5,
+        93.48,
         93.24,
         91.58,
         90.89,
-        91.3
+        91.2
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.7,
-      "delta": "+0,4 · 1 v",
+      "varde": 15.8,
+      "delta": "+0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 76.0,
-      "delta": "+0 · 1 v",
+      "delta": "−2 · 1 v",
       "trosklar": [
         100,
         130
@@ -742,9 +742,9 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 100,
-        "pil": "upp",
-        "status": "gron"
+        "index": 99,
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "hygtlt",
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 93,
+        "index": 94,
         "pil": "upp",
         "status": "gron"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.7,
+      "varde": 15.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        3.71,
-        4.17,
-        4.36,
-        4.68,
-        5.25
+        3.72,
+        4.19,
+        4.38,
+        4.72,
+        5.31
       ],
       "forr": [
-        3.7,
-        4.16,
+        3.71,
+        4.18,
         4.28,
-        4.57,
-        5.09
+        4.55,
+        5.06
       ],
       "kalla": "FRED",
-      "vintage": "2026-08-14",
-      "not": "Brantande 2s10s: +10 bp/mån."
+      "vintage": "2026-08-17",
+      "not": "Brantande 2s10s: +16 bp/mån."
     },
     "bredd": {
       "over50": 70,
@@ -958,19 +958,19 @@
       "spread": -3.2
     },
     "realranta": {
-      "varde": "2,41 %",
+      "varde": "2,44 %",
       "pil": "upp",
-      "delta": "+6 bp · 1 mån",
+      "delta": "+13 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-08-14"
+      "vintage": "2026-08-17"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4407",
+      "varde": "4393",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+8,2 %",
+      "delta4v": "+7,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,80",
+      "varde": "63,55",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+8,4 %",
+      "delta4v": "+8,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,47",
+      "varde": "6,46",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,6 %",
+      "delta4v": "−0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 90.95,
+      "v": 91.1,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1682,11 +1682,11 @@
           100.92,
           101.08,
           100.94,
-          101.16,
+          100.66,
           100.96,
           100.83,
           100.64,
-          101.0
+          101.06
         ]
       },
       {
@@ -1723,11 +1723,11 @@
           104.3,
           101.69,
           100.52,
-          100.19,
+          99.7,
           101.52,
           102.11,
           102.24,
-          101.53
+          101.6
         ]
       },
       {
@@ -1764,11 +1764,11 @@
           100.2,
           102.0,
           102.94,
-          102.9,
+          102.27,
           100.79,
           99.9,
           99.96,
-          100.32
+          100.36
         ]
       },
       {
@@ -1805,11 +1805,11 @@
           109.57,
           104.28,
           105.53,
-          100.16,
+          103.69,
           102.41,
           106.7,
           107.79,
-          106.16
+          106.2
         ]
       },
       {
@@ -1846,11 +1846,11 @@
           100.17,
           96.4,
           96.9,
-          97.21,
+          96.73,
           96.0,
           96.9,
           98.22,
-          96.44
+          96.37
         ]
       },
       {
@@ -1887,11 +1887,11 @@
           87.71,
           88.93,
           89.97,
-          93.32,
+          92.86,
           91.22,
           87.63,
           88.57,
-          89.32
+          89.28
         ]
       },
       {
@@ -1928,11 +1928,11 @@
           94.9,
           95.78,
           94.46,
-          96.91,
+          96.63,
           94.7,
           93.1,
           92.99,
-          93.59
+          93.63
         ]
       }
     ],
@@ -1941,31 +1941,6 @@
   "insynFlode": {
     "us": {
       "poster": [
-        {
-          "datum": "2026-08-18",
-          "namn": "Fisher Michal  (CIK 0002139619); CNS Pharmaceuticals, Inc.  (CIK 0001729427)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2139619/000168316826006553"
-        },
-        {
-          "datum": "2026-08-18",
-          "namn": "Cofer-Wildsmith Marina  (CIK 0001548828); FS Bancorp, Inc.  (CIK 0001530249)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1548828/000093905726000190"
-        },
-        {
-          "datum": "2026-08-18",
-          "namn": "DUESER F SCOTT  (CIK 0001243211); FIRST FINANCIAL BANKSHARES INC  (CIK 0000036029)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1243211/000119312526355175"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Stilwell Associates, L.P.  (CIK 0000913960); Stilwell Value LLC  (CIK 0001397076)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/913960/000110465926097865"
-        },
         {
           "datum": "2026-08-17",
           "namn": "Harmon Neal  (CIK 0002020176); Angel Studios, Inc.  (CIK 0001865200)",
@@ -1978,22 +1953,47 @@
         },
         {
           "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
         },
         {
           "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
         },
         {
           "datum": "2026-08-18",
           "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "Heng Chen Seng  (CIK 0001977626); Sea Ltd  (CIK 0001703399)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1977626/000119312526354675"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "Fisher Michal  (CIK 0002139619); CNS Pharmaceuticals, Inc.  (CIK 0001729427)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2139619/000168316826006553"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "MIZUHO SECURITIES USA LLC  (CIK 0000812291); Flag Ship Acquisition Corp  (CIK 0001850059)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/812291/000081229126000013"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "KNAVISH TIMOTHY M  (CIK 0001669058); PPG INDUSTRIES INC  (CIK 0000079879)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1669058/000007987926000265"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T19:57+00:00"
+      "vintage": "2026-08-18T20:37+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T19:57+00:00"
+      "vintage": "2026-08-18T20:37+00:00"
     }
   }
 }
