@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T19:36+00:00",
+  "genererad": "2026-08-18T19:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.32,
         109.06,
         109.76,
-        107.62
+        107.66
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         99.13,
         99.45,
         99.82,
-        99.1
+        99.16
       ]
     },
     {
@@ -218,11 +218,11 @@
         91.38,
         91.99,
         88.89,
-        89.53,
+        88.16,
         88.9,
         89.9,
         88.62,
-        89.2
+        89.06
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.0,
         93.06,
         92.97,
-        92.93
+        92.82
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         94.01,
-        95.76
+        95.73
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         107.06,
-        109.6
+        109.66
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         88.4,
-        88.64
+        88.76
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         94.51,
-        94.93
+        94.88
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         101.68,
-        103.95
+        104.16
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.43,
         104.02,
         103.47,
-        104.75
+        104.7
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -629,11 +629,11 @@
         93.41,
         93.42,
         89.06,
-        93.48,
+        90.5,
         93.24,
         91.58,
         90.89,
-        91.56
+        91.3
       ]
     }
   ],
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 76.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 76.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4408",
+      "varde": "4407",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+8,3 %",
+      "delta4v": "+8,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,91",
+      "varde": "63,80",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+8,6 %",
+      "delta4v": "+8,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,48",
+      "varde": "6,47",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,5 %",
+      "delta4v": "−0,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 90.98,
+      "v": 90.95,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1686,7 +1686,7 @@
           100.96,
           100.83,
           100.64,
-          101.01
+          101.0
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           99.96,
-          100.25
+          100.32
         ]
       },
       {
@@ -1805,11 +1805,11 @@
           109.57,
           104.28,
           105.53,
-          104.2,
+          100.16,
           102.41,
           106.7,
           107.79,
-          106.09
+          106.16
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           96.0,
           96.9,
           98.22,
-          96.43
+          96.44
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           91.22,
           87.63,
           88.57,
-          89.29
+          89.32
         ]
       },
       {
@@ -1928,11 +1928,11 @@
           94.9,
           95.78,
           94.46,
-          97.11,
+          96.91,
           94.7,
           93.1,
           92.99,
-          93.65
+          93.59
         ]
       }
     ],
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T19:36+00:00"
+      "vintage": "2026-08-18T19:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-18 21:43:25",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Martin Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "35000,0",
+          "enhet": "Antal",
+          "pris": "7,62",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 21:43:25",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Martin Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "16000,0",
+          "enhet": "Antal",
+          "pris": "7,29",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 21:43:25",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Martin Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "1485,0",
+          "enhet": "Antal",
+          "pris": "7,4",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-18 19:33:38",
           "emittent": "SAAB Aktiebolag",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "18,8",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 13:00:07",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jesper von Bahr",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "833,0",
-          "enhet": "Antal",
-          "pris": "18,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 13:00:07",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jesper von Bahr",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1667,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 11:34:07",
-          "emittent": "ADDNODE GROUP AKTIEBOLAG (PUBL)",
-          "person": "Andreas Wikholm",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "25000,0",
-          "enhet": "Antal",
-          "pris": "39,40",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T19:36+00:00"
+      "vintage": "2026-08-18T19:57+00:00"
     }
   }
 }
