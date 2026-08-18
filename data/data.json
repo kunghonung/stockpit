@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T09:45+00:00",
+  "genererad": "2026-08-18T10:43+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -220,7 +220,7 @@
         88.18,
         88.77,
         85.78,
-        85.07,
+        86.4,
         85.79,
         86.75
       ]
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -631,7 +631,7 @@
         93.47,
         93.48,
         89.12,
-        90.55,
+        93.53,
         93.29,
         91.64
       ]
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.0,
+      "varde": 15.9,
       "delta": "+0,5 · 1 v",
       "trosklar": [
         20,
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.0,
+      "varde": 15.9,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4451",
+      "varde": "4450",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+9,3 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,11",
+      "varde": "65,18",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,7 %",
+      "delta4v": "+10,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,54",
+      "varde": "6,55",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,4 %",
+      "delta4v": "+0,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 91.09,
+      "v": 90.89,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1768,7 +1768,7 @@
           97.39,
           98.18,
           94.33,
-          93.1
+          93.15
         ]
       },
       {
@@ -1806,7 +1806,7 @@
           108.9,
           100.9,
           103.39,
-          99.45,
+          103.46,
           104.54,
           105.57,
           103.1
@@ -1943,8 +1943,13 @@
       "poster": [
         {
           "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
         },
         {
           "datum": "2026-08-17",
@@ -1955,6 +1960,11 @@
           "datum": "2026-08-17",
           "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1972,28 +1982,18 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1290037/000000753626000131"
         },
         {
-          "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+          "datum": "2026-08-18",
+          "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
         },
         {
-          "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Watterson Sarah  (CIK 0001676712); Rocket Companies, Inc.  (CIK 0001805284)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1676712/000180528426000087"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Lehrman Thomas D  (CIK 0001881476); Ibotta, Inc.  (CIK 0001538379)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1881476/000162828026057381"
+          "datum": "2026-08-18",
+          "namn": "Heng Chen Seng  (CIK 0001977626); Sea Ltd  (CIK 0001703399)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1977626/000119312526354675"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T09:45+00:00"
+      "vintage": "2026-08-18T10:43+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T09:45+00:00"
+      "vintage": "2026-08-18T10:43+00:00"
     }
   }
 }
