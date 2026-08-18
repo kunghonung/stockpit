@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T12:00+00:00",
+  "genererad": "2026-08-18T13:04+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.7,
+      "varde": 15.8,
       "delta": "+0,3 · 1 v",
       "trosklar": [
         20,
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.7,
+      "varde": 15.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4449",
+      "varde": "4450",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+9,3 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,14",
+      "varde": "65,25",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,7 %",
+      "delta4v": "+10,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,55",
+      "varde": "6,56",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,6 %",
+      "delta4v": "+0,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 91.03,
+      "v": 91.2,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1768,7 +1768,7 @@
           97.5,
           98.18,
           94.33,
-          93.22
+          93.28
         ]
       },
       {
@@ -1943,13 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1960,11 +1955,6 @@
           "datum": "2026-08-17",
           "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1982,6 +1972,16 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1290037/000000753626000131"
         },
         {
+          "datum": "2026-08-17",
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+        },
+        {
           "datum": "2026-08-18",
           "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
@@ -1993,10 +1993,263 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T12:00+00:00"
+      "vintage": "2026-08-18T13:04+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-18 15:00:54",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Robert Hellgren",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "3,69596",
+          "enhet": "Antal",
+          "pris": "690,48350",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:58:57",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Marcus Wandt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "9,72362",
+          "enhet": "Antal",
+          "pris": "690,48350",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:56:48",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Lars Svensson",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "6,32600",
+          "enhet": "Antal",
+          "pris": "690,48350",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:54:53",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Magnus Gustafsson",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "4,44906",
+          "enhet": "Antal",
+          "pris": "690,48350",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:52:48",
+          "emittent": "SAAB Aktiebolag",
+          "person": "David Joakim Davidsson Truuberg",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "11,87574",
+          "enhet": "Antal",
+          "pris": "690,48350",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:48:43",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Anna Wijkander",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "259,70483",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:46:52",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Mats Fredrik Wicksell",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1222,98550",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:44:53",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Viktor Wallström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1079,74323",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:42:57",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Lars Tossman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1502,53343",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:40:54",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Bengt Mikael Johansson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "6208,58386",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:38:24",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Görgen Johansson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1453,27995",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:36:20",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Lena Eliasson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1397,30639",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:34:10",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Anders Carp",
+          "befattning": "Vice VD",
+          "karaktar": "Avyttring",
+          "volym": "1944,61212",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:32:18",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Annika Bäremo",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1235,06238",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:30:02",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Carl-Johan Bergholm",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1429,06726",
+          "enhet": "Antal",
+          "pris": "692,20000",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:25:00",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Anna Wijkander",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "479,62652",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:23:13",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Mats Fredrik Wicksell",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2258,62688",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:21:15",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Marcus Wandt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "68,64392",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:19:25",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Marcus Wandt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "14,14464",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:17:05",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Viktor Wallström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "1994,08504",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:15:13",
+          "emittent": "SAAB Aktiebolag",
+          "person": "David Joakim Davidsson Truuberg",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "65,17848",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:13:15",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Lars Tossman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2774,89996",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 14:01:45",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Lars Svensson",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "37,15092",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-18 13:57:49",
           "emittent": "SAAB Aktiebolag",
@@ -2293,264 +2546,11 @@
           "enhet": "Antal",
           "pris": "11,25",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 17:17:24",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Katy Mazibuko",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "56,0",
-          "enhet": "Antal",
-          "pris": "441,997",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 14:29:31",
-          "emittent": "EQL Pharma AB",
-          "person": "Allan Sylvest  Aasberg",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "26,36",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 14:26:31",
-          "emittent": "Freja eID Group AB",
-          "person": "Pär-Ola Gustavsson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "21,33",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 14:08:30",
-          "emittent": "Norion Bank AB",
-          "person": "Erik Rombin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "67,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:44:19",
-          "emittent": "H & M Hennes & Mauritz AB",
-          "person": "Karl-Johan Persson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1650000,0",
-          "enhet": "Antal",
-          "pris": "175,1875",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:44:19",
-          "emittent": "H & M Hennes & Mauritz AB",
-          "person": "Karl-Johan Persson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "800000,0",
-          "enhet": "Antal",
-          "pris": "175,7172",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:44:19",
-          "emittent": "H & M Hennes & Mauritz AB",
-          "person": "Karl-Johan Persson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "650000,0",
-          "enhet": "Antal",
-          "pris": "175,3828",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:42:52",
-          "emittent": "Enity Holding AB (publ)",
-          "person": "Caroline Redare",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "653,0",
-          "enhet": "Antal",
-          "pris": "75,60",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:38:41",
-          "emittent": "NYAB",
-          "person": "Johan Nilsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2500,0",
-          "enhet": "Antal",
-          "pris": "6,49",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:38:41",
-          "emittent": "NYAB",
-          "person": "Johan Nilsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "7500,0",
-          "enhet": "Antal",
-          "pris": "6,69",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 13:38:41",
-          "emittent": "NYAB",
-          "person": "Johan Nilsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "6,72",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 12:50:25",
-          "emittent": "BHG Group AB",
-          "person": "Gustav Öhrn",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "0,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 12:22:47",
-          "emittent": "RugVista Group AB (publ)",
-          "person": "Joakim Tuvner",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen minskning",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 12:22:47",
-          "emittent": "RugVista Group AB (publ)",
-          "person": "Joakim Tuvner",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen ökning",
-          "volym": "2643,0",
-          "enhet": "Antal",
-          "pris": "0,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 12:09:14",
-          "emittent": "NYAB AB",
-          "person": "Johan Larsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "12000,0",
-          "enhet": "Antal",
-          "pris": "6,54",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 10:53:20",
-          "emittent": "Preservia Hyresfastigheter AB",
-          "person": "Preservia Holding AB",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lån mottaget",
-          "volym": "3000000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 10:25:43",
-          "emittent": "Investment AB Öresund",
-          "person": "Öystein Engebretsen",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1600,0",
-          "enhet": "Antal",
-          "pris": "138,82",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 09:23:47",
-          "emittent": "Arlandastad Group AB (publ)",
-          "person": "Per Taube",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "6573,0",
-          "enhet": "Antal",
-          "pris": "37,3698",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 08:55:51",
-          "emittent": "Investment AB Öresund",
-          "person": "Marika Eklund",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1668,0",
-          "enhet": "Antal",
-          "pris": "138,3663",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 07:13:52",
-          "emittent": "Candles Scandinavia AB",
-          "person": "Viktor Garmiani",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "231,0",
-          "enhet": "Antal",
-          "pris": "35,28",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-17 07:13:52",
-          "emittent": "Candles Scandinavia AB",
-          "person": "Viktor Garmiani",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "61,0",
-          "enhet": "Antal",
-          "pris": "36,69",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-16 19:40:23",
-          "emittent": "Modelon AB (publ)",
-          "person": "Jonas Eborn",
-          "befattning": "Vice VD",
-          "karaktar": "Förvärv",
-          "volym": "833,0",
-          "enhet": "Antal",
-          "pris": "10,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-16 17:17:31",
-          "emittent": "BHG Group AB",
-          "person": "Gustav Öhrn",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "0,00",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 9,
+      "nyaSenasteKorning": 23,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T12:00+00:00"
+      "vintage": "2026-08-18T13:04+00:00"
     }
   }
 }
