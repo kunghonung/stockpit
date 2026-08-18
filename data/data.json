@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
-  "asOfDatum": "2026-08-17",
-  "genererad": "2026-08-17T23:56+00:00",
+  "asOfDatum": "2026-08-18",
+  "genererad": "2026-08-18T01:48+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-08-17",
+      "vintage": "2026-08-18",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-08-17",
+      "vintage": "2026-08-18",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-08-17"
+      "vintage": "2026-08-18"
     },
     "crowding": {
       "score": 15,
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4479",
+      "varde": "4480",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+11,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-08-17"
+      "vintage": "2026-08-18"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,04",
+      "varde": "66,53",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,3 %",
+      "delta4v": "+17,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-08-17"
+      "vintage": "2026-08-18"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,0 %",
+      "delta4v": "+4,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-08-17"
+      "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 91.12,
+      "v": 91.14,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-08-17"
+      "vintage": "2026-08-18"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-08-17",
+    "vintage": "2026-08-18",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           106.17,
           104.87,
           109.26,
-          110.38
+          109.57
         ]
       },
       {
@@ -1942,58 +1942,58 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-14",
-          "namn": "Turner Michael L.  (CIK 0001629911); UNIVEST FINANCIAL Corp  (CIK 0000102212)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1629911/000162991126000006"
+          "datum": "2026-08-17",
+          "namn": "KNAVISH TIMOTHY M  (CIK 0001669058); PPG INDUSTRIES INC  (CIK 0000079879)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1669058/000007987926000265"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "Stingi Richard John  (CIK 0001846577); BROADRIDGE FINANCIAL SOLUTIONS, INC.  (CIK 0001383312)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1846577/000122520826007122"
+          "datum": "2026-08-17",
+          "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "Lin Yu-Hsin  (CIK 0001965964); BELITE BIO, INC  (CIK 0001889109)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1965964/000119312526350217"
+          "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "De Jesus Nestor  (CIK 0001666162); OFG BANCORP  (CIK 0001030469)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1666162/000166616226000013"
+          "datum": "2026-08-17",
+          "namn": "Stilwell Associates, L.P.  (CIK 0000913960); Stilwell Value LLC  (CIK 0001397076)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/913960/000110465926097865"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "Ramani Hitesh  (CIK 0001855764); UiPath, Inc.  (CIK 0001734722)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1855764/000185576426000009"
+          "datum": "2026-08-17",
+          "namn": "Harmon Neal  (CIK 0002020176); Angel Studios, Inc.  (CIK 0001865200)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2020176/000186520026000081"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "Johnson Ellen Tobi  (CIK 0001643598); Kyndryl Holdings, Inc.  (CIK 0001867072)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1643598/000164359826000010"
+          "datum": "2026-08-17",
+          "namn": "Lowe Carol P  (CIK 0001290037); ARROW ELECTRONICS, INC.  (CIK 0000007536)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1290037/000000753626000131"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "RADY ERNEST S  (CIK 0001221359); American Assets Trust, Inc.  (CIK 0001500217)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1221359/000122135926000040"
+          "datum": "2026-08-17",
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "Gimbel Lisa  (CIK 0001980851); PubMatic, Inc.  (CIK 0001422930)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1980851/000198085126000006"
+          "datum": "2026-08-17",
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "McHugh Ryan  (CIK 0001667260); Main Street Capital CORP  (CIK 0001396440)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1667260/000166726026000009"
+          "datum": "2026-08-17",
+          "namn": "Watterson Sarah  (CIK 0001676712); Rocket Companies, Inc.  (CIK 0001805284)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1676712/000180528426000087"
         },
         {
-          "datum": "2026-08-14",
-          "namn": "Ranalli Tamara A.  (CIK 0001822508); NEOGEN CORP  (CIK 0000711377)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1822508/000071137726000017"
+          "datum": "2026-08-17",
+          "namn": "Lehrman Thomas D  (CIK 0001881476); Ibotta, Inc.  (CIK 0001538379)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1881476/000162828026057381"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-17T23:56+00:00"
+      "vintage": "2026-08-18T01:48+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-17T23:56+00:00"
+      "vintage": "2026-08-18T01:48+00:00"
     }
   }
 }
