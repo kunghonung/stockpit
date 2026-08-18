@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T05:42+00:00",
+  "genererad": "2026-08-18T07:01+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -169,7 +169,7 @@
         95.46,
         95.62,
         97.92,
-        94.6,
+        95.37,
         94.87,
         95.17
       ]
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -631,7 +631,7 @@
         93.47,
         93.48,
         89.12,
-        90.55,
+        93.53,
         93.29,
         91.64
       ]
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 76.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 76.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4442",
+      "varde": "4453",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,1 %",
+      "delta4v": "+9,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,86",
+      "varde": "65,40",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,2 %",
+      "delta4v": "+11,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,56",
+      "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,8 %",
+      "delta4v": "+1,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1765,7 +1765,7 @@
           95.04,
           94.18,
           96.25,
-          97.5,
+          97.39,
           97.7,
           94.33,
           93.63
@@ -1809,7 +1809,7 @@
           103.46,
           104.03,
           105.57,
-          103.62
+          103.1
         ]
       },
       {
@@ -1943,6 +1943,11 @@
       "poster": [
         {
           "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
+        },
+        {
+          "datum": "2026-08-17",
           "namn": "KNAVISH TIMOTHY M  (CIK 0001669058); PPG INDUSTRIES INC  (CIK 0000079879)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1669058/000007987926000265"
         },
@@ -1950,11 +1955,6 @@
           "datum": "2026-08-17",
           "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1988,15 +1988,26 @@
         },
         {
           "datum": "2026-08-17",
-          "namn": "OLSCHAN BRIAN S  (CIK 0001213244); ACME UNITED CORP  (CIK 0000002098)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1213244/000119312526354153"
+          "namn": "Lehrman Thomas D  (CIK 0001881476); Ibotta, Inc.  (CIK 0001538379)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1881476/000162828026057381"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T05:42+00:00"
+      "vintage": "2026-08-18T07:00+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-18 08:58:26",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Diego Teijeiro Ruiz",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "174,86",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-18 00:12:19",
           "emittent": "Hansa Biopharma AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "123,5",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 15:38:05",
-          "emittent": "Briox AB",
-          "person": "Helena Westin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "580,0",
-          "enhet": "Antal",
-          "pris": "20,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T05:42+00:00"
+      "vintage": "2026-08-18T07:01+00:00"
     }
   }
 }
