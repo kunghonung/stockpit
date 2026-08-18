@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T10:43+00:00",
+  "genererad": "2026-08-18T11:36+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -169,7 +169,7 @@
         95.46,
         95.62,
         97.92,
-        94.6,
+        95.37,
         94.87,
         95.17
       ]
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.9,
-      "delta": "+0,5 · 1 v",
+      "varde": 15.7,
+      "delta": "+0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 76.0,
-      "delta": "+0 · 1 v",
+      "varde": 71.0,
+      "delta": "+1 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 76.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.9,
+      "varde": 15.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4450",
+      "varde": "4447",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,3 %",
+      "delta4v": "+9,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,18",
+      "varde": "65,12",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,8 %",
+      "delta4v": "+10,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,55",
+      "varde": "6,56",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,6 %",
+      "delta4v": "+0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 90.89,
+      "v": 90.97,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1684,7 +1684,7 @@
           102.2,
           102.36,
           102.23,
-          102.44,
+          101.94,
           102.24,
           102.11
         ]
@@ -1725,7 +1725,7 @@
           109.21,
           106.48,
           105.25,
-          104.91,
+          104.39,
           106.3,
           106.92
         ]
@@ -1766,9 +1766,9 @@
           94.18,
           96.25,
           97.39,
-          98.18,
+          97.7,
           94.33,
-          93.15
+          93.21
         ]
       },
       {
@@ -1806,8 +1806,8 @@
           108.9,
           100.9,
           103.39,
-          103.46,
-          104.54,
+          99.45,
+          104.03,
           105.57,
           103.1
         ]
@@ -1848,7 +1848,7 @@
           101.61,
           97.79,
           98.3,
-          98.61,
+          98.12,
           97.38,
           98.3
         ]
@@ -1889,7 +1889,7 @@
           85.47,
           86.65,
           87.67,
-          90.93,
+          90.48,
           88.88,
           85.39
         ]
@@ -1930,7 +1930,7 @@
           91.91,
           92.76,
           91.48,
-          94.05,
+          93.58,
           91.72,
           90.17
         ]
@@ -1943,13 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1960,11 +1955,6 @@
           "datum": "2026-08-17",
           "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1982,6 +1972,16 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1290037/000000753626000131"
         },
         {
+          "datum": "2026-08-17",
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+        },
+        {
           "datum": "2026-08-18",
           "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T10:43+00:00"
+      "vintage": "2026-08-18T11:36+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-18 13:15:58",
+          "emittent": "Evolution AB (publ)",
+          "person": "Joakim Andersson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "18,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:00:07",
+          "emittent": "Evolution AB (publ)",
+          "person": "Jesper von Bahr",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "833,0",
+          "enhet": "Antal",
+          "pris": "18,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:00:07",
+          "emittent": "Evolution AB (publ)",
+          "person": "Jesper von Bahr",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1667,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-18 11:34:07",
           "emittent": "ADDNODE GROUP AKTIEBOLAG (PUBL)",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "161,6977",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 18:21:02",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "187198,0",
-          "enhet": "Antal",
-          "pris": "162,1927",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 18:21:02",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "187198,0",
-          "enhet": "Antal",
-          "pris": "162,1927",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 18:21:02",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "426919,0",
-          "enhet": "Antal",
-          "pris": "163,4646",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T10:43+00:00"
+      "vintage": "2026-08-18T11:36+00:00"
     }
   }
 }
