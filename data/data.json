@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T03:06+00:00",
+  "genererad": "2026-08-18T03:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -168,7 +168,7 @@
         98.62,
         98.79,
         101.17,
-        98.53,
+        97.74,
         98.01,
         98.33,
         98.69
@@ -219,7 +219,7 @@
         88.17,
         88.76,
         85.78,
-        86.39,
+        85.07,
         85.78,
         86.75,
         85.52
@@ -270,7 +270,7 @@
         92.27,
         93.05,
         94.96,
-        92.4,
+        94.62,
         93.57,
         92.64,
         92.55
@@ -630,7 +630,7 @@
         91.59,
         91.6,
         87.32,
-        91.65,
+        88.73,
         91.42,
         89.79,
         89.11
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 76.0,
-      "delta": "−2 · 1 v",
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4456",
+      "varde": "4451",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,1 %",
+      "delta4v": "+11,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,45",
+      "varde": "65,34",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,2 %",
+      "delta4v": "+15,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,57",
+      "varde": "6,56",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,3 %",
+      "delta4v": "+4,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 91.24,
+      "v": 91.35,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1683,7 +1683,7 @@
           101.74,
           101.9,
           101.76,
-          101.48,
+          101.98,
           101.78,
           101.65,
           101.46
@@ -1724,7 +1724,7 @@
           107.01,
           104.33,
           103.13,
-          102.28,
+          102.79,
           104.16,
           104.76,
           104.89
@@ -1765,7 +1765,7 @@
           97.92,
           99.68,
           100.6,
-          99.95,
+          100.56,
           98.49,
           97.62,
           97.69
@@ -1806,10 +1806,10 @@
           112.2,
           106.79,
           108.06,
-          106.17,
+          102.56,
           104.87,
           109.26,
-          108.59
+          108.4
         ]
       },
       {
@@ -1847,7 +1847,7 @@
           100.6,
           96.82,
           97.32,
-          97.15,
+          97.63,
           96.41,
           97.32,
           98.64
@@ -1888,7 +1888,7 @@
           85.76,
           86.94,
           87.97,
-          90.79,
+          90.75,
           89.18,
           85.67,
           86.59
@@ -1929,7 +1929,7 @@
           92.01,
           92.86,
           91.58,
-          93.68,
+          93.96,
           91.81,
           90.26,
           90.15
@@ -1943,11 +1943,6 @@
       "poster": [
         {
           "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
-        },
-        {
-          "datum": "2026-08-17",
           "namn": "KNAVISH TIMOTHY M  (CIK 0001669058); PPG INDUSTRIES INC  (CIK 0000079879)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1669058/000007987926000265"
         },
@@ -1955,6 +1950,11 @@
           "datum": "2026-08-17",
           "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T03:06+00:00"
+      "vintage": "2026-08-18T03:56+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T03:06+00:00"
+      "vintage": "2026-08-18T03:56+00:00"
     }
   }
 }
