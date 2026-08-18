@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T11:36+00:00",
+  "genererad": "2026-08-18T12:00+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -169,7 +169,7 @@
         95.46,
         95.62,
         97.92,
-        95.37,
+        94.6,
         94.87,
         95.17
       ]
@@ -220,7 +220,7 @@
         88.18,
         88.77,
         85.78,
-        86.4,
+        85.07,
         85.79,
         86.75
       ]
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -631,7 +631,7 @@
         93.47,
         93.48,
         89.12,
-        93.53,
+        90.55,
         93.29,
         91.64
       ]
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 76.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 76.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4447",
+      "varde": "4449",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,2 %",
+      "delta4v": "+9,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,12",
+      "varde": "65,14",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+10,7 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,56",
+      "varde": "6,55",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,7 %",
+      "delta4v": "+0,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-18"
     },
     "olja": {
-      "v": 90.97,
+      "v": 91.03,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-18"
     }
@@ -1684,7 +1684,7 @@
           102.2,
           102.36,
           102.23,
-          101.94,
+          102.44,
           102.24,
           102.11
         ]
@@ -1725,7 +1725,7 @@
           109.21,
           106.48,
           105.25,
-          104.39,
+          104.91,
           106.3,
           106.92
         ]
@@ -1765,10 +1765,10 @@
           95.04,
           94.18,
           96.25,
-          97.39,
-          97.7,
+          97.5,
+          98.18,
           94.33,
-          93.21
+          93.22
         ]
       },
       {
@@ -1807,7 +1807,7 @@
           100.9,
           103.39,
           99.45,
-          104.03,
+          104.54,
           105.57,
           103.1
         ]
@@ -1848,7 +1848,7 @@
           101.61,
           97.79,
           98.3,
-          98.12,
+          98.61,
           97.38,
           98.3
         ]
@@ -1889,7 +1889,7 @@
           85.47,
           86.65,
           87.67,
-          90.48,
+          90.44,
           88.88,
           85.39
         ]
@@ -1930,7 +1930,7 @@
           91.91,
           92.76,
           91.48,
-          93.58,
+          93.86,
           91.72,
           90.17
         ]
@@ -1943,8 +1943,13 @@
       "poster": [
         {
           "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
         },
         {
           "datum": "2026-08-17",
@@ -1955,6 +1960,11 @@
           "datum": "2026-08-17",
           "namn": "CEDAR CREEK PARTNERS LLC  (CIK 0001041718); Eriksen Howard Timothy  (CIK 0001650715)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1041718/000110465926097681"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
         },
         {
           "datum": "2026-08-17",
@@ -1972,16 +1982,6 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1290037/000000753626000131"
         },
         {
-          "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
-        },
-        {
           "datum": "2026-08-18",
           "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
@@ -1993,10 +1993,109 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-18T11:36+00:00"
+      "vintage": "2026-08-18T12:00+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-18 13:57:49",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Tina Mikkelsen",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "21,67664",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:55:47",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Bengt Mikael Johansson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "11466,10040",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:53:59",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Görgen Johansson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2683,93792",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:52:05",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Robert Hellgren",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "21,53520",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:47:33",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Magnus Gustafsson",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "28,61456",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:45:26",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Lena Eliasson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2580,56516",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:43:36",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Anders Carp",
+          "befattning": "Vice VD",
+          "karaktar": "Tilldelning",
+          "volym": "3591,33712",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:41:27",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Annika Bäremo",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2280,93064",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-18 13:38:20",
+          "emittent": "SAAB Aktiebolag",
+          "person": "Carl-Johan Bergholm",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2639,22156",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-18 13:15:58",
           "emittent": "Evolution AB (publ)",
@@ -2447,110 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,00",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-15 20:30:08",
-          "emittent": "Prostatype Genomics AB",
-          "person": "Anders Lundberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "643750,0",
-          "enhet": "Antal",
-          "pris": "0,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-15 07:52:47",
-          "emittent": "QBNK HOLDING AB (publ)",
-          "person": "Jörgen Karlsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "6000,0",
-          "enhet": "Antal",
-          "pris": "7,439",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-15 07:52:47",
-          "emittent": "QBNK HOLDING AB (publ)",
-          "person": "Jörgen Karlsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "7,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-15 07:52:47",
-          "emittent": "QBNK HOLDING AB (publ)",
-          "person": "Jörgen Karlsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "7,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-15 07:52:47",
-          "emittent": "QBNK HOLDING AB (publ)",
-          "person": "Jörgen Karlsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "13614,0",
-          "enhet": "Antal",
-          "pris": "7,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-15 05:33:34",
-          "emittent": "Seamless Distribution Systems AB",
-          "person": "Tomas Klevbo",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "875,0",
-          "enhet": "Antal",
-          "pris": "7,125",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 19:21:49",
-          "emittent": "Sinch AB (publ)",
-          "person": "Johan Hedberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "228848,0",
-          "enhet": "Antal",
-          "pris": "45,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 18:21:02",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "197304,0",
-          "enhet": "Antal",
-          "pris": "161,6977",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-14 18:21:02",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "197304,0",
-          "enhet": "Antal",
-          "pris": "161,6977",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 9,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T11:36+00:00"
+      "vintage": "2026-08-18T12:00+00:00"
     }
   }
 }
