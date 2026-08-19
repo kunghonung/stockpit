@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-19",
-  "genererad": "2026-08-19T22:37+00:00",
+  "genererad": "2026-08-19T23:33+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -167,7 +167,7 @@
         99.75,
         99.92,
         102.33,
-        98.85,
+        99.65,
         99.13,
         99.45,
         99.01,
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4577",
+      "varde": "4575",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,4 %",
+      "delta4v": "+10,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,11",
+      "varde": "67,17",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,8 %",
+      "delta4v": "+11,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-19"
     },
     "olja": {
-      "v": 91.53,
+      "v": 91.72,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-19"
     }
@@ -1942,6 +1942,31 @@
     "us": {
       "poster": [
         {
+          "datum": "2026-08-18",
+          "namn": "Fisher Michal  (CIK 0002139619); CNS Pharmaceuticals, Inc.  (CIK 0001729427)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2139619/000168316826006553"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "Cofer-Wildsmith Marina  (CIK 0001548828); FS Bancorp, Inc.  (CIK 0001530249)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1548828/000093905726000190"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "DUESER F SCOTT  (CIK 0001243211); FIRST FINANCIAL BANKSHARES INC  (CIK 0000036029)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1243211/000119312526355175"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
+        },
+        {
+          "datum": "2026-08-17",
+          "namn": "Stilwell Associates, L.P.  (CIK 0000913960); Stilwell Value LLC  (CIK 0001397076)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/913960/000110465926097865"
+        },
+        {
           "datum": "2026-08-17",
           "namn": "Harmon Neal  (CIK 0002020176); Angel Studios, Inc.  (CIK 0001865200)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2020176/000186520026000081"
@@ -1953,47 +1978,22 @@
         },
         {
           "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
         },
         {
           "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
         },
         {
           "datum": "2026-08-18",
           "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
-        },
-        {
-          "datum": "2026-08-18",
-          "namn": "Heng Chen Seng  (CIK 0001977626); Sea Ltd  (CIK 0001703399)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1977626/000119312526354675"
-        },
-        {
-          "datum": "2026-08-18",
-          "namn": "Fisher Michal  (CIK 0002139619); CNS Pharmaceuticals, Inc.  (CIK 0001729427)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2139619/000168316826006553"
-        },
-        {
-          "datum": "2026-08-18",
-          "namn": "MIZUHO SECURITIES USA LLC  (CIK 0000812291); Flag Ship Acquisition Corp  (CIK 0001850059)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/812291/000081229126000013"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "Scherf-Siboni Sivan  (CIK 0001966285); Foresight Autonomous Holdings Ltd.  (CIK 0001691221)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1966285/000149315226038736"
-        },
-        {
-          "datum": "2026-08-17",
-          "namn": "KNAVISH TIMOTHY M  (CIK 0001669058); PPG INDUSTRIES INC  (CIK 0000079879)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1669058/000007987926000265"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-19T22:37+00:00"
+      "vintage": "2026-08-19T23:33+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-19T22:37+00:00"
+      "vintage": "2026-08-19T23:33+00:00"
     }
   }
 }
