@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
-  "asOfDatum": "2026-08-18",
-  "genererad": "2026-08-18T23:55+00:00",
+  "asOfDatum": "2026-08-19",
+  "genererad": "2026-08-19T01:50+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -170,7 +170,7 @@
         99.65,
         99.13,
         99.45,
-        99.82,
+        98.35,
         99.01
       ]
     },
@@ -218,7 +218,7 @@
         91.38,
         91.99,
         88.89,
-        89.53,
+        88.16,
         88.9,
         89.9,
         88.62,
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -269,7 +269,7 @@
         92.69,
         93.48,
         95.39,
-        92.83,
+        95.06,
         94.0,
         93.06,
         92.97,
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -374,7 +374,7 @@
         107.75,
         106.1,
         106.75,
-        107.06,
+        108.77,
         109.51
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -580,7 +580,7 @@
         105.83,
         103.43,
         104.02,
-        103.47,
+        103.94,
         104.64
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -629,7 +629,7 @@
         93.41,
         93.42,
         89.06,
-        93.48,
+        90.5,
         93.24,
         91.58,
         90.89,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-08-18",
+      "vintage": "2026-08-19",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-08-18",
+      "vintage": "2026-08-19",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4383",
+      "varde": "4409",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+7,7 %",
+      "delta4v": "+8,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-08-18"
+      "vintage": "2026-08-19"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "62,96",
+      "varde": "63,31",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+7,0 %",
+      "delta4v": "+7,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-08-18"
+      "vintage": "2026-08-19"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,45",
+      "varde": "6,46",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,0 %",
+      "delta4v": "−0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-08-18"
+      "vintage": "2026-08-19"
     },
     "olja": {
-      "v": 91.4,
+      "v": 91.73,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-08-18"
+      "vintage": "2026-08-19"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-08-18",
+    "vintage": "2026-08-19",
     "marknader": [
       {
         "namn": "USA",
@@ -1682,10 +1682,10 @@
           100.92,
           101.08,
           100.94,
-          100.66,
+          101.16,
           100.96,
           100.83,
-          100.64,
+          99.96,
           101.06
         ]
       },
@@ -1723,7 +1723,7 @@
           104.3,
           101.69,
           100.52,
-          99.7,
+          100.19,
           101.52,
           102.11,
           102.24,
@@ -1764,7 +1764,7 @@
           100.2,
           102.0,
           102.94,
-          102.27,
+          102.9,
           100.79,
           99.9,
           99.96,
@@ -1805,11 +1805,11 @@
           109.57,
           104.28,
           105.53,
-          103.69,
+          100.16,
           102.41,
           106.7,
           107.79,
-          106.2
+          103.83
         ]
       },
       {
@@ -1846,7 +1846,7 @@
           100.17,
           96.4,
           96.9,
-          96.73,
+          97.21,
           96.0,
           96.9,
           98.22,
@@ -1887,7 +1887,7 @@
           87.71,
           88.93,
           89.97,
-          92.86,
+          92.82,
           91.22,
           87.63,
           88.57,
@@ -1928,7 +1928,7 @@
           94.9,
           95.78,
           94.46,
-          96.63,
+          96.91,
           94.7,
           93.1,
           92.99,
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-18T23:55+00:00"
+      "vintage": "2026-08-19T01:50+00:00"
     }
   }
 }
