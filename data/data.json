@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-19",
-  "genererad": "2026-08-19T09:46+00:00",
+  "genererad": "2026-08-19T10:43+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -218,7 +218,7 @@
         91.38,
         91.99,
         88.89,
-        89.53,
+        88.16,
         88.9,
         89.9,
         88.95,
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -269,7 +269,7 @@
         92.69,
         93.48,
         95.39,
-        92.83,
+        95.06,
         94.0,
         93.06,
         92.78,
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -629,7 +629,7 @@
         93.41,
         93.42,
         89.06,
-        93.48,
+        90.5,
         93.24,
         91.58,
         91.2,
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 75.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 75.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4411",
+      "varde": "4421",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+6,4 %",
+      "delta4v": "+6,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,19",
+      "varde": "63,39",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+5,3 %",
+      "delta4v": "+5,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-19"
     },
     "olja": {
-      "v": 91.7,
+      "v": 92.12,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-19"
     }
@@ -1682,7 +1682,7 @@
           100.92,
           101.08,
           100.94,
-          100.66,
+          101.16,
           100.96,
           100.83,
           101.06,
@@ -1723,7 +1723,7 @@
           104.3,
           101.69,
           100.52,
-          99.7,
+          100.19,
           101.52,
           102.11,
           101.6,
@@ -1764,11 +1764,11 @@
           100.2,
           102.0,
           102.94,
-          102.27,
+          102.9,
           100.79,
           99.9,
           100.36,
-          100.3
+          100.27
         ]
       },
       {
@@ -1805,7 +1805,7 @@
           109.57,
           104.28,
           105.53,
-          103.69,
+          100.16,
           102.41,
           106.7,
           106.2,
@@ -1846,7 +1846,7 @@
           100.17,
           96.4,
           96.9,
-          96.73,
+          97.21,
           96.0,
           96.9,
           96.37,
@@ -1887,7 +1887,7 @@
           87.71,
           88.93,
           89.97,
-          92.86,
+          92.82,
           91.22,
           87.63,
           89.28,
@@ -1928,7 +1928,7 @@
           94.9,
           95.78,
           94.46,
-          96.63,
+          96.91,
           94.7,
           93.1,
           93.63,
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-19T09:46+00:00"
+      "vintage": "2026-08-19T10:43+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-19 12:34:30",
+          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
+          "person": "Henrik Bjerklin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "479800,0",
+          "enhet": "Antal",
+          "pris": "1,0421",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-19 12:25:00",
+          "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
+          "person": "Henrik Bjerklin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "1247480,0",
+          "enhet": "Antal",
+          "pris": "1,0421",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-19 12:11:20",
+          "emittent": "Hexagon Aktiebolag",
+          "person": "Enrique Patrickson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "12500,0",
+          "enhet": "Antal",
+          "pris": "94,8465",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-19 11:34:21",
           "emittent": "AstraZeneca PLC",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:23:13",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Mats Fredrik Wicksell",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "2258,62688",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:21:15",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Marcus Wandt",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "68,64392",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:19:25",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Marcus Wandt",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "14,14464",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-19T09:46+00:00"
+      "vintage": "2026-08-19T10:43+00:00"
     }
   }
 }
