@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-19",
-  "genererad": "2026-08-19T15:43+00:00",
+  "genererad": "2026-08-19T16:44+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.32,
         109.06,
         107.78,
-        106.51
+        106.79
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -167,11 +167,11 @@
         99.75,
         99.92,
         102.33,
-        99.65,
+        98.85,
         99.13,
         99.45,
         99.01,
-        98.18
+        98.11
       ]
     },
     {
@@ -218,11 +218,11 @@
         91.38,
         91.99,
         88.89,
-        89.53,
+        88.16,
         88.9,
         89.9,
         88.95,
-        89.78
+        89.59
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -269,11 +269,11 @@
         92.69,
         93.48,
         95.39,
-        92.83,
+        95.06,
         94.0,
         93.06,
         92.78,
-        94.3
+        94.23
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         95.65,
-        96.32
+        96.16
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         109.51,
-        112.33
+        112.03
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         88.68,
-        88.01
+        88.27
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         94.73,
-        94.54
+        94.6
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         104.17,
-        104.07
+        103.84
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.43,
         104.02,
         104.64,
-        104.26
+        104.24
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -629,11 +629,11 @@
         93.41,
         93.42,
         89.06,
-        93.48,
+        90.5,
         93.24,
         91.58,
         91.2,
-        92.53
+        92.46
       ]
     }
   ],
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
+      "varde": 15.1,
       "delta": "+0,6 · 1 v",
       "trosklar": [
         20,
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 71.0,
-      "delta": "+1 · 1 v",
+      "varde": 75.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 71.0,
+      "varde": 75.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4542",
+      "varde": "4552",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,5 %",
+      "delta4v": "+9,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,65",
+      "varde": "65,99",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+9,4 %",
+      "delta4v": "+9,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,49",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,6 %",
+      "delta4v": "+0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-19"
     },
     "olja": {
-      "v": 92.31,
+      "v": 92.32,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-19"
     }
@@ -1682,11 +1682,11 @@
           100.92,
           101.08,
           100.94,
-          100.66,
+          101.16,
           100.96,
           100.83,
           101.06,
-          100.94
+          100.91
         ]
       },
       {
@@ -1723,11 +1723,11 @@
           104.3,
           101.69,
           100.52,
-          99.7,
+          100.19,
           101.52,
           102.11,
           101.6,
-          101.07
+          101.17
         ]
       },
       {
@@ -1764,11 +1764,11 @@
           100.2,
           102.0,
           102.94,
-          102.27,
+          102.9,
           100.79,
           99.9,
           100.36,
-          99.82
+          99.73
         ]
       },
       {
@@ -1805,11 +1805,11 @@
           109.57,
           104.28,
           105.53,
-          103.69,
+          100.16,
           102.41,
           106.7,
           106.2,
-          102.36
+          102.31
         ]
       },
       {
@@ -1846,11 +1846,11 @@
           100.17,
           96.4,
           96.9,
-          96.73,
+          97.21,
           96.0,
           96.9,
           96.37,
-          97.05
+          97.14
         ]
       },
       {
@@ -1887,11 +1887,11 @@
           87.71,
           88.93,
           89.97,
-          92.86,
+          93.32,
           91.22,
           87.63,
           89.28,
-          89.72
+          89.6
         ]
       },
       {
@@ -1928,11 +1928,11 @@
           94.9,
           95.78,
           94.46,
-          96.63,
+          96.91,
           94.7,
           93.1,
           93.63,
-          93.5
+          93.51
         ]
       }
     ],
@@ -1993,10 +1993,65 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-19T15:43+00:00"
+      "vintage": "2026-08-19T16:44+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-19 18:30:48",
+          "emittent": "Gomero Group AB",
+          "person": "Alf Engqvist",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "13,7",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-19 18:29:25",
+          "emittent": "DevPort AB",
+          "person": "Per Rodert",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "3230,0",
+          "enhet": "Antal",
+          "pris": "9,2309",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-19 18:24:45",
+          "emittent": "Fortinova Fastigheter AB (publ)",
+          "person": "Salstenen AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "10048,0",
+          "enhet": "Antal",
+          "pris": "24,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-19 18:24:45",
+          "emittent": "Fortinova Fastigheter AB (publ)",
+          "person": "Salstenen AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "5530,0",
+          "enhet": "Antal",
+          "pris": "24,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-19 18:24:45",
+          "emittent": "Fortinova Fastigheter AB (publ)",
+          "person": "Salstenen AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "4422,0",
+          "enhet": "Antal",
+          "pris": "23,8",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-19 15:44:37",
           "emittent": "Avensia AB (publ)",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "690,48350",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:56:48",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Lars Svensson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "6,32600",
-          "enhet": "Antal",
-          "pris": "690,48350",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:54:53",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Magnus Gustafsson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "4,44906",
-          "enhet": "Antal",
-          "pris": "690,48350",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:52:48",
-          "emittent": "SAAB Aktiebolag",
-          "person": "David Joakim Davidsson Truuberg",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "11,87574",
-          "enhet": "Antal",
-          "pris": "690,48350",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:48:43",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Anna Wijkander",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "259,70483",
-          "enhet": "Antal",
-          "pris": "692,20000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 14:46:52",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Mats Fredrik Wicksell",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1222,98550",
-          "enhet": "Antal",
-          "pris": "692,20000",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-19T15:43+00:00"
+      "vintage": "2026-08-19T16:44+00:00"
     }
   }
 }
