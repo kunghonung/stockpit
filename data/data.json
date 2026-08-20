@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-20",
-  "genererad": "2026-08-20T09:47+00:00",
+  "genererad": "2026-08-20T10:44+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
+      "varde": 15.1,
       "delta": "+0,5 · 1 v",
       "trosklar": [
         20,
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4543",
+      "varde": "4549",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+12,3 %",
+      "delta4v": "+12,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,75",
+      "varde": "67,06",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,5 %",
+      "delta4v": "+16,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,47",
+      "varde": "6,46",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,6 %",
+      "delta4v": "+2,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1764,11 +1764,11 @@
           100.2,
           102.0,
           102.94,
-          102.9,
+          102.78,
           100.79,
           99.9,
           99.86,
-          99.76
+          99.71
         ]
       },
       {
@@ -1887,7 +1887,7 @@
           87.71,
           88.93,
           89.97,
-          92.82,
+          93.32,
           91.22,
           87.63,
           89.73,
@@ -1928,7 +1928,7 @@
           94.9,
           95.78,
           94.46,
-          97.11,
+          96.91,
           94.7,
           93.1,
           93.57,
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-20T09:47+00:00"
+      "vintage": "2026-08-20T10:44+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-20 12:09:56",
+          "emittent": "Logistri Fastighets AB (Publ)",
+          "person": "David Träff",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "6838,0",
+          "enhet": "Antal",
+          "pris": "14,5",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-20 11:02:04",
           "emittent": "Fastpartner AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "193,09",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 19:21:32",
-          "emittent": "RaySearch Laboratories AB (publ)",
-          "person": "Kjell Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "3203,0",
-          "enhet": "Antal",
-          "pris": "191,58",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-20T09:47+00:00"
+      "vintage": "2026-08-20T10:44+00:00"
     }
   }
 }
