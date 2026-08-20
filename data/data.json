@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-20",
-  "genererad": "2026-08-20T07:02+00:00",
+  "genererad": "2026-08-20T07:53+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.9,
+      "varde": 15.0,
       "delta": "+0,3 · 1 v",
       "trosklar": [
         20,
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.9,
+      "varde": 15.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4550",
+      "varde": "4548",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+12,4 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,11",
+      "varde": "66,79",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,1 %",
+      "delta4v": "+15,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,48",
+      "varde": "6,46",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,8 %",
+      "delta4v": "+2,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-20"
     },
     "olja": {
-      "v": 92.11,
+      "v": 93.05,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-20"
     }
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           99.86,
-          99.86
+          99.8
         ]
       },
       {
@@ -1887,7 +1887,7 @@
           87.71,
           88.93,
           89.97,
-          93.32,
+          92.82,
           91.22,
           87.63,
           89.73,
@@ -1993,10 +1993,109 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-20T07:02+00:00"
+      "vintage": "2026-08-20T07:53+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-20 09:53:12",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "850000,0",
+          "enhet": "Antal",
+          "pris": "173,5294",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:53:12",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1440,0",
+          "enhet": "Antal",
+          "pris": "175,5285",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:49:21",
+          "emittent": "Beijer Ref AB (publ)",
+          "person": "Per Bertland",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "128,55",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:40:37",
+          "emittent": "Gränges AB",
+          "person": "Oskar Hellström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "177,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:40:37",
+          "emittent": "Gränges AB",
+          "person": "Oskar Hellström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "177,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:31:18",
+          "emittent": "Wästbygg Gruppen AB (publ)",
+          "person": "Jakob Mörndal",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "21530,0",
+          "enhet": "Antal",
+          "pris": "1,857",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:26:39",
+          "emittent": "Bluelake Mineral AB (publ)",
+          "person": "Frode Nilsen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1568627,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:26:39",
+          "emittent": "Bluelake Mineral AB (publ)",
+          "person": "Frode Nilsen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1568627,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 09:21:23",
+          "emittent": "Bluelake Mineral AB (publ)",
+          "person": "Frode Nilsen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4705881,0",
+          "enhet": "Antal",
+          "pris": "1,7",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-20 07:17:13",
           "emittent": "Railway Metrics and Dynamics Sweden AB (publ)",
@@ -2447,110 +2546,11 @@
           "enhet": "Antal",
           "pris": "30,15",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 17:03:37",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "Leandro Rogério Jasiocha",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "1262,0",
-          "enhet": "Antal",
-          "pris": "29,7662",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 17:01:11",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "EDUARDO MELLO",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "5012,0",
-          "enhet": "Antal",
-          "pris": "30,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 17:01:11",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "EDUARDO MELLO",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "1379,0",
-          "enhet": "Antal",
-          "pris": "29,7662",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 16:58:11",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "Maria Therese Friberg",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Tilldelning",
-          "volym": "5275,0",
-          "enhet": "Antal",
-          "pris": "30,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 16:58:11",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "Maria Therese Friberg",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "2849,0",
-          "enhet": "Antal",
-          "pris": "29,7662",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 16:52:24",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "Jens-Petter Iversen",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "3729,0",
-          "enhet": "Antal",
-          "pris": "30,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 16:52:24",
-          "emittent": "Aktiebolaget Electrolux",
-          "person": "Jens-Petter Iversen",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "2014,0",
-          "enhet": "Antal",
-          "pris": "29,7662",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 16:01:18",
-          "emittent": "PREC BTA",
-          "person": "Roger Jan-Erik Pettersson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "2563,0",
-          "enhet": "Antal",
-          "pris": "0,82",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-18 15:17:44",
-          "emittent": "Precise Biometrics AB",
-          "person": "Torgny Hellström",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "89221,0",
-          "enhet": "Antal",
-          "pris": "0,82",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 9,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-20T07:02+00:00"
+      "vintage": "2026-08-20T07:53+00:00"
     }
   }
 }
