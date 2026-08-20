@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-20",
-  "genererad": "2026-08-20T17:41+00:00",
+  "genererad": "2026-08-20T18:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.32,
         109.06,
         106.4,
-        106.82
+        106.8
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         99.13,
         99.45,
         97.94,
-        97.53
+        97.45
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         88.9,
         89.9,
         89.44,
-        89.34
+        89.48
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.0,
         93.06,
         93.91,
-        94.51
+        94.53
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         96.52,
-        96.17
+        96.07
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         113.11,
-        112.56
+        112.42
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         88.49,
-        88.89
+        89.0
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         95.29,
-        96.24
+        96.6
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         103.79,
-        105.04
+        105.05
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         93.24,
         91.58,
         92.75,
-        91.75
+        91.82
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.8,
-      "delta": "+1,2 · 1 v",
+      "varde": 16.1,
+      "delta": "+1,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.8,
+      "varde": 16.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4572",
+      "varde": "4575",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+13,0 %",
+      "delta4v": "+13,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,22",
+      "varde": "68,00",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,0 %",
+      "delta4v": "+17,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,47",
+      "varde": "6,48",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,6 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-20"
     },
     "olja": {
-      "v": 93.37,
+      "v": 93.8,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-20"
     }
@@ -1686,7 +1686,7 @@
           100.96,
           100.83,
           100.88,
-          100.66
+          100.62
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.52,
           102.11,
           101.01,
-          100.63
+          100.57
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           99.86,
-          100.14
+          100.2
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           102.44,
-          104.26
+          104.32
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           96.0,
           96.9,
           97.13,
-          97.92
+          98.04
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           91.22,
           87.63,
           89.73,
-          89.99
+          90.2
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.7,
           93.1,
           93.57,
-          94.0
+          94.04
         ]
       }
     ],
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-20T17:41+00:00"
+      "vintage": "2026-08-20T18:56+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-20 20:05:56",
+          "emittent": "Sweden BuyersClub AB",
+          "person": "Jacob Wendel",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "5786,0",
+          "enhet": "Antal",
+          "pris": "6,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-20 19:58:22",
+          "emittent": "Generic Sweden AB (publ)",
+          "person": "Johan Filip Martinsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "41,05",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-20 17:50:11",
           "emittent": "Tele2 AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "24,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-19 18:24:45",
-          "emittent": "Fortinova Fastigheter AB (publ)",
-          "person": "Salstenen AB",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "4422,0",
-          "enhet": "Antal",
-          "pris": "23,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-19 15:44:37",
-          "emittent": "Avensia AB (publ)",
-          "person": "Robin Engström Gustafsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "6,13",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-20T17:41+00:00"
+      "vintage": "2026-08-20T18:56+00:00"
     }
   }
 }
