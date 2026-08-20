@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-20",
-  "genererad": "2026-08-20T21:38+00:00",
+  "genererad": "2026-08-20T22:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,13",
+      "varde": "68,18",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,9 %",
+      "delta4v": "+18,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-20"
     },
     "olja": {
-      "v": 93.15,
+      "v": 93.25,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-20"
     }
@@ -1942,34 +1942,39 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-17",
-          "namn": "Harmon Neal  (CIK 0002020176); Angel Studios, Inc.  (CIK 0001865200)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2020176/000186520026000081"
+          "datum": "2026-08-19",
+          "namn": "Magnuson William  (CIK 0001888932); Braze, Inc.  (CIK 0001676238)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1888932/000188893226000011"
         },
         {
-          "datum": "2026-08-17",
-          "namn": "Lowe Carol P  (CIK 0001290037); ARROW ELECTRONICS, INC.  (CIK 0000007536)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1290037/000000753626000131"
+          "datum": "2026-08-19",
+          "namn": "SMOLYANSKY JULIE  (CIK 0001227846); Lifeway Foods, Inc.  (CIK 0000814586)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1227846/000168316826006595"
         },
         {
-          "datum": "2026-08-17",
-          "namn": "Johnston Brett Wade  (CIK 0001950481); Quest Resource Holding Corp  (CIK 0001442236)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950481/000092189526002226"
+          "datum": "2026-08-19",
+          "namn": "Cummings George W. III  (CIK 0002106698); Business First Bancshares, Inc.  (CIK 0001624322)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2106698/000143774926028545"
         },
         {
-          "datum": "2026-08-17",
-          "namn": "Trigg William Shane  (CIK 0001837400); APPFOLIO INC  (CIK 0001433195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837400/000183740026000014"
+          "datum": "2026-08-19",
+          "namn": "Herckis Karen  (CIK 0002008581); CS Disco, Inc.  (CIK 0001625641)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2008581/000162564126000184"
         },
         {
-          "datum": "2026-08-18",
-          "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
+          "datum": "2026-08-19",
+          "namn": "Thauberger Matthew  (CIK 0002148161); Super Micro Computer, Inc.  (CIK 0001375365)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2148161/000214816126000010"
         },
         {
-          "datum": "2026-08-18",
-          "namn": "Heng Chen Seng  (CIK 0001977626); Sea Ltd  (CIK 0001703399)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1977626/000119312526354675"
+          "datum": "2026-08-19",
+          "namn": "Lafrades Charles  (CIK 0001861604); GoPro, Inc.  (CIK 0001500435)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1861604/000162828026058009"
+        },
+        {
+          "datum": "2026-08-19",
+          "namn": "Miller William John  (CIK 0001497582); VEECO INSTRUMENTS INC  (CIK 0000103145)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1497582/000149758226000021"
         },
         {
           "datum": "2026-08-18",
@@ -1977,14 +1982,9 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/2139619/000168316826006553"
         },
         {
-          "datum": "2026-08-18",
-          "namn": "MIZUHO SECURITIES USA LLC  (CIK 0000812291); Flag Ship Acquisition Corp  (CIK 0001850059)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/812291/000081229126000013"
-        },
-        {
           "datum": "2026-08-19",
-          "namn": "Tennenbaum Ross  (CIK 0001807571); DROPBOX, INC.  (CIK 0001467623)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1807571/000180757126000007"
+          "namn": "Steele Toni S  (CIK 0001831520); Four Corners Property Trust, Inc.  (CIK 0001650132)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1831520/000119312526357129"
         },
         {
           "datum": "2026-08-19",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-20T21:38+00:00"
+      "vintage": "2026-08-20T22:41+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-20T21:38+00:00"
+      "vintage": "2026-08-20T22:41+00:00"
     }
   }
 }
