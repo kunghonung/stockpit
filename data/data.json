@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-21",
-  "genererad": "2026-08-21T05:08+00:00",
+  "genererad": "2026-08-21T06:02+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -167,7 +167,7 @@
         99.75,
         99.92,
         102.33,
-        99.65,
+        98.85,
         99.13,
         99.45,
         97.58,
@@ -218,7 +218,7 @@
         91.38,
         91.99,
         88.89,
-        89.53,
+        88.16,
         88.9,
         89.9,
         89.68,
@@ -269,7 +269,7 @@
         92.69,
         93.48,
         95.39,
-        92.83,
+        95.06,
         94.0,
         93.06,
         94.52,
@@ -303,7 +303,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -629,7 +629,7 @@
         93.41,
         93.42,
         89.06,
-        93.48,
+        90.5,
         93.24,
         91.58,
         92.03,
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +9 bp/mån."
     },
     "bredd": {
-      "over50": 60,
-      "over200": 72,
+      "over50": 54,
+      "over200": 71,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-20",
+      "vintage": "2026-08-21",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-3 sedan förra"
+      "delta": "-6 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4597",
+      "varde": "4604",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+13,0 %",
+      "delta4v": "+13,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "69,07",
+      "varde": "69,14",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,8 %",
+      "delta4v": "+17,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-21"
     },
     "olja": {
-      "v": 93.36,
+      "v": 93.49,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-21"
     }
@@ -1682,7 +1682,7 @@
           100.92,
           101.08,
           100.94,
-          100.66,
+          101.16,
           100.96,
           100.83,
           100.49,
@@ -1723,7 +1723,7 @@
           104.3,
           101.69,
           100.52,
-          99.7,
+          100.19,
           101.52,
           102.11,
           100.74,
@@ -1764,7 +1764,7 @@
           100.2,
           102.0,
           102.94,
-          102.27,
+          102.9,
           100.79,
           99.9,
           100.19,
@@ -1805,11 +1805,11 @@
           109.57,
           104.28,
           105.53,
-          103.69,
+          100.16,
           102.41,
           106.7,
           104.31,
-          104.08
+          103.68
         ]
       },
       {
@@ -1846,7 +1846,7 @@
           100.17,
           96.4,
           96.9,
-          96.73,
+          97.21,
           96.0,
           96.9,
           98.32,
@@ -1887,7 +1887,7 @@
           87.71,
           88.93,
           89.97,
-          92.86,
+          92.82,
           91.22,
           87.63,
           90.33,
@@ -1928,7 +1928,7 @@
           94.9,
           95.78,
           94.46,
-          96.63,
+          96.91,
           94.7,
           93.1,
           94.02,
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-21T05:08+00:00"
+      "vintage": "2026-08-21T06:02+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-21 07:36:52",
+          "emittent": "Cell Impact AB (publ)",
+          "person": "Mats Boqvist",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "1733333,0",
+          "enhet": "Antal",
+          "pris": "0,33",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-20 20:05:56",
           "emittent": "Sweden BuyersClub AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "24,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-19 18:24:45",
-          "emittent": "Fortinova Fastigheter AB (publ)",
-          "person": "Salstenen AB",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5530,0",
-          "enhet": "Antal",
-          "pris": "24,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-21T05:08+00:00"
+      "vintage": "2026-08-21T06:02+00:00"
     }
   }
 }
