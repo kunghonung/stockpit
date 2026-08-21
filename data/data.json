@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-21",
-  "genererad": "2026-08-21T20:37+00:00",
+  "genererad": "2026-08-21T21:00+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4668",
+      "varde": "4664",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+14,8 %",
+      "delta4v": "+14,7 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "69,08",
+      "varde": "69,06",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,8 %",
+      "delta4v": "+17,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-21"
     },
     "olja": {
-      "v": 94.11,
+      "v": 93.95,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-21"
     }
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-21T20:37+00:00"
+      "vintage": "2026-08-21T21:00+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-21 23:00:04",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "696,0",
+          "enhet": "Antal",
+          "pris": "2,44",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-21 22:09:08",
           "emittent": "Lundin Mining Corporation",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,73",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 08:58:32",
-          "emittent": "Vidhance AB",
-          "person": "Andreas Lifvendahl",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "5,88",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-21T20:37+00:00"
+      "vintage": "2026-08-21T21:00+00:00"
     }
   }
 }
