@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-21",
-  "genererad": "2026-08-21T17:40+00:00",
+  "genererad": "2026-08-21T18:52+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.32,
         109.06,
         106.99,
-        106.66
+        106.64
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         99.13,
         99.45,
         97.58,
-        97.49
+        97.59
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         88.9,
         89.9,
         89.68,
-        90.05
+        90.01
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.0,
         93.06,
         94.52,
-        96.01
+        96.12
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         95.97,
-        96.21
+        96.14
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         111.94,
-        113.07
+        112.94
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         88.73,
-        86.99
+        86.69
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         96.29,
-        95.82
+        95.84
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         104.95,
-        104.38
+        104.49
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.43,
         104.02,
         103.69,
-        104.01
+        104.15
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         93.24,
         91.58,
         92.03,
-        92.69
+        92.8
       ]
     }
   ],
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 107,
+        "index": 106,
         "pil": "upp",
         "status": "gron"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 102,
+        "index": 103,
         "pil": "upp",
         "status": "gron"
       },
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4679",
+      "varde": "4678",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+15,0 %",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "69,59",
+      "varde": "69,57",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+18,6 %",
@@ -994,7 +994,7 @@
       "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,1 %",
+      "delta4v": "+4,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-21"
     },
     "olja": {
-      "v": 94.66,
+      "v": 94.22,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-21"
     }
@@ -1686,7 +1686,7 @@
           100.96,
           100.83,
           100.49,
-          100.36
+          100.38
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.52,
           102.11,
           100.74,
-          100.56
+          100.55
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           100.19,
-          100.28
+          100.26
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           104.31,
-          103.48
+          103.46
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           96.0,
           96.9,
           98.32,
-          98.62
+          98.6
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           91.22,
           87.63,
           90.33,
-          90.06
+          90.1
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.7,
           93.1,
           94.02,
-          93.78
+          93.79
         ]
       }
     ],
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-21T17:40+00:00"
+      "vintage": "2026-08-21T18:52+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-21 20:26:01",
+          "emittent": "Moberg Pharma AB (publ)",
+          "person": "Richard Ding",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "252327,0",
+          "enhet": "Antal",
+          "pris": "11,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-21 20:26:01",
+          "emittent": "Moberg Pharma AB (publ)",
+          "person": "Richard Ding",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "48920,0",
+          "enhet": "Antal",
+          "pris": "11,28",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-21 20:26:01",
+          "emittent": "Moberg Pharma AB (publ)",
+          "person": "Richard Ding",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "10,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-21 19:48:59",
+          "emittent": "Case Group AB",
+          "person": "Emil Lundström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2845,0",
+          "enhet": "Antal",
+          "pris": "19,8",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-21 17:59:00",
           "emittent": "DevPort AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "165,0987",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-20 17:50:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "324861,0",
-          "enhet": "Antal",
-          "pris": "165,0987",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-20 17:50:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "235000,0",
-          "enhet": "Antal",
-          "pris": "166,0894",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-20 17:50:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "235000,0",
-          "enhet": "Antal",
-          "pris": "166,0894",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-20 17:50:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "216801,0",
-          "enhet": "Antal",
-          "pris": "166,5463",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-21T17:40+00:00"
+      "vintage": "2026-08-21T18:52+00:00"
     }
   }
 }
