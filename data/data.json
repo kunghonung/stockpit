@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-21",
-  "genererad": "2026-08-22T13:41+00:00",
+  "genererad": "2026-08-22T14:34+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-22T13:41+00:00"
+      "vintage": "2026-08-22T14:34+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-22 16:28:13",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Martin Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "23438,0",
+          "enhet": "Antal",
+          "pris": "7,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-22 16:28:13",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Martin Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "3158,0",
+          "enhet": "Antal",
+          "pris": "7,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-22 08:35:23",
           "emittent": "Bure Equity AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "13,023",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 09:24:12",
-          "emittent": "Sweden BuyersClub AB",
-          "person": "Simon Forsslund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "330579,0",
-          "enhet": "Antal",
-          "pris": "6,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 09:18:43",
-          "emittent": "Dustin Group AB",
-          "person": "Michael Haagen Petersen",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "741714,0",
-          "enhet": "Antal",
-          "pris": "1,82",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-22T13:41+00:00"
+      "vintage": "2026-08-22T14:34+00:00"
     }
   }
 }
