@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-21",
-  "genererad": "2026-08-22T05:38+00:00",
+  "genererad": "2026-08-22T06:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1942,29 +1942,29 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-18",
-          "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
-        },
-        {
-          "datum": "2026-08-18",
-          "namn": "Heng Chen Seng  (CIK 0001977626); Sea Ltd  (CIK 0001703399)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1977626/000119312526354675"
-        },
-        {
           "datum": "2026-08-19",
           "namn": "Wang Yanjun  (CIK 0002113214); Sea Ltd  (CIK 0001703399)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2113214/000119312526356054"
         },
         {
-          "datum": "2026-08-19",
-          "namn": "Chung Chih-Hsiao  (CIK 0002116851); ASE Technology Holding Co., Ltd.  (CIK 0001122411)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2116851/000095010326012615"
+          "datum": "2026-08-18",
+          "namn": "Foundation Capital Management Co. VIII, L.L.C.  (CIK 0001645076); Foundation Capital VIII, L.P.  (CIK 0001645077)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1645076/000123191926000942"
         },
         {
           "datum": "2026-08-18",
-          "namn": "Valentine Carolyn Walker  (CIK 0002150722); NVE CORP /NEW/  (CIK 0000724910)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2150722/000072491026000008"
+          "namn": "Sukhatme Mayukh  (CIK 0001750050); Roivant Sciences Ltd.  (CIK 0001635088)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1750050/000114036126033637"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "Papapostolou Ted  (CIK 0001817513); ICAHN ENTERPRISES L.P.  (CIK 0000813762)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1817513/000101297526000802"
+        },
+        {
+          "datum": "2026-08-19",
+          "namn": "Chung Chih-Hsiao  (CIK 0002116851); ASE Technology Holding Co., Ltd.  (CIK 0001122411)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2116851/000095010326012615"
         },
         {
           "datum": "2026-08-19",
@@ -1977,26 +1977,37 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1777165/000177716526000012"
         },
         {
-          "datum": "2026-08-21",
-          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
-        },
-        {
           "datum": "2026-08-19",
           "namn": "Magnuson William  (CIK 0001888932); Braze, Inc.  (CIK 0001676238)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1888932/000188893226000011"
         },
         {
-          "datum": "2026-08-19",
-          "namn": "SMOLYANSKY JULIE  (CIK 0001227846); Lifeway Foods, Inc.  (CIK 0000814586)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1227846/000168316826006595"
+          "datum": "2026-08-18",
+          "namn": "Knazev Sergei  (CIK 0002135156); SENTIENT BRANDS HOLDINGS INC.  (CIK 0001358633)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2135156/000149315226038862"
+        },
+        {
+          "datum": "2026-08-18",
+          "namn": "Heng Chen Seng  (CIK 0001977626); Sea Ltd  (CIK 0001703399)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1977626/000119312526354675"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-22T05:38+00:00"
+      "vintage": "2026-08-22T06:56+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-22 08:35:23",
+          "emittent": "Bure Equity AB",
+          "person": "Sarah Mc Phee",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1100,0",
+          "enhet": "Antal",
+          "pris": "296,40",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-21 23:00:04",
           "emittent": "Corem Property Group AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,82",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 09:11:11",
-          "emittent": "Dustin Group AB",
-          "person": "Michael Haagen Petersen",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "162343,0",
-          "enhet": "Antal",
-          "pris": "1,73",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-22T05:38+00:00"
+      "vintage": "2026-08-22T06:56+00:00"
     }
   }
 }
