@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W34",
   "asOfDatum": "2026-08-21",
-  "genererad": "2026-08-23T18:45+00:00",
+  "genererad": "2026-08-23T19:31+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-23T18:45+00:00"
+      "vintage": "2026-08-23T19:31+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-23 21:05:25",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1682,0",
+          "enhet": "Antal",
+          "pris": "25,02",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-23 20:34:23",
           "emittent": "Infrea AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "118,80",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 09:51:39",
-          "emittent": "Cell Impact AB (publ)",
-          "person": "Per Olof Daniel Vallin",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "829487,0",
-          "enhet": "Antal",
-          "pris": "0,33",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-23T18:45+00:00"
+      "vintage": "2026-08-23T19:31+00:00"
     }
   }
 }
