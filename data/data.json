@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T05:23+00:00",
+  "genererad": "2026-08-24T06:07+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 94,
+        "index": 93,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 107,
+        "index": 106,
         "pil": "upp",
         "status": "gron"
       },
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-08-21"
+      "vintage": "2026-08-24"
     },
     "crowding": {
       "score": 9,
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4697",
+      "varde": "4694",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,3 %",
+      "delta4v": "+15,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,99",
+      "varde": "68,82",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,0 %",
+      "delta4v": "+17,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,56",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,4 %",
+      "delta4v": "+3,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 93.05,
+      "v": 93.17,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           103.46,
-          103.0
+          102.78
         ]
       },
       {
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T05:23+00:00"
+      "vintage": "2026-08-24T06:07+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T05:23+00:00"
+      "vintage": "2026-08-24T06:07+00:00"
     }
   }
 }
