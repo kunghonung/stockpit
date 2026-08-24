@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T18:02+00:00",
+  "genererad": "2026-08-24T18:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.32,
         109.06,
         106.67,
-        105.33
+        105.35
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         99.13,
         99.45,
         97.44,
-        96.81
+        96.82
       ]
     },
     {
@@ -222,7 +222,7 @@
         88.9,
         89.9,
         89.9,
-        91.04
+        91.01
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.0,
         93.06,
         96.15,
-        96.09
+        96.04
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         96.33,
-        97.89
+        97.82
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         112.92,
-        112.95
+        113.1
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         86.35,
-        87.28
+        87.5
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         95.9,
-        96.36
+        96.53
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         104.34,
-        103.54
+        103.71
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.43,
         104.02,
         104.23,
-        105.53
+        105.67
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.24,
         91.58,
         92.71,
-        93.22
+        93.03
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.8,
-      "delta": "+0,6 · 1 v",
+      "varde": 15.7,
+      "delta": "+0,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 93,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 90,
+        "index": 91,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.8,
+      "varde": 15.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4694",
+      "varde": "4690",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,2 %",
+      "delta4v": "+15,1 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,45",
+      "varde": "68,54",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,1 %",
+      "delta4v": "+17,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,59",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,0 %",
+      "delta4v": "+4,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 91.96,
+      "v": 92.26,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1686,7 +1686,7 @@
           100.96,
           100.83,
           100.37,
-          100.53
+          100.49
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.52,
           102.11,
           100.57,
-          100.19
+          100.11
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           100.25,
-          100.69
+          100.59
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           103.46,
-          103.13
+          103.03
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           96.0,
           96.9,
           98.54,
-          97.44
+          97.49
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           91.22,
           87.63,
           90.1,
-          89.21
+          89.13
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.7,
           93.1,
           93.7,
-          93.52
+          93.45
         ]
       }
     ],
@@ -1988,15 +1988,37 @@
         },
         {
           "datum": "2026-08-24",
-          "namn": "Wright David Marshall  (CIK 0001672443); ITRON, INC.  (CIK 0000780571)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1672443/000078057126000192"
+          "namn": "Sullivan John Richmond  (CIK 0002131529); Track Group, Inc.  (CIK 0001045942)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2131529/000213152926000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T18:02+00:00"
+      "vintage": "2026-08-24T18:56+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-24 20:30:12",
+          "emittent": "Mips AB",
+          "person": "Jonas Söderqvist",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 20:30:12",
+          "emittent": "Mips AB",
+          "person": "Jonas Söderqvist",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "381,08",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-24 17:53:00",
           "emittent": "Essity Aktiebolag (publ)",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "123,2",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 21:27:00",
-          "emittent": "Cheffelo AB",
-          "person": "Olle Qvarnström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "84027,0",
-          "enhet": "Antal",
-          "pris": "123,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 20:26:01",
-          "emittent": "Moberg Pharma AB (publ)",
-          "person": "Richard Ding",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "252327,0",
-          "enhet": "Antal",
-          "pris": "11,5",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T18:02+00:00"
+      "vintage": "2026-08-24T18:56+00:00"
     }
   }
 }
