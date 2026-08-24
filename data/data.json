@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T03:13+00:00",
+  "genererad": "2026-08-24T04:26+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4697",
+      "varde": "4692",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,3 %",
+      "delta4v": "+15,1 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,93",
+      "varde": "68,89",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,9 %",
+      "delta4v": "+17,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,55",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,4 %",
+      "delta4v": "+3,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 93.15,
+      "v": 93.05,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           103.46,
-          103.38
+          102.94
         ]
       },
       {
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-21",
-          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
+          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
         },
         {
           "datum": "2026-08-21",
@@ -1953,8 +1953,8 @@
         },
         {
           "datum": "2026-08-21",
-          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
+          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
         },
         {
           "datum": "2026-08-21",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T03:13+00:00"
+      "vintage": "2026-08-24T04:26+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T03:13+00:00"
+      "vintage": "2026-08-24T04:26+00:00"
     }
   }
 }
