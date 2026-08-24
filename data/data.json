@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T04:26+00:00",
+  "genererad": "2026-08-24T05:23+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +14 bp/mån."
     },
     "bredd": {
-      "over50": 54,
-      "over200": 71,
+      "over50": 57,
+      "over200": 69,
       "antal": 500,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-21",
+      "vintage": "2026-08-24",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-6 sedan förra"
+      "delta": "+3 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4692",
+      "varde": "4697",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,1 %",
+      "delta4v": "+15,3 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,89",
+      "varde": "68,99",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,8 %",
+      "delta4v": "+18,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,55",
+      "varde": "6,56",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,3 %",
+      "delta4v": "+3,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           103.46,
-          102.94
+          103.0
         ]
       },
       {
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-21",
-          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
+          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
         },
         {
           "datum": "2026-08-21",
@@ -1953,8 +1953,8 @@
         },
         {
           "datum": "2026-08-21",
-          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
+          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
         },
         {
           "datum": "2026-08-21",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T04:26+00:00"
+      "vintage": "2026-08-24T05:23+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T04:26+00:00"
+      "vintage": "2026-08-24T05:23+00:00"
     }
   }
 }
