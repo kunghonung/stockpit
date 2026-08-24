@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T20:45+00:00",
+  "genererad": "2026-08-24T21:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -693,7 +693,7 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 73.0,
+      "varde": 74.0,
       "delta": "−2 · 1 v",
       "trosklar": [
         100,
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 73.0,
+      "varde": 74.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4705",
+      "varde": "4710",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,5 %",
+      "delta4v": "+15,6 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,86",
+      "varde": "68,96",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,8 %",
+      "delta4v": "+17,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,60",
+      "varde": "6,61",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,1 %",
+      "delta4v": "+4,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 91.96,
+      "v": 91.99,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T20:45+00:00"
+      "vintage": "2026-08-24T21:41+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-24 23:08:44",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "0,072",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 23:08:44",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,064",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-24 22:28:29",
           "emittent": "Arla Plast AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "296,40",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 23:00:04",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "696,0",
-          "enhet": "Antal",
-          "pris": "2,44",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 22:09:08",
-          "emittent": "Lundin Mining Corporation",
-          "person": "Jacinta Zaleski",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "7000,0",
-          "enhet": "Antal",
-          "pris": "37,50",
-          "valuta": "CAD"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T20:45+00:00"
+      "vintage": "2026-08-24T21:41+00:00"
     }
   }
 }
