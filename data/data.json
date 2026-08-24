@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T08:24+00:00",
+  "genererad": "2026-08-24T09:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 93,
+        "index": 94,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 106,
+        "index": 107,
         "pil": "upp",
         "status": "gron"
       },
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4693",
+      "varde": "4692",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+15,2 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,80",
+      "varde": "68,67",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,7 %",
+      "delta4v": "+17,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 93.49,
+      "v": 92.98,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           100.25,
-          100.23
+          100.42
         ]
       },
       {
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-21",
-          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
+          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
         },
         {
           "datum": "2026-08-21",
@@ -1953,8 +1953,8 @@
         },
         {
           "datum": "2026-08-21",
-          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
+          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
         },
         {
           "datum": "2026-08-21",
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T08:24+00:00"
+      "vintage": "2026-08-24T09:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-24 11:07:54",
+          "emittent": "Bufab AB (publ)",
+          "person": "Carina Lööv",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1235,0",
+          "enhet": "Antal",
+          "pris": "252,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 11:07:54",
+          "emittent": "Bufab AB (publ)",
+          "person": "Carina Lööv",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "765,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 11:07:54",
+          "emittent": "Bufab AB (publ)",
+          "person": "Carina Lööv",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "3825,0",
+          "enhet": "Antal",
+          "pris": "81,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 10:52:29",
+          "emittent": "NP3 Fastigheter AB",
+          "person": "Andreas Wahlén",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "30,30",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-24 10:12:36",
           "emittent": "Hexagon Aktiebolag",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "407,50",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 13:01:38",
-          "emittent": "Pierce Group AB (publ)",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "832,0",
-          "enhet": "Antal",
-          "pris": "9,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 13:01:38",
-          "emittent": "Pierce Group AB (publ)",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2774,0",
-          "enhet": "Antal",
-          "pris": "9,19",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 13:01:38",
-          "emittent": "Pierce Group AB (publ)",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "9,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 13:01:38",
-          "emittent": "Pierce Group AB (publ)",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "16394,0",
-          "enhet": "Antal",
-          "pris": "9,21",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T08:24+00:00"
+      "vintage": "2026-08-24T09:28+00:00"
     }
   }
 }
