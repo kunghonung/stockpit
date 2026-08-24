@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T17:10+00:00",
+  "genererad": "2026-08-24T18:02+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -171,7 +171,7 @@
         99.13,
         99.45,
         97.44,
-        96.76
+        96.81
       ]
     },
     {
@@ -222,7 +222,7 @@
         88.9,
         89.9,
         89.9,
-        91.05
+        91.04
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.0,
         93.06,
         96.15,
-        95.99
+        96.09
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.43,
         95.12,
         96.33,
-        97.79
+        97.89
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.1,
         106.75,
         112.92,
-        113.07
+        112.95
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         87.19,
         88.24,
         86.35,
-        87.27
+        87.28
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.75,
         94.98,
         95.9,
-        96.19
+        96.36
       ]
     },
     {
@@ -529,7 +529,7 @@
         93.35,
         100.11,
         104.34,
-        103.24
+        103.54
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.43,
         104.02,
         104.23,
-        105.46
+        105.53
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.24,
         91.58,
         92.71,
-        93.16
+        93.22
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.7,
-      "delta": "+0,5 · 1 v",
+      "varde": 15.8,
+      "delta": "+0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.7,
+      "varde": 15.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4700",
+      "varde": "4694",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,4 %",
+      "delta4v": "+15,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,66",
+      "varde": "68,45",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,4 %",
+      "delta4v": "+17,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,60",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,1 %",
+      "delta4v": "+4,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 92.52,
+      "v": 91.96,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1686,7 +1686,7 @@
           100.96,
           100.83,
           100.37,
-          100.51
+          100.53
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.52,
           102.11,
           100.57,
-          100.18
+          100.19
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           100.25,
-          100.56
+          100.69
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           102.41,
           106.7,
           103.46,
-          103.0
+          103.13
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           96.0,
           96.9,
           98.54,
-          97.48
+          97.44
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           91.22,
           87.63,
           90.1,
-          89.27
+          89.21
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.7,
           93.1,
           93.7,
-          93.42
+          93.52
         ]
       }
     ],
@@ -1943,8 +1943,8 @@
       "poster": [
         {
           "datum": "2026-08-21",
-          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
+          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
         },
         {
           "datum": "2026-08-21",
@@ -1953,8 +1953,8 @@
         },
         {
           "datum": "2026-08-21",
-          "namn": "Mansueto Joseph D  (CIK 0001324069); Morningstar, Inc.  (CIK 0001289419)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1324069/000132406926000043"
+          "namn": "BURKE ZANE M  (CIK 0001213555); Owlet, Inc.  (CIK 0001816708)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1213555/000121355526000004"
         },
         {
           "datum": "2026-08-21",
@@ -1968,11 +1968,6 @@
         },
         {
           "datum": "2026-08-21",
-          "namn": "Cann Leah Rush  (CIK 0001533337); Longeveron Inc.  (CIK 0001721484)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1533337/000121465926010736"
-        },
-        {
-          "datum": "2026-08-21",
           "namn": "Weatherred Michael A  (CIK 0001767790); Ingersoll Rand Inc.  (CIK 0001699150)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1767790/000114036126034060"
         },
@@ -1980,6 +1975,11 @@
           "datum": "2026-08-21",
           "namn": "Steele Christa  (CIK 0001530084); Global Water Resources, Inc.  (CIK 0001434728)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1530084/000162828026058497"
+        },
+        {
+          "datum": "2026-08-21",
+          "namn": "Cann Leah Rush  (CIK 0001533337); Longeveron Inc.  (CIK 0001721484)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1533337/000121465926010736"
         },
         {
           "datum": "2026-08-24",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T17:10+00:00"
+      "vintage": "2026-08-24T18:02+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T17:10+00:00"
+      "vintage": "2026-08-24T18:02+00:00"
     }
   }
 }
