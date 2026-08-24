@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-24",
-  "genererad": "2026-08-24T07:20+00:00",
+  "genererad": "2026-08-24T08:24+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.1,
-      "delta": "+0,9 · 1 v",
+      "varde": 15.9,
+      "delta": "+0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.1,
+      "varde": 15.9,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4704",
+      "varde": "4693",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,4 %",
+      "delta4v": "+15,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "69,08",
+      "varde": "68,80",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,2 %",
+      "delta4v": "+17,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,8 %",
+      "delta4v": "+4,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-24"
     },
     "olja": {
-      "v": 92.65,
+      "v": 93.49,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-24"
     }
@@ -1768,7 +1768,7 @@
           100.79,
           99.9,
           100.25,
-          100.14
+          100.23
         ]
       },
       {
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-24T07:20+00:00"
+      "vintage": "2026-08-24T08:24+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-24 10:12:36",
+          "emittent": "Hexagon Aktiebolag",
+          "person": "Tomas Eliasson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "12000,0",
+          "enhet": "Antal",
+          "pris": "100,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 09:52:02",
+          "emittent": "Botnia Gold AB",
+          "person": "Fredrik Bergsten",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "11,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 09:29:20",
+          "emittent": "Essity AB",
+          "person": "Niklas Westin Sundberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "277,47",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-24 09:26:12",
+          "emittent": "Arlandastad Group AB (publ)",
+          "person": "Per Taube",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "16842,0",
+          "enhet": "Antal",
+          "pris": "36,4244",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-24 08:38:45",
           "emittent": "Mysafety Group AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "9,21",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 12:59:46",
-          "emittent": "Essity Aktiebolag (publ)",
-          "person": "Jan Gustav Gurander",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "3600,0",
-          "enhet": "Antal",
-          "pris": "272,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 11:07:34",
-          "emittent": "NOBA BANK GROUP AB",
-          "person": "Patrick Lapveteläinen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "89,48",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 11:00:08",
-          "emittent": "Enad Global 7 AB (publ)",
-          "person": "Marie-Louise Hellström Gefwert",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5319,0",
-          "enhet": "Antal",
-          "pris": "18,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-21 10:56:44",
-          "emittent": "Exsitec Holding AB",
-          "person": "Carl Arnesson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1250,0",
-          "enhet": "Antal",
-          "pris": "110,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-24T07:20+00:00"
+      "vintage": "2026-08-24T08:24+00:00"
     }
   }
 }
