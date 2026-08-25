@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T07:57+00:00",
+  "genererad": "2026-08-25T08:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4695",
+      "varde": "4689",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,3 %",
+      "delta4v": "+16,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,21",
+      "varde": "67,87",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+19,1 %",
+      "delta4v": "+18,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,60",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,5 %",
+      "delta4v": "+4,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 89.89,
+      "v": 89.0,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1768,7 +1768,7 @@
           100.28,
           99.19,
           100.11,
-          100.83
+          100.77
         ]
       },
       {
@@ -1993,10 +1993,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T07:57+00:00"
+      "vintage": "2026-08-25T08:56+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-25 10:22:38",
+          "emittent": "KlaraBo Sverige AB",
+          "person": "Anders Pettersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "3844460,0",
+          "enhet": "Antal",
+          "pris": "13,9",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 10:22:38",
+          "emittent": "KlaraBo Sverige AB",
+          "person": "Anders Pettersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Förvärv",
+          "volym": "3844460,0",
+          "enhet": "Antal",
+          "pris": "13,9",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 10:19:39",
+          "emittent": "KlaraBo Sverige AB",
+          "person": "Anders Pettersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "13,9",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 10:19:39",
+          "emittent": "KlaraBo Sverige AB",
+          "person": "Anders Pettersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Förvärv",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "13,9",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 10:17:46",
+          "emittent": "Intervacc AB",
+          "person": "Astrid Larberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3500,0",
+          "enhet": "Antal",
+          "pris": "1,14",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 10:09:52",
+          "emittent": "Prevas AB ser. B",
+          "person": "Robert Demark",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "26000,0",
+          "enhet": "Antal",
+          "pris": "68,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 10:09:52",
+          "emittent": "Prevas AB ser. B",
+          "person": "Robert Demark",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Förvärv",
+          "volym": "26000,0",
+          "enhet": "Antal",
+          "pris": "68,3",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 08:00:45",
           "emittent": "Balco AB",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "24,82",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 21:36:21",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "791,0",
-          "enhet": "Antal",
-          "pris": "24,82",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 21:05:25",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1682,0",
-          "enhet": "Antal",
-          "pris": "25,02",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 20:34:23",
-          "emittent": "Infrea AB",
-          "person": "Tomas Bergström",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "13,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 15:11:59",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9000,0",
-          "enhet": "Antal",
-          "pris": "0,001",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 15:11:59",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "1350000,0",
-          "enhet": "Antal",
-          "pris": "0,084",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 15:11:59",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "0,072",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 15:11:59",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "300000,0",
-          "enhet": "Antal",
-          "pris": "0,07",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T07:57+00:00"
+      "vintage": "2026-08-25T08:56+00:00"
     }
   }
 }
