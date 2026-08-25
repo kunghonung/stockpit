@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T16:17+00:00",
+  "genererad": "2026-08-25T17:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.96,
         106.58,
         104.99,
-        105.71
+        105.46
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         100.1,
         98.08,
         97.69,
-        97.32
+        97.2
       ]
     },
     {
@@ -222,7 +222,7 @@
         89.83,
         89.82,
         90.83,
-        91.07
+        91.15
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.98,
         98.13,
         98.49,
-        97.83
+        97.92
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.94,
         96.15,
         98.07,
-        96.61
+        96.65
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.03,
         113.21,
         113.6,
-        113.78
+        113.89
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         88.36,
         86.47,
         87.64,
-        87.4
+        87.47
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.82,
         95.73,
         96.54,
-        96.37
+        96.5
       ]
     },
     {
@@ -529,7 +529,7 @@
         97.65,
         101.77,
         101.22,
-        100.08
+        100.18
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.98,
         104.19,
         105.84,
-        105.4
+        105.54
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         92.49,
         93.63,
         94.13,
-        93.77
+        93.79
       ]
     }
   ],
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 15.5,
-      "delta": "−0,3 · 1 v",
+      "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4705",
+      "varde": "4699",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,6 %",
+      "delta4v": "+16,4 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,74",
+      "varde": "68,65",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+20,0 %",
+      "delta4v": "+19,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,72",
+      "varde": "6,71",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,3 %",
+      "delta4v": "+6,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 87.36,
+      "v": 87.03,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1686,7 +1686,7 @@
           100.67,
           100.21,
           100.29,
-          100.1
+          100.12
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.34,
           99.81,
           99.19,
-          99.37
+          99.27
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.27,
-          101.16
+          101.23
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           104.24,
-          104.28
+          104.35
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.06,
           98.71,
           97.59,
-          98.6
+          98.47
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           88.45,
           90.94,
           90.09,
-          89.85
+          89.86
         ]
       },
       {
@@ -1948,13 +1948,13 @@
         },
         {
           "datum": "2026-08-24",
-          "namn": "Wright David Marshall  (CIK 0001672443); ITRON, INC.  (CIK 0000780571)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1672443/000078057126000192"
+          "namn": "Sullivan John Richmond  (CIK 0002131529); Track Group, Inc.  (CIK 0001045942)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2131529/000213152926000004"
         },
         {
           "datum": "2026-08-24",
-          "namn": "Sullivan John Richmond  (CIK 0002131529); Track Group, Inc.  (CIK 0001045942)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2131529/000213152926000004"
+          "namn": "Wright David Marshall  (CIK 0001672443); ITRON, INC.  (CIK 0000780571)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1672443/000078057126000192"
         },
         {
           "datum": "2026-08-24",
@@ -1968,13 +1968,8 @@
         },
         {
           "datum": "2026-08-24",
-          "namn": "Levy Alexander Coleman  (CIK 0002137803); YELP INC  (CIK 0001345016)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2137803/000213780326000006"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "McClaflin Michael Joseph  (CIK 0001771587); FLEXSTEEL INDUSTRIES INC  (CIK 0000037472)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1771587/000003747226000062"
+          "namn": "Ryan Owen  (CIK 0001748906); BLACKLINE, INC.  (CIK 0001666134)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1748906/000166613426000088"
         },
         {
           "datum": "2026-08-24",
@@ -1990,13 +1985,29 @@
           "datum": "2026-08-24",
           "namn": "Hively Brad  (CIK 0001891124); Starling Oncology, Inc.  (CIK 0001799191)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1891124/000107997326001175"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Levy Alexander Coleman  (CIK 0002137803); YELP INC  (CIK 0001345016)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2137803/000213780326000006"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T16:17+00:00"
+      "vintage": "2026-08-25T17:10+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-25 19:01:50",
+          "emittent": "Holmen AB",
+          "person": "Carina Åkerström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "804,0",
+          "enhet": "Antal",
+          "pris": "324,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 17:45:55",
           "emittent": "Corem Property Group AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "6,368",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 15:59:29",
-          "emittent": "Sweden BuyersClub AB",
-          "person": "Emil Henriksson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "6,46",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T16:17+00:00"
+      "vintage": "2026-08-25T17:10+00:00"
     }
   }
 }
