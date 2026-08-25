@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T03:09+00:00",
+  "genererad": "2026-08-25T04:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4680",
+      "varde": "4691",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,0 %",
+      "delta4v": "+16,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,66",
+      "varde": "67,96",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,1 %",
+      "delta4v": "+18,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,1 %",
+      "delta4v": "+4,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 92.53,
+      "v": 92.51,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1809,7 +1809,7 @@
           107.63,
           102.86,
           103.04,
-          103.54
+          103.85
         ]
       },
       {
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T03:09+00:00"
+      "vintage": "2026-08-25T04:21+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T03:09+00:00"
+      "vintage": "2026-08-25T04:21+00:00"
     }
   }
 }
