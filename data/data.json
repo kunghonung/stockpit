@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T14:25+00:00",
+  "genererad": "2026-08-25T15:25+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.96,
         106.58,
         104.99,
-        105.5
+        105.62
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         100.1,
         98.08,
         97.69,
-        97.51
+        97.4
       ]
     },
     {
@@ -222,7 +222,7 @@
         89.83,
         89.82,
         90.83,
-        90.86
+        90.92
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.98,
         98.13,
         98.49,
-        97.91
+        97.85
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.94,
         96.15,
         98.07,
-        96.88
+        96.79
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.03,
         113.21,
         113.6,
-        113.74
+        114.01
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         88.36,
         86.47,
         87.64,
-        87.43
+        87.56
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.82,
         95.73,
         96.54,
-        96.19
+        96.51
       ]
     },
     {
@@ -529,7 +529,7 @@
         97.65,
         101.77,
         101.22,
-        100.23
+        100.4
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.98,
         104.19,
         105.84,
-        105.48
+        105.51
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         92.49,
         93.63,
         94.13,
-        93.81
+        93.69
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 2.7,
-      "delta": "+3 bp · 1 v",
+      "varde": 2.69,
+      "delta": "−1 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-08-21",
+      "vintage": "2026-08-24",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.8,
+      "varde": 15.7,
       "delta": "−0,1 · 1 v",
       "trosklar": [
         20,
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.8,
+      "varde": 15.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 2.7,
+      "varde": 2.69,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4680",
+      "varde": "4688",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,9 %",
+      "delta4v": "+16,1 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,83",
+      "varde": "68,09",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,4 %",
+      "delta4v": "+18,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,64",
+      "varde": "6,66",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,0 %",
+      "delta4v": "+5,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 87.91,
+      "v": 87.88,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1686,7 +1686,7 @@
           100.67,
           100.21,
           100.29,
-          100.18
+          100.11
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.34,
           99.81,
           99.19,
-          99.35
+          99.34
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.27,
-          101.29
+          101.23
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           104.24,
-          104.41
+          104.38
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.06,
           98.71,
           97.59,
-          98.36
+          98.48
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           88.45,
           90.94,
           90.09,
-          90.03
+          89.83
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.71,
           95.31,
           95.11,
-          96.14
+          96.31
         ]
       }
     ],
@@ -1993,10 +1993,109 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T14:25+00:00"
+      "vintage": "2026-08-25T15:25+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-25 17:24:35",
+          "emittent": "Episurf Medical AB (Publ)",
+          "person": "Patrick Jamnik",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "335231,0",
+          "enhet": "Antal",
+          "pris": "0,0828",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 17:24:35",
+          "emittent": "Episurf Medical AB (Publ)",
+          "person": "Patrick Jamnik",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "1500000,0",
+          "enhet": "Antal",
+          "pris": "0,0815",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 17:24:35",
+          "emittent": "Episurf Medical AB (Publ)",
+          "person": "Patrick Jamnik",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "43259,0",
+          "enhet": "Antal",
+          "pris": "0,0831",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 17:24:35",
+          "emittent": "Episurf Medical AB (Publ)",
+          "person": "Patrick Jamnik",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "18935,0",
+          "enhet": "Antal",
+          "pris": "0,0832",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 16:40:53",
+          "emittent": "K2A Knaust & Andersson Fastigheter AB (publ)",
+          "person": "Johan Knaust",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "21689,0",
+          "enhet": "Antal",
+          "pris": "4,38",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 16:32:19",
+          "emittent": "K-Fast Holding AB",
+          "person": "Jimmy Fröberg",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "4272,0",
+          "enhet": "Antal",
+          "pris": "11,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 16:25:49",
+          "emittent": "SEHED Byggmästargruppen AB",
+          "person": "Kent Isaksson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "26,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 16:25:49",
+          "emittent": "SEHED Byggmästargruppen AB",
+          "person": "Kent Isaksson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "26,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-25 16:25:49",
+          "emittent": "SEHED Byggmästargruppen AB",
+          "person": "Kent Isaksson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "26,70",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 16:21:15",
           "emittent": "Alimak Group AB (publ)",
@@ -2447,110 +2546,11 @@
           "enhet": "Antal",
           "pris": "117,45",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 14:11:30",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Andreas Morfiadakis",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Pantsättning",
-          "volym": "266667,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 14:11:30",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Andreas Morfiadakis",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Pantsättning",
-          "volym": "2331287,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 13:01:06",
-          "emittent": "Cell Impact AB (publ)",
-          "person": "Lars Bergström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "1901666,0",
-          "enhet": "Antal",
-          "pris": "0,33",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 11:39:03",
-          "emittent": "Generic Sweden AB (publ)",
-          "person": "Daniel Shnira",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "2177,0",
-          "enhet": "Antal",
-          "pris": "40,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 11:07:54",
-          "emittent": "Bufab AB (publ)",
-          "person": "Carina Lööv",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1235,0",
-          "enhet": "Antal",
-          "pris": "252,65",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 11:07:54",
-          "emittent": "Bufab AB (publ)",
-          "person": "Carina Lööv",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "765,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 11:07:54",
-          "emittent": "Bufab AB (publ)",
-          "person": "Carina Lööv",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "3825,0",
-          "enhet": "Antal",
-          "pris": "81,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 10:52:29",
-          "emittent": "NP3 Fastigheter AB",
-          "person": "Andreas Wahlén",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "25000,0",
-          "enhet": "Antal",
-          "pris": "30,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 10:12:36",
-          "emittent": "Hexagon Aktiebolag",
-          "person": "Tomas Eliasson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "12000,0",
-          "enhet": "Antal",
-          "pris": "100,00",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 9,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T14:25+00:00"
+      "vintage": "2026-08-25T15:25+00:00"
     }
   }
 }
