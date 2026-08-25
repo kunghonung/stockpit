@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T05:15+00:00",
+  "genererad": "2026-08-25T06:02+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4686",
+      "varde": "4694",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,1 %",
+      "delta4v": "+16,3 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,90",
+      "varde": "67,85",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,5 %",
+      "delta4v": "+18,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,1 %",
+      "delta4v": "+4,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 92.09,
+      "v": 91.57,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1809,7 +1809,7 @@
           107.63,
           102.86,
           103.04,
-          103.77
+          103.83
         ]
       },
       {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T05:15+00:00"
+      "vintage": "2026-08-25T06:02+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-25 08:00:45",
+          "emittent": "Balco AB",
+          "person": "Thomas Widstrand",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "15,576223",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 06:39:58",
           "emittent": "Mips AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,07",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-22 16:28:13",
-          "emittent": "Seamless Distribution Systems AB",
-          "person": "Martin Roos",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "23438,0",
-          "enhet": "Antal",
-          "pris": "7,35",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T05:15+00:00"
+      "vintage": "2026-08-25T06:02+00:00"
     }
   }
 }
