@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T21:39+00:00",
+  "genererad": "2026-08-25T22:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4716",
+      "varde": "4726",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,8 %",
+      "delta4v": "+17,1 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,63",
+      "varde": "68,93",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+19,8 %",
+      "delta4v": "+20,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,71",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,2 %",
+      "delta4v": "+6,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 85.86,
+      "v": 86.15,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T21:39+00:00"
+      "vintage": "2026-08-25T22:41+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 00:05:50",
+          "emittent": "Alimak Group AB (publ)",
+          "person": "Ole Jødahl",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen minskning",
+          "volym": "74250,0",
+          "enhet": "Antal",
+          "pris": "58,78",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 23:03:05",
           "emittent": "PHYSITRACK PLC",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "280,6572",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 17:53:00",
-          "emittent": "Essity Aktiebolag (publ)",
-          "person": "Karl Åberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "280960,0",
-          "enhet": "Antal",
-          "pris": "281,3172",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T21:39+00:00"
+      "vintage": "2026-08-25T22:41+00:00"
     }
   }
 }
