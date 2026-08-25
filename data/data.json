@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T10:46+00:00",
+  "genererad": "2026-08-25T11:38+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 15.8,
-      "delta": "+0,0 · 1 v",
+      "delta": "−0,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4691",
+      "varde": "4696",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,2 %",
+      "delta4v": "+16,3 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,82",
+      "varde": "68,02",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,4 %",
+      "delta4v": "+18,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,64",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,1 %",
+      "delta4v": "+5,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 87.94,
+      "v": 88.21,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1768,7 +1768,7 @@
           100.28,
           99.19,
           100.11,
-          101.02
+          100.99
         ]
       },
       {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T10:46+00:00"
+      "vintage": "2026-08-25T11:38+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-25 13:24:34",
+          "emittent": "LUXBRIGHT AB",
+          "person": "Mikael Andersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "20032930,0",
+          "enhet": "Antal",
+          "pris": "0,13",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 10:22:38",
           "emittent": "KlaraBo Sverige AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "18,24",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-23 21:36:21",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1086,0",
-          "enhet": "Antal",
-          "pris": "24,82",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T10:46+00:00"
+      "vintage": "2026-08-25T11:38+00:00"
     }
   }
 }
