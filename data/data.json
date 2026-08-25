@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-25",
-  "genererad": "2026-08-25T18:54+00:00",
+  "genererad": "2026-08-25T19:42+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.96,
         106.58,
         104.99,
-        105.57
+        105.48
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         100.1,
         98.08,
         97.69,
-        97.06
+        97.2
       ]
     },
     {
@@ -222,7 +222,7 @@
         89.83,
         89.82,
         90.83,
-        91.04
+        91.33
       ]
     },
     {
@@ -324,7 +324,7 @@
         94.94,
         96.15,
         98.07,
-        96.73
+        96.68
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.03,
         113.21,
         113.6,
-        113.76
+        113.61
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         88.36,
         86.47,
         87.64,
-        87.74
+        87.86
       ]
     },
     {
@@ -478,7 +478,7 @@
         94.82,
         95.73,
         96.54,
-        96.48
+        96.47
       ]
     },
     {
@@ -529,7 +529,7 @@
         97.65,
         101.77,
         101.22,
-        99.98
+        99.83
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.98,
         104.19,
         105.84,
-        105.72
+        105.75
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         92.49,
         93.63,
         94.13,
-        93.7
+        93.66
       ]
     }
   ],
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4707",
+      "varde": "4717",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,6 %",
+      "delta4v": "+16,9 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,82",
+      "varde": "69,06",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+20,1 %",
+      "delta4v": "+20,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,70",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,0 %",
+      "delta4v": "+6,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-25"
     },
     "olja": {
-      "v": 87.3,
+      "v": 87.22,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-25"
     }
@@ -1686,7 +1686,7 @@
           100.67,
           100.21,
           100.29,
-          100.07
+          100.08
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.34,
           99.81,
           99.19,
-          99.23
+          99.24
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.27,
-          101.1
+          101.13
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           104.24,
-          104.22
+          104.25
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.06,
           98.71,
           97.59,
-          98.64
+          98.67
         ]
       },
       {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-25T18:54+00:00"
+      "vintage": "2026-08-25T19:42+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-25 21:07:36",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5441,0",
+          "enhet": "Antal",
+          "pris": "42,9337",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-25 20:30:18",
           "emittent": "Bluelake Mineral AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "6,85",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 16:37:00",
-          "emittent": "K-Fast Holding AB",
-          "person": "Jimmy Fröberg",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "5967,0",
-          "enhet": "Antal",
-          "pris": "11,20",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-25T18:54+00:00"
+      "vintage": "2026-08-25T19:42+00:00"
     }
   }
 }
