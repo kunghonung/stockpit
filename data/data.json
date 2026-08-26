@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-26",
-  "genererad": "2026-08-26T04:21+00:00",
+  "genererad": "2026-08-26T05:14+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +10 bp/mån."
     },
     "bredd": {
-      "over50": 59,
-      "over200": 73,
-      "antal": 500,
-      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 500 bolag)",
-      "vintage": "2026-08-25",
+      "over50": 58,
+      "over200": 71,
+      "antal": 498,
+      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
+      "vintage": "2026-08-26",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+2 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4700",
+      "varde": "4701",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+16,5 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "69,26",
+      "varde": "69,08",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+19,7 %",
+      "delta4v": "+19,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,76",
+      "varde": "6,75",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+7,8 %",
+      "delta4v": "+7,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-26"
     },
     "olja": {
-      "v": 85.28,
+      "v": 85.46,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-26"
     }
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           104.19,
-          104.87
+          105.0
         ]
       },
       {
@@ -1942,9 +1942,44 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-25",
-          "namn": "Zhao Lynn  (CIK 0001724840); SOCKET MOBILE, INC.  (CIK 0000944075)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1724840/000094407526000070"
+          "datum": "2026-08-24",
+          "namn": "Levy Alexander Coleman  (CIK 0002137803); YELP INC  (CIK 0001345016)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2137803/000213780326000006"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "McClaflin Michael Joseph  (CIK 0001771587); FLEXSTEEL INDUSTRIES INC  (CIK 0000037472)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1771587/000003747226000062"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Rein Graeme P.  (CIK 0001674265); ACCESS Newswire Inc.  (CIK 0000843006)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1674265/000106299326004569"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Taneja Rajat  (CIK 0001532601); VISA INC.  (CIK 0001403161)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1532601/000140316126000113"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Hively Brad  (CIK 0001891124); Starling Oncology, Inc.  (CIK 0001799191)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891124/000107997326001175"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Ryan Owen  (CIK 0001748906); BLACKLINE, INC.  (CIK 0001666134)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1748906/000166613426000088"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Suidan Marc  (CIK 0001924949); Backblaze, Inc.  (CIK 0001462056)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1924949/000162828026058707"
+        },
+        {
+          "datum": "2026-08-24",
+          "namn": "Armanino Andrew J.  (CIK 0001807550); California BanCorp \\ CA  (CIK 0001795815)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1807550/000180755026000008"
         },
         {
           "datum": "2026-08-24",
@@ -1952,51 +1987,27 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1372907/000199937126018494"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Piper Sarah  (CIK 0001956835); MCCORMICK & CO INC  (CIK 0000063754)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1956835/000006375426000298"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Santiago Helen S  (CIK 0001858668); CITIZENS & NORTHERN CORP  (CIK 0000810958)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1858668/000185866826000008"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Seely Lynn  (CIK 0001327111); Lyell Immunopharma, Inc.  (CIK 0001806952)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1327111/000132711126000006"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Daunt John  (CIK 0001774667); LIQUIDITY SERVICES INC  (CIK 0001235468)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1774667/000177466726000026"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "South Thomas A  (CIK 0001751051); NORTHERN TRUST CORP  (CIK 0000073124)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1751051/000175105126000014"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Rennick Charles D  (CIK 0001564616); TechTarget, Inc.  (CIK 0002018064)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1564616/000119312526365200"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
+          "datum": "2026-08-24",
+          "namn": "Wright David Marshall  (CIK 0001672443); ITRON, INC.  (CIK 0000780571)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1672443/000078057126000192"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-26T04:21+00:00"
+      "vintage": "2026-08-26T05:14+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 06:50:02",
+          "emittent": "Viaplay Group AB (publ)",
+          "person": "Mikael Svensson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "78888,0",
+          "enhet": "Antal",
+          "pris": "1,331",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-26 00:05:50",
           "emittent": "Alimak Group AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "381,08",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 17:53:00",
-          "emittent": "Essity Aktiebolag (publ)",
-          "person": "Karl Åberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "99673,0",
-          "enhet": "Antal",
-          "pris": "280,6572",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-26T04:21+00:00"
+      "vintage": "2026-08-26T05:14+00:00"
     }
   }
 }
