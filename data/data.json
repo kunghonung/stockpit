@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-26",
-  "genererad": "2026-08-26T09:54+00:00",
+  "genererad": "2026-08-26T10:48+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,60",
+      "varde": "68,56",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+18,5 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,82",
+      "varde": "6,81",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+8,7 %",
+      "delta4v": "+8,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-26"
     },
     "olja": {
-      "v": 84.85,
+      "v": 85.05,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-26"
     }
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.07,
-          101.23
+          101.18
         ]
       },
       {
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-26T09:53+00:00"
+      "vintage": "2026-08-26T10:48+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 12:44:27",
+          "emittent": "Lea Bank AB",
+          "person": "Geir Jörgensen",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "16,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 12:36:14",
+          "emittent": "BONESUPPORT HOLDING AB",
+          "person": "Christine Elizabeth Rankin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "30,0",
+          "enhet": "Antal",
+          "pris": "227,80",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-26 10:34:58",
           "emittent": "Investment Aktiebolaget Spiltan",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "68,3",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 08:00:45",
-          "emittent": "Balco AB",
-          "person": "Thomas Widstrand",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "15,576223",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 06:39:58",
-          "emittent": "Mips AB",
-          "person": "Jonas Söderqvist",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-26T09:54+00:00"
+      "vintage": "2026-08-26T10:48+00:00"
     }
   }
 }
