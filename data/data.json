@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-26",
-  "genererad": "2026-08-26T11:40+00:00",
+  "genererad": "2026-08-26T13:12+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.6,
-      "delta": "+0,7 · 1 v",
+      "varde": 15.7,
+      "delta": "+0,8 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.6,
+      "varde": 15.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,48",
+      "varde": "68,44",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+18,3 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,81",
+      "varde": "6,79",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+8,6 %",
+      "delta4v": "+8,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-26"
     },
     "olja": {
-      "v": 85.29,
+      "v": 85.64,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-26"
     }
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.07,
-          101.24
+          101.33
         ]
       },
       {
@@ -1942,44 +1942,9 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-24",
-          "namn": "Levy Alexander Coleman  (CIK 0002137803); YELP INC  (CIK 0001345016)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2137803/000213780326000006"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "McClaflin Michael Joseph  (CIK 0001771587); FLEXSTEEL INDUSTRIES INC  (CIK 0000037472)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1771587/000003747226000062"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "Rein Graeme P.  (CIK 0001674265); ACCESS Newswire Inc.  (CIK 0000843006)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1674265/000106299326004569"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "Taneja Rajat  (CIK 0001532601); VISA INC.  (CIK 0001403161)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1532601/000140316126000113"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "Hively Brad  (CIK 0001891124); Starling Oncology, Inc.  (CIK 0001799191)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891124/000107997326001175"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "Ryan Owen  (CIK 0001748906); BLACKLINE, INC.  (CIK 0001666134)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1748906/000166613426000088"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "Suidan Marc  (CIK 0001924949); Backblaze, Inc.  (CIK 0001462056)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1924949/000162828026058707"
-        },
-        {
-          "datum": "2026-08-24",
-          "namn": "Armanino Andrew J.  (CIK 0001807550); California BanCorp \\ CA  (CIK 0001795815)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1807550/000180755026000008"
+          "datum": "2026-08-25",
+          "namn": "Zhao Lynn  (CIK 0001724840); SOCKET MOBILE, INC.  (CIK 0000944075)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1724840/000094407526000070"
         },
         {
           "datum": "2026-08-24",
@@ -1987,16 +1952,128 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1372907/000199937126018494"
         },
         {
-          "datum": "2026-08-24",
-          "namn": "Wright David Marshall  (CIK 0001672443); ITRON, INC.  (CIK 0000780571)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1672443/000078057126000192"
+          "datum": "2026-08-25",
+          "namn": "Piper Sarah  (CIK 0001956835); MCCORMICK & CO INC  (CIK 0000063754)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1956835/000006375426000298"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Santiago Helen S  (CIK 0001858668); CITIZENS & NORTHERN CORP  (CIK 0000810958)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1858668/000185866826000008"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Seely Lynn  (CIK 0001327111); Lyell Immunopharma, Inc.  (CIK 0001806952)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1327111/000132711126000006"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Daunt John  (CIK 0001774667); LIQUIDITY SERVICES INC  (CIK 0001235468)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1774667/000177466726000026"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "South Thomas A  (CIK 0001751051); NORTHERN TRUST CORP  (CIK 0000073124)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1751051/000175105126000014"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Rennick Charles D  (CIK 0001564616); TechTarget, Inc.  (CIK 0002018064)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1564616/000119312526365200"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-26T11:40+00:00"
+      "vintage": "2026-08-26T13:12+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 14:59:04",
+          "emittent": "Lea Bank AB",
+          "person": "Oddbjorn Berentsen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "400000,0",
+          "enhet": "Antal",
+          "pris": "16,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 14:49:45",
+          "emittent": "Gentoo Media Inc",
+          "person": "Alexander Richter",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "14000,0",
+          "enhet": "Antal",
+          "pris": "5,09",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 14:22:06",
+          "emittent": "Lea Bank AB",
+          "person": "Oystein Fjalestad",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "16,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 13:59:35",
+          "emittent": "Lea Bank AB",
+          "person": "Tobias Kildahl",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Tilldelning",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "16,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 13:53:48",
+          "emittent": "Hacksaw AB",
+          "person": "Mikael Rahm",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Tilldelning",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "6,61",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 13:42:35",
+          "emittent": "Micro Systemation AB",
+          "person": "Peter Gille",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "93,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 13:42:35",
+          "emittent": "Micro Systemation AB",
+          "person": "Peter Gille",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "93,95",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-26 13:20:38",
           "emittent": "CAG Group AB",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "92,74",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 15:01:44",
-          "emittent": "Kjell Group AB (publ)",
-          "person": "Göran Westerberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "15,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 13:56:49",
-          "emittent": "Infrea AB",
-          "person": "Johan Garmstedt",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "3076,0",
-          "enhet": "Antal",
-          "pris": "13,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 13:24:34",
-          "emittent": "LUXBRIGHT AB",
-          "person": "Mikael Andersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "20032930,0",
-          "enhet": "Antal",
-          "pris": "0,13",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:22:38",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Anders Pettersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "3844460,0",
-          "enhet": "Antal",
-          "pris": "13,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:22:38",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Anders Pettersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "3844460,0",
-          "enhet": "Antal",
-          "pris": "13,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:19:39",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Anders Pettersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "13,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:19:39",
-          "emittent": "KlaraBo Sverige AB",
-          "person": "Anders Pettersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "13,9",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-26T11:40+00:00"
+      "vintage": "2026-08-26T13:12+00:00"
     }
   }
 }
