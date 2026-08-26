@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-26",
-  "genererad": "2026-08-26T16:04+00:00",
+  "genererad": "2026-08-26T16:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         108.96,
         106.58,
         105.64,
-        105.94
+        106.0
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         100.1,
         98.08,
         97.05,
-        98.24
+        98.17
       ]
     },
     {
@@ -222,7 +222,7 @@
         89.83,
         89.82,
         91.24,
-        90.87
+        90.92
       ]
     },
     {
@@ -273,7 +273,7 @@
         94.98,
         98.13,
         98.18,
-        98.7
+        98.67
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.03,
         113.21,
         113.62,
-        112.68
+        112.85
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         88.36,
         86.47,
         87.54,
-        88.05
+        88.14
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         94.82,
         95.73,
         96.3,
-        96.18
+        96.03
       ]
     },
     {
@@ -529,7 +529,7 @@
         97.65,
         101.77,
         99.22,
-        100.81
+        100.39
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.98,
         104.19,
         105.67,
-        105.75
+        105.7
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         92.49,
         93.63,
         93.55,
-        92.81
+        92.87
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.4,
-      "delta": "+0,5 · 1 v",
+      "varde": 15.7,
+      "delta": "+0,8 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.4,
+      "varde": 15.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4656",
+      "varde": "4646",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,4 %",
+      "delta4v": "+15,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,90",
+      "varde": "67,92",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,3 %",
+      "delta4v": "+17,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-26"
     },
     "olja": {
-      "v": 87.67,
+      "v": 87.88,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-26"
     }
@@ -1727,7 +1727,7 @@
           101.34,
           99.81,
           99.26,
-          99.25
+          99.31
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.07,
-          101.24
+          101.31
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           104.19,
-          105.02
+          105.09
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.06,
           98.71,
           98.73,
-          98.82
+          98.88
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           88.45,
           90.94,
           89.91,
-          90.13
+          90.1
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.71,
           95.31,
           96.28,
-          95.62
+          95.59
         ]
       }
     ],
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-26T16:04+00:00"
+      "vintage": "2026-08-26T16:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 18:40:07",
+          "emittent": "Online Brands Nordic AB",
+          "person": "Fredrik Lindquist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "6097,0",
+          "enhet": "Antal",
+          "pris": "14,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-26 17:31:32",
           "emittent": "HMS Networks AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 17:24:35",
-          "emittent": "Episurf Medical AB (Publ)",
-          "person": "Patrick Jamnik",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "335231,0",
-          "enhet": "Antal",
-          "pris": "0,0828",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 8,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-26T16:04+00:00"
+      "vintage": "2026-08-26T16:57+00:00"
     }
   }
 }
