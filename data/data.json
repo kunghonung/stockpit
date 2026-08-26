@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-26",
-  "genererad": "2026-08-26T10:48+00:00",
+  "genererad": "2026-08-26T11:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.7,
-      "delta": "+0,8 · 1 v",
+      "varde": 15.6,
+      "delta": "+0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.7,
+      "varde": 15.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4678",
+      "varde": "4676",
       "enhet": "USD/oz",
       "pil": "upp",
       "delta4v": "+15,9 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,56",
+      "varde": "68,48",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,5 %",
+      "delta4v": "+18,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-26"
     },
     "olja": {
-      "v": 85.05,
+      "v": 85.29,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-26"
     }
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.07,
-          101.18
+          101.24
         ]
       },
       {
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-26T10:48+00:00"
+      "vintage": "2026-08-26T11:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 13:20:38",
+          "emittent": "CAG Group AB",
+          "person": "Markus Åkesson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1874,0",
+          "enhet": "Antal",
+          "pris": "94,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 13:13:20",
+          "emittent": "Lea Bank AB",
+          "person": "Amelie Rybeck",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "16,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 12:58:40",
+          "emittent": "Viaplay Group AB (publ)",
+          "person": "Philip Wågnert",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "180491,0",
+          "enhet": "Antal",
+          "pris": "1,383",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-26 12:44:27",
           "emittent": "Lea Bank AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "13,9",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:17:46",
-          "emittent": "Intervacc AB",
-          "person": "Astrid Larberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3500,0",
-          "enhet": "Antal",
-          "pris": "1,14",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:09:52",
-          "emittent": "Prevas AB ser. B",
-          "person": "Robert Demark",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "26000,0",
-          "enhet": "Antal",
-          "pris": "68,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 10:09:52",
-          "emittent": "Prevas AB ser. B",
-          "person": "Robert Demark",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "26000,0",
-          "enhet": "Antal",
-          "pris": "68,3",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-26T10:48+00:00"
+      "vintage": "2026-08-26T11:40+00:00"
     }
   }
 }
