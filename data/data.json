@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-26",
-  "genererad": "2026-08-26T07:58+00:00",
+  "genererad": "2026-08-26T08:58+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4688",
+      "varde": "4684",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,2 %",
+      "delta4v": "+16,1 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "68,82",
+      "varde": "68,58",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+18,9 %",
+      "delta4v": "+18,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,82",
+      "varde": "6,83",
       "enhet": "USD/t",
       "pil": "upp",
       "delta4v": "+8,8 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-26"
     },
     "olja": {
-      "v": 85.05,
+      "v": 84.89,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-26"
     }
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           101.07,
-          101.04
+          101.18
         ]
       },
       {
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-26T07:58+00:00"
+      "vintage": "2026-08-26T08:58+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-26 10:34:58",
+          "emittent": "Investment Aktiebolaget Spiltan",
+          "person": "Per Börjesson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "18000,0",
+          "enhet": "Antal",
+          "pris": "178,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 10:06:31",
+          "emittent": "Paxman AB (publ)",
+          "person": "Per-Anders Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "58,4",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 10:05:23",
+          "emittent": "NYAB",
+          "person": "Johan Nilsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "6,82",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-26 10:01:01",
+          "emittent": "Viaplay Group AB (publ )",
+          "person": "Christian Albeck",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "1,328",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-26 09:41:38",
           "emittent": "Vimian Group AB (publ)",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-25 06:39:58",
-          "emittent": "Mips AB",
-          "person": "Jonas Söderqvist",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "1040,0",
-          "enhet": "Antal",
-          "pris": "381,08",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 23:08:44",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,072",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 23:08:44",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "0,064",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-24 22:28:29",
-          "emittent": "Arla Plast AB",
-          "person": "Ulf Hedlundh",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "180,0",
-          "enhet": "Antal",
-          "pris": "38,79",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-26T07:58+00:00"
+      "vintage": "2026-08-26T08:58+00:00"
     }
   }
 }
