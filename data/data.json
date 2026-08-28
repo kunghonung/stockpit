@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-28",
-  "genererad": "2026-08-28T00:23+00:00",
+  "genererad": "2026-08-28T12:11+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         108.22,
         108.96,
         106.58,
-        106.26,
+        108.9,
         108.9
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         99.78,
         100.1,
         98.08,
-        98.08,
+        96.61,
         96.61
       ]
     },
@@ -221,7 +221,7 @@
         88.83,
         89.83,
         89.82,
-        90.76,
+        89.21,
         89.21
       ]
     },
@@ -272,7 +272,7 @@
         95.94,
         94.98,
         98.13,
-        98.32,
+        96.88,
         96.88
       ]
     },
@@ -323,7 +323,7 @@
         94.25,
         94.94,
         96.15,
-        96.42,
+        94.47,
         94.47
       ]
     },
@@ -374,7 +374,7 @@
         106.37,
         107.03,
         113.21,
-        112.46,
+        110.47,
         110.47
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         87.31,
         88.36,
         86.47,
-        87.93,
+        86.69,
         86.69
       ]
     },
@@ -477,7 +477,7 @@
         94.58,
         94.82,
         95.73,
-        95.7,
+        94.17,
         94.17
       ]
     },
@@ -528,7 +528,7 @@
         91.06,
         97.65,
         101.77,
-        99.79,
+        98.92,
         98.92
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         103.39,
         103.98,
         104.19,
-        105.56,
+        104.19,
         104.19
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         94.16,
         92.49,
         93.63,
-        92.9,
+        91.29,
         91.29
       ]
     }
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 14.5,
-      "delta": "−1,5 · 1 v",
+      "delta": "−0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 93,
+        "index": 96,
         "pil": "ned",
         "status": "gul"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 108,
+        "index": 109,
         "pil": "upp",
         "status": "gron"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 99,
+        "index": 100,
         "pil": "ned",
         "status": "gul"
       },
@@ -750,7 +750,7 @@
         "id": "hygtlt",
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
-        "index": 102,
+        "index": 101,
         "pil": "ned",
         "status": "gul"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 90,
+        "index": 93,
         "pil": "ned",
         "status": "gul"
       },
@@ -766,14 +766,14 @@
         "id": "qqqspy",
         "namn": "QQQ/SPY",
         "grupp": "AI/Tech-cykel",
-        "index": 98,
+        "index": 99,
         "pil": "upp",
         "status": "gron"
       }
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-08-24"
+      "vintage": "2026-08-28"
     },
     "crowding": {
       "score": 9,
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4655",
+      "varde": "4644",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+13,5 %",
+      "delta4v": "+14,7 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "70,19",
+      "varde": "71,02",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+19,3 %",
+      "delta4v": "+23,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,69",
+      "varde": "6,73",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,7 %",
+      "delta4v": "+4,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-28"
     },
     "olja": {
-      "v": 88.43,
+      "v": 88.05,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-28"
     }
@@ -1685,7 +1685,7 @@
           100.8,
           100.67,
           100.21,
-          100.2,
+          100.46,
           100.46
         ]
       },
@@ -1726,7 +1726,7 @@
           100.75,
           101.34,
           99.81,
-          99.46,
+          100.43,
           100.43
         ]
       },
@@ -1767,8 +1767,8 @@
           101.42,
           100.53,
           100.88,
-          101.17,
-          100.08
+          100.08,
+          100.49
         ]
       },
       {
@@ -1808,8 +1808,8 @@
           103.56,
           107.9,
           104.62,
-          104.95,
-          104.5
+          104.33,
+          104.76
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           96.15,
           97.06,
           98.71,
-          98.73,
+          98.98,
           98.98
         ]
       },
@@ -1890,7 +1890,7 @@
           92.07,
           88.45,
           90.94,
-          89.98,
+          89.3,
           89.3
         ]
       },
@@ -1931,7 +1931,7 @@
           96.33,
           94.71,
           95.31,
-          95.47,
+          94.67,
           94.67
         ]
       }
@@ -1943,6 +1943,11 @@
       "poster": [
         {
           "datum": "2026-08-25",
+          "namn": "SKINNER DEBORAH E  (CIK 0001184722); FARMERS & MERCHANTS BANCORP  (CIK 0001085913)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1184722/000121390026093357"
+        },
+        {
+          "datum": "2026-08-25",
           "namn": "Piper Sarah  (CIK 0001956835); MCCORMICK & CO INC  (CIK 0000063754)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1956835/000006375426000298"
         },
@@ -1950,11 +1955,6 @@
           "datum": "2026-08-25",
           "namn": "Santiago Helen S  (CIK 0001858668); CITIZENS & NORTHERN CORP  (CIK 0000810958)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1858668/000185866826000008"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
         },
         {
           "datum": "2026-08-25",
@@ -1968,6 +1968,11 @@
         },
         {
           "datum": "2026-08-25",
+          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
+        },
+        {
+          "datum": "2026-08-25",
           "namn": "South Thomas A  (CIK 0001751051); NORTHERN TRUST CORP  (CIK 0000073124)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1751051/000175105126000014"
         },
@@ -1978,25 +1983,295 @@
         },
         {
           "datum": "2026-08-25",
-          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "SKINNER DEBORAH E  (CIK 0001184722); FARMERS & MERCHANTS BANCORP  (CIK 0001085913)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1184722/000121390026093357"
-        },
-        {
-          "datum": "2026-08-25",
           "namn": "Zhao Lynn  (CIK 0001724840); SOCKET MOBILE, INC.  (CIK 0000944075)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1724840/000094407526000070"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-28T00:23+00:00"
+      "vintage": "2026-08-28T12:11+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-28 13:02:05",
+          "emittent": "Precise Biometrics AB",
+          "person": "Maria Wester",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "0,6885",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 13:00:00",
+          "emittent": "BrainCool AB (publ)",
+          "person": "Annelie Aava Vikner",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "0,84",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 12:55:53",
+          "emittent": "OncoZenge AB",
+          "person": "Paul Murtagh",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "5,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 11:22:14",
+          "emittent": "Duroc Aktiebolag",
+          "person": "Emil Otterskog",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "1168,0",
+          "enhet": "Antal",
+          "pris": "19,4",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 11:22:14",
+          "emittent": "Duroc Aktiebolag",
+          "person": "Emil Otterskog",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "832,0",
+          "enhet": "Antal",
+          "pris": "19,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 10:15:33",
+          "emittent": "Ellos Holding AB (publ)",
+          "person": "Morten Eivindssøn Astrup",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "17393,0",
+          "enhet": "Antal",
+          "pris": "57,9284",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:57:43",
+          "emittent": "Alimak Group AB (publ)",
+          "person": "Jose Maria Nevot",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "16875,0",
+          "enhet": "Antal",
+          "pris": "59,78",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:48:19",
+          "emittent": "Norion Bank AB",
+          "person": "David Lundqvist Ingvarsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1472,0",
+          "enhet": "Antal",
+          "pris": "67,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:33:00",
+          "emittent": "AQ Group AB",
+          "person": "Rolf Niklas Ericsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "227,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:14:09",
+          "emittent": "Online Brands Nordic AB",
+          "person": "Fredrik Lindquist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "6097,0",
+          "enhet": "Antal",
+          "pris": "14,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:14:09",
+          "emittent": "Online Brands Nordic AB",
+          "person": "Fredrik Lindquist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5903,0",
+          "enhet": "Antal",
+          "pris": "14,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:13:32",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "40279,0",
+          "enhet": "Antal",
+          "pris": "42,8391",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:13:32",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "58424,0",
+          "enhet": "Antal",
+          "pris": "42,8999",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 09:08:03",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Niklas Nyström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "250000,0",
+          "enhet": "Antal",
+          "pris": "0,125",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 08:56:09",
+          "emittent": "Touchtech AB",
+          "person": "Johan Berndtsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "17204,0",
+          "enhet": "Antal",
+          "pris": "4,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 08:34:59",
+          "emittent": "Brock Milton Capital AB",
+          "person": "Vikingam AB",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "546,0",
+          "enhet": "Antal",
+          "pris": "98,282051",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 08:22:10",
+          "emittent": "Alimak Group AB (publ)",
+          "person": "Jose Maria Nevot",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "16875,0",
+          "enhet": "Antal",
+          "pris": "63,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 08:18:09",
+          "emittent": "Alimak Group AB (publ)",
+          "person": "Jose Maria Nevot",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "16875,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 08:06:42",
+          "emittent": "Medclair AB",
+          "person": "Fredrik Crafoord",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "2,75",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 08:06:24",
+          "emittent": "Mysafety Group AB",
+          "person": "Marcus Pettersson Berver",
+          "befattning": "Verkställande direktör (VD), Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2330975,0",
+          "enhet": "Antal",
+          "pris": "21,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 07:59:19",
+          "emittent": "Saniona AB",
+          "person": "Anna Helena Constance Ljung",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4188,0",
+          "enhet": "Antal",
+          "pris": "11,94",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 07:59:00",
+          "emittent": "Mysafety Group AB",
+          "person": "Fredrik Crafoord",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "2330975,0",
+          "enhet": "Antal",
+          "pris": "21,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 07:33:12",
+          "emittent": "Carasent AB",
+          "person": "Johan Kallblad",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "24078,0",
+          "enhet": "Antal",
+          "pris": "25,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 07:33:12",
+          "emittent": "Carasent AB",
+          "person": "Johan Kallblad",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "26,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-28 07:33:12",
+          "emittent": "Carasent AB",
+          "person": "Johan Kallblad",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9922,0",
+          "enhet": "Antal",
+          "pris": "26,45",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-27 22:40:31",
           "emittent": "klarabo",
@@ -2271,286 +2546,11 @@
           "enhet": "Antal",
           "pris": "152,2474",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "154,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "157,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "153,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "2373,0",
-          "enhet": "Antal",
-          "pris": "152,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "38,0",
-          "enhet": "Antal",
-          "pris": "150,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "147,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "142,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "369,0",
-          "enhet": "Antal",
-          "pris": "148,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:32:56",
-          "emittent": "Zinzino AB",
-          "person": "Dag Bergheim Pettersen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "143,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:26:46",
-          "emittent": "Touchtech AB",
-          "person": "Deniz Chaban",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3199,0",
-          "enhet": "Antal",
-          "pris": "4,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "835,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "834,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "832,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "831,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "30000,0",
-          "enhet": "Antal",
-          "pris": "829,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "829,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "826,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "824,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "823,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 15:06:27",
-          "emittent": "Evolution AB (publ)",
-          "person": "Jens von Bahr",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "825,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 14:59:57",
-          "emittent": "Nordrest Holding AB",
-          "person": "Jonas Winkelmann",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "268,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 14:59:57",
-          "emittent": "Nordrest Holding AB",
-          "person": "Jonas Winkelmann",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "167,0",
-          "enhet": "Antal",
-          "pris": "268,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 14:48:10",
-          "emittent": "Logistri Fastighets AB (Publ)",
-          "person": "Sofia Aasvold",
-          "befattning": "Vice VD",
-          "karaktar": "Förvärv",
-          "volym": "7017,0",
-          "enhet": "Antal",
-          "pris": "14,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 13:48:46",
-          "emittent": "Navigo Invest AB (publ)",
-          "person": "Oscar Rolfsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "23500,0",
-          "enhet": "Antal",
-          "pris": "3,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-27 13:19:40",
-          "emittent": "Infracom Group AB (publ)",
-          "person": "Bo Kjellberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "16181,0",
-          "enhet": "Antal",
-          "pris": "13,86",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 16,
+      "nyaSenasteKorning": 25,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-28T00:23+00:00"
+      "vintage": "2026-08-28T12:11+00:00"
     }
   }
 }
