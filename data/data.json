@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-28",
-  "genererad": "2026-08-29T11:01+00:00",
+  "genererad": "2026-08-29T15:35+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         108.22,
         108.96,
         106.58,
-        108.9,
+        107.45,
         107.45
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         99.78,
         100.1,
         98.08,
-        96.61,
+        95.93,
         95.93
       ]
     },
@@ -221,7 +221,7 @@
         88.83,
         89.83,
         89.82,
-        89.21,
+        90.68,
         90.68
       ]
     },
@@ -272,7 +272,7 @@
         95.94,
         94.98,
         98.13,
-        96.88,
+        97.01,
         97.01
       ]
     },
@@ -323,7 +323,7 @@
         94.25,
         94.94,
         96.15,
-        94.47,
+        95.09,
         95.09
       ]
     },
@@ -374,7 +374,7 @@
         106.37,
         107.03,
         113.21,
-        110.47,
+        110.45,
         110.45
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         87.31,
         88.36,
         86.47,
-        86.69,
+        85.98,
         85.98
       ]
     },
@@ -477,7 +477,7 @@
         94.58,
         94.82,
         95.73,
-        94.17,
+        94.01,
         94.01
       ]
     },
@@ -528,7 +528,7 @@
         91.06,
         97.65,
         101.77,
-        98.92,
+        99.77,
         99.77
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         103.39,
         103.98,
         104.19,
-        104.19,
+        104.82,
         104.82
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         94.16,
         92.49,
         93.63,
-        91.29,
+        92.55,
         92.55
       ]
     }
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.5,
-      "delta": "−1,5 · 1 v",
+      "varde": 14.4,
+      "delta": "−0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 70.0,
-      "delta": "−3 · 1 v",
+      "varde": 71.0,
+      "delta": "−2 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 70.0,
+      "varde": 71.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.5,
+      "varde": 14.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -1685,7 +1685,7 @@
           100.8,
           100.67,
           100.21,
-          100.46,
+          100.51,
           100.51
         ]
       },
@@ -1726,7 +1726,7 @@
           100.75,
           101.34,
           99.81,
-          100.43,
+          100.05,
           100.05
         ]
       },
@@ -1767,7 +1767,7 @@
           101.42,
           100.53,
           100.88,
-          100.08,
+          100.86,
           100.86
         ]
       },
@@ -1808,7 +1808,7 @@
           103.56,
           107.9,
           104.62,
-          104.33,
+          105.05,
           105.05
         ]
       },
@@ -1849,7 +1849,7 @@
           96.15,
           97.06,
           98.71,
-          98.98,
+          98.56,
           98.56
         ]
       },
@@ -1890,7 +1890,7 @@
           92.07,
           88.45,
           90.94,
-          89.3,
+          90.08,
           90.08
         ]
       },
@@ -1931,7 +1931,7 @@
           96.33,
           94.71,
           95.31,
-          94.67,
+          94.99,
           94.99
         ]
       }
@@ -1993,10 +1993,109 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-29T11:01+00:00"
+      "vintage": "2026-08-29T15:35+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-29 17:17:02",
+          "emittent": "Vimian Group AB",
+          "person": "Alireza Tajbakhsh",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "78926,0",
+          "enhet": "Antal",
+          "pris": "6,88",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 17:17:02",
+          "emittent": "Vimian Group AB",
+          "person": "Alireza Tajbakhsh",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "78926,0",
+          "enhet": "Antal",
+          "pris": "5,79",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 16:42:13",
+          "emittent": "Vimian Group AB",
+          "person": "Bart Bremer",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "23677,0",
+          "enhet": "Antal",
+          "pris": "6,88",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 16:42:13",
+          "emittent": "Vimian Group AB",
+          "person": "Bart Bremer",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "23677,0",
+          "enhet": "Antal",
+          "pris": "5,79",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 13:36:59",
+          "emittent": "Duroc AB",
+          "person": "John Häger",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1020,0",
+          "enhet": "Antal",
+          "pris": "19,61",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 13:36:59",
+          "emittent": "Duroc AB",
+          "person": "John Häger",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1017,0",
+          "enhet": "Antal",
+          "pris": "19,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 13:36:59",
+          "emittent": "Duroc AB",
+          "person": "John Häger",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1017,0",
+          "enhet": "Antal",
+          "pris": "19,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 13:36:59",
+          "emittent": "Duroc AB",
+          "person": "John Häger",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1017,0",
+          "enhet": "Antal",
+          "pris": "19,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-29 13:36:59",
+          "emittent": "Duroc AB",
+          "person": "John Häger",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1017,0",
+          "enhet": "Antal",
+          "pris": "19,65",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-29 08:47:15",
           "emittent": "Essity Aktiebolag (publ)",
@@ -2447,110 +2546,11 @@
           "enhet": "Antal",
           "pris": "5,05",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 11:22:14",
-          "emittent": "Duroc Aktiebolag",
-          "person": "Emil Otterskog",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1168,0",
-          "enhet": "Antal",
-          "pris": "19,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 11:22:14",
-          "emittent": "Duroc Aktiebolag",
-          "person": "Emil Otterskog",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "832,0",
-          "enhet": "Antal",
-          "pris": "19,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 10:15:33",
-          "emittent": "Ellos Holding AB (publ)",
-          "person": "Morten Eivindssøn Astrup",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "17393,0",
-          "enhet": "Antal",
-          "pris": "57,9284",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 09:57:43",
-          "emittent": "Alimak Group AB (publ)",
-          "person": "Jose Maria Nevot",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "16875,0",
-          "enhet": "Antal",
-          "pris": "59,78",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 09:48:19",
-          "emittent": "Norion Bank AB",
-          "person": "David Lundqvist Ingvarsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "1472,0",
-          "enhet": "Antal",
-          "pris": "67,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 09:33:00",
-          "emittent": "AQ Group AB",
-          "person": "Rolf Niklas Ericsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "2500,0",
-          "enhet": "Antal",
-          "pris": "227,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 09:14:09",
-          "emittent": "Online Brands Nordic AB",
-          "person": "Fredrik Lindquist",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "6097,0",
-          "enhet": "Antal",
-          "pris": "14,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 09:14:09",
-          "emittent": "Online Brands Nordic AB",
-          "person": "Fredrik Lindquist",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5903,0",
-          "enhet": "Antal",
-          "pris": "14,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 09:13:32",
-          "emittent": "Fastpartner AB",
-          "person": "Sven-Olof Johansson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "40279,0",
-          "enhet": "Antal",
-          "pris": "42,8391",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 9,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-29T11:01+00:00"
+      "vintage": "2026-08-29T15:35+00:00"
     }
   }
 }
