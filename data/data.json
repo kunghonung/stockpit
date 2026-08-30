@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W35",
   "asOfDatum": "2026-08-28",
-  "genererad": "2026-08-30T19:48+00:00",
+  "genererad": "2026-08-30T22:42+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4530",
+      "varde": "4508",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,9 %",
+      "delta4v": "+11,8 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,79",
+      "varde": "67,07",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+17,7 %",
+      "delta4v": "+16,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,66",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,5 %",
+      "delta4v": "+1,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-28"
     },
     "olja": {
-      "v": 88.1,
+      "v": 89.67,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-28"
     }
@@ -1943,6 +1943,11 @@
       "poster": [
         {
           "datum": "2026-08-25",
+          "namn": "SKINNER DEBORAH E  (CIK 0001184722); FARMERS & MERCHANTS BANCORP  (CIK 0001085913)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1184722/000121390026093357"
+        },
+        {
+          "datum": "2026-08-25",
           "namn": "Piper Sarah  (CIK 0001956835); MCCORMICK & CO INC  (CIK 0000063754)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1956835/000006375426000298"
         },
@@ -1950,11 +1955,6 @@
           "datum": "2026-08-25",
           "namn": "Santiago Helen S  (CIK 0001858668); CITIZENS & NORTHERN CORP  (CIK 0000810958)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1858668/000185866826000008"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
         },
         {
           "datum": "2026-08-25",
@@ -1968,6 +1968,11 @@
         },
         {
           "datum": "2026-08-25",
+          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
+        },
+        {
+          "datum": "2026-08-25",
           "namn": "South Thomas A  (CIK 0001751051); NORTHERN TRUST CORP  (CIK 0000073124)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1751051/000175105126000014"
         },
@@ -1978,25 +1983,31 @@
         },
         {
           "datum": "2026-08-25",
-          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
-        },
-        {
-          "datum": "2026-08-25",
-          "namn": "SKINNER DEBORAH E  (CIK 0001184722); FARMERS & MERCHANTS BANCORP  (CIK 0001085913)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1184722/000121390026093357"
-        },
-        {
-          "datum": "2026-08-25",
           "namn": "Zhao Lynn  (CIK 0001724840); SOCKET MOBILE, INC.  (CIK 0000944075)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1724840/000094407526000070"
+        },
+        {
+          "datum": "2026-08-25",
+          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-30T19:48+00:00"
+      "vintage": "2026-08-30T22:42+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-30 21:53:28",
+          "emittent": "SpectraCure AB (publ)",
+          "person": "Masoud Khayyami",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "571705,0",
+          "enhet": "Antal",
+          "pris": "0,03",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-30 21:02:21",
           "emittent": "Humble Group AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "97,0504",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 17:08:56",
-          "emittent": "Brock Milton Capital AB",
-          "person": "Henrik Milton",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "200,0",
-          "enhet": "Antal",
-          "pris": "98,20",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-30T19:48+00:00"
+      "vintage": "2026-08-30T22:42+00:00"
     }
   }
 }
