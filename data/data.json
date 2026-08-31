@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "lage": "LIVE",
-  "asOfWeek": "2026-W35",
-  "asOfDatum": "2026-08-28",
-  "genererad": "2026-08-30T22:42+00:00",
+  "asOfWeek": "2026-W36",
+  "asOfDatum": "2026-08-31",
+  "genererad": "2026-08-31T01:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -95,7 +95,7 @@
       },
       "insynKluster": 0,
       "rsRank": 6,
-      "rsRankForra": 8,
+      "rsRankForra": 6,
       "relSerie19": [
         100.0,
         105.94,
@@ -202,7 +202,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 4,
-      "rsRankForra": 6,
+      "rsRankForra": 4,
       "relSerie19": [
         100.0,
         97.88,
@@ -253,7 +253,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 5,
-      "rsRankForra": 3,
+      "rsRankForra": 5,
       "relSerie19": [
         100.0,
         98.16,
@@ -304,7 +304,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 8,
-      "rsRankForra": 7,
+      "rsRankForra": 8,
       "relSerie19": [
         100.0,
         97.71,
@@ -561,7 +561,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 3,
-      "rsRankForra": 4,
+      "rsRankForra": 3,
       "relSerie19": [
         100.0,
         96.42,
@@ -613,7 +613,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 7,
-      "rsRankForra": 5,
+      "rsRankForra": 7,
       "relSerie19": [
         100.0,
         98.99,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-08-28",
+      "vintage": "2026-08-31",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-08-28",
+      "vintage": "2026-08-31",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4508",
+      "varde": "4487",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,8 %",
+      "delta4v": "+11,2 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-08-28"
+      "vintage": "2026-08-31"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,07",
+      "varde": "66,78",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+16,3 %",
+      "delta4v": "+15,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-08-28"
+      "vintage": "2026-08-31"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,61",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+1,8 %",
+      "delta4v": "+1,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-08-28"
+      "vintage": "2026-08-31"
     },
     "olja": {
-      "v": 89.67,
+      "v": 90.2,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-08-28"
+      "vintage": "2026-08-31"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-08-28",
+    "vintage": "2026-08-31",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           105.05,
-          105.05
+          102.93
         ]
       },
       {
@@ -1942,58 +1942,58 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-08-25",
-          "namn": "SKINNER DEBORAH E  (CIK 0001184722); FARMERS & MERCHANTS BANCORP  (CIK 0001085913)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1184722/000121390026093357"
+          "datum": "2026-08-28",
+          "namn": "Glickman Mark A  (CIK 0001441461); BioStem Technologies, Inc.  (CIK 0001658678)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1441461/000144146126000005"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Piper Sarah  (CIK 0001956835); MCCORMICK & CO INC  (CIK 0000063754)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1956835/000006375426000298"
+          "datum": "2026-08-28",
+          "namn": "Keshavan Santhosh  (CIK 0001852193); Voya Financial, Inc.  (CIK 0001535929)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1852193/000153592926000166"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Santiago Helen S  (CIK 0001858668); CITIZENS & NORTHERN CORP  (CIK 0000810958)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1858668/000185866826000008"
+          "datum": "2026-08-28",
+          "namn": "Bowerman Julie  (CIK 0001769043); MIDDLEBY Corp  (CIK 0000769520)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1769043/000176904326000003"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Seely Lynn  (CIK 0001327111); Lyell Immunopharma, Inc.  (CIK 0001806952)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1327111/000132711126000006"
+          "datum": "2026-08-28",
+          "namn": "Grindstaff Lynda  (CIK 0002037278); OFG BANCORP  (CIK 0001030469)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2037278/000203727826000008"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Daunt John  (CIK 0001774667); LIQUIDITY SERVICES INC  (CIK 0001235468)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1774667/000177466726000026"
+          "datum": "2026-08-28",
+          "namn": "Pool III James K  (CIK 0001847250); MIDDLEBY Corp  (CIK 0000769520)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1847250/000184725026000008"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Renner Alexandra  (CIK 0002147680); Oklo Inc.  (CIK 0001849056)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2147680/000214768026000002"
+          "datum": "2026-08-28",
+          "namn": "Psaropoulos Anastasios  (CIK 0002120689); Global Ship Lease, Inc.  (CIK 0001430725)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2120689/000114036126034888"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "South Thomas A  (CIK 0001751051); NORTHERN TRUST CORP  (CIK 0000073124)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1751051/000175105126000014"
+          "datum": "2026-08-28",
+          "namn": "Gomide de Faria Mariano  (CIK 0001968909); VTEX  (CIK 0001793663)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1968909/000119312526372367"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Rennick Charles D  (CIK 0001564616); TechTarget, Inc.  (CIK 0002018064)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1564616/000119312526365200"
+          "datum": "2026-08-28",
+          "namn": "Pittas Aristeidis P  (CIK 0002127484); EUROSEAS LTD.  (CIK 0001341170)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2127484/000212748426000017"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Zhao Lynn  (CIK 0001724840); SOCKET MOBILE, INC.  (CIK 0000944075)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1724840/000094407526000070"
+          "datum": "2026-08-28",
+          "namn": "Barack Louis Jon  (CIK 0001939867); Jushi Holdings Inc.  (CIK 0001909747)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1939867/000162828026059395"
         },
         {
-          "datum": "2026-08-25",
-          "namn": "Herb Tyler  (CIK 0002073587); Figma, Inc.  (CIK 0001579878)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2073587/000207358726000030"
+          "datum": "2026-08-28",
+          "namn": "Zhao Peng Jonathan  (CIK 0001907962); Kanzhun Ltd  (CIK 0001842827)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1907962/000110465926103179"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-30T22:42+00:00"
+      "vintage": "2026-08-31T01:21+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-30T22:42+00:00"
+      "vintage": "2026-08-31T01:21+00:00"
     }
   }
 }
