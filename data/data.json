@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W36",
   "asOfDatum": "2026-08-31",
-  "genererad": "2026-08-31T01:21+00:00",
+  "genererad": "2026-08-31T07:37+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.4,
-      "delta": "−0,7 · 1 v",
+      "varde": 15.2,
+      "delta": "−0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.4,
+      "varde": 15.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4487",
+      "varde": "4495",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+11,2 %",
+      "delta4v": "+11,4 %",
       "status": "gron",
       "atgard": "oka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,78",
+      "varde": "67,57",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+15,8 %",
+      "delta4v": "+17,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,69",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+1,5 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-08-31"
     },
     "olja": {
-      "v": 90.2,
+      "v": 89.77,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-08-31"
     }
@@ -1768,7 +1768,7 @@
           100.53,
           100.88,
           100.86,
-          100.86
+          100.85
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           107.9,
           104.62,
           105.05,
-          102.93
+          104.9
         ]
       },
       {
@@ -1943,23 +1943,23 @@
       "poster": [
         {
           "datum": "2026-08-28",
-          "namn": "Glickman Mark A  (CIK 0001441461); BioStem Technologies, Inc.  (CIK 0001658678)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1441461/000144146126000005"
-        },
-        {
-          "datum": "2026-08-28",
           "namn": "Keshavan Santhosh  (CIK 0001852193); Voya Financial, Inc.  (CIK 0001535929)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1852193/000153592926000166"
         },
         {
           "datum": "2026-08-28",
-          "namn": "Bowerman Julie  (CIK 0001769043); MIDDLEBY Corp  (CIK 0000769520)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1769043/000176904326000003"
+          "namn": "Glickman Mark A  (CIK 0001441461); BioStem Technologies, Inc.  (CIK 0001658678)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1441461/000144146126000005"
         },
         {
           "datum": "2026-08-28",
           "namn": "Grindstaff Lynda  (CIK 0002037278); OFG BANCORP  (CIK 0001030469)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2037278/000203727826000008"
+        },
+        {
+          "datum": "2026-08-28",
+          "namn": "Bowerman Julie  (CIK 0001769043); MIDDLEBY Corp  (CIK 0000769520)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1769043/000176904326000003"
         },
         {
           "datum": "2026-08-28",
@@ -1970,11 +1970,6 @@
           "datum": "2026-08-28",
           "namn": "Psaropoulos Anastasios  (CIK 0002120689); Global Ship Lease, Inc.  (CIK 0001430725)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2120689/000114036126034888"
-        },
-        {
-          "datum": "2026-08-28",
-          "namn": "Gomide de Faria Mariano  (CIK 0001968909); VTEX  (CIK 0001793663)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1968909/000119312526372367"
         },
         {
           "datum": "2026-08-28",
@@ -1990,13 +1985,73 @@
           "datum": "2026-08-28",
           "namn": "Zhao Peng Jonathan  (CIK 0001907962); Kanzhun Ltd  (CIK 0001842827)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1907962/000110465926103179"
+        },
+        {
+          "datum": "2026-08-28",
+          "namn": "Gomide de Faria Mariano  (CIK 0001968909); VTEX  (CIK 0001793663)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1968909/000119312526372367"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-08-31T01:21+00:00"
+      "vintage": "2026-08-31T07:36+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-08-31 09:07:02",
+          "emittent": "Intervacc AB",
+          "person": "Astrid Larberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "1,06",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-31 08:38:07",
+          "emittent": "Diös Fastigheter AB",
+          "person": "Rolf Larsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "2500000,0",
+          "enhet": "Antal",
+          "pris": "1,0026",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-31 08:38:07",
+          "emittent": "Diös Fastigheter AB",
+          "person": "Rolf Larsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "18750000,0",
+          "enhet": "Antal",
+          "pris": "1,00685",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-31 08:38:07",
+          "emittent": "Diös Fastigheter AB",
+          "person": "Rolf Larsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "10000000,0",
+          "enhet": "Antal",
+          "pris": "1,00826",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-08-31 08:38:07",
+          "emittent": "Diös Fastigheter AB",
+          "person": "Rolf Larsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "7500000,0",
+          "enhet": "Antal",
+          "pris": "1,00163",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-08-30 21:53:28",
           "emittent": "SpectraCure AB (publ)",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "170,4025",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 17:48:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "525000,0",
-          "enhet": "Antal",
-          "pris": "170,4025",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 17:48:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "288760,0",
-          "enhet": "Antal",
-          "pris": "170,3336",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 17:48:11",
-          "emittent": "Tele2 AB",
-          "person": "Thomas Reynaud",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "288760,0",
-          "enhet": "Antal",
-          "pris": "170,3336",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 17:12:18",
-          "emittent": "Brock Milton Capital AB",
-          "person": "Henrik Milton",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "546,0",
-          "enhet": "Antal",
-          "pris": "98,282051",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-08-28 17:10:49",
-          "emittent": "Brock Milton Capital AB",
-          "person": "Henrik Milton",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "97,0504",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-08-31T01:21+00:00"
+      "vintage": "2026-08-31T07:37+00:00"
     }
   }
 }
