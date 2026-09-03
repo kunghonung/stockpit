@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W36",
   "asOfDatum": "2026-09-03",
-  "genererad": "2026-09-03T01:05+00:00",
+  "genererad": "2026-09-03T05:46+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         105.52,
         103.06,
         103.01,
-        104.04,
+        103.56,
         103.56
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         99.83,
         98.16,
         97.67,
-        94.08,
+        93.69,
         93.69
       ]
     },
@@ -221,7 +221,7 @@
         89.26,
         90.52,
         91.92,
-        91.02,
+        91.88,
         91.88
       ]
     },
@@ -272,7 +272,7 @@
         95.3,
         95.62,
         98.09,
-        95.71,
+        96.89,
         96.89
       ]
     },
@@ -323,7 +323,7 @@
         95.94,
         98.02,
         98.1,
-        97.49,
+        97.37,
         97.37
       ]
     },
@@ -374,7 +374,7 @@
         110.05,
         115.29,
         114.33,
-        113.74,
+        114.08,
         114.08
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         91.11,
         91.89,
         91.18,
-        89.69,
+        89.53,
         89.53
       ]
     },
@@ -477,7 +477,7 @@
         94.46,
         95.95,
         96.54,
-        94.82,
+        93.74,
         93.74
       ]
     },
@@ -528,7 +528,7 @@
         101.71,
         106.43,
         104.92,
-        109.46,
+        109.53,
         109.53
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         106.14,
         105.8,
         107.65,
-        106.29,
+        106.67,
         106.67
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         93.43,
         94.4,
         93.62,
-        92.09,
+        91.9,
         91.9
       ]
     }
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 99,
+        "index": 98,
         "pil": "ned",
         "status": "gul"
       },
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4437",
+      "varde": "4474",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+4,5 %",
+      "delta4v": "+5,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,99",
+      "varde": "66,26",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+6,3 %",
+      "delta4v": "+7,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,60",
+      "varde": "6,59",
       "enhet": "USD/t",
       "pil": "ned",
       "delta4v": "−1,5 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-03"
     },
     "olja": {
-      "v": 95.2,
+      "v": 94.37,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-03"
     }
@@ -1685,7 +1685,7 @@
           101.2,
           101.34,
           100.83,
-          101.19,
+          101.17,
           101.17
         ]
       },
@@ -1726,7 +1726,7 @@
           99.99,
           99.52,
           98.75,
-          99.14,
+          98.91,
           98.91
         ]
       },
@@ -1767,7 +1767,7 @@
           101.72,
           101.03,
           101.72,
-          101.26,
+          100.56,
           100.56
         ]
       },
@@ -1808,8 +1808,8 @@
           109.07,
           106.15,
           107.53,
-          108.46,
-          104.7
+          104.87,
+          104.28
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           94.67,
           94.72,
           96.12,
-          96.44,
+          96.54,
           96.54
         ]
       },
@@ -1890,7 +1890,7 @@
           90.19,
           91.23,
           90.64,
-          90.34,
+          90.14,
           90.14
         ]
       },
@@ -1931,7 +1931,7 @@
           95.98,
           95.75,
           96.04,
-          96.6,
+          96.91,
           96.91
         ]
       }
@@ -1958,6 +1958,11 @@
         },
         {
           "datum": "2026-08-31",
+          "namn": "Babcock Gregory  (CIK 0001787295); TALOS ENERGY INC.  (CIK 0001724965)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1787295/000119312526377063"
+        },
+        {
+          "datum": "2026-08-31",
           "namn": "Sayad Pierre Sargis  (CIK 0002043395); FENNEC PHARMACEUTICALS INC.  (CIK 0001211583)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2043395/000204339526000012"
         },
@@ -1972,11 +1977,6 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1188786/000118878626000004"
         },
         {
-          "datum": "2026-08-31",
-          "namn": "Babcock Gregory  (CIK 0001787295); TALOS ENERGY INC.  (CIK 0001724965)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1787295/000119312526377063"
-        },
-        {
           "datum": "2026-09-01",
           "namn": "Manufacturers Life Reinsurance Ltd  (CIK 0001765496); John Hancock GA Senior Loan Trust  (CIK 0001742951)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1765496/000176549626000017"
@@ -1988,15 +1988,37 @@
         },
         {
           "datum": "2026-09-01",
-          "namn": "Souza Cristiano  (CIK 0001841079); Waldencast plc  (CIK 0001840199)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1841079/000184019926000096"
+          "namn": "Liuzza Nicholas Reyland JR  (CIK 0001264473); Red Cat Holdings, Inc.  (CIK 0000748268)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1264473/000149315226041010"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-03T01:05+00:00"
+      "vintage": "2026-09-03T05:46+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-03 07:22:13",
+          "emittent": "FANO AB",
+          "person": "Fano AB",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "38,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-03 07:03:02",
+          "emittent": "SpectraCure AB (publ)",
+          "person": "Jörgen Wennberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "2000000,0",
+          "enhet": "Antal",
+          "pris": "0,0244",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-02 23:52:15",
           "emittent": "mResell",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "4,02",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-02 14:09:28",
-          "emittent": "Viva Wine Group AB",
-          "person": "Emil Sallnäs",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2866199,0",
-          "enhet": "Antal",
-          "pris": "38,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-02 14:03:54",
-          "emittent": "Axvik Group AB",
-          "person": "André Hansson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Utdelning mottagen",
-          "volym": "437862,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-03T01:05+00:00"
+      "vintage": "2026-09-03T05:46+00:00"
     }
   }
 }
