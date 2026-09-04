@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W36",
   "asOfDatum": "2026-09-04",
-  "genererad": "2026-09-04T09:02+00:00",
+  "genererad": "2026-09-04T13:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.2,
-      "delta": "−0,2 · 1 v",
+      "varde": 14.1,
+      "delta": "−0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -718,7 +718,7 @@
         "id": "bcomspx",
         "namn": "BCOM/SPX",
         "grupp": "Tillväxt/Inflation",
-        "index": 97,
+        "index": 96,
         "pil": "upp",
         "status": "gul"
       },
@@ -726,15 +726,15 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
-        "pil": "ned",
-        "status": "gul"
+        "index": 100,
+        "pil": "upp",
+        "status": "gron"
       },
       {
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 113,
+        "index": 111,
         "pil": "upp",
         "status": "gron"
       },
@@ -742,7 +742,7 @@
         "id": "xlyxlp",
         "namn": "XLY/XLP",
         "grupp": "Riskvilja/Likviditet",
-        "index": 98,
+        "index": 100,
         "pil": "ned",
         "status": "gul"
       },
@@ -751,8 +751,8 @@
         "namn": "HYG/TLT",
         "grupp": "Riskvilja/Likviditet",
         "index": 102,
-        "pil": "upp",
-        "status": "gron"
+        "pil": "ned",
+        "status": "gul"
       },
       {
         "id": "soxspx",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.2,
+      "varde": 14.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −3 bp/mån."
     },
     "bredd": {
-      "over50": 48,
-      "over200": 64,
+      "over50": 51,
+      "over200": 66,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-03",
+      "vintage": "2026-09-04",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+2 sedan förra"
+      "delta": "+3 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4522",
+      "varde": "4440",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+6,6 %",
+      "delta4v": "+2,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,57",
+      "varde": "65,82",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+10,0 %",
+      "delta4v": "+3,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,67",
+      "varde": "6,65",
       "enhet": "USD/t",
-      "pil": "ned",
-      "delta4v": "−0,2 %",
+      "pil": "upp",
+      "delta4v": "+1,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-04"
     },
     "olja": {
-      "v": 95.18,
+      "v": 94.65,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-04"
     }
@@ -1768,7 +1768,7 @@
           103.82,
           102.03,
           103.01,
-          101.84
+          101.74
         ]
       },
       {
@@ -1993,10 +1993,142 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-04T09:02+00:00"
+      "vintage": "2026-09-04T13:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-04 15:09:17",
+          "emittent": "Harmoney BidCo",
+          "person": "Nicolai Chamizo",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "1,007",
+          "valuta": "EUR"
+        },
+        {
+          "publicerad": "2026-09-04 15:04:11",
+          "emittent": "Viva Wine Group AB",
+          "person": "Lars Ljungälv",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "38,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 13:58:57",
+          "emittent": "Avanza Bank Holding AB",
+          "person": "Teresa Schechter",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "178,0",
+          "enhet": "Antal",
+          "pris": "393,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 13:21:39",
+          "emittent": "EASTNINE AB (PUBL)",
+          "person": "Lars Peter Elam Håkansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "11000,0",
+          "enhet": "Antal",
+          "pris": "45,9454",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 12:15:03",
+          "emittent": "Micropos Medical AB (publ)",
+          "person": "Ove Mattsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "1,01",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 12:12:18",
+          "emittent": "Swedencare AB (publ)",
+          "person": "Laszlo Janos Varga",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "22,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 11:28:31",
+          "emittent": "Sdiptech AB (publ)",
+          "person": "Jakob Holm",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "1,0",
+          "enhet": "Antal",
+          "pris": "1250000,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 11:28:31",
+          "emittent": "Sdiptech AB (publ)",
+          "person": "Jakob Holm",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1,0",
+          "enhet": "Antal",
+          "pris": "1250000,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 11:21:30",
+          "emittent": "Cavotec Group AB",
+          "person": "David Pagels",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "400000,0",
+          "enhet": "Antal",
+          "pris": "1,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 11:05:06",
+          "emittent": "Cavotec Group AB",
+          "person": "Christoffer Robertsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "1,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 11:05:06",
+          "emittent": "Cavotec Group AB",
+          "person": "Christoffer Robertsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "1,42",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-04 11:02:10",
+          "emittent": "Viva Wine Group AB",
+          "person": "Lars Ljungälv",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "6992857,0",
+          "enhet": "Antal",
+          "pris": "38,50",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-04 10:41:32",
           "emittent": "Aerowash AB (Publ)",
@@ -2414,143 +2546,11 @@
           "enhet": "Antal",
           "pris": "304,85",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 12:10:24",
-          "emittent": "Bulten AB",
-          "person": "Axel Berntsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "60000,0",
-          "enhet": "Antal",
-          "pris": "66,75",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 11:52:12",
-          "emittent": "Mycronic AB (publ)",
-          "person": "Pierre Brorsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Tilldelning",
-          "volym": "5230,0",
-          "enhet": "Antal",
-          "pris": "302,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 11:52:12",
-          "emittent": "Mycronic AB (publ)",
-          "person": "Pierre Brorsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "3028,0",
-          "enhet": "Antal",
-          "pris": "304,85",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 11:36:39",
-          "emittent": "Egetis Therapeutics AB (publ)",
-          "person": "Christian Sonesson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "1099,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 11:36:39",
-          "emittent": "Egetis Therapeutics AB (publ)",
-          "person": "Christian Sonesson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "594,0",
-          "enhet": "Antal",
-          "pris": "7,771854",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 11:33:41",
-          "emittent": "Ramlösa shipping AB",
-          "person": "Martin Hansson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1695,0",
-          "enhet": "Antal",
-          "pris": "21,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 10:52:05",
-          "emittent": "Avanza Bank Holding AB",
-          "person": "Jesper Bonnivier",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "1983,0",
-          "enhet": "Antal",
-          "pris": "397,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 10:31:08",
-          "emittent": "Fasadgruppen Group AB (publ)",
-          "person": "Tomas Ståhl",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "300000,0",
-          "enhet": "Antal",
-          "pris": "17,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 10:14:52",
-          "emittent": "Swedbank AB",
-          "person": "Rasmus Roos",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "100000000,0",
-          "enhet": "Antal",
-          "pris": "100000000,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 09:59:13",
-          "emittent": "KebNi AB (publ)",
-          "person": "Olof Rudbeck",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "750000,0",
-          "enhet": "Antal",
-          "pris": "0,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 09:10:00",
-          "emittent": "Online Brands Nordic AB",
-          "person": "Fredrik Lindquist",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "14,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 09:07:31",
-          "emittent": "VIMAB Group AB (publ)",
-          "person": "Lars Peter Fredell",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "20300,0",
-          "enhet": "Antal",
-          "pris": "5,19",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 8,
+      "nyaSenasteKorning": 12,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-04T09:02+00:00"
+      "vintage": "2026-09-04T13:28+00:00"
     }
   }
 }
