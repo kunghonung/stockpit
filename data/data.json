@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W36",
   "asOfDatum": "2026-09-04",
-  "genererad": "2026-09-05T04:19+00:00",
+  "genererad": "2026-09-05T08:34+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1953,13 +1953,13 @@
         },
         {
           "datum": "2026-09-01",
-          "namn": "Liuzza Nicholas Reyland JR  (CIK 0001264473); Red Cat Holdings, Inc.  (CIK 0000748268)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1264473/000149315226041010"
+          "namn": "Souza Cristiano  (CIK 0001841079); Waldencast plc  (CIK 0001840199)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1841079/000184019926000096"
         },
         {
           "datum": "2026-09-01",
-          "namn": "Souza Cristiano  (CIK 0001841079); Waldencast plc  (CIK 0001840199)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1841079/000184019926000096"
+          "namn": "Liuzza Nicholas Reyland JR  (CIK 0001264473); Red Cat Holdings, Inc.  (CIK 0000748268)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1264473/000149315226041010"
         },
         {
           "datum": "2026-09-01",
@@ -1973,30 +1973,41 @@
         },
         {
           "datum": "2026-09-01",
-          "namn": "O'LEARY MARGARET  (CIK 0001957887); CPI Card Group Inc.  (CIK 0001641614)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1957887/000195788726000002"
-        },
-        {
-          "datum": "2026-09-01",
-          "namn": "Jaspon Katherine D.  (CIK 0001703485); W.W. GRAINGER, INC.  (CIK 0000277135)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1703485/000170348526000008"
-        },
-        {
-          "datum": "2026-09-01",
           "namn": "Sousa Mauad Bruno  (CIK 0002117905); Aura Minerals Inc.  (CIK 0001468642)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2117905/000211790526000026"
         },
         {
           "datum": "2026-09-01",
+          "namn": "O'LEARY MARGARET  (CIK 0001957887); CPI Card Group Inc.  (CIK 0001641614)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1957887/000195788726000002"
+        },
+        {
+          "datum": "2026-09-01",
           "namn": "Gropp Chris P  (CIK 0001981241); PHINIA INC.  (CIK 0001968915)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1981241/000196891526000117"
+        },
+        {
+          "datum": "2026-09-01",
+          "namn": "Jaspon Katherine D.  (CIK 0001703485); W.W. GRAINGER, INC.  (CIK 0000277135)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1703485/000170348526000008"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-05T04:19+00:00"
+      "vintage": "2026-09-05T08:34+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-05 06:45:12",
+          "emittent": "Harmoney Bidco AB",
+          "person": "Magnus Mivér",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "100,625",
+          "valuta": "EUR"
+        },
         {
           "publicerad": "2026-09-04 18:53:44",
           "emittent": "Nodebis Applications AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "304,85",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 15:45:45",
-          "emittent": "EQT AB",
-          "person": "Jeremy Coller",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Teckning",
-          "volym": "58722850,0",
-          "enhet": "Antal",
-          "pris": "339,10",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-05T04:19+00:00"
+      "vintage": "2026-09-05T08:34+00:00"
     }
   }
 }
