@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W36",
   "asOfDatum": "2026-09-04",
-  "genererad": "2026-09-05T23:51+00:00",
+  "genererad": "2026-09-06T04:31+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4430",
+      "varde": "4477",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,1 %",
+      "delta4v": "+3,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,05",
+      "varde": "66,75",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+4,3 %",
+      "delta4v": "+5,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,60",
+      "varde": "6,68",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,4 %",
+      "delta4v": "+1,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-05T23:51+00:00"
+      "vintage": "2026-09-06T04:31+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-06 01:58:11",
+          "emittent": "BibbInstruments AB",
+          "person": "Erik von Schenck",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Gåva lämnad",
+          "volym": "115796,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-05 20:19:23",
           "emittent": "Sweden BuyersClub AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "2,77",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 17:35:12",
-          "emittent": "Studsvik AB",
-          "person": "Adam Rodman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "30952,0",
-          "enhet": "Antal",
-          "pris": "220,3314",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-05T23:51+00:00"
+      "vintage": "2026-09-06T04:31+00:00"
     }
   }
 }
