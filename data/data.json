@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W36",
   "asOfDatum": "2026-09-04",
-  "genererad": "2026-09-06T12:51+00:00",
+  "genererad": "2026-09-06T16:12+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 112,
+        "index": 111,
         "pil": "upp",
         "status": "gron"
       },
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-06T12:51+00:00"
+      "vintage": "2026-09-06T16:12+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-06 15:05:19",
+          "emittent": "Eurobattery Minerals AB",
+          "person": "Roberto Garcia Martinez",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "429232,0",
+          "enhet": "Antal",
+          "pris": "0,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-06 15:00:50",
+          "emittent": "Eurobattery Minerals AB",
+          "person": "Roberto Garcia-Martinez",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "28440588,0",
+          "enhet": "Antal",
+          "pris": "0,16",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-06 15:00:50",
+          "emittent": "Eurobattery Minerals AB",
+          "person": "Roberto Garcia-Martinez",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "6321308,0",
+          "enhet": "Antal",
+          "pris": "0,20",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-06 11:48:29",
           "emittent": "Dlaboratory Sweden AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,42",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 20:48:43",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "125000,0",
-          "enhet": "Antal",
-          "pris": "2,47",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 20:48:43",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "226,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-03 20:21:16",
-          "emittent": "Avanza Bank Holding AB",
-          "person": "Maria Christina Wärn",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "423,0",
-          "enhet": "Antal",
-          "pris": "388,3",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-06T12:51+00:00"
+      "vintage": "2026-09-06T16:12+00:00"
     }
   }
 }
