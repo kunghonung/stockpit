@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-07",
-  "genererad": "2026-09-07T12:22+00:00",
+  "genererad": "2026-09-07T17:54+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
-      "delta": "+0,3 · 1 v",
+      "varde": 15.3,
+      "delta": "+0,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -1768,7 +1768,7 @@
           103.26,
           103.23,
           101.9,
-          101.85
+          101.9
         ]
       },
       {
@@ -1993,10 +1993,197 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-07T12:22+00:00"
+      "vintage": "2026-09-07T17:54+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-07 19:44:11",
+          "emittent": "Safe State",
+          "person": "Malin Granli",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "2527,0",
+          "enhet": "Antal",
+          "pris": "24,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 19:36:20",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "276,0",
+          "enhet": "Antal",
+          "pris": "145,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 19:34:10",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "288272,0",
+          "enhet": "Antal",
+          "pris": "1,18895",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 19:08:16",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Hans Karlander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9370,0",
+          "enhet": "Antal",
+          "pris": "94,806425",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 19:08:16",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Hans Karlander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5434,0",
+          "enhet": "Antal",
+          "pris": "97,465541",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 17:46:59",
+          "emittent": "Fragbite Group AB (publ)",
+          "person": "Erika Mattsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "0,8389",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 17:03:08",
+          "emittent": "Image Systems AB",
+          "person": "Jörgen Hermansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "0,63",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 17:03:08",
+          "emittent": "Image Systems AB",
+          "person": "Jörgen Hermansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "228000,0",
+          "enhet": "Antal",
+          "pris": "0,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 16:58:47",
+          "emittent": "Nivika Fastigheter AB (publ)",
+          "person": "Tim Floderus",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "135000,0",
+          "enhet": "Antal",
+          "pris": "37,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 16:11:35",
+          "emittent": "Dlaboratory Sweden AB",
+          "person": "Andreas Lindenhierta",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "666670,0",
+          "enhet": "Antal",
+          "pris": "3,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 16:11:35",
+          "emittent": "Dlaboratory Sweden AB",
+          "person": "Andreas Lindenhierta",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "333335,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 15:57:56",
+          "emittent": "Nimbus Group AB (publ)",
+          "person": "Johan Inden",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "11,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 15:39:22",
+          "emittent": "Essity Aktiebolag (publ)",
+          "person": "Karl Åberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utbyte minskning",
+          "volym": "800000,0",
+          "enhet": "Antal",
+          "pris": "0,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 15:39:22",
+          "emittent": "Essity Aktiebolag (publ)",
+          "person": "Karl Åberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utbyte ökning",
+          "volym": "800000,0",
+          "enhet": "Antal",
+          "pris": "0,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 15:31:05",
+          "emittent": "Finepart Sweden AB",
+          "person": "Johan Nilsson Hallén",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1093,0",
+          "enhet": "Antal",
+          "pris": "45,87511436",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 14:47:51",
+          "emittent": "Finepart Sweden AB",
+          "person": "Stevce Mojanovski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500,0",
+          "enhet": "Antal",
+          "pris": "45,68",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 14:35:36",
+          "emittent": "Bambuser AB",
+          "person": "Maryam Ghahremani",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "85722,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-07 14:07:54",
           "emittent": "OncoZenge AB",
@@ -2359,198 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,20",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 11:48:29",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Fredrik Akke",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "60000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 11:40:11",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Fredrik Akke",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "120000,0",
-          "enhet": "Antal",
-          "pris": "3,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 09:11:51",
-          "emittent": "Mycronic AB (publ)",
-          "person": "Per Anders Lindqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "13948,0",
-          "enhet": "Antal",
-          "pris": "302,2",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 09:11:51",
-          "emittent": "Mycronic AB (publ)",
-          "person": "Per Anders Lindqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "8073,0",
-          "enhet": "Antal",
-          "pris": "304,85",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 01:58:11",
-          "emittent": "BibbInstruments AB",
-          "person": "Erik von Schenck",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Gåva lämnad",
-          "volym": "115796,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-05 20:19:23",
-          "emittent": "Sweden BuyersClub AB",
-          "person": "Jacob Wendel",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "925,0",
-          "enhet": "Antal",
-          "pris": "6,79027",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-05 20:19:23",
-          "emittent": "Sweden BuyersClub AB",
-          "person": "Jacob Wendel",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1135,0",
-          "enhet": "Antal",
-          "pris": "6,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-05 06:45:12",
-          "emittent": "Harmoney Bidco AB",
-          "person": "Magnus Mivér",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "600000,0",
-          "enhet": "Antal",
-          "pris": "100,625",
-          "valuta": "EUR"
-        },
-        {
-          "publicerad": "2026-09-04 18:53:44",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "25,0",
-          "enhet": "Antal",
-          "pris": "25,36",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 18:49:44",
-          "emittent": "Lyckegård Group AB",
-          "person": "Dan Åsberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "2,95",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 18:37:16",
-          "emittent": "Scandi Standard AB (publ)",
-          "person": "Paulo Gaspar",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "19545,0",
-          "enhet": "Antal",
-          "pris": "144,98009",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 18:36:18",
-          "emittent": "Ranplan Group AB",
-          "person": "Per Lindberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "71,0",
-          "enhet": "Antal",
-          "pris": "0,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 18:32:45",
-          "emittent": "Scandi Standard AB (publ)",
-          "person": "Paulo Gaspar",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "35683,0",
-          "enhet": "Antal",
-          "pris": "1,056562",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 17:32:15",
-          "emittent": "Infracom Group AB (publ)",
-          "person": "Per Lind Hubinette",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "30000,0",
-          "enhet": "Antal",
-          "pris": "13,48",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 17:31:06",
-          "emittent": "DevPort AB",
-          "person": "Per Rodert",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "8011,0",
-          "enhet": "Antal",
-          "pris": "9,84",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 17:28:13",
-          "emittent": "Precio Fishbone AB",
-          "person": "John Andersson Löfström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4695,0",
-          "enhet": "Antal",
-          "pris": "18,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 17:27:52",
-          "emittent": "Mycronic AB (publ)",
-          "person": "Per Anders Lindqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "13948,0",
-          "enhet": "Antal",
-          "pris": "302,2",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 23,
+      "nyaSenasteKorning": 17,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-07T12:22+00:00"
+      "vintage": "2026-09-07T17:54+00:00"
     }
   }
 }
