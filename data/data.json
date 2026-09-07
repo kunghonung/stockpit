@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-07",
-  "genererad": "2026-09-07T00:57+00:00",
+  "genererad": "2026-09-07T06:02+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 112,
+        "index": 111,
         "pil": "upp",
         "status": "gron"
       },
@@ -1809,7 +1809,7 @@
           101.71,
           102.13,
           99.51,
-          101.42
+          101.51
         ]
       },
       {
@@ -1963,11 +1963,6 @@
         },
         {
           "datum": "2026-09-04",
-          "namn": "Culbreth Michael Scott  (CIK 0001601006); FLEXSTEEL INDUSTRIES INC  (CIK 0000037472)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1601006/000003747226000089"
-        },
-        {
-          "datum": "2026-09-04",
           "namn": "Fletcher Dan  (CIK 0002046224); LIVEPERSON INC  (CIK 0001102993)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2046224/000204622426000002"
         },
@@ -1978,8 +1973,8 @@
         },
         {
           "datum": "2026-09-04",
-          "namn": "Gebbia John J  (CIK 0001813372); SIEBERT FINANCIAL CORP  (CIK 0000065596)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1813372/000121390026097698"
+          "namn": "Culbreth Michael Scott  (CIK 0001601006); FLEXSTEEL INDUSTRIES INC  (CIK 0000037472)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1601006/000003747226000089"
         },
         {
           "datum": "2026-09-04",
@@ -1990,13 +1985,40 @@
           "datum": "2026-09-04",
           "namn": "CTT PHARMACEUTICAL HOLDINGS, INC.  (CTTH)  (CIK 0001035422)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1035422/000103542226000010"
+        },
+        {
+          "datum": "2026-09-04",
+          "namn": "Gill Charest Katherine  (CIK 0001502602); Paramount Skydance Corp  (CIK 0002041610)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1502602/000122520826007687"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-07T00:57+00:00"
+      "vintage": "2026-09-07T06:02+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-07 07:43:49",
+          "emittent": "Sweden Buyersclub AB",
+          "person": "Emil Henriksson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "6,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 07:43:49",
+          "emittent": "Sweden Buyersclub AB",
+          "person": "Emil Henriksson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2999,0",
+          "enhet": "Antal",
+          "pris": "6,72",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-06 23:58:02",
           "emittent": "Teneo AI AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,35",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 08:46:07",
-          "emittent": "Axolot Solutions Holding AB",
-          "person": "Lennart Holm",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "2918500,0",
-          "enhet": "Antal",
-          "pris": "0,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-04 02:15:30",
-          "emittent": "CombinedX AB (publ)",
-          "person": "Per Aronsson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "12800,0",
-          "enhet": "Antal",
-          "pris": "39,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-07T00:57+00:00"
+      "vintage": "2026-09-07T06:02+00:00"
     }
   }
 }
