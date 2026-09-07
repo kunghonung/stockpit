@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-07",
-  "genererad": "2026-09-07T17:54+00:00",
+  "genererad": "2026-09-07T21:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-07T17:54+00:00"
+      "vintage": "2026-09-07T21:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-07 21:57:58",
+          "emittent": "Fragbite Group AB (publ)",
+          "person": "Niclas Vilhelmsson Bergkvist",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "103848,0",
+          "enhet": "Antal",
+          "pris": "0,8389",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 20:50:30",
+          "emittent": "Zinzino AB",
+          "person": "Gabriele Helmer",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "2,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 20:09:48",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Patrik Rignell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "9370,0",
+          "enhet": "Antal",
+          "pris": "94,81",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-07 20:09:48",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Patrik Rignell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5433,0",
+          "enhet": "Antal",
+          "pris": "97,47",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-07 19:44:11",
           "emittent": "Safe State",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "3,3923",
           "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-06 21:30:08",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "3,45",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-06 15:05:19",
-          "emittent": "Eurobattery Minerals AB",
-          "person": "Roberto Garcia Martinez",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "429232,0",
-          "enhet": "Antal",
-          "pris": "0,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 15:00:50",
-          "emittent": "Eurobattery Minerals AB",
-          "person": "Roberto Garcia-Martinez",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "28440588,0",
-          "enhet": "Antal",
-          "pris": "0,16",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-06 15:00:50",
-          "emittent": "Eurobattery Minerals AB",
-          "person": "Roberto Garcia-Martinez",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "6321308,0",
-          "enhet": "Antal",
-          "pris": "0,20",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 17,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-07T17:54+00:00"
+      "vintage": "2026-09-07T21:28+00:00"
     }
   }
 }
