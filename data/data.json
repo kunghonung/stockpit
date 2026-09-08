@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
-  "asOfDatum": "2026-09-07",
-  "genererad": "2026-09-07T23:44+00:00",
+  "asOfDatum": "2026-09-08",
+  "genererad": "2026-09-08T04:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-09-07",
+      "vintage": "2026-09-08",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-09-07",
+      "vintage": "2026-09-08",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 111,
+        "index": 110,
         "pil": "upp",
         "status": "gron"
       },
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-09-07"
+      "vintage": "2026-09-08"
     },
     "crowding": {
       "score": 5,
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4463",
+      "varde": "4485",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,3 %",
+      "delta4v": "+2,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-09-07"
+      "vintage": "2026-09-08"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,01",
+      "varde": "67,65",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,9 %",
+      "delta4v": "+3,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-09-07"
+      "vintage": "2026-09-08"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,73",
+      "varde": "6,80",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,0 %",
+      "delta4v": "+3,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-09-07"
+      "vintage": "2026-09-08"
     },
     "olja": {
-      "v": 97.21,
+      "v": 97.63,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-09-07"
+      "vintage": "2026-09-08"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-09-07",
+    "vintage": "2026-09-08",
     "marknader": [
       {
         "namn": "USA",
@@ -1751,24 +1751,24 @@
         ],
         "relSerie19": [
           100.0,
-          99.98,
-          101.72,
-          100.23,
-          102.37,
-          102.72,
-          102.28,
-          104.62,
-          106.11,
+          103.87,
+          102.74,
+          100.55,
+          105.0,
+          104.0,
           103.2,
-          105.06,
-          106.02,
-          105.34,
-          103.81,
-          102.89,
-          103.26,
-          103.23,
-          101.9,
-          101.9
+          108.32,
+          105.11,
+          104.16,
+          106.45,
+          107.71,
+          108.06,
+          104.32,
+          103.2,
+          104.3,
+          103.28,
+          102.78,
+          102.78
         ]
       },
       {
@@ -1792,24 +1792,24 @@
         ],
         "relSerie19": [
           100.0,
-          98.75,
-          100.6,
-          103.66,
-          106.86,
-          104.54,
-          111.91,
-          111.39,
-          110.66,
-          107.72,
-          102.53,
-          103.75,
-          101.94,
-          100.69,
-          104.9,
-          101.71,
+          104.01,
+          107.59,
+          106.27,
+          108.2,
+          115.22,
+          111.26,
+          114.38,
+          111.09,
+          102.93,
+          105.47,
+          105.54,
+          106.12,
+          107.69,
+          102.93,
+          104.48,
           102.13,
-          99.51,
-          101.62
+          103.78,
+          104.04
         ]
       },
       {
@@ -1940,60 +1940,9 @@
   },
   "insynFlode": {
     "us": {
-      "poster": [
-        {
-          "datum": "2026-09-04",
-          "namn": "Ben Zvi Shmuel  (CIK 0001935668); Protalix BioTherapeutics, Inc.  (CIK 0001006281)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1935668/000193566826000002"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Forster Eliot  (CIK 0001831558); Protalix BioTherapeutics, Inc.  (CIK 0001006281)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1831558/000183155826000003"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "DONEGAL MUTUAL INSURANCE CO  (CIK 0000935596); DONEGAL GROUP INC  (CIK 0000800457)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/935596/000093559626000023"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Walters William Lance  (CIK 0002127540); PACCAR INC  (CIK 0000075362)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2127540/000122520826007680"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Fletcher Dan  (CIK 0002046224); LIVEPERSON INC  (CIK 0001102993)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2046224/000204622426000002"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Kim Joyce  (CIK 0001901839); QUICKLOGIC Corp  (CIK 0000882508)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1901839/000190183926000003"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Culbreth Michael Scott  (CIK 0001601006); FLEXSTEEL INDUSTRIES INC  (CIK 0000037472)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1601006/000003747226000089"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Fordyce Marshall  (CIK 0001859453); Vera Therapeutics, Inc.  (CIK 0001831828)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1859453/000185945326000014"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "CTT PHARMACEUTICAL HOLDINGS, INC.  (CTTH)  (CIK 0001035422)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1035422/000103542226000010"
-        },
-        {
-          "datum": "2026-09-04",
-          "namn": "Gill Charest Katherine  (CIK 0001502602); Paramount Skydance Corp  (CIK 0002041610)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1502602/000122520826007687"
-        }
-      ],
+      "poster": [],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-07T23:44+00:00"
+      "vintage": "2026-09-08T04:28+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2499,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-07T23:44+00:00"
+      "vintage": "2026-09-08T04:28+00:00"
     }
   }
 }
