@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-08",
-  "genererad": "2026-09-08T09:04+00:00",
+  "genererad": "2026-09-08T13:35+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         100.61,
         101.43,
         102.19,
-        102.19
+        103.04
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         100.25,
         98.06,
         96.92,
-        96.92
+        97.09
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 4,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         91.77,
         92.64,
         91.75,
-        91.75
+        91.53
       ]
     },
     {
@@ -273,7 +273,7 @@
         99.97,
         98.83,
         97.35,
-        97.35
+        97.5
       ]
     },
     {
@@ -324,7 +324,7 @@
         98.4,
         97.32,
         96.23,
-        96.23
+        95.96
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 5,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         117.23,
         114.36,
         114.43,
-        114.43
+        111.95
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         92.13,
         91.61,
         92.26,
-        92.26
+        92.85
       ]
     },
     {
@@ -478,7 +478,7 @@
         97.78,
         96.03,
         94.74,
-        94.74
+        94.68
       ]
     },
     {
@@ -529,7 +529,7 @@
         110.06,
         107.89,
         110.15,
-        110.15
+        111.9
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 3,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         108.06,
         108.71,
         108.59,
-        108.59
+        107.95
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         94.58,
         93.49,
         91.56,
-        91.56
+        91.4
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.9,
-      "delta": "−0,5 · 1 v",
+      "varde": 15.4,
+      "delta": "−1,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 101,
+        "index": 102,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 109,
+        "index": 108,
         "pil": "upp",
         "status": "gron"
       },
@@ -758,7 +758,7 @@
         "id": "soxspx",
         "namn": "SOX/SPX",
         "grupp": "AI/Tech-cykel",
-        "index": 94,
+        "index": 96,
         "pil": "ned",
         "status": "gul"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.9,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -881,7 +881,7 @@
       "over200": 64,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-07",
+      "vintage": "2026-09-08",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-4 sedan förra"
+      "delta": "+0 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4437",
+      "varde": "4450",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,7 %",
+      "delta4v": "+2,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,46",
+      "varde": "67,08",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+2,1 %",
+      "delta4v": "+3,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,76",
+      "varde": "6,87",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,5 %",
+      "delta4v": "+4,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-08"
     },
     "olja": {
-      "v": 99.2,
+      "v": 97.87,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-08"
     }
@@ -1686,7 +1686,7 @@
           100.3,
           100.6,
           100.22,
-          100.22
+          100.17
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           96.92,
           97.16,
           97.02,
-          97.02
+          97.26
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           104.3,
           103.28,
           102.78,
-          102.24
+          102.92
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           104.48,
           102.13,
           103.78,
-          102.01
+          102.14
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           95.46,
           95.32,
           97.05,
-          97.05
+          97.42
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           92.22,
           91.34,
           90.37,
-          90.37
+          89.05
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           96.24,
           95.91,
           96.11,
-          96.11
+          95.03
         ]
       }
     ],
@@ -1940,12 +1940,206 @@
   },
   "insynFlode": {
     "us": {
-      "poster": [],
+      "poster": [
+        {
+          "datum": "2026-09-08",
+          "namn": "Manor Sagit  (CIK 0001999977); Nayax Ltd.  (CIK 0001901279)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1999977/000197640826000803"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Liao Kuang-yu  (CIK 0002116948); Jianpu Technology Inc.  (CIK 0001713923)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2116948/000110465926105653"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Greenberg Aaron Samuel  (CIK 0002081569); Nayax Ltd.  (CIK 0001901279)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2081569/000197640826000806"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Speth Ralf  (CIK 0001881975); SCHMID Group N.V.  (CIK 0001987240)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1881975/000188197526000004"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Tamari Shahar  (CIK 0001964142); Global-E Online Ltd.  (CIK 0001835963)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1964142/000119312526384350"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Wambeke David J.  (CIK 0001971798); NEUROONE MEDICAL TECHNOLOGIES Corp  (CIK 0001500198)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1971798/000197179826000005"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Tsur David  (CIK 0002069828); KAMADA LTD  (CIK 0001567529)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2069828/000121390026097829"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Debbi Nir  (CIK 0001964141); Global-E Online Ltd.  (CIK 0001835963)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1964141/000119312526384342"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Lee Denny Ting Bun  (CIK 0002043885); Jianpu Technology Inc.  (CIK 0001713923)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2043885/000110465926105652"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Dorfman Mark  (CIK 0001849648); Leonardo DRS, Inc.  (CIK 0001833756)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1849648/000184964826000012"
+        }
+      ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-08T09:04+00:00"
+      "vintage": "2026-09-08T13:34+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-08 15:24:47",
+          "emittent": "Arbona AB",
+          "person": "Fredrik Isberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "3,43",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 15:23:21",
+          "emittent": "Arbona AB",
+          "person": "Fredrik Isberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "40782,0",
+          "enhet": "Antal",
+          "pris": "3,43",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 15:13:02",
+          "emittent": "Wihlborgs Fastigheter AB",
+          "person": "Arvid Liepe",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "30000000,0",
+          "enhet": "Antal",
+          "pris": "1,00457",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 15:08:10",
+          "emittent": "Platzer Fastigheter Holding AB (publ)",
+          "person": "Jakob Nilsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "24000000,0",
+          "enhet": "Antal",
+          "pris": "1,0004",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 15:05:24",
+          "emittent": "Fragbite Group AB (publ)",
+          "person": "Michael Lundgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "86540,0",
+          "enhet": "Antal",
+          "pris": "0,8389",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 14:04:15",
+          "emittent": "Image Systems AB",
+          "person": "Anders Fransson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "880000,0",
+          "enhet": "Antal",
+          "pris": "0,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 13:51:19",
+          "emittent": "New Bubbleroom Sweden AB",
+          "person": "Joel Sandberg",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "11,78",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 13:48:52",
+          "emittent": "New Bubbleroom Sweden AB",
+          "person": "Joel Sandberg",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 13:31:29",
+          "emittent": "GOMSPACE GROUP AB",
+          "person": "Troels Dalsgaard",
+          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen ökning",
+          "volym": "194499,0",
+          "enhet": "Antal",
+          "pris": "2,7",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 13:31:29",
+          "emittent": "GOMSPACE GROUP AB",
+          "person": "Troels Dalsgaard",
+          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen minskning",
+          "volym": "194400,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 13:04:58",
+          "emittent": "Fragbite Group AB (publ)",
+          "person": "Mikael Pettersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "86540,0",
+          "enhet": "Antal",
+          "pris": "0,8389",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 12:56:28",
+          "emittent": "Swedbank AB",
+          "person": "Rasmus Roos",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "60000000,0",
+          "enhet": "Antal",
+          "pris": "60000000,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-08 12:48:19",
+          "emittent": "AQ Group AB",
+          "person": "Rolf Niklas Ericsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "1500,0",
+          "enhet": "Antal",
+          "pris": "224,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-08 10:27:30",
           "emittent": "Webrock Ventures AB",
@@ -2352,154 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 14:07:54",
-          "emittent": "OncoZenge AB",
-          "person": "Stian Kildal",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "0,207",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 13:59:15",
-          "emittent": "OncoZenge AB",
-          "person": "Per Daniel Ehrenstråhle",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Tilldelning",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "0,207",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 11:55:25",
-          "emittent": "Teneo AI AB",
-          "person": "Johan Gustavsson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "463533,0",
-          "enhet": "Antal",
-          "pris": "0,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 11:55:14",
-          "emittent": "Viaplay Group AB (publ)",
-          "person": "Kenneth Andresen",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "115000,0",
-          "enhet": "Antal",
-          "pris": "1,3297",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 11:47:34",
-          "emittent": "Teneo AI AB BTA",
-          "person": "Johan Gustavsson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "33965496,0",
-          "enhet": "Antal",
-          "pris": "0,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 11:41:09",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Gunnar Martin Bergstedt",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "400000,0",
-          "enhet": "Antal",
-          "pris": "3,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 11:41:09",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Gunnar Martin Bergstedt",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 11:29:04",
-          "emittent": "Teneo AI AB",
-          "person": "Andreas Wieweg",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Teckning",
-          "volym": "1673151,0",
-          "enhet": "Antal",
-          "pris": "0,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 10:25:09",
-          "emittent": "Teneo AI AB",
-          "person": "Mathias Björkholm",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "300000,0",
-          "enhet": "Antal",
-          "pris": "0,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 09:49:23",
-          "emittent": "SynAct Pharma AB",
-          "person": "Thomas Jonassen",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "350000,0",
-          "enhet": "Antal",
-          "pris": "17,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 09:39:53",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Fredrik Akke",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "60000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 09:39:14",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Pontus Marcelius",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "500000,0",
-          "enhet": "Antal",
-          "pris": "3,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-07 09:39:14",
-          "emittent": "Dlaboratory Sweden AB",
-          "person": "Pontus Marcelius",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "250000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 16,
+      "nyaSenasteKorning": 13,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-08T09:04+00:00"
+      "vintage": "2026-09-08T13:35+00:00"
     }
   }
 }
