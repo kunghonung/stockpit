@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
-  "asOfDatum": "2026-09-09",
-  "genererad": "2026-09-09T22:31+00:00",
+  "asOfDatum": "2026-09-10",
+  "genererad": "2026-09-10T00:33+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-09-09",
+      "vintage": "2026-09-10",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-09-09",
+      "vintage": "2026-09-10",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 108,
+        "index": 109,
         "pil": "upp",
         "status": "gron"
       },
@@ -773,7 +773,7 @@
     ],
     "kvoterLineage": {
       "kalla": "Yahoo, veckodata (index mot 13 v-snitt)",
-      "vintage": "2026-09-09"
+      "vintage": "2026-09-10"
     },
     "crowding": {
       "score": 5,
@@ -967,31 +967,31 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4447",
+      "varde": "4439",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,5 %",
+      "delta4v": "+1,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-09-09"
+      "vintage": "2026-09-10"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,93",
+      "varde": "67,90",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+4,9 %",
+      "delta4v": "+4,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-09-09"
+      "vintage": "2026-09-10"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,86",
+      "varde": "6,85",
       "enhet": "USD/t",
       "pil": "upp",
       "delta4v": "+3,7 %",
@@ -999,12 +999,12 @@
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-09-09"
+      "vintage": "2026-09-10"
     },
     "olja": {
-      "v": 102.14,
+      "v": 101.31,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-09-09"
+      "vintage": "2026-09-10"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-09-09",
+    "vintage": "2026-09-10",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           103.43,
           100.77,
           101.64,
-          102.06
+          101.42
         ]
       },
       {
@@ -1943,13 +1943,8 @@
       "poster": [
         {
           "datum": "2026-09-08",
-          "namn": "Manor Sagit  (CIK 0001999977); Nayax Ltd.  (CIK 0001901279)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1999977/000197640826000803"
-        },
-        {
-          "datum": "2026-09-08",
-          "namn": "Grooms Nina C  (CIK 0001897771); ALAMO GROUP INC  (CIK 0000897077)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1897771/000089707726000098"
+          "namn": "Bertsch Jan  (CIK 0001477291); BWX Technologies, Inc.  (CIK 0001486957)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1477291/000112329226001239"
         },
         {
           "datum": "2026-09-08",
@@ -1963,18 +1958,23 @@
         },
         {
           "datum": "2026-09-08",
-          "namn": "Courtney Mark R  (CIK 0001786730); KEY TRONIC CORP  (CIK 0000719733)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1786730/000178673026000007"
-        },
-        {
-          "datum": "2026-09-08",
           "namn": "Bisson Lori  (CIK 0001768578); Autonomix Medical, Inc.  (CIK 0001617867)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1768578/000143774926029833"
         },
         {
           "datum": "2026-09-08",
-          "namn": "Bertsch Jan  (CIK 0001477291); BWX Technologies, Inc.  (CIK 0001486957)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1477291/000112329226001239"
+          "namn": "Manor Sagit  (CIK 0001999977); Nayax Ltd.  (CIK 0001901279)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1999977/000197640826000803"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Grooms Nina C  (CIK 0001897771); ALAMO GROUP INC  (CIK 0000897077)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1897771/000089707726000098"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Courtney Mark R  (CIK 0001786730); KEY TRONIC CORP  (CIK 0000719733)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1786730/000178673026000007"
         },
         {
           "datum": "2026-09-08",
@@ -1983,17 +1983,17 @@
         },
         {
           "datum": "2026-09-08",
-          "namn": "Courtis Kenneth S.  (CIK 0001812746); Alpha Metallurgical Resources, Inc.  (CIK 0001704715)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1812746/000181274626000012"
+          "namn": "Burchard Curtis  (CIK 0002020287); SOUTHSIDE BANCSHARES INC  (CIK 0000705432)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2020287/000202028726000003"
         },
         {
           "datum": "2026-09-08",
-          "namn": "Burchard Curtis  (CIK 0002020287); SOUTHSIDE BANCSHARES INC  (CIK 0000705432)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2020287/000202028726000003"
+          "namn": "Courtis Kenneth S.  (CIK 0001812746); Alpha Metallurgical Resources, Inc.  (CIK 0001704715)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1812746/000181274626000012"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-09T22:31+00:00"
+      "vintage": "2026-09-10T00:33+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "CAD"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-09T22:31+00:00"
+      "vintage": "2026-09-10T00:33+00:00"
     }
   }
 }
