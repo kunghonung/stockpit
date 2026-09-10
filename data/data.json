@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-10",
-  "genererad": "2026-09-10T20:48+00:00",
+  "genererad": "2026-09-10T23:07+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 110,
+        "index": 109,
         "pil": "upp",
         "status": "gron"
       },
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,12",
+      "varde": "64,03",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,2 %",
+      "delta4v": "−2,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,53",
+      "varde": "6,52",
       "enhet": "USD/t",
       "pil": "ned",
       "delta4v": "−1,1 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-10"
     },
     "olja": {
-      "v": 108.74,
+      "v": 109.06,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-10"
     }
@@ -1943,8 +1943,13 @@
       "poster": [
         {
           "datum": "2026-09-08",
-          "namn": "Bertsch Jan  (CIK 0001477291); BWX Technologies, Inc.  (CIK 0001486957)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1477291/000112329226001239"
+          "namn": "Manor Sagit  (CIK 0001999977); Nayax Ltd.  (CIK 0001901279)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1999977/000197640826000803"
+        },
+        {
+          "datum": "2026-09-08",
+          "namn": "Grooms Nina C  (CIK 0001897771); ALAMO GROUP INC  (CIK 0000897077)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1897771/000089707726000098"
         },
         {
           "datum": "2026-09-08",
@@ -1958,23 +1963,18 @@
         },
         {
           "datum": "2026-09-08",
+          "namn": "Courtney Mark R  (CIK 0001786730); KEY TRONIC CORP  (CIK 0000719733)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1786730/000178673026000007"
+        },
+        {
+          "datum": "2026-09-08",
           "namn": "Bisson Lori  (CIK 0001768578); Autonomix Medical, Inc.  (CIK 0001617867)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1768578/000143774926029833"
         },
         {
           "datum": "2026-09-08",
-          "namn": "Manor Sagit  (CIK 0001999977); Nayax Ltd.  (CIK 0001901279)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1999977/000197640826000803"
-        },
-        {
-          "datum": "2026-09-08",
-          "namn": "Grooms Nina C  (CIK 0001897771); ALAMO GROUP INC  (CIK 0000897077)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1897771/000089707726000098"
-        },
-        {
-          "datum": "2026-09-08",
-          "namn": "Courtney Mark R  (CIK 0001786730); KEY TRONIC CORP  (CIK 0000719733)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1786730/000178673026000007"
+          "namn": "Bertsch Jan  (CIK 0001477291); BWX Technologies, Inc.  (CIK 0001486957)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1477291/000112329226001239"
         },
         {
           "datum": "2026-09-08",
@@ -1983,20 +1983,130 @@
         },
         {
           "datum": "2026-09-08",
-          "namn": "Burchard Curtis  (CIK 0002020287); SOUTHSIDE BANCSHARES INC  (CIK 0000705432)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2020287/000202028726000003"
+          "namn": "Courtis Kenneth S.  (CIK 0001812746); Alpha Metallurgical Resources, Inc.  (CIK 0001704715)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1812746/000181274626000012"
         },
         {
           "datum": "2026-09-08",
-          "namn": "Courtis Kenneth S.  (CIK 0001812746); Alpha Metallurgical Resources, Inc.  (CIK 0001704715)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1812746/000181274626000012"
+          "namn": "Burchard Curtis  (CIK 0002020287); SOUTHSIDE BANCSHARES INC  (CIK 0000705432)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2020287/000202028726000003"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-10T20:48+00:00"
+      "vintage": "2026-09-10T23:07+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-11 00:05:29",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "56100,0",
+          "enhet": "Antal",
+          "pris": "0,64303",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-11 00:05:29",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "56100,0",
+          "enhet": "Antal",
+          "pris": "0,64303",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-11 00:05:29",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "56100,0",
+          "enhet": "Antal",
+          "pris": "3,44957",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-10 23:40:44",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Fredrik Helenius",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "55911,0",
+          "enhet": "Antal",
+          "pris": "3,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-10 23:28:56",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "0,049",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-10 23:28:56",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "0,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-10 23:02:34",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "6054,0",
+          "enhet": "Antal",
+          "pris": "25,02",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-10 23:02:34",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "11,0",
+          "enhet": "Antal",
+          "pris": "24,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-10 22:53:30",
+          "emittent": "Byhmgard",
+          "person": "Mikael Ingemarsson Odenberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "2657,0",
+          "enhet": "Antal",
+          "pris": "0,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-10 22:53:30",
+          "emittent": "Byhmgard",
+          "person": "Mikael Ingemarsson Odenberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "29800,0",
+          "enhet": "Antal",
+          "pris": "0,20",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-10 22:46:24",
           "emittent": "Byhmgard",
@@ -2436,121 +2546,11 @@
           "enhet": "Antal",
           "pris": "44,40",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 09:47:29",
-          "emittent": "Finepart Sweden AB",
-          "person": "Oskar Olai",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "92,0",
-          "enhet": "Antal",
-          "pris": "44,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 09:47:29",
-          "emittent": "Finepart Sweden AB",
-          "person": "Oskar Olai",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1513,0",
-          "enhet": "Antal",
-          "pris": "44,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 09:34:39",
-          "emittent": "Investmentaktiebolaget Latour",
-          "person": "Héléne Barnekow",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "204,53",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 09:12:29",
-          "emittent": "Biovica International AB",
-          "person": "Fredrik Alpsten",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "500000,0",
-          "enhet": "Antal",
-          "pris": "0,339",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 08:57:19",
-          "emittent": "Acconeer AB",
-          "person": "Michel Roig",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "18000,0",
-          "enhet": "Antal",
-          "pris": "11,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 08:43:14",
-          "emittent": "Arctic Minerals AB (publ)",
-          "person": "Johan Spetz",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Tilldelning",
-          "volym": "750000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 08:37:56",
-          "emittent": "Björn Borg AB",
-          "person": "Jens Nyström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Tilldelning",
-          "volym": "40000,0",
-          "enhet": "Antal",
-          "pris": "2,56",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 08:12:07",
-          "emittent": "Image Systems AB",
-          "person": "Jan Molin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "120000,0",
-          "enhet": "Antal",
-          "pris": "0,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 08:12:07",
-          "emittent": "Image Systems AB",
-          "person": "Jan Molin",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "0,65",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-09 22:44:55",
-          "emittent": "Prevas AB",
-          "person": "Johan Strid",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "25524,0",
-          "enhet": "Antal",
-          "pris": "66,69",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 10,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-10T20:48+00:00"
+      "vintage": "2026-09-10T23:07+00:00"
     }
   }
 }
