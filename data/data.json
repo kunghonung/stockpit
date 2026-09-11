@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-11",
-  "genererad": "2026-09-11T06:37+00:00",
+  "genererad": "2026-09-11T11:49+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.8,
-      "delta": "+3,5 · 1 v",
+      "varde": 17.1,
+      "delta": "+2,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 100,
+        "index": 99,
         "pil": "upp",
         "status": "gron"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.8,
+      "varde": 17.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −7 bp/mån."
     },
     "bredd": {
-      "over50": 37,
-      "over200": 57,
+      "over50": 34,
+      "over200": 55,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-10",
+      "vintage": "2026-09-11",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-6 sedan förra"
+      "delta": "-3 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4392",
+      "varde": "4375",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,7 %",
+      "delta4v": "+0,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,53",
+      "varde": "64,34",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,5 %",
+      "delta4v": "−0,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,53",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,1 %",
+      "delta4v": "−0,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-11"
     },
     "olja": {
-      "v": 106.1,
+      "v": 104.19,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-11"
     }
@@ -1768,7 +1768,7 @@
           103.25,
           101.91,
           101.68,
-          101.68
+          102.27
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           103.43,
           100.77,
           103.14,
-          101.07
+          101.15
         ]
       },
       {
@@ -1942,61 +1942,193 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-08",
-          "namn": "Manor Sagit  (CIK 0001999977); Nayax Ltd.  (CIK 0001901279)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1999977/000197640826000803"
+          "datum": "2026-09-09",
+          "namn": "Shao Wei-Li  (CIK 0002069137); Omada Health, Inc.  (CIK 0001611115)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2069137/000161071726000408"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Grooms Nina C  (CIK 0001897771); ALAMO GROUP INC  (CIK 0000897077)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1897771/000089707726000098"
+          "datum": "2026-09-09",
+          "namn": "CONWAY SHAWN  (CIK 0001515728); BELLRING BRANDS, INC.  (CIK 0001772016)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1515728/000162828026061167"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "PAEPER HOLLY Beth  (CIK 0002115144); LITTELFUSE INC /DE  (CIK 0000889331)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2115144/000211514426000012"
+          "datum": "2026-09-09",
+          "namn": "Brisbin Thomas Donald  (CIK 0001395188); Willdan Group, Inc.  (CIK 0001370450)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1395188/000139518826000008"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Polak Aldo J.  (CIK 0001778473); EVERTEC, Inc.  (CIK 0001559865)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1778473/000177847326000005"
+          "datum": "2026-09-09",
+          "namn": "MATROS RICHARD K  (CIK 0001184158); Sabra Health Care REIT, Inc.  (CIK 0001492298)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1184158/000118415826000016"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Courtney Mark R  (CIK 0001786730); KEY TRONIC CORP  (CIK 0000719733)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1786730/000178673026000007"
+          "datum": "2026-09-09",
+          "namn": "Brown Brian Nicholas  (CIK 0001820672); Rocket Companies, Inc.  (CIK 0001805284)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1820672/000180528426000103"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Bisson Lori  (CIK 0001768578); Autonomix Medical, Inc.  (CIK 0001617867)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1768578/000143774926029833"
+          "datum": "2026-09-09",
+          "namn": "Lovier Heather M.  (CIK 0002028260); Rocket Companies, Inc.  (CIK 0001805284)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2028260/000180528426000100"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Bertsch Jan  (CIK 0001477291); BWX Technologies, Inc.  (CIK 0001486957)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1477291/000112329226001239"
+          "datum": "2026-09-09",
+          "namn": "Ramdas Gautam  (CIK 0002153871); NORTHERN TECHNOLOGIES INTERNATIONAL CORP  (CIK 0000875582)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2153871/000215387126000002"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "PRITZKER PENNY S  (CIK 0001087398); MICROSOFT CORP  (CIK 0000789019)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1087398/000078901926000182"
+          "datum": "2026-09-10",
+          "namn": "Tenne Joseph  (CIK 0001339259); AUDIOCODES LTD  (CIK 0001086434)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1339259/000197640826000822"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Courtis Kenneth S.  (CIK 0001812746); Alpha Metallurgical Resources, Inc.  (CIK 0001704715)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1812746/000181274626000012"
+          "datum": "2026-09-10",
+          "namn": "Simermeyer Elizabeth A  (CIK 0001740096); ACCO BRANDS Corp  (CIK 0000712034)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1740096/000071203426000078"
         },
         {
-          "datum": "2026-09-08",
-          "namn": "Burchard Curtis  (CIK 0002020287); SOUTHSIDE BANCSHARES INC  (CIK 0000705432)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2020287/000202028726000003"
+          "datum": "2026-09-10",
+          "namn": "Schwartz Todd G.  (CIK 0001873026); OppFi Inc.  (CIK 0001818502)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1873026/000090514826004133"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-11T06:37+00:00"
+      "vintage": "2026-09-11T11:49+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-11 13:04:41",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Håkan Englund",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "278936,0",
+          "enhet": "Antal",
+          "pris": "0,0574",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 11:53:45",
+          "emittent": "SUSTAINABLE ENERGY SOLUTIONS SWEDEN HOLDING AB",
+          "person": "Hans Andréasson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5856646,0",
+          "enhet": "Antal",
+          "pris": "0,001",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 11:45:48",
+          "emittent": "Ramlösa shipping AB",
+          "person": "Martin Hansson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1841,0",
+          "enhet": "Antal",
+          "pris": "20,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 11:39:57",
+          "emittent": "Kjell Group AB (publ)",
+          "person": "Ebba Ljungerud",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "3006,0",
+          "enhet": "Antal",
+          "pris": "15,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 11:39:57",
+          "emittent": "Kjell Group AB (publ)",
+          "person": "Ebba Ljungerud",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "22000,0",
+          "enhet": "Antal",
+          "pris": "15,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 11:27:32",
+          "emittent": "Dynavox Group AB",
+          "person": "Fredrik Gustaf Otto Ruben",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "6689,0",
+          "enhet": "Antal",
+          "pris": "73,9978",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 11:14:49",
+          "emittent": "Rusta AB",
+          "person": "Claes Eriksson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "79,367",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 10:28:23",
+          "emittent": "Björn Borg AB",
+          "person": "Robin Salazar",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "40000,0",
+          "enhet": "Antal",
+          "pris": "2,56",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 09:59:10",
+          "emittent": "New Bubbleroom Sweden AB",
+          "person": "Magnus Månsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "10,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 09:31:54",
+          "emittent": "Investmentaktiebolaget Latour",
+          "person": "Héléne Barnekow",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "204,53",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 08:48:52",
+          "emittent": "Redsense Medical AB publ",
+          "person": "Susanne Olausson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "2,75",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-11 08:45:24",
+          "emittent": "Hexatronic Group AB",
+          "person": "Pernilla Lindén",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "7600,0",
+          "enhet": "Antal",
+          "pris": "39,19",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-11 08:28:40",
           "emittent": "Linc AB",
@@ -2414,143 +2546,11 @@
           "enhet": "Antal",
           "pris": "17,8873",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 17:42:47",
-          "emittent": "New Bubbleroom Sweden AB",
-          "person": "Andreas Malmström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "8770,0",
-          "enhet": "Antal",
-          "pris": "11,38",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 17:42:47",
-          "emittent": "New Bubbleroom Sweden AB",
-          "person": "Andreas Malmström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "6700,0",
-          "enhet": "Antal",
-          "pris": "10,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 17:39:32",
-          "emittent": "Prostatype Genomics AB",
-          "person": "Anders Lundberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "500000,0",
-          "enhet": "Antal",
-          "pris": "0,056",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 17:24:59",
-          "emittent": "Clas Ohlson AB",
-          "person": "Stefan Lindvall",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "500,0",
-          "enhet": "Antal",
-          "pris": "426,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 17:20:07",
-          "emittent": "Björn Borg AB",
-          "person": "Henric Bunge",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "300000,0",
-          "enhet": "Antal",
-          "pris": "2,56",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 16:55:40",
-          "emittent": "Verve Group Media SE",
-          "person": "Remco Westermann",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "50239,0",
-          "enhet": "Antal",
-          "pris": "1,1000",
-          "valuta": "EUR"
-        },
-        {
-          "publicerad": "2026-09-10 16:55:40",
-          "emittent": "Verve Group Media SE",
-          "person": "Remco Westermann",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "100120,0",
-          "enhet": "Antal",
-          "pris": "12,266",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 16:01:56",
-          "emittent": "Vetted Assets AB (publ)",
-          "person": "Jacob Stenberg",
-          "befattning": "Vice VD, Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "237995,0",
-          "enhet": "Antal",
-          "pris": "4,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 15:33:31",
-          "emittent": "Björn Borg AB",
-          "person": "Emma Bengtsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "40000,0",
-          "enhet": "Antal",
-          "pris": "2,56",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 15:00:06",
-          "emittent": "Mangold AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "90,0",
-          "enhet": "Antal",
-          "pris": "1570,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 15:00:06",
-          "emittent": "Mangold AB",
-          "person": "Per Åhlgren",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1842,0",
-          "enhet": "Antal",
-          "pris": "1530,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-10 13:57:12",
-          "emittent": "INFANT BACTERIAL THERAPEUTICS AB",
-          "person": "Staffan Strömberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "65000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 16,
+      "nyaSenasteKorning": 12,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-11T06:37+00:00"
+      "vintage": "2026-09-11T11:49+00:00"
     }
   }
 }
