@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-11",
-  "genererad": "2026-09-11T21:53+00:00",
+  "genererad": "2026-09-12T00:14+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-11T21:53+00:00"
+      "vintage": "2026-09-12T00:14+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-12 01:18:07",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "45800,0",
+          "enhet": "Antal",
+          "pris": "0,64303",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-12 01:18:07",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "45800,0",
+          "enhet": "Antal",
+          "pris": "0,64303",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-12 01:18:07",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "3,33465",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-12 01:11:22",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "45800,0",
+          "enhet": "Antal",
+          "pris": "3,50238",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-12 01:09:29",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "56100,0",
+          "enhet": "Antal",
+          "pris": "0,64303",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-12 01:09:29",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "56100,0",
+          "enhet": "Antal",
+          "pris": "0,64303",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-09-12 01:09:29",
+          "emittent": "Goldsky Resources Corp.",
+          "person": "Noora Ahola",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "56100,0",
+          "enhet": "Antal",
+          "pris": "3,44957",
+          "valuta": "CAD"
+        },
         {
           "publicerad": "2026-09-11 19:44:57",
           "emittent": "Securitas AB",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "30,10",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1467,0",
-          "enhet": "Antal",
-          "pris": "30,60",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1030,0",
-          "enhet": "Antal",
-          "pris": "30,60",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "777,0",
-          "enhet": "Antal",
-          "pris": "30,60",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "300,0",
-          "enhet": "Antal",
-          "pris": "30,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1951,0",
-          "enhet": "Antal",
-          "pris": "30,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "122,0",
-          "enhet": "Antal",
-          "pris": "30,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "241,0",
-          "enhet": "Antal",
-          "pris": "30,20",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-11T21:53+00:00"
+      "vintage": "2026-09-12T00:14+00:00"
     }
   }
 }
