@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-11",
-  "genererad": "2026-09-12T09:14+00:00",
+  "genererad": "2026-09-12T13:06+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-12T09:14+00:00"
+      "vintage": "2026-09-12T13:06+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-12 13:17:21",
+          "emittent": "ChargePanel AB",
+          "person": "Robert Carlén",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "2,116020",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-12 01:18:07",
           "emittent": "Goldsky Resources Corp.",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "30,40",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 06:28:43",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "59,0",
-          "enhet": "Antal",
-          "pris": "30,10",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-12T09:14+00:00"
+      "vintage": "2026-09-12T13:06+00:00"
     }
   }
 }
