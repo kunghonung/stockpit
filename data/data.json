@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-11",
-  "genererad": "2026-09-13T06:45+00:00",
+  "genererad": "2026-09-13T12:41+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 109,
+        "index": 108,
         "pil": "upp",
         "status": "gron"
       },
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4409",
+      "varde": "4366",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+1,0 %",
+      "delta4v": "+0,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,19",
+      "varde": "64,55",
       "enhet": "USD/oz",
-      "pil": "upp",
-      "delta4v": "+0,5 %",
+      "pil": "ned",
+      "delta4v": "−0,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,55",
+      "varde": "6,47",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,7 %",
+      "delta4v": "−1,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-13T06:45+00:00"
+      "vintage": "2026-09-13T12:41+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-13 12:52:49",
+          "emittent": "KlaraBo Sverige AB",
+          "person": "Jimmy Larsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "13,5528",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-13 09:30:27",
+          "emittent": "Infracom Group AB (publ)",
+          "person": "Hans Nilsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "2600,0",
+          "enhet": "Antal",
+          "pris": "13,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-13 09:16:42",
+          "emittent": "Systemair Aktiebolag",
+          "person": "Olof Glassel",
+          "befattning": "Vice VD",
+          "karaktar": "Lösen minskning",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "6,89",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-13 09:16:42",
+          "emittent": "Systemair Aktiebolag",
+          "person": "Olof Glassel",
+          "befattning": "Vice VD",
+          "karaktar": "Lösen ökning",
+          "volym": "2171,0",
+          "enhet": "Antal",
+          "pris": "0,25",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-12 20:22:42",
           "emittent": "Careium AB (publ)",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "71,9",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 08:14:03",
-          "emittent": "Netel Holding AB",
-          "person": "Johan Olovsson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Teckning",
-          "volym": "45000,0",
-          "enhet": "Antal",
-          "pris": "3,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 08:11:48",
-          "emittent": "Actic Group AB",
-          "person": "Fredrik Söderberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "26,98",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 08:03:02",
-          "emittent": "Netel Holding AB (publ)",
-          "person": "Therése Lundstedt",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "7500,0",
-          "enhet": "Antal",
-          "pris": "3,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 07:35:31",
-          "emittent": "Netel Holding AB (publ)",
-          "person": "Alireza Etemad",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "3487500,0",
-          "enhet": "Antal",
-          "pris": "3,5",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-13T06:45+00:00"
+      "vintage": "2026-09-13T12:41+00:00"
     }
   }
 }
