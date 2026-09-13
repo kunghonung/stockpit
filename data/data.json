@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W37",
   "asOfDatum": "2026-09-11",
-  "genererad": "2026-09-13T12:41+00:00",
+  "genererad": "2026-09-13T16:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4366",
+      "varde": "4409",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,1 %",
+      "delta4v": "+1,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,55",
+      "varde": "65,19",
       "enhet": "USD/oz",
-      "pil": "ned",
-      "delta4v": "−0,5 %",
+      "pil": "upp",
+      "delta4v": "+0,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,47",
+      "varde": "6,55",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,9 %",
+      "delta4v": "−0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-13T12:41+00:00"
+      "vintage": "2026-09-13T16:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-13 16:18:49",
+          "emittent": "Vimian Group AB",
+          "person": "Eva-Lotta Lundaas",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "27624,0",
+          "enhet": "Antal",
+          "pris": "6,88",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-13 16:18:49",
+          "emittent": "Vimian Group AB",
+          "person": "Eva-Lotta Lundaas",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "27624,0",
+          "enhet": "Antal",
+          "pris": "5,79",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-13 12:52:49",
           "emittent": "KlaraBo Sverige AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "2,75",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 08:45:24",
-          "emittent": "Hexatronic Group AB",
-          "person": "Pernilla Lindén",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "7600,0",
-          "enhet": "Antal",
-          "pris": "39,19",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-11 08:28:40",
-          "emittent": "Linc AB",
-          "person": "Karl Tobieson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "71,9",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-13T12:41+00:00"
+      "vintage": "2026-09-13T16:57+00:00"
     }
   }
 }
