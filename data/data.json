@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-15",
-  "genererad": "2026-09-15T04:48+00:00",
+  "genererad": "2026-09-15T10:01+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.1,
-      "delta": "+1,8 · 1 v",
+      "varde": 17.7,
+      "delta": "+2,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -726,7 +726,7 @@
         "id": "hgxau",
         "namn": "HG1/XAU",
         "grupp": "Tillväxt/Inflation",
-        "index": 98,
+        "index": 99,
         "pil": "upp",
         "status": "gron"
       },
@@ -734,7 +734,7 @@
         "id": "btcxau",
         "namn": "BTC/XAU",
         "grupp": "Riskvilja/Likviditet",
-        "index": 111,
+        "index": 109,
         "pil": "upp",
         "status": "gron"
       },
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.1,
+      "varde": 17.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −15 bp/mån."
     },
     "bredd": {
-      "over50": 39,
+      "over50": 38,
       "over200": 56,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-14",
+      "vintage": "2026-09-15",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+5 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4342",
+      "varde": "4310",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,7 %",
+      "delta4v": "−2,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,78",
+      "varde": "63,47",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,5 %",
+      "delta4v": "−4,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,39",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−3,2 %",
+      "delta4v": "−3,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-15"
     },
     "olja": {
-      "v": 107.35,
+      "v": 102.8,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-15"
     }
@@ -1768,7 +1768,7 @@
           99.44,
           97.3,
           97.82,
-          98.62
+          98.11
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           98.19,
           96.19,
           96.38,
-          97.09
+          97.15
         ]
       },
       {
@@ -1993,10 +1993,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-15T04:48+00:00"
+      "vintage": "2026-09-15T10:01+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-15 11:45:31",
+          "emittent": "ES Group AB (publ)",
+          "person": "Christian Gulbrandsen",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "33333,0",
+          "enhet": "Antal",
+          "pris": "15,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-15 11:43:02",
+          "emittent": "ES Group AB (publ)",
+          "person": "Fredrik Sävenstrand",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "139998,0",
+          "enhet": "Antal",
+          "pris": "15,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-15 10:15:13",
+          "emittent": "Litium AB",
+          "person": "Petter Blid",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "2300,0",
+          "enhet": "Antal",
+          "pris": "10,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-15 09:51:31",
+          "emittent": "Ambea AB ( publ )",
+          "person": "Benno Eliasson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "1300,0",
+          "enhet": "Antal",
+          "pris": "164,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-15 08:55:02",
+          "emittent": "Bergman & Beving Aktiebolag",
+          "person": "Magnus Söderlind",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "255,545",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-15 08:40:28",
+          "emittent": "Rusta AB",
+          "person": "Anna Renée Cathrine Westerberg Wigzell",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "6381,0",
+          "enhet": "Antal",
+          "pris": "78,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-15 08:34:52",
+          "emittent": "Brock Milton Capital AB",
+          "person": "Lukas Lindkvist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "140000,0",
+          "enhet": "Antal",
+          "pris": "90,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-15 00:12:01",
           "emittent": "Goldsky Resources Corp.",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "13,5528",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-13 09:30:27",
-          "emittent": "Infracom Group AB (publ)",
-          "person": "Hans Nilsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2600,0",
-          "enhet": "Antal",
-          "pris": "13,05",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-13 09:16:42",
-          "emittent": "Systemair Aktiebolag",
-          "person": "Olof Glassel",
-          "befattning": "Vice VD",
-          "karaktar": "Lösen minskning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "6,89",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-13 09:16:42",
-          "emittent": "Systemair Aktiebolag",
-          "person": "Olof Glassel",
-          "befattning": "Vice VD",
-          "karaktar": "Lösen ökning",
-          "volym": "2171,0",
-          "enhet": "Antal",
-          "pris": "0,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-12 20:22:42",
-          "emittent": "Careium AB (publ)",
-          "person": "David Granath",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "9673,0",
-          "enhet": "Antal",
-          "pris": "27,97",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-12 13:17:21",
-          "emittent": "ChargePanel AB",
-          "person": "Robert Carlén",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "2,116020",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-12 01:18:07",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "45800,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-12 01:18:07",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "45800,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-15T04:48+00:00"
+      "vintage": "2026-09-15T10:01+00:00"
     }
   }
 }
