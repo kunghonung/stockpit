@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-16",
-  "genererad": "2026-09-16T15:31+00:00",
+  "genererad": "2026-09-16T19:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 4,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         100.51,
         101.5,
         100.28,
-        101.0
+        100.81
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 10,
+      "rsRank": 11,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         98.79,
         97.9,
         96.78,
-        97.21
+        96.95
       ]
     },
     {
@@ -222,7 +222,7 @@
         93.94,
         95.14,
         97.23,
-        96.88
+        97.05
       ]
     },
     {
@@ -273,7 +273,7 @@
         100.95,
         98.84,
         99.31,
-        99.4
+        98.87
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         96.56,
         95.93,
         97.21,
-        96.95
+        97.38
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 3,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         110.74,
         107.63,
         110.12,
-        110.17
+        110.7
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 11,
+      "rsRank": 10,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         91.97,
         91.19,
         89.7,
-        89.92
+        89.93
       ]
     },
     {
@@ -478,7 +478,7 @@
         95.44,
         95.06,
         95.16,
-        95.38
+        95.16
       ]
     },
     {
@@ -529,7 +529,7 @@
         104.25,
         106.83,
         109.11,
-        106.07
+        106.61
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         108.29,
         107.53,
         107.76,
-        106.71
+        106.34
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.34,
         92.47,
         91.59,
-        91.51
+        91.5
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.7,
-      "delta": "+0,2 · 1 v",
+      "varde": 16.9,
+      "delta": "+0,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.7,
+      "varde": 16.9,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4393",
+      "varde": "4313",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,6 %",
+      "delta4v": "−2,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,22",
+      "varde": "63,83",
       "enhet": "USD/oz",
-      "pil": "upp",
-      "delta4v": "+2,0 %",
+      "pil": "ned",
+      "delta4v": "−0,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,51",
+      "varde": "6,45",
       "enhet": "USD/t",
-      "pil": "upp",
-      "delta4v": "+0,5 %",
+      "pil": "ned",
+      "delta4v": "−0,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-16"
     },
     "olja": {
-      "v": 104.76,
+      "v": 105.51,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-16"
     }
@@ -1686,7 +1686,7 @@
           99.53,
           99.78,
           100.16,
-          100.03
+          100.14
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           96.55,
           96.98,
           96.82,
-          97.16
+          97.26
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           100.17,
           99.52,
           100.03,
-          100.16
+          100.85
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           98.91,
           98.37,
           98.83,
-          99.02
+          99.87
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           100.48,
           100.24,
           98.42,
-          98.94
+          98.64
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           95.26,
           92.82,
           93.93,
-          92.99
+          93.24
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           99.38,
           97.7,
           96.97,
-          96.93
+          97.09
         ]
       }
     ],
@@ -1958,23 +1958,13 @@
         },
         {
           "datum": "2026-09-14",
-          "namn": "Vitus Andrew L.  (CIK 0001631062); JFrog Ltd  (CIK 0001800667)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1631062/000163106226000003"
-        },
-        {
-          "datum": "2026-09-14",
           "namn": "McKinney Marianne  (CIK 0001921466); CF BANKSHARES INC.  (CIK 0001070680)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1921466/000119312526390619"
         },
         {
-          "datum": "2026-09-15",
-          "namn": "Evans Jeremy Scott  (CIK 0002087711); HELIOS TECHNOLOGIES, INC.  (CIK 0001024795)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2087711/000119312526391934"
-        },
-        {
-          "datum": "2026-09-15",
-          "namn": "Gong Xunkai  (CIK 0001865618); AvePoint, Inc.  (CIK 0001777921)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1865618/000143774926030461"
+          "datum": "2026-09-14",
+          "namn": "Vitus Andrew L.  (CIK 0001631062); JFrog Ltd  (CIK 0001800667)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1631062/000163106226000003"
         },
         {
           "datum": "2026-09-14",
@@ -1990,13 +1980,111 @@
           "datum": "2026-09-14",
           "namn": "Shannon James M  (CIK 0001395587); UL Solutions Inc.  (CIK 0001901440)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1395587/000090514826004186"
+        },
+        {
+          "datum": "2026-09-14",
+          "namn": "Farquhar John C.M.  (CIK 0001900415); Heartflow, Inc.  (CIK 0001464521)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1900415/000146452126000145"
+        },
+        {
+          "datum": "2026-09-14",
+          "namn": "Laird Fiona  (CIK 0001676220); Solstice Advanced Materials Inc.  (CIK 0002064953)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1676220/000167622026000007"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-16T15:31+00:00"
+      "vintage": "2026-09-16T19:03+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-16 21:02:58",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Jörgen Dahlström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen minskning",
+          "volym": "668000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 21:02:58",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Jörgen Dahlström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen ökning",
+          "volym": "668000,0",
+          "enhet": "Antal",
+          "pris": "0,1",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 20:47:37",
+          "emittent": "C100 AB (publ)",
+          "person": "Oliver Aleksov",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1390879,0",
+          "enhet": "Antal",
+          "pris": "4,19",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 20:43:18",
+          "emittent": "Hunter Capital RTO 1 AB (publ)",
+          "person": "Oliver Aleksov",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "22258,0",
+          "enhet": "Antal",
+          "pris": "1,3321",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 19:39:25",
+          "emittent": "Bankaktiebolaget Nordiska (publ)",
+          "person": "Filip Dahlstedt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,09",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 19:00:06",
+          "emittent": "Bankaktiebolaget Nordiska (publ)",
+          "person": "Karl Henrik Wennerholm",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,09",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 18:38:16",
+          "emittent": "New Wave Group AB",
+          "person": "Torsten Jansson",
+          "befattning": "Verkställande direktör (VD), Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "345000,0",
+          "enhet": "Antal",
+          "pris": "86,64",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-16 17:59:45",
+          "emittent": "Bankaktiebolaget Nordiska (publ)",
+          "person": "Pehr Petersson",
+          "befattning": "Vice VD",
+          "karaktar": "Teckning",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,09",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-16 17:25:26",
           "emittent": "Scandi Standard AB (publ)",
@@ -2458,99 +2546,11 @@
           "enhet": "Antal",
           "pris": "10,14",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 13:25:05",
-          "emittent": "Freja eID Group AB",
-          "person": "Kristofer von Beetzen",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 13:25:05",
-          "emittent": "Freja eID Group AB",
-          "person": "Kristofer von Beetzen",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 13:25:05",
-          "emittent": "Freja eID Group AB",
-          "person": "Kristofer von Beetzen",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,052",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 13:24:23",
-          "emittent": "Freja eID Group AB",
-          "person": "Jakub Missuna",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Tilldelning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 13:24:23",
-          "emittent": "Freja eID Group AB",
-          "person": "Jakub Missuna",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen minskning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 13:24:23",
-          "emittent": "Freja eID Group AB",
-          "person": "Jakub Missuna",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen ökning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,052",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 12:57:31",
-          "emittent": "Scandi Standard AB (publ)",
-          "person": "Ida Ljungkvist",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "194,0",
-          "enhet": "Antal",
-          "pris": "125,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 12:24:42",
-          "emittent": "IMHO Intermedia House AB",
-          "person": "Lars Joachim Rambe",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "0,048",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 42,
+      "nyaSenasteKorning": 8,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-16T15:31+00:00"
+      "vintage": "2026-09-16T19:03+00:00"
     }
   }
 }
