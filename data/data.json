@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-17",
-  "genererad": "2026-09-17T06:07+00:00",
+  "genererad": "2026-09-17T11:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.7,
-      "delta": "+1,2 · 1 v",
+      "varde": 15.9,
+      "delta": "−1,9 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.7,
+      "varde": 15.9,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −18 bp/mån."
     },
     "bredd": {
-      "over50": 35,
-      "over200": 53,
+      "over50": 31,
+      "over200": 50,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-16",
+      "vintage": "2026-09-17",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-3 sedan förra"
+      "delta": "-4 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4342",
+      "varde": "4368",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,5 %",
+      "delta4v": "−3,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,23",
+      "varde": "64,68",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,3 %",
+      "delta4v": "−1,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,53",
+      "varde": "6,61",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,6 %",
+      "delta4v": "+1,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-17"
     },
     "olja": {
-      "v": 104.88,
+      "v": 99.33,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-17"
     }
@@ -1768,7 +1768,7 @@
           100.17,
           99.52,
           100.87,
-          100.87
+          101.35
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           98.91,
           98.37,
           99.88,
-          99.85
+          100.22
         ]
       },
       {
@@ -1993,10 +1993,296 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-17T06:07+00:00"
+      "vintage": "2026-09-17T11:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-17 13:38:43",
+          "emittent": "SAAB Aktiebolag",
+          "person": "David Joakim Davidsson Truuberg",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "6,93263",
+          "enhet": "Antal",
+          "pris": "591,40590",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:37:26",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Jacob Werkell",
+          "befattning": "Styrelsesuppleant",
+          "karaktar": "Avyttring",
+          "volym": "1320,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:37:26",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Jacob Werkell",
+          "befattning": "Styrelsesuppleant",
+          "karaktar": "Avyttring",
+          "volym": "87000,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:34:12",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Claes Werkell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:32:48",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Claes Werkell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "201770,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:32:48",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Claes Werkell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "400000,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:30:50",
+          "emittent": "Havsfrun Investment AB",
+          "person": "John CF Tengberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "232600,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:30:50",
+          "emittent": "Havsfrun Investment AB",
+          "person": "John CF Tengberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "250354,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:30:50",
+          "emittent": "Havsfrun Investment AB",
+          "person": "John CF Tengberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "585000,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:27:42",
+          "emittent": "Exsitec Holding AB",
+          "person": "Emma Billenius",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:26:05",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Claes Werkell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "250354,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:23:39",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Claes Werkell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "1134580,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 13:23:39",
+          "emittent": "Havsfrun Investment AB",
+          "person": "Claes Werkell",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "4269650,0",
+          "enhet": "Antal",
+          "pris": "12,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 12:59:10",
+          "emittent": "Exsitec Holding AB",
+          "person": "Jonas Boqvist",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 12:33:55",
+          "emittent": "Alimak Group AB (publ)",
+          "person": "Charlotte Brogren Karlberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "16000,0",
+          "enhet": "Antal",
+          "pris": "12,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 12:15:25",
+          "emittent": "Exsitec Holding AB",
+          "person": "Niklas Ek",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 12:08:05",
+          "emittent": "Netel Holding AB (publ)",
+          "person": "Jari Juhani Burmeister",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "610357,0",
+          "enhet": "Antal",
+          "pris": "3,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 11:24:00",
+          "emittent": "Siljansvik AB",
+          "person": "Anna Stiwne",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "458,0",
+          "enhet": "Antal",
+          "pris": "116,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 11:05:15",
+          "emittent": "CombinedX AB (publ)",
+          "person": "Per Aronsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "4700,0",
+          "enhet": "Antal",
+          "pris": "39,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 10:37:58",
+          "emittent": "Alimak Group AB (publ)",
+          "person": "Johnny Nylund",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "40000,0",
+          "enhet": "Antal",
+          "pris": "12,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 09:28:19",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Anders Lundberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen minskning",
+          "volym": "1287500,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 09:25:51",
+          "emittent": "Prostatype Genomics AB",
+          "person": "Anders Lundberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen ökning",
+          "volym": "1287500,0",
+          "enhet": "Antal",
+          "pris": "0,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 09:08:17",
+          "emittent": "Bankaktiebolaget Nordiska (publ)",
+          "person": "Eric Åström",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Teckning",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,09",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 08:59:11",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Göran Matz",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Teckning",
+          "volym": "616,0",
+          "enhet": "Antal",
+          "pris": "125,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 08:48:41",
+          "emittent": "H100 Group AB",
+          "person": "Eirik Groettum",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "405663,0",
+          "enhet": "Antal",
+          "pris": "1,527838",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 08:48:41",
+          "emittent": "H100 Group AB",
+          "person": "Eirik Groettum",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1500,0",
+          "enhet": "Antal",
+          "pris": "1,4",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-17 07:49:22",
           "emittent": "Unlimited Travel Group UTG AB (publ)",
@@ -2260,297 +2546,11 @@
           "enhet": "Antal",
           "pris": "125,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 16:04:47",
-          "emittent": "Scandi Standard AB (publ)",
-          "person": "Johan Bygge",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "1040,0",
-          "enhet": "Antal",
-          "pris": "125,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:49:25",
-          "emittent": "Skanska AB",
-          "person": "Malte Fält",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "10,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:48:54",
-          "emittent": "Skanska AB",
-          "person": "Fredrik Norrman",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "16,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:48:31",
-          "emittent": "Skanska AB",
-          "person": "Lena Hök",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "128,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:48:06",
-          "emittent": "Skanska AB",
-          "person": "Therese Tegner",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "136,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:47:39",
-          "emittent": "Skanska AB",
-          "person": "Åsa Widholm Thunman",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "159,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:47:12",
-          "emittent": "Skanska AB",
-          "person": "Pontus Winqvist",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "178,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:46:49",
-          "emittent": "Skanska AB",
-          "person": "Claes Larsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "250,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:46:30",
-          "emittent": "Skanska AB",
-          "person": "Richard Kennedy",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "414,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:46:03",
-          "emittent": "Skanska AB",
-          "person": "Anders Danielsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "517,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:45:26",
-          "emittent": "Skanska AB",
-          "person": "Hans Reinholdsson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "9,0",
-          "enhet": "Antal",
-          "pris": "266,212335",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:42:08",
-          "emittent": "Skanska AB",
-          "person": "Claes Larsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "252,0",
-          "enhet": "Antal",
-          "pris": "266,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:41:19",
-          "emittent": "Skanska AB",
-          "person": "Anders Danielsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "493,0",
-          "enhet": "Antal",
-          "pris": "266,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:40:37",
-          "emittent": "Skanska AB",
-          "person": "Anders Rättgård",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Tilldelning",
-          "volym": "7,0",
-          "enhet": "Antal",
-          "pris": "266,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:31:14",
-          "emittent": "ITAB Shop Concept AB",
-          "person": "Andreas Helmersson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "9900,0",
-          "enhet": "Antal",
-          "pris": "17,567",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:31:14",
-          "emittent": "ITAB Shop Concept AB",
-          "person": "Andreas Helmersson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "8500,0",
-          "enhet": "Antal",
-          "pris": "17,372",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 15:31:14",
-          "emittent": "ITAB Shop Concept AB",
-          "person": "Andreas Helmersson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1600,0",
-          "enhet": "Antal",
-          "pris": "17,09",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "252,0",
-          "enhet": "Antal",
-          "pris": "30,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "129,0",
-          "enhet": "Antal",
-          "pris": "30,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "178,0",
-          "enhet": "Antal",
-          "pris": "30,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100,0",
-          "enhet": "Antal",
-          "pris": "30,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3900,0",
-          "enhet": "Antal",
-          "pris": "30,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100,0",
-          "enhet": "Antal",
-          "pris": "30,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "30,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1033,0",
-          "enhet": "Antal",
-          "pris": "30,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:29:33",
-          "emittent": "Alcadon Group AB",
-          "person": "mikael vaezi",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1308,0",
-          "enhet": "Antal",
-          "pris": "30,50",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 26,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-17T06:07+00:00"
+      "vintage": "2026-09-17T11:40+00:00"
     }
   }
 }
