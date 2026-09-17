@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-17",
-  "genererad": "2026-09-17T00:52+00:00",
+  "genererad": "2026-09-17T06:07+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         99.77,
         100.51,
         101.5,
-        100.28,
+        100.83,
         100.83
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         99.95,
         98.79,
         97.9,
-        96.78,
+        97.12,
         97.12
       ]
     },
@@ -221,7 +221,7 @@
         94.84,
         93.94,
         95.14,
-        97.23,
+        96.78,
         96.78
       ]
     },
@@ -272,7 +272,7 @@
         102.49,
         100.95,
         98.84,
-        99.31,
+        99.02,
         99.02
       ]
     },
@@ -323,7 +323,7 @@
         97.66,
         96.56,
         95.93,
-        97.21,
+        97.17,
         97.17
       ]
     },
@@ -374,7 +374,7 @@
         110.67,
         110.74,
         107.63,
-        110.12,
+        110.68,
         110.68
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         91.32,
         91.97,
         91.19,
-        89.7,
+        90.1,
         90.1
       ]
     },
@@ -477,7 +477,7 @@
         96.74,
         95.44,
         95.06,
-        95.16,
+        95.0,
         95.0
       ]
     },
@@ -528,7 +528,7 @@
         102.12,
         104.25,
         106.83,
-        109.11,
+        106.43,
         106.43
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         108.41,
         108.29,
         107.53,
-        107.76,
+        106.48,
         106.48
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         95.32,
         93.34,
         92.47,
-        91.59,
+        91.42,
         91.42
       ]
     }
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4329",
+      "varde": "4342",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,1 %",
+      "delta4v": "−4,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "63,92",
+      "varde": "64,23",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,0 %",
+      "delta4v": "−2,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,46",
+      "varde": "6,53",
       "enhet": "USD/t",
-      "pil": "ned",
-      "delta4v": "−0,3 %",
+      "pil": "upp",
+      "delta4v": "+0,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-17"
     },
     "olja": {
-      "v": 104.76,
+      "v": 104.88,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-17"
     }
@@ -1685,7 +1685,7 @@
           99.91,
           99.53,
           99.78,
-          100.16,
+          100.09,
           100.09
         ]
       },
@@ -1726,7 +1726,7 @@
           96.68,
           96.55,
           96.98,
-          96.82,
+          97.2,
           97.2
         ]
       },
@@ -1767,7 +1767,7 @@
           101.49,
           100.17,
           99.52,
-          100.03,
+          100.87,
           100.87
         ]
       },
@@ -1808,8 +1808,8 @@
           101.52,
           98.91,
           98.37,
-          98.83,
-          100.29
+          99.88,
+          99.85
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           98.69,
           100.48,
           100.24,
-          98.42,
+          98.73,
           98.73
         ]
       },
@@ -1890,7 +1890,7 @@
           96.29,
           95.26,
           92.82,
-          93.93,
+          93.22,
           93.22
         ]
       },
@@ -1931,7 +1931,7 @@
           99.18,
           99.38,
           97.7,
-          96.97,
+          97.07,
           97.07
         ]
       }
@@ -1958,13 +1958,23 @@
         },
         {
           "datum": "2026-09-14",
+          "namn": "Vitus Andrew L.  (CIK 0001631062); JFrog Ltd  (CIK 0001800667)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1631062/000163106226000003"
+        },
+        {
+          "datum": "2026-09-14",
           "namn": "McKinney Marianne  (CIK 0001921466); CF BANKSHARES INC.  (CIK 0001070680)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1921466/000119312526390619"
         },
         {
-          "datum": "2026-09-14",
-          "namn": "Vitus Andrew L.  (CIK 0001631062); JFrog Ltd  (CIK 0001800667)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1631062/000163106226000003"
+          "datum": "2026-09-15",
+          "namn": "Evans Jeremy Scott  (CIK 0002087711); HELIOS TECHNOLOGIES, INC.  (CIK 0001024795)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2087711/000119312526391934"
+        },
+        {
+          "datum": "2026-09-15",
+          "namn": "Gong Xunkai  (CIK 0001865618); AvePoint, Inc.  (CIK 0001777921)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1865618/000143774926030461"
         },
         {
           "datum": "2026-09-14",
@@ -1980,23 +1990,35 @@
           "datum": "2026-09-14",
           "namn": "Shannon James M  (CIK 0001395587); UL Solutions Inc.  (CIK 0001901440)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1395587/000090514826004186"
-        },
-        {
-          "datum": "2026-09-14",
-          "namn": "Farquhar John C.M.  (CIK 0001900415); Heartflow, Inc.  (CIK 0001464521)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1900415/000146452126000145"
-        },
-        {
-          "datum": "2026-09-14",
-          "namn": "Laird Fiona  (CIK 0001676220); Solstice Advanced Materials Inc.  (CIK 0002064953)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1676220/000167622026000007"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-17T00:52+00:00"
+      "vintage": "2026-09-17T06:07+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-17 07:49:22",
+          "emittent": "Unlimited Travel Group UTG AB (publ)",
+          "person": "John Andersson Löfström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "14000,0",
+          "enhet": "Antal",
+          "pris": "21,23",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-17 07:17:35",
+          "emittent": "Bankaktiebolaget Nordiska (publ)",
+          "person": "Jonas Hultin",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Teckning",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,09",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-16 23:45:29",
           "emittent": "Studentbostäder i Norden AB (publ)",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "30,50",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:10:22",
-          "emittent": "Freja eID Group AB",
-          "person": "Johan Henrikson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "1107000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-16 14:01:06",
-          "emittent": "Freja eID Group AB",
-          "person": "Hans Johan Henrikson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-17T00:52+00:00"
+      "vintage": "2026-09-17T06:07+00:00"
     }
   }
 }
