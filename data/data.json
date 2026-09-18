@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-18",
-  "genererad": "2026-09-18T11:50+00:00",
+  "genererad": "2026-09-18T16:20+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         100.51,
         101.5,
         101.93,
-        101.93
+        102.37
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 11,
+      "rsRank": 10,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         98.79,
         97.9,
         96.2,
-        96.2
+        96.46
       ]
     },
     {
@@ -222,7 +222,7 @@
         93.94,
         95.14,
         95.14,
-        95.14
+        94.58
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         100.95,
         98.84,
         98.59,
-        98.59
+        97.58
       ]
     },
     {
@@ -324,7 +324,7 @@
         96.56,
         95.93,
         96.27,
-        96.27
+        96.15
       ]
     },
     {
@@ -375,7 +375,7 @@
         110.74,
         107.63,
         110.12,
-        110.12
+        110.1
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 11,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         91.97,
         91.19,
         89.88,
-        89.88
+        89.18
       ]
     },
     {
@@ -529,7 +529,7 @@
         104.25,
         106.83,
         105.98,
-        105.98
+        106.62
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         108.29,
         107.53,
         105.19,
-        105.19
+        105.44
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.34,
         92.47,
         91.39,
-        91.39
+        91.53
       ]
     }
   ],
@@ -656,7 +656,7 @@
       "enhet": "%",
       "decimaler": 2,
       "varde": 2.7,
-      "delta": "−1 bp · 1 v",
+      "delta": "+0 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-09-16",
+      "vintage": "2026-09-17",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 15.4,
-      "delta": "−0,5 · 1 v",
+      "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4418",
+      "varde": "4398",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,3 %",
+      "delta4v": "−3,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,56",
+      "varde": "66,79",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−0,7 %",
+      "delta4v": "−1,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,66",
+      "varde": "6,67",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,1 %",
+      "delta4v": "+3,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-18"
     },
     "olja": {
-      "v": 98.53,
+      "v": 99.74,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-18"
     }
@@ -1727,7 +1727,7 @@
           96.55,
           96.98,
           97.67,
-          97.67
+          98.08
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           98.91,
           98.37,
           98.99,
-          100.35
+          100.83
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           100.48,
           100.24,
           99.28,
-          99.28
+          99.4
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           95.26,
           92.82,
           92.7,
-          92.7
+          93.65
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           99.38,
           97.7,
           96.99,
-          96.99
+          97.4
         ]
       }
     ],
@@ -1993,10 +1993,340 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-18T11:50+00:00"
+      "vintage": "2026-09-18T16:20+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-18 17:25:21",
+          "emittent": "AGES Industri AB",
+          "person": "Anders Berggren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "4500,0",
+          "enhet": "Antal",
+          "pris": "40,73",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 17:12:37",
+          "emittent": "FLEXION MOBILE PLC",
+          "person": "Jens LAURITZSON",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "25,458",
+          "enhet": "Antal",
+          "pris": "2,99",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 17:12:37",
+          "emittent": "FLEXION MOBILE PLC",
+          "person": "Jens LAURITZSON",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "24,634",
+          "enhet": "Antal",
+          "pris": "2,98",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 17:12:37",
+          "emittent": "FLEXION MOBILE PLC",
+          "person": "Jens LAURITZSON",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "179,466",
+          "enhet": "Antal",
+          "pris": "3,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 17:06:22",
+          "emittent": "Clas Ohlson Aktiebolag",
+          "person": "Helena Holmström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "6219,0",
+          "enhet": "Antal",
+          "pris": "417,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 17:06:22",
+          "emittent": "Clas Ohlson Aktiebolag",
+          "person": "Helena Holmström",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "6219,0",
+          "enhet": "Antal",
+          "pris": "418,53",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 16:59:29",
+          "emittent": "Alimak Group AB ( publ )",
+          "person": "Rafael Pena Guinaliu",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "12,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 16:50:17",
+          "emittent": "Exsitec Holding AB",
+          "person": "Emma Billenius",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 16:50:17",
+          "emittent": "Exsitec Holding AB",
+          "person": "Emma Billenius",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:58:51",
+          "emittent": "Bankaktiebolaget Nordiska (publ)",
+          "person": "Ingela Westerlund",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,09",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:52:06",
+          "emittent": "Clas Ohlson Aktiebolag",
+          "person": "Kristofer Tonström",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "23321,0",
+          "enhet": "Antal",
+          "pris": "417,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:52:06",
+          "emittent": "Clas Ohlson Aktiebolag",
+          "person": "Kristofer Tonström",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "12600,0",
+          "enhet": "Antal",
+          "pris": "420,89",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:43:57",
+          "emittent": "Exsitec Holding AB",
+          "person": "Anders Uddenberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:42:29",
+          "emittent": "Exsitec Holding AB",
+          "person": "Anders Uddenberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:19:05",
+          "emittent": "Exsitec Holding AB",
+          "person": "Niklas Ek",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen ökning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:16:58",
+          "emittent": "Exsitec Holding AB",
+          "person": "Niklas Ek",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen minskning",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 15:00:58",
+          "emittent": "K-Fast Holding AB B",
+          "person": "Henrik Sven Allan Gustafsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "800,0",
+          "enhet": "Antal",
+          "pris": "10,94",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:46:00",
+          "emittent": "Zaplox AB",
+          "person": "Daniel Teymouri",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "33208,0",
+          "enhet": "Antal",
+          "pris": "1,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "39,0",
+          "enhet": "Antal",
+          "pris": "84,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15,0",
+          "enhet": "Antal",
+          "pris": "86,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "22,0",
+          "enhet": "Antal",
+          "pris": "85,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500,0",
+          "enhet": "Antal",
+          "pris": "86,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "13,0",
+          "enhet": "Antal",
+          "pris": "86,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "90,0",
+          "enhet": "Antal",
+          "pris": "86,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "100,0",
+          "enhet": "Antal",
+          "pris": "86,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "86,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "40,0",
+          "enhet": "Antal",
+          "pris": "86,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2440,0",
+          "enhet": "Antal",
+          "pris": "86,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:19:18",
+          "emittent": "Lyko Group AB (publ)",
+          "person": "David Axel Alf von Laskowski",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "644,0",
+          "enhet": "Antal",
+          "pris": "86,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-18 14:18:36",
+          "emittent": "Bergman & Beving Aktiebolag",
+          "person": "Mats Gullbrandsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "33,8",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-18 13:42:29",
           "emittent": "Prostatype Genomics AB",
@@ -2216,341 +2546,11 @@
           "enhet": "Antal",
           "pris": "8,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 09:10:37",
-          "emittent": "Litium AB",
-          "person": "Petter Blid",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "10,55",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 08:57:50",
-          "emittent": "Freja eID Group AB",
-          "person": "Joel Johansson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 08:57:50",
-          "emittent": "Freja eID Group AB",
-          "person": "Joel Johansson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 08:57:50",
-          "emittent": "Freja eID Group AB",
-          "person": "Joel Johansson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "0,052",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 08:43:59",
-          "emittent": "Litium AB",
-          "person": "Petter Blid",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "10,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 08:32:52",
-          "emittent": "Scandi Standard AB (publ)",
-          "person": "Nils Johan Henrik Hjalmarsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "400,0",
-          "enhet": "Antal",
-          "pris": "125,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "26000,0",
-          "enhet": "Antal",
-          "pris": "3,25642",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "26000,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "26000,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "3,19048",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "190,0",
-          "enhet": "Antal",
-          "pris": "3,13789",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "3,16120",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "3,20",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "7000,0",
-          "enhet": "Antal",
-          "pris": "3,20",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "117190,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 23:28:55",
-          "emittent": "Goldsky Resources Corp.",
-          "person": "Noora Ahola",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "117190,0",
-          "enhet": "Antal",
-          "pris": "0,64303",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-09-17 22:05:48",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "18,0",
-          "enhet": "Antal",
-          "pris": "25,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 22:05:48",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "4,0",
-          "enhet": "Antal",
-          "pris": "25,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 22:00:33",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2830,0",
-          "enhet": "Antal",
-          "pris": "24,82",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 22:00:33",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "160,0",
-          "enhet": "Antal",
-          "pris": "24,86",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:56:16",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "170,0",
-          "enhet": "Antal",
-          "pris": "24,85",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "17,242635",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "17,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "3037,0",
-          "enhet": "Antal",
-          "pris": "17,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3944,0",
-          "enhet": "Antal",
-          "pris": "17,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3037,0",
-          "enhet": "Antal",
-          "pris": "17,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4252,0",
-          "enhet": "Antal",
-          "pris": "17,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-17 21:36:15",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "6984,0",
-          "enhet": "Antal",
-          "pris": "17,35",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 25,
+      "nyaSenasteKorning": 30,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-18T11:50+00:00"
+      "vintage": "2026-09-18T16:20+00:00"
     }
   }
 }
