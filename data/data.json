@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
-  "asOfDatum": "2026-09-17",
-  "genererad": "2026-09-17T23:04+00:00",
+  "asOfDatum": "2026-09-18",
+  "genererad": "2026-09-18T01:16+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-09-17",
+      "vintage": "2026-09-18",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-09-17",
+      "vintage": "2026-09-18",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4383",
+      "varde": "4403",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,6 %",
+      "delta4v": "−3,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-09-17"
+      "vintage": "2026-09-18"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,79",
+      "varde": "66,40",
       "enhet": "USD/oz",
       "pil": "upp",
-      "delta4v": "+0,1 %",
+      "delta4v": "+1,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-09-17"
+      "vintage": "2026-09-18"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,64",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+1,9 %",
+      "delta4v": "+2,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-09-17"
+      "vintage": "2026-09-18"
     },
     "olja": {
-      "v": 104.1,
+      "v": 103.92,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-09-17"
+      "vintage": "2026-09-18"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-09-17",
+    "vintage": "2026-09-18",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           98.91,
           98.37,
           99.88,
-          98.99
+          99.84
         ]
       },
       {
@@ -1942,31 +1942,6 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-14",
-          "namn": "Azaria Eynav  (CIK 0002009676); KALTURA INC  (CIK 0001432133)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2009676/000162828026061728"
-        },
-        {
-          "datum": "2026-09-14",
-          "namn": "Catalyst Sponsor LLC  (CIK 0002146403); Catalyst Acquisition Corp.  (CIK 0002104391)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2146403/000121390026099697"
-        },
-        {
-          "datum": "2026-09-14",
-          "namn": "CONNELLY ELIZABETH H.  (CIK 0001761744); CDW Corp  (CIK 0001402057)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1761744/000140205726000088"
-        },
-        {
-          "datum": "2026-09-14",
-          "namn": "Vitus Andrew L.  (CIK 0001631062); JFrog Ltd  (CIK 0001800667)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1631062/000163106226000003"
-        },
-        {
-          "datum": "2026-09-14",
-          "namn": "McKinney Marianne  (CIK 0001921466); CF BANKSHARES INC.  (CIK 0001070680)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1921466/000119312526390619"
-        },
-        {
           "datum": "2026-09-15",
           "namn": "Evans Jeremy Scott  (CIK 0002087711); HELIOS TECHNOLOGIES, INC.  (CIK 0001024795)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2087711/000119312526391934"
@@ -1977,23 +1952,48 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1865618/000143774926030461"
         },
         {
-          "datum": "2026-09-14",
-          "namn": "Haley John R  (CIK 0001526957); SONOCO PRODUCTS CO  (CIK 0000091767)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1526957/000122520826007802"
+          "datum": "2026-09-15",
+          "namn": "Inson Paul Joseph  (CIK 0001974089); IBEX Ltd  (CIK 0001720420)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1974089/000197408926000010"
         },
         {
-          "datum": "2026-09-14",
-          "namn": "Hamamatsu Shigeyuki  (CIK 0001379827); OOMA INC  (CIK 0001327688)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1379827/000119312526390721"
+          "datum": "2026-09-15",
+          "namn": "Antal Rodney  (CIK 0001901366); SSR MINING INC.  (CIK 0000921638)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1901366/000190136626000007"
         },
         {
-          "datum": "2026-09-14",
-          "namn": "Shannon James M  (CIK 0001395587); UL Solutions Inc.  (CIK 0001901440)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1395587/000090514826004186"
+          "datum": "2026-09-15",
+          "namn": "Ratner Steven  (CIK 0001995110); MERCURY SYSTEMS INC  (CIK 0001049521)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1995110/000104952126000072"
+        },
+        {
+          "datum": "2026-09-16",
+          "namn": "Bratt Mikael  (CIK 0001673834); AUTOLIV INC  (CIK 0001034670)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1673834/000119312526392607"
+        },
+        {
+          "datum": "2026-09-16",
+          "namn": "Offer Or  (CIK 0001910424); SIMILARWEB LTD.  (CIK 0001842731)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1910424/000197640826000850"
+        },
+        {
+          "datum": "2026-09-16",
+          "namn": "Dierker Richard A  (CIK 0001661038); CHURCH & DWIGHT CO INC /DE/  (CIK 0000313927)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1661038/000031392726000317"
+        },
+        {
+          "datum": "2026-09-16",
+          "namn": "Pisano Paulo  (CIK 0001875741); Booking Holdings Inc.  (CIK 0001075531)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1875741/000187574126000008"
+        },
+        {
+          "datum": "2026-09-16",
+          "namn": "Omiridis Anastasios  (CIK 0001789494); Slide Insurance Holdings, Inc.  (CIK 0001886428)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1789494/000119312526393100"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-17T23:04+00:00"
+      "vintage": "2026-09-18T01:16+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 12,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-17T23:04+00:00"
+      "vintage": "2026-09-18T01:16+00:00"
     }
   }
 }
