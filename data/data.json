@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-18",
-  "genererad": "2026-09-19T16:47+00:00",
+  "genererad": "2026-09-19T19:18+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-19T16:47+00:00"
+      "vintage": "2026-09-19T19:18+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-19 19:12:11",
+          "emittent": "Vidhance AB",
+          "person": "Johan Qviberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "5,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-19 19:12:11",
+          "emittent": "Vidhance AB",
+          "person": "Johan Qviberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "40000,0",
+          "enhet": "Antal",
+          "pris": "5,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-19 19:12:11",
+          "emittent": "Vidhance AB",
+          "person": "Johan Qviberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "5,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-19 12:39:40",
           "emittent": "Scandi Standard AB (publ)",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 11:54:53",
-          "emittent": "Freja eID Group AB",
-          "person": "Tony Buss",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen ökning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,052",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 11:34:29",
-          "emittent": "Bergman & Beving Aktiebolag",
-          "person": "Peter Schön",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "28000,0",
-          "enhet": "Antal",
-          "pris": "33,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 11:19:41",
-          "emittent": "Addtech AB",
-          "person": "Michael Ullskog",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "221,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-19T16:47+00:00"
+      "vintage": "2026-09-19T19:18+00:00"
     }
   }
 }
