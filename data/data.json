@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W38",
   "asOfDatum": "2026-09-18",
-  "genererad": "2026-09-20T14:13+00:00",
+  "genererad": "2026-09-20T17:39+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,65 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-20T14:13+00:00"
+      "vintage": "2026-09-20T17:39+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-20 18:33:49",
+          "emittent": "SHT Smart High-Tech Aktiebolag",
+          "person": "Michael Quail",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "14834,0",
+          "enhet": "Antal",
+          "pris": "3,28",
+          "valuta": "USD"
+        },
+        {
+          "publicerad": "2026-09-20 18:33:49",
+          "emittent": "SHT Smart High-Tech Aktiebolag",
+          "person": "Michael Quail",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "666,0",
+          "enhet": "Antal",
+          "pris": "3,35",
+          "valuta": "USD"
+        },
+        {
+          "publicerad": "2026-09-20 18:00:15",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Hans Karlander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4369,0",
+          "enhet": "Antal",
+          "pris": "99,773941",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-20 18:00:15",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Hans Karlander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9122,0",
+          "enhet": "Antal",
+          "pris": "99,861171",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-20 18:00:15",
+          "emittent": "Karnell Group AB (publ)",
+          "person": "Hans Karlander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5439,0",
+          "enhet": "Antal",
+          "pris": "99,892131",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-19 19:12:11",
           "emittent": "Vidhance AB",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "33,8",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 13:42:29",
-          "emittent": "Prostatype Genomics AB",
-          "person": "Anders Lundberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "380660,0",
-          "enhet": "Antal",
-          "pris": "0,061",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 12:59:47",
-          "emittent": "K-Fast Holding AB",
-          "person": "Martin Johannesson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "10979,0",
-          "enhet": "Antal",
-          "pris": "11,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 12:59:47",
-          "emittent": "K-Fast Holding AB",
-          "person": "Martin Johannesson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "2287,0",
-          "enhet": "Antal",
-          "pris": "10,86",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 11:54:53",
-          "emittent": "Freja eID Group AB",
-          "person": "Tony Buss",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-18 11:54:53",
-          "emittent": "Freja eID Group AB",
-          "person": "Tony Buss",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-20T14:13+00:00"
+      "vintage": "2026-09-20T17:39+00:00"
     }
   }
 }
