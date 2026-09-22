@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-22",
-  "genererad": "2026-09-22T01:50+00:00",
+  "genererad": "2026-09-22T07:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.9,
-      "delta": "−2,2 · 1 v",
+      "varde": 14.7,
+      "delta": "−2,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.9,
+      "varde": 14.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4392",
+      "varde": "4353",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,2 %",
+      "delta4v": "−7,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "66,85",
+      "varde": "65,62",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,8 %",
+      "delta4v": "−4,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,80",
+      "varde": "6,82",
       "enhet": "USD/t",
       "pil": "upp",
       "delta4v": "+3,4 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-22"
     },
     "olja": {
-      "v": 96.81,
+      "v": 97.18,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-22"
     }
@@ -1768,7 +1768,7 @@
           98.37,
           98.81,
           100.42,
-          98.83
+          98.75
         ]
       },
       {
@@ -1943,13 +1943,8 @@
       "poster": [
         {
           "datum": "2026-09-21",
-          "namn": "Fischer Jamie  (CIK 0002041234); AMERICAS CARMART INC  (CIK 0000799850)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2041234/000168316826007270"
-        },
-        {
-          "datum": "2026-09-21",
-          "namn": "LIU Pingping  (CIK 0002013881); Yum China Holdings, Inc.  (CIK 0001673358)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2013881/000167335826000137"
+          "namn": "Sousa Mauad Bruno  (CIK 0002117905); Aura Minerals Inc.  (CIK 0001468642)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2117905/000211790526000040"
         },
         {
           "datum": "2026-09-21",
@@ -1958,13 +1953,18 @@
         },
         {
           "datum": "2026-09-21",
-          "namn": "Sousa Mauad Bruno  (CIK 0002117905); Aura Minerals Inc.  (CIK 0001468642)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2117905/000211790526000040"
+          "namn": "AULT MILTON C III  (CIK 0001212502); Ault & Company, Inc.  (CIK 0001734770)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1212502/000121465926011836"
         },
         {
           "datum": "2026-09-21",
-          "namn": "AULT MILTON C III  (CIK 0001212502); Ault & Company, Inc.  (CIK 0001734770)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1212502/000121465926011836"
+          "namn": "LIU Pingping  (CIK 0002013881); Yum China Holdings, Inc.  (CIK 0001673358)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2013881/000167335826000137"
+        },
+        {
+          "datum": "2026-09-21",
+          "namn": "Fischer Jamie  (CIK 0002041234); AMERICAS CARMART INC  (CIK 0000799850)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2041234/000168316826007270"
         },
         {
           "datum": "2026-09-21",
@@ -1978,6 +1978,11 @@
         },
         {
           "datum": "2026-09-21",
+          "namn": "Rubin Eyal  (CIK 0001721411); Nasus Pharma Ltd  (CIK 0002029039)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1721411/000149315226043559"
+        },
+        {
+          "datum": "2026-09-21",
           "namn": "Williams Shereta Diana  (CIK 0001883283); DAKTRONICS INC /SD/  (CIK 0000915779)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1883283/000162828026062909"
         },
@@ -1985,18 +1990,46 @@
           "datum": "2026-09-21",
           "namn": "Reymond Robert L  (CIK 0001743078); VALERO ENERGY CORP/TX  (CIK 0001035002)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1743078/000162828026062897"
-        },
-        {
-          "datum": "2026-09-21",
-          "namn": "Rubin Eyal  (CIK 0001721411); Nasus Pharma Ltd  (CIK 0002029039)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1721411/000149315226043559"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-22T01:50+00:00"
+      "vintage": "2026-09-22T07:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-22 08:56:28",
+          "emittent": "Mofast AB (Publ)",
+          "person": "Magnus Malm",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "6178,0",
+          "enhet": "Antal",
+          "pris": "14,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 04:19:48",
+          "emittent": "Alligator Bioscience AB",
+          "person": "Johan Giléus",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen minskning",
+          "volym": "5500000,0",
+          "enhet": "Antal",
+          "pris": "0,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 04:19:48",
+          "emittent": "Alligator Bioscience AB",
+          "person": "Johan Giléus",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "5500000,0",
+          "enhet": "Antal",
+          "pris": "0,04",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-21 21:54:47",
           "emittent": "Magle Chemoswed Holding AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "14,1",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 09:33:50",
-          "emittent": "Bergman & Beving Aktiebolag",
-          "person": "Mats Gullbrandsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "181,1",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 09:33:50",
-          "emittent": "Bergman & Beving Aktiebolag",
-          "person": "Mats Gullbrandsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "261,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 09:30:52",
-          "emittent": "Integrum AB",
-          "person": "Martin Hillsten",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "35057,0",
-          "enhet": "Antal",
-          "pris": "9,42",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-22T01:50+00:00"
+      "vintage": "2026-09-22T07:40+00:00"
     }
   }
 }
