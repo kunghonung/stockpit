@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-22",
-  "genererad": "2026-09-22T07:40+00:00",
+  "genererad": "2026-09-22T13:22+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.7,
-      "delta": "−2,5 · 1 v",
+      "varde": 14.6,
+      "delta": "−2,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.7,
+      "varde": 14.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −21 bp/mån."
     },
     "bredd": {
-      "over50": 28,
+      "over50": 30,
       "over200": 50,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-21",
+      "vintage": "2026-09-22",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-3 sedan förra"
+      "delta": "+2 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4353",
+      "varde": "4377",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,3 %",
+      "delta4v": "−6,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "65,62",
+      "varde": "66,43",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,3 %",
+      "delta4v": "−3,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,82",
+      "varde": "6,85",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,4 %",
+      "delta4v": "+3,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-22"
     },
     "olja": {
-      "v": 97.18,
+      "v": 98.3,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-22"
     }
@@ -1768,7 +1768,7 @@
           98.37,
           98.81,
           100.42,
-          98.75
+          99.26
         ]
       },
       {
@@ -1983,20 +1983,163 @@
         },
         {
           "datum": "2026-09-21",
-          "namn": "Williams Shereta Diana  (CIK 0001883283); DAKTRONICS INC /SD/  (CIK 0000915779)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1883283/000162828026062909"
+          "namn": "MASSENGILL MATTHEW E  (CIK 0001232826); WESTERN DIGITAL CORP  (CIK 0000106040)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1232826/000126682426000208"
         },
         {
           "datum": "2026-09-21",
-          "namn": "Reymond Robert L  (CIK 0001743078); VALERO ENERGY CORP/TX  (CIK 0001035002)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1743078/000162828026062897"
+          "namn": "Williams Shereta Diana  (CIK 0001883283); DAKTRONICS INC /SD/  (CIK 0000915779)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1883283/000162828026062909"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-22T07:40+00:00"
+      "vintage": "2026-09-22T13:22+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-22 12:48:19",
+          "emittent": "Trelleborg AB",
+          "person": "Jean Paul Mindermann",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "39,98",
+          "valuta": "EUR"
+        },
+        {
+          "publicerad": "2026-09-22 12:40:03",
+          "emittent": "Premium Snacks Nordic AB",
+          "person": "Björn Krasse",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1500,0",
+          "enhet": "Antal",
+          "pris": "32,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 11:42:09",
+          "emittent": "AVTECH Sweden AB (publ)",
+          "person": "Philip Nordfeldt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3753,0",
+          "enhet": "Antal",
+          "pris": "3,17",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:57:51",
+          "emittent": "Katalysen Ventures AB (publ)",
+          "person": "Anders Dahlgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "558,0",
+          "enhet": "Antal",
+          "pris": "4,84",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:57:51",
+          "emittent": "Katalysen Ventures AB (publ)",
+          "person": "Anders Dahlgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "4538,0",
+          "enhet": "Antal",
+          "pris": "4,7976",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:57:51",
+          "emittent": "Katalysen Ventures AB (publ)",
+          "person": "Anders Dahlgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "8250,0",
+          "enhet": "Antal",
+          "pris": "4,84",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:57:51",
+          "emittent": "Katalysen Ventures AB (publ)",
+          "person": "Anders Dahlgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1594,0",
+          "enhet": "Antal",
+          "pris": "4,84",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:57:51",
+          "emittent": "Katalysen Ventures AB (publ)",
+          "person": "Anders Dahlgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "13500,0",
+          "enhet": "Antal",
+          "pris": "4,8555",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:57:51",
+          "emittent": "Katalysen Ventures AB (publ)",
+          "person": "Anders Dahlgren",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "4,7956",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:54:57",
+          "emittent": "Attendo AB (publ)",
+          "person": "Mikael Malmgren",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "11616,0",
+          "enhet": "Antal",
+          "pris": "128,12",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:51:38",
+          "emittent": "Bergman & Beving Aktiebolag",
+          "person": "Jan Lundmark",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "33,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 10:47:25",
+          "emittent": "Careium AB (publ)",
+          "person": "David Granath",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "827,0",
+          "enhet": "Antal",
+          "pris": "27,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-22 09:48:47",
+          "emittent": "Mofast AB (Publ)",
+          "person": "Magnus Malm",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2622,0",
+          "enhet": "Antal",
+          "pris": "14,30",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-22 08:56:28",
           "emittent": "Mofast AB (Publ)",
@@ -2403,154 +2546,11 @@
           "enhet": "Antal",
           "pris": "420,2",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 12:34:44",
-          "emittent": "Clas Ohlson AB",
-          "person": "Anders Molander",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3874,0",
-          "enhet": "Antal",
-          "pris": "421,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 11:01:15",
-          "emittent": "New Bubbleroom Sweden AB",
-          "person": "Magnus Månsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1150,0",
-          "enhet": "Antal",
-          "pris": "10,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:46:35",
-          "emittent": "Cardeon AB (publ)",
-          "person": "Masoud Khayyami",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "429000,0",
-          "enhet": "Antal",
-          "pris": "0,07",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:30:24",
-          "emittent": "GOMSPACE GROUP AB",
-          "person": "Troels Dalsgaard",
-          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "20,849",
-          "enhet": "Antal",
-          "pris": "11,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:30:24",
-          "emittent": "GOMSPACE GROUP AB",
-          "person": "Troels Dalsgaard",
-          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "17,109",
-          "enhet": "Antal",
-          "pris": "11,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:30:24",
-          "emittent": "GOMSPACE GROUP AB",
-          "person": "Troels Dalsgaard",
-          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "27,074",
-          "enhet": "Antal",
-          "pris": "11,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:24:31",
-          "emittent": "GOMSPACE GROUP AB",
-          "person": "Troels Dalsgaard",
-          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "3750,0",
-          "enhet": "Antal",
-          "pris": "10,95",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:22:16",
-          "emittent": "GOMSPACE GROUP AB",
-          "person": "Troels Dalsgaard",
-          "befattning": "Vice VD, Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "3750,0",
-          "enhet": "Antal",
-          "pris": "10,97",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:16:32",
-          "emittent": "Alimak Group AB ( publ )",
-          "person": "Matilda Wernhoff",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "12,76",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 10:05:57",
-          "emittent": "Bankaktiebolaget Nordiska (publ)",
-          "person": "Mikael Gellbäck",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "2,09",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 09:42:13",
-          "emittent": "Vaccinium Holding ApS",
-          "person": "Karl Kristian Bergman Jensen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "17,58",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 09:42:13",
-          "emittent": "Vaccinium Holding ApS",
-          "person": "Karl Kristian Bergman Jensen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "16,83",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-21 09:41:42",
-          "emittent": "Mofast AB",
-          "person": "Magnus Malm",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "14,1",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 13,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-22T07:40+00:00"
+      "vintage": "2026-09-22T13:22+00:00"
     }
   }
 }
