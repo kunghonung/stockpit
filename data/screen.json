@@ -1,7 +1,7 @@
 {
  "schemaVersion": "1.0",
- "vintage": "2026-09-21",
- "genererad": "2026-09-21T10:13+00:00",
+ "vintage": "2026-09-22",
+ "genererad": "2026-09-22T09:35+00:00",
  "universum": {
   "antal": 543,
   "kalla": "S&P 500 + Nasdaq Sthlm Large Cap (data/universum.json)"
@@ -27,27 +27,27 @@
    "lage": "oppen",
    "tidigTopp4": [
     "XLE",
-    "XLY",
+    "XLP",
     "XLF",
-    "XLC"
+    "XLV"
    ],
    "rek": [
     {
      "ticker": "MPC",
      "sektorId": "XLE",
-     "konviktion": 64,
+     "konviktion": 66,
      "etikett": "KÖPREK"
     },
     {
      "ticker": "PSX",
      "sektorId": "XLE",
-     "konviktion": 64,
+     "konviktion": 66,
      "etikett": "KÖPREK"
     },
     {
      "ticker": "VLO",
      "sektorId": "XLE",
-     "konviktion": 64,
+     "konviktion": 66,
      "etikett": "KÖPREK"
     },
     {
@@ -55,55 +55,13 @@
      "sektorId": "XLE",
      "konviktion": 64,
      "etikett": "KÖPREK"
-    },
-    {
-     "ticker": "COP",
-     "sektorId": "XLE",
-     "konviktion": 62,
-     "etikett": "KÖPREK"
-    },
-    {
-     "ticker": "FOXA",
-     "sektorId": "XLC",
-     "konviktion": 58,
-     "etikett": "KANDIDAT"
-    },
-    {
-     "ticker": "FOX",
-     "sektorId": "XLC",
-     "konviktion": 58,
-     "etikett": "KANDIDAT"
     }
    ],
-   "beraknad": "2026-09-21",
+   "beraknad": "2026-09-22",
    "not": "temabonus utelämnad i spegeln (aktier[].tema är frontenddata) — P11 jämför konviktion utan bonusens 10-delar"
   }
  },
  "lista": [
-  {
-   "ticker": "IT",
-   "namn": "Gartner",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 100,
-    "ES": 97,
-    "VÄ": 100,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 68,
-   "skal": "riktkurssnitt +10,6 % (30 d mot 90 d) + RS +10,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000749251&type=4"
-  },
   {
    "ticker": "ZBRA",
    "namn": "Zebra Technologies",
@@ -118,15 +76,39 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 86,
+    "TK": 81,
     "ES": 100,
+    "VÄ": 98,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 65,
+   "skal": "riktkurssnitt +18,0 % (30 d mot 90 d) + RS +6,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000877212&type=4"
+  },
+  {
+   "ticker": "IT",
+   "namn": "Gartner",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "ES",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 83,
+    "ES": 97,
     "VÄ": 100,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 66,
-   "skal": "riktkurssnitt +18,0 % (30 d mot 90 d) + RS +7,3 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000877212&type=4"
+   "styrka": 65,
+   "skal": "riktkurssnitt +10,6 % (30 d mot 90 d) + RS +6,7 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000749251&type=4"
   },
   {
    "ticker": "CRM",
@@ -149,32 +131,8 @@
     "MA": 60
    },
    "styrka": 60,
-   "skal": "riktkurssnitt +1,8 % (30 d mot 90 d) + RS +17,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 35 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +1,8 % (30 d mot 90 d) + RS +13,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 36 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001108524&type=4"
-  },
-  {
-   "ticker": "WDAY",
-   "namn": "Workday, Inc.",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 100,
-    "ES": 64,
-    "VÄ": 90,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 59,
-   "skal": "riktkurssnitt +2,3 % (30 d mot 90 d) + RS +13,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001327811&type=4"
   },
   {
    "ticker": "HPQ",
@@ -197,8 +155,32 @@
     "MA": 60
    },
    "styrka": 59,
-   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + RS +20,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 52 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + RS +13,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 54 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000047217&type=4"
+  },
+  {
+   "ticker": "WDAY",
+   "namn": "Workday, Inc.",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "ES",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 95,
+    "ES": 58,
+    "VÄ": 92,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 57,
+   "skal": "riktkurssnitt +0,7 % (30 d mot 90 d) + RS +9,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001327811&type=4"
   },
   {
    "ticker": "NTAP",
@@ -214,14 +196,14 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 91,
+    "TK": 86,
     "ES": 60,
     "VÄ": 69,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 53,
-   "skal": "riktkurssnitt +1,2 % (30 d mot 90 d) + RS +8,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 10 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 52,
+   "skal": "riktkurssnitt +1,2 % (30 d mot 90 d) + RS +7,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 10 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001002047&type=4"
   },
   {
@@ -243,7 +225,7 @@
     "MA": 60
    },
    "styrka": 66,
-   "skal": "riktkurssnitt +20,7 % (30 d mot 90 d) + RS +25,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 51 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +17,9 % (30 d mot 90 d) + RS +17,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 54 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001510295&type=4"
   },
   {
@@ -265,7 +247,7 @@
     "MA": 60
    },
    "styrka": 66,
-   "skal": "riktkurssnitt +19,2 % (30 d mot 90 d) + RS +21,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 38 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +19,2 % (30 d mot 90 d) + RS +14,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001534701&type=4"
   },
   {
@@ -287,7 +269,7 @@
     "MA": 60
    },
    "styrka": 66,
-   "skal": "riktkurssnitt +17,1 % (30 d mot 90 d) + RS +24,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 44 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +15,1 % (30 d mot 90 d) + RS +17,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 46 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001035002&type=4"
   },
   {
@@ -304,17 +286,17 @@
    "sparade": 5,
    "delpoang": {
     "TK": 100,
-    "ES": 96,
+    "ES": 82,
     "VÄ": 100,
     "MA": 60
    },
-   "styrka": 65,
-   "skal": "riktkurssnitt +10,2 % (30 d mot 90 d) + RS +14,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 53 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "styrka": 62,
+   "skal": "riktkurssnitt +6,7 % (30 d mot 90 d) + RS +10,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 54 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001841666&type=4"
   },
   {
-   "ticker": "FOXA",
-   "namn": "Fox Corporation (Class A)",
+   "ticker": "T",
+   "namn": "AT&T",
    "marknad": "US",
    "sektorId": "XLC",
    "parlor": [
@@ -325,58 +307,14 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 72,
+    "TK": 70,
     "ES": 100,
     "VÄ": 100,
     "MA": 60
    },
    "styrka": 61,
-   "skal": "riktkurssnitt +22,9 % (30 d mot 90 d) + RS +4,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 38 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001754301&type=4"
-  },
-  {
-   "ticker": "FOX",
-   "namn": "Fox Corporation (Class B)",
-   "marknad": "US",
-   "sektorId": "XLC",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 73,
-    "ES": 100,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 61,
-   "skal": "riktkurssnitt +12,1 % (30 d mot 90 d) + RS +4,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 45 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001754301&type=4"
-  },
-  {
-   "ticker": "COP",
-   "namn": "ConocoPhillips",
-   "marknad": "US",
-   "sektorId": "XLE",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 85,
-    "ES": 96,
-    "VÄ": 87,
-    "MA": 60
-   },
-   "styrka": 60,
-   "skal": "riktkurssnitt +10,3 % (30 d mot 90 d) + RS +7,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 19 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163165&type=4"
+   "skal": "riktkurssnitt +16,6 % (30 d mot 90 d) + RS +4,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 38 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000732717&type=4"
   },
   {
    "ticker": "SMCI",
@@ -397,14 +335,14 @@
     "MA": 60
    },
    "styrka": 60,
-   "skal": "RS +17,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 59 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +21,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 57 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001375365&type=4"
   },
   {
-   "ticker": "GILD",
-   "namn": "Gilead Sciences",
+   "ticker": "FOXA",
+   "namn": "Fox Corporation (Class A)",
    "marknad": "US",
-   "sektorId": "XLV",
+   "sektorId": "XLC",
    "parlor": [
     "TK",
     "ES",
@@ -413,20 +351,20 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 89,
+    "TK": 59,
     "ES": 100,
-    "VÄ": 66,
+    "VÄ": 100,
     "MA": 60
    },
-   "styrka": 58,
-   "skal": "riktkurssnitt +18,8 % (30 d mot 90 d) + RS +7,8 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 8 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000882095&type=4"
+   "styrka": 59,
+   "skal": "riktkurssnitt +22,9 % (30 d mot 90 d) + RS +1,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 38 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001754301&type=4"
   },
   {
-   "ticker": "PFG",
-   "namn": "Principal Financial Group",
+   "ticker": "FOX",
+   "namn": "Fox Corporation (Class B)",
    "marknad": "US",
-   "sektorId": "XLF",
+   "sektorId": "XLC",
    "parlor": [
     "TK",
     "ES",
@@ -435,14 +373,14 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 67,
-    "ES": 95,
-    "VÄ": 97,
+    "TK": 59,
+    "ES": 100,
+    "VÄ": 100,
     "MA": 60
    },
-   "styrka": 58,
-   "skal": "riktkurssnitt +10,1 % (30 d mot 90 d) + RS +3,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001126328&type=4"
+   "styrka": 59,
+   "skal": "riktkurssnitt +12,1 % (30 d mot 90 d) + RS +1,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 45 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001754301&type=4"
   },
   {
    "ticker": "SWKS",
@@ -463,12 +401,12 @@
     "MA": 60
    },
    "styrka": 58,
-   "skal": "RS +28,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +27,7 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000004127&type=4"
   },
   {
-   "ticker": "AMP",
-   "namn": "Ameriprise Financial",
+   "ticker": "PFG",
+   "namn": "Principal Financial Group",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -479,20 +417,20 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 53,
-    "ES": 100,
+    "TK": 55,
+    "ES": 95,
     "VÄ": 100,
     "MA": 60
    },
    "styrka": 57,
-   "skal": "riktkurssnitt +11,4 % (30 d mot 90 d) + RS +0,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000820027&type=4"
+   "skal": "riktkurssnitt +10,1 % (30 d mot 90 d) + RS +1,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001126328&type=4"
   },
   {
-   "ticker": "CVX",
-   "namn": "Chevron Corporation",
+   "ticker": "GILD",
+   "namn": "Gilead Sciences",
    "marknad": "US",
-   "sektorId": "XLE",
+   "sektorId": "XLV",
    "parlor": [
     "TK",
     "ES",
@@ -501,14 +439,14 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 86,
-    "ES": 85,
-    "VÄ": 83,
+    "TK": 83,
+    "ES": 100,
+    "VÄ": 65,
     "MA": 60
    },
-   "styrka": 57,
-   "skal": "riktkurssnitt +7,4 % (30 d mot 90 d) + RS +7,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 17 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000093410&type=4"
+   "styrka": 56,
+   "skal": "riktkurssnitt +18,8 % (30 d mot 90 d) + RS +6,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 7 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000882095&type=4"
   },
   {
    "ticker": "REGN",
@@ -523,40 +461,18 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 73,
+    "TK": 70,
     "ES": 100,
-    "VÄ": 74,
+    "VÄ": 72,
     "MA": 60
    },
-   "styrka": 56,
-   "skal": "riktkurssnitt +12,8 % (30 d mot 90 d) + RS +4,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 12 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "styrka": 55,
+   "skal": "riktkurssnitt +12,8 % (30 d mot 90 d) + RS +4,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000872589&type=4"
   },
   {
-   "ticker": "MET",
-   "namn": "MetLife",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 58,
-    "ES": 92,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 56,
-   "skal": "riktkurssnitt +9,2 % (30 d mot 90 d) + RS +1,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001099219&type=4"
-  },
-  {
-   "ticker": "DVN",
-   "namn": "Devon Energy",
+   "ticker": "COP",
+   "namn": "ConocoPhillips",
    "marknad": "US",
    "sektorId": "XLE",
    "parlor": [
@@ -567,14 +483,14 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 82,
-    "ES": 74,
-    "VÄ": 100,
+    "TK": 59,
+    "ES": 87,
+    "VÄ": 92,
     "MA": 60
    },
-   "styrka": 56,
-   "skal": "riktkurssnitt +4,8 % (30 d mot 90 d) + RS +6,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 39 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090012&type=4"
+   "styrka": 54,
+   "skal": "riktkurssnitt +7,9 % (30 d mot 90 d) + RS +1,8 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163165&type=4"
   },
   {
    "ticker": "FDS",
@@ -589,14 +505,58 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 68,
+    "TK": 56,
     "ES": 100,
     "VÄ": 71,
     "MA": 60
    },
-   "styrka": 55,
-   "skal": "riktkurssnitt +12,6 % (30 d mot 90 d) + RS +3,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "styrka": 53,
+   "skal": "riktkurssnitt +12,6 % (30 d mot 90 d) + RS +1,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001013237&type=4"
+  },
+  {
+   "ticker": "CVX",
+   "namn": "Chevron Corporation",
+   "marknad": "US",
+   "sektorId": "XLE",
+   "parlor": [
+    "TK",
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 63,
+    "ES": 85,
+    "VÄ": 88,
+    "MA": 60
+   },
+   "styrka": 53,
+   "skal": "riktkurssnitt +7,4 % (30 d mot 90 d) + RS +2,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 19 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000093410&type=4"
+  },
+  {
+   "ticker": "DVN",
+   "namn": "Devon Energy",
+   "marknad": "US",
+   "sektorId": "XLE",
+   "parlor": [
+    "TK",
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 63,
+    "ES": 74,
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 53,
+   "skal": "riktkurssnitt +4,8 % (30 d mot 90 d) + RS +2,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090012&type=4"
   },
   {
    "ticker": "PLTR",
@@ -617,52 +577,8 @@
     "MA": 60
    },
    "styrka": 52,
-   "skal": "riktkurssnitt +33,3 % (30 d mot 90 d) + RS +14,6 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +33,3 % (30 d mot 90 d) + RS +15,2 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001321655&type=4"
-  },
-  {
-   "ticker": "XOM",
-   "namn": "ExxonMobil",
-   "marknad": "US",
-   "sektorId": "XLE",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 75,
-    "ES": 85,
-    "VÄ": 71,
-    "MA": 60
-   },
-   "styrka": 52,
-   "skal": "riktkurssnitt +7,6 % (30 d mot 90 d) + RS +5,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 10 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000034088&type=4"
-  },
-  {
-   "ticker": "GEN",
-   "namn": "Gen Digital",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 63,
-    "VÄ": 100,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 52,
-   "skal": "RS +2,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 55 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000849399&type=4"
   },
   {
    "ticker": "LITE",
@@ -683,30 +599,8 @@
     "MA": 60
    },
    "styrka": 51,
-   "skal": "riktkurssnitt +9,7 % (30 d mot 90 d) + RS +10,5 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +9,7 % (30 d mot 90 d) + RS +12,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001633978&type=4"
-  },
-  {
-   "ticker": "OXY",
-   "namn": "Occidental Petroleum",
-   "marknad": "US",
-   "sektorId": "XLE",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 65,
-    "ES": 66,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 51,
-   "skal": "riktkurssnitt +2,7 % (30 d mot 90 d) + RS +3,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000797468&type=4"
   },
   {
    "ticker": "PFE",
@@ -721,14 +615,36 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 73,
+    "TK": 67,
     "ES": 59,
     "VÄ": 100,
     "MA": 60
    },
-   "styrka": 51,
-   "skal": "riktkurssnitt +1,1 % (30 d mot 90 d) + RS +4,7 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "styrka": 50,
+   "skal": "riktkurssnitt +1,1 % (30 d mot 90 d) + RS +3,3 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000078003&type=4"
+  },
+  {
+   "ticker": "GEN",
+   "namn": "Gen Digital",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 53,
+    "VÄ": 100,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 50,
+   "skal": "RS +0,7 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 54 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000849399&type=4"
   },
   {
    "ticker": "ORCL",
@@ -744,39 +660,17 @@
    "sparade": 6,
    "delpoang": {
     "ES": 100,
-    "VÄ": 85,
+    "VÄ": 83,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 50,
-   "skal": "riktkurssnitt +12,1 % (30 d mot 90 d) + fwd P/E-rabatt 17 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 49,
+   "skal": "riktkurssnitt +12,1 % (30 d mot 90 d) + fwd P/E-rabatt 16 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001341439&type=4"
   },
   {
-   "ticker": "CPAY",
-   "namn": "Corpay",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 58,
-    "ES": 89,
-    "VÄ": 70,
-    "MA": 60
-   },
-   "styrka": 50,
-   "skal": "riktkurssnitt +8,5 % (30 d mot 90 d) + RS +1,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 10 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001175454&type=4"
-  },
-  {
-   "ticker": "EOG",
-   "namn": "EOG Resources",
+   "ticker": "XOM",
+   "namn": "ExxonMobil",
    "marknad": "US",
    "sektorId": "XLE",
    "parlor": [
@@ -787,36 +681,14 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 56,
-    "ES": 69,
-    "VÄ": 100,
+    "TK": 53,
+    "ES": 85,
+    "VÄ": 77,
     "MA": 60
    },
-   "styrka": 50,
-   "skal": "riktkurssnitt +3,5 % (30 d mot 90 d) + RS +1,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 46 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000821189&type=4"
-  },
-  {
-   "ticker": "GOOGL",
-   "namn": "Alphabet Inc. (Class A)",
-   "marknad": "US",
-   "sektorId": "XLC",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 54,
-    "ES": 91,
-    "VÄ": 56,
-    "MA": 60
-   },
-   "styrka": 47,
-   "skal": "riktkurssnitt +9,0 % (30 d mot 90 d) + RS +0,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 3 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=4"
+   "styrka": 49,
+   "skal": "riktkurssnitt +7,6 % (30 d mot 90 d) + RS +0,7 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 14 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000034088&type=4"
   },
   {
    "ticker": "NOW",
@@ -832,12 +704,12 @@
    "sparade": 6,
    "delpoang": {
     "TK": 100,
-    "ES": 79,
+    "ES": 85,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 47,
-   "skal": "riktkurssnitt +6,0 % (30 d mot 90 d) + RS +12,1 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 49,
+   "skal": "riktkurssnitt +7,6 % (30 d mot 90 d) + RS +10,5 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001373715&type=4"
   },
   {
@@ -859,7 +731,7 @@
     "MA": 60
    },
    "styrka": 47,
-   "skal": "RS +15,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +17,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 26 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001645590&type=4"
   },
   {
@@ -881,8 +753,52 @@
     "MA": 60
    },
    "styrka": 47,
-   "skal": "RS +12,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 62 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +11,6 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 62 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002023554&type=4"
+  },
+  {
+   "ticker": "GOOGL",
+   "namn": "Alphabet Inc. (Class A)",
+   "marknad": "US",
+   "sektorId": "XLC",
+   "parlor": [
+    "TK",
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 51,
+    "ES": 91,
+    "VÄ": 53,
+    "MA": 60
+   },
+   "styrka": 46,
+   "skal": "riktkurssnitt +9,0 % (30 d mot 90 d) + RS +0,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 2 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=4"
+  },
+  {
+   "ticker": "MU",
+   "namn": "Micron Technology",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 96,
+    "VÄ": 100,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 46,
+   "skal": "RS +9,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 69 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000723125&type=4"
   },
   {
    "ticker": "FSLR",
@@ -903,7 +819,7 @@
     "MA": 60
    },
    "styrka": 45,
-   "skal": "riktkurssnitt +3,8 % (30 d mot 90 d) + fwd P/E-rabatt 49 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +3,8 % (30 d mot 90 d) + fwd P/E-rabatt 48 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001274494&type=4"
   },
   {
@@ -925,30 +841,52 @@
     "MA": 60
    },
    "styrka": 45,
-   "skal": "riktkurssnitt +3,5 % (30 d mot 90 d) + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +3,5 % (30 d mot 90 d) + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001467373&type=4"
   },
   {
-   "ticker": "MDT",
-   "namn": "Medtronic",
+   "ticker": "GDDY",
+   "namn": "GoDaddy",
    "marknad": "US",
-   "sektorId": "XLV",
+   "sektorId": "XLK",
    "parlor": [
     "TK",
-    "ES",
     "VÄ",
+    "FL",
     "MA"
    ],
-   "sparade": 5,
+   "sparade": 6,
    "delpoang": {
-    "TK": 76,
-    "ES": 60,
-    "VÄ": 62,
+    "TK": 92,
+    "VÄ": 100,
+    "FL": 89,
     "MA": 60
    },
    "styrka": 45,
-   "skal": "riktkurssnitt +1,3 % (30 d mot 90 d) + RS +5,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001613103&type=4"
+   "skal": "RS +8,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 35 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001609711&type=4"
+  },
+  {
+   "ticker": "ADI",
+   "namn": "Analog Devices",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "ES",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 51,
+    "ES": 100,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 44,
+   "skal": "riktkurssnitt +14,1 % (30 d mot 90 d) + RS +0,1 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000006281&type=4"
   },
   {
    "ticker": "CRWD",
@@ -964,13 +902,57 @@
    "sparade": 6,
    "delpoang": {
     "TK": 100,
-    "ES": 63,
+    "ES": 64,
     "FL": 89,
     "MA": 60
    },
    "styrka": 44,
-   "skal": "riktkurssnitt +2,0 % (30 d mot 90 d) + RS +14,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "riktkurssnitt +2,2 % (30 d mot 90 d) + RS +17,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001535527&type=4"
+  },
+  {
+   "ticker": "QCOM",
+   "namn": "Qualcomm",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 100,
+    "VÄ": 82,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 44,
+   "skal": "RS +11,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 16 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000804328&type=4"
+  },
+  {
+   "ticker": "AAPL",
+   "namn": "Apple Inc.",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "ES",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 70,
+    "ES": 81,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 43,
+   "skal": "riktkurssnitt +6,4 % (30 d mot 90 d) + RS +4,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=4"
   },
   {
    "ticker": "DELL",
@@ -986,35 +968,13 @@
    "sparade": 6,
    "delpoang": {
     "TK": 100,
-    "ES": 62,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 44,
-   "skal": "riktkurssnitt +1,8 % (30 d mot 90 d) + RS +21,3 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001571996&type=4"
-  },
-  {
-   "ticker": "AAPL",
-   "namn": "Apple Inc.",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "ES",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 73,
-    "ES": 81,
+    "ES": 61,
     "FL": 89,
     "MA": 60
    },
    "styrka": 43,
-   "skal": "riktkurssnitt +6,4 % (30 d mot 90 d) + RS +4,6 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=4"
+   "skal": "riktkurssnitt +1,6 % (30 d mot 90 d) + RS +22,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001571996&type=4"
   },
   {
    "ticker": "ADSK",
@@ -1029,58 +989,36 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "ES": 65,
-    "VÄ": 93,
+    "ES": 61,
+    "VÄ": 91,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 43,
-   "skal": "riktkurssnitt +2,4 % (30 d mot 90 d) + fwd P/E-rabatt 22 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 42,
+   "skal": "riktkurssnitt +1,6 % (30 d mot 90 d) + fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000769397&type=4"
   },
   {
-   "ticker": "MU",
-   "namn": "Micron Technology",
+   "ticker": "MDT",
+   "namn": "Medtronic",
    "marknad": "US",
-   "sektorId": "XLK",
+   "sektorId": "XLV",
    "parlor": [
     "TK",
+    "ES",
     "VÄ",
-    "FL",
     "MA"
    ],
-   "sparade": 6,
+   "sparade": 5,
    "delpoang": {
-    "TK": 81,
-    "VÄ": 100,
-    "FL": 89,
+    "TK": 60,
+    "ES": 60,
+    "VÄ": 62,
     "MA": 60
    },
-   "styrka": 43,
-   "skal": "RS +6,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 70 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000723125&type=4"
-  },
-  {
-   "ticker": "QCOM",
-   "namn": "Qualcomm",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 69,
-    "VÄ": 96,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 41,
-   "skal": "RS +3,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 23 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000804328&type=4"
+   "styrka": 42,
+   "skal": "riktkurssnitt +1,3 % (30 d mot 90 d) + RS +1,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001613103&type=4"
   },
   {
    "ticker": "MSI",
@@ -1095,58 +1033,14 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 60,
+    "TK": 52,
     "ES": 75,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 40,
-   "skal": "riktkurssnitt +5,0 % (30 d mot 90 d) + RS +1,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 39,
+   "skal": "riktkurssnitt +5,0 % (30 d mot 90 d) + RS +0,5 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000068505&type=4"
-  },
-  {
-   "ticker": "CDW",
-   "namn": "CDW Corporation",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 61,
-    "VÄ": 100,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 40,
-   "skal": "RS +2,3 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 39 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001402057&type=4"
-  },
-  {
-   "ticker": "GDDY",
-   "namn": "GoDaddy",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 60,
-    "VÄ": 100,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 40,
-   "skal": "RS +2,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001609711&type=4"
   },
   {
    "ticker": "NVDA",
@@ -1161,34 +1055,78 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 67,
-    "ES": 63,
+    "TK": 72,
+    "ES": 64,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 38,
-   "skal": "riktkurssnitt +2,0 % (30 d mot 90 d) + RS +3,5 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 39,
+   "skal": "riktkurssnitt +2,2 % (30 d mot 90 d) + RS +4,5 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045810&type=4"
   },
   {
-   "ticker": "SAAB B",
-   "namn": "Saab B",
+   "ticker": "CDW",
+   "namn": "CDW Corporation",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 57,
+    "VÄ": 100,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 39,
+   "skal": "RS +1,3 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 39 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001402057&type=4"
+  },
+  {
+   "ticker": "AKAM",
+   "namn": "Akamai Technologies",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 54,
+    "VÄ": 90,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 37,
+   "skal": "RS +0,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001086222&type=4"
+  },
+  {
+   "ticker": "LATO B",
+   "namn": "Latour B",
    "marknad": "SE",
-   "sektorId": "XLI",
+   "sektorId": "XLF",
    "parlor": [
     "TK",
     "IN",
-    "FL"
+    "MA"
    ],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {
-    "TK": 50,
+    "TK": 67,
     "IN": 100,
-    "FL": 50
+    "MA": 60
    },
-   "styrka": 58,
-   "skal": "Insynskluster (5 köpare 30 d) + RS +0,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Saab"
+   "styrka": 69,
+   "skal": "Insynskluster (3 köpare 30 d) + RS +3,4 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Latour"
   },
   {
    "ticker": "SKA B",
@@ -1202,12 +1140,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 52,
+    "TK": 70,
     "IN": 100,
     "FL": 50
    },
-   "styrka": 58,
-   "skal": "Insynskluster (10 köpare 30 d) + RS +0,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "styrka": 62,
+   "skal": "Insynskluster (10 köpare 30 d) + RS +4,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Skanska"
   },
   {
@@ -1222,12 +1160,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 100,
+    "TK": 95,
     "ES": 61,
     "VÄ": 100
    },
-   "styrka": 53,
-   "skal": "riktkurssnitt +1,6 % (30 d mot 90 d) + RS +11,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 31 % mot sektorns 10-årssnitt",
+   "styrka": 52,
+   "skal": "riktkurssnitt +1,6 % (30 d mot 90 d) + RS +9,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 31 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001164727&type=4"
   },
   {
@@ -1242,33 +1180,13 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 94,
+    "TK": 82,
     "ES": 59,
     "VÄ": 100
    },
-   "styrka": 51,
-   "skal": "riktkurssnitt +1,1 % (30 d mot 90 d) + RS +8,8 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt",
+   "styrka": 49,
+   "skal": "riktkurssnitt +1,1 % (30 d mot 90 d) + RS +6,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764478&type=4"
-  },
-  {
-   "ticker": "T",
-   "namn": "AT&T",
-   "marknad": "US",
-   "sektorId": "XLC",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 81,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 50,
-   "skal": "RS +6,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 38 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000732717&type=4"
   },
   {
    "ticker": "MTB",
@@ -1307,7 +1225,7 @@
     "MA": 60
    },
    "styrka": 48,
-   "skal": "riktkurssnitt +17,9 % (30 d mot 90 d) + RS +58,2 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +17,9 % (30 d mot 90 d) + RS +72,0 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001682852&type=4"
   },
   {
@@ -1327,68 +1245,8 @@
     "MA": 60
    },
    "styrka": 48,
-   "skal": "riktkurssnitt +17,1 % (30 d mot 90 d) + RS +10,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +17,1 % (30 d mot 90 d) + RS +10,3 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000097745&type=4"
-  },
-  {
-   "ticker": "SJM",
-   "namn": "J.M. Smucker Company (The)",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "TK",
-    "ES",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 59,
-    "ES": 73,
-    "VÄ": 100
-   },
-   "styrka": 48,
-   "skal": "riktkurssnitt +4,6 % (30 d mot 90 d) + RS +1,8 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 44 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091419&type=4"
-  },
-  {
-   "ticker": "SOLV",
-   "namn": "Solventum",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 72,
-    "VÄ": 99,
-    "MA": 60
-   },
-   "styrka": 48,
-   "skal": "RS +4,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001964738&type=4"
-  },
-  {
-   "ticker": "FANG",
-   "namn": "Diamondback Energy",
-   "marknad": "US",
-   "sektorId": "XLE",
-   "parlor": [
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 99,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 47,
-   "skal": "riktkurssnitt +10,9 % (30 d mot 90 d) + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001539838&type=4"
   },
   {
    "ticker": "CFG",
@@ -1403,11 +1261,11 @@
    "sparade": 5,
    "delpoang": {
     "ES": 100,
-    "VÄ": 93,
+    "VÄ": 92,
     "MA": 60
    },
    "styrka": 46,
-   "skal": "riktkurssnitt +12,8 % (30 d mot 90 d) + fwd P/E-rabatt 22 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +12,8 % (30 d mot 90 d) + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000759944&type=4"
   },
   {
@@ -1427,28 +1285,8 @@
     "MA": 60
    },
    "styrka": 46,
-   "skal": "riktkurssnitt +10,3 % (30 d mot 90 d) + RS +12,8 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +10,3 % (30 d mot 90 d) + RS +14,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783879&type=4"
-  },
-  {
-   "ticker": "META",
-   "namn": "Meta Platforms",
-   "marknad": "US",
-   "sektorId": "XLC",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 97,
-    "ES": 95,
-    "MA": 60
-   },
-   "styrka": 46,
-   "skal": "riktkurssnitt +9,9 % (30 d mot 90 d) + RS +9,3 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001326801&type=4"
   },
   {
    "ticker": "COF",
@@ -1471,6 +1309,26 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000927628&type=4"
   },
   {
+   "ticker": "FANG",
+   "namn": "Diamondback Energy",
+   "marknad": "US",
+   "sektorId": "XLE",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 93,
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 46,
+   "skal": "riktkurssnitt +9,5 % (30 d mot 90 d) + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001539838&type=4"
+  },
+  {
    "ticker": "GPN",
    "namn": "Global Payments",
    "marknad": "US",
@@ -1491,10 +1349,70 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001123360&type=4"
   },
   {
-   "ticker": "TRV",
-   "namn": "Travelers Companies (The)",
+   "ticker": "MET",
+   "namn": "MetLife",
    "marknad": "US",
    "sektorId": "XLF",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 92,
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 46,
+   "skal": "riktkurssnitt +9,2 % (30 d mot 90 d) + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001099219&type=4"
+  },
+  {
+   "ticker": "ULTA",
+   "namn": "Ulta Beauty",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "TK",
+    "ES",
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 82,
+    "ES": 55,
+    "VÄ": 89
+   },
+   "styrka": 46,
+   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + RS +6,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 19 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001403568&type=4"
+  },
+  {
+   "ticker": "META",
+   "namn": "Meta Platforms",
+   "marknad": "US",
+   "sektorId": "XLC",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 100,
+    "ES": 91,
+    "MA": 60
+   },
+   "styrka": 45,
+   "skal": "riktkurssnitt +8,9 % (30 d mot 90 d) + RS +18,3 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001326801&type=4"
+  },
+  {
+   "ticker": "SOLV",
+   "namn": "Solventum",
+   "marknad": "US",
+   "sektorId": "XLV",
    "parlor": [
     "TK",
     "VÄ",
@@ -1503,32 +1421,12 @@
    "sparade": 4,
    "delpoang": {
     "TK": 62,
-    "VÄ": 100,
+    "VÄ": 99,
     "MA": 60
    },
-   "styrka": 46,
-   "skal": "RS +2,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 32 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000086312&type=4"
-  },
-  {
-   "ticker": "VZ",
-   "namn": "Verizon",
-   "marknad": "US",
-   "sektorId": "XLC",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 63,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 46,
-   "skal": "RS +2,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 45 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000732712&type=4"
+   "styrka": 45,
+   "skal": "RS +2,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001964738&type=4"
   },
   {
    "ticker": "PNR",
@@ -1551,46 +1449,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000077360&type=4"
   },
   {
-   "ticker": "CRL",
-   "namn": "Charles River Laboratories",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 80,
-    "ES": 100,
-    "MA": 60
-   },
-   "styrka": 44,
-   "skal": "riktkurssnitt +15,5 % (30 d mot 90 d) + RS +6,0 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001100682&type=4"
-  },
-  {
-   "ticker": "DXCM",
-   "namn": "Dexcom",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 95,
-    "ES": 90,
-    "MA": 60
-   },
-   "styrka": 44,
-   "skal": "riktkurssnitt +8,8 % (30 d mot 90 d) + RS +9,0 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001093557&type=4"
-  },
-  {
    "ticker": "RVTY",
    "namn": "Revvity",
    "marknad": "US",
@@ -1607,48 +1465,8 @@
     "MA": 60
    },
    "styrka": 44,
-   "skal": "riktkurssnitt +7,8 % (30 d mot 90 d) + RS +18,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +7,8 % (30 d mot 90 d) + RS +17,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000031791&type=4"
-  },
-  {
-   "ticker": "VTRS",
-   "namn": "Viatris",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 55,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 44,
-   "skal": "RS +1,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 59 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001792044&type=4"
-  },
-  {
-   "ticker": "ERIC B",
-   "namn": "Ericsson B",
-   "marknad": "SE",
-   "sektorId": "XLK",
-   "parlor": [
-    "IN",
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "IN": 65,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 43,
-   "skal": "Insynskluster (1 köpare 30 d) + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Ericsson"
   },
   {
    "ticker": "BR",
@@ -1663,12 +1481,32 @@
    "sparade": 6,
    "delpoang": {
     "ES": 100,
-    "VÄ": 93,
+    "VÄ": 92,
     "FL": 50
    },
    "styrka": 43,
-   "skal": "riktkurssnitt +12,2 % (30 d mot 90 d) + fwd P/E-rabatt 22 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "riktkurssnitt +12,2 % (30 d mot 90 d) + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001383312&type=4"
+  },
+  {
+   "ticker": "CRL",
+   "namn": "Charles River Laboratories",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 77,
+    "ES": 100,
+    "MA": 60
+   },
+   "styrka": 43,
+   "skal": "riktkurssnitt +15,5 % (30 d mot 90 d) + RS +5,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001100682&type=4"
   },
   {
    "ticker": "WAT",
@@ -1682,12 +1520,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 78,
+    "TK": 75,
     "ES": 100,
     "MA": 60
    },
    "styrka": 43,
-   "skal": "riktkurssnitt +11,2 % (30 d mot 90 d) + RS +5,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +11,9 % (30 d mot 90 d) + RS +4,9 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001000697&type=4"
   },
   {
@@ -1711,10 +1549,10 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000895126&type=4"
   },
   {
-   "ticker": "EG",
-   "namn": "Everest Group",
+   "ticker": "VTRS",
+   "namn": "Viatris",
    "marknad": "US",
-   "sektorId": "XLF",
+   "sektorId": "XLV",
    "parlor": [
     "TK",
     "VÄ",
@@ -1727,48 +1565,8 @@
     "MA": 60
    },
    "styrka": 43,
-   "skal": "RS +0,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 56 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001095073&type=4"
-  },
-  {
-   "ticker": "ZBH",
-   "namn": "Zimmer Biomet",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 53,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 43,
-   "skal": "RS +0,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 32 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001136869&type=4"
-  },
-  {
-   "ticker": "BDX",
-   "namn": "Becton Dickinson",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 75,
-    "VÄ": 76,
-    "MA": 60
-   },
-   "styrka": 43,
-   "skal": "RS +4,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 13 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000010795&type=4"
+   "skal": "RS +0,2 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 58 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001792044&type=4"
   },
   {
    "ticker": "DHR",
@@ -1782,12 +1580,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 69,
+    "TK": 68,
     "ES": 100,
     "MA": 60
    },
    "styrka": 42,
-   "skal": "riktkurssnitt +12,9 % (30 d mot 90 d) + RS +3,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +12,9 % (30 d mot 90 d) + RS +3,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000313616&type=4"
   },
   {
@@ -1827,12 +1625,12 @@
     "MA": 60
    },
    "styrka": 42,
-   "skal": "riktkurssnitt +6,2 % (30 d mot 90 d) + RS +11,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +6,2 % (30 d mot 90 d) + RS +11,2 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001478242&type=4"
   },
   {
-   "ticker": "JNJ",
-   "namn": "Johnson & Johnson",
+   "ticker": "DXCM",
+   "namn": "Dexcom",
    "marknad": "US",
    "sektorId": "XLV",
    "parlor": [
@@ -1842,13 +1640,13 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 63,
-    "ES": 100,
+    "TK": 78,
+    "ES": 90,
     "MA": 60
    },
    "styrka": 41,
-   "skal": "riktkurssnitt +12,4 % (30 d mot 90 d) + RS +2,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000200406&type=4"
+   "skal": "riktkurssnitt +8,8 % (30 d mot 90 d) + RS +5,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001093557&type=4"
   },
   {
    "ticker": "MRK",
@@ -1863,11 +1661,11 @@
    "sparade": 5,
    "delpoang": {
     "TK": 84,
-    "ES": 85,
+    "ES": 87,
     "MA": 60
    },
    "styrka": 41,
-   "skal": "riktkurssnitt +7,5 % (30 d mot 90 d) + RS +6,9 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +8,0 % (30 d mot 90 d) + RS +6,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000310158&type=4"
   },
   {
@@ -1887,8 +1685,28 @@
     "MA": 60
    },
    "styrka": 41,
-   "skal": "riktkurssnitt +5,0 % (30 d mot 90 d) + fwd P/E-rabatt 44 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +5,0 % (30 d mot 90 d) + fwd P/E-rabatt 45 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000014272&type=4"
+  },
+  {
+   "ticker": "PGR",
+   "namn": "Progressive Corporation",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 75,
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 41,
+   "skal": "riktkurssnitt +5,0 % (30 d mot 90 d) + fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000080661&type=4"
   },
   {
    "ticker": "RF",
@@ -1942,33 +1760,13 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 98,
+    "TK": 100,
     "FL": 89,
     "MA": 60
    },
    "styrka": 41,
-   "skal": "RS +9,6 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +10,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Sinch"
-  },
-  {
-   "ticker": "PGR",
-   "namn": "Progressive Corporation",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "ES",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 70,
-    "VÄ": 100,
-    "MA": 60
-   },
-   "styrka": 40,
-   "skal": "riktkurssnitt +3,7 % (30 d mot 90 d) + fwd P/E-rabatt 26 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000080661&type=4"
   },
   {
    "ticker": "ALL",
@@ -1987,8 +1785,28 @@
     "MA": 60
    },
    "styrka": 40,
-   "skal": "riktkurssnitt +3,6 % (30 d mot 90 d) + fwd P/E-rabatt 56 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +3,6 % (30 d mot 90 d) + fwd P/E-rabatt 57 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000899051&type=4"
+  },
+  {
+   "ticker": "EOG",
+   "namn": "EOG Resources",
+   "marknad": "US",
+   "sektorId": "XLE",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 69,
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 40,
+   "skal": "riktkurssnitt +3,5 % (30 d mot 90 d) + fwd P/E-rabatt 46 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000821189&type=4"
   },
   {
    "ticker": "CMCSA",
@@ -2007,7 +1825,7 @@
     "MA": 60
    },
    "styrka": 40,
-   "skal": "riktkurssnitt +3,2 % (30 d mot 90 d) + fwd P/E-rabatt 63 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +3,2 % (30 d mot 90 d) + fwd P/E-rabatt 62 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001166691&type=4"
   },
   {
@@ -2027,14 +1845,34 @@
     "MA": 60
    },
    "styrka": 40,
-   "skal": "riktkurssnitt +3,3 % (30 d mot 90 d) + RS +14,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +3,3 % (30 d mot 90 d) + RS +16,8 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001679788&type=4"
   },
   {
-   "ticker": "ABBV",
-   "namn": "AbbVie",
+   "ticker": "BDX",
+   "namn": "Becton Dickinson",
    "marknad": "US",
    "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "TK": 62,
+    "VÄ": 76,
+    "MA": 60
+   },
+   "styrka": 40,
+   "skal": "RS +2,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 13 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000010795&type=4"
+  },
+  {
+   "ticker": "ICE",
+   "namn": "Intercontinental Exchange",
+   "marknad": "US",
+   "sektorId": "XLF",
    "parlor": [
     "TK",
     "ES",
@@ -2042,17 +1880,17 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 65,
-    "ES": 94,
+    "TK": 56,
+    "ES": 100,
     "MA": 60
    },
    "styrka": 39,
-   "skal": "riktkurssnitt +9,7 % (30 d mot 90 d) + RS +2,9 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001551152&type=4"
+   "skal": "riktkurssnitt +15,7 % (30 d mot 90 d) + RS +1,3 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001571949&type=4"
   },
   {
-   "ticker": "HBAN",
-   "namn": "Huntington Bancshares",
+   "ticker": "CPAY",
+   "namn": "Corpay",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -2062,13 +1900,33 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "ES": 65,
+    "ES": 89,
+    "VÄ": 70,
+    "MA": 60
+   },
+   "styrka": 39,
+   "skal": "riktkurssnitt +8,5 % (30 d mot 90 d) + fwd P/E-rabatt 10 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001175454&type=4"
+  },
+  {
+   "ticker": "OXY",
+   "namn": "Occidental Petroleum",
+   "marknad": "US",
+   "sektorId": "XLE",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 66,
     "VÄ": 100,
     "MA": 60
    },
    "styrka": 39,
-   "skal": "riktkurssnitt +2,4 % (30 d mot 90 d) + fwd P/E-rabatt 28 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000049196&type=4"
+   "skal": "riktkurssnitt +2,7 % (30 d mot 90 d) + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000797468&type=4"
   },
   {
    "ticker": "EFX",
@@ -2083,12 +1941,52 @@
    "sparade": 6,
    "delpoang": {
     "ES": 100,
-    "VÄ": 62,
+    "VÄ": 63,
     "FL": 50
    },
    "styrka": 38,
-   "skal": "riktkurssnitt +14,8 % (30 d mot 90 d) + fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "riktkurssnitt +14,8 % (30 d mot 90 d) + fwd P/E-rabatt 7 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000033185&type=4"
+  },
+  {
+   "ticker": "JNJ",
+   "namn": "Johnson & Johnson",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 52,
+    "ES": 100,
+    "MA": 60
+   },
+   "styrka": 38,
+   "skal": "riktkurssnitt +12,4 % (30 d mot 90 d) + RS +0,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000200406&type=4"
+  },
+  {
+   "ticker": "ABBV",
+   "namn": "AbbVie",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 57,
+    "ES": 94,
+    "MA": 60
+   },
+   "styrka": 38,
+   "skal": "riktkurssnitt +9,7 % (30 d mot 90 d) + RS +1,4 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001551152&type=4"
   },
   {
    "ticker": "PYPL",
@@ -2107,7 +2005,7 @@
     "MA": 60
    },
    "styrka": 38,
-   "skal": "riktkurssnitt +1,7 % (30 d mot 90 d) + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +1,7 % (30 d mot 90 d) + fwd P/E-rabatt 39 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001633917&type=4"
   },
   {
@@ -2127,8 +2025,28 @@
     "MA": 60
    },
    "styrka": 38,
-   "skal": "riktkurssnitt +1,8 % (30 d mot 90 d) + RS +12,9 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "riktkurssnitt +1,8 % (30 d mot 90 d) + RS +11,4 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001393052&type=4"
+  },
+  {
+   "ticker": "A",
+   "namn": "Agilent Technologies",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 99,
+    "ES": 61,
+    "MA": 60
+   },
+   "styrka": 38,
+   "skal": "riktkurssnitt +1,4 % (30 d mot 90 d) + RS +9,8 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090872&type=4"
   },
   {
    "ticker": "CTSH",
@@ -2147,7 +2065,7 @@
     "MA": 60
    },
    "styrka": 38,
-   "skal": "fwd P/E-rabatt 52 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 53 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001058290&type=4"
   },
   {
@@ -2167,8 +2085,28 @@
     "MA": 60
    },
    "styrka": 38,
-   "skal": "fwd P/E-rabatt 31 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 30 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001413447&type=4"
+  },
+  {
+   "ticker": "ROP",
+   "namn": "Roper Technologies",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 100,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 38,
+   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000882835&type=4"
   },
   {
    "ticker": "TRMB",
@@ -2202,93 +2140,53 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 98,
+    "VÄ": 99,
     "FL": 89,
     "MA": 60
    },
    "styrka": 38,
-   "skal": "fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000857005&type=4"
   },
   {
-   "ticker": "ROP",
-   "namn": "Roper Technologies",
+   "ticker": "DE",
+   "namn": "Deere & Company",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "TK",
+    "ES",
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 82,
+    "ES": 79,
+    "FL": 50
+   },
+   "styrka": 37,
+   "skal": "riktkurssnitt +6,1 % (30 d mot 90 d) + RS +6,3 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000315189&type=4"
+  },
+  {
+   "ticker": "FFIV",
+   "namn": "F5, Inc.",
    "marknad": "US",
    "sektorId": "XLK",
    "parlor": [
-    "VÄ",
+    "TK",
     "FL",
     "MA"
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 97,
+    "TK": 94,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 38,
-   "skal": "fwd P/E-rabatt 23 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000882835&type=4"
-  },
-  {
-   "ticker": "V",
-   "namn": "Visa Inc.",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 53,
-    "ES": 95,
-    "MA": 60
-   },
    "styrka": 37,
-   "skal": "riktkurssnitt +10,1 % (30 d mot 90 d) + RS +0,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001403161&type=4"
-  },
-  {
-   "ticker": "ELV",
-   "namn": "Elevance Health",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 62,
-    "VÄ": 66,
-    "MA": 60
-   },
-   "styrka": 37,
-   "skal": "RS +2,5 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 8 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001156039&type=4"
-  },
-  {
-   "ticker": "MA",
-   "namn": "Mastercard",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 52,
-    "ES": 90,
-    "MA": 60
-   },
-   "styrka": 36,
-   "skal": "riktkurssnitt +8,8 % (30 d mot 90 d) + RS +0,4 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001141391&type=4"
+   "skal": "RS +8,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001048695&type=4"
   },
   {
    "ticker": "LMT",
@@ -2303,11 +2201,11 @@
    "sparade": 6,
    "delpoang": {
     "ES": 84,
-    "VÄ": 73,
+    "VÄ": 72,
     "FL": 50
    },
    "styrka": 36,
-   "skal": "riktkurssnitt +7,3 % (30 d mot 90 d) + fwd P/E-rabatt 12 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "riktkurssnitt +7,3 % (30 d mot 90 d) + fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000936468&type=4"
   },
   {
@@ -2327,8 +2225,28 @@
     "FL": 50
    },
    "styrka": 36,
-   "skal": "riktkurssnitt +2,0 % (30 d mot 90 d) + fwd P/E-rabatt 26 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "riktkurssnitt +2,0 % (30 d mot 90 d) + fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001501585&type=4"
+  },
+  {
+   "ticker": "HBAN",
+   "namn": "Huntington Bancshares",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 56,
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 36,
+   "skal": "riktkurssnitt +0,2 % (30 d mot 90 d) + fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000049196&type=4"
   },
   {
    "ticker": "COO",
@@ -2347,7 +2265,7 @@
     "MA": 60
    },
    "styrka": 36,
-   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + fwd P/E-rabatt 26 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000711404&type=4"
   },
   {
@@ -2371,6 +2289,26 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001136893&type=4"
   },
   {
+   "ticker": "FDX",
+   "namn": "FedEx",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "ES",
+    "VÄ",
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "ES": 73,
+    "VÄ": 81,
+    "FL": 50
+   },
+   "styrka": 35,
+   "skal": "riktkurssnitt +4,6 % (30 d mot 90 d) + fwd P/E-rabatt 16 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001048911&type=4"
+  },
+  {
    "ticker": "JBL",
    "namn": "Jabil",
    "marknad": "US",
@@ -2382,58 +2320,38 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 87,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 36,
-   "skal": "fwd P/E-rabatt 19 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000898293&type=4"
-  },
-  {
-   "ticker": "ADI",
-   "namn": "Analog Devices",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "ES",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "ES": 100,
+    "VÄ": 85,
     "FL": 89,
     "MA": 60
    },
    "styrka": 35,
-   "skal": "riktkurssnitt +14,1 % (30 d mot 90 d) + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000006281&type=4"
+   "skal": "fwd P/E-rabatt 17 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000898293&type=4"
   },
   {
-   "ticker": "A",
-   "namn": "Agilent Technologies",
+   "ticker": "ELV",
+   "namn": "Elevance Health",
    "marknad": "US",
    "sektorId": "XLV",
    "parlor": [
     "TK",
-    "ES",
+    "VÄ",
     "MA"
    ],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {
-    "TK": 88,
-    "ES": 61,
+    "TK": 54,
+    "VÄ": 66,
     "MA": 60
    },
    "styrka": 35,
-   "skal": "riktkurssnitt +1,4 % (30 d mot 90 d) + RS +7,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090872&type=4"
+   "skal": "RS +0,7 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 8 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001156039&type=4"
   },
   {
-   "ticker": "VRSN",
-   "namn": "Verisign",
-   "marknad": "US",
+   "ticker": "HEXA B",
+   "namn": "Hexagon B",
+   "marknad": "SE",
    "sektorId": "XLK",
    "parlor": [
     "TK",
@@ -2442,13 +2360,13 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 85,
+    "TK": 72,
     "FL": 89,
     "MA": 60
    },
    "styrka": 35,
-   "skal": "RS +7,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001014473&type=4"
+   "skal": "RS +4,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Hexagon"
   },
   {
    "ticker": "NOC",
@@ -2471,8 +2389,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001133421&type=4"
   },
   {
-   "ticker": "FDX",
-   "namn": "FedEx",
+   "ticker": "CPRT",
+   "namn": "Copart",
    "marknad": "US",
    "sektorId": "XLI",
    "parlor": [
@@ -2482,13 +2400,33 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "ES": 73,
-    "VÄ": 76,
+    "ES": 74,
+    "VÄ": 71,
     "FL": 50
    },
    "styrka": 34,
-   "skal": "riktkurssnitt +4,6 % (30 d mot 90 d) + fwd P/E-rabatt 13 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001048911&type=4"
+   "skal": "riktkurssnitt +4,8 % (30 d mot 90 d) + fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000900075&type=4"
+  },
+  {
+   "ticker": "VRSN",
+   "namn": "Verisign",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 80,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 34,
+   "skal": "RS +6,1 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001014473&type=4"
   },
   {
    "ticker": "LH",
@@ -2502,99 +2440,19 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 65,
+    "TK": 58,
     "ES": 73,
     "MA": 60
    },
-   "styrka": 34,
-   "skal": "riktkurssnitt +4,4 % (30 d mot 90 d) + RS +3,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "styrka": 33,
+   "skal": "riktkurssnitt +4,4 % (30 d mot 90 d) + RS +1,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000920148&type=4"
   },
   {
-   "ticker": "DE",
-   "namn": "Deere & Company",
+   "ticker": "DGX",
+   "namn": "Quest Diagnostics",
    "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "TK",
-    "ES",
-    "FL"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 91,
-    "ES": 59,
-    "FL": 50
-   },
-   "styrka": 34,
-   "skal": "riktkurssnitt +0,9 % (30 d mot 90 d) + RS +8,3 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000315189&type=4"
-  },
-  {
-   "ticker": "FFIV",
-   "namn": "F5, Inc.",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 78,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 34,
-   "skal": "RS +5,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001048695&type=4"
-  },
-  {
-   "ticker": "HEXA B",
-   "namn": "Hexagon B",
-   "marknad": "SE",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 69,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 34,
-   "skal": "RS +3,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Hexagon"
-  },
-  {
-   "ticker": "CPRT",
-   "namn": "Copart",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "ES",
-    "VÄ",
-    "FL"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "ES": 74,
-    "VÄ": 68,
-    "FL": 50
-   },
-   "styrka": 33,
-   "skal": "riktkurssnitt +4,8 % (30 d mot 90 d) + fwd P/E-rabatt 9 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000900075&type=4"
-  },
-  {
-   "ticker": "TRGP",
-   "namn": "Targa Resources",
-   "marknad": "US",
-   "sektorId": "XLE",
+   "sektorId": "XLV",
    "parlor": [
     "TK",
     "ES",
@@ -2602,13 +2460,13 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 69,
-    "ES": 66,
+    "TK": 70,
+    "ES": 63,
     "MA": 60
    },
    "styrka": 33,
-   "skal": "riktkurssnitt +2,8 % (30 d mot 90 d) + RS +3,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001389170&type=4"
+   "skal": "riktkurssnitt +1,9 % (30 d mot 90 d) + RS +4,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001022079&type=4"
   },
   {
    "ticker": "SWK",
@@ -2623,11 +2481,11 @@
    "sparade": 6,
    "delpoang": {
     "ES": 56,
-    "VÄ": 88,
+    "VÄ": 89,
     "FL": 50
    },
    "styrka": 33,
-   "skal": "riktkurssnitt +0,3 % (30 d mot 90 d) + fwd P/E-rabatt 19 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "riktkurssnitt +0,3 % (30 d mot 90 d) + fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000093556&type=4"
   },
   {
@@ -2663,36 +2521,36 @@
    "sparade": 5,
    "delpoang": {
     "ES": 71,
-    "VÄ": 56,
+    "VÄ": 57,
     "MA": 60
    },
    "styrka": 32,
-   "skal": "riktkurssnitt +4,0 % (30 d mot 90 d) + fwd P/E-rabatt 3 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "riktkurssnitt +4,0 % (30 d mot 90 d) + fwd P/E-rabatt 4 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001140536&type=4"
   },
   {
-   "ticker": "GOOG",
-   "namn": "Alphabet Inc. (Class C)",
+   "ticker": "TRGP",
+   "namn": "Targa Resources",
    "marknad": "US",
-   "sektorId": "XLC",
+   "sektorId": "XLE",
    "parlor": [
     "TK",
-    "VÄ",
+    "ES",
     "MA"
    ],
-   "sparade": 4,
+   "sparade": 5,
    "delpoang": {
-    "TK": 50,
-    "VÄ": 59,
+    "TK": 59,
+    "ES": 67,
     "MA": 60
    },
    "styrka": 32,
-   "skal": "RS +0,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 5 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=4"
+   "skal": "riktkurssnitt +3,1 % (30 d mot 90 d) + RS +1,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001389170&type=4"
   },
   {
-   "ticker": "J",
-   "namn": "Jacobs Solutions",
+   "ticker": "ETN",
+   "namn": "Eaton Corporation",
    "marknad": "US",
    "sektorId": "XLI",
    "parlor": [
@@ -2703,52 +2561,12 @@
    "sparade": 6,
    "delpoang": {
     "TK": 65,
-    "ES": 67,
+    "ES": 64,
     "FL": 50
    },
    "styrka": 31,
-   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + RS +2,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000052988&type=4"
-  },
-  {
-   "ticker": "OKE",
-   "namn": "Oneok",
-   "marknad": "US",
-   "sektorId": "XLE",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 55,
-    "ES": 67,
-    "MA": 60
-   },
-   "styrka": 31,
-   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + RS +1,0 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001039684&type=4"
-  },
-  {
-   "ticker": "WST",
-   "namn": "West Pharmaceutical Services",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "ES",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 62,
-    "ES": 61,
-    "MA": 60
-   },
-   "styrka": 31,
-   "skal": "riktkurssnitt +1,5 % (30 d mot 90 d) + RS +2,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000105770&type=4"
+   "skal": "riktkurssnitt +2,3 % (30 d mot 90 d) + RS +3,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001551182&type=4"
   },
   {
    "ticker": "MCHP",
@@ -2762,13 +2580,93 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 66,
+    "VÄ": 63,
     "FL": 89,
     "MA": 60
    },
    "styrka": 31,
-   "skal": "fwd P/E-rabatt 8 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000827054&type=4"
+  },
+  {
+   "ticker": "KEYS",
+   "namn": "Keysight Technologies",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 66,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 31,
+   "skal": "RS +3,2 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001601046&type=4"
+  },
+  {
+   "ticker": "TER",
+   "namn": "Teradyne",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 65,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 31,
+   "skal": "RS +3,1 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000097210&type=4"
+  },
+  {
+   "ticker": "WST",
+   "namn": "West Pharmaceutical Services",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 58,
+    "ES": 61,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "riktkurssnitt +1,5 % (30 d mot 90 d) + RS +1,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000105770&type=4"
+  },
+  {
+   "ticker": "MTD",
+   "namn": "Mettler Toledo",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 65,
+    "ES": 56,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "riktkurssnitt +0,2 % (30 d mot 90 d) + RS +3,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037646&type=4"
   },
   {
    "ticker": "HAL",
@@ -2783,7 +2681,7 @@
    "sparade": 5,
    "delpoang": {
     "ES": 55,
-    "VÄ": 65,
+    "VÄ": 67,
     "MA": 60
    },
    "styrka": 30,
@@ -2811,26 +2709,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000796343&type=4"
   },
   {
-   "ticker": "AKAM",
-   "namn": "Akamai Technologies",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "VÄ": 100,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 30,
-   "skal": "fwd P/E-rabatt 29 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001086222&type=4"
-  },
-  {
    "ticker": "INTU",
    "namn": "Intuit",
    "marknad": "US",
@@ -2847,7 +2725,7 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 41 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000896878&type=4"
   },
   {
@@ -2867,12 +2745,12 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "RS +10,3 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +19,1 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000002488&type=4"
   },
   {
-   "ticker": "KEYS",
-   "namn": "Keysight Technologies",
+   "ticker": "INTC",
+   "namn": "Intel",
    "marknad": "US",
    "sektorId": "XLK",
    "parlor": [
@@ -2880,15 +2758,75 @@
     "FL",
     "MA"
    ],
-   "sparade": 5,
+   "sparade": 6,
    "delpoang": {
-    "TK": 59,
+    "TK": 100,
     "FL": 89,
     "MA": 60
    },
    "styrka": 30,
-   "skal": "RS +1,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001601046&type=4"
+   "skal": "RS +19,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000050863&type=4"
+  },
+  {
+   "ticker": "MRVL",
+   "namn": "Marvell Technology",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 100,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "RS +14,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001835632&type=4"
+  },
+  {
+   "ticker": "J",
+   "namn": "Jacobs Solutions",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "TK",
+    "ES",
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 54,
+    "ES": 67,
+    "FL": 50
+   },
+   "styrka": 29,
+   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + RS +0,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000052988&type=4"
+  },
+  {
+   "ticker": "NDSN",
+   "namn": "Nordson Corporation",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "TK",
+    "ES",
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 54,
+    "ES": 67,
+    "FL": 50
+   },
+   "styrka": 29,
+   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + RS +0,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000072331&type=4"
   },
   {
    "ticker": "PAYX",
@@ -2903,7 +2841,7 @@
    "sparade": 6,
    "delpoang": {
     "ES": 66,
-    "VÄ": 53,
+    "VÄ": 55,
     "FL": 50
    },
    "styrka": 29,
@@ -2923,7 +2861,7 @@
    "sparade": 6,
    "delpoang": {
     "ES": 64,
-    "VÄ": 53,
+    "VÄ": 55,
     "FL": 50
    },
    "styrka": 29,
@@ -2931,44 +2869,64 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000075362&type=4"
   },
   {
-   "ticker": "ETN",
-   "namn": "Eaton Corporation",
+   "ticker": "FICO",
+   "namn": "Fair Isaac",
    "marknad": "US",
-   "sektorId": "XLI",
+   "sektorId": "XLK",
    "parlor": [
-    "TK",
-    "ES",
-    "FL"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 58,
-    "ES": 64,
-    "FL": 50
-   },
-   "styrka": 29,
-   "skal": "riktkurssnitt +2,3 % (30 d mot 90 d) + RS +1,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001551182&type=4"
-  },
-  {
-   "ticker": "MTD",
-   "namn": "Mettler Toledo",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "ES",
+    "VÄ",
+    "FL",
     "MA"
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 60,
-    "ES": 56,
+    "VÄ": 54,
+    "FL": 89,
     "MA": 60
    },
    "styrka": 29,
-   "skal": "riktkurssnitt +0,2 % (30 d mot 90 d) + RS +1,9 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037646&type=4"
+   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000814547&type=4"
+  },
+  {
+   "ticker": "ANET",
+   "namn": "Arista Networks",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "TK": 94,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 29,
+   "skal": "RS +8,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001596532&type=4"
+  },
+  {
+   "ticker": "STX",
+   "namn": "Seagate Technology",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "TK",
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 56,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 29,
+   "skal": "RS +1,2 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001137789&type=4"
   },
   {
    "ticker": "SNPS",
@@ -3003,72 +2961,12 @@
    "sparade": 6,
    "delpoang": {
     "ES": 57,
-    "VÄ": 58,
+    "VÄ": 59,
     "FL": 50
    },
    "styrka": 28,
    "skal": "riktkurssnitt +0,5 % (30 d mot 90 d) + fwd P/E-rabatt 4 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001524472&type=4"
-  },
-  {
-   "ticker": "TEL",
-   "namn": "TE Connectivity",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "VÄ": 87,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 28,
-   "skal": "fwd P/E-rabatt 18 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001385157&type=4"
-  },
-  {
-   "ticker": "WDC",
-   "namn": "Western Digital",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "VÄ",
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "VÄ": 52,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 28,
-   "skal": "fwd P/E-rabatt 1 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000106040&type=4"
-  },
-  {
-   "ticker": "MRVL",
-   "namn": "Marvell Technology",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 89,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 28,
-   "skal": "RS +7,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001835632&type=4"
   },
   {
    "ticker": "MSFT",
@@ -3082,37 +2980,17 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 89,
+    "TK": 87,
     "FL": 89,
     "MA": 60
    },
    "styrka": 28,
-   "skal": "RS +7,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "RS +7,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=4"
   },
   {
-   "ticker": "NDSN",
-   "namn": "Nordson Corporation",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "TK",
-    "ES",
-    "FL"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 55,
-    "ES": 57,
-    "FL": 50
-   },
-   "styrka": 27,
-   "skal": "riktkurssnitt +0,4 % (30 d mot 90 d) + RS +1,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000072331&type=4"
-  },
-  {
-   "ticker": "IBM",
-   "namn": "IBM",
+   "ticker": "TEL",
+   "namn": "TE Connectivity",
    "marknad": "US",
    "sektorId": "XLK",
    "parlor": [
@@ -3122,17 +3000,17 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "VÄ": 80,
+    "VÄ": 83,
     "FL": 89,
     "MA": 60
    },
    "styrka": 27,
-   "skal": "fwd P/E-rabatt 15 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000051143&type=4"
+   "skal": "fwd P/E-rabatt 16 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001385157&type=4"
   },
   {
-   "ticker": "ANET",
-   "namn": "Arista Networks",
+   "ticker": "FTNT",
+   "namn": "Fortinet",
    "marknad": "US",
    "sektorId": "XLK",
    "parlor": [
@@ -3142,33 +3020,13 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 83,
+    "TK": 85,
     "FL": 89,
     "MA": 60
    },
    "styrka": 27,
-   "skal": "RS +6,6 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001596532&type=4"
-  },
-  {
-   "ticker": "INTC",
-   "namn": "Intel",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 82,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 27,
-   "skal": "RS +6,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000050863&type=4"
+   "skal": "RS +7,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001262039&type=4"
   },
   {
    "ticker": "AVGO",
@@ -3191,28 +3049,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001730168&type=4"
   },
   {
-   "ticker": "FTNT",
-   "namn": "Fortinet",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "TK",
-    "FL",
-    "MA"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "TK": 79,
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 26,
-   "skal": "RS +5,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001262039&type=4"
-  },
-  {
-   "ticker": "APP",
-   "namn": "AppLovin",
+   "ticker": "IBM",
+   "namn": "IBM",
    "marknad": "US",
    "sektorId": "XLK",
    "parlor": [
@@ -3222,13 +3060,13 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "VÄ": 72,
+    "VÄ": 78,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 25,
-   "skal": "fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001751008&type=4"
+   "styrka": 26,
+   "skal": "fwd P/E-rabatt 14 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000051143&type=4"
   },
   {
    "ticker": "COHR",
@@ -3242,12 +3080,12 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 67,
+    "TK": 73,
     "FL": 89,
     "MA": 60
    },
-   "styrka": 24,
-   "skal": "RS +3,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
+   "styrka": 25,
+   "skal": "RS +4,6 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000820318&type=4"
   },
   {
@@ -3262,13 +3100,33 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "TK": 67,
+    "TK": 66,
     "FL": 89,
     "MA": 60
    },
    "styrka": 24,
    "skal": "RS +3,3 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001327567&type=4"
+  },
+  {
+   "ticker": "APP",
+   "namn": "AppLovin",
+   "marknad": "US",
+   "sektorId": "XLK",
+   "parlor": [
+    "VÄ",
+    "FL",
+    "MA"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "VÄ": 58,
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 23,
+   "skal": "fwd P/E-rabatt 4 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001751008&type=4"
   },
   {
    "ticker": "CSCO",
@@ -3282,12 +3140,12 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "VÄ": 55,
+    "VÄ": 51,
     "FL": 89,
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 0 % mot sektorns 10-årssnitt + sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000858877&type=4"
   },
   {
@@ -3327,22 +3185,22 @@
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=AstraZeneca"
   },
   {
-   "ticker": "LATO B",
-   "namn": "Latour B",
+   "ticker": "SAAB B",
+   "namn": "Saab B",
    "marknad": "SE",
-   "sektorId": "XLF",
+   "sektorId": "XLI",
    "parlor": [
     "IN",
-    "MA"
+    "FL"
    ],
-   "sparade": 4,
+   "sparade": 5,
    "delpoang": {
     "IN": 100,
-    "MA": 60
+    "FL": 50
    },
-   "styrka": 51,
-   "skal": "Insynskluster (5 köpare 30 d) + sektor i topp 4",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Latour"
+   "styrka": 46,
+   "skal": "Insynskluster (5 köpare 30 d) + sektorinflöde (proxy)",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Saab"
   },
   {
    "ticker": "GM",
@@ -3381,24 +3239,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001637459&type=4"
   },
   {
-   "ticker": "TGT",
-   "namn": "Target Corporation",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "TK",
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 80,
-    "VÄ": 95
-   },
-   "styrka": 44,
-   "skal": "RS +6,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 22 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000027419&type=4"
-  },
-  {
    "ticker": "SCA B",
    "namn": "SCA B",
    "marknad": "SE",
@@ -3409,12 +3249,30 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 96,
+    "TK": 100,
     "BL": 89
    },
-   "styrka": 42,
-   "skal": "RS +9,2 % mot SMA12, över 40 v-snittet + blankning 2,9 % och fallande",
+   "styrka": 43,
+   "skal": "RS +10,0 % mot SMA12, över 40 v-snittet + blankning 2,9 % och fallande",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Svenska%20Cellulosa"
+  },
+  {
+   "ticker": "TGT",
+   "namn": "Target Corporation",
+   "marknad": "US",
+   "sektorId": "XLP",
+   "parlor": [
+    "TK",
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "TK": 67,
+    "VÄ": 96
+   },
+   "styrka": 41,
+   "skal": "RS +3,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 23 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000027419&type=4"
   },
   {
    "ticker": "GIS",
@@ -3431,26 +3289,8 @@
     "VÄ": 100
    },
    "styrka": 40,
-   "skal": "riktkurssnitt +7,8 % (30 d mot 90 d) + fwd P/E-rabatt 42 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +7,8 % (30 d mot 90 d) + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000040704&type=4"
-  },
-  {
-   "ticker": "ADM",
-   "namn": "Archer Daniels Midland",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "TK",
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 69,
-    "VÄ": 93
-   },
-   "styrka": 40,
-   "skal": "RS +3,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000007084&type=4"
   },
   {
    "ticker": "EXPE",
@@ -3467,50 +3307,32 @@
     "VÄ": 100
    },
    "styrka": 39,
-   "skal": "riktkurssnitt +6,4 % (30 d mot 90 d) + fwd P/E-rabatt 44 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +6,4 % (30 d mot 90 d) + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001324424&type=4"
   },
   {
-   "ticker": "LYB",
-   "namn": "LyondellBasell",
+   "ticker": "SJM",
+   "namn": "J.M. Smucker Company (The)",
    "marknad": "US",
-   "sektorId": "XLB",
+   "sektorId": "XLP",
    "parlor": [
-    "TK",
+    "ES",
     "VÄ"
    ],
-   "sparade": 4,
+   "sparade": 5,
    "delpoang": {
-    "TK": 55,
+    "ES": 73,
     "VÄ": 100
    },
-   "styrka": 39,
-   "skal": "RS +1,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 65 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001489393&type=4"
+   "styrka": 37,
+   "skal": "riktkurssnitt +4,6 % (30 d mot 90 d) + fwd P/E-rabatt 45 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091419&type=4"
   },
   {
-   "ticker": "EBAY",
-   "namn": "eBay Inc.",
+   "ticker": "ADM",
+   "namn": "Archer Daniels Midland",
    "marknad": "US",
-   "sektorId": "XLY",
-   "parlor": [
-    "TK",
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 60,
-    "VÄ": 97
-   },
-   "styrka": 39,
-   "skal": "RS +2,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 24 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001065088&type=4"
-  },
-  {
-   "ticker": "AES",
-   "namn": "AES Corporation",
-   "marknad": "US",
-   "sektorId": "XLU",
+   "sektorId": "XLP",
    "parlor": [
     "TK",
     "VÄ"
@@ -3518,11 +3340,11 @@
    "sparade": 4,
    "delpoang": {
     "TK": 50,
-    "VÄ": 100
+    "VÄ": 97
    },
-   "styrka": 38,
-   "skal": "RS +0,0 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 62 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000874761&type=4"
+   "styrka": 37,
+   "skal": "RS +0,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 23 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000007084&type=4"
   },
   {
    "ticker": "MKC",
@@ -3557,7 +3379,7 @@
     "VÄ": 100
    },
    "styrka": 36,
-   "skal": "riktkurssnitt +3,3 % (30 d mot 90 d) + fwd P/E-rabatt 30 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +3,3 % (30 d mot 90 d) + fwd P/E-rabatt 29 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000935703&type=4"
   },
   {
@@ -3575,7 +3397,7 @@
     "VÄ": 100
    },
    "styrka": 35,
-   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + fwd P/E-rabatt 27 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + fwd P/E-rabatt 28 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000100493&type=4"
   },
   {
@@ -3590,29 +3412,11 @@
    "sparade": 5,
    "delpoang": {
     "ES": 66,
-    "VÄ": 95
+    "VÄ": 93
    },
    "styrka": 34,
-   "skal": "riktkurssnitt +2,8 % (30 d mot 90 d) + fwd P/E-rabatt 22 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +2,8 % (30 d mot 90 d) + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000940944&type=4"
-  },
-  {
-   "ticker": "LOW",
-   "namn": "Lowe's",
-   "marknad": "US",
-   "sektorId": "XLY",
-   "parlor": [
-    "ES",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 63,
-    "VÄ": 100
-   },
-   "styrka": 34,
-   "skal": "riktkurssnitt +1,9 % (30 d mot 90 d) + fwd P/E-rabatt 34 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000060667&type=4"
   },
   {
    "ticker": "KMB",
@@ -3631,24 +3435,6 @@
    "styrka": 34,
    "skal": "riktkurssnitt +1,7 % (30 d mot 90 d) + fwd P/E-rabatt 35 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000055785&type=4"
-  },
-  {
-   "ticker": "KR",
-   "namn": "Kroger",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "ES",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 62,
-    "VÄ": 100
-   },
-   "styrka": 34,
-   "skal": "riktkurssnitt +1,8 % (30 d mot 90 d) + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000056873&type=4"
   },
   {
    "ticker": "PPG",
@@ -3701,7 +3487,7 @@
     "VÄ": 100
    },
    "styrka": 34,
-   "skal": "riktkurssnitt +1,0 % (30 d mot 90 d) + fwd P/E-rabatt 57 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +1,0 % (30 d mot 90 d) + fwd P/E-rabatt 56 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001397187&type=4"
   },
   {
@@ -3723,22 +3509,22 @@
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Lifco"
   },
   {
-   "ticker": "ABNB",
-   "namn": "Airbnb",
+   "ticker": "KR",
+   "namn": "Kroger",
    "marknad": "US",
-   "sektorId": "XLY",
+   "sektorId": "XLP",
    "parlor": [
-    "TK",
-    "ES"
+    "ES",
+    "VÄ"
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 58,
-    "ES": 88
+    "ES": 57,
+    "VÄ": 100
    },
    "styrka": 33,
-   "skal": "riktkurssnitt +8,2 % (30 d mot 90 d) + RS +1,5 % mot SMA12, över 40 v-snittet",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001559720&type=4"
+   "skal": "riktkurssnitt +0,6 % (30 d mot 90 d) + fwd P/E-rabatt 43 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000056873&type=4"
   },
   {
    "ticker": "NUE",
@@ -3755,7 +3541,7 @@
     "VÄ": 100
    },
    "styrka": 32,
-   "skal": "riktkurssnitt -0,0 % (30 d mot 90 d) + fwd P/E-rabatt 30 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt -0,0 % (30 d mot 90 d) + fwd P/E-rabatt 32 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=4"
   },
   {
@@ -3770,47 +3556,11 @@
    "sparade": 5,
    "delpoang": {
     "ES": 55,
-    "VÄ": 97
+    "VÄ": 98
    },
    "styrka": 32,
-   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + fwd P/E-rabatt 23 % mot sektorns 10-årssnitt",
+   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + fwd P/E-rabatt 24 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000029534&type=4"
-  },
-  {
-   "ticker": "ULTA",
-   "namn": "Ulta Beauty",
-   "marknad": "US",
-   "sektorId": "XLY",
-   "parlor": [
-    "ES",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 55,
-    "VÄ": 93
-   },
-   "styrka": 31,
-   "skal": "riktkurssnitt +0,0 % (30 d mot 90 d) + fwd P/E-rabatt 21 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001403568&type=4"
-  },
-  {
-   "ticker": "CF",
-   "namn": "CF Industries",
-   "marknad": "US",
-   "sektorId": "XLB",
-   "parlor": [
-    "TK",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 67,
-    "VÄ": 100
-   },
-   "styrka": 31,
-   "skal": "RS +3,4 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 55 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001324404&type=4"
   },
   {
    "ticker": "NIBE B",
@@ -3823,30 +3573,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 99,
+    "TK": 100,
     "FL": 50
    },
    "styrka": 31,
-   "skal": "RS +9,7 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "skal": "RS +10,4 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=NIBE"
-  },
-  {
-   "ticker": "PEG",
-   "namn": "Public Service Enterprise Group",
-   "marknad": "US",
-   "sektorId": "XLU",
-   "parlor": [
-    "ES",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 72,
-    "VÄ": 64
-   },
-   "styrka": 30,
-   "skal": "riktkurssnitt +4,3 % (30 d mot 90 d) + fwd P/E-rabatt 7 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000788784&type=4"
   },
   {
    "ticker": "AIG",
@@ -3865,6 +3597,24 @@
    "styrka": 30,
    "skal": "fwd P/E-rabatt 42 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000005272&type=4"
+  },
+  {
+   "ticker": "AMP",
+   "namn": "Ameriprise Financial",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "fwd P/E-rabatt 29 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000820027&type=4"
   },
   {
    "ticker": "BAX",
@@ -3917,8 +3667,44 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000831001&type=4"
+  },
+  {
+   "ticker": "DVA",
+   "namn": "DaVita",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000927066&type=4"
+  },
+  {
+   "ticker": "EG",
+   "namn": "Everest Group",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "fwd P/E-rabatt 57 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001095073&type=4"
   },
   {
    "ticker": "FISV",
@@ -3953,7 +3739,7 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 29 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 28 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000038777&type=4"
   },
   {
@@ -3989,7 +3775,7 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 35 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 36 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000874766&type=4"
   },
   {
@@ -4007,7 +3793,7 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 33 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 30 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000914208&type=4"
   },
   {
@@ -4043,8 +3829,26 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 58 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 59 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000029989&type=4"
+  },
+  {
+   "ticker": "TRV",
+   "namn": "Travelers Companies (The)",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000086312&type=4"
   },
   {
    "ticker": "TFC",
@@ -4061,7 +3865,7 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 35 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000092230&type=4"
   },
   {
@@ -4079,8 +3883,26 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 52 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 53 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000352915&type=4"
+  },
+  {
+   "ticker": "VZ",
+   "namn": "Verizon",
+   "marknad": "US",
+   "sektorId": "XLC",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100,
+    "MA": 60
+   },
+   "styrka": 30,
+   "skal": "fwd P/E-rabatt 45 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000732712&type=4"
   },
   {
    "ticker": "WFC",
@@ -4097,12 +3919,12 @@
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 27 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 26 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000072971&type=4"
   },
   {
-   "ticker": "DVA",
-   "namn": "DaVita",
+   "ticker": "ZBH",
+   "namn": "Zimmer Biomet",
    "marknad": "US",
    "sektorId": "XLV",
    "parlor": [
@@ -4111,30 +3933,30 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 99,
+    "VÄ": 100,
     "MA": 60
    },
    "styrka": 30,
-   "skal": "fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000927066&type=4"
+   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001136869&type=4"
   },
   {
-   "ticker": "ICE",
-   "namn": "Intercontinental Exchange",
+   "ticker": "WBD",
+   "namn": "Warner Bros. Discovery",
    "marknad": "US",
-   "sektorId": "XLF",
+   "sektorId": "XLC",
    "parlor": [
-    "ES",
+    "TK",
     "MA"
    ],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {
-    "ES": 100,
+    "TK": 98,
     "MA": 60
    },
-   "styrka": 29,
-   "skal": "riktkurssnitt +15,7 % (30 d mot 90 d) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001571949&type=4"
+   "styrka": 30,
+   "skal": "RS +9,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001437107&type=4"
   },
   {
    "ticker": "SLB",
@@ -4173,24 +3995,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000875320&type=4"
   },
   {
-   "ticker": "BG",
-   "namn": "Bunge Global",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "TK",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 54,
-    "VÄ": 100
-   },
-   "styrka": 29,
-   "skal": "RS +0,9 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 40 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001996862&type=4"
-  },
-  {
    "ticker": "TXT",
    "namn": "Textron",
    "marknad": "US",
@@ -4223,7 +4027,7 @@
     "FL": 50
    },
    "styrka": 29,
-   "skal": "fwd P/E-rabatt 30 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "fwd P/E-rabatt 33 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090727&type=4"
   },
   {
@@ -4281,6 +4085,42 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000318154&type=4"
   },
   {
+   "ticker": "V",
+   "namn": "Visa Inc.",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "ES",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 95,
+    "MA": 60
+   },
+   "styrka": 28,
+   "skal": "riktkurssnitt +10,1 % (30 d mot 90 d) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001403161&type=4"
+  },
+  {
+   "ticker": "PEG",
+   "namn": "Public Service Enterprise Group",
+   "marknad": "US",
+   "sektorId": "XLU",
+   "parlor": [
+    "ES",
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 65,
+    "VÄ": 65
+   },
+   "styrka": 28,
+   "skal": "riktkurssnitt +2,5 % (30 d mot 90 d) + fwd P/E-rabatt 8 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000788784&type=4"
+  },
+  {
    "ticker": "AOS",
    "namn": "A. O. Smith",
    "marknad": "US",
@@ -4299,8 +4139,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091142&type=4"
   },
   {
-   "ticker": "GEHC",
-   "namn": "GE HealthCare",
+   "ticker": "ALGN",
+   "namn": "Align Technology",
    "marknad": "US",
    "sektorId": "XLV",
    "parlor": [
@@ -4314,24 +4154,6 @@
    },
    "styrka": 28,
    "skal": "fwd P/E-rabatt 21 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001932393&type=4"
-  },
-  {
-   "ticker": "ALGN",
-   "namn": "Align Technology",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 90,
-    "MA": 60
-   },
-   "styrka": 28,
-   "skal": "fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001097149&type=4"
   },
   {
@@ -4345,12 +4167,30 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 83,
+    "TK": 84,
     "MA": 60
    },
    "styrka": 28,
-   "skal": "RS +6,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "RS +6,8 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Swedbank"
+  },
+  {
+   "ticker": "GEHC",
+   "namn": "GE HealthCare",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 89,
+    "MA": 60
+   },
+   "styrka": 27,
+   "skal": "fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001932393&type=4"
   },
   {
    "ticker": "CNC",
@@ -4363,52 +4203,34 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 87,
+    "VÄ": 88,
     "MA": 60
    },
    "styrka": 27,
-   "skal": "fwd P/E-rabatt 18 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 19 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001071739&type=4"
   },
   {
-   "ticker": "HSY",
-   "namn": "Hershey Company (The)",
+   "ticker": "MA",
+   "namn": "Mastercard",
    "marknad": "US",
-   "sektorId": "XLP",
+   "sektorId": "XLF",
    "parlor": [
     "ES",
-    "VÄ"
+    "MA"
    ],
    "sparade": 5,
    "delpoang": {
-    "ES": 67,
-    "VÄ": 52
+    "ES": 90,
+    "MA": 60
    },
    "styrka": 26,
-   "skal": "riktkurssnitt +2,9 % (30 d mot 90 d) + fwd P/E-rabatt 1 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000047111&type=4"
+   "skal": "riktkurssnitt +8,8 % (30 d mot 90 d) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001141391&type=4"
   },
   {
    "ticker": "STT",
    "namn": "State Street Corporation",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 84,
-    "MA": 60
-   },
-   "styrka": 26,
-   "skal": "fwd P/E-rabatt 17 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000093751&type=4"
-  },
-  {
-   "ticker": "GS",
-   "namn": "Goldman Sachs",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -4422,7 +4244,7 @@
    },
    "styrka": 26,
    "skal": "fwd P/E-rabatt 16 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000886982&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000093751&type=4"
   },
   {
    "ticker": "HUM",
@@ -4443,22 +4265,40 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000049071&type=4"
   },
   {
-   "ticker": "AMZN",
-   "namn": "Amazon",
+   "ticker": "OTIS",
+   "namn": "Otis Worldwide",
    "marknad": "US",
-   "sektorId": "XLY",
+   "sektorId": "XLI",
    "parlor": [
-    "TK",
-    "VÄ"
+    "VÄ",
+    "FL"
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 51,
-    "VÄ": 83
+    "VÄ": 83,
+    "FL": 50
    },
    "styrka": 25,
-   "skal": "RS +0,1 % mot SMA12, över 40 v-snittet + fwd P/E-rabatt 16 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=4"
+   "skal": "fwd P/E-rabatt 17 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001781335&type=4"
+  },
+  {
+   "ticker": "GS",
+   "namn": "Goldman Sachs",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 80,
+    "MA": 60
+   },
+   "styrka": 25,
+   "skal": "fwd P/E-rabatt 15 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000886982&type=4"
   },
   {
    "ticker": "SEB A",
@@ -4471,12 +4311,30 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 73,
+    "TK": 72,
     "MA": 60
    },
    "styrka": 25,
-   "skal": "RS +4,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "RS +4,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Skandinaviska%20Enskilda%20Banken"
+  },
+  {
+   "ticker": "ROK",
+   "namn": "Rockwell Automation",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "ES",
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "ES": 83,
+    "FL": 50
+   },
+   "styrka": 24,
+   "skal": "riktkurssnitt +6,9 % (30 d mot 90 d) + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001024478&type=4"
   },
   {
    "ticker": "RMD",
@@ -4497,24 +4355,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000943819&type=4"
   },
   {
-   "ticker": "WSM",
-   "namn": "Williams-Sonoma, Inc.",
-   "marknad": "US",
-   "sektorId": "XLY",
-   "parlor": [
-    "ES",
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 57,
-    "VÄ": 52
-   },
-   "styrka": 24,
-   "skal": "riktkurssnitt +0,5 % (30 d mot 90 d) + fwd P/E-rabatt 1 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000719955&type=4"
-  },
-  {
    "ticker": "ALLE",
    "namn": "Allegion",
    "marknad": "US",
@@ -4525,34 +4365,34 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 78,
+    "VÄ": 79,
     "FL": 50
    },
    "styrka": 24,
-   "skal": "fwd P/E-rabatt 14 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "fwd P/E-rabatt 15 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001579241&type=4"
   },
   {
-   "ticker": "OTIS",
-   "namn": "Otis Worldwide",
+   "ticker": "TMUS",
+   "namn": "T-Mobile US",
    "marknad": "US",
-   "sektorId": "XLI",
+   "sektorId": "XLC",
    "parlor": [
     "VÄ",
-    "FL"
+    "MA"
    ],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {
-    "VÄ": 78,
-    "FL": 50
+    "VÄ": 76,
+    "MA": 60
    },
    "styrka": 24,
-   "skal": "fwd P/E-rabatt 14 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001781335&type=4"
+   "skal": "fwd P/E-rabatt 13 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001283699&type=4"
   },
   {
-   "ticker": "JPM",
-   "namn": "JPMorgan Chase",
+   "ticker": "WRB",
+   "namn": "W. R. Berkley Corporation",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -4566,13 +4406,13 @@
    },
    "styrka": 24,
    "skal": "fwd P/E-rabatt 12 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000019617&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000011544&type=4"
   },
   {
-   "ticker": "TMUS",
-   "namn": "T-Mobile US",
+   "ticker": "JPM",
+   "namn": "JPMorgan Chase",
    "marknad": "US",
-   "sektorId": "XLC",
+   "sektorId": "XLF",
    "parlor": [
     "VÄ",
     "MA"
@@ -4584,7 +4424,7 @@
    },
    "styrka": 24,
    "skal": "fwd P/E-rabatt 12 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001283699&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000019617&type=4"
   },
   {
    "ticker": "SHB A",
@@ -4597,11 +4437,11 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 68,
+    "TK": 67,
     "MA": 60
    },
    "styrka": 24,
-   "skal": "RS +3,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "RS +3,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Handelsbanken"
   },
   {
@@ -4669,7 +4509,7 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 73,
+    "VÄ": 74,
     "FL": 50
    },
    "styrka": 23,
@@ -4695,8 +4535,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000860730&type=4"
   },
   {
-   "ticker": "APO",
-   "namn": "Apollo Global Management",
+   "ticker": "BRO",
+   "namn": "Brown & Brown",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -4705,48 +4545,12 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 71,
+    "VÄ": 72,
     "MA": 60
    },
    "styrka": 23,
    "skal": "fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001858681&type=4"
-  },
-  {
-   "ticker": "WRB",
-   "namn": "W. R. Berkley Corporation",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 71,
-    "MA": 60
-   },
-   "styrka": 23,
-   "skal": "fwd P/E-rabatt 11 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000011544&type=4"
-  },
-  {
-   "ticker": "EXPD",
-   "namn": "Expeditors International",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "TK",
-    "FL"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 75,
-    "FL": 50
-   },
-   "styrka": 23,
-   "skal": "RS +5,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000746515&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000079282&type=4"
   },
   {
    "ticker": "NDA SE",
@@ -4759,12 +4563,48 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 65,
+    "TK": 63,
     "MA": 60
    },
    "styrka": 23,
-   "skal": "RS +3,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "RS +2,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Nordea"
+  },
+  {
+   "ticker": "INDT",
+   "namn": "Indutrade",
+   "marknad": "SE",
+   "sektorId": "XLI",
+   "parlor": [
+    "TK",
+    "FL"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 66,
+    "FL": 50
+   },
+   "styrka": 23,
+   "skal": "RS +3,2 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Indutrade"
+  },
+  {
+   "ticker": "TREL B",
+   "namn": "Trelleborg B",
+   "marknad": "SE",
+   "sektorId": "XLI",
+   "parlor": [
+    "TK",
+    "FL"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 65,
+    "FL": 50
+   },
+   "styrka": 23,
+   "skal": "RS +2,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Trelleborg"
   },
   {
    "ticker": "WMB",
@@ -4799,7 +4639,7 @@
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 36 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 37 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000947484&type=4"
   },
   {
@@ -4817,7 +4657,7 @@
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 82 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 83 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001091667&type=4"
   },
   {
@@ -4835,7 +4675,7 @@
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000064803&type=4"
   },
   {
@@ -4853,7 +4693,7 @@
     "FL": 50
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 36 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "fwd P/E-rabatt 33 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000027904&type=4"
   },
   {
@@ -4907,7 +4747,7 @@
     "FL": 50
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 36 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000092380&type=4"
   },
   {
@@ -4961,7 +4801,7 @@
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 29 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 28 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000036104&type=4"
   },
   {
@@ -4979,8 +4819,26 @@
     "FL": 50
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 43 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "fwd P/E-rabatt 41 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000100517&type=4"
+  },
+  {
+   "ticker": "CB",
+   "namn": "Chubb Limited",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 98,
+    "MA": 60
+   },
+   "styrka": 22,
+   "skal": "fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000896159&type=4"
   },
   {
    "ticker": "MAS",
@@ -5001,8 +4859,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000062996&type=4"
   },
   {
-   "ticker": "CB",
-   "namn": "Chubb Limited",
+   "ticker": "AIZ",
+   "namn": "Assurant",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -5011,34 +4869,16 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 97,
+    "VÄ": 96,
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 24 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000896159&type=4"
+   "skal": "fwd P/E-rabatt 23 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001267238&type=4"
   },
   {
-   "ticker": "LII",
-   "namn": "Lennox International",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "VÄ",
-    "FL"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "VÄ": 96,
-    "FL": 50
-   },
-   "styrka": 22,
-   "skal": "fwd P/E-rabatt 23 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001069202&type=4"
-  },
-  {
-   "ticker": "BRO",
-   "namn": "Brown & Brown",
+   "ticker": "APO",
+   "namn": "Apollo Global Management",
    "marknad": "US",
    "sektorId": "XLF",
    "parlor": [
@@ -5047,12 +4887,12 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 70,
+    "VÄ": 69,
     "MA": 60
    },
    "styrka": 22,
-   "skal": "fwd P/E-rabatt 10 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000079282&type=4"
+   "skal": "fwd P/E-rabatt 9 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001858681&type=4"
   },
   {
    "ticker": "CMI",
@@ -5065,7 +4905,7 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 68,
+    "VÄ": 67,
     "FL": 50
    },
    "styrka": 22,
@@ -5073,9 +4913,9 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000026172&type=4"
   },
   {
-   "ticker": "TREL B",
-   "namn": "Trelleborg B",
-   "marknad": "SE",
+   "ticker": "EXPD",
+   "namn": "Expeditors International",
+   "marknad": "US",
    "sektorId": "XLI",
    "parlor": [
     "TK",
@@ -5083,12 +4923,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 63,
+    "TK": 69,
     "FL": 50
    },
    "styrka": 22,
-   "skal": "RS +2,6 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Trelleborg"
+   "skal": "RS +3,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000746515&type=4"
   },
   {
    "ticker": "BKR",
@@ -5109,28 +4949,28 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001701605&type=4"
   },
   {
+   "ticker": "LII",
+   "namn": "Lennox International",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "VÄ",
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "VÄ": 94,
+    "FL": 50
+   },
+   "styrka": 21,
+   "skal": "fwd P/E-rabatt 22 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001069202&type=4"
+  },
+  {
    "ticker": "EQT",
    "namn": "EQT Corporation",
    "marknad": "US",
    "sektorId": "XLE",
-   "parlor": [
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "VÄ": 94,
-    "MA": 60
-   },
-   "styrka": 21,
-   "skal": "fwd P/E-rabatt 22 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000033213&type=4"
-  },
-  {
-   "ticker": "AIZ",
-   "namn": "Assurant",
-   "marknad": "US",
-   "sektorId": "XLF",
    "parlor": [
     "VÄ",
     "MA"
@@ -5142,7 +4982,7 @@
    },
    "styrka": 21,
    "skal": "fwd P/E-rabatt 21 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001267238&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000033213&type=4"
   },
   {
    "ticker": "FTV",
@@ -5155,7 +4995,7 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 66,
+    "VÄ": 65,
     "FL": 50
    },
    "styrka": 21,
@@ -5173,7 +5013,7 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 63,
+    "VÄ": 64,
     "FL": 50
    },
    "styrka": 21,
@@ -5181,9 +5021,9 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000066740&type=4"
   },
   {
-   "ticker": "INCY",
-   "namn": "Incyte",
-   "marknad": "US",
+   "ticker": "GETI B",
+   "namn": "Getinge B",
+   "marknad": "SE",
    "sektorId": "XLV",
    "parlor": [
     "TK",
@@ -5191,66 +5031,30 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 64,
+    "TK": 56,
     "MA": 60
    },
    "styrka": 21,
-   "skal": "RS +2,8 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000879169&type=4"
+   "skal": "RS +1,2 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Getinge"
   },
   {
-   "ticker": "NWSA",
-   "namn": "News Corp (Class A)",
+   "ticker": "OKE",
+   "namn": "Oneok",
    "marknad": "US",
-   "sektorId": "XLC",
+   "sektorId": "XLE",
    "parlor": [
-    "TK",
+    "ES",
     "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 65,
-    "MA": 60
-   },
-   "styrka": 21,
-   "skal": "RS +3,0 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001564708&type=4"
-  },
-  {
-   "ticker": "TELIA",
-   "namn": "Telia",
-   "marknad": "SE",
-   "sektorId": "XLC",
-   "parlor": [
-    "TK",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 58,
-    "MA": 60
-   },
-   "styrka": 21,
-   "skal": "RS +1,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Telia"
-  },
-  {
-   "ticker": "INDT",
-   "namn": "Indutrade",
-   "marknad": "SE",
-   "sektorId": "XLI",
-   "parlor": [
-    "TK",
-    "FL"
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 59,
-    "FL": 50
+    "ES": 67,
+    "MA": 60
    },
-   "styrka": 21,
-   "skal": "RS +1,8 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Indutrade"
+   "styrka": 20,
+   "skal": "riktkurssnitt +3,0 % (30 d mot 90 d) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001039684&type=4"
   },
   {
    "ticker": "JKHY",
@@ -5299,30 +5103,12 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 89,
+    "VÄ": 88,
     "MA": 60
    },
    "styrka": 20,
-   "skal": "fwd P/E-rabatt 20 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 19 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000885725&type=4"
-  },
-  {
-   "ticker": "CARR",
-   "namn": "Carrier Global",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "VÄ",
-    "FL"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "VÄ": 62,
-    "FL": 50
-   },
-   "styrka": 20,
-   "skal": "fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783180&type=4"
   },
   {
    "ticker": "SNA",
@@ -5335,17 +5121,35 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 60,
+    "VÄ": 61,
     "FL": 50
    },
    "styrka": 20,
-   "skal": "fwd P/E-rabatt 5 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "skal": "fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091440&type=4"
   },
   {
-   "ticker": "ADP",
-   "namn": "Automatic Data Processing",
+   "ticker": "CARR",
+   "namn": "Carrier Global",
    "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "VÄ",
+    "FL"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 59,
+    "FL": 50
+   },
+   "styrka": 20,
+   "skal": "fwd P/E-rabatt 4 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783180&type=4"
+  },
+  {
+   "ticker": "SKF B",
+   "namn": "SKF B",
+   "marknad": "SE",
    "sektorId": "XLI",
    "parlor": [
     "TK",
@@ -5353,30 +5157,30 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 61,
+    "TK": 54,
     "FL": 50
    },
    "styrka": 20,
-   "skal": "RS +2,1 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000008670&type=4"
+   "skal": "RS +0,9 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=SKF"
   },
   {
-   "ticker": "MCK",
-   "namn": "McKesson Corporation",
-   "marknad": "US",
-   "sektorId": "XLV",
+   "ticker": "TELIA",
+   "namn": "Telia",
+   "marknad": "SE",
+   "sektorId": "XLC",
    "parlor": [
     "TK",
     "MA"
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 61,
+    "TK": 54,
     "MA": 60
    },
    "styrka": 20,
-   "skal": "RS +2,3 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000927653&type=4"
+   "skal": "RS +0,9 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Telia"
   },
   {
    "ticker": "AJG",
@@ -5415,24 +5219,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001474735&type=4"
   },
   {
-   "ticker": "ROK",
-   "namn": "Rockwell Automation",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "ES",
-    "FL"
-   ],
-   "sparade": 6,
-   "delpoang": {
-    "ES": 61,
-    "FL": 50
-   },
-   "styrka": 19,
-   "skal": "riktkurssnitt +1,6 % (30 d mot 90 d) + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001024478&type=4"
-  },
-  {
    "ticker": "MRSH",
    "namn": "Marsh McLennan",
    "marknad": "US",
@@ -5469,24 +5255,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000720005&type=4"
   },
   {
-   "ticker": "DIS",
-   "namn": "Walt Disney Company (The)",
-   "marknad": "US",
-   "sektorId": "XLC",
-   "parlor": [
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "VÄ": 80,
-    "MA": 60
-   },
-   "styrka": 19,
-   "skal": "fwd P/E-rabatt 15 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001744489&type=4"
-  },
-  {
    "ticker": "HSIC",
    "namn": "Henry Schein",
    "marknad": "US",
@@ -5505,6 +5273,24 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001000228&type=4"
   },
   {
+   "ticker": "GOOG",
+   "namn": "Alphabet Inc. (Class C)",
+   "marknad": "US",
+   "sektorId": "XLC",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 56,
+    "MA": 60
+   },
+   "styrka": 19,
+   "skal": "fwd P/E-rabatt 3 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=4"
+  },
+  {
    "ticker": "NTRS",
    "namn": "Northern Trust",
    "marknad": "US",
@@ -5515,52 +5301,52 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 57,
+    "VÄ": 56,
     "MA": 60
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 4 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 3 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073124&type=4"
   },
   {
-   "ticker": "MS",
-   "namn": "Morgan Stanley",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "VÄ",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 55,
-    "MA": 60
-   },
-   "styrka": 19,
-   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000895421&type=4"
-  },
-  {
-   "ticker": "DGX",
-   "namn": "Quest Diagnostics",
+   "ticker": "INCY",
+   "namn": "Incyte",
    "marknad": "US",
    "sektorId": "XLV",
    "parlor": [
     "TK",
     "MA"
    ],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {
-    "TK": 81,
+    "TK": 55,
     "MA": 60
    },
    "styrka": 19,
-   "skal": "RS +6,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001022079&type=4"
+   "skal": "RS +1,0 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000879169&type=4"
   },
   {
-   "ticker": "WBD",
-   "namn": "Warner Bros. Discovery",
+   "ticker": "MCK",
+   "namn": "McKesson Corporation",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "TK",
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "TK": 56,
+    "MA": 60
+   },
+   "styrka": 19,
+   "skal": "RS +1,2 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000927653&type=4"
+  },
+  {
+   "ticker": "NWSA",
+   "namn": "News Corp (Class A)",
    "marknad": "US",
    "sektorId": "XLC",
    "parlor": [
@@ -5569,30 +5355,30 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 57,
+    "TK": 55,
     "MA": 60
    },
    "styrka": 19,
-   "skal": "RS +1,5 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001437107&type=4"
+   "skal": "RS +1,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001564708&type=4"
   },
   {
-   "ticker": "GETI B",
-   "namn": "Getinge B",
+   "ticker": "ATCO B",
+   "namn": "Atlas Copco B",
    "marknad": "SE",
-   "sektorId": "XLV",
+   "sektorId": "XLI",
    "parlor": [
     "TK",
-    "MA"
+    "FL"
    ],
-   "sparade": 4,
+   "sparade": 5,
    "delpoang": {
-    "TK": 51,
-    "MA": 60
+    "TK": 50,
+    "FL": 50
    },
    "styrka": 19,
-   "skal": "RS +0,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Getinge"
+   "skal": "RS +0,0 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Atlas%20Copco"
   },
   {
    "ticker": "SPGI",
@@ -5613,76 +5399,58 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000064040&type=4"
   },
   {
-   "ticker": "BRK.B",
-   "namn": "Berkshire Hathaway",
-   "marknad": "US",
-   "sektorId": "XLF",
-   "parlor": [
-    "TK",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 54,
-    "MA": 60
-   },
-   "styrka": 18,
-   "skal": "RS +0,7 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=4"
-  },
-  {
-   "ticker": "TECH",
-   "namn": "Bio-Techne",
-   "marknad": "US",
-   "sektorId": "XLV",
-   "parlor": [
-    "TK",
-    "MA"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 51,
-    "MA": 60
-   },
-   "styrka": 18,
-   "skal": "RS +0,2 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000842023&type=4"
-  },
-  {
-   "ticker": "FAST",
-   "namn": "Fastenal",
-   "marknad": "US",
-   "sektorId": "XLI",
-   "parlor": [
-    "TK",
-    "FL"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 51,
-    "FL": 50
-   },
-   "styrka": 18,
-   "skal": "RS +0,2 % mot SMA12, över 40 v-snittet + sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000815556&type=4"
-  },
-  {
-   "ticker": "NWS",
-   "namn": "News Corp (Class B)",
+   "ticker": "DIS",
+   "namn": "Walt Disney Company (The)",
    "marknad": "US",
    "sektorId": "XLC",
    "parlor": [
-    "TK",
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 77,
+    "MA": 60
+   },
+   "styrka": 18,
+   "skal": "fwd P/E-rabatt 14 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001744489&type=4"
+  },
+  {
+   "ticker": "MS",
+   "namn": "Morgan Stanley",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
     "MA"
    ],
    "sparade": 4,
    "delpoang": {
-    "TK": 51,
+    "VÄ": 51,
     "MA": 60
    },
    "styrka": 18,
-   "skal": "RS +0,1 % mot SMA12, över 40 v-snittet + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001564708&type=4"
+   "skal": "fwd P/E-rabatt 1 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000895421&type=4"
+  },
+  {
+   "ticker": "ERIC B",
+   "namn": "Ericsson B",
+   "marknad": "SE",
+   "sektorId": "XLK",
+   "parlor": [
+    "FL",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "FL": 89,
+    "MA": 60
+   },
+   "styrka": 18,
+   "skal": "sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Ericsson"
   },
   {
    "ticker": "DDOG",
@@ -5701,24 +5469,6 @@
    "styrka": 17,
    "skal": "sektorinflöde (proxy) + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001561550&type=4"
-  },
-  {
-   "ticker": "FICO",
-   "namn": "Fair Isaac",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 17,
-   "skal": "sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000814547&type=4"
   },
   {
    "ticker": "FLEX",
@@ -5775,42 +5525,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002058873&type=4"
   },
   {
-   "ticker": "STX",
-   "namn": "Seagate Technology",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 17,
-   "skal": "sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001137789&type=4"
-  },
-  {
-   "ticker": "TER",
-   "namn": "Teradyne",
-   "marknad": "US",
-   "sektorId": "XLK",
-   "parlor": [
-    "FL",
-    "MA"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "FL": 89,
-    "MA": 60
-   },
-   "styrka": 17,
-   "skal": "sektorinflöde (proxy) + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000097210&type=4"
-  },
-  {
    "ticker": "TXN",
    "namn": "Texas Instruments",
    "marknad": "US",
@@ -5847,22 +5561,22 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000860731&type=4"
   },
   {
-   "ticker": "KKR",
-   "namn": "KKR & Co.",
+   "ticker": "WDC",
+   "namn": "Western Digital",
    "marknad": "US",
-   "sektorId": "XLF",
+   "sektorId": "XLK",
    "parlor": [
-    "VÄ",
+    "FL",
     "MA"
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 65,
+    "FL": 89,
     "MA": 60
    },
-   "styrka": 16,
-   "skal": "fwd P/E-rabatt 8 % mot sektorns 10-årssnitt + sektor i topp 4",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001404912&type=4"
+   "styrka": 17,
+   "skal": "sektorinflöde (proxy) + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000106040&type=4"
   },
   {
    "ticker": "BLDR",
@@ -5875,12 +5589,30 @@
    ],
    "sparade": 6,
    "delpoang": {
-    "VÄ": 62,
+    "VÄ": 61,
     "FL": 50
    },
    "styrka": 16,
    "skal": "fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001316835&type=4"
+  },
+  {
+   "ticker": "KKR",
+   "namn": "KKR & Co.",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "VÄ",
+    "MA"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 61,
+    "MA": 60
+   },
+   "styrka": 15,
+   "skal": "fwd P/E-rabatt 6 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001404912&type=4"
   },
   {
    "ticker": "BIIB",
@@ -5893,11 +5625,11 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 58,
+    "TK": 59,
     "MA": 60
    },
    "styrka": 15,
-   "skal": "RS +1,6 % mot SMA12, över 40 v-snittet + sektor i topp 4",
+   "skal": "RS +1,8 % mot SMA12, över 40 v-snittet + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000875045&type=4"
   },
   {
@@ -5911,11 +5643,11 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 55,
+    "VÄ": 57,
     "MA": 60
    },
    "styrka": 14,
-   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt + sektor i topp 4",
+   "skal": "fwd P/E-rabatt 4 % mot sektorns 10-årssnitt + sektor i topp 4",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000315293&type=4"
   },
   {
@@ -6079,22 +5811,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000915912&type=4"
   },
   {
-   "ticker": "EVO",
-   "namn": "Evolution",
-   "marknad": "SE",
-   "sektorId": "XLY",
-   "parlor": [
-    "TK"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 100
-   },
-   "styrka": 27,
-   "skal": "RS +10,4 % mot SMA12, över 40 v-snittet",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Evolution"
-  },
-  {
    "ticker": "AWK",
    "namn": "American Water Works",
    "marknad": "US",
@@ -6143,20 +5859,20 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=4"
   },
   {
-   "ticker": "NEE",
-   "namn": "NextEra Energy",
+   "ticker": "AES",
+   "namn": "AES Corporation",
    "marknad": "US",
    "sektorId": "XLU",
    "parlor": [
-    "ES"
+    "VÄ"
    ],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {
-    "ES": 99
+    "VÄ": 100
    },
    "styrka": 25,
-   "skal": "riktkurssnitt +10,9 % (30 d mot 90 d)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000753308&type=4"
+   "skal": "fwd P/E-rabatt 62 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000874761&type=4"
   },
   {
    "ticker": "ALB",
@@ -6171,7 +5887,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 49 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 48 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000915913&type=4"
   },
   {
@@ -6223,22 +5939,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001521332&type=4"
   },
   {
-   "ticker": "BF.B",
-   "namn": "Brown–Forman",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 100
-   },
-   "styrka": 25,
-   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000014693&type=4"
-  },
-  {
    "ticker": "CLX",
    "namn": "Clorox",
    "marknad": "US",
@@ -6251,7 +5951,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 29 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 27 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021076&type=4"
   },
   {
@@ -6267,8 +5967,24 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 35 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001286681&type=4"
+  },
+  {
+   "ticker": "EBAY",
+   "namn": "eBay Inc.",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100
+   },
+   "styrka": 25,
+   "skal": "fwd P/E-rabatt 26 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001065088&type=4"
   },
   {
    "ticker": "F",
@@ -6299,7 +6015,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 31 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000040987&type=4"
   },
   {
@@ -6331,7 +6047,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 31 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000048465&type=4"
   },
   {
@@ -6347,7 +6063,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 26 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001944048&type=4"
   },
   {
@@ -6363,7 +6079,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 33 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001418135&type=4"
   },
   {
@@ -6379,8 +6095,24 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 46 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 45 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001300514&type=4"
+  },
+  {
+   "ticker": "LYB",
+   "namn": "LyondellBasell",
+   "marknad": "US",
+   "sektorId": "XLB",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 100
+   },
+   "styrka": 25,
+   "skal": "fwd P/E-rabatt 66 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001489393&type=4"
   },
   {
    "ticker": "TAP",
@@ -6411,7 +6143,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 62 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 61 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513761&type=4"
   },
   {
@@ -6427,7 +6159,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 33 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001013871&type=4"
   },
   {
@@ -6443,7 +6175,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 29 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 28 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000906163&type=4"
   },
   {
@@ -6463,22 +6195,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000077476&type=4"
   },
   {
-   "ticker": "RL",
-   "namn": "Ralph Lauren Corporation",
-   "marknad": "US",
-   "sektorId": "XLY",
-   "parlor": [
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 100
-   },
-   "styrka": 25,
-   "skal": "fwd P/E-rabatt 26 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037038&type=4"
-  },
-  {
    "ticker": "RCL",
    "namn": "Royal Caribbean Group",
    "marknad": "US",
@@ -6491,7 +6207,7 @@
     "VÄ": 100
    },
    "styrka": 25,
-   "skal": "fwd P/E-rabatt 42 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 41 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000884887&type=4"
   },
   {
@@ -6527,6 +6243,38 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000916365&type=4"
   },
   {
+   "ticker": "BF.B",
+   "namn": "Brown–Forman",
+   "marknad": "US",
+   "sektorId": "XLP",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 99
+   },
+   "styrka": 25,
+   "skal": "fwd P/E-rabatt 24 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000014693&type=4"
+  },
+  {
+   "ticker": "RL",
+   "namn": "Ralph Lauren Corporation",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 99
+   },
+   "styrka": 25,
+   "skal": "fwd P/E-rabatt 24 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037038&type=4"
+  },
+  {
    "ticker": "SYY",
    "namn": "Sysco",
    "marknad": "US",
@@ -6536,7 +6284,7 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 96
+    "VÄ": 97
    },
    "styrka": 24,
    "skal": "fwd P/E-rabatt 23 % mot sektorns 10-årssnitt",
@@ -6552,11 +6300,43 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 91
+    "VÄ": 93
    },
    "styrka": 23,
-   "skal": "fwd P/E-rabatt 21 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 22 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000009389&type=4"
+  },
+  {
+   "ticker": "EVO",
+   "namn": "Evolution",
+   "marknad": "SE",
+   "sektorId": "XLY",
+   "parlor": [
+    "TK"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "TK": 86
+   },
+   "styrka": 23,
+   "skal": "RS +7,3 % mot SMA12, över 40 v-snittet",
+   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Evolution"
+  },
+  {
+   "ticker": "ABNB",
+   "namn": "Airbnb",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "ES"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 88
+   },
+   "styrka": 22,
+   "skal": "riktkurssnitt +8,2 % (30 d mot 90 d)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001559720&type=4"
   },
   {
    "ticker": "HD",
@@ -6568,27 +6348,11 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 82
+    "VÄ": 84
    },
-   "styrka": 20,
-   "skal": "fwd P/E-rabatt 16 % mot sektorns 10-årssnitt",
+   "styrka": 21,
+   "skal": "fwd P/E-rabatt 17 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000354950&type=4"
-  },
-  {
-   "ticker": "HST",
-   "namn": "Host Hotels & Resorts",
-   "marknad": "US",
-   "sektorId": "XLRE",
-   "parlor": [
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 82
-   },
-   "styrka": 20,
-   "skal": "fwd P/E-rabatt 16 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001070750&type=4"
   },
   {
    "ticker": "ES",
@@ -6600,10 +6364,10 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 80
+    "VÄ": 83
    },
-   "styrka": 20,
-   "skal": "fwd P/E-rabatt 15 % mot sektorns 10-årssnitt",
+   "styrka": 21,
+   "skal": "fwd P/E-rabatt 16 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000072741&type=4"
   },
   {
@@ -6623,10 +6387,10 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001109357&type=4"
   },
   {
-   "ticker": "MGM",
-   "namn": "MGM Resorts",
+   "ticker": "HST",
+   "namn": "Host Hotels & Resorts",
    "marknad": "US",
-   "sektorId": "XLY",
+   "sektorId": "XLRE",
    "parlor": [
     "VÄ"
    ],
@@ -6636,23 +6400,7 @@
    },
    "styrka": 20,
    "skal": "fwd P/E-rabatt 14 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789570&type=4"
-  },
-  {
-   "ticker": "MOS",
-   "namn": "Mosaic Company (The)",
-   "marknad": "US",
-   "sektorId": "XLB",
-   "parlor": [
-    "TK"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 78
-   },
-   "styrka": 20,
-   "skal": "RS +5,6 % mot SMA12, över 40 v-snittet",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001285785&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001070750&type=4"
   },
   {
    "ticker": "PLD",
@@ -6683,7 +6431,7 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 32 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 33 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000866787&type=4"
   },
   {
@@ -6703,6 +6451,22 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001075531&type=4"
   },
   {
+   "ticker": "BG",
+   "namn": "Bunge Global",
+   "marknad": "US",
+   "sektorId": "XLP",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 100
+   },
+   "styrka": 19,
+   "skal": "fwd P/E-rabatt 41 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001996862&type=4"
+  },
+  {
    "ticker": "CCL",
    "namn": "Carnival Corporation",
    "marknad": "US",
@@ -6715,8 +6479,24 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 59 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 58 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000815097&type=4"
+  },
+  {
+   "ticker": "CF",
+   "namn": "CF Industries",
+   "marknad": "US",
+   "sektorId": "XLB",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 100
+   },
+   "styrka": 19,
+   "skal": "fwd P/E-rabatt 56 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001324404&type=4"
   },
   {
    "ticker": "STZ",
@@ -6747,7 +6527,7 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 56 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 55 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000910521&type=4"
   },
   {
@@ -6763,7 +6543,7 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 35 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 36 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001751788&type=4"
   },
   {
@@ -6811,8 +6591,24 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 35 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000920760&type=4"
+  },
+  {
+   "ticker": "LOW",
+   "namn": "Lowe's",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 100
+   },
+   "styrka": 19,
+   "skal": "fwd P/E-rabatt 34 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000060667&type=4"
   },
   {
    "ticker": "PCG",
@@ -6827,7 +6623,7 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 54 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 55 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001004980&type=4"
   },
   {
@@ -6843,7 +6639,7 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 28 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 30 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001022671&type=4"
   },
   {
@@ -6875,7 +6671,7 @@
     "VÄ": 100
    },
    "styrka": 19,
-   "skal": "fwd P/E-rabatt 26 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 25 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001174922&type=4"
   },
   {
@@ -6888,11 +6684,27 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 75
+    "VÄ": 74
    },
-   "styrka": 19,
-   "skal": "fwd P/E-rabatt 13 % mot sektorns 10-årssnitt",
+   "styrka": 18,
+   "skal": "fwd P/E-rabatt 12 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000008818&type=4"
+  },
+  {
+   "ticker": "MGM",
+   "namn": "MGM Resorts",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 74
+   },
+   "styrka": 18,
+   "skal": "fwd P/E-rabatt 12 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789570&type=4"
   },
   {
    "ticker": "CRH",
@@ -6904,9 +6716,9 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 94
+    "VÄ": 93
    },
-   "styrka": 18,
+   "styrka": 17,
    "skal": "fwd P/E-rabatt 22 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000849395&type=4"
   },
@@ -6941,22 +6753,6 @@
    "styrka": 17,
    "skal": "blankning 3,3 % och fallande",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Electrolux"
-  },
-  {
-   "ticker": "IRM",
-   "namn": "Iron Mountain",
-   "marknad": "US",
-   "sektorId": "XLRE",
-   "parlor": [
-    "ES"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "ES": 66
-   },
-   "styrka": 16,
-   "skal": "riktkurssnitt +2,7 % (30 d mot 90 d)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001020569&type=4"
   },
   {
    "ticker": "COST",
@@ -7007,6 +6803,22 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000089800&type=4"
   },
   {
+   "ticker": "DLR",
+   "namn": "Digital Realty",
+   "marknad": "US",
+   "sektorId": "XLRE",
+   "parlor": [
+    "ES"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 59
+   },
+   "styrka": 15,
+   "skal": "riktkurssnitt +1,0 % (30 d mot 90 d)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001297996&type=4"
+  },
+  {
    "ticker": "LNT",
    "namn": "Alliant Energy",
    "marknad": "US",
@@ -7023,10 +6835,10 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000352541&type=4"
   },
   {
-   "ticker": "BXP",
-   "namn": "BXP, Inc.",
+   "ticker": "AEP",
+   "namn": "American Electric Power",
    "marknad": "US",
-   "sektorId": "XLRE",
+   "sektorId": "XLU",
    "parlor": [
     "ES"
    ],
@@ -7036,7 +6848,7 @@
    },
    "styrka": 15,
    "skal": "riktkurssnitt +0,7 % (30 d mot 90 d)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037540&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000004904&type=4"
   },
   {
    "ticker": "PG",
@@ -7055,6 +6867,22 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000080424&type=4"
   },
   {
+   "ticker": "AMZN",
+   "namn": "Amazon",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 80
+   },
+   "styrka": 15,
+   "skal": "fwd P/E-rabatt 15 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=4"
+  },
+  {
    "ticker": "DD",
    "namn": "DuPont",
    "marknad": "US",
@@ -7064,11 +6892,59 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 62
+    "VÄ": 61
    },
    "styrka": 15,
-   "skal": "fwd P/E-rabatt 6 % mot sektorns 10-årssnitt",
+   "skal": "fwd P/E-rabatt 5 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001666700&type=4"
+  },
+  {
+   "ticker": "IRM",
+   "namn": "Iron Mountain",
+   "marknad": "US",
+   "sektorId": "XLRE",
+   "parlor": [
+    "ES"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 57
+   },
+   "styrka": 14,
+   "skal": "riktkurssnitt +0,6 % (30 d mot 90 d)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001020569&type=4"
+  },
+  {
+   "ticker": "WSM",
+   "namn": "Williams-Sonoma, Inc.",
+   "marknad": "US",
+   "sektorId": "XLY",
+   "parlor": [
+    "ES"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "ES": 57
+   },
+   "styrka": 14,
+   "skal": "riktkurssnitt +0,5 % (30 d mot 90 d)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000719955&type=4"
+  },
+  {
+   "ticker": "FE",
+   "namn": "FirstEnergy",
+   "marknad": "US",
+   "sektorId": "XLU",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 58
+   },
+   "styrka": 14,
+   "skal": "fwd P/E-rabatt 4 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001031296&type=4"
   },
   {
    "ticker": "CBRE",
@@ -7080,11 +6956,43 @@
    ],
    "sparade": 4,
    "delpoang": {
-    "VÄ": 61
+    "VÄ": 55
    },
-   "styrka": 15,
-   "skal": "fwd P/E-rabatt 5 % mot sektorns 10-årssnitt",
+   "styrka": 14,
+   "skal": "fwd P/E-rabatt 3 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001138118&type=4"
+  },
+  {
+   "ticker": "MDLZ",
+   "namn": "Mondelez International",
+   "marknad": "US",
+   "sektorId": "XLP",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 55
+   },
+   "styrka": 14,
+   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001103982&type=4"
+  },
+  {
+   "ticker": "HSY",
+   "namn": "Hershey Company (The)",
+   "marknad": "US",
+   "sektorId": "XLP",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "VÄ": 54
+   },
+   "styrka": 14,
+   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000047111&type=4"
   },
   {
    "ticker": "FCX",
@@ -7096,10 +7004,10 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 81
+    "TK": 76
    },
-   "styrka": 15,
-   "skal": "RS +6,2 % mot SMA12, över 40 v-snittet",
+   "styrka": 14,
+   "skal": "RS +5,2 % mot SMA12, över 40 v-snittet",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000831259&type=4"
   },
   {
@@ -7112,10 +7020,10 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 74
+    "VÄ": 72
    },
-   "styrka": 14,
-   "skal": "fwd P/E-rabatt 12 % mot sektorns 10-årssnitt",
+   "styrka": 13,
+   "skal": "fwd P/E-rabatt 11 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320187&type=4"
   },
   {
@@ -7128,91 +7036,11 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 74
+    "VÄ": 72
    },
-   "styrka": 14,
-   "skal": "fwd P/E-rabatt 12 % mot sektorns 10-årssnitt",
+   "styrka": 13,
+   "skal": "fwd P/E-rabatt 11 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001041061&type=4"
-  },
-  {
-   "ticker": "FE",
-   "namn": "FirstEnergy",
-   "marknad": "US",
-   "sektorId": "XLU",
-   "parlor": [
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 57
-   },
-   "styrka": 14,
-   "skal": "fwd P/E-rabatt 4 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001031296&type=4"
-  },
-  {
-   "ticker": "KO",
-   "namn": "Coca-Cola Company (The)",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "TK"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 58
-   },
-   "styrka": 14,
-   "skal": "RS +1,7 % mot SMA12, över 40 v-snittet",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021344&type=4"
-  },
-  {
-   "ticker": "IFF",
-   "namn": "International Flavors & Fragrances",
-   "marknad": "US",
-   "sektorId": "XLB",
-   "parlor": [
-    "TK"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "TK": 55
-   },
-   "styrka": 14,
-   "skal": "RS +1,0 % mot SMA12, över 40 v-snittet",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000051253&type=4"
-  },
-  {
-   "ticker": "MDLZ",
-   "namn": "Mondelez International",
-   "marknad": "US",
-   "sektorId": "XLP",
-   "parlor": [
-    "VÄ"
-   ],
-   "sparade": 4,
-   "delpoang": {
-    "VÄ": 52
-   },
-   "styrka": 13,
-   "skal": "fwd P/E-rabatt 1 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001103982&type=4"
-  },
-  {
-   "ticker": "ARE",
-   "namn": "Alexandria Real Estate Equities",
-   "marknad": "US",
-   "sektorId": "XLRE",
-   "parlor": [
-    "TK"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "TK": 69
-   },
-   "styrka": 13,
-   "skal": "RS +3,8 % mot SMA12, över 40 v-snittet",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001035443&type=4"
   },
   {
    "ticker": "EL",
@@ -7224,10 +7052,10 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "TK": 68
+    "TK": 71
    },
    "styrka": 13,
-   "skal": "RS +3,6 % mot SMA12, över 40 v-snittet",
+   "skal": "RS +4,2 % mot SMA12, över 40 v-snittet",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001001250&type=4"
   },
   {
@@ -7247,6 +7075,38 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001032208&type=4"
   },
   {
+   "ticker": "ARE",
+   "namn": "Alexandria Real Estate Equities",
+   "marknad": "US",
+   "sektorId": "XLRE",
+   "parlor": [
+    "TK"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "TK": 62
+   },
+   "styrka": 12,
+   "skal": "RS +2,4 % mot SMA12, över 40 v-snittet",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001035443&type=4"
+  },
+  {
+   "ticker": "DTE",
+   "namn": "DTE Energy",
+   "marknad": "US",
+   "sektorId": "XLU",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 59
+   },
+   "styrka": 11,
+   "skal": "fwd P/E-rabatt 5 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000936340&type=4"
+  },
+  {
    "ticker": "VST",
    "namn": "Vistra Corp.",
    "marknad": "US",
@@ -7263,8 +7123,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001692819&type=4"
   },
   {
-   "ticker": "DTE",
-   "namn": "DTE Energy",
+   "ticker": "CMS",
+   "namn": "CMS Energy",
    "marknad": "US",
    "sektorId": "XLU",
    "parlor": [
@@ -7276,22 +7136,6 @@
    },
    "styrka": 10,
    "skal": "fwd P/E-rabatt 3 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000936340&type=4"
-  },
-  {
-   "ticker": "CMS",
-   "namn": "CMS Energy",
-   "marknad": "US",
-   "sektorId": "XLU",
-   "parlor": [
-    "VÄ"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "VÄ": 53
-   },
-   "styrka": 10,
-   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000811156&type=4"
   },
   {
@@ -7304,11 +7148,27 @@
    ],
    "sparade": 5,
    "delpoang": {
-    "VÄ": 51
+    "VÄ": 53
+   },
+   "styrka": 10,
+   "skal": "fwd P/E-rabatt 2 % mot sektorns 10-årssnitt",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000922224&type=4"
+  },
+  {
+   "ticker": "ED",
+   "namn": "Consolidated Edison",
+   "marknad": "US",
+   "sektorId": "XLU",
+   "parlor": [
+    "VÄ"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "VÄ": 52
    },
    "styrka": 10,
    "skal": "fwd P/E-rabatt 1 % mot sektorns 10-årssnitt",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000922224&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001047862&type=4"
   },
   {
    "ticker": "SWECO B",
@@ -7325,22 +7185,6 @@
    "styrka": 10,
    "skal": "sektorinflöde (proxy)",
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Sweco"
-  },
-  {
-   "ticker": "ATCO B",
-   "namn": "Atlas Copco B",
-   "marknad": "SE",
-   "sektorId": "XLI",
-   "parlor": [
-    "FL"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "FL": 50
-   },
-   "styrka": 8,
-   "skal": "sektorinflöde (proxy)",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Atlas%20Copco"
   },
   {
    "ticker": "VOLV B",
@@ -7423,22 +7267,6 @@
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Alfa%20Laval"
   },
   {
-   "ticker": "SKF B",
-   "namn": "SKF B",
-   "marknad": "SE",
-   "sektorId": "XLI",
-   "parlor": [
-    "FL"
-   ],
-   "sparade": 5,
-   "delpoang": {
-    "FL": 50
-   },
-   "styrka": 8,
-   "skal": "sektorinflöde (proxy)",
-   "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=SKF"
-  },
-  {
    "ticker": "SECU B",
    "namn": "Securitas B",
    "marknad": "SE",
@@ -7455,8 +7283,8 @@
    "url": "https://marknadssok.fi.se/Publiceringsklient/sv-SE/Search/Search?SearchFunctionType=Insyn&Utgivare=Securitas"
   },
   {
-   "ticker": "BA",
-   "namn": "Boeing",
+   "ticker": "ADP",
+   "namn": "Automatic Data Processing",
    "marknad": "US",
    "sektorId": "XLI",
    "parlor": [
@@ -7468,7 +7296,7 @@
    },
    "styrka": 7,
    "skal": "sektorinflöde (proxy)",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000012927&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000008670&type=4"
   },
   {
    "ticker": "CHRW",
@@ -7565,6 +7393,22 @@
    "styrka": 7,
    "skal": "sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000105634&type=4"
+  },
+  {
+   "ticker": "FAST",
+   "namn": "Fastenal",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "FL"
+   ],
+   "sparade": 5,
+   "delpoang": {
+    "FL": 50
+   },
+   "styrka": 7,
+   "skal": "sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000815556&type=4"
   },
   {
    "ticker": "FDXF",
@@ -7869,6 +7713,22 @@
    "styrka": 6,
    "skal": "sektorinflöde (proxy)",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001069183&type=4"
+  },
+  {
+   "ticker": "BA",
+   "namn": "Boeing",
+   "marknad": "US",
+   "sektorId": "XLI",
+   "parlor": [
+    "FL"
+   ],
+   "sparade": 6,
+   "delpoang": {
+    "FL": 50
+   },
+   "styrka": 6,
+   "skal": "sektorinflöde (proxy)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000012927&type=4"
   },
   {
    "ticker": "CAT",
@@ -8191,6 +8051,38 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001176948&type=4"
   },
   {
+   "ticker": "BRK.B",
+   "namn": "Berkshire Hathaway",
+   "marknad": "US",
+   "sektorId": "XLF",
+   "parlor": [
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "MA": 60
+   },
+   "styrka": 5,
+   "skal": "sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=4"
+  },
+  {
+   "ticker": "TECH",
+   "namn": "Bio-Techne",
+   "marknad": "US",
+   "sektorId": "XLV",
+   "parlor": [
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "MA": 60
+   },
+   "styrka": 5,
+   "skal": "sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000842023&type=4"
+  },
+  {
    "ticker": "BLK",
    "namn": "BlackRock",
    "marknad": "US",
@@ -8495,6 +8387,22 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001120193&type=4"
   },
   {
+   "ticker": "NWS",
+   "namn": "News Corp (Class B)",
+   "marknad": "US",
+   "sektorId": "XLC",
+   "parlor": [
+    "MA"
+   ],
+   "sparade": 4,
+   "delpoang": {
+    "MA": 60
+   },
+   "styrka": 5,
+   "skal": "sektor i topp 4",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001564708&type=4"
+  },
+  {
    "ticker": "PSKY",
    "namn": "Paramount Skydance Corporation",
    "marknad": "US",
@@ -8759,18 +8667,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001002910&type=4"
   },
   {
-   "ticker": "AEP",
-   "namn": "American Electric Power",
-   "marknad": "US",
-   "sektorId": "XLU",
-   "parlor": [],
-   "sparade": 5,
-   "delpoang": {},
-   "styrka": 0,
-   "skal": "inga aktiva signaler",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000004904&type=4"
-  },
-  {
    "ticker": "AMT",
    "namn": "American Tower",
    "marknad": "US",
@@ -8793,6 +8689,18 @@
    "styrka": 0,
    "skal": "inga aktiva signaler",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000731802&type=4"
+  },
+  {
+   "ticker": "BXP",
+   "namn": "BXP, Inc.",
+   "marknad": "US",
+   "sektorId": "XLRE",
+   "parlor": [],
+   "sparade": 5,
+   "delpoang": {},
+   "styrka": 0,
+   "skal": "inga aktiva signaler",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037540&type=4"
   },
   {
    "ticker": "CPT",
@@ -8867,8 +8775,8 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000313927&type=4"
   },
   {
-   "ticker": "CL",
-   "namn": "Colgate-Palmolive",
+   "ticker": "KO",
+   "namn": "Coca-Cola Company (The)",
    "marknad": "US",
    "sektorId": "XLP",
    "parlor": [],
@@ -8876,19 +8784,19 @@
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021665&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021344&type=4"
   },
   {
-   "ticker": "ED",
-   "namn": "Consolidated Edison",
+   "ticker": "CL",
+   "namn": "Colgate-Palmolive",
    "marknad": "US",
-   "sektorId": "XLU",
+   "sektorId": "XLP",
    "parlor": [],
    "sparade": 5,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001047862&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021665&type=4"
   },
   {
    "ticker": "CTVA",
@@ -8920,23 +8828,11 @@
    "marknad": "US",
    "sektorId": "XLRE",
    "parlor": [],
-   "sparade": 4,
-   "delpoang": {},
-   "styrka": 0,
-   "skal": "inga aktiva signaler",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001051470&type=4"
-  },
-  {
-   "ticker": "DLR",
-   "namn": "Digital Realty",
-   "marknad": "US",
-   "sektorId": "XLRE",
-   "parlor": [],
    "sparade": 5,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001297996&type=4"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001051470&type=4"
   },
   {
    "ticker": "D",
@@ -8980,7 +8876,7 @@
    "marknad": "US",
    "sektorId": "XLU",
    "parlor": [],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
@@ -9095,6 +8991,18 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001585689&type=4"
   },
   {
+   "ticker": "IFF",
+   "namn": "International Flavors & Fragrances",
+   "marknad": "US",
+   "sektorId": "XLB",
+   "parlor": [],
+   "sparade": 4,
+   "delpoang": {},
+   "styrka": 0,
+   "skal": "inga aktiva signaler",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000051253&type=4"
+  },
+  {
    "ticker": "IP",
    "namn": "International Paper",
    "marknad": "US",
@@ -9191,6 +9099,30 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000865752&type=4"
   },
   {
+   "ticker": "MOS",
+   "namn": "Mosaic Company (The)",
+   "marknad": "US",
+   "sektorId": "XLB",
+   "parlor": [],
+   "sparade": 4,
+   "delpoang": {},
+   "styrka": 0,
+   "skal": "inga aktiva signaler",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001285785&type=4"
+  },
+  {
+   "ticker": "NEE",
+   "namn": "NextEra Energy",
+   "marknad": "US",
+   "sektorId": "XLU",
+   "parlor": [],
+   "sparade": 4,
+   "delpoang": {},
+   "styrka": 0,
+   "skal": "inga aktiva signaler",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000753308&type=4"
+  },
+  {
    "ticker": "NI",
    "namn": "NiSource",
    "marknad": "US",
@@ -9244,7 +9176,7 @@
    "marknad": "US",
    "sektorId": "XLU",
    "parlor": [],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
@@ -9292,7 +9224,7 @@
    "marknad": "US",
    "sektorId": "XLY",
    "parlor": [],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
@@ -9304,7 +9236,7 @@
    "marknad": "US",
    "sektorId": "XLRE",
    "parlor": [],
-   "sparade": 4,
+   "sparade": 5,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
@@ -9412,7 +9344,7 @@
    "marknad": "US",
    "sektorId": "XLP",
    "parlor": [],
-   "sparade": 5,
+   "sparade": 4,
    "delpoang": {},
    "styrka": 0,
    "skal": "inga aktiva signaler",
