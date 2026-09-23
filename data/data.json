@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
-  "asOfDatum": "2026-09-22",
-  "genererad": "2026-09-22T23:47+00:00",
+  "asOfDatum": "2026-09-23",
+  "genererad": "2026-09-23T04:39+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-09-22",
+      "vintage": "2026-09-23",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 79.0,
-      "delta": "−5 · 1 v",
+      "varde": 81.0,
+      "delta": "−3 · 1 v",
       "trosklar": [
         100,
         130
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-09-22",
+      "vintage": "2026-09-23",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 79.0,
+      "varde": 81.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4396",
+      "varde": "4382",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,4 %",
+      "delta4v": "−6,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-09-22"
+      "vintage": "2026-09-23"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "67,61",
+      "varde": "67,15",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,4 %",
+      "delta4v": "−2,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-09-22"
+      "vintage": "2026-09-23"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,91",
+      "varde": "6,83",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+4,6 %",
+      "delta4v": "+1,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-09-22"
+      "vintage": "2026-09-23"
     },
     "olja": {
-      "v": 98.65,
+      "v": 98.17,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-09-22"
+      "vintage": "2026-09-23"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-09-22",
+    "vintage": "2026-09-23",
     "marknader": [
       {
         "namn": "USA",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-22T23:47+00:00"
+      "vintage": "2026-09-23T04:39+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-22T23:47+00:00"
+      "vintage": "2026-09-23T04:39+00:00"
     }
   }
 }
