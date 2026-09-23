@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-23",
-  "genererad": "2026-09-23T19:01+00:00",
+  "genererad": "2026-09-23T22:15+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,8 +114,8 @@
         96.3,
         97.24,
         98.58,
-        99.76,
-        100.63
+        99.78,
+        100.75
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -170,8 +170,8 @@
         99.43,
         98.54,
         97.38,
-        96.02,
-        96.98
+        96.04,
+        96.8
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 2,
+      "rsRank": 3,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -221,8 +221,8 @@
         95.11,
         96.33,
         95.13,
-        97.0,
-        96.17
+        97.02,
+        95.86
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -272,8 +272,8 @@
         100.7,
         98.59,
         97.06,
-        95.05,
-        96.95
+        95.06,
+        96.85
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -323,8 +323,8 @@
         100.2,
         99.54,
         99.18,
-        96.63,
-        97.75
+        96.65,
+        97.95
       ]
     },
     {
@@ -374,8 +374,8 @@
         112.66,
         109.5,
         111.89,
-        110.58,
-        111.1
+        110.6,
+        111.27
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -426,8 +426,8 @@
         95.26,
         94.45,
         91.89,
-        89.52,
-        88.25
+        89.54,
+        88.17
       ]
     },
     {
@@ -477,8 +477,8 @@
         98.09,
         97.7,
         96.02,
-        94.69,
-        93.98
+        94.7,
+        93.71
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -528,8 +528,8 @@
         111.78,
         114.54,
         113.47,
-        108.52,
-        108.99
+        107.35,
+        109.17
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -580,8 +580,8 @@
         110.64,
         109.86,
         107.56,
-        105.99,
-        104.37
+        103.92,
+        104.18
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -632,8 +632,8 @@
         93.38,
         92.5,
         91.23,
-        90.81,
-        90.26
+        90.82,
+        90.19
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.0,
-      "delta": "−2,2 · 1 v",
+      "varde": 15.2,
+      "delta": "−2,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 81.0,
-      "delta": "−3 · 1 v",
+      "varde": 95.0,
+      "delta": "+12 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 81.0,
+      "varde": 95.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.0,
+      "varde": 15.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.02,
-        4.76,
+        4.01,
+        4.71,
         4.83,
         4.96,
         5.29
       ],
       "forr": [
-        3.71,
-        4.19,
-        4.39,
-        4.69,
-        5.23
+        3.72,
+        4.24,
+        4.43,
+        4.74,
+        5.27
       ],
       "kalla": "FRED",
-      "vintage": "2026-09-21",
-      "not": "Flackande 2s10s: −30 bp/mån."
+      "vintage": "2026-09-22",
+      "not": "Flackande 2s10s: −25 bp/mån."
     },
     "bredd": {
       "over50": 30,
@@ -958,19 +958,19 @@
       "spread": -24.5
     },
     "realranta": {
-      "varde": "2,62 %",
+      "varde": "2,63 %",
       "pil": "upp",
-      "delta": "+27 bp · 1 mån",
+      "delta": "+23 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-09-21"
+      "vintage": "2026-09-22"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4324",
+      "varde": "4327",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,9 %",
+      "delta4v": "−7,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,99",
+      "varde": "64,96",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,3 %",
+      "delta4v": "−5,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,75",
+      "varde": "6,79",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,7 %",
+      "delta4v": "+1,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-23"
     },
     "olja": {
-      "v": 98.43,
+      "v": 98.19,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-23"
     }
@@ -1685,8 +1685,8 @@
           99.71,
           99.95,
           100.21,
-          100.16,
-          100.39
+          100.14,
+          100.43
         ]
       },
       {
@@ -1726,8 +1726,8 @@
           95.36,
           95.79,
           97.26,
-          98.37,
-          99.22
+          99.17,
+          99.34
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           101.0,
           101.03,
           100.45,
-          101.04
+          101.15
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           101.56,
           100.59,
           100.55,
-          101.47
+          101.58
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.84,
           97.25,
           98.28,
-          97.69
+          97.67
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           98.95,
           98.42,
           97.83,
-          97.88
+          97.91
         ]
       }
     ],
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-23T19:01+00:00"
+      "vintage": "2026-09-23T22:15+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-23T19:01+00:00"
+      "vintage": "2026-09-23T22:15+00:00"
     }
   }
 }
