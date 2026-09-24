@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-24",
-  "genererad": "2026-09-24T20:45+00:00",
+  "genererad": "2026-09-24T23:51+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4303",
+      "varde": "4309",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,5 %",
+      "delta4v": "−7,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,06",
+      "varde": "64,21",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,8 %",
+      "delta4v": "−5,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,76",
+      "varde": "6,78",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,5 %",
+      "delta4v": "+2,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-24"
     },
     "olja": {
-      "v": 107.19,
+      "v": 106.13,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-24"
     }
@@ -1942,9 +1942,44 @@
     "us": {
       "poster": [
         {
+          "datum": "2026-09-22",
+          "namn": "Teaster Michael  (CIK 0001348604); Getty Images Holdings, Inc.  (CIK 0001898496)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1348604/000162828026063033"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "CLARK KEVIN P  (CIK 0001248750); Versigent PLC  (CIK 0002078008)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1248750/000119312526397918"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Kappus Anthony Ray  (CIK 0001860481); UPWORK, INC  (CIK 0001627475)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1860481/000186048126000017"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Collier Michael Manning  (CIK 0001715401); HEALTHSTREAM INC  (CIK 0001095565)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1715401/000143774926030914"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Peters Craig Warren  (CIK 0001939000); Getty Images Holdings, Inc.  (CIK 0001898496)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1939000/000162828026063040"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Bond Darryl  (CIK 0001703550); Yext, Inc.  (CIK 0001614178)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1703550/000162828026063095"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Simard Curtis C  (CIK 0001579604); BAR HARBOR BANKSHARES  (CIK 0000743367)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1579604/000157960426000012"
+        },
+        {
           "datum": "2026-09-21",
-          "namn": "AULT MILTON C III  (CIK 0001212502); Ault & Company, Inc.  (CIK 0001734770)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1212502/000121465926011836"
+          "namn": "Fischer Jamie  (CIK 0002041234); AMERICAS CARMART INC  (CIK 0000799850)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2041234/000168316826007270"
         },
         {
           "datum": "2026-09-21",
@@ -1955,48 +1990,57 @@
           "datum": "2026-09-21",
           "namn": "Attal Alain  (CIK 0001840485); GameStop Corp.  (CIK 0001326380)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1840485/000184048526000008"
-        },
-        {
-          "datum": "2026-09-23",
-          "namn": "Fitzgerald Scott Michael  (CIK 0002063059); StubHub Holdings, Inc.  (CIK 0001337634)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2063059/000162828026063281"
-        },
-        {
-          "datum": "2026-09-23",
-          "namn": "Burkhart Erin  (CIK 0001927648); GILEAD SCIENCES, INC.  (CIK 0000882095)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1927648/000192764826000005"
-        },
-        {
-          "datum": "2026-09-23",
-          "namn": "Cohen Ariel M.  (CIK 0001853730); Navan, Inc.  (CIK 0001639723)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1853730/000185373026000015"
-        },
-        {
-          "datum": "2026-09-23",
-          "namn": "Kilic Aydin  (CIK 0002122203); HIVE Digital Technologies Ltd.  (CIK 0001720424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2122203/000106299326005067"
-        },
-        {
-          "datum": "2026-09-24",
-          "namn": "Balle Kim  (CIK 0002126676); TORM plc  (CIK 0001655891)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2126676/000091957426006451"
-        },
-        {
-          "datum": "2026-09-22",
-          "namn": "Kappus Anthony Ray  (CIK 0001860481); UPWORK, INC  (CIK 0001627475)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1860481/000186048126000017"
-        },
-        {
-          "datum": "2026-09-22",
-          "namn": "Bond Darryl  (CIK 0001703550); Yext, Inc.  (CIK 0001614178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1703550/000162828026063095"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-24T20:45+00:00"
+      "vintage": "2026-09-24T23:51+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-24 23:04:16",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "549,0",
+          "enhet": "Antal",
+          "pris": "24,81",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 23:04:16",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1500,0",
+          "enhet": "Antal",
+          "pris": "24,82",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 23:04:16",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "24,82",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 22:56:10",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "1111,0",
+          "enhet": "Antal",
+          "pris": "24,98",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-24 20:58:41",
           "emittent": "Alzinova AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "60,35",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-23 12:38:09",
-          "emittent": "Novedo Holding AB (publ)",
-          "person": "Sebastian Karlsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "11712030,0",
-          "enhet": "Antal",
-          "pris": "1,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-23 10:54:50",
-          "emittent": "Magle Chemoswed Holding AB",
-          "person": "Soren Skjold Mogensen Holding ApS",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "500000,0",
-          "enhet": "Antal",
-          "pris": "1,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-23 10:50:48",
-          "emittent": "Skandi standard AB (publ)",
-          "person": "Pia Gideon",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "237,0",
-          "enhet": "Antal",
-          "pris": "125,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-23 10:04:15",
-          "emittent": "aXichem AB (publ)",
-          "person": "Christian Månsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "418734,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-24T20:45+00:00"
+      "vintage": "2026-09-24T23:51+00:00"
     }
   }
 }
