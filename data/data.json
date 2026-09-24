@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-24",
-  "genererad": "2026-09-24T06:08+00:00",
+  "genererad": "2026-09-24T12:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
-      "delta": "−2,0 · 1 v",
+      "varde": 16.2,
+      "delta": "−1,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 16.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −25 bp/mån."
     },
     "bredd": {
-      "over50": 30,
-      "over200": 50,
+      "over50": 29,
+      "over200": 47,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-23",
+      "vintage": "2026-09-24",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+0 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4314",
+      "varde": "4299",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,3 %",
+      "delta4v": "−7,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,44",
+      "varde": "63,97",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,2 %",
+      "delta4v": "−5,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,74",
+      "varde": "6,77",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,2 %",
+      "delta4v": "+2,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-24"
     },
     "olja": {
-      "v": 98.34,
+      "v": 104.71,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-24"
     }
@@ -1768,7 +1768,7 @@
           101.0,
           101.03,
           101.15,
-          101.15
+          100.94
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           101.56,
           100.59,
           101.58,
-          102.77
+          102.35
         ]
       },
       {
@@ -1942,29 +1942,9 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-22",
-          "namn": "Kappus Anthony Ray  (CIK 0001860481); UPWORK, INC  (CIK 0001627475)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1860481/000186048126000017"
-        },
-        {
-          "datum": "2026-09-22",
-          "namn": "Bond Darryl  (CIK 0001703550); Yext, Inc.  (CIK 0001614178)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1703550/000162828026063095"
-        },
-        {
-          "datum": "2026-09-22",
-          "namn": "Smith Dylan C  (CIK 0001606410); BOX INC  (CIK 0001372612)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1606410/000119312526398252"
-        },
-        {
-          "datum": "2026-09-22",
-          "namn": "Ramaswamy Sridhar  (CIK 0001715472); Snowflake Inc.  (CIK 0001640147)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1715472/000162828026063112"
-        },
-        {
           "datum": "2026-09-21",
-          "namn": "LIU Pingping  (CIK 0002013881); Yum China Holdings, Inc.  (CIK 0001673358)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2013881/000167335826000137"
+          "namn": "Sousa Mauad Bruno  (CIK 0002117905); Aura Minerals Inc.  (CIK 0001468642)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2117905/000211790526000040"
         },
         {
           "datum": "2026-09-21",
@@ -1973,30 +1953,182 @@
         },
         {
           "datum": "2026-09-21",
-          "namn": "Sousa Mauad Bruno  (CIK 0002117905); Aura Minerals Inc.  (CIK 0001468642)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2117905/000211790526000040"
-        },
-        {
-          "datum": "2026-09-22",
-          "namn": "Simard Curtis C  (CIK 0001579604); BAR HARBOR BANKSHARES  (CIK 0000743367)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1579604/000157960426000012"
+          "namn": "AULT MILTON C III  (CIK 0001212502); Ault & Company, Inc.  (CIK 0001734770)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1212502/000121465926011836"
         },
         {
           "datum": "2026-09-21",
-          "namn": "Fischer Jamie  (CIK 0002041234); AMERICAS CARMART INC  (CIK 0000799850)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2041234/000168316826007270"
+          "namn": "LIU Pingping  (CIK 0002013881); Yum China Holdings, Inc.  (CIK 0001673358)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2013881/000167335826000137"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Ramaswamy Sridhar  (CIK 0001715472); Snowflake Inc.  (CIK 0001640147)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1715472/000162828026063112"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Teaster Michael  (CIK 0001348604); Getty Images Holdings, Inc.  (CIK 0001898496)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1348604/000162828026063033"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "CLARK KEVIN P  (CIK 0001248750); Versigent PLC  (CIK 0002078008)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1248750/000119312526397918"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Kappus Anthony Ray  (CIK 0001860481); UPWORK, INC  (CIK 0001627475)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1860481/000186048126000017"
         },
         {
           "datum": "2026-09-22",
           "namn": "Collier Michael Manning  (CIK 0001715401); HEALTHSTREAM INC  (CIK 0001095565)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1715401/000143774926030914"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Peters Craig Warren  (CIK 0001939000); Getty Images Holdings, Inc.  (CIK 0001898496)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1939000/000162828026063040"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-24T06:08+00:00"
+      "vintage": "2026-09-24T12:10+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-24 13:33:02",
+          "emittent": "Addtech AB",
+          "person": "Daniel Prelevic",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "28000,0",
+          "enhet": "Antal",
+          "pris": "47,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 13:04:53",
+          "emittent": "Addtech AB",
+          "person": "Daniel Prelevic",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "109,41",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 12:39:53",
+          "emittent": "Klimator AB",
+          "person": "Anders Oscarsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "28279,0",
+          "enhet": "Antal",
+          "pris": "3,7629",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 12:39:53",
+          "emittent": "Klimator AB",
+          "person": "Anders Oscarsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "12500,0",
+          "enhet": "Antal",
+          "pris": "3,7637",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 10:35:56",
+          "emittent": "Svevik Industri AB",
+          "person": "Anna Stiwne",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "39900,0",
+          "enhet": "Antal",
+          "pris": "54,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 10:35:56",
+          "emittent": "Svevik Industri AB",
+          "person": "Anna Stiwne",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "39900,0",
+          "enhet": "Antal",
+          "pris": "54,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 10:23:20",
+          "emittent": "Dormy Corporation AB (publ)",
+          "person": "Jesper Alm",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "3600,0",
+          "enhet": "Antal",
+          "pris": "70,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 10:21:36",
+          "emittent": "Svolder AB",
+          "person": "Anna-Maria Lundström Törnblom",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Gåva mottagen",
+          "volym": "227000,0",
+          "enhet": "Antal",
+          "pris": "59,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 10:21:36",
+          "emittent": "Svolder AB",
+          "person": "Anna-Maria Lundström Törnblom",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Gåva mottagen",
+          "volym": "666667,0",
+          "enhet": "Antal",
+          "pris": "59,35",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 10:21:36",
+          "emittent": "Svolder AB",
+          "person": "Anna-Maria Lundström Törnblom",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Gåva mottagen",
+          "volym": "583867,0",
+          "enhet": "Antal",
+          "pris": "98,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 08:23:13",
+          "emittent": "aXichem AB (publ)",
+          "person": "Torsten Helsing",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen minskning",
+          "volym": "230000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-24 08:23:13",
+          "emittent": "aXichem AB (publ)",
+          "person": "Torsten Helsing",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen ökning",
+          "volym": "230000,0",
+          "enhet": "Antal",
+          "pris": "1,50",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-24 07:29:03",
           "emittent": "Asker Healthcare Group AB (publ)",
@@ -2414,143 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,67",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:55:09",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "22060,0",
-          "enhet": "Antal",
-          "pris": "1,65",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:55:09",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "6982,0",
-          "enhet": "Antal",
-          "pris": "1,642",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:55:09",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "240958,0",
-          "enhet": "Antal",
-          "pris": "1,64",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:55:09",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "1,690149",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:55:09",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "23201,0",
-          "enhet": "Antal",
-          "pris": "1,665522",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "4500,0",
-          "enhet": "Antal",
-          "pris": "1,364",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "95500,0",
-          "enhet": "Antal",
-          "pris": "1,364",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "46595,0",
-          "enhet": "Antal",
-          "pris": "1,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "6068,0",
-          "enhet": "Antal",
-          "pris": "1,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "1,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "33904,0",
-          "enhet": "Antal",
-          "pris": "1,44",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-22 16:39:22",
-          "emittent": "H100 Group AB",
-          "person": "Peter C. Warren",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "824,0",
-          "enhet": "Antal",
-          "pris": "1,484",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 12,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-24T06:08+00:00"
+      "vintage": "2026-09-24T12:10+00:00"
     }
   }
 }
