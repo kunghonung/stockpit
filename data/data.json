@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
-  "asOfDatum": "2026-09-24",
-  "genererad": "2026-09-24T23:51+00:00",
+  "asOfDatum": "2026-09-25",
+  "genererad": "2026-09-25T04:50+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         96.3,
         97.24,
         98.58,
-        100.75,
+        100.51,
         100.51
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         99.43,
         98.54,
         97.38,
-        96.8,
+        96.16,
         96.16
       ]
     },
@@ -221,7 +221,7 @@
         95.11,
         96.33,
         95.13,
-        95.86,
+        97.16,
         97.16
       ]
     },
@@ -272,7 +272,7 @@
         100.7,
         98.59,
         97.06,
-        96.85,
+        95.77,
         95.77
       ]
     },
@@ -323,7 +323,7 @@
         100.2,
         99.54,
         99.18,
-        97.95,
+        97.17,
         97.17
       ]
     },
@@ -374,7 +374,7 @@
         112.66,
         109.5,
         111.89,
-        111.27,
+        112.06,
         112.06
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         95.26,
         94.45,
         91.89,
-        88.17,
+        87.37,
         87.37
       ]
     },
@@ -477,7 +477,7 @@
         98.09,
         97.7,
         96.02,
-        93.71,
+        93.36,
         93.36
       ]
     },
@@ -528,7 +528,7 @@
         111.78,
         114.54,
         113.47,
-        109.17,
+        109.66,
         109.66
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         110.64,
         109.86,
         107.56,
-        104.18,
+        104.24,
         104.24
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         93.38,
         92.5,
         91.23,
-        90.19,
+        90.0,
         90.0
       ]
     }
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-09-24",
+      "vintage": "2026-09-25",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-09-24",
+      "vintage": "2026-09-25",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4309",
+      "varde": "4305",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,4 %",
+      "delta4v": "−7,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-09-24"
+      "vintage": "2026-09-25"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,21",
+      "varde": "64,08",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,6 %",
+      "delta4v": "−7,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-09-24"
+      "vintage": "2026-09-25"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,78",
+      "varde": "6,75",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+2,8 %",
+      "delta4v": "+2,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-09-24"
+      "vintage": "2026-09-25"
     },
     "olja": {
-      "v": 106.13,
+      "v": 105.63,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-09-24"
+      "vintage": "2026-09-25"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-09-24",
+    "vintage": "2026-09-25",
     "marknader": [
       {
         "namn": "USA",
@@ -1685,7 +1685,7 @@
           99.71,
           99.95,
           100.21,
-          100.43,
+          100.44,
           100.44
         ]
       },
@@ -1726,7 +1726,7 @@
           95.36,
           95.79,
           97.26,
-          99.34,
+          99.41,
           99.41
         ]
       },
@@ -1767,7 +1767,7 @@
           101.67,
           101.0,
           101.03,
-          101.15,
+          100.69,
           100.69
         ]
       },
@@ -1792,24 +1792,24 @@
         ],
         "relSerie19": [
           100.0,
-          107.54,
-          106.52,
-          104.76,
-          115.6,
-          111.18,
-          110.71,
-          110.71,
-          104.05,
-          103.38,
-          99.79,
-          101.19,
-          106.95,
-          102.58,
-          102.67,
-          101.56,
-          100.59,
-          101.58,
-          102.44
+          103.09,
+          100.85,
+          107.96,
+          107.46,
+          106.76,
+          103.92,
+          98.91,
+          100.09,
+          98.34,
+          97.13,
+          101.2,
+          98.12,
+          98.53,
+          96.0,
+          95.48,
+          97.56,
+          97.82,
+          99.02
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           98.07,
           97.84,
           97.25,
-          97.67,
+          97.09,
           97.09
         ]
       },
@@ -1890,7 +1890,7 @@
           97.59,
           95.09,
           95.86,
-          95.49,
+          94.94,
           94.94
         ]
       },
@@ -1931,7 +1931,7 @@
           100.65,
           98.95,
           98.42,
-          97.91,
+          97.0,
           97.0
         ]
       }
@@ -1977,23 +1977,23 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1579604/000157960426000012"
         },
         {
-          "datum": "2026-09-21",
-          "namn": "Fischer Jamie  (CIK 0002041234); AMERICAS CARMART INC  (CIK 0000799850)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2041234/000168316826007270"
+          "datum": "2026-09-22",
+          "namn": "Smith Dylan C  (CIK 0001606410); BOX INC  (CIK 0001372612)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1606410/000119312526398252"
         },
         {
-          "datum": "2026-09-21",
-          "namn": "Van Jill  (CIK 0002110165); Gold.com, Inc.  (CIK 0001591588)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110165/000211016526000002"
+          "datum": "2026-09-23",
+          "namn": "Burkhart Erin  (CIK 0001927648); GILEAD SCIENCES, INC.  (CIK 0000882095)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1927648/000192764826000005"
         },
         {
-          "datum": "2026-09-21",
-          "namn": "Attal Alain  (CIK 0001840485); GameStop Corp.  (CIK 0001326380)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1840485/000184048526000008"
+          "datum": "2026-09-23",
+          "namn": "Lux Steven F  (CIK 0002021482); Proficient Auto Logistics, Inc  (CIK 0001998768)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2021482/000121390026102629"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-24T23:51+00:00"
+      "vintage": "2026-09-25T04:50+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-24T23:51+00:00"
+      "vintage": "2026-09-25T04:50+00:00"
     }
   }
 }
