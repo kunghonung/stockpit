@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-25",
-  "genererad": "2026-09-25T22:47+00:00",
+  "genererad": "2026-09-26T01:29+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1942,29 +1942,14 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-23",
-          "namn": "Fitzgerald Scott Michael  (CIK 0002063059); StubHub Holdings, Inc.  (CIK 0001337634)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2063059/000162828026063281"
+          "datum": "2026-09-22",
+          "namn": "Teaster Michael  (CIK 0001348604); Getty Images Holdings, Inc.  (CIK 0001898496)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1348604/000162828026063033"
         },
         {
-          "datum": "2026-09-23",
-          "namn": "Burkhart Erin  (CIK 0001927648); GILEAD SCIENCES, INC.  (CIK 0000882095)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1927648/000192764826000005"
-        },
-        {
-          "datum": "2026-09-23",
-          "namn": "Cohen Ariel M.  (CIK 0001853730); Navan, Inc.  (CIK 0001639723)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1853730/000185373026000015"
-        },
-        {
-          "datum": "2026-09-23",
-          "namn": "Kilic Aydin  (CIK 0002122203); HIVE Digital Technologies Ltd.  (CIK 0001720424)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2122203/000106299326005067"
-        },
-        {
-          "datum": "2026-09-24",
-          "namn": "Balle Kim  (CIK 0002126676); TORM plc  (CIK 0001655891)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2126676/000091957426006451"
+          "datum": "2026-09-22",
+          "namn": "CLARK KEVIN P  (CIK 0001248750); Versigent PLC  (CIK 0002078008)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1248750/000119312526397918"
         },
         {
           "datum": "2026-09-22",
@@ -1973,8 +1958,23 @@
         },
         {
           "datum": "2026-09-22",
+          "namn": "Collier Michael Manning  (CIK 0001715401); HEALTHSTREAM INC  (CIK 0001095565)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1715401/000143774926030914"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Peters Craig Warren  (CIK 0001939000); Getty Images Holdings, Inc.  (CIK 0001898496)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1939000/000162828026063040"
+        },
+        {
+          "datum": "2026-09-22",
           "namn": "Bond Darryl  (CIK 0001703550); Yext, Inc.  (CIK 0001614178)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1703550/000162828026063095"
+        },
+        {
+          "datum": "2026-09-22",
+          "namn": "Simard Curtis C  (CIK 0001579604); BAR HARBOR BANKSHARES  (CIK 0000743367)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1579604/000157960426000012"
         },
         {
           "datum": "2026-09-22",
@@ -1982,18 +1982,18 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1606410/000119312526398252"
         },
         {
-          "datum": "2026-09-22",
-          "namn": "Ramaswamy Sridhar  (CIK 0001715472); Snowflake Inc.  (CIK 0001640147)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1715472/000162828026063112"
+          "datum": "2026-09-23",
+          "namn": "Burkhart Erin  (CIK 0001927648); GILEAD SCIENCES, INC.  (CIK 0000882095)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1927648/000192764826000005"
         },
         {
-          "datum": "2026-09-22",
-          "namn": "Simard Curtis C  (CIK 0001579604); BAR HARBOR BANKSHARES  (CIK 0000743367)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1579604/000157960426000012"
+          "datum": "2026-09-23",
+          "namn": "Lux Steven F  (CIK 0002021482); Proficient Auto Logistics, Inc  (CIK 0001998768)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2021482/000121390026102629"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-25T22:47+00:00"
+      "vintage": "2026-09-26T01:29+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-25T22:47+00:00"
+      "vintage": "2026-09-26T01:29+00:00"
     }
   }
 }
