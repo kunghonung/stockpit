@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-25",
-  "genererad": "2026-09-27T20:22+00:00",
+  "genererad": "2026-09-27T23:23+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4321",
+      "varde": "4299",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,3 %",
+      "delta4v": "−5,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "64,80",
+      "varde": "64,24",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,7 %",
+      "delta4v": "−4,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,77",
+      "varde": "6,74",
       "enhet": "USD/t",
       "pil": "upp",
       "delta4v": "+2,7 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-25"
     },
     "olja": {
-      "v": 97.44,
+      "v": 98.59,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-25"
     }
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-27T20:22+00:00"
+      "vintage": "2026-09-27T23:23+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 7,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-27T20:22+00:00"
+      "vintage": "2026-09-27T23:23+00:00"
     }
   }
 }
