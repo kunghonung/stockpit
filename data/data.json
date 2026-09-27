@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W39",
   "asOfDatum": "2026-09-25",
-  "genererad": "2026-09-27T06:35+00:00",
+  "genererad": "2026-09-27T12:26+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-27T06:35+00:00"
+      "vintage": "2026-09-27T12:26+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-27 09:59:39",
+          "emittent": "Rejlers AB (publ)",
+          "person": "Johan Lannebo",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "139,7",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-26 17:03:39",
           "emittent": "Acast AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "162,30",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-25 13:49:20",
-          "emittent": "Xintela AB",
-          "person": "Gunnar Telhammar",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "0,161",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-27T06:35+00:00"
+      "vintage": "2026-09-27T12:26+00:00"
     }
   }
 }
