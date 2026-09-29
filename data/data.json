@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
-  "asOfDatum": "2026-09-28",
-  "genererad": "2026-09-28T22:38+00:00",
+  "asOfDatum": "2026-09-29",
+  "genererad": "2026-09-29T02:33+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-09-28",
+      "vintage": "2026-09-29",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-09-28",
+      "vintage": "2026-09-29",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,26 +967,26 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4159",
+      "varde": "4165",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−8,2 %",
+      "delta4v": "−7,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-09-28"
+      "vintage": "2026-09-29"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,17",
+      "varde": "61,19",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−8,7 %",
+      "delta4v": "−7,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-09-28"
+      "vintage": "2026-09-29"
     },
     "koppar": {
       "namn": "Koppar",
@@ -994,17 +994,17 @@
       "varde": "6,62",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+0,9 %",
+      "delta4v": "+0,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-09-28"
+      "vintage": "2026-09-29"
     },
     "olja": {
-      "v": 98.57,
+      "v": 99.1,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-09-28"
+      "vintage": "2026-09-29"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-09-28",
+    "vintage": "2026-09-29",
     "marknader": [
       {
         "namn": "USA",
@@ -1751,24 +1751,24 @@
         ],
         "relSerie19": [
           100.0,
-          102.14,
-          102.49,
-          102.05,
-          104.38,
+          104.43,
+          103.43,
+          102.64,
+          107.73,
+          104.54,
+          103.59,
           105.87,
-          102.97,
-          104.82,
-          105.79,
-          105.1,
-          103.58,
-          102.66,
-          103.03,
-          103.0,
-          101.67,
-          101.0,
-          101.03,
-          100.43,
-          101.3
+          107.13,
+          107.47,
+          103.76,
+          102.63,
+          103.73,
+          102.72,
+          100.52,
+          100.97,
+          102.09,
+          100.97,
+          101.84
         ]
       },
       {
@@ -1792,24 +1792,24 @@
         ],
         "relSerie19": [
           100.0,
-          103.09,
-          100.85,
-          107.96,
-          107.46,
-          106.76,
-          103.92,
-          98.91,
-          100.09,
-          98.34,
-          97.13,
-          101.2,
-          98.12,
-          98.53,
-          96.0,
-          95.48,
-          97.56,
-          98.49,
-          98.61
+          101.81,
+          108.42,
+          104.69,
+          107.63,
+          104.53,
+          96.85,
+          99.25,
+          99.31,
+          99.86,
+          101.34,
+          96.85,
+          98.32,
+          96.1,
+          94.14,
+          96.6,
+          99.19,
+          97.39,
+          97.35
         ]
       },
       {
@@ -1942,16 +1942,6 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-25",
-          "namn": "Southern William Bradley  (CIK 0001549626); WORTHINGTON ENTERPRISES, INC.  (CIK 0000108516)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1549626/000119312526401851"
-        },
-        {
-          "datum": "2026-09-25",
-          "namn": "AJB Capital, LLC  (CIK 0002141914); AJB Investment Fund II, LP  (CIK 0001536588)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2141914/000153658826000034"
-        },
-        {
           "datum": "2026-09-28",
           "namn": "Lewis Richard Brent  (CIK 0001718260); DONALDSON Co INC  (CIK 0000029644)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1718260/000002964426000093"
@@ -1982,18 +1972,28 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/2119240/000149315226044601"
         },
         {
-          "datum": "2026-09-25",
-          "namn": "Levinson Sam  (CIK 0001588901); Clipper Realty Inc.  (CIK 0001649096)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1588901/000153949726002601"
+          "datum": "2026-09-28",
+          "namn": "Clark Kyle  (CIK 0002090083); BETA Technologies, Inc.  (CIK 0001784570)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526405681"
         },
         {
-          "datum": "2026-09-25",
-          "namn": "ROTHBLATT MARTINE A  (CIK 0001106578); UNITED THERAPEUTICS Corp  (CIK 0001082554)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000149"
+          "datum": "2026-09-28",
+          "namn": "Mackey Cameron Keyser  (CIK 0001979195); Scorpio Tankers Inc.  (CIK 0001483934)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1979195/000197919526000003"
+        },
+        {
+          "datum": "2026-09-28",
+          "namn": "KUMAR AMIT  (CIK 0001191905); Anixa Biosciences Inc  (CIK 0000715446)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1191905/000149315226044458"
+        },
+        {
+          "datum": "2026-09-28",
+          "namn": "Tardugno Michael H  (CIK 0001384550); Imunon, Inc.  (CIK 0000749647)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1384550/000143774926031363"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-28T22:38+00:00"
+      "vintage": "2026-09-29T02:33+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 16,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-28T22:38+00:00"
+      "vintage": "2026-09-29T02:33+00:00"
     }
   }
 }
