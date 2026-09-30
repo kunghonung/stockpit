@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
   "asOfDatum": "2026-09-30",
-  "genererad": "2026-09-30T05:56+00:00",
+  "genererad": "2026-09-30T12:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.0,
-      "delta": "+1,8 · 1 v",
+      "varde": 16.1,
+      "delta": "+1,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.0,
+      "varde": 16.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -881,7 +881,7 @@
       "over200": 43,
       "antal": 498,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 498 bolag)",
-      "vintage": "2026-09-29",
+      "vintage": "2026-09-30",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-2 sedan förra"
+      "delta": "+0 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4209",
+      "varde": "4222",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,3 %",
+      "delta4v": "−4,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,42",
+      "varde": "61,08",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,9 %",
+      "delta4v": "−5,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,62",
       "enhet": "USD/t",
       "pil": "upp",
       "delta4v": "+1,8 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-09-30"
     },
     "olja": {
-      "v": 96.24,
+      "v": 97.8,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-09-30"
     }
@@ -1768,7 +1768,7 @@
           98.91,
           98.33,
           99.22,
-          99.22
+          99.11
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.64,
           95.54,
           95.21,
-          97.22
+          97.06
         ]
       },
       {
@@ -1943,6 +1943,11 @@
       "poster": [
         {
           "datum": "2026-09-28",
+          "namn": "Condrin J Paul  (CIK 0001847403); HANOVER INSURANCE GROUP, INC.  (CIK 0000944695)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1847403/000119312526405409"
+        },
+        {
+          "datum": "2026-09-28",
           "namn": "SEID PAUL  (CIK 0001573636); INTELLINETICS, INC.  (CIK 0001081745)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1573636/000149315226044556"
         },
@@ -1958,23 +1963,13 @@
         },
         {
           "datum": "2026-09-28",
-          "namn": "Condrin J Paul  (CIK 0001847403); HANOVER INSURANCE GROUP, INC.  (CIK 0000944695)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1847403/000119312526405409"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "Lewis Richard Brent  (CIK 0001718260); DONALDSON Co INC  (CIK 0000029644)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1718260/000002964426000093"
+          "namn": "Clark Kyle  (CIK 0002090083); BETA Technologies, Inc.  (CIK 0001784570)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526405681"
         },
         {
           "datum": "2026-09-28",
           "namn": "Ramsay Caroline Frances  (CIK 0002119240); AEGON LTD.  (CIK 0000769218)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2119240/000149315226044601"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "Clark Kyle  (CIK 0002090083); BETA Technologies, Inc.  (CIK 0001784570)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526405681"
         },
         {
           "datum": "2026-09-29",
@@ -1990,13 +1985,414 @@
           "datum": "2026-09-29",
           "namn": "DiLorenzo David L  (CIK 0001537459); ABERDEEN INTERMEDIATE INCOME FUND  (CIK 0000826735)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1537459/000153745926000002"
+        },
+        {
+          "datum": "2026-09-28",
+          "namn": "Lewis Richard Brent  (CIK 0001718260); DONALDSON Co INC  (CIK 0000029644)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1718260/000002964426000093"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-09-30T05:56+00:00"
+      "vintage": "2026-09-30T12:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-09-30 14:25:53",
+          "emittent": "Sveafastigheter AB (publ)",
+          "person": "Lovisa Sörensson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Utbyte ökning",
+          "volym": "16926,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 13:40:59",
+          "emittent": "Climeon AB (publ)",
+          "person": "Henrik Olof Wilhelm Österman",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "18518,0",
+          "enhet": "Antal",
+          "pris": "2,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:46:08",
+          "emittent": "Boozt AB",
+          "person": "Johannes Møller Westh",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "150,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:44:03",
+          "emittent": "Boozt AB",
+          "person": "Johannes Møller Westh",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "150,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:33:53",
+          "emittent": "SmartCraft Group AB",
+          "person": "Johanna Konyi",
+          "befattning": "Vice VD",
+          "karaktar": "Avyttring",
+          "volym": "45000,0",
+          "enhet": "Antal",
+          "pris": "14,47",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:13:54",
+          "emittent": "Precio Fishbone AB",
+          "person": "John Andersson Löfström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "66919,0",
+          "enhet": "Antal",
+          "pris": "18,84",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:01:02",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Markus Kirsten",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "6857,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:01:02",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Markus Kirsten",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "6857,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 12:01:02",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Markus Kirsten",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2083,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:37:41",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Fanni-Maija Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "220,0",
+          "enhet": "Antal",
+          "pris": "32,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:36:14",
+          "emittent": "Linjemontage i Grästorp AB",
+          "person": "Thomas Hendel",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Tilldelning",
+          "volym": "10870,0",
+          "enhet": "Antal",
+          "pris": "6,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "653,0",
+          "enhet": "Antal",
+          "pris": "31,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "864,0",
+          "enhet": "Antal",
+          "pris": "37,688432",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "152,0",
+          "enhet": "Antal",
+          "pris": "37,7",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "3405,0",
+          "enhet": "Antal",
+          "pris": "39,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "730,0",
+          "enhet": "Antal",
+          "pris": "41,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "1340,0",
+          "enhet": "Antal",
+          "pris": "37,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "7104,0",
+          "enhet": "Antal",
+          "pris": "36,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 11:34:43",
+          "emittent": "Terranor Group AB (publ)",
+          "person": "Inka Kontturi",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "172,0",
+          "enhet": "Antal",
+          "pris": "36,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:25:07",
+          "emittent": "Fragbite Group AB (publ)",
+          "person": "Magdy Abdallah",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "86540,0",
+          "enhet": "Antal",
+          "pris": "0,8389",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:21:59",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Fredrik Mundal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "7014,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:21:59",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Fredrik Mundal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "7014,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:21:59",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Fredrik Mundal",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "2329,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:04:45",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Malin Frick",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "5,485",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:04:45",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Malin Frick",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "5,485",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 10:04:45",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Malin Frick",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "1,666",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 09:38:34",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Johan Magnuson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen minskning",
+          "volym": "3714,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 09:38:34",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Johan Magnuson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "3714,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 09:38:34",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Johan Magnuson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Lösen ökning",
+          "volym": "1128,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:37:45",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "793,0",
+          "enhet": "Antal",
+          "pris": "9,85",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:37:45",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "21735,0",
+          "enhet": "Antal",
+          "pris": "9,85",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:37:45",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "3440,0",
+          "enhet": "Antal",
+          "pris": "9,95",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:37:45",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "706,0",
+          "enhet": "Antal",
+          "pris": "9,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:37:45",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "5356,0",
+          "enhet": "Antal",
+          "pris": "10,2",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:32:50",
+          "emittent": "Infracom Group AB (publ)",
+          "person": "Hans Nilsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "773,0",
+          "enhet": "Antal",
+          "pris": "11,75",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-09-30 08:32:50",
+          "emittent": "Infracom Group AB (publ)",
+          "person": "Hans Nilsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "1790,0",
+          "enhet": "Antal",
+          "pris": "11,75",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-09-29 22:31:51",
           "emittent": "HEXICON AB",
@@ -2150,407 +2546,11 @@
           "enhet": "Antal",
           "pris": "99,60",
           "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "400,0",
-          "enhet": "Antal",
-          "pris": "99,70",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "91,0",
-          "enhet": "Antal",
-          "pris": "99,70",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "12487,0",
-          "enhet": "Antal",
-          "pris": "100,00",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "10,0",
-          "enhet": "Antal",
-          "pris": "100,10",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "626,0",
-          "enhet": "Antal",
-          "pris": "100,10",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "100,0",
-          "enhet": "Antal",
-          "pris": "100,20",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "311,0",
-          "enhet": "Antal",
-          "pris": "100,2",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "1128,0",
-          "enhet": "Antal",
-          "pris": "100,20",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 19:15:24",
-          "emittent": "Boozt AB",
-          "person": "Henrik Theilbjørn",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "319,0",
-          "enhet": "Antal",
-          "pris": "100,30",
-          "valuta": "DKK"
-        },
-        {
-          "publicerad": "2026-09-29 18:52:21",
-          "emittent": "Asker Healthcare group AB (publ)",
-          "person": "Peter Nilsson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "2750,0",
-          "enhet": "Antal",
-          "pris": "61,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:24:30",
-          "emittent": "Argo Defence Group AB (publ)",
-          "person": "Marcus Selme",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "68125,0",
-          "enhet": "Antal",
-          "pris": "11,6248",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:24:30",
-          "emittent": "Argo Defence Group AB (publ)",
-          "person": "Marcus Selme",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "16922,0",
-          "enhet": "Antal",
-          "pris": "12,8328",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:21:36",
-          "emittent": "Acast AB (publ)",
-          "person": "Elizabeth Pollott",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "360000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:21:36",
-          "emittent": "Acast AB (publ)",
-          "person": "Elizabeth Pollott",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "173710,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:21:36",
-          "emittent": "Acast AB (publ)",
-          "person": "Elizabeth Pollott",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "173710,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:21:36",
-          "emittent": "Acast AB (publ)",
-          "person": "Elizabeth Pollott",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "173710,0",
-          "enhet": "Antal",
-          "pris": "0,006484",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 17:04:53",
-          "emittent": "Climeon AB",
-          "person": "Olle Bergström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "187649,0",
-          "enhet": "Antal",
-          "pris": "2,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 16:44:30",
-          "emittent": "XSpray Pharma AB (publ)",
-          "person": "Blake Leitch",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "9,506747",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 16:40:15",
-          "emittent": "Acast AB (publ)",
-          "person": "Gregory Glenday",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen ökning",
-          "volym": "367332,0",
-          "enhet": "Antal",
-          "pris": "0,006484",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 16:38:40",
-          "emittent": "Acast AB (publ)",
-          "person": "Gregory Glenday",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen minskning",
-          "volym": "750000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 16:05:13",
-          "emittent": "Nanexa AB",
-          "person": "Cecilia Danckwardt-Lillieström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "25000,0",
-          "enhet": "Antal",
-          "pris": "13,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 15:46:50",
-          "emittent": "Linjemontage i Grästorp AB",
-          "person": "Hitesh Kumbhat",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lån utlåning",
-          "volym": "2146743,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 15:40:03",
-          "emittent": "Linjemontage i Grästorp AB",
-          "person": "Hitesh Kumbhat",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "13319670,0",
-          "enhet": "Antal",
-          "pris": "46,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 14:11:45",
-          "emittent": "Acast AB (publ)",
-          "person": "Daniel Adrian",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "360000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 14:11:45",
-          "emittent": "Acast AB (publ)",
-          "person": "Daniel Adrian",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "163872,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 14:11:45",
-          "emittent": "Acast AB (publ)",
-          "person": "Daniel Adrian",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "163872,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 14:11:45",
-          "emittent": "Acast AB (publ)",
-          "person": "Daniel Adrian",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "163872,0",
-          "enhet": "Antal",
-          "pris": "0,006484",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 13:54:54",
-          "emittent": "Linjemontage i Grästorp AB",
-          "person": "Bo Jonas Lindberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "5400,0",
-          "enhet": "Antal",
-          "pris": "46,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 13:15:29",
-          "emittent": "PPI Public Property Invest AB (publ)",
-          "person": "Lennart Sten",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Pantsättning",
-          "volym": "140639312,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 12:35:47",
-          "emittent": "NOBA Bank Group AB (publ)",
-          "person": "Olof Mankert",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "5485,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 12:35:47",
-          "emittent": "NOBA Bank Group AB (publ)",
-          "person": "Olof Mankert",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "5485,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 12:35:47",
-          "emittent": "NOBA Bank Group AB (publ)",
-          "person": "Olof Mankert",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "1666,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 11:34:36",
-          "emittent": "Linjemontage i Grästorp AB",
-          "person": "Hitesh Prakash Kumbhat",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "114750,0",
-          "enhet": "Antal",
-          "pris": "46,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 11:06:16",
-          "emittent": "Rejlers AB (publ)",
-          "person": "Johan Lannebo",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "141,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 10:57:05",
-          "emittent": "Linjemontage i Grastorp AB",
-          "person": "Ramesh Bhootra",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "114750,0",
-          "enhet": "Antal",
-          "pris": "46,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-09-29 10:52:31",
-          "emittent": "Hedera Group AB",
-          "person": "Bertil Haglund",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Tilldelning",
-          "volym": "3868914,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 36,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-09-30T05:56+00:00"
+      "vintage": "2026-09-30T12:28+00:00"
     }
   }
 }
