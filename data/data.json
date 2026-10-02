@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
-  "asOfDatum": "2026-10-01",
-  "genererad": "2026-10-01T20:29+00:00",
+  "asOfDatum": "2026-10-02",
+  "genererad": "2026-10-02T00:11+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-01",
+      "vintage": "2026-10-02",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 110.0,
-      "delta": "+5 · 1 v",
+      "varde": 108.0,
+      "delta": "+4 · 1 v",
       "trosklar": [
         100,
         130
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-01",
+      "vintage": "2026-10-02",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 110.0,
+      "varde": 108.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4209",
+      "varde": "4211",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,7 %",
+      "delta4v": "−4,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-01"
+      "vintage": "2026-10-02"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,40",
+      "varde": "61,47",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,1 %",
+      "delta4v": "−5,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-01"
+      "vintage": "2026-10-02"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,59",
+      "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+1,3 %",
+      "delta4v": "+1,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-01"
+      "vintage": "2026-10-02"
     },
     "olja": {
-      "v": 102.31,
+      "v": 102.39,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-01"
+      "vintage": "2026-10-02"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-01",
+    "vintage": "2026-10-02",
     "marknader": [
       {
         "namn": "USA",
@@ -1942,36 +1942,6 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-28",
-          "namn": "Condrin J Paul  (CIK 0001847403); HANOVER INSURANCE GROUP, INC.  (CIK 0000944695)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1847403/000119312526405409"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "SEID PAUL  (CIK 0001573636); INTELLINETICS, INC.  (CIK 0001081745)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1573636/000149315226044556"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "Singh Ajay  (CIK 0001897944); Everpure, Inc.  (CIK 0001474432)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1897944/000147443226000095"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "Kushner Koby Soloman  (CIK 0002040866); ATHENA GOLD CORP  (CIK 0001304409)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2040866/000168316826007460"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "Clark Kyle  (CIK 0002090083); BETA Technologies, Inc.  (CIK 0001784570)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526405681"
-        },
-        {
-          "datum": "2026-09-28",
-          "namn": "Ramsay Caroline Frances  (CIK 0002119240); AEGON LTD.  (CIK 0000769218)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2119240/000149315226044601"
-        },
-        {
           "datum": "2026-09-29",
           "namn": "Destinon Katherine  (CIK 0001839414); WEYCO GROUP INC  (CIK 0000106532)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1839414/000183941426000004"
@@ -1987,13 +1957,43 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1537459/000153745926000002"
         },
         {
-          "datum": "2026-09-28",
-          "namn": "Lewis Richard Brent  (CIK 0001718260); DONALDSON Co INC  (CIK 0000029644)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1718260/000002964426000093"
+          "datum": "2026-09-29",
+          "namn": "Schuetz Alexander  (CIK 0001610011); HELIOS TECHNOLOGIES, INC.  (CIK 0001024795)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1610011/000119312526407385"
+        },
+        {
+          "datum": "2026-09-29",
+          "namn": "Konwiser Evan  (CIK 0001924314); Global Business Travel Group, Inc.  (CIK 0001820872)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1924314/000119312526407616"
+        },
+        {
+          "datum": "2026-09-29",
+          "namn": "Chen Yun  (CIK 0002153415); BEST SPAC I Acquisition Corp.  (CIK 0002051587)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2153415/000121390026104721"
+        },
+        {
+          "datum": "2026-09-29",
+          "namn": "NIPPON LIFE INSURANCE CO  (CIK 0000905591); Corebridge Financial, Inc.  (CIK 0001889539)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/905591/000119312526407701"
+        },
+        {
+          "datum": "2026-09-29",
+          "namn": "KAMFAR RAMIN  (CIK 0001111908); Bluerock Private Real Estate Fund  (CIK 0001551047)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1111908/000139834426017538"
+        },
+        {
+          "datum": "2026-09-29",
+          "namn": "Ashkenazi Anat  (CIK 0001761679); Alphabet Inc.  (CIK 0001652044)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1761679/000119312526408009"
+        },
+        {
+          "datum": "2026-09-30",
+          "namn": "Galeta Christopher Matthew  (CIK 0002089464); Caring Brands, Inc.  (CIK 0002020737)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2089464/000149315226044996"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-01T20:28+00:00"
+      "vintage": "2026-10-02T00:11+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 11,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-01T20:29+00:00"
+      "vintage": "2026-10-02T00:11+00:00"
     }
   }
 }
