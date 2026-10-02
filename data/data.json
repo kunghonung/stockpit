@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
   "asOfDatum": "2026-10-02",
-  "genererad": "2026-10-02T13:08+00:00",
+  "genererad": "2026-10-02T18:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         101.83,
         104.09,
         105.91,
-        105.91
+        106.22
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         94.37,
         93.56,
         93.47,
-        93.47
+        93.53
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 3,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         96.09,
         96.72,
         95.04,
-        95.04
+        94.71
       ]
     },
     {
@@ -273,7 +273,7 @@
         95.61,
         94.05,
         92.55,
-        92.55
+        92.8
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 7,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         96.09,
         94.04,
         92.94,
-        92.94
+        92.45
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 3,
+      "rsRank": 4,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         106.56,
         106.67,
         104.86,
-        104.86
+        103.9
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 11,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         89.73,
         85.18,
         86.37,
-        86.37
+        85.98
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 11,
+      "rsRank": 10,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         92.13,
         88.9,
         87.86,
-        87.86
+        87.73
       ]
     },
     {
@@ -529,7 +529,7 @@
         107.98,
         102.86,
         104.96,
-        104.96
+        104.46
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         103.42,
         100.26,
         98.68,
-        98.68
+        98.13
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         93.6,
         92.04,
         91.45,
-        91.45
+        91.8
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 3.12,
-      "delta": "+39 bp · 1 v",
+      "varde": 3.24,
+      "delta": "+44 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-09-30",
+      "vintage": "2026-10-01",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.5,
-      "delta": "+0,7 · 1 v",
+      "varde": 15.6,
+      "delta": "+0,8 · 1 v",
       "trosklar": [
         20,
         28
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 108.0,
-      "delta": "+4 · 1 v",
+      "delta": "+12 · 1 v",
       "trosklar": [
         100,
         130
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.5,
+      "varde": 15.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 3.12,
+      "varde": 3.24,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4244",
+      "varde": "4169",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,5 %",
+      "delta4v": "−8,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,98",
+      "varde": "60,65",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,5 %",
+      "delta4v": "−9,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,58",
+      "varde": "6,56",
       "enhet": "USD/t",
-      "pil": "upp",
-      "delta4v": "+0,1 %",
+      "pil": "ned",
+      "delta4v": "−0,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-02"
     },
     "olja": {
-      "v": 99.41,
+      "v": 102.19,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-02"
     }
@@ -1686,7 +1686,7 @@
           100.1,
           100.26,
           100.75,
-          100.75
+          100.72
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           99.18,
           101.23,
           102.36,
-          102.36
+          102.55
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           98.91,
           98.33,
           97.88,
-          98.66
+          97.97
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.64,
           95.54,
           100.72,
-          99.77
+          99.12
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           100.59,
           100.9,
           100.6,
-          100.6
+          100.79
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           94.48,
           92.66,
           93.1,
-          93.1
+          90.92
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           98.32,
           96.92,
           95.25,
-          95.25
+          94.92
         ]
       }
     ],
@@ -1942,44 +1942,24 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-29",
-          "namn": "Destinon Katherine  (CIK 0001839414); WEYCO GROUP INC  (CIK 0000106532)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1839414/000183941426000004"
+          "datum": "2026-09-30",
+          "namn": "Kingsley Lawrence D  (CIK 0001301427); Mirion Technologies, Inc.  (CIK 0001809987)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1301427/000162828026063985"
         },
         {
-          "datum": "2026-09-29",
-          "namn": "CORCORAN JOHN M  (CIK 0001011720); ABERDEEN MUNICIPAL INCOME FUND  (CIK 0000801961)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1011720/000101172026000004"
+          "datum": "2026-09-30",
+          "namn": "Cola Jennifer L.  (CIK 0002070860); VerifyMe, Inc.  (CIK 0001104038)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2070860/000089183926000420"
         },
         {
-          "datum": "2026-09-29",
-          "namn": "DiLorenzo David L  (CIK 0001537459); ABERDEEN INTERMEDIATE INCOME FUND  (CIK 0000826735)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1537459/000153745926000002"
+          "datum": "2026-09-30",
+          "namn": "Frates Caton  (CIK 0001928633); COSTCO WHOLESALE CORP /NEW  (CIK 0000909832)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1928633/000090983226000090"
         },
         {
-          "datum": "2026-09-29",
-          "namn": "Schuetz Alexander  (CIK 0001610011); HELIOS TECHNOLOGIES, INC.  (CIK 0001024795)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1610011/000119312526407385"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "Konwiser Evan  (CIK 0001924314); Global Business Travel Group, Inc.  (CIK 0001820872)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1924314/000119312526407616"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "Chen Yun  (CIK 0002153415); BEST SPAC I Acquisition Corp.  (CIK 0002051587)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2153415/000121390026104721"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "NIPPON LIFE INSURANCE CO  (CIK 0000905591); Corebridge Financial, Inc.  (CIK 0001889539)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/905591/000119312526407701"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "KAMFAR RAMIN  (CIK 0001111908); Bluerock Private Real Estate Fund  (CIK 0001551047)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1111908/000139834426017538"
+          "datum": "2026-09-30",
+          "namn": "UAW GM RETIREES MEDICAL BENEFITS PLAN  (CIK 0001795050); UAW Ford Retirees Medical Benefits Plan  (CIK 0001795052)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1795050/000110465926112487"
         },
         {
           "datum": "2026-09-29",
@@ -1990,13 +1970,308 @@
           "datum": "2026-09-30",
           "namn": "Galeta Christopher Matthew  (CIK 0002089464); Caring Brands, Inc.  (CIK 0002020737)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2089464/000149315226044996"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "BROWN RONALD  (CIK 0001036437); NEW ENGLAND REALTY ASSOCIATES LIMITED PARTNERSHIP  (CIK 0000746514)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1036437/000103643726000008"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "Schultz Robert F.  (CIK 0001526325); Midland States Bancorp, Inc.  (CIK 0001466026)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1526325/000146602626000083"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "Shine Sarah  (CIK 0002049845); ERIE INDEMNITY CO  (CIK 0000922621)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2049845/000162828026064137"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "Aldeco Marcelo Gustavo  (CIK 0002119746); YPF SOCIEDAD ANONIMA  (CIK 0000904851)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2119746/000129281426004787"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-02T13:08+00:00"
+      "vintage": "2026-10-02T18:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-02 17:51:20",
+          "emittent": "Sinch AB (publ)",
+          "person": "Jonathan Bean",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "125000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:49:43",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "300234,0",
+          "enhet": "Antal",
+          "pris": "5,06585",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:35:42",
+          "emittent": "Seamless Distribution Systems AB",
+          "person": "Tomas Klevbo",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "725,0",
+          "enhet": "Antal",
+          "pris": "6,1",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:33:35",
+          "emittent": "Rejlers AB (publ)",
+          "person": "Malin Sparf Rydberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "750,0",
+          "enhet": "Antal",
+          "pris": "136,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:31:54",
+          "emittent": "Sinch AB (publ)",
+          "person": "Ilse Marthe van der Haar",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "62500,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:26:57",
+          "emittent": "CombinedX AB (publ)",
+          "person": "Per Aronsson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "10800,0",
+          "enhet": "Antal",
+          "pris": "26,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:18:12",
+          "emittent": "CombinedX AB (publ)",
+          "person": "Mathias Dyberg",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "7219,0",
+          "enhet": "Antal",
+          "pris": "26,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:16:13",
+          "emittent": "LUCARA DIAMOND CORP.",
+          "person": "Adam Ian Lundin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1935000,0",
+          "enhet": "Antal",
+          "pris": "0,167",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-02 17:03:36",
+          "emittent": "Expres2ion Biotech Holding AB",
+          "person": "Bent Frandsen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "12000,0",
+          "enhet": "Antal",
+          "pris": "1,19",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 17:03:36",
+          "emittent": "Expres2ion Biotech Holding AB",
+          "person": "Bent Frandsen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "1,15",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:53:42",
+          "emittent": "Linjemontage i Grästorp AB",
+          "person": "Jonas Fjellman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "4348,0",
+          "enhet": "Antal",
+          "pris": "6,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:47:45",
+          "emittent": "Job Solution Sweden Holding AB (publ)",
+          "person": "Emil Steenhouwer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "573,0",
+          "enhet": "Antal",
+          "pris": "69,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:47:45",
+          "emittent": "Job Solution Sweden Holding AB (publ)",
+          "person": "Emil Steenhouwer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500,0",
+          "enhet": "Antal",
+          "pris": "68,3956",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:47:45",
+          "emittent": "Job Solution Sweden Holding AB (publ)",
+          "person": "Emil Steenhouwer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "293,0",
+          "enhet": "Antal",
+          "pris": "68,2",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:47:45",
+          "emittent": "Job Solution Sweden Holding AB (publ)",
+          "person": "Emil Steenhouwer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "20,0",
+          "enhet": "Antal",
+          "pris": "67,4",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:47:45",
+          "emittent": "Job Solution Sweden Holding AB (publ)",
+          "person": "Emil Steenhouwer",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "350,0",
+          "enhet": "Antal",
+          "pris": "68,3417",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:32:06",
+          "emittent": "Rejlers AB (publ)",
+          "person": "Viktor Svensson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "135,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:31:44",
+          "emittent": "EC European Capital RTO 1 AB",
+          "person": "Daniel Jacob",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "57198,0",
+          "enhet": "Antal",
+          "pris": "1,5564",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:31:44",
+          "emittent": "EC European Capital RTO 1 AB",
+          "person": "Daniel Jacob",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "1579,0",
+          "enhet": "Antal",
+          "pris": "1,01",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:31:44",
+          "emittent": "EC European Capital RTO 1 AB",
+          "person": "Daniel Jacob",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "53795,0",
+          "enhet": "Antal",
+          "pris": "1,5812",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:31:44",
+          "emittent": "EC European Capital RTO 1 AB",
+          "person": "Daniel Jacob",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "46176,0",
+          "enhet": "Antal",
+          "pris": "1,5283",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 16:31:44",
+          "emittent": "EC European Capital RTO 1 AB",
+          "person": "Daniel Jacob",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "4411,0",
+          "enhet": "Antal",
+          "pris": "1,2624",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 15:37:09",
+          "emittent": "Lagercrantz Group AB",
+          "person": "Karin Mellegård Djärf",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "42900,0",
+          "enhet": "Antal",
+          "pris": "28,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 15:36:47",
+          "emittent": "Lagercrantz Group AB",
+          "person": "Olivia Johnsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "28,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-02 15:21:55",
+          "emittent": "NordAmps AB",
+          "person": "Magnus Eriksson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "455336,0",
+          "enhet": "Antal",
+          "pris": "15,50",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-02 14:47:12",
           "emittent": "Mofast AB (Publ)",
@@ -2271,286 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,099",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 20:44:47",
-          "emittent": "front venture",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "658,0",
-          "enhet": "Antal",
-          "pris": "12,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 20:44:47",
-          "emittent": "front venture",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "21052,0",
-          "enhet": "Antal",
-          "pris": "0,095",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 18:34:39",
-          "emittent": "Gentoo Media Inc.",
-          "person": "Mateusz Juroszek",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "4,8133",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 18:20:43",
-          "emittent": "Sinch AB (publ)",
-          "person": "Brett Scorza",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "75000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 17:26:12",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Henrik Einarsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "12500,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 17:03:32",
-          "emittent": "Veteranpoolen AB",
-          "person": "Gustav Jakobsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "2178,0",
-          "enhet": "Antal",
-          "pris": "64,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 17:03:32",
-          "emittent": "Veteranpoolen AB",
-          "person": "Gustav Jakobsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "146,0",
-          "enhet": "Antal",
-          "pris": "65,1",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 17:03:32",
-          "emittent": "Veteranpoolen AB",
-          "person": "Gustav Jakobsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1434,0",
-          "enhet": "Antal",
-          "pris": "64,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 17:03:32",
-          "emittent": "Veteranpoolen AB",
-          "person": "Gustav Jakobsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1728,0",
-          "enhet": "Antal",
-          "pris": "64,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 17:01:43",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Måns Axelsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 16:48:52",
-          "emittent": "S2Medical AB (publ)",
-          "person": "SivlerSkog Group AB",
-          "befattning": "Verkställande direktör (VD), Vice VD, Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "54583380,0",
-          "enhet": "Antal",
-          "pris": "0,003",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 16:19:45",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Olof Aurell",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "12500,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 16:13:37",
-          "emittent": "W5 Solutions AB",
-          "person": "Olof Gabriel Harald Reinhold Rudbeck",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "2083333,0",
-          "enhet": "Antal",
-          "pris": "24,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 16:12:57",
-          "emittent": "Cibus Nordic Real Estate AB (publ)",
-          "person": "Ann Sofie Lindroth",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "825,0",
-          "enhet": "Antal",
-          "pris": "121,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 15:53:36",
-          "emittent": "Xer Tech Holding AB",
-          "person": "Jörgen Svanström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "97655,0",
-          "enhet": "Antal",
-          "pris": "2,65",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 15:00:55",
-          "emittent": "Terranor Group AB",
-          "person": "Inka Kontturi",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "187,0",
-          "enhet": "Antal",
-          "pris": "28,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:59:24",
-          "emittent": "SafeState Group AB",
-          "person": "Daan Donders",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5025,0",
-          "enhet": "Antal",
-          "pris": "22,19",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:59:24",
-          "emittent": "SafeState Group AB",
-          "person": "Daan Donders",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4775,0",
-          "enhet": "Antal",
-          "pris": "24,67",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:58:53",
-          "emittent": "Terranor Group AB",
-          "person": "Fanni-Maija Kontturi",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2252,0",
-          "enhet": "Antal",
-          "pris": "22,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:56:51",
-          "emittent": "Calviks AB (publ)",
-          "person": "Sophie Gidlund",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "447,0",
-          "enhet": "Antal",
-          "pris": "67,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:56:51",
-          "emittent": "Calviks AB (publ)",
-          "person": "Sophie Gidlund",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "69,0",
-          "enhet": "Antal",
-          "pris": "67,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:56:47",
-          "emittent": "Terranor Group AB",
-          "person": "Inka Kontturi",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "37,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:56:47",
-          "emittent": "Terranor Group AB",
-          "person": "Inka Kontturi",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1600,0",
-          "enhet": "Antal",
-          "pris": "38,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:56:47",
-          "emittent": "Terranor Group AB",
-          "person": "Inka Kontturi",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "37,9",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 14:56:47",
-          "emittent": "Terranor Group AB",
-          "person": "Inka Kontturi",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "7,0",
-          "enhet": "Antal",
-          "pris": "37,8",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 18,
+      "nyaSenasteKorning": 25,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-02T13:08+00:00"
+      "vintage": "2026-10-02T18:40+00:00"
     }
   }
 }
