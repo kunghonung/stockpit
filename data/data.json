@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
   "asOfDatum": "2026-10-02",
-  "genererad": "2026-10-02T00:11+00:00",
+  "genererad": "2026-10-02T06:09+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         100.45,
         101.83,
         104.09,
-        105.0,
+        105.91,
         105.91
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -170,7 +170,7 @@
         95.5,
         94.37,
         93.56,
-        92.71,
+        93.47,
         93.47
       ]
     },
@@ -201,7 +201,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 4,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -221,7 +221,7 @@
         97.31,
         96.09,
         96.72,
-        96.11,
+        95.04,
         95.04
       ]
     },
@@ -272,7 +272,7 @@
         97.11,
         95.61,
         94.05,
-        93.02,
+        92.55,
         92.55
       ]
     },
@@ -323,7 +323,7 @@
         96.43,
         96.09,
         94.04,
-        93.42,
+        92.94,
         92.94
       ]
     },
@@ -354,7 +354,7 @@
       "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 4,
+      "rsRank": 3,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -374,7 +374,7 @@
         104.29,
         106.56,
         106.67,
-        106.45,
+        104.86,
         104.86
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         92.24,
         89.73,
         85.18,
-        86.0,
+        86.37,
         86.37
       ]
     },
@@ -477,7 +477,7 @@
         93.74,
         92.13,
         88.9,
-        88.51,
+        87.86,
         87.86
       ]
     },
@@ -528,7 +528,7 @@
         109.0,
         107.98,
         102.86,
-        103.13,
+        104.96,
         104.96
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         105.63,
         103.42,
         100.26,
-        98.75,
+        98.68,
         98.68
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -632,7 +632,7 @@
         94.91,
         93.6,
         92.04,
-        91.64,
+        91.45,
         91.45
       ]
     }
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4211",
+      "varde": "4216",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,6 %",
+      "delta4v": "−7,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,47",
+      "varde": "61,56",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,0 %",
+      "delta4v": "−8,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,58",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+1,2 %",
+      "delta4v": "+0,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-02"
     },
     "olja": {
-      "v": 102.39,
+      "v": 102.1,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-02"
     }
@@ -1685,7 +1685,7 @@
           99.84,
           100.1,
           100.26,
-          100.55,
+          100.75,
           100.75
         ]
       },
@@ -1726,7 +1726,7 @@
           97.69,
           99.18,
           101.23,
-          102.03,
+          102.36,
           102.36
         ]
       },
@@ -1767,7 +1767,7 @@
           98.89,
           98.91,
           98.33,
-          99.15,
+          97.88,
           97.88
         ]
       },
@@ -1808,8 +1808,8 @@
           92.61,
           94.64,
           95.54,
-          97.48,
-          100.72
+          100.72,
+          99.64
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           101.19,
           100.59,
           100.9,
-          100.55,
+          100.6,
           100.6
         ]
       },
@@ -1890,7 +1890,7 @@
           93.72,
           94.48,
           92.66,
-          93.22,
+          93.1,
           93.1
         ]
       },
@@ -1931,7 +1931,7 @@
           98.85,
           98.32,
           96.92,
-          95.89,
+          95.25,
           95.25
         ]
       }
@@ -1968,13 +1968,13 @@
         },
         {
           "datum": "2026-09-29",
-          "namn": "Chen Yun  (CIK 0002153415); BEST SPAC I Acquisition Corp.  (CIK 0002051587)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2153415/000121390026104721"
+          "namn": "NIPPON LIFE INSURANCE CO  (CIK 0000905591); Corebridge Financial, Inc.  (CIK 0001889539)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/905591/000119312526407701"
         },
         {
           "datum": "2026-09-29",
-          "namn": "NIPPON LIFE INSURANCE CO  (CIK 0000905591); Corebridge Financial, Inc.  (CIK 0001889539)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/905591/000119312526407701"
+          "namn": "Chen Yun  (CIK 0002153415); BEST SPAC I Acquisition Corp.  (CIK 0002051587)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2153415/000121390026104721"
         },
         {
           "datum": "2026-09-29",
@@ -1982,21 +1982,32 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1111908/000139834426017538"
         },
         {
-          "datum": "2026-09-29",
-          "namn": "Ashkenazi Anat  (CIK 0001761679); Alphabet Inc.  (CIK 0001652044)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1761679/000119312526408009"
+          "datum": "2026-09-30",
+          "namn": "Kingsley Lawrence D  (CIK 0001301427); Mirion Technologies, Inc.  (CIK 0001809987)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1301427/000162828026063985"
         },
         {
           "datum": "2026-09-30",
-          "namn": "Galeta Christopher Matthew  (CIK 0002089464); Caring Brands, Inc.  (CIK 0002020737)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2089464/000149315226044996"
+          "namn": "Cola Jennifer L.  (CIK 0002070860); VerifyMe, Inc.  (CIK 0001104038)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2070860/000089183926000420"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-02T00:11+00:00"
+      "vintage": "2026-10-02T06:09+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-02 02:45:08",
+          "emittent": "Sinch AB (publ)",
+          "person": "Wendy Johnstone",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "75000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-01 21:51:32",
           "emittent": "Sinch AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "28,90",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-01 10:10:18",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Elisabet Ålander",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "12500,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-02T00:11+00:00"
+      "vintage": "2026-10-02T06:09+00:00"
     }
   }
 }
