@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
   "asOfDatum": "2026-10-02",
-  "genererad": "2026-10-03T17:35+00:00",
+  "genererad": "2026-10-03T20:12+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1942,46 +1942,6 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-09-29",
-          "namn": "Destinon Katherine  (CIK 0001839414); WEYCO GROUP INC  (CIK 0000106532)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1839414/000183941426000004"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "CORCORAN JOHN M  (CIK 0001011720); ABERDEEN MUNICIPAL INCOME FUND  (CIK 0000801961)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1011720/000101172026000004"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "DiLorenzo David L  (CIK 0001537459); ABERDEEN INTERMEDIATE INCOME FUND  (CIK 0000826735)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1537459/000153745926000002"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "Schuetz Alexander  (CIK 0001610011); HELIOS TECHNOLOGIES, INC.  (CIK 0001024795)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1610011/000119312526407385"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "Konwiser Evan  (CIK 0001924314); Global Business Travel Group, Inc.  (CIK 0001820872)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1924314/000119312526407616"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "NIPPON LIFE INSURANCE CO  (CIK 0000905591); Corebridge Financial, Inc.  (CIK 0001889539)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/905591/000119312526407701"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "Chen Yun  (CIK 0002153415); BEST SPAC I Acquisition Corp.  (CIK 0002051587)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2153415/000121390026104721"
-        },
-        {
-          "datum": "2026-09-29",
-          "namn": "KAMFAR RAMIN  (CIK 0001111908); Bluerock Private Real Estate Fund  (CIK 0001551047)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1111908/000139834426017538"
-        },
-        {
           "datum": "2026-09-30",
           "namn": "Kingsley Lawrence D  (CIK 0001301427); Mirion Technologies, Inc.  (CIK 0001809987)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1301427/000162828026063985"
@@ -1990,10 +1950,50 @@
           "datum": "2026-09-30",
           "namn": "Cola Jennifer L.  (CIK 0002070860); VerifyMe, Inc.  (CIK 0001104038)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2070860/000089183926000420"
+        },
+        {
+          "datum": "2026-09-30",
+          "namn": "Frates Caton  (CIK 0001928633); COSTCO WHOLESALE CORP /NEW  (CIK 0000909832)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1928633/000090983226000090"
+        },
+        {
+          "datum": "2026-09-30",
+          "namn": "UAW GM RETIREES MEDICAL BENEFITS PLAN  (CIK 0001795050); UAW Ford Retirees Medical Benefits Plan  (CIK 0001795052)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1795050/000110465926112487"
+        },
+        {
+          "datum": "2026-09-29",
+          "namn": "Ashkenazi Anat  (CIK 0001761679); Alphabet Inc.  (CIK 0001652044)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1761679/000119312526408009"
+        },
+        {
+          "datum": "2026-09-30",
+          "namn": "Galeta Christopher Matthew  (CIK 0002089464); Caring Brands, Inc.  (CIK 0002020737)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2089464/000149315226044996"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "BROWN RONALD  (CIK 0001036437); NEW ENGLAND REALTY ASSOCIATES LIMITED PARTNERSHIP  (CIK 0000746514)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1036437/000103643726000008"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "Schultz Robert F.  (CIK 0001526325); Midland States Bancorp, Inc.  (CIK 0001466026)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1526325/000146602626000083"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "Shine Sarah  (CIK 0002049845); ERIE INDEMNITY CO  (CIK 0000922621)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2049845/000162828026064137"
+        },
+        {
+          "datum": "2026-10-01",
+          "namn": "Aldeco Marcelo Gustavo  (CIK 0002119746); YPF SOCIEDAD ANONIMA  (CIK 0000904851)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2119746/000129281426004787"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-03T17:35+00:00"
+      "vintage": "2026-10-03T20:12+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-03T17:35+00:00"
+      "vintage": "2026-10-03T20:12+00:00"
     }
   }
 }
