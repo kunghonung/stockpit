@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
   "asOfDatum": "2026-10-02",
-  "genererad": "2026-10-04T18:46+00:00",
+  "genererad": "2026-10-04T22:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -970,7 +970,7 @@
       "varde": "4162",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−8,3 %",
+      "delta4v": "−7,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -982,7 +982,7 @@
       "varde": "60,42",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−9,8 %",
+      "delta4v": "−8,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,55",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,4 %",
+      "delta4v": "−0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-04T18:46+00:00"
+      "vintage": "2026-10-04T22:19+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-04 23:47:32",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "106,0",
+          "enhet": "Antal",
+          "pris": "24,86",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-04 22:50:54",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "20,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-04 21:25:05",
+          "emittent": "Humana AB",
+          "person": "Nina Johanna Krantz",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "3512,0",
+          "enhet": "Antal",
+          "pris": "73,131",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-04 18:50:24",
           "emittent": "NordAmps AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "65,72",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 13:39:25",
-          "emittent": "Humana AB",
-          "person": "Monica Cecilia Lingegård",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "1500,0",
-          "enhet": "Antal",
-          "pris": "73,131",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 12:38:25",
-          "emittent": "Climeon AB (publ)",
-          "person": "Thomas Öström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "296296,0",
-          "enhet": "Antal",
-          "pris": "2,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 12:30:06",
-          "emittent": "Sweden BuyersClub AB",
-          "person": "Johan Rosenson",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "7200,0",
-          "enhet": "Antal",
-          "pris": "6,95",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-04T18:46+00:00"
+      "vintage": "2026-10-04T22:19+00:00"
     }
   }
 }
