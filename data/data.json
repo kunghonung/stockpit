@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W40",
   "asOfDatum": "2026-10-02",
-  "genererad": "2026-10-04T15:19+00:00",
+  "genererad": "2026-10-04T18:46+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-04T15:19+00:00"
+      "vintage": "2026-10-04T18:46+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-04 18:50:24",
+          "emittent": "NordAmps AB",
+          "person": "NYN Consulting AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Lösen ökning",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "8,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-04 18:46:21",
+          "emittent": "Sinch AB (publ)",
+          "person": "Julia Fraser",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "125000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-04 18:09:56",
+          "emittent": "Lagercrantz Group AB",
+          "person": "Jonas Ahlberg",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "70000,0",
+          "enhet": "Antal",
+          "pris": "28,90",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-04 15:55:21",
           "emittent": "Sinch AB (publ)",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "6,95",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 11:45:44",
-          "emittent": "Humana AB",
-          "person": "Ralph David Riber",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "12000,0",
-          "enhet": "Antal",
-          "pris": "73,131",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 11:16:17",
-          "emittent": "Leading Edge Materials Corp.",
-          "person": "Eric Krafft",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "5468000,0",
-          "enhet": "Antal",
-          "pris": "0,25",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-10-02 11:16:17",
-          "emittent": "Leading Edge Materials Corp.",
-          "person": "Eric Krafft",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "5468000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "CAD"
         }
       ],
-      "nyaSenasteKorning": 11,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-04T15:19+00:00"
+      "vintage": "2026-10-04T18:46+00:00"
     }
   }
 }
