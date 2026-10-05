@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
   "asOfDatum": "2026-10-05",
-  "genererad": "2026-10-05T01:15+00:00",
+  "genererad": "2026-10-05T07:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.3,
-      "delta": "+0,4 · 1 v",
+      "varde": 16.3,
+      "delta": "+0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.3,
+      "varde": 16.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4189",
+      "varde": "4181",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,4 %",
+      "delta4v": "−6,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,82",
+      "varde": "61,64",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,4 %",
+      "delta4v": "−6,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,58",
       "enhet": "USD/t",
-      "pil": "upp",
-      "delta4v": "+0,5 %",
+      "pil": "ned",
+      "delta4v": "−0,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-05"
     },
     "olja": {
-      "v": 101.92,
+      "v": 101.43,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-05"
     }
@@ -1809,7 +1809,7 @@
           94.64,
           95.54,
           98.93,
-          101.15
+          101.3
         ]
       },
       {
@@ -1997,6 +1997,83 @@
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-05 09:13:22",
+          "emittent": "Lagercrantz Group AB",
+          "person": "Kristian Mäkelä",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "6000,0",
+          "enhet": "Antal",
+          "pris": "28,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-05 09:13:03",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "3940,0",
+          "enhet": "Antal",
+          "pris": "10,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-05 09:13:03",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "4,0",
+          "enhet": "Antal",
+          "pris": "10,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-05 09:04:36",
+          "emittent": "Lagercrantz Group AB",
+          "person": "Frida Gabriel Holmer",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "28,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-05 08:57:59",
+          "emittent": "Polygiene Group AB",
+          "person": "Granville Falshaw",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1700,0",
+          "enhet": "Antal",
+          "pris": "3,38",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-05 08:57:59",
+          "emittent": "Polygiene Group AB",
+          "person": "Granville Falshaw",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "3,29",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-05 07:52:40",
+          "emittent": "Linjemontage i Grästorp AB",
+          "person": "Bo Jonas Lindberg",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "4348,0",
+          "enhet": "Antal",
+          "pris": "6,70",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-04 23:47:32",
           "emittent": "Nodebis Applications AB (publ)",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "28,90",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 15:36:47",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Olivia Johnsson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 15:21:55",
-          "emittent": "NordAmps AB",
-          "person": "Magnus Eriksson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "455336,0",
-          "enhet": "Antal",
-          "pris": "15,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 14:47:12",
-          "emittent": "Mofast AB (Publ)",
-          "person": "Magnus Malm",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "13,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 14:39:43",
-          "emittent": "Humana AB",
-          "person": "Fredrik Strömholm",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "13238425,0",
-          "enhet": "Antal",
-          "pris": "73,131",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 14:26:15",
-          "emittent": "Humana AB",
-          "person": "Anders Nyberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "52700,0",
-          "enhet": "Antal",
-          "pris": "73,131",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 14:26:12",
-          "emittent": "Sveafastigheter AB (publ)",
-          "person": "Sophia Mattsson Linnala",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "9000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-02 14:07:38",
-          "emittent": "MEKO AB",
-          "person": "Pehr Oscarsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "25000,0",
-          "enhet": "Antal",
-          "pris": "65,72",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-05T01:15+00:00"
+      "vintage": "2026-10-05T07:40+00:00"
     }
   }
 }
