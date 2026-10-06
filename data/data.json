@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
-  "asOfDatum": "2026-10-05",
-  "genererad": "2026-10-05T23:09+00:00",
+  "asOfDatum": "2026-10-06",
+  "genererad": "2026-10-06T03:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-05",
+      "vintage": "2026-10-06",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-05",
+      "vintage": "2026-10-06",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4168",
+      "varde": "4157",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,9 %",
+      "delta4v": "−6,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-05"
+      "vintage": "2026-10-06"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,42",
+      "varde": "61,06",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,0 %",
+      "delta4v": "−7,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-05"
+      "vintage": "2026-10-06"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,64",
+      "varde": "6,66",
       "enhet": "USD/t",
-      "pil": "upp",
-      "delta4v": "+0,7 %",
+      "pil": "ned",
+      "delta4v": "−1,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-05"
+      "vintage": "2026-10-06"
     },
     "olja": {
-      "v": 100.27,
+      "v": 100.59,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-05"
+      "vintage": "2026-10-06"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-05",
+    "vintage": "2026-10-06",
     "marknader": [
       {
         "namn": "USA",
@@ -1751,24 +1751,24 @@
         ],
         "relSerie19": [
           100.0,
-          100.34,
-          99.91,
-          102.2,
-          103.65,
-          100.81,
-          102.63,
-          103.57,
-          102.9,
-          101.41,
-          100.51,
-          100.87,
-          100.84,
-          99.54,
-          98.89,
-          98.91,
-          98.33,
-          97.79,
-          97.52
+          99.04,
+          98.29,
+          103.16,
+          100.1,
+          99.2,
+          101.38,
+          102.58,
+          102.91,
+          99.36,
+          98.28,
+          99.34,
+          98.36,
+          96.25,
+          96.68,
+          97.76,
+          95.58,
+          96.5,
+          95.89
         ]
       },
       {
@@ -1792,24 +1792,24 @@
         ],
         "relSerie19": [
           100.0,
-          97.83,
-          104.73,
-          104.24,
-          103.56,
-          100.81,
-          95.95,
-          97.09,
-          95.4,
-          94.22,
-          98.17,
-          95.18,
-          95.58,
-          93.12,
-          92.61,
-          94.64,
-          95.54,
-          98.93,
-          100.66
+          106.49,
+          102.83,
+          105.72,
+          102.67,
+          95.13,
+          97.48,
+          97.55,
+          98.08,
+          99.54,
+          95.13,
+          96.57,
+          94.39,
+          92.47,
+          94.88,
+          97.43,
+          99.19,
+          102.18,
+          101.72
         ]
       },
       {
@@ -1942,61 +1942,72 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-10-02",
-          "namn": "Parks David  (CIK 0002042338); TREDEGAR CORP  (CIK 0000850429)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2042338/000162828026064388"
+          "datum": "2026-10-05",
+          "namn": "Marting Walter A. Jr  (CIK 0001528825); Comstock Inc.  (CIK 0001120970)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1528825/000143774926031953"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "Nechmad Yair  (CIK 0001999370); Nayax Ltd.  (CIK 0001901279)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1999370/000197640826000880"
+          "datum": "2026-10-05",
+          "namn": "Burnett Gavin  (CIK 0001994354); Locafy Ltd  (CIK 0001875547)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1994354/000149315226045709"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "Fouts John Louis  (CIK 0002039454); IES Holdings, Inc.  (CIK 0001048268)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2039454/000104826826000150"
+          "datum": "2026-10-05",
+          "namn": "Burgess John  (CIK 0001388646); TAYLOR DEVICES, INC.  (CIK 0000096536)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1388646/000137647426000627"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "RYAN UNA S  (CIK 0001255349); RenovoRx, Inc.  (CIK 0001574094)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1255349/000149315226045578"
+          "datum": "2026-10-05",
+          "namn": "Smith George Christopher  (CIK 0002141230); Core University Living Real Estate Income Trust  (CIK 0002119505)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2141230/000119312526414022"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "Lochner Daniel  (CIK 0001791187); Tectonic Therapeutic, Inc.  (CIK 0001681087)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1791187/000179118726000010"
+          "datum": "2026-10-05",
+          "namn": "Aslidis Anastasios  (CIK 0001927715); EuroDry Ltd.  (CIK 0001731388)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1927715/000192771526000010"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "Shah Alkesh  (CIK 0002120781); StableCoinX Inc.  (CIK 0002080215)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2120781/000122520826008119"
+          "datum": "2026-10-05",
+          "namn": "GRABE WILLIAM O  (CIK 0001185567); GARTNER INC  (CIK 0000749251)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1185567/000074925126000289"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "GROHOWSKI LEO P  (CIK 0001257996); MOLINA HEALTHCARE, INC.  (CIK 0001179929)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1257996/000125799626000008"
+          "datum": "2026-10-05",
+          "namn": "HERSHEY TRUST CO TRUSTEE IN TRUST FOR MILTON HERSHEY SCHOOL  (CIK 0000938543); HERSHEY CO  (CIK 0000047111)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002675"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "KRO LISA A  (CIK 0001458887); FIRST SOLAR, INC.  (CIK 0001274494)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1458887/000127449426000194"
+          "datum": "2026-10-05",
+          "namn": "Gibbs David W  (CIK 0001628590); PEPSICO INC  (CIK 0000077476)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1628590/000162828026064891"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "McCray Gregory James  (CIK 0001327057); DigitalBridge Group, Inc.  (CIK 0001679688)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1327057/000167968826000137"
+          "datum": "2026-10-05",
+          "namn": "Grant Kevin J.  (CIK 0002052034); A.K.A. BRANDS HOLDING CORP.  (CIK 0001865107)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2052034/000162828026064907"
         },
         {
-          "datum": "2026-10-02",
-          "namn": "Henderson Joseph Sean-Walsh  (CIK 0002030505); Bakkt, Inc.  (CIK 0001820302)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2030505/000162828026064667"
+          "datum": "2026-10-05",
+          "namn": "Mulacek Phil E  (CIK 0001670677); EMPIRE PETROLEUM CORP  (CIK 0000887396)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1670677/000107261326000819"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-05T23:09+00:00"
+      "vintage": "2026-10-06T03:19+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-06 04:38:30",
+          "emittent": "MoveByBike Europe AB (publ)",
+          "person": "Fredrik Videlycka",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "7964,0",
+          "enhet": "Antal",
+          "pris": "9,69",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-05 22:21:01",
           "emittent": "SciBase Holding AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "6,70",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-04 23:47:32",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "106,0",
-          "enhet": "Antal",
-          "pris": "24,86",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 6,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-05T23:09+00:00"
+      "vintage": "2026-10-06T03:19+00:00"
     }
   }
 }
