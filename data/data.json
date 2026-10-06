@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
   "asOfDatum": "2026-10-06",
-  "genererad": "2026-10-06T03:19+00:00",
+  "genererad": "2026-10-06T10:45+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.5,
-      "delta": "−0,5 · 1 v",
+      "varde": 15.4,
+      "delta": "−0,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.5,
+      "varde": 15.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4157",
+      "varde": "4184",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,4 %",
+      "delta4v": "−5,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,06",
+      "varde": "61,44",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,9 %",
+      "delta4v": "−7,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,66",
+      "varde": "6,64",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,2 %",
+      "delta4v": "−1,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-06"
     },
     "olja": {
-      "v": 100.59,
+      "v": 98.21,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-06"
     }
@@ -1768,7 +1768,7 @@
           97.76,
           95.58,
           96.5,
-          95.89
+          96.55
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           97.43,
           99.19,
           102.18,
-          101.72
+          102.6
         ]
       },
       {
@@ -1993,10 +1993,98 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-06T03:19+00:00"
+      "vintage": "2026-10-06T10:45+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-06 12:16:10",
+          "emittent": "Transfer Group AB (publ)",
+          "person": "Mats Holmberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "298000,0",
+          "enhet": "Antal",
+          "pris": "0,108",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 11:34:59",
+          "emittent": "Scandinavian Credit Fund I AB (publ)",
+          "person": "Peter Norman Ulltin",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "282648,0",
+          "enhet": "Antal",
+          "pris": "0,8844",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 11:18:34",
+          "emittent": "Bawat Water Technologies AB",
+          "person": "Laust Johnsen",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "2866965,0",
+          "enhet": "Antal",
+          "pris": "0,84",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 09:39:26",
+          "emittent": "Monivent AB",
+          "person": "John Haurum",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Konvertering minskning",
+          "volym": "3527096,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 09:39:26",
+          "emittent": "Monivent AB",
+          "person": "John Haurum",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Konvertering ökning",
+          "volym": "3527096,0",
+          "enhet": "Antal",
+          "pris": "0,13",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 09:35:17",
+          "emittent": "Monivent AB",
+          "person": "John Haurum",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Konvertering minskning",
+          "volym": "3846153,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 09:35:17",
+          "emittent": "Monivent AB",
+          "person": "John Haurum",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Konvertering ökning",
+          "volym": "3846153,0",
+          "enhet": "Antal",
+          "pris": "0,13",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-06 09:24:03",
+          "emittent": "Logistri Fastighets AB (Publ)",
+          "person": "Henrik Viktorsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "3499,0",
+          "enhet": "Antal",
+          "pris": "14,7",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-06 04:38:30",
           "emittent": "MoveByBike Europe AB (publ)",
@@ -2458,99 +2546,11 @@
           "enhet": "Antal",
           "pris": "158,9445",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 09:47:57",
-          "emittent": "H & M Hennes & Mauritz AB",
-          "person": "Karl-Johan Persson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "600000,0",
-          "enhet": "Antal",
-          "pris": "160,1216",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 09:13:22",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Kristian Mäkelä",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "6000,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 09:13:03",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3940,0",
-          "enhet": "Antal",
-          "pris": "10,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 09:13:03",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4,0",
-          "enhet": "Antal",
-          "pris": "10,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 09:04:36",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Frida Gabriel Holmer",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 08:57:59",
-          "emittent": "Polygiene Group AB",
-          "person": "Granville Falshaw",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1700,0",
-          "enhet": "Antal",
-          "pris": "3,38",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 08:57:59",
-          "emittent": "Polygiene Group AB",
-          "person": "Granville Falshaw",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "8000,0",
-          "enhet": "Antal",
-          "pris": "3,29",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 07:52:40",
-          "emittent": "Linjemontage i Grästorp AB",
-          "person": "Bo Jonas Lindberg",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "4348,0",
-          "enhet": "Antal",
-          "pris": "6,70",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 8,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-06T03:19+00:00"
+      "vintage": "2026-10-06T10:45+00:00"
     }
   }
 }
