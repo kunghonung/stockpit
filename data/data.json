@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
   "asOfDatum": "2026-10-07",
-  "genererad": "2026-10-07T01:29+00:00",
+  "genererad": "2026-10-07T07:42+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -221,7 +221,7 @@
         96.65,
         97.29,
         95.23,
-        95.17,
+        95.21,
         95.21
       ]
     },
@@ -477,7 +477,7 @@
         91.31,
         88.11,
         86.71,
-        85.36,
+        86.27,
         86.27
       ]
     },
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.0,
-      "delta": "−1,0 · 1 v",
+      "varde": 15.2,
+      "delta": "−1,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.0,
+      "varde": 15.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4179",
+      "varde": "4160",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,9 %",
+      "delta4v": "−6,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,53",
+      "varde": "60,82",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,2 %",
+      "delta4v": "−10,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,66",
+      "varde": "6,63",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,1 %",
+      "delta4v": "−2,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-07"
     },
     "olja": {
-      "v": 101.72,
+      "v": 101.22,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-07"
     }
@@ -1768,7 +1768,7 @@
           97.99,
           97.45,
           97.2,
-          97.2
+          96.7
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           97.66,
           101.13,
           103.51,
-          103.2
+          102.56
         ]
       },
       {
@@ -1931,7 +1931,7 @@
           97.6,
           96.21,
           94.08,
-          93.16,
+          93.48,
           93.48
         ]
       }
@@ -1968,13 +1968,18 @@
         },
         {
           "datum": "2026-10-05",
-          "namn": "Gibbs David W  (CIK 0001628590); PEPSICO INC  (CIK 0000077476)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1628590/000162828026064891"
+          "namn": "GRABE WILLIAM O  (CIK 0001185567); GARTNER INC  (CIK 0000749251)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1185567/000074925126000289"
         },
         {
           "datum": "2026-10-05",
           "namn": "HERSHEY TRUST CO TRUSTEE IN TRUST FOR MILTON HERSHEY SCHOOL  (CIK 0000938543); HERSHEY CO  (CIK 0000047111)",
           "lank": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002675"
+        },
+        {
+          "datum": "2026-10-05",
+          "namn": "Gibbs David W  (CIK 0001628590); PEPSICO INC  (CIK 0000077476)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1628590/000162828026064891"
         },
         {
           "datum": "2026-10-05",
@@ -1985,18 +1990,68 @@
           "datum": "2026-10-05",
           "namn": "Mulacek Phil E  (CIK 0001670677); EMPIRE PETROLEUM CORP  (CIK 0000887396)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1670677/000107261326000819"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Singh Harmit J  (CIK 0001472176); Planet Fitness, Inc.  (CIK 0001637207)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1472176/000147217626000006"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-06T21:53+00:00"
+      "vintage": "2026-10-07T07:42+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-07 09:18:17",
+          "emittent": "Saniona",
+          "person": "John Haurum",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "84317,0",
+          "enhet": "Antal",
+          "pris": "9,032",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 09:17:17",
+          "emittent": "Monivent AB",
+          "person": "Anders Lyrheden",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Konvertering minskning",
+          "volym": "235139,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 09:17:17",
+          "emittent": "Monivent AB",
+          "person": "Anders Lyrheden",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Konvertering ökning",
+          "volym": "235139,0",
+          "enhet": "Antal",
+          "pris": "0,13",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 08:53:38",
+          "emittent": "Webrock Ventures AB",
+          "person": "Christian Manhusen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "2,75",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 08:14:39",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "449237,0",
+          "enhet": "Antal",
+          "pris": "5,2972",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-06 22:50:17",
           "emittent": "H & M Hennes & Mauritz AB",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,781",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 16:44:45",
-          "emittent": "CombinedX AB (publ)",
-          "person": "Mathias Dyberg",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "4920,0",
-          "enhet": "Antal",
-          "pris": "26,1",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 15:56:42",
-          "emittent": "Lagercrantz Group AB",
-          "person": "Ewa- Bergfast",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "28,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 15:50:01",
-          "emittent": "Sinch AB (publ)",
-          "person": "James Lasbrey",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 15:27:23",
-          "emittent": "Webrock Ventures AB",
-          "person": "Christian Manhusen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Utdelning mottagen",
-          "volym": "546241,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-05 15:03:28",
-          "emittent": "Webrock Ventures AB",
-          "person": "Christian Manhusen",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "2,7",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-07T01:29+00:00"
+      "vintage": "2026-10-07T07:42+00:00"
     }
   }
 }
