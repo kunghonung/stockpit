@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
   "asOfDatum": "2026-10-07",
-  "genererad": "2026-10-07T15:31+00:00",
+  "genererad": "2026-10-07T20:46+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         102.13,
         104.2,
         104.07,
-        103.91
+        104.0
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         93.02,
         92.97,
         92.72,
-        90.98
+        90.92
       ]
     },
     {
@@ -222,7 +222,7 @@
         97.29,
         95.23,
         95.21,
-        94.81
+        95.1
       ]
     },
     {
@@ -273,7 +273,7 @@
         91.78,
         90.24,
         90.74,
-        89.79
+        89.58
       ]
     },
     {
@@ -324,7 +324,7 @@
         91.95,
         90.44,
         90.75,
-        91.58
+        90.85
       ]
     },
     {
@@ -375,7 +375,7 @@
         106.72,
         104.13,
         103.43,
-        105.81
+        104.74
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         85.32,
         86.2,
         88.0,
-        88.39
+        88.19
       ]
     },
     {
@@ -478,7 +478,7 @@
         88.11,
         86.71,
         86.27,
-        85.95
+        85.36
       ]
     },
     {
@@ -529,7 +529,7 @@
         103.67,
         105.2,
         105.46,
-        105.1
+        105.07
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         98.87,
         96.65,
         96.4,
-        95.96
+        96.17
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.18,
         90.95,
         91.22,
-        91.06
+        91.15
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 3.12,
-      "delta": "+10 bp · 1 v",
+      "varde": 3.03,
+      "delta": "−5 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-10-05",
+      "vintage": "2026-10-06",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.6,
-      "delta": "−0,8 · 1 v",
+      "varde": 15.1,
+      "delta": "−1,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 106.0,
-      "delta": "−4 · 1 v",
+      "varde": 103.0,
+      "delta": "−8 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 106.0,
+      "varde": 103.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.6,
+      "varde": 15.1,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 3.12,
+      "varde": 3.03,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.05,
-        4.84,
-        5.06,
-        5.31,
-        5.66
+        4.04,
+        4.79,
+        5.03,
+        5.27,
+        5.64
       ],
       "forr": [
-        3.75,
-        4.34,
-        4.52,
-        4.77,
-        5.25
+        3.77,
+        4.37,
+        4.54,
+        4.78,
+        5.24
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-05",
-      "not": "Brantande 2s10s: +4 bp/mån."
+      "vintage": "2026-10-06",
+      "not": "Brantande 2s10s: +7 bp/mån."
     },
     "bredd": {
       "over50": 29,
@@ -958,19 +958,19 @@
       "spread": -11.9
     },
     "realranta": {
-      "varde": "2,95 %",
+      "varde": "2,91 %",
       "pil": "upp",
-      "delta": "+53 bp · 1 mån",
+      "delta": "+48 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-05"
+      "vintage": "2026-10-06"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4129",
+      "varde": "4136",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,4 %",
+      "delta4v": "−7,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,97",
+      "varde": "60,03",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−11,7 %",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,65",
+      "varde": "6,64",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−2,3 %",
+      "delta4v": "−2,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-07"
     },
     "olja": {
-      "v": 101.79,
+      "v": 101.1,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-07"
     }
@@ -1768,7 +1768,7 @@
           97.99,
           97.45,
           97.2,
-          97.11
+          96.91
         ]
       },
       {
@@ -1942,61 +1942,193 @@
     "us": {
       "poster": [
         {
+          "datum": "2026-10-06",
+          "namn": "Underwood Paul D.  (CIK 0001598312); PagerDuty, Inc.  (CIK 0001568100)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1598312/000159831226000012"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Ahrens Douglas T  (CIK 0001589800); Virgin Galactic Holdings, Inc  (CIK 0001706946)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1589800/000158980026000012"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Wadecki Adam A  (CIK 0002021942); Eaton Corp plc  (CIK 0001551182)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2021942/000110465926114054"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Rajaram Gokul  (CIK 0001589043); PINTEREST, INC.  (CIK 0001506293)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1589043/000158904326000015"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Krempa David  (CIK 0001968254); Eton Pharmaceuticals, Inc.  (CIK 0001710340)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1968254/000143774926032240"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Franklin Sam  (CIK 0002115986); GLOBALFOUNDRIES Inc.  (CIK 0001709048)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2115986/000170904826000245"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Reardon Andrew  (CIK 0001950232); LIGAND PHARMACEUTICALS INC  (CIK 0000886163)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1950232/000195023226000003"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "LEE DEBRA L  (CIK 0001119838); Warner Bros. Discovery, Inc.  (CIK 0001437107)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1119838/000143710726000081"
+        },
+        {
+          "datum": "2026-10-06",
+          "namn": "Lai Sam  (CIK 0001904116); Hour Loop, Inc  (CIK 0001874875)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1904116/000149315226046042"
+        },
+        {
           "datum": "2026-10-05",
           "namn": "Marting Walter A. Jr  (CIK 0001528825); Comstock Inc.  (CIK 0001120970)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1528825/000143774926031953"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Burnett Gavin  (CIK 0001994354); Locafy Ltd  (CIK 0001875547)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1994354/000149315226045709"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Burgess John  (CIK 0001388646); TAYLOR DEVICES, INC.  (CIK 0000096536)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1388646/000137647426000627"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Smith George Christopher  (CIK 0002141230); Core University Living Real Estate Income Trust  (CIK 0002119505)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2141230/000119312526414022"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Aslidis Anastasios  (CIK 0001927715); EuroDry Ltd.  (CIK 0001731388)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1927715/000192771526000010"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Gibbs David W  (CIK 0001628590); PEPSICO INC  (CIK 0000077476)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1628590/000162828026064891"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "HERSHEY TRUST CO TRUSTEE IN TRUST FOR MILTON HERSHEY SCHOOL  (CIK 0000938543); HERSHEY CO  (CIK 0000047111)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002675"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Grant Kevin J.  (CIK 0002052034); A.K.A. BRANDS HOLDING CORP.  (CIK 0001865107)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2052034/000162828026064907"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Mulacek Phil E  (CIK 0001670677); EMPIRE PETROLEUM CORP  (CIK 0000887396)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1670677/000107261326000819"
-        },
-        {
-          "datum": "2026-10-05",
-          "namn": "Singh Harmit J  (CIK 0001472176); Planet Fitness, Inc.  (CIK 0001637207)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1472176/000147217626000006"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-07T15:31+00:00"
+      "vintage": "2026-10-07T20:46+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-07 22:05:41",
+          "emittent": "HEXICON AB",
+          "person": "Henrik Baltscheffsky",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "500000,0",
+          "enhet": "Antal",
+          "pris": "0,11",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 22:03:57",
+          "emittent": "HEXICON AB",
+          "person": "Henrik Baltscheffsky",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "500000,0",
+          "enhet": "Antal",
+          "pris": "0,11",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 21:43:59",
+          "emittent": "District Metals Corp.",
+          "person": "Mary Cameron",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen ökning",
+          "volym": "110516,0",
+          "enhet": "Antal",
+          "pris": "0,448",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 21:23:41",
+          "emittent": "Foremont Group AB",
+          "person": "Robert Burén",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "700000,0",
+          "enhet": "Antal",
+          "pris": "10,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 21:21:51",
+          "emittent": "District Metals Corp.",
+          "person": "Mary Cameron",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen minskning",
+          "volym": "250000,0",
+          "enhet": "Antal",
+          "pris": "0,25",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 20:55:11",
+          "emittent": "District Metals Corp",
+          "person": "Marlis Yassin",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen minskning",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "0,25",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 20:55:11",
+          "emittent": "District Metals Corp",
+          "person": "Marlis Yassin",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen ökning",
+          "volym": "66309,0",
+          "enhet": "Antal",
+          "pris": "0,448",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 19:18:17",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Aneta Pokucinska",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1500,0",
+          "enhet": "Antal",
+          "pris": "159,55",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 18:53:23",
+          "emittent": "Soltech Energy Sweden AB (publ)",
+          "person": "Timo Petteri Saarinen",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "3621560,0",
+          "enhet": "Antal",
+          "pris": "0,057",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-07 18:42:20",
+          "emittent": "District Metals Corporation",
+          "person": "Douglas Ramshaw",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen minskning",
+          "volym": "250000,0",
+          "enhet": "Antal",
+          "pris": "0,25",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 18:42:20",
+          "emittent": "District Metals Corporation",
+          "person": "Douglas Ramshaw",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen ökning",
+          "volym": "110516,0",
+          "enhet": "Antal",
+          "pris": "0,25",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 18:10:32",
+          "emittent": "Ranplan Group AB",
+          "person": "Per Lindberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "800,0",
+          "enhet": "Antal",
+          "pris": "0,5",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-07 17:08:50",
           "emittent": "Job Solution Sweden Holding AB (publ)",
@@ -2414,143 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,13",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 18:24:26",
-          "emittent": "Monivent AB",
-          "person": "Maria Lindqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Gåva mottagen",
-          "volym": "181816,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 18:24:26",
-          "emittent": "Monivent AB",
-          "person": "Maria Lindqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen minskning",
-          "volym": "181816,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 18:24:26",
-          "emittent": "Monivent AB",
-          "person": "Maria Lindqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen ökning",
-          "volym": "181816,0",
-          "enhet": "Antal",
-          "pris": "0,13",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 17:57:48",
-          "emittent": "Webrock Ventures AB aktie",
-          "person": "Anna Söderberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utdelning mottagen",
-          "volym": "546241,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 17:48:43",
-          "emittent": "Lappland Guldprospektering AB",
-          "person": "Karl Åke Johansson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100,0",
-          "enhet": "Antal",
-          "pris": "152,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:56:35",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lena Sundsvik",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "20,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:55:27",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "0,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:51:19",
-          "emittent": "Coffee Stain Group AB",
-          "person": "Per Anton Westbergh",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Tilldelning",
-          "volym": "750000,0",
-          "enhet": "Antal",
-          "pris": "3,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:51:18",
-          "emittent": "Coffee Stain Group AB",
-          "person": "Erik Sunnerdahl",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Tilldelning",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "3,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:47:47",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "245601,0",
-          "enhet": "Antal",
-          "pris": "20,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:21:06",
-          "emittent": "Premium Snacks Nordic AB",
-          "person": "Björn Krasse",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "3116,0",
-          "enhet": "Antal",
-          "pris": "31,35",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 16:12:29",
-          "emittent": "Lärkberget AB",
-          "person": "Rasmus Wiman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4706,0",
-          "enhet": "Antal",
-          "pris": "2,21",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 25,
+      "nyaSenasteKorning": 12,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-07T15:31+00:00"
+      "vintage": "2026-10-07T20:46+00:00"
     }
   }
 }
