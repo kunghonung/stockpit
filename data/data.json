@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
-  "asOfDatum": "2026-10-07",
-  "genererad": "2026-10-07T20:46+00:00",
+  "asOfDatum": "2026-10-08",
+  "genererad": "2026-10-08T00:56+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-07",
+      "vintage": "2026-10-08",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-07",
+      "vintage": "2026-10-08",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4136",
+      "varde": "4134",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−7,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-07"
+      "vintage": "2026-10-08"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,03",
+      "varde": "59,99",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−11,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-07"
+      "vintage": "2026-10-08"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,64",
+      "varde": "6,65",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−2,5 %",
+      "delta4v": "−2,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-07"
+      "vintage": "2026-10-08"
     },
     "olja": {
-      "v": 101.1,
+      "v": 101.36,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-07"
+      "vintage": "2026-10-08"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-07",
+    "vintage": "2026-10-08",
     "marknader": [
       {
         "namn": "USA",
@@ -1686,7 +1686,7 @@
           101.03,
           101.41,
           101.55,
-          101.93
+          102.02
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           100.28,
           101.57,
           101.82,
-          102.11
+          102.27
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           97.66,
           101.13,
           103.51,
-          103.51
+          102.06
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           97.3,
           97.44,
           97.24,
-          96.74
+          96.63
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           93.24,
           91.34,
           92.08,
-          91.81
+          91.7
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           96.21,
           94.08,
           93.48,
-          92.92
+          92.89
         ]
       }
     ],
@@ -1997,6 +1997,39 @@
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-07 23:20:06",
+          "emittent": "District Metals Corp.",
+          "person": "Garrett Ainsworth",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen minskning",
+          "volym": "750000,0",
+          "enhet": "Antal",
+          "pris": "0,25",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 23:20:06",
+          "emittent": "District Metals Corp.",
+          "person": "Garrett Ainsworth",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen ökning",
+          "volym": "331549,0",
+          "enhet": "Antal",
+          "pris": "0,448",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-10-07 23:04:38",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "112643,0",
+          "enhet": "Antal",
+          "pris": "5,2095",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-07 22:05:41",
           "emittent": "HEXICON AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "11,08",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 20:10:05",
-          "emittent": "Moberg Pharma AB (publ)",
-          "person": "Richard Ding",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "98488,0",
-          "enhet": "Antal",
-          "pris": "11,53",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 20:04:42",
-          "emittent": "Monivent AB",
-          "person": "John Haurum",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Konvertering minskning",
-          "volym": "1923076,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-06 20:04:42",
-          "emittent": "Monivent AB",
-          "person": "John Haurum",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Konvertering ökning",
-          "volym": "1923076,0",
-          "enhet": "Antal",
-          "pris": "0,13",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 12,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-07T20:46+00:00"
+      "vintage": "2026-10-08T00:56+00:00"
     }
   }
 }
