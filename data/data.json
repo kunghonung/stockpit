@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
   "asOfDatum": "2026-10-09",
-  "genererad": "2026-10-09T01:10+00:00",
+  "genererad": "2026-10-09T07:59+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 2,
+      "rsRank": 1,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -114,7 +114,7 @@
         99.91,
         102.13,
         104.2,
-        104.0,
+        102.57,
         102.57
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         93.83,
         93.02,
         92.97,
-        90.92,
+        91.61,
         91.61
       ]
     },
@@ -221,7 +221,7 @@
         96.65,
         97.29,
         95.23,
-        95.1,
+        96.2,
         96.2
       ]
     },
@@ -272,7 +272,7 @@
         93.3,
         91.78,
         90.24,
-        89.58,
+        90.5,
         90.5
       ]
     },
@@ -323,7 +323,7 @@
         93.96,
         91.95,
         90.44,
-        90.85,
+        93.16,
         93.16
       ]
     },
@@ -374,7 +374,7 @@
         106.61,
         106.72,
         104.13,
-        104.74,
+        104.78,
         104.78
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         89.88,
         85.32,
         86.2,
-        88.19,
+        88.4,
         88.4
       ]
     },
@@ -477,7 +477,7 @@
         91.31,
         88.11,
         86.71,
-        85.36,
+        86.31,
         86.31
       ]
     },
@@ -508,7 +508,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 1,
+      "rsRank": 2,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -528,7 +528,7 @@
         108.82,
         103.67,
         105.2,
-        105.07,
+        108.65,
         108.65
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         101.98,
         98.87,
         96.65,
-        96.17,
+        97.44,
         97.44
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         92.73,
         91.18,
         90.95,
-        91.15,
+        91.82,
         91.82
       ]
     }
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.4,
-      "delta": "−1,0 · 1 v",
+      "varde": 15.3,
+      "delta": "−0,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.4,
+      "varde": 15.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4170",
+      "varde": "4217",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,4 %",
+      "delta4v": "−4,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,81",
+      "varde": "60,72",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,0 %",
+      "delta4v": "−5,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,56",
+      "varde": "6,66",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+1,5 %",
+      "delta4v": "+3,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-09"
     },
     "olja": {
-      "v": 103.85,
+      "v": 103.28,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-09"
     }
@@ -1685,7 +1685,7 @@
           100.87,
           101.03,
           101.41,
-          102.02,
+          102.17,
           102.17
         ]
       },
@@ -1726,7 +1726,7 @@
           98.24,
           100.28,
           101.57,
-          102.27,
+          101.48,
           101.48
         ]
       },
@@ -1767,8 +1767,8 @@
           98.58,
           97.99,
           97.45,
-          96.91,
-          96.73
+          96.73,
+          97.49
         ]
       },
       {
@@ -1808,8 +1808,8 @@
           96.74,
           97.66,
           101.13,
-          103.28,
-          101.43
+          102.4,
+          102.39
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           97.0,
           97.3,
           97.44,
-          96.63,
+          95.35,
           95.35
         ]
       },
@@ -1890,7 +1890,7 @@
           95.08,
           93.24,
           91.34,
-          91.7,
+          91.73,
           91.73
         ]
       },
@@ -1931,7 +1931,7 @@
           97.6,
           96.21,
           94.08,
-          92.89,
+          92.31,
           92.31
         ]
       }
@@ -1993,10 +1993,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-09T01:10+00:00"
+      "vintage": "2026-10-09T07:59+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-09 09:45:14",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "160,5274",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-09 09:45:14",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "500000,0",
+          "enhet": "Antal",
+          "pris": "162,1926",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-09 09:45:14",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "700000,0",
+          "enhet": "Antal",
+          "pris": "162,4128",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-09 09:04:03",
+          "emittent": "Isofol Medical AB (publ)",
+          "person": "Helena Taflin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "63000,0",
+          "enhet": "Antal",
+          "pris": "0,77",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-09 08:39:51",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "80000,0",
+          "enhet": "Antal",
+          "pris": "0,039",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-09 08:39:51",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "0,036",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-09 08:39:51",
+          "emittent": "IMHO Intermedia House AB",
+          "person": "Lars Joachim Rambe",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "25000,0",
+          "enhet": "Antal",
+          "pris": "0,037",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-08 23:04:28",
           "emittent": "Alzinova AB",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "10,8",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "521,0",
-          "enhet": "Antal",
-          "pris": "10,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "250,0",
-          "enhet": "Antal",
-          "pris": "10,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1824,0",
-          "enhet": "Antal",
-          "pris": "10,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "7851,0",
-          "enhet": "Antal",
-          "pris": "10,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "7149,0",
-          "enhet": "Antal",
-          "pris": "10,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5334,0",
-          "enhet": "Antal",
-          "pris": "10,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9666,0",
-          "enhet": "Antal",
-          "pris": "10,6",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-09T01:10+00:00"
+      "vintage": "2026-10-09T07:59+00:00"
     }
   }
 }
