@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
-  "asOfDatum": "2026-10-08",
-  "genererad": "2026-10-08T20:40+00:00",
+  "asOfDatum": "2026-10-09",
+  "genererad": "2026-10-09T01:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-08",
+      "vintage": "2026-10-09",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-08",
+      "vintage": "2026-10-09",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,26 +967,26 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4159",
+      "varde": "4170",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,6 %",
+      "delta4v": "−5,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-08"
+      "vintage": "2026-10-09"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,41",
+      "varde": "59,81",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,6 %",
+      "delta4v": "−7,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-08"
+      "vintage": "2026-10-09"
     },
     "koppar": {
       "namn": "Koppar",
@@ -999,12 +999,12 @@
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-08"
+      "vintage": "2026-10-09"
     },
     "olja": {
-      "v": 103.59,
+      "v": 103.85,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-08"
+      "vintage": "2026-10-09"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-08",
+    "vintage": "2026-10-09",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           97.66,
           101.13,
           103.28,
-          102.4
+          101.43
         ]
       },
       {
@@ -1943,6 +1943,31 @@
       "poster": [
         {
           "datum": "2026-10-06",
+          "namn": "OCONNOR SHAWN  (CIK 0001227877); Simulations Plus, Inc.  (CIK 0001023459)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1227877/000122787726000005"
+        },
+        {
+          "datum": "2026-10-07",
+          "namn": "Rowe Zane  (CIK 0001444158); Workday, Inc.  (CIK 0001327811)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1444158/000144415826000020"
+        },
+        {
+          "datum": "2026-10-07",
+          "namn": "MOODY H. CRAIG  (CIK 0001298129); SECURITY NATIONAL FINANCIAL CORP  (CIK 0000318673)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1298129/000109690626001518"
+        },
+        {
+          "datum": "2026-10-07",
+          "namn": "McManus John  (CIK 0001440053); MGM Resorts International  (CIK 0000789570)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1440053/000078957026000091"
+        },
+        {
+          "datum": "2026-10-07",
+          "namn": "STEELE JEANNA  (CIK 0001741304); Sunrun Inc.  (CIK 0001469367)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1741304/000146936726000062"
+        },
+        {
+          "datum": "2026-10-06",
           "namn": "Wadecki Adam A  (CIK 0002021942); Eaton Corp plc  (CIK 0001551182)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2021942/000110465926114054"
         },
@@ -1965,38 +1990,24 @@
           "datum": "2026-10-06",
           "namn": "Krempa David  (CIK 0001968254); Eton Pharmaceuticals, Inc.  (CIK 0001710340)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1968254/000143774926032240"
-        },
-        {
-          "datum": "2026-10-06",
-          "namn": "Reardon Andrew  (CIK 0001950232); LIGAND PHARMACEUTICALS INC  (CIK 0000886163)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1950232/000195023226000003"
-        },
-        {
-          "datum": "2026-10-06",
-          "namn": "Franklin Sam  (CIK 0002115986); GLOBALFOUNDRIES Inc.  (CIK 0001709048)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2115986/000170904826000245"
-        },
-        {
-          "datum": "2026-10-06",
-          "namn": "Lai Sam  (CIK 0001904116); Hour Loop, Inc  (CIK 0001874875)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1904116/000149315226046042"
-        },
-        {
-          "datum": "2026-10-06",
-          "namn": "LEE DEBRA L  (CIK 0001119838); Warner Bros. Discovery, Inc.  (CIK 0001437107)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1119838/000143710726000081"
-        },
-        {
-          "datum": "2026-10-07",
-          "namn": "Muken Ross  (CIK 0002005463); SOPHiA GENETICS SA  (CIK 0001840706)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2005463/000184070626000328"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-08T20:40+00:00"
+      "vintage": "2026-10-09T01:10+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-08 23:04:28",
+          "emittent": "Alzinova AB",
+          "person": "Erik Kullgren",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "184000,0",
+          "enhet": "Antal",
+          "pris": "1,26",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-08 21:30:08",
           "emittent": "Gentoo Media Inc.",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "10,6",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-07 12:27:47",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "515,0",
-          "enhet": "Antal",
-          "pris": "10,9",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-08T20:40+00:00"
+      "vintage": "2026-10-09T01:10+00:00"
     }
   }
 }
