@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W41",
   "asOfDatum": "2026-10-09",
-  "genererad": "2026-10-11T18:26+00:00",
+  "genererad": "2026-10-11T22:26+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4216",
+      "varde": "4212",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,4 %",
+      "delta4v": "−3,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,05",
+      "varde": "61,22",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,4 %",
+      "delta4v": "−3,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,69",
+      "varde": "6,70",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+3,4 %",
+      "delta4v": "+5,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-09"
     },
     "olja": {
-      "v": 104.72,
+      "v": 105.4,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-09"
     }
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-11T18:26+00:00"
+      "vintage": "2026-10-11T22:26+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-11T18:26+00:00"
+      "vintage": "2026-10-11T22:26+00:00"
     }
   }
 }
