@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-12",
-  "genererad": "2026-10-12T01:44+00:00",
+  "genererad": "2026-10-12T09:06+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 14.8,
-      "delta": "−0,5 · 1 v",
+      "varde": 15.5,
+      "delta": "−0,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 14.8,
+      "varde": 15.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4234",
+      "varde": "4198",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,7 %",
+      "delta4v": "−3,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "61,52",
+      "varde": "60,78",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,1 %",
+      "delta4v": "−4,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,73",
+      "varde": "6,74",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,4 %",
+      "delta4v": "+6,5 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-12"
     },
     "olja": {
-      "v": 103.26,
+      "v": 105.53,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-12"
     }
@@ -1768,7 +1768,7 @@
           97.99,
           97.45,
           96.99,
-          96.99
+          97.46
         ]
       },
       {
@@ -1993,10 +1993,131 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-12T01:44+00:00"
+      "vintage": "2026-10-12T09:06+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Petra Stebner Jerleke",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen minskning",
+          "volym": "652035,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Petra Stebner Jerleke",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen ökning",
+          "volym": "75826,0",
+          "enhet": "Antal",
+          "pris": "10,834806",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Petra Stebner Jerleke",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Utbyte minskning",
+          "volym": "162797,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Petra Stebner Jerleke",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Utbyte ökning",
+          "volym": "162797,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Petra Stebner Jerleke",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Utbyte ökning",
+          "volym": "162797,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Peter Greberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen minskning",
+          "volym": "2328696,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Peter Greberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lösen ökning",
+          "volym": "270808,0",
+          "enhet": "Antal",
+          "pris": "10,834806",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Peter Greberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Utbyte minskning",
+          "volym": "560683,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Peter Greberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Utbyte ökning",
+          "volym": "560683,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 10:41:34",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Peter Greberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Utbyte ökning",
+          "volym": "560683,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-12 08:23:25",
+          "emittent": "Vaccinium Holding ApS",
+          "person": "Karl Kristian Bergman Jensen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "16,85",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-11 01:38:08",
           "emittent": "Beammwave AB",
@@ -2425,132 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 12:53:04",
-          "emittent": "Sinch AB (publ)",
-          "person": "Sofia Ohlander",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "2450,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:50:56",
-          "emittent": "alzinova AB",
-          "person": "Tord Evert Sigfried Labuda",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "52009,0",
-          "enhet": "Antal",
-          "pris": "1,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:24:44",
-          "emittent": "Alzinova AB",
-          "person": "Sebastian Hansson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "35540,0",
-          "enhet": "Antal",
-          "pris": "1,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:23:07",
-          "emittent": "Alzinova AB",
-          "person": "Sebastian Hansson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Teckning",
-          "volym": "21498,0",
-          "enhet": "Antal",
-          "pris": "1,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:20:53",
-          "emittent": "Svevik Industri AB",
-          "person": "Dan Karlsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "293750,0",
-          "enhet": "Antal",
-          "pris": "52,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:20:53",
-          "emittent": "Svevik Industri AB",
-          "person": "Dan Karlsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "293750,0",
-          "enhet": "Antal",
-          "pris": "52,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:17:47",
-          "emittent": "Svevik Industri AB",
-          "person": "Dan Karlsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "705000,0",
-          "enhet": "Antal",
-          "pris": "52,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 10:17:47",
-          "emittent": "Svevik Industri AB",
-          "person": "Dan Karlsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "705000,0",
-          "enhet": "Antal",
-          "pris": "52,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-08 09:24:08",
-          "emittent": "District Metals Corp",
-          "person": "Jonathan Challis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "250000,0",
-          "enhet": "Antal",
-          "pris": "0,25",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-10-08 09:24:08",
-          "emittent": "District Metals Corp",
-          "person": "Jonathan Challis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen ökning",
-          "volym": "110516,0",
-          "enhet": "Antal",
-          "pris": "0,25",
-          "valuta": "CAD"
-        },
-        {
-          "publicerad": "2026-10-07 23:20:06",
-          "emittent": "District Metals Corp.",
-          "person": "Garrett Ainsworth",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Lösen minskning",
-          "volym": "750000,0",
-          "enhet": "Antal",
-          "pris": "0,25",
-          "valuta": "CAD"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 11,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-12T01:44+00:00"
+      "vintage": "2026-10-12T09:06+00:00"
     }
   }
 }
