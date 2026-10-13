@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-13",
-  "genererad": "2026-10-13T16:25+00:00",
+  "genererad": "2026-10-13T21:31+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         101.27,
         99.59,
         98.44,
-        98.23
+        98.41
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         91.15,
         89.73,
         89.73,
-        88.9
+        89.49
       ]
     },
     {
@@ -222,7 +222,7 @@
         97.8,
         96.73,
         97.72,
-        98.71
+        98.46
       ]
     },
     {
@@ -273,7 +273,7 @@
         91.5,
         91.51,
         91.58,
-        91.72
+        92.11
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.8,
         96.06,
         97.25,
-        97.18
+        97.01
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.92,
         109.66,
         110.48,
-        109.18
+        109.0
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.34,
         88.73,
         89.26,
-        89.43
+        89.78
       ]
     },
     {
@@ -478,7 +478,7 @@
         90.28,
         90.99,
         91.72,
-        91.4
+        91.54
       ]
     },
     {
@@ -529,7 +529,7 @@
         113.35,
         116.09,
         117.82,
-        119.25
+        119.95
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         96.88,
         97.99,
         98.62,
-        98.63
+        98.22
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.13,
         92.38,
         91.96,
-        92.1
+        92.05
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.4,
-      "delta": "+0,4 · 1 v",
+      "varde": 15.3,
+      "delta": "+0,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.4,
+      "varde": 15.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.05,
-        4.75,
-        4.99,
-        5.22,
+        4.06,
+        4.8,
+        5.02,
+        5.24,
         5.6
       ],
       "forr": [
-        3.81,
-        4.43,
-        4.61,
-        4.83,
-        5.28
+        3.86,
+        4.56,
+        4.75,
+        4.95,
+        5.37
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-08",
-      "not": "Brantande 2s10s: +7 bp/mån."
+      "vintage": "2026-10-09",
+      "not": "Brantande 2s10s: +5 bp/mån."
     },
     "bredd": {
       "over50": 36,
@@ -958,19 +958,19 @@
       "spread": 1.3
     },
     "realranta": {
-      "varde": "2,87 %",
+      "varde": "2,91 %",
       "pil": "upp",
-      "delta": "+41 bp · 1 mån",
+      "delta": "+36 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-08"
+      "vintage": "2026-10-09"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4183",
+      "varde": "4184",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,5 %",
+      "delta4v": "−3,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,53",
+      "varde": "59,40",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,9 %",
+      "delta4v": "−6,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-13"
     },
     "olja": {
-      "v": 105.69,
+      "v": 106.36,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-13"
     }
@@ -1686,7 +1686,7 @@
           101.55,
           102.21,
           102.32,
-          102.33
+          102.27
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           99.72,
           99.45,
           98.92,
-          98.64
+          98.56
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           98.21,
-          98.23
+          98.07
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           99.05,
           101.44,
           102.68,
-          100.94
+          100.78
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.19,
           92.51,
           91.76,
-          91.13
+          91.16
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           95.68,
           97.63,
           97.05,
-          97.0
+          96.98
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           92.45,
           91.02,
           91.82,
-          93.7
+          93.53
         ]
       }
     ],
@@ -1943,8 +1943,33 @@
       "poster": [
         {
           "datum": "2026-10-13",
+          "namn": "GIERTZ JAMES R  (CIK 0001226578); Schneider National, Inc.  (CIK 0001692063)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1226578/000122657826000011"
+        },
+        {
+          "datum": "2026-10-13",
           "namn": "RUBIN ROBERT J.  (CIK 0001413631); SOLIGENIX, INC.  (CIK 0000812796)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1413631/000141363126000004"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Pease Alexander W  (CIK 0001515026); Sunbelt Rentals Holdings, Inc.  (CIK 0002083785)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1515026/000119312526420604"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Follmann Christian  (CIK 0001907321); Hercules Capital, Inc.  (CIK 0001280784)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1907321/000190732126000008"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "LOREE JAMES M  (CIK 0001214752); UNITED NATURAL FOODS INC  (CIK 0001020859)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1214752/000162828026065703"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Boroditsky Marc  (CIK 0001779922); Nebius Group N.V.  (CIK 0001513845)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1779922/000151384526000128"
         },
         {
           "datum": "2026-10-13",
@@ -1953,50 +1978,69 @@
         },
         {
           "datum": "2026-10-13",
-          "namn": "GIERTZ JAMES R  (CIK 0001226578); Schneider National, Inc.  (CIK 0001692063)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1226578/000122657826000011"
+          "namn": "RIEMER JOSEPH  (CIK 0001215582); SONO TEK CORP  (CIK 0000806172)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1215582/000117152026000302"
         },
         {
           "datum": "2026-10-13",
-          "namn": "MATT PETER R  (CIK 0001814443); COMMERCIAL METALS Co  (CIK 0000022444)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1814443/000181444326000006"
+          "namn": "Whited Elizabeth F  (CIK 0001690609); RPM INTERNATIONAL INC/DE/  (CIK 0000110621)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1690609/000119312526420669"
         },
         {
           "datum": "2026-10-13",
-          "namn": "Cox Cindy  (CIK 0001965204); FLOWERS FOODS INC  (CIK 0001128928)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1965204/000112892826000110"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); BlackRock ESG Capital Allocation Term Trust  (CIK 0001864843)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000338"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Tubman Casey J  (CIK 0001939410); WINNEBAGO INDUSTRIES INC  (CIK 0000107687)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1939410/000193941026000002"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Davison James E. Jr.  (CIK 0001403412); GENESIS ENERGY LP  (CIK 0001022321)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1403412/000140341226000019"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Tether Global Investments Fund, S.I.C.A.F., S.A.  (CIK 0002025889); TPM, S.A. de C.V.  (CIK 0002130094)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2025889/000110465926115328"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Halloran Brian N.  (CIK 0002065999); COMMERCIAL METALS Co  (CIK 0000022444)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2065999/000206599926000003"
+          "namn": "Mecklenburg Gabriel M.I.  (CIK 0002062781); Hinge Health, Inc.  (CIK 0001673743)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2062781/000206278126000026"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-13T16:25+00:00"
+      "vintage": "2026-10-13T21:31+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-13 22:47:55",
+          "emittent": "HEXICON AB",
+          "person": "Henrik Baltscheffsky",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "400000,0",
+          "enhet": "Antal",
+          "pris": "0,115",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-13 22:43:38",
+          "emittent": "HEXICON AB",
+          "person": "Henrik Baltscheffsky",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "400000,0",
+          "enhet": "Antal",
+          "pris": "0,115",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-13 21:11:46",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15484,0",
+          "enhet": "Antal",
+          "pris": "5,168825",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-13 18:27:44",
+          "emittent": "Renbewable venture AB",
+          "person": "Erik Herlyn",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "97655,0",
+          "enhet": "Antal",
+          "pris": "2,649",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-13 18:04:23",
           "emittent": "ScandiDos AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 12:30:01",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Stefan Qelthin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Utbyte ökning",
-          "volym": "151965,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 11:36:16",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Johan Adalberth",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "450527,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 11:36:16",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Johan Adalberth",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen ökning",
-          "volym": "52392,0",
-          "enhet": "Antal",
-          "pris": "10,834806",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 11:36:16",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Johan Adalberth",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte minskning",
-          "volym": "52392,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 8,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-13T16:25+00:00"
+      "vintage": "2026-10-13T21:31+00:00"
     }
   }
 }
