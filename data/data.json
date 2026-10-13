@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-13",
-  "genererad": "2026-10-13T01:18+00:00",
+  "genererad": "2026-10-13T08:24+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 10,
+      "rsRank": 11,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -205,24 +205,24 @@
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
-        99.31,
-        99.73,
-        94.7,
-        96.43,
-        99.77,
-        99.46,
-        94.52,
-        92.98,
-        95.19,
-        97.98,
-        96.18,
-        97.45,
-        97.36,
-        98.19,
-        95.42,
-        97.49,
-        94.12,
-        94.23
+        97.37,
+        96.77,
+        97.76,
+        98.24,
+        98.9,
+        95.57,
+        96.26,
+        95.58,
+        96.66,
+        96.65,
+        97.57,
+        96.64,
+        97.88,
+        96.65,
+        97.29,
+        95.23,
+        94.19,
+        95.16
       ]
     },
     {
@@ -457,28 +457,28 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 11,
+      "rsRank": 10,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
-        100.8,
-        99.84,
-        100.8,
-        98.21,
-        99.23,
-        102.0,
-        102.07,
-        96.72,
-        96.14,
+        96.05,
+        101.48,
         98.1,
-        97.23,
-        95.83,
-        95.38,
-        94.59,
-        91.49,
-        89.61,
-        86.98,
-        88.74
+        96.28,
+        99.92,
+        101.69,
+        98.66,
+        95.12,
+        95.35,
+        96.27,
+        94.54,
+        93.27,
+        92.9,
+        91.31,
+        88.11,
+        86.71,
+        87.39,
+        88.1
       ]
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.2,
-      "delta": "−0,3 · 1 v",
+      "varde": 15.5,
+      "delta": "+0,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.2,
+      "varde": 15.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4187",
+      "varde": "4214",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,8 %",
+      "delta4v": "−2,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "60,34",
+      "varde": "60,83",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,0 %",
+      "delta4v": "−3,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,73",
+      "varde": "6,75",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+6,3 %",
+      "delta4v": "+6,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-13"
     },
     "olja": {
-      "v": 105.57,
+      "v": 104.97,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-13"
     }
@@ -1768,7 +1768,7 @@
           96.5,
           97.11,
           97.25,
-          97.42
+          97.92
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           97.66,
           101.13,
           101.68,
-          99.41
+          100.0
         ]
       },
       {
@@ -1915,24 +1915,24 @@
         ],
         "relSerie19": [
           100.0,
-          101.27,
-          106.22,
-          104.9,
-          103.89,
-          105.13,
-          104.77,
-          101.46,
-          101.96,
-          102.58,
-          102.32,
-          101.85,
-          101.18,
-          102.94,
-          100.78,
-          98.55,
-          98.81,
-          95.56,
-          94.71
+          101.76,
+          104.0,
+          102.76,
+          101.22,
+          102.16,
+          100.76,
+          103.07,
+          101.01,
+          99.31,
+          99.94,
+          99.6,
+          99.81,
+          98.13,
+          97.6,
+          96.21,
+          94.08,
+          92.62,
+          93.44
         ]
       }
     ],
@@ -1942,10 +1942,21 @@
     "us": {
       "poster": [],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-13T01:18+00:00"
+      "vintage": "2026-10-13T08:24+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-13 07:48:02",
+          "emittent": "Transfer Group AB",
+          "person": "Mats Holmberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "267499,0",
+          "enhet": "Antal",
+          "pris": "0,105",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-12 22:19:35",
           "emittent": "Gentoo Media Inc.",
@@ -2484,22 +2495,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 10:41:34",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Petra Stebner Jerleke",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen ökning",
-          "volym": "75826,0",
-          "enhet": "Antal",
-          "pris": "10,834806",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 5,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-13T01:18+00:00"
+      "vintage": "2026-10-13T08:24+00:00"
     }
   }
 }
