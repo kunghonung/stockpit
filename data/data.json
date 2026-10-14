@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
-  "asOfDatum": "2026-10-13",
-  "genererad": "2026-10-13T21:31+00:00",
+  "asOfDatum": "2026-10-14",
+  "genererad": "2026-10-14T00:35+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-13",
+      "vintage": "2026-10-14",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-13",
+      "vintage": "2026-10-14",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4184",
+      "varde": "4182",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,4 %",
+      "delta4v": "−3,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-13"
+      "vintage": "2026-10-14"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,40",
+      "varde": "59,29",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,1 %",
+      "delta4v": "−6,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-13"
+      "vintage": "2026-10-14"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,73",
+      "varde": "6,72",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,6 %",
+      "delta4v": "+5,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-13"
+      "vintage": "2026-10-14"
     },
     "olja": {
-      "v": 106.36,
+      "v": 106.62,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-13"
+      "vintage": "2026-10-14"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-13",
+    "vintage": "2026-10-14",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           99.05,
           101.44,
           102.68,
-          100.78
+          100.96
         ]
       },
       {
@@ -1943,33 +1943,8 @@
       "poster": [
         {
           "datum": "2026-10-13",
-          "namn": "GIERTZ JAMES R  (CIK 0001226578); Schneider National, Inc.  (CIK 0001692063)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1226578/000122657826000011"
-        },
-        {
-          "datum": "2026-10-13",
           "namn": "RUBIN ROBERT J.  (CIK 0001413631); SOLIGENIX, INC.  (CIK 0000812796)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1413631/000141363126000004"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Pease Alexander W  (CIK 0001515026); Sunbelt Rentals Holdings, Inc.  (CIK 0002083785)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1515026/000119312526420604"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Follmann Christian  (CIK 0001907321); Hercules Capital, Inc.  (CIK 0001280784)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1907321/000190732126000008"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "LOREE JAMES M  (CIK 0001214752); UNITED NATURAL FOODS INC  (CIK 0001020859)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1214752/000162828026065703"
-        },
-        {
-          "datum": "2026-10-13",
-          "namn": "Boroditsky Marc  (CIK 0001779922); Nebius Group N.V.  (CIK 0001513845)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1779922/000151384526000128"
         },
         {
           "datum": "2026-10-13",
@@ -1978,22 +1953,47 @@
         },
         {
           "datum": "2026-10-13",
-          "namn": "RIEMER JOSEPH  (CIK 0001215582); SONO TEK CORP  (CIK 0000806172)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1215582/000117152026000302"
+          "namn": "GIERTZ JAMES R  (CIK 0001226578); Schneider National, Inc.  (CIK 0001692063)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1226578/000122657826000011"
         },
         {
           "datum": "2026-10-13",
-          "namn": "Whited Elizabeth F  (CIK 0001690609); RPM INTERNATIONAL INC/DE/  (CIK 0000110621)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1690609/000119312526420669"
+          "namn": "Follmann Christian  (CIK 0001907321); Hercules Capital, Inc.  (CIK 0001280784)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1907321/000190732126000008"
         },
         {
           "datum": "2026-10-13",
-          "namn": "Mecklenburg Gabriel M.I.  (CIK 0002062781); Hinge Health, Inc.  (CIK 0001673743)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2062781/000206278126000026"
+          "namn": "Boroditsky Marc  (CIK 0001779922); Nebius Group N.V.  (CIK 0001513845)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1779922/000151384526000128"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "LOREE JAMES M  (CIK 0001214752); UNITED NATURAL FOODS INC  (CIK 0001020859)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1214752/000162828026065703"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "SPORCK ALISTAIR N  (CIK 0001939261); AEHR TEST SYSTEMS  (CIK 0001040470)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1939261/000104047026000305"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Pease Alexander W  (CIK 0001515026); Sunbelt Rentals Holdings, Inc.  (CIK 0002083785)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1515026/000119312526420604"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Bisson Sabine  (CIK 0002152874); Retension Pharmaceuticals, Inc.  (CIK 0002002988)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2152874/000121390026109156"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Smith Dylan C  (CIK 0001606410); BOX INC  (CIK 0001372612)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1606410/000119312526420735"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-13T21:31+00:00"
+      "vintage": "2026-10-14T00:35+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-13T21:31+00:00"
+      "vintage": "2026-10-14T00:35+00:00"
     }
   }
 }
