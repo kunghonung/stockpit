@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-14",
-  "genererad": "2026-10-14T05:24+00:00",
+  "genererad": "2026-10-14T10:35+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 15.3,
-      "delta": "+0,3 · 1 v",
+      "varde": 15.2,
+      "delta": "+0,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 15.3,
+      "varde": 15.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +5 bp/mån."
     },
     "bredd": {
-      "over50": 36,
+      "over50": 38,
       "over200": 49,
       "antal": 496,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 496 bolag)",
-      "vintage": "2026-10-13",
+      "vintage": "2026-10-14",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+1 sedan förra"
+      "delta": "+2 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4186",
+      "varde": "4166",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,6 %",
+      "delta4v": "−5,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "59,42",
+      "varde": "58,81",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,6 %",
+      "delta4v": "−8,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,77",
+      "varde": "6,74",
       "enhet": "USD/t",
       "pil": "upp",
-      "delta4v": "+5,2 %",
+      "delta4v": "+4,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-14"
     },
     "olja": {
-      "v": 106.33,
+      "v": 106.43,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-14"
     }
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           98.07,
-          98.07
+          98.71
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.47,
           94.98,
           93.38,
-          93.98
+          93.33
         ]
       },
       {
@@ -1978,13 +1978,13 @@
         },
         {
           "datum": "2026-10-13",
-          "namn": "SPORCK ALISTAIR N  (CIK 0001939261); AEHR TEST SYSTEMS  (CIK 0001040470)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1939261/000104047026000305"
+          "namn": "Kobler Michael Helmut  (CIK 0002102334); Eagle Nuclear Energy Corp.  (CIK 0002089283)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2102334/000210233426000004"
         },
         {
           "datum": "2026-10-13",
-          "namn": "Bisson Sabine  (CIK 0002152874); Retension Pharmaceuticals, Inc.  (CIK 0002002988)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2152874/000121390026109156"
+          "namn": "Truong Kristina  (CIK 0002052363); Enovix Corp  (CIK 0001828318)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2052363/000205236326000061"
         },
         {
           "datum": "2026-10-13",
@@ -1993,10 +1993,164 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-14T05:24+00:00"
+      "vintage": "2026-10-14T10:35+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-14 11:55:35",
+          "emittent": "Skanska AB",
+          "person": "Malte Fält",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "3,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:54:28",
+          "emittent": "Skanska AB",
+          "person": "Hans Reinholdsson",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "3,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:53:15",
+          "emittent": "Skanska AB",
+          "person": "Fredrik Norrman",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Tilldelning",
+          "volym": "6,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:52:09",
+          "emittent": "Skanska AB",
+          "person": "Pontus Winqvist",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Tilldelning",
+          "volym": "27,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:50:15",
+          "emittent": "Skanska AB",
+          "person": "Lena Hök",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "114,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:49:07",
+          "emittent": "Skanska AB",
+          "person": "Therese Tegner",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "125,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:47:51",
+          "emittent": "Skanska AB",
+          "person": "Staale Roed",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "172,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:46:34",
+          "emittent": "Skanska AB",
+          "person": "Claes Larsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Tilldelning",
+          "volym": "235,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:44:59",
+          "emittent": "Skanska AB",
+          "person": "Anders Danielsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Tilldelning",
+          "volym": "459,0",
+          "enhet": "Antal",
+          "pris": "263,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 11:05:10",
+          "emittent": "Sveafastigheter AB (publ)",
+          "person": "Andreas Morfiadakis",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "3,0",
+          "enhet": "Antal",
+          "pris": "31,55",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 08:24:40",
+          "emittent": "Byhmgard AB",
+          "person": "Fredrik Crafoord",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "937008,0",
+          "enhet": "Antal",
+          "pris": "0,17",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 08:24:40",
+          "emittent": "Byhmgard AB",
+          "person": "Fredrik Crafoord",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1062992,0",
+          "enhet": "Antal",
+          "pris": "0,176",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 08:24:40",
+          "emittent": "Byhmgard AB",
+          "person": "Fredrik Crafoord",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000000,0",
+          "enhet": "Antal",
+          "pris": "0,175",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-14 08:24:40",
+          "emittent": "Byhmgard AB",
+          "person": "Fredrik Crafoord",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "0,175",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-13 22:47:55",
           "emittent": "HEXICON AB",
@@ -2392,165 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 14:57:13",
-          "emittent": "Alzinova AB",
-          "person": "Sebastian Hansson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "177699,0",
-          "enhet": "Antal",
-          "pris": "0,454",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 14:57:13",
-          "emittent": "Alzinova AB",
-          "person": "Sebastian Hansson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "177699,0",
-          "enhet": "Antal",
-          "pris": "0,46",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:27:46",
-          "emittent": "Done.ai Group AB",
-          "person": "Staffan Herbst",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1866,0",
-          "enhet": "Antal",
-          "pris": "6,73",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:27:46",
-          "emittent": "Done.ai Group AB",
-          "person": "Staffan Herbst",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "636,0",
-          "enhet": "Antal",
-          "pris": "6,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:27:46",
-          "emittent": "Done.ai Group AB",
-          "person": "Staffan Herbst",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9587,0",
-          "enhet": "Antal",
-          "pris": "6,78",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:18:56",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Magnus Wiberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "7797583,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:18:56",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Magnus Wiberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "7797583,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:15:46",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Magnus Wiberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte minskning",
-          "volym": "756957,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:15:46",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Magnus Wiberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "756957,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 13:15:46",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Magnus Wiberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "756957,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 12:30:01",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Stefan Qelthin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "558887,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 12:30:01",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Stefan Qelthin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "64994,0",
-          "enhet": "Antal",
-          "pris": "10,834806",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 12:30:01",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Stefan Qelthin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Utbyte minskning",
-          "volym": "151965,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 12:30:01",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Stefan Qelthin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Utbyte ökning",
-          "volym": "151965,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 14,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-14T05:24+00:00"
+      "vintage": "2026-10-14T10:35+00:00"
     }
   }
 }
