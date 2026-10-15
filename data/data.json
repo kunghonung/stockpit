@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-15",
-  "genererad": "2026-10-15T07:21+00:00",
+  "genererad": "2026-10-15T12:50+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.9,
-      "delta": "+1,8 · 1 v",
+      "varde": 17.5,
+      "delta": "+2,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.9,
+      "varde": 17.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +9 bp/mån."
     },
     "bredd": {
-      "over50": 38,
-      "over200": 49,
+      "over50": 35,
+      "over200": 48,
       "antal": 496,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 496 bolag)",
-      "vintage": "2026-10-14",
+      "vintage": "2026-10-15",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+2 sedan förra"
+      "delta": "-3 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4162",
+      "varde": "4176",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,4 %",
+      "delta4v": "−5,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "56,44",
+      "varde": "56,94",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−13,8 %",
+      "delta4v": "−13,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-15"
     },
     "olja": {
-      "v": 104.36,
+      "v": 104.28,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-15"
     }
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           99.7,
-          99.15
+          99.71
         ]
       },
       {
@@ -1993,10 +1993,197 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-15T07:21+00:00"
+      "vintage": "2026-10-15T12:50+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "22388,0",
+          "enhet": "Antal",
+          "pris": "0,418",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "23203,0",
+          "enhet": "Antal",
+          "pris": "0,418",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "50804,0",
+          "enhet": "Antal",
+          "pris": "0,417",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "9693,0",
+          "enhet": "Antal",
+          "pris": "0,417",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2753,0",
+          "enhet": "Antal",
+          "pris": "0,419",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "14409,0",
+          "enhet": "Antal",
+          "pris": "0,419",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2649,0",
+          "enhet": "Antal",
+          "pris": "0,419",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:56:59",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "19466,0",
+          "enhet": "Antal",
+          "pris": "0,437",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:55:35",
+          "emittent": "Fasadgruppen Group AB (publ)",
+          "person": "Eva Torberger",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Teckning",
+          "volym": "108000,0",
+          "enhet": "Antal",
+          "pris": "1,96",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:37:22",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Filip Lundquist",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "457247,0",
+          "enhet": "Antal",
+          "pris": "0,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:36:02",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Fatih Kurtulus",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "457220,0",
+          "enhet": "Antal",
+          "pris": "0,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 11:35:30",
+          "emittent": "Umida Group AB (publ)",
+          "person": "Karl Aron On Mikael Källström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "457220,0",
+          "enhet": "Antal",
+          "pris": "0,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 10:41:43",
+          "emittent": "Valuno Group AB",
+          "person": "Jörgen Eriksson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "100000000,0",
+          "enhet": "Antal",
+          "pris": "0,1274",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 09:56:44",
+          "emittent": "SciBase Holding AB (publ)",
+          "person": "jesper hoeiland",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Teckning",
+          "volym": "41333,0",
+          "enhet": "Antal",
+          "pris": "15,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 09:50:47",
+          "emittent": "Clean Motion AB",
+          "person": "Hans Gunnar Folkesson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "0,055",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 09:36:28",
+          "emittent": "Sinch AB (publ)",
+          "person": "Sofia Ohlander",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2450,0",
+          "enhet": "Antal",
+          "pris": "44,12",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 09:36:05",
+          "emittent": "Sinch AB",
+          "person": "Sofia Ohlander",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2450,0",
+          "enhet": "Antal",
+          "pris": "44,12",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-15 00:01:17",
           "emittent": "Avarda Bank AB",
@@ -2359,198 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,5",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 15:24:38",
-          "emittent": "Gigasun AB (publ)",
-          "person": "Max Metelius",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "189719,0",
-          "enhet": "Antal",
-          "pris": "1,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 15:18:59",
-          "emittent": "Gigasun AB (publ)",
-          "person": "Stefan Salomonsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Teckning",
-          "volym": "312789,0",
-          "enhet": "Antal",
-          "pris": "1,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 14:35:46",
-          "emittent": "Vetted Assets AB (publ)",
-          "person": "João Caldas",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "425901,0",
-          "enhet": "Antal",
-          "pris": "4,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 10:30:55",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "2105,0",
-          "enhet": "Antal",
-          "pris": "10,8",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 10:30:55",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "26,0",
-          "enhet": "Antal",
-          "pris": "10,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 10:30:55",
-          "emittent": "Tempest Security AB",
-          "person": "Andrew Spry",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "30,0",
-          "enhet": "Antal",
-          "pris": "11,2",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 07:48:02",
-          "emittent": "Transfer Group AB",
-          "person": "Mats Holmberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "267499,0",
-          "enhet": "Antal",
-          "pris": "0,105",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 22:19:35",
-          "emittent": "Gentoo Media Inc.",
-          "person": "Mateusz Juroszek",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "131715,0",
-          "enhet": "Antal",
-          "pris": "5,1726",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 21:03:48",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Aida Jammal",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Teckning",
-          "volym": "113286,0",
-          "enhet": "Antal",
-          "pris": "31,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 21:03:48",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Aida Jammal",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte minskning",
-          "volym": "113286,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 21:03:48",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Aida Jammal",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "113286,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 21:03:48",
-          "emittent": "Prisjakt AB (publ)",
-          "person": "Aida Jammal",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utbyte ökning",
-          "volym": "157704,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 19:20:20",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "252440,0",
-          "enhet": "Antal",
-          "pris": "44,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 19:20:20",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "24662,0",
-          "enhet": "Antal",
-          "pris": "43,6009",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 19:20:20",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "127000,0",
-          "enhet": "Antal",
-          "pris": "44,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 19:20:20",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "120630,0",
-          "enhet": "Antal",
-          "pris": "44,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-12 18:55:19",
-          "emittent": "Lappland Guldprospektering",
-          "person": "Tomas Björklund",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "265,0",
-          "enhet": "Antal",
-          "pris": "134,26",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 17,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-15T07:21+00:00"
+      "vintage": "2026-10-15T12:50+00:00"
     }
   }
 }
