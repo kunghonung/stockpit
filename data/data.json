@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-15",
-  "genererad": "2026-10-15T01:48+00:00",
+  "genererad": "2026-10-15T07:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4168",
+      "varde": "4162",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,0 %",
+      "delta4v": "−5,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "56,35",
+      "varde": "56,44",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,4 %",
+      "delta4v": "−13,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,63",
+      "varde": "6,56",
       "enhet": "USD/t",
-      "pil": "upp",
-      "delta4v": "+3,1 %",
+      "pil": "ned",
+      "delta4v": "−0,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-15"
     },
     "olja": {
-      "v": 104.8,
+      "v": 104.36,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-15"
     }
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           99.7,
-          99.7
+          99.15
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.47,
           94.98,
           94.47,
-          90.61
+          89.85
         ]
       },
       {
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-15T01:48+00:00"
+      "vintage": "2026-10-15T07:21+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-15T01:48+00:00"
+      "vintage": "2026-10-15T07:21+00:00"
     }
   }
 }
