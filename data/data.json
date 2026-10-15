@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-15",
-  "genererad": "2026-10-15T17:44+00:00",
+  "genererad": "2026-10-15T21:18+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 5,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         101.27,
         99.59,
         96.52,
-        95.32
+        95.62
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         91.15,
         89.73,
         89.59,
-        89.28
+        89.79
       ]
     },
     {
@@ -222,7 +222,7 @@
         97.8,
         96.73,
         98.24,
-        99.61
+        99.4
       ]
     },
     {
@@ -273,7 +273,7 @@
         91.5,
         91.51,
         93.02,
-        94.31
+        94.42
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.8,
         96.06,
         100.24,
-        100.9
+        100.68
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.92,
         109.66,
         112.98,
-        115.34
+        114.75
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 7,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         86.34,
         88.73,
         90.44,
-        90.16
+        90.03
       ]
     },
     {
@@ -478,7 +478,7 @@
         90.28,
         90.99,
         91.79,
-        92.76
+        92.63
       ]
     },
     {
@@ -529,7 +529,7 @@
         113.35,
         116.09,
         122.04,
-        119.81
+        119.77
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         96.88,
         97.99,
         98.75,
-        99.7
+        99.82
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         91.13,
         92.38,
         92.34,
-        93.58
+        93.66
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.8,
-      "delta": "+1,4 · 1 v",
+      "varde": 16.5,
+      "delta": "+1,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 103.0,
-      "delta": "+0 · 1 v",
+      "varde": 102.0,
+      "delta": "−0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 103.0,
+      "varde": 102.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.8,
+      "varde": 16.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.09,
-        4.79,
+        4.1,
+        4.82,
         5.0,
-        5.21,
-        5.56
+        5.19,
+        5.52
       ],
       "forr": [
-        3.92,
-        4.63,
-        4.78,
-        4.96,
-        5.35
+        3.97,
+        4.65,
+        4.8,
+        4.97,
+        5.34
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-13",
-      "not": "Brantande 2s10s: +9 bp/mån."
+      "vintage": "2026-10-14",
+      "not": "Brantande 2s10s: +5 bp/mån."
     },
     "bredd": {
       "over50": 35,
@@ -958,19 +958,19 @@
       "spread": 1.3
     },
     "realranta": {
-      "varde": "2,88 %",
+      "varde": "2,84 %",
       "pil": "upp",
-      "delta": "+28 bp · 1 mån",
+      "delta": "+24 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-13"
+      "vintage": "2026-10-14"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4171",
+      "varde": "4192",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,2 %",
+      "delta4v": "−4,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,20",
+      "varde": "57,60",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,6 %",
+      "delta4v": "−12,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,55",
+      "varde": "6,56",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,5 %",
+      "delta4v": "−0,4 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-15"
     },
     "olja": {
-      "v": 105.83,
+      "v": 105.73,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-15"
     }
@@ -1686,7 +1686,7 @@
           101.55,
           102.21,
           102.41,
-          102.45
+          102.39
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           99.72,
           99.45,
           97.8,
-          97.24
+          97.38
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           99.7,
-          99.87
+          99.77
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.47,
           94.98,
           94.47,
-          89.66
+          89.58
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.19,
           92.51,
           90.38,
-          89.34
+          89.51
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           95.68,
           97.63,
           96.86,
-          96.91
+          97.04
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           92.45,
           91.02,
           94.27,
-          95.78
+          95.81
         ]
       }
     ],
@@ -1942,24 +1942,9 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-10-14",
-          "namn": "Stirrup Allison  (CIK 0002030386); Ferguson Enterprises Inc. /DE/  (CIK 0002011641)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2030386/000203038626000003"
-        },
-        {
-          "datum": "2026-10-14",
-          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); ELLSWORTH GROWTH & INCOME FUND LTD  (CIK 0000793040)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000345"
-        },
-        {
-          "datum": "2026-10-14",
-          "namn": "Paisley James A.  (CIK 0001572806); Ferguson Enterprises Inc. /DE/  (CIK 0002011641)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1572806/000157280626000006"
-        },
-        {
-          "datum": "2026-10-14",
-          "namn": "Harper Troy  (CIK 0001722279); FARMERS & MERCHANTS BANCORP  (CIK 0001085913)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1722279/000121390026109521"
+          "datum": "2026-10-13",
+          "namn": "GIERTZ JAMES R  (CIK 0001226578); Schneider National, Inc.  (CIK 0001692063)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1226578/000122657826000011"
         },
         {
           "datum": "2026-10-13",
@@ -1968,35 +1953,72 @@
         },
         {
           "datum": "2026-10-13",
+          "namn": "Pease Alexander W  (CIK 0001515026); Sunbelt Rentals Holdings, Inc.  (CIK 0002083785)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1515026/000119312526420604"
+        },
+        {
+          "datum": "2026-10-13",
           "namn": "Happe Michael J  (CIK 0001382452); WINNEBAGO INDUSTRIES INC  (CIK 0000107687)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1382452/000138245226000004"
         },
         {
           "datum": "2026-10-13",
-          "namn": "GIERTZ JAMES R  (CIK 0001226578); Schneider National, Inc.  (CIK 0001692063)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1226578/000122657826000011"
+          "namn": "Kobler Michael Helmut  (CIK 0002102334); Eagle Nuclear Energy Corp.  (CIK 0002089283)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2102334/000210233426000004"
         },
         {
           "datum": "2026-10-13",
-          "namn": "Follmann Christian  (CIK 0001907321); Hercules Capital, Inc.  (CIK 0001280784)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1907321/000190732126000008"
+          "namn": "Truong Kristina  (CIK 0002052363); Enovix Corp  (CIK 0001828318)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2052363/000205236326000061"
         },
         {
           "datum": "2026-10-13",
-          "namn": "Boroditsky Marc  (CIK 0001779922); Nebius Group N.V.  (CIK 0001513845)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1779922/000151384526000128"
+          "namn": "Smith Dylan C  (CIK 0001606410); BOX INC  (CIK 0001372612)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1606410/000119312526420735"
         },
         {
           "datum": "2026-10-13",
-          "namn": "LOREE JAMES M  (CIK 0001214752); UNITED NATURAL FOODS INC  (CIK 0001020859)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1214752/000162828026065703"
+          "namn": "Bisson Sabine  (CIK 0002152874); Retension Pharmaceuticals, Inc.  (CIK 0002002988)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2152874/000121390026109156"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "Nabrotzky Edmund S.  (CIK 0002090148); CID Holdco, Inc.  (CIK 0002033770)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2090148/000209014826000001"
+        },
+        {
+          "datum": "2026-10-13",
+          "namn": "SPORCK ALISTAIR N  (CIK 0001939261); AEHR TEST SYSTEMS  (CIK 0001040470)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1939261/000104047026000305"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-15T17:44+00:00"
+      "vintage": "2026-10-15T21:18+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-15 21:41:51",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "54433,0",
+          "enhet": "Antal",
+          "pris": "5,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-15 20:37:29",
+          "emittent": "SciBase Holding AB (publ)",
+          "person": "Robert Molander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "31125,0",
+          "enhet": "Antal",
+          "pris": "15,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-15 17:36:38",
           "emittent": "Ranplan Group AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,115",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 22:43:38",
-          "emittent": "HEXICON AB",
-          "person": "Henrik Baltscheffsky",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "400000,0",
-          "enhet": "Antal",
-          "pris": "0,115",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-13 21:11:46",
-          "emittent": "Gentoo Media Inc.",
-          "person": "Mateusz Juroszek",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "15484,0",
-          "enhet": "Antal",
-          "pris": "5,168825",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 3,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-15T17:44+00:00"
+      "vintage": "2026-10-15T21:18+00:00"
     }
   }
 }
