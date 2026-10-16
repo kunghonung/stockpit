@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W42",
   "asOfDatum": "2026-10-16",
-  "genererad": "2026-10-16T14:12+00:00",
+  "genererad": "2026-10-16T18:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         101.27,
         99.59,
         95.62,
-        94.39
+        94.08
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         91.15,
         89.73,
         89.79,
-        90.64
+        90.61
       ]
     },
     {
@@ -222,7 +222,7 @@
         97.8,
         96.73,
         99.4,
-        98.91
+        98.43
       ]
     },
     {
@@ -273,7 +273,7 @@
         91.5,
         91.51,
         94.42,
-        95.95
+        95.83
       ]
     },
     {
@@ -324,7 +324,7 @@
         93.8,
         96.06,
         100.68,
-        102.04
+        102.55
       ]
     },
     {
@@ -375,7 +375,7 @@
         107.92,
         109.66,
         114.75,
-        115.14
+        115.66
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         86.34,
         88.73,
         90.03,
-        91.04
+        92.24
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 9,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         90.28,
         90.99,
         92.63,
-        93.44
+        93.82
       ]
     },
     {
@@ -529,7 +529,7 @@
         113.35,
         116.09,
         119.77,
-        121.28
+        123.83
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         96.88,
         97.99,
         99.82,
-        100.96
+        101.12
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 8,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         91.13,
         92.38,
         93.66,
-        94.41
+        93.67
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 16.0,
-      "delta": "+1,1 · 1 v",
+      "varde": 21.8,
+      "delta": "+7,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 98.0,
-      "delta": "−3 · 1 v",
+      "varde": 101.0,
+      "delta": "+0 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 98.0,
+      "varde": 101.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 16.0,
+      "varde": 21.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4211",
+      "varde": "4187",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,8 %",
+      "delta4v": "−5,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,86",
+      "varde": "57,22",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−13,1 %",
+      "delta4v": "−14,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,61",
+      "varde": "6,57",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,1 %",
+      "delta4v": "−0,7 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-16"
     },
     "olja": {
-      "v": 105.33,
+      "v": 109.12,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-16"
     }
@@ -1686,7 +1686,7 @@
           101.55,
           102.21,
           102.39,
-          102.25
+          102.23
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           99.72,
           99.45,
           97.38,
-          96.39
+          96.06
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           99.77,
-          100.53
+          101.56
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.47,
           94.98,
           89.58,
-          90.83
+          91.79
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.19,
           92.51,
           89.51,
-          88.6
+          88.95
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           95.68,
           97.63,
           97.04,
-          96.61
+          97.13
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           92.45,
           91.02,
           95.81,
-          95.86
+          96.32
         ]
       }
     ],
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-16T14:12+00:00"
+      "vintage": "2026-10-16T18:19+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-16 20:07:15",
+          "emittent": "Sveafastigheter AB (publ)",
+          "person": "Jens Fredrik Jalland",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2000000,0",
+          "enhet": "Antal",
+          "pris": "30,1992",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-16 20:07:15",
+          "emittent": "Sveafastigheter AB (publ)",
+          "person": "Jens Fredrik Jalland",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000000,0",
+          "enhet": "Antal",
+          "pris": "30,8724",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-16 20:07:15",
+          "emittent": "Sveafastigheter AB (publ)",
+          "person": "Jens Fredrik Jalland",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "613638,0",
+          "enhet": "Antal",
+          "pris": "31,2625",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-16 15:09:02",
           "emittent": "KINNEVIK AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,45",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-15 11:35:30",
-          "emittent": "Umida Group AB (publ)",
-          "person": "Karl Aron On Mikael Källström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "457220,0",
-          "enhet": "Antal",
-          "pris": "0,45",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-15 10:41:43",
-          "emittent": "Valuno Group AB",
-          "person": "Jörgen Eriksson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "100000000,0",
-          "enhet": "Antal",
-          "pris": "0,1274",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-15 09:56:44",
-          "emittent": "SciBase Holding AB (publ)",
-          "person": "jesper hoeiland",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "41333,0",
-          "enhet": "Antal",
-          "pris": "15,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 12,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-16T14:12+00:00"
+      "vintage": "2026-10-16T18:19+00:00"
     }
   }
 }
