@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-19",
-  "genererad": "2026-10-19T00:11+00:00",
+  "genererad": "2026-10-19T05:17+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4207",
+      "varde": "4202",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,0 %",
+      "delta4v": "−4,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,54",
+      "varde": "57,84",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,6 %",
+      "delta4v": "−12,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,59",
+      "varde": "6,62",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,5 %",
+      "delta4v": "−1,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-19"
     },
     "olja": {
-      "v": 108.0,
+      "v": 108.04,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-19"
     }
@@ -1792,24 +1792,24 @@
         ],
         "relSerie19": [
           100.0,
-          110.34,
-          106.13,
-          105.68,
-          105.68,
-          99.32,
-          98.69,
-          95.25,
-          96.59,
-          102.09,
-          97.91,
-          98.01,
-          96.94,
-          96.01,
-          96.46,
-          99.05,
-          101.44,
-          104.56,
-          98.95
+          99.53,
+          98.88,
+          96.26,
+          91.61,
+          92.7,
+          91.09,
+          89.97,
+          93.74,
+          90.89,
+          91.26,
+          88.92,
+          88.43,
+          90.37,
+          91.23,
+          94.47,
+          94.98,
+          91.68,
+          91.03
         ]
       },
       {
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-19T00:11+00:00"
+      "vintage": "2026-10-19T05:17+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-19T00:11+00:00"
+      "vintage": "2026-10-19T05:17+00:00"
     }
   }
 }
