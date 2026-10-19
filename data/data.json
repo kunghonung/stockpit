@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-19",
-  "genererad": "2026-10-19T11:13+00:00",
+  "genererad": "2026-10-19T17:45+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 8,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         101.27,
         99.59,
         93.76,
-        93.76
+        94.64
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         91.15,
         89.73,
         90.73,
-        90.73
+        89.87
       ]
     },
     {
@@ -222,7 +222,7 @@
         97.8,
         96.73,
         98.61,
-        98.61
+        97.88
       ]
     },
     {
@@ -273,7 +273,7 @@
         91.5,
         91.51,
         96.16,
-        96.16
+        95.64
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 2,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         93.8,
         96.06,
         102.91,
-        102.91
+        102.08
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 2,
+      "rsRank": 3,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         107.92,
         109.66,
         115.72,
-        115.72
+        114.6
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 7,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         86.34,
         88.73,
         92.26,
-        92.26
+        90.17
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         90.28,
         90.99,
         94.04,
-        94.04
+        92.43
       ]
     },
     {
@@ -529,7 +529,7 @@
         113.35,
         116.09,
         124.17,
-        124.17
+        122.91
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         96.88,
         97.99,
         101.4,
-        101.4
+        100.23
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 4,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         91.13,
         92.38,
         93.91,
-        93.91
+        95.05
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 3.23,
-      "delta": "+8 bp · 1 v",
+      "varde": 3.31,
+      "delta": "+20 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-10-15",
+      "vintage": "2026-10-16",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 18.5,
-      "delta": "+3,3 · 1 v",
+      "varde": 18.4,
+      "delta": "+3,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 101.0,
-      "delta": "+0 · 1 v",
+      "delta": "+3 · 1 v",
       "trosklar": [
         100,
         130
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 18.5,
+      "varde": 18.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 3.23,
+      "varde": 3.31,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4191",
+      "varde": "4164",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,4 %",
+      "delta4v": "−5,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,72",
+      "varde": "57,37",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,3 %",
+      "delta4v": "−12,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,7 +991,7 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,59",
+      "varde": "6,58",
       "enhet": "USD/t",
       "pil": "ned",
       "delta4v": "−1,5 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-19"
     },
     "olja": {
-      "v": 108.79,
+      "v": 110.13,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-19"
     }
@@ -1686,7 +1686,7 @@
           101.55,
           102.21,
           102.21,
-          102.21
+          102.39
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           99.72,
           99.45,
           95.84,
-          95.84
+          96.76
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           97.87,
           97.41,
           101.44,
-          100.62
+          100.28
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           94.47,
           94.98,
           91.68,
-          91.11
+          90.8
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.19,
           92.51,
           88.78,
-          88.78
+          89.24
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           95.68,
           97.63,
           97.02,
-          97.02
+          96.23
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           92.45,
           91.02,
           96.13,
-          96.13
+          95.32
         ]
       }
     ],
@@ -1941,6 +1941,21 @@
   "insynFlode": {
     "us": {
       "poster": [
+        {
+          "datum": "2026-10-19",
+          "namn": "Polovitz Mark  (CIK 0001805351); Sterling Real Estate Trust  (CIK 0001412502)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1805351/000180535126000008"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Wieland James  (CIK 0001519822); Sterling Real Estate Trust  (CIK 0001412502)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1519822/000151982226000011"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "MATZ MARILYN  (CIK 0001618274); TERADYNE, INC  (CIK 0000097210)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618274/000090445426000519"
+        },
         {
           "datum": "2026-10-16",
           "namn": "WILSON GLYNN  (CIK 0001405625); Caring Brands, Inc.  (CIK 0002020737)",
@@ -1975,28 +1990,35 @@
           "datum": "2026-10-16",
           "namn": "Schooler Rosemary  (CIK 0001763187); Zurn Elkay Water Solutions Corp  (CIK 0001439288)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1763187/000143928826000138"
-        },
-        {
-          "datum": "2026-10-16",
-          "namn": "Fortmann Kathy Lynn  (CIK 0001826634); FMC CORP  (CIK 0000037785)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1826634/000003778526000163"
-        },
-        {
-          "datum": "2026-10-16",
-          "namn": "Esaka Fumihide  (CIK 0002078454); Ambiq Micro, Inc.  (CIK 0001500412)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2078454/000207845426000020"
-        },
-        {
-          "datum": "2026-10-16",
-          "namn": "Bellezza Alisha  (CIK 0001848483); PPG INDUSTRIES INC  (CIK 0000079879)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1848483/000007987926000307"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-19T11:13+00:00"
+      "vintage": "2026-10-19T17:45+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-19 18:18:04",
+          "emittent": "KINNEVIK AB",
+          "person": "Caspar Sjöstrand",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "73000,0",
+          "enhet": "Antal",
+          "pris": "64,79",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-19 17:52:37",
+          "emittent": "Episurf Medical AB",
+          "person": "Ilija BATLJAN",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "25000000,0",
+          "enhet": "Antal",
+          "pris": "0,001",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-19 11:23:09",
           "emittent": "Telefonaktiebolaget LM Ericsson",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "266,682364",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 08:17:12",
-          "emittent": "Skanska AB",
-          "person": "Malte Fält",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "10,0",
-          "enhet": "Antal",
-          "pris": "266,682364",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 08:16:00",
-          "emittent": "Skanska AB",
-          "person": "Fredrik Norrman",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "16,0",
-          "enhet": "Antal",
-          "pris": "266,682364",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 15,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-19T11:13+00:00"
+      "vintage": "2026-10-19T17:45+00:00"
     }
   }
 }
