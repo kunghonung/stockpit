@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-20",
-  "genererad": "2026-10-20T06:34+00:00",
+  "genererad": "2026-10-20T12:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 18.4,
-      "delta": "+3,2 · 1 v",
+      "varde": 18.8,
+      "delta": "+3,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 18.4,
+      "varde": 18.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Brantande 2s10s: +8 bp/mån."
     },
     "bredd": {
-      "over50": 45,
-      "over200": 52,
+      "over50": 44,
+      "over200": 50,
       "antal": 496,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 496 bolag)",
-      "vintage": "2026-10-19",
+      "vintage": "2026-10-20",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "+1 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4148",
+      "varde": "4143",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,2 %",
+      "delta4v": "−5,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,51",
+      "varde": "57,31",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,8 %",
+      "delta4v": "−13,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-20"
     },
     "olja": {
-      "v": 109.92,
+      "v": 111.15,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-20"
     }
@@ -1768,7 +1768,7 @@
           97.86,
           99.4,
           100.58,
-          100.34
+          99.69
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           98.06,
           92.33,
           93.59,
-          92.11
+          92.16
         ]
       },
       {
@@ -1943,11 +1943,6 @@
       "poster": [
         {
           "datum": "2026-10-19",
-          "namn": "MATZ MARILYN  (CIK 0001618274); TERADYNE, INC  (CIK 0000097210)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1618274/000090445426000519"
-        },
-        {
-          "datum": "2026-10-19",
           "namn": "Polovitz Mark  (CIK 0001805351); Sterling Real Estate Trust  (CIK 0001412502)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1805351/000180535126000008"
         },
@@ -1958,13 +1953,8 @@
         },
         {
           "datum": "2026-10-19",
-          "namn": "Reidy Christopher R  (CIK 0001290907); Encompass Health Corp  (CIK 0000785161)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1290907/000078516126000223"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Berenstein Israel Yakov  (CIK 0001826618); Nexentis Technologies Inc.  (CIK 0001789192)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1826618/000149315226047575"
+          "namn": "MATZ MARILYN  (CIK 0001618274); TERADYNE, INC  (CIK 0000097210)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618274/000090445426000519"
         },
         {
           "datum": "2026-10-19",
@@ -1983,6 +1973,11 @@
         },
         {
           "datum": "2026-10-19",
+          "namn": "Blatt Perry J.  (CIK 0001960324); VILLAGE SUPER MARKET INC  (CIK 0000103595)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1960324/000149315226047638"
+        },
+        {
+          "datum": "2026-10-19",
           "namn": "Swiel Mor  (CIK 0002139944); Xtend AI Robotics, Inc.  (CIK 0002111860)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2139944/000119312526425443"
         },
@@ -1990,13 +1985,381 @@
           "datum": "2026-10-19",
           "namn": "Yeh Kuanling Amy  (CIK 0001829969); MediaAlpha, Inc.  (CIK 0001818383)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1829969/000181838326000254"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Shaw Daren  (CIK 0001548135); ENSIGN GROUP, INC  (CIK 0001125376)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1548135/000154813526000010"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-20T06:34+00:00"
+      "vintage": "2026-10-20T12:10+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-20 14:02:54",
+          "emittent": "Norditek Group AB",
+          "person": "Karl Nordlund",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9156,0",
+          "enhet": "Antal",
+          "pris": "6,2645",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 14:02:54",
+          "emittent": "Norditek Group AB",
+          "person": "Karl Nordlund",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "496,0",
+          "enhet": "Antal",
+          "pris": "6,9036",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 13:02:49",
+          "emittent": "Acenta Group AB",
+          "person": "Sabina Hedström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "165,0",
+          "enhet": "Antal",
+          "pris": "2,77",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 13:00:38",
+          "emittent": "Acenta Group AB",
+          "person": "Sabina Hedström",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "4807,0",
+          "enhet": "Antal",
+          "pris": "2,670146",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 12:39:28",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Bo Torbjörnsson Nyström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "731700,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 12:39:28",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Bo Torbjörnsson Nyström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "102973,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 12:39:28",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Bo Torbjörnsson Nyström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "1,888",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 12:39:28",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Bo Torbjörnsson Nyström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "1,950051",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 12:31:34",
+          "emittent": "Proport invest AB (publ)",
+          "person": "Marko Radojevic",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "219512,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 12:31:34",
+          "emittent": "Proport invest AB (publ)",
+          "person": "Marko Radojevic",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "97560,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:44:54",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Frans Jonas Börje Tholin",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "4,0059",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:44:54",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Frans Jonas Börje Tholin",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "16875,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:44:54",
+          "emittent": "Proport Invest AB (publ)",
+          "person": "Frans Jonas Börje Tholin",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Teckning",
+          "volym": "31905,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "11000,0",
+          "enhet": "Antal",
+          "pris": "407,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "409,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "410,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "410,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "10852,0",
+          "enhet": "Antal",
+          "pris": "415,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "414,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "7432,0",
+          "enhet": "Antal",
+          "pris": "415,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "11000,0",
+          "enhet": "Antal",
+          "pris": "410,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "6000,0",
+          "enhet": "Antal",
+          "pris": "409,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "407,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "6000,0",
+          "enhet": "Antal",
+          "pris": "407,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "10500,0",
+          "enhet": "Antal",
+          "pris": "406,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "11796,0",
+          "enhet": "Antal",
+          "pris": "418,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "415,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "415,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 11:36:15",
+          "emittent": "Investor AB",
+          "person": "Daniel Nodhäll",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "10420,0",
+          "enhet": "Antal",
+          "pris": "413,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 09:20:20",
+          "emittent": "Soltech Energy Sweden AB (publ)",
+          "person": "Stefan Ölander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "9161040,0",
+          "enhet": "Antal",
+          "pris": "0,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 09:20:20",
+          "emittent": "Soltech Energy Sweden AB (publ)",
+          "person": "Stefan Ölander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "13938960,0",
+          "enhet": "Antal",
+          "pris": "0,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 09:13:18",
+          "emittent": "Proport invest ab",
+          "person": "Ing-Marie Agneta Thunvik",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "103093,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-20 09:13:18",
+          "emittent": "Proport invest ab",
+          "person": "Ing-Marie Agneta Thunvik",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "725600,0",
+          "enhet": "Antal",
+          "pris": "2,05",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-20 08:25:13",
           "emittent": "Gentoo Media Inc.",
@@ -2183,374 +2546,11 @@
           "enhet": "Antal",
           "pris": "105,8681",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-19 10:39:45",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "David Hammarwall",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "48,96783",
-          "enhet": "Antal",
-          "pris": "105,8681",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-19 10:33:44",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "Annika Salomonsson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "30,86578",
-          "enhet": "Antal",
-          "pris": "105,8681",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-19 10:28:58",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "Erik Ekudden",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "837,64832",
-          "enhet": "Antal",
-          "pris": "105,8681",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-19 10:24:05",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "Stefan Wänstedt",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "49,96561",
-          "enhet": "Antal",
-          "pris": "105,8681",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-19 10:19:22",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "Christopher John Houghton",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "284,34377",
-          "enhet": "Antal",
-          "pris": "105,8681",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-17 18:04:37",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "23,0",
-          "enhet": "Antal",
-          "pris": "44,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-17 18:04:37",
-          "emittent": "Krona Public Real Estate AB",
-          "person": "Tomas Georgiadis",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "6000,0",
-          "enhet": "Antal",
-          "pris": "44,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-17 13:00:28",
-          "emittent": "Sehlhall Fastigheter AB",
-          "person": "Dan Sehlberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "45,0",
-          "enhet": "Antal",
-          "pris": "10000,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-17 12:07:22",
-          "emittent": "Biovica International AB",
-          "person": "Cornelis Bogerd",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "317700,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-17 10:14:40",
-          "emittent": "Gentoo Media Inc.",
-          "person": "Mateusz Juroszek",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "62596,0",
-          "enhet": "Antal",
-          "pris": "5,1975",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 23:04:42",
-          "emittent": "Transferator AB (publ)",
-          "person": "Fredrik Vojbacke",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4,0",
-          "enhet": "Antal",
-          "pris": "1,28",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 23:04:42",
-          "emittent": "Transferator AB (publ)",
-          "person": "Fredrik Vojbacke",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "392,0",
-          "enhet": "Antal",
-          "pris": "1,27",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 23:04:42",
-          "emittent": "Transferator AB (publ)",
-          "person": "Fredrik Vojbacke",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "1,27",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 20:07:15",
-          "emittent": "Sveafastigheter AB (publ)",
-          "person": "Jens Fredrik Jalland",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2000000,0",
-          "enhet": "Antal",
-          "pris": "30,1992",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 20:07:15",
-          "emittent": "Sveafastigheter AB (publ)",
-          "person": "Jens Fredrik Jalland",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "30,8724",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 20:07:15",
-          "emittent": "Sveafastigheter AB (publ)",
-          "person": "Jens Fredrik Jalland",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "613638,0",
-          "enhet": "Antal",
-          "pris": "31,2625",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 15:09:02",
-          "emittent": "KINNEVIK AB",
-          "person": "Helena Saxon",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "63,56",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 14:44:13",
-          "emittent": "Aqurat Fondkommision",
-          "person": "Erland Pontusson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "150244,0",
-          "enhet": "Antal",
-          "pris": "2,0500",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 14:30:53",
-          "emittent": "Studentbostäder i Norden AB (publ)",
-          "person": "Leiv Synnes",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "53852,0",
-          "enhet": "Antal",
-          "pris": "1,23",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 14:18:14",
-          "emittent": "KINNEVIK AB",
-          "person": "Hannah Björk",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "5600,0",
-          "enhet": "Antal",
-          "pris": "64,28",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 13:51:03",
-          "emittent": "Gigasun AB",
-          "person": "Sactum AB",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "22865,0",
-          "enhet": "Antal",
-          "pris": "1,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 13:46:12",
-          "emittent": "Gigasun AB (publ)",
-          "person": "Sactum AB",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "125000,0",
-          "enhet": "Antal",
-          "pris": "1,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 13:34:44",
-          "emittent": "Gigasun AB (publ)",
-          "person": "Frederic Telander",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "28338,0",
-          "enhet": "Antal",
-          "pris": "1,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 13:17:46",
-          "emittent": "Gigasun AB (publ)",
-          "person": "Frederic Telander",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "110000,0",
-          "enhet": "Antal",
-          "pris": "1,25",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 12:38:29",
-          "emittent": "Frontventures",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "77215,0",
-          "enhet": "Antal",
-          "pris": "0,088",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 12:38:29",
-          "emittent": "Frontventures",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "17717,0",
-          "enhet": "Antal",
-          "pris": "0,085",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 12:38:29",
-          "emittent": "Frontventures",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "336,0",
-          "enhet": "Antal",
-          "pris": "10,83",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 12:38:29",
-          "emittent": "Frontventures",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "443,0",
-          "enhet": "Antal",
-          "pris": "8,99",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 11:12:43",
-          "emittent": "EQT AB",
-          "person": "Marcus Wallenberg",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "12500000,0",
-          "enhet": "Antal",
-          "pris": "282,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 10:56:33",
-          "emittent": "SkiStar Aktiebolag",
-          "person": "Gunilla Rudebjer Blomqvist",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "500,0",
-          "enhet": "Antal",
-          "pris": "171,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 10:56:33",
-          "emittent": "SkiStar Aktiebolag",
-          "person": "Gunilla Rudebjer Blomqvist",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "500,0",
-          "enhet": "Antal",
-          "pris": "171,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 09:55:29",
-          "emittent": "Cardeon AB (publ)",
-          "person": "Masoud Khayyami",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "16666,0",
-          "enhet": "Antal",
-          "pris": "0,06",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-16 09:24:11",
-          "emittent": "H & M Hennes & Mauritz AB",
-          "person": "Karl-Johan Persson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "500000,0",
-          "enhet": "Antal",
-          "pris": "165,9597",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 33,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-20T06:34+00:00"
+      "vintage": "2026-10-20T12:10+00:00"
     }
   }
 }
