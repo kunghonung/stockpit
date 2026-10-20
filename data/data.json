@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-20",
-  "genererad": "2026-10-20T20:51+00:00",
+  "genererad": "2026-10-20T23:49+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4141",
+      "varde": "4134",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,4 %",
+      "delta4v": "−5,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "58,01",
+      "varde": "57,97",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,0 %",
+      "delta4v": "−12,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-20"
     },
     "olja": {
-      "v": 109.1,
+      "v": 109.33,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-20"
     }
@@ -1943,41 +1943,6 @@
       "poster": [
         {
           "datum": "2026-10-19",
-          "namn": "MATZ MARILYN  (CIK 0001618274); TERADYNE, INC  (CIK 0000097210)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1618274/000090445426000519"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Polovitz Mark  (CIK 0001805351); Sterling Real Estate Trust  (CIK 0001412502)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1805351/000180535126000008"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Wieland James  (CIK 0001519822); Sterling Real Estate Trust  (CIK 0001412502)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1519822/000151982226000011"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Reidy Christopher R  (CIK 0001290907); Encompass Health Corp  (CIK 0000785161)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1290907/000078516126000223"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Berenstein Israel Yakov  (CIK 0001826618); Nexentis Technologies Inc.  (CIK 0001789192)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1826618/000149315226047575"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Kurpis Joseph Stephen  (CIK 0001497048); WILLIS TOWERS WATSON PLC  (CIK 0001140536)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1497048/000114053626000260"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Garber Alan M  (CIK 0001312907); VERTEX PHARMACEUTICALS INC / MA  (CIK 0000875320)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1312907/000087532026000274"
-        },
-        {
-          "datum": "2026-10-19",
           "namn": "Swiel Mor  (CIK 0002139944); Xtend AI Robotics, Inc.  (CIK 0002111860)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2139944/000119312526425443"
         },
@@ -1990,10 +1955,45 @@
           "datum": "2026-10-19",
           "namn": "Shaw Daren  (CIK 0001548135); ENSIGN GROUP, INC  (CIK 0001125376)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1548135/000154813526000010"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); NEW GERMANY FUND INC  (CIK 0000858706)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000358"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Dianaty Ali  (CIK 0002111492); MiniMed Group, Inc.  (CIK 0002062583)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2111492/000211149226000006"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Chandrasena Gillian  (CIK 0002111466); MiniMed Group, Inc.  (CIK 0002062583)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2111466/000211146626000006"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Blatt Perry J.  (CIK 0001960324); VILLAGE SUPER MARKET INC  (CIK 0000103595)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1960324/000149315226047638"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Brummer Gregg  (CIK 0001990713); REPUBLIC SERVICES, INC.  (CIK 0001060391)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1990713/000106039126000306"
+        },
+        {
+          "datum": "2026-10-19",
+          "namn": "Schwarzbach David A  (CIK 0001349334); YELP INC  (CIK 0001345016)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1349334/000134933426000010"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "Meltzer Erez  (CIK 0001371973); Nano-X Imaging Ltd.  (CIK 0001795251)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1371973/000121390026110808"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-20T20:51+00:00"
+      "vintage": "2026-10-20T23:49+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-20T20:51+00:00"
+      "vintage": "2026-10-20T23:49+00:00"
     }
   }
 }
