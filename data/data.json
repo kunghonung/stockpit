@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-22",
-  "genererad": "2026-10-22T20:49+00:00",
+  "genererad": "2026-10-22T23:58+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4037",
+      "varde": "4039",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,1 %",
+      "delta4v": "−6,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "54,61",
+      "varde": "54,59",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−13,9 %",
+      "delta4v": "−14,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-22"
     },
     "olja": {
-      "v": 112.73,
+      "v": 113.2,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-22"
     }
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-22T20:49+00:00"
+      "vintage": "2026-10-22T23:58+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-23 00:10:16",
+          "emittent": "Husqvarna AB",
+          "person": "Yvette Henshall-Bell",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "16941,0",
+          "enhet": "Antal",
+          "pris": "31,15",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-22 22:20:25",
           "emittent": "Episurf Medical AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "15,25",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-21 11:42:06",
-          "emittent": "Flerie AB",
-          "person": "Ted Fjällman",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9386,0",
-          "enhet": "Antal",
-          "pris": "14,95",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-22T20:49+00:00"
+      "vintage": "2026-10-22T23:58+00:00"
     }
   }
 }
