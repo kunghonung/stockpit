@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-22",
-  "genererad": "2026-10-22T01:27+00:00",
+  "genererad": "2026-10-22T06:33+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 3.29,
-      "delta": "+18 bp · 1 v",
+      "varde": 3.33,
+      "delta": "+17 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-10-19",
+      "vintage": "2026-10-20",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 3.29,
+      "varde": 3.33,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.1,
-        4.77,
+        4.08,
+        4.79,
         4.94,
-        5.15,
-        5.48
+        5.12,
+        5.42
       ],
       "forr": [
-        3.97,
-        4.67,
-        4.78,
-        4.94,
-        5.29
+        3.99,
+        4.76,
+        4.86,
+        5.01,
+        5.34
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-19",
-      "not": "Brantande 2s10s: +11 bp/mån."
+      "vintage": "2026-10-20",
+      "not": "Brantande 2s10s: +8 bp/mån."
     },
     "bredd": {
       "over50": 52,
@@ -958,19 +958,19 @@
       "spread": -2.9
     },
     "realranta": {
-      "varde": "2,80 %",
+      "varde": "2,77 %",
       "pil": "upp",
-      "delta": "+19 bp · 1 mån",
+      "delta": "+9 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-19"
+      "vintage": "2026-10-20"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4130",
+      "varde": "4116",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,4 %",
+      "delta4v": "−4,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "57,41",
+      "varde": "56,45",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−10,8 %",
+      "delta4v": "−11,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,55",
+      "varde": "6,48",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−2,0 %",
+      "delta4v": "−3,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-22"
     },
     "olja": {
-      "v": 109.97,
+      "v": 111.65,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-22"
     }
@@ -1809,7 +1809,7 @@
           95.43,
           92.11,
           90.08,
-          89.57
+          88.13
         ]
       },
       {
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-22T01:27+00:00"
+      "vintage": "2026-10-22T06:33+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-22 07:49:55",
+          "emittent": "Swedencare AB (publ)",
+          "person": "Laszlo Janos Varga",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1750,0",
+          "enhet": "Antal",
+          "pris": "19,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-22 07:47:38",
+          "emittent": "Doxa Aktiebolag",
+          "person": "Patrik Lindström",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,3723",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-22 07:38:15",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1069,0",
+          "enhet": "Antal",
+          "pris": "5,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-22 07:04:03",
+          "emittent": "Lärkberget AB",
+          "person": "Rasmus Wiman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "11310,0",
+          "enhet": "Antal",
+          "pris": "2,22",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-21 22:52:38",
           "emittent": "Episurf Medical AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "410,20",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-20 11:36:15",
-          "emittent": "Investor AB",
-          "person": "Daniel Nodhäll",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "10852,0",
-          "enhet": "Antal",
-          "pris": "415,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-20 11:36:15",
-          "emittent": "Investor AB",
-          "person": "Daniel Nodhäll",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "414,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-20 11:36:15",
-          "emittent": "Investor AB",
-          "person": "Daniel Nodhäll",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "7432,0",
-          "enhet": "Antal",
-          "pris": "415,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-20 11:36:15",
-          "emittent": "Investor AB",
-          "person": "Daniel Nodhäll",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "11000,0",
-          "enhet": "Antal",
-          "pris": "410,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-22T01:27+00:00"
+      "vintage": "2026-10-22T06:33+00:00"
     }
   }
 }
