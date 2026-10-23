@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-23",
-  "genererad": "2026-10-23T19:09+00:00",
+  "genererad": "2026-10-23T22:36+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         102.77,
         96.76,
         96.07,
-        96.96
+        97.05
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         87.46,
         88.43,
         87.8,
-        87.33
+        87.15
       ]
     },
     {
@@ -222,7 +222,7 @@
         97.34,
         99.24,
         96.54,
-        95.72
+        95.32
       ]
     },
     {
@@ -273,7 +273,7 @@
         89.69,
         94.25,
         95.59,
-        95.81
+        95.38
       ]
     },
     {
@@ -324,7 +324,7 @@
         92.22,
         98.79,
         101.37,
-        99.9
+        99.94
       ]
     },
     {
@@ -375,7 +375,7 @@
         99.75,
         105.26,
         107.9,
-        107.13
+        107.25
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.92,
         87.26,
         88.54,
-        88.27
+        88.37
       ]
     },
     {
@@ -478,7 +478,7 @@
         86.12,
         89.01,
         89.69,
-        90.21
+        90.26
       ]
     },
     {
@@ -529,7 +529,7 @@
         113.18,
         121.06,
         119.76,
-        123.53
+        123.52
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         95.66,
         98.99,
         100.91,
-        100.11
+        100.1
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         92.39,
         93.92,
         95.96,
-        94.85
+        94.86
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.9,
-      "delta": "−0,1 · 1 v",
+      "varde": 19.5,
+      "delta": "−0,5 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.9,
+      "varde": 19.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.07,
-        4.81,
-        4.95,
-        5.13,
-        5.42
+        4.04,
+        4.65,
+        4.78,
+        4.96,
+        5.29
       ],
       "forr": [
-        4.02,
-        4.76,
+        4.01,
+        4.71,
         4.83,
         4.96,
         5.29
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-21",
-      "not": "Brantande 2s10s: +12 bp/mån."
+      "vintage": "2026-10-22",
+      "not": "Brantande 2s10s: +6 bp/mån."
     },
     "bredd": {
       "over50": 61,
@@ -958,19 +958,19 @@
       "spread": -2.9
     },
     "realranta": {
-      "varde": "2,76 %",
+      "varde": "2,64 %",
       "pil": "upp",
-      "delta": "+14 bp · 1 mån",
+      "delta": "+1 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-21"
+      "vintage": "2026-10-22"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4012",
+      "varde": "4010",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,1 %",
+      "delta4v": "−7,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "54,08",
+      "varde": "53,96",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−15,8 %",
+      "delta4v": "−16,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -994,7 +994,7 @@
       "varde": "6,50",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−2,9 %",
+      "delta4v": "−3,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-23"
     },
     "olja": {
-      "v": 111.75,
+      "v": 111.66,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-23"
     }
@@ -1686,7 +1686,7 @@
           102.41,
           102.4,
           102.71,
-          102.62
+          102.57
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.96,
           98.26,
           97.73,
-          98.14
+          98.1
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           95.23,
           99.17,
           98.3,
-          98.35
+          98.38
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           95.43,
           92.11,
           88.89,
-          88.91
+          88.93
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           95.33,
           91.49,
           90.03,
-          90.66
+          90.81
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           99.82,
           99.2,
           95.18,
-          95.48
+          95.51
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           89.06,
           94.06,
           93.66,
-          92.19
+          92.24
         ]
       }
     ],
@@ -1993,10 +1993,76 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-23T19:08+00:00"
+      "vintage": "2026-10-23T22:36+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-23 23:26:02",
+          "emittent": "Bonava AB (publ)",
+          "person": "Nils Javier Styf",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "7,3843",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 23:26:02",
+          "emittent": "Bonava AB (publ)",
+          "person": "Nils Javier Styf",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "7,47",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 22:00:56",
+          "emittent": "Idun Industrier AB (publ)",
+          "person": "Richard Glückman",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "332,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 21:41:40",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "555,0",
+          "enhet": "Antal",
+          "pris": "45,87027",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 21:41:40",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "26,0",
+          "enhet": "Antal",
+          "pris": "46,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 21:22:21",
+          "emittent": "Enea AB",
+          "person": "Osvaldo Aldao Duarte",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "51,8",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-23 18:14:48",
           "emittent": "J.P. Morgan Securities LLC",
@@ -2480,77 +2546,11 @@
           "enhet": "Antal",
           "pris": "11,90",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 09:33:19",
-          "emittent": "ATLAS COPCO AKTIEBOLAG",
-          "person": "Håkan Andersson",
-          "befattning": "Vice VD",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "181,82",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 09:30:10",
-          "emittent": "Sandvik Aktiebolag",
-          "person": "Johan Max Molin",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "35000,0",
-          "enhet": "Antal",
-          "pris": "342,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 09:08:57",
-          "emittent": "Byhmgard AB",
-          "person": "Mikael Ingemarsson Odenberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "0,183",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 09:08:57",
-          "emittent": "Byhmgard AB",
-          "person": "Mikael Ingemarsson Odenberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "111,0",
-          "enhet": "Antal",
-          "pris": "0,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 09:08:57",
-          "emittent": "Byhmgard AB",
-          "person": "Mikael Ingemarsson Odenberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "24022,0",
-          "enhet": "Antal",
-          "pris": "0,181",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 09:08:57",
-          "emittent": "Byhmgard AB",
-          "person": "Mikael Ingemarsson Odenberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "54,0",
-          "enhet": "Antal",
-          "pris": "0,184",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 2,
+      "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-23T19:09+00:00"
+      "vintage": "2026-10-23T22:36+00:00"
     }
   }
 }
