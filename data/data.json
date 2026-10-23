@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-23",
-  "genererad": "2026-10-23T09:59+00:00",
+  "genererad": "2026-10-23T15:00+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -94,7 +94,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 0,
-      "rsRank": 11,
+      "rsRank": 9,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -115,7 +115,7 @@
         102.77,
         96.76,
         96.07,
-        96.07
+        97.15
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 10,
+      "rsRank": 11,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -171,7 +171,7 @@
         87.46,
         88.43,
         87.8,
-        87.8
+        86.85
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         97.34,
         99.24,
         96.54,
-        96.54
+        95.88
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         89.69,
         94.25,
         95.59,
-        95.59
+        95.25
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 1,
+      "rsRank": 3,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         92.22,
         98.79,
         101.37,
-        101.37
+        99.92
       ]
     },
     {
@@ -375,7 +375,7 @@
         99.75,
         105.26,
         107.9,
-        107.9
+        107.04
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         83.92,
         87.26,
         88.54,
-        88.54
+        87.96
       ]
     },
     {
@@ -478,7 +478,7 @@
         86.12,
         89.01,
         89.69,
-        89.69
+        90.09
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 3,
+      "rsRank": 1,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         113.18,
         121.06,
         119.76,
-        119.76
+        123.06
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         95.66,
         98.99,
         100.91,
-        100.91
+        100.07
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         92.39,
         93.92,
         95.96,
-        95.96
+        94.82
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 3.27,
-      "delta": "+2 bp · 1 v",
+      "varde": 3.4,
+      "delta": "+17 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-10-21",
+      "vintage": "2026-10-22",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,7 +674,7 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.6,
+      "varde": 19.5,
       "delta": "−0,4 · 1 v",
       "trosklar": [
         20,
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 107.0,
-      "delta": "+4 · 1 v",
+      "delta": "+6 · 1 v",
       "trosklar": [
         100,
         130
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.6,
+      "varde": 19.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 3.27,
+      "varde": 3.4,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4040",
+      "varde": "4018",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,5 %",
+      "delta4v": "−7,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "53,92",
+      "varde": "54,03",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−16,1 %",
+      "delta4v": "−15,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,44",
+      "varde": "6,49",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−3,8 %",
+      "delta4v": "−3,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-23"
     },
     "olja": {
-      "v": 109.67,
+      "v": 111.35,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-23"
     }
@@ -1686,7 +1686,7 @@
           102.41,
           102.4,
           102.71,
-          102.71
+          102.79
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           101.96,
           98.26,
           97.73,
-          97.73
+          98.5
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           95.23,
           99.17,
           98.3,
-          97.76
+          97.88
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           95.43,
           92.11,
           88.89,
-          88.59
+          88.8
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           95.33,
           91.49,
           90.03,
-          90.03
+          90.5
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           99.82,
           99.2,
           95.18,
-          95.18
+          95.45
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           89.06,
           94.06,
           93.66,
-          93.66
+          92.26
         ]
       }
     ],
@@ -1993,10 +1993,351 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-23T09:59+00:00"
+      "vintage": "2026-10-23T15:00+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-23 16:58:48",
+          "emittent": "Genova property group ab",
+          "person": "Mattias Björk",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "32,2935",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 16:39:04",
+          "emittent": "HMS Networks AB",
+          "person": "Mira Jhaveri Winther",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "30,0",
+          "enhet": "Antal",
+          "pris": "482,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 16:23:44",
+          "emittent": "HMS Networks AB",
+          "person": "Joakim Nideborn",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "63,0",
+          "enhet": "Antal",
+          "pris": "482,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 16:08:24",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1705,0",
+          "enhet": "Antal",
+          "pris": "10,9",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 16:03:12",
+          "emittent": "Bonava AB (publ)",
+          "person": "Peter Wallin",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "7,38",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 15:57:39",
+          "emittent": "Nimbus Group AB (publ)",
+          "person": "Lars Mikael Mårtensson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "11,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 15:49:23",
+          "emittent": "Lifco AB (publ)",
+          "person": "David Mickelson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "283,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 15:48:07",
+          "emittent": "KINNEVIK AB",
+          "person": "Helena Saxon",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "65,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 15:39:45",
+          "emittent": "Logistea AB (publ)",
+          "person": "Anders Nordvall",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "13,32",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 15:01:53",
+          "emittent": "Lifco AB (publ)",
+          "person": "Josef Alenius",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1800,0",
+          "enhet": "Antal",
+          "pris": "284,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:57:34",
+          "emittent": "Linc AB",
+          "person": "Karl Tobieson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "70,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:55:39",
+          "emittent": "Atrium Ljungberg AB",
+          "person": "Simon De Chateau",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "50680,0",
+          "enhet": "Antal",
+          "pris": "21,40",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:51:17",
+          "emittent": "Midsummer AB",
+          "person": "Patrik Boman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500000,0",
+          "enhet": "Antal",
+          "pris": "1,2651",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:28:52",
+          "emittent": "Lifco AB (publ)",
+          "person": "Martin Roland Linder",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "6000,0",
+          "enhet": "Antal",
+          "pris": "286,6712",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:27:55",
+          "emittent": "HMS Networks AB",
+          "person": "Bartek Stelmasiak Candell",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "67,0",
+          "enhet": "Antal",
+          "pris": "482,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:26:11",
+          "emittent": "Sandvik Aktiebolag",
+          "person": "Thomas Lilja",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "58,0",
+          "enhet": "Antal",
+          "pris": "343,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:20:54",
+          "emittent": "Sleep Cycle AB (publ)",
+          "person": "Samuel Cyprian",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "74000,0",
+          "enhet": "Antal",
+          "pris": "24,4285",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:11:22",
+          "emittent": "Cynca Nordic AB (publ)",
+          "person": "Olof Åke Andersson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "30,79",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:08:30",
+          "emittent": "Corem Property Group AB",
+          "person": "Katarina Klingspor",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "236,0",
+          "enhet": "Antal",
+          "pris": "211,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:08:30",
+          "emittent": "Corem Property Group AB",
+          "person": "Katarina Klingspor",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "2,054",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:08:30",
+          "emittent": "Corem Property Group AB",
+          "person": "Katarina Klingspor",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "1,97",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:08:30",
+          "emittent": "Corem Property Group AB",
+          "person": "Katarina Klingspor",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "24224,0",
+          "enhet": "Antal",
+          "pris": "2,061504",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 14:06:03",
+          "emittent": "W5 Solutions AB (publ)",
+          "person": "Sara Evelina Hedskog",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "9143,0",
+          "enhet": "Antal",
+          "pris": "24,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 13:52:26",
+          "emittent": "HMS Networks AB",
+          "person": "Alexander Hess",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "97,0",
+          "enhet": "Antal",
+          "pris": "482,76",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 13:49:32",
+          "emittent": "Front ventures",
+          "person": "Johan Olof Lund",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "14828,0",
+          "enhet": "Antal",
+          "pris": "8,97",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 13:35:40",
+          "emittent": "Cynca Nordic AB (publ)",
+          "person": "RYK GROUP AB",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "30,98",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 13:11:26",
+          "emittent": "Logistea AB (publ)",
+          "person": "Carl Gabriel Sergei Alexander Cronstedt",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "41907701,0",
+          "enhet": "Antal",
+          "pris": "12,34",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 12:53:27",
+          "emittent": "Mycronic AB (publ)",
+          "person": "Annika Haaker",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "300,0",
+          "enhet": "Antal",
+          "pris": "302,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 12:44:55",
+          "emittent": "Flerie AB",
+          "person": "Mark Quick",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "10779,0",
+          "enhet": "Antal",
+          "pris": "14,878",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 12:09:03",
+          "emittent": "Thule Group AB",
+          "person": "Sara Molnar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "190,2570",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-23 12:08:03",
+          "emittent": "Lifco AB (publ)",
+          "person": "Per Waldemarson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "279,20",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-23 11:42:45",
           "emittent": "DYNAVOX GROUP AB",
@@ -2205,352 +2546,11 @@
           "enhet": "Antal",
           "pris": "70,25993346",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 06:50:52",
-          "emittent": "Logistea AB (publ)",
-          "person": "Tobias Lövstedt",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "12,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 00:10:16",
-          "emittent": "Husqvarna AB",
-          "person": "Yvette Henshall-Bell",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "16941,0",
-          "enhet": "Antal",
-          "pris": "31,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 22:20:25",
-          "emittent": "Episurf Medical AB",
-          "person": "Sanja Batljan",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "50000000,0",
-          "enhet": "Antal",
-          "pris": "0,0385927680802391",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 18:09:05",
-          "emittent": "Svolder Aktiebolag",
-          "person": "Pontus Ejderhamn",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "9000,0",
-          "enhet": "Antal",
-          "pris": "61,84",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 17:49:22",
-          "emittent": "CDON AB",
-          "person": "David Hathaway",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "5081,0",
-          "enhet": "Antal",
-          "pris": "44,5858",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 17:28:55",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Mårten Bjurman",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "4189,0",
-          "enhet": "Antal",
-          "pris": "147,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 17:08:01",
-          "emittent": "Logistea AB (publ)",
-          "person": "Philip Löfgren",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "10690,0",
-          "enhet": "Antal",
-          "pris": "12,16",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 16:55:55",
-          "emittent": "HAKI Safety AB",
-          "person": "Tomas Hilmarsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "3994,0",
-          "enhet": "Antal",
-          "pris": "18,41",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 16:55:55",
-          "emittent": "HAKI Safety AB",
-          "person": "Tomas Hilmarsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "1006,0",
-          "enhet": "Antal",
-          "pris": "18,49",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 16:43:31",
-          "emittent": "ATLAS COPCO AKTIEBOLAG",
-          "person": "Marcus Hvied",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "158,13",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 16:21:08",
-          "emittent": "Tobii Dynavox AB",
-          "person": "Carl Bandhold",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "67,83",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 16:07:12",
-          "emittent": "New Bubbleroom Sweden AB",
-          "person": "Andreas Malmström",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "10,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 15:53:19",
-          "emittent": "Kjell Group AB (publ)",
-          "person": "David Zaudy",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "56391,0",
-          "enhet": "Antal",
-          "pris": "19,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 15:42:09",
-          "emittent": "Logistea AB",
-          "person": "Patrik Tillman",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "30000,0",
-          "enhet": "Antal",
-          "pris": "12,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 15:22:24",
-          "emittent": "Corem Property Group AB",
-          "person": "Christina Tillman",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "180000,0",
-          "enhet": "Antal",
-          "pris": "1,98",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 15:21:24",
-          "emittent": "Dynavox Group AB",
-          "person": "Maarten Barmentlo",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "68,74",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 15:10:07",
-          "emittent": "LUXBRIGHT AB",
-          "person": "Erik Lindeblad",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Gåva lämnad",
-          "volym": "78384,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 15:02:16",
-          "emittent": "Midsona AB",
-          "person": "Nils Johan Henrik Hjalmarsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "9,909974",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 14:59:58",
-          "emittent": "PHYSITRACK PLC",
-          "person": "Per Henrik Molin",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "12,3760",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 14:55:32",
-          "emittent": "Kjell Group AB (publ)",
-          "person": "Göran Westerberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "19,0023",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 14:55:32",
-          "emittent": "Kjell Group AB (publ)",
-          "person": "Göran Westerberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "56392,0",
-          "enhet": "Antal",
-          "pris": "19,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 14:46:24",
-          "emittent": "Svenska Handelsbanken AB",
-          "person": "Michael Green",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "147,40",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 13:54:54",
-          "emittent": "Nimbus Group AB (publ)",
-          "person": "Lars Mikael Mårtensson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "11,71",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 13:47:14",
-          "emittent": "Midsona AB",
-          "person": "Niclas Lundin",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "25000,0",
-          "enhet": "Antal",
-          "pris": "9,64",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 13:41:52",
-          "emittent": "Husqvarna AB",
-          "person": "Patrik Johnson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "6500,0",
-          "enhet": "Antal",
-          "pris": "31,33",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 12:50:18",
-          "emittent": "Telefonaktiebolaget LM Ericsson",
-          "person": "Erik Ekudden",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "135,82921",
-          "enhet": "Antal",
-          "pris": "10,50",
-          "valuta": "USD"
-        },
-        {
-          "publicerad": "2026-10-22 12:32:23",
-          "emittent": "Enea AB",
-          "person": "Robert Andersson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "7000,0",
-          "enhet": "Antal",
-          "pris": "51,218",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 12:31:51",
-          "emittent": "Kjell Group AB (publ)",
-          "person": "David Zaudy",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "92500,0",
-          "enhet": "Antal",
-          "pris": "19,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 11:27:17",
-          "emittent": "Dynavox Group AB",
-          "person": "Fredrik Gustaf Otto Ruben",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3115,0",
-          "enhet": "Antal",
-          "pris": "69,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 10:55:32",
-          "emittent": "AFRY AB",
-          "person": "Tom Eriksson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "117,70",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-22 09:35:49",
-          "emittent": "Harri Larsson",
-          "person": "Harri Larsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "8630,0",
-          "enhet": "Antal",
-          "pris": "34,80",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 20,
+      "nyaSenasteKorning": 31,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-23T09:59+00:00"
+      "vintage": "2026-10-23T15:00+00:00"
     }
   }
 }
