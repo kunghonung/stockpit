@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
-  "asOfDatum": "2026-10-22",
-  "genererad": "2026-10-22T23:58+00:00",
+  "asOfDatum": "2026-10-23",
+  "genererad": "2026-10-23T04:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         104.5,
         102.77,
         96.76,
-        98.16,
+        96.07,
         96.07
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         88.84,
         87.46,
         88.43,
-        87.59,
+        87.8,
         87.8
       ]
     },
@@ -221,7 +221,7 @@
         98.41,
         97.34,
         99.24,
-        96.77,
+        96.54,
         96.54
       ]
     },
@@ -252,7 +252,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -272,7 +272,7 @@
         89.69,
         89.69,
         94.25,
-        93.78,
+        95.59,
         95.59
       ]
     },
@@ -323,7 +323,7 @@
         90.04,
         92.22,
         98.79,
-        96.97,
+        101.37,
         101.37
       ]
     },
@@ -374,7 +374,7 @@
         98.17,
         99.75,
         105.26,
-        105.23,
+        107.9,
         107.9
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         81.66,
         83.92,
         87.26,
-        85.72,
+        88.54,
         88.54
       ]
     },
@@ -477,7 +477,7 @@
         85.44,
         86.12,
         89.01,
-        87.67,
+        89.69,
         89.69
       ]
     },
@@ -528,7 +528,7 @@
         110.52,
         113.18,
         121.06,
-        119.38,
+        119.76,
         119.76
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         94.58,
         95.66,
         98.99,
-        98.64,
+        100.91,
         100.91
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -612,7 +612,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 5,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -632,7 +632,7 @@
         91.13,
         92.39,
         93.92,
-        95.25,
+        95.96,
         95.96
       ]
     }
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-22",
+      "vintage": "2026-10-23",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-22",
+      "vintage": "2026-10-23",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4039",
+      "varde": "4022",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,0 %",
+      "delta4v": "−6,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-22"
+      "vintage": "2026-10-23"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "54,59",
+      "varde": "53,74",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−14,0 %",
+      "delta4v": "−16,4 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-22"
+      "vintage": "2026-10-23"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,40",
+      "varde": "6,43",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−4,7 %",
+      "delta4v": "−4,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-22"
+      "vintage": "2026-10-23"
     },
     "olja": {
-      "v": 113.2,
+      "v": 113.7,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-22"
+      "vintage": "2026-10-23"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-22",
+    "vintage": "2026-10-23",
     "marknader": [
       {
         "namn": "USA",
@@ -1685,7 +1685,7 @@
           101.74,
           102.41,
           102.4,
-          102.54,
+          102.71,
           102.71
         ]
       },
@@ -1726,7 +1726,7 @@
           102.24,
           101.96,
           98.26,
-          99.25,
+          97.73,
           97.73
         ]
       },
@@ -1767,7 +1767,7 @@
           95.68,
           95.23,
           99.17,
-          98.0,
+          98.3,
           98.3
         ]
       },
@@ -1808,8 +1808,8 @@
           94.91,
           95.43,
           92.11,
-          90.08,
-          88.89
+          88.89,
+          87.9
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           97.06,
           95.33,
           91.49,
-          91.48,
+          90.03,
           90.03
         ]
       },
@@ -1890,7 +1890,7 @@
           97.82,
           99.82,
           99.2,
-          95.87,
+          95.18,
           95.18
         ]
       },
@@ -1931,7 +1931,7 @@
           90.46,
           89.06,
           94.06,
-          92.22,
+          93.66,
           93.66
         ]
       }
@@ -1942,58 +1942,58 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-10-19",
-          "namn": "Swiel Mor  (CIK 0002139944); Xtend AI Robotics, Inc.  (CIK 0002111860)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2139944/000119312526425443"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Yeh Kuanling Amy  (CIK 0001829969); MediaAlpha, Inc.  (CIK 0001818383)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1829969/000181838326000254"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Shaw Daren  (CIK 0001548135); ENSIGN GROUP, INC  (CIK 0001125376)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1548135/000154813526000010"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); NEW GERMANY FUND INC  (CIK 0000858706)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000358"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Dianaty Ali  (CIK 0002111492); MiniMed Group, Inc.  (CIK 0002062583)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2111492/000211149226000006"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Chandrasena Gillian  (CIK 0002111466); MiniMed Group, Inc.  (CIK 0002062583)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2111466/000211146626000006"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Blatt Perry J.  (CIK 0001960324); VILLAGE SUPER MARKET INC  (CIK 0000103595)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1960324/000149315226047638"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Brummer Gregg  (CIK 0001990713); REPUBLIC SERVICES, INC.  (CIK 0001060391)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1990713/000106039126000306"
-        },
-        {
-          "datum": "2026-10-19",
-          "namn": "Schwarzbach David A  (CIK 0001349334); YELP INC  (CIK 0001345016)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1349334/000134933426000010"
-        },
-        {
           "datum": "2026-10-20",
           "namn": "Meltzer Erez  (CIK 0001371973); Nano-X Imaging Ltd.  (CIK 0001795251)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1371973/000121390026110808"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "Rocker Kenyatta G  (CIK 0001749673); UNION PACIFIC CORP  (CIK 0000100885)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1749673/000010088526000313"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "CHANG FRED FACHING  (CIK 0001869115); Newegg Commerce, Inc.  (CIK 0001474627)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1869115/000147793226006341"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "Dempsey James G.  (CIK 0001854054); Frontier Group Holdings, Inc.  (CIK 0001670076)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1854054/000185405426000004"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "Montagner Marc  (CIK 0001456823); SBA COMMUNICATIONS CORP  (CIK 0001034054)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1456823/000145682326000012"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "Quinlan Paul T  (CIK 0001333277); Oruka Therapeutics, Inc.  (CIK 0000907654)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1333277/000090765426000110"
+        },
+        {
+          "datum": "2026-10-20",
+          "namn": "POSEDEL RHEA J  (CIK 0001055117); AEHR TEST SYSTEMS  (CIK 0001040470)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1055117/000104047026000309"
+        },
+        {
+          "datum": "2026-10-21",
+          "namn": "Griffith Peter H.  (CIK 0001798821); MATTEL INC /DE/  (CIK 0000063276)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1798821/000179882126000007"
+        },
+        {
+          "datum": "2026-10-22",
+          "namn": "Burgum Melissa A  (CIK 0001455134); Accenture plc  (CIK 0001467373)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1455134/000145513426000022"
+        },
+        {
+          "datum": "2026-10-22",
+          "namn": "Bolash Brian W.  (CIK 0001792596); ERIE INDEMNITY CO  (CIK 0000922621)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1792596/000162828026066800"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-22T23:58+00:00"
+      "vintage": "2026-10-23T04:40+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-22T23:58+00:00"
+      "vintage": "2026-10-23T04:40+00:00"
     }
   }
 }
