@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-23",
-  "genererad": "2026-10-24T10:51+00:00",
+  "genererad": "2026-10-24T14:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,65 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-24T10:51+00:00"
+      "vintage": "2026-10-24T14:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-24 16:21:20",
+          "emittent": "Investor AB",
+          "person": "Thomas Kidane",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1250,0",
+          "enhet": "Antal",
+          "pris": "410,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-24 16:07:19",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1200000,0",
+          "enhet": "Antal",
+          "pris": "2,011",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-24 16:07:19",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "9000,0",
+          "enhet": "Antal",
+          "pris": "191,04",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-24 15:56:37",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "11560577,0",
+          "enhet": "Antal",
+          "pris": "12,34",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-24 15:54:27",
+          "emittent": "Logistea AB (publ)",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "44316358,0",
+          "enhet": "Antal",
+          "pris": "12,34",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-24 11:30:34",
           "emittent": "AVTECH Sweden AB (publ)",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "190,2570",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 12:08:03",
-          "emittent": "Lifco AB (publ)",
-          "person": "Per Waldemarson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "279,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 11:42:45",
-          "emittent": "DYNAVOX GROUP AB",
-          "person": "Ingrid Britta Louise Bojner",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2600,0",
-          "enhet": "Antal",
-          "pris": "67,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 11:39:58",
-          "emittent": "Alimak Group AB (publ)",
-          "person": "Ole Jødahl",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9000,0",
-          "enhet": "Antal",
-          "pris": "115,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 11:13:28",
-          "emittent": "Vertiseit AB (publ)",
-          "person": "Mikael Olsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "500,0",
-          "enhet": "Antal",
-          "pris": "60,85",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 11:01:24",
-          "emittent": "Skandinaviska Enskilda Banken AB",
-          "person": "Marcus Wallenberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Lösen minskning",
-          "volym": "2000000,0",
-          "enhet": "Antal",
-          "pris": "224,59",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 6,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-24T10:51+00:00"
+      "vintage": "2026-10-24T14:28+00:00"
     }
   }
 }
