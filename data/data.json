@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-23",
-  "genererad": "2026-10-25T10:07+00:00",
+  "genererad": "2026-10-25T14:22+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-25T10:07+00:00"
+      "vintage": "2026-10-25T14:22+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-25 14:35:49",
+          "emittent": "Vuxen Group AB",
+          "person": "Tobias Fransson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "3481,0",
+          "enhet": "Antal",
+          "pris": "26,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-25 13:18:42",
+          "emittent": "MedCap AB (publ)",
+          "person": "Lars Ångman",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "600,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-25 10:23:33",
           "emittent": "Prisjakt AB (publ)",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,97",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 14:08:30",
-          "emittent": "Corem Property Group AB",
-          "person": "Katarina Klingspor",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "24224,0",
-          "enhet": "Antal",
-          "pris": "2,061504",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 14:06:03",
-          "emittent": "W5 Solutions AB (publ)",
-          "person": "Sara Evelina Hedskog",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9143,0",
-          "enhet": "Antal",
-          "pris": "24,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-25T10:07+00:00"
+      "vintage": "2026-10-25T14:22+00:00"
     }
   }
 }
