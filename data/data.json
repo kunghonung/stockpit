@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W43",
   "asOfDatum": "2026-10-23",
-  "genererad": "2026-10-25T05:15+00:00",
+  "genererad": "2026-10-25T10:07+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-25T05:15+00:00"
+      "vintage": "2026-10-25T10:07+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-25 10:23:33",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Peter Greberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "165306,0",
+          "enhet": "Antal",
+          "pris": "31,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-25 09:31:48",
+          "emittent": "Prisjakt AB (publ)",
+          "person": "Stefan Qelthin",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "53188,0",
+          "enhet": "Antal",
+          "pris": "31,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-25 09:28:24",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Philip Nordfeldt",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "8547,0",
+          "enhet": "Antal",
+          "pris": "2,93",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-25 07:25:19",
+          "emittent": "HMS Networks AB",
+          "person": "Staffan Dahlström",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "158,0",
+          "enhet": "Antal",
+          "pris": "483,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-24 21:31:10",
           "emittent": "EASTNINE AB (PUBL)",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "24,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 13:52:26",
-          "emittent": "HMS Networks AB",
-          "person": "Alexander Hess",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "97,0",
-          "enhet": "Antal",
-          "pris": "482,76",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 13:49:32",
-          "emittent": "Front ventures",
-          "person": "Johan Olof Lund",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "14828,0",
-          "enhet": "Antal",
-          "pris": "8,97",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 13:35:40",
-          "emittent": "Cynca Nordic AB (publ)",
-          "person": "RYK GROUP AB",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "30,98",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 13:11:26",
-          "emittent": "Logistea AB (publ)",
-          "person": "Carl Gabriel Sergei Alexander Cronstedt",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "41907701,0",
-          "enhet": "Antal",
-          "pris": "12,34",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-25T05:15+00:00"
+      "vintage": "2026-10-25T10:07+00:00"
     }
   }
 }
