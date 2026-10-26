@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W44",
   "asOfDatum": "2026-10-26",
-  "genererad": "2026-10-26T01:40+00:00",
+  "genererad": "2026-10-26T07:43+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.5,
-      "delta": "−0,5 · 1 v",
+      "varde": 19.7,
+      "delta": "+1,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.5,
+      "varde": 19.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4001",
+      "varde": "4024",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,0 %",
+      "delta4v": "−3,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "53,97",
+      "varde": "54,07",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,8 %",
+      "delta4v": "−11,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,50",
+      "varde": "6,51",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,0 %",
+      "delta4v": "−0,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-26"
     },
     "olja": {
-      "v": 110.16,
+      "v": 110.14,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-26"
     }
@@ -1809,7 +1809,7 @@
           95.43,
           92.11,
           88.93,
-          88.83
+          88.22
         ]
       },
       {
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-26T01:40+00:00"
+      "vintage": "2026-10-26T07:43+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-26 08:30:08",
+          "emittent": "Diös Fastigheter AB",
+          "person": "Johan Dernmar",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1300,0",
+          "enhet": "Antal",
+          "pris": "57,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-26 08:24:09",
+          "emittent": "Green Landscaping Group AB (publ)",
+          "person": "Åsa Källenius",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "15,99",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-10-26 08:21:18",
+          "emittent": "Transferator AB (publ)",
+          "person": "Fredrik Vojbacke",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "562,0",
+          "enhet": "Antal",
+          "pris": "1,28",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-26 02:14:34",
           "emittent": "Svenska Handelsbanken AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "1,2651",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 14:28:52",
-          "emittent": "Lifco AB (publ)",
-          "person": "Martin Roland Linder",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "6000,0",
-          "enhet": "Antal",
-          "pris": "286,6712",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 14:27:55",
-          "emittent": "HMS Networks AB",
-          "person": "Bartek Stelmasiak Candell",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "67,0",
-          "enhet": "Antal",
-          "pris": "482,76",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 14:26:11",
-          "emittent": "Sandvik Aktiebolag",
-          "person": "Thomas Lilja",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "58,0",
-          "enhet": "Antal",
-          "pris": "343,60",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-26T01:40+00:00"
+      "vintage": "2026-10-26T07:43+00:00"
     }
   }
 }
