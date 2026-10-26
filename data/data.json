@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "lage": "LIVE",
-  "asOfWeek": "2026-W43",
-  "asOfDatum": "2026-10-23",
-  "genererad": "2026-10-25T23:12+00:00",
+  "asOfWeek": "2026-W44",
+  "asOfDatum": "2026-10-26",
+  "genererad": "2026-10-26T01:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -95,7 +95,7 @@
       },
       "insynKluster": 0,
       "rsRank": 9,
-      "rsRankForra": 10,
+      "rsRankForra": 9,
       "relSerie19": [
         100.0,
         97.6,
@@ -151,7 +151,7 @@
       },
       "insynKluster": 1,
       "rsRank": 10,
-      "rsRankForra": 11,
+      "rsRankForra": 10,
       "relSerie19": [
         100.0,
         99.34,
@@ -202,7 +202,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 11,
-      "rsRankForra": 6,
+      "rsRankForra": 11,
       "relSerie19": [
         100.0,
         101.03,
@@ -458,7 +458,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 8,
-      "rsRankForra": 9,
+      "rsRankForra": 8,
       "relSerie19": [
         100.0,
         96.67,
@@ -561,7 +561,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 7,
-      "rsRankForra": 8,
+      "rsRankForra": 7,
       "relSerie19": [
         100.0,
         101.63,
@@ -613,7 +613,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 6,
-      "rsRankForra": 7,
+      "rsRankForra": 6,
       "relSerie19": [
         100.0,
         100.23,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-23",
+      "vintage": "2026-10-26",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-23",
+      "vintage": "2026-10-26",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,26 +967,26 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4016",
+      "varde": "4001",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,7 %",
+      "delta4v": "−4,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-23"
+      "vintage": "2026-10-26"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "54,19",
+      "varde": "53,97",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,5 %",
+      "delta4v": "−11,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-23"
+      "vintage": "2026-10-26"
     },
     "koppar": {
       "namn": "Koppar",
@@ -994,17 +994,17 @@
       "varde": "6,50",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,9 %",
+      "delta4v": "−1,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-23"
+      "vintage": "2026-10-26"
     },
     "olja": {
-      "v": 110.52,
+      "v": 110.16,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-23"
+      "vintage": "2026-10-26"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-23",
+    "vintage": "2026-10-26",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           95.43,
           92.11,
           88.93,
-          88.93
+          88.83
         ]
       },
       {
@@ -1942,61 +1942,72 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-10-20",
-          "namn": "Meltzer Erez  (CIK 0001371973); Nano-X Imaging Ltd.  (CIK 0001795251)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1371973/000121390026110808"
+          "datum": "2026-10-23",
+          "namn": "Helena Global Investment Opportunities 1 Ltd.  (CIK 0002120967); DevvStream Legacy Corp.  (CIK 0001854480)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2120967/000121390026112129"
         },
         {
-          "datum": "2026-10-20",
-          "namn": "Rocker Kenyatta G  (CIK 0001749673); UNION PACIFIC CORP  (CIK 0000100885)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1749673/000010088526000313"
+          "datum": "2026-10-23",
+          "namn": "Glenn William  (CIK 0001406328); GREENBRIER COMPANIES INC  (CIK 0000923120)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1406328/000092312026000027"
         },
         {
-          "datum": "2026-10-20",
-          "namn": "CHANG FRED FACHING  (CIK 0001869115); Newegg Commerce, Inc.  (CIK 0001474627)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1869115/000147793226006341"
+          "datum": "2026-10-23",
+          "namn": "Morris Matthew John  (CIK 0002157705); CoinShares PLC  (CIK 0002087587)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2157705/000119312526430391"
         },
         {
-          "datum": "2026-10-20",
-          "namn": "Dempsey James G.  (CIK 0001854054); Frontier Group Holdings, Inc.  (CIK 0001670076)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1854054/000185405426000004"
+          "datum": "2026-10-23",
+          "namn": "Lai John  (CIK 0001302378); PetVivo Holdings, Inc.  (CIK 0001512922)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1302378/000149315226048219"
         },
         {
-          "datum": "2026-10-20",
-          "namn": "Montagner Marc  (CIK 0001456823); SBA COMMUNICATIONS CORP  (CIK 0001034054)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1456823/000145682326000012"
+          "datum": "2026-10-23",
+          "namn": "Rogers Daniel Mark  (CIK 0002075006); Asana, Inc.  (CIK 0001477720)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2075006/000207500626000010"
         },
         {
-          "datum": "2026-10-20",
-          "namn": "Quinlan Paul T  (CIK 0001333277); Oruka Therapeutics, Inc.  (CIK 0000907654)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1333277/000090765426000110"
+          "datum": "2026-10-23",
+          "namn": "McMaster Herbert Raymond  (CIK 0001811490); Zoom Communications, Inc.  (CIK 0001585521)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1811490/000158552126000155"
         },
         {
-          "datum": "2026-10-20",
-          "namn": "POSEDEL RHEA J  (CIK 0001055117); AEHR TEST SYSTEMS  (CIK 0001040470)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1055117/000104047026000309"
+          "datum": "2026-10-23",
+          "namn": "LINDSAY JOHN W  (CIK 0001219880); Arcosa, Inc.  (CIK 0001739445)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1219880/000173944526000170"
         },
         {
-          "datum": "2026-10-21",
-          "namn": "Griffith Peter H.  (CIK 0001798821); MATTEL INC /DE/  (CIK 0000063276)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1798821/000179882126000007"
+          "datum": "2026-10-23",
+          "namn": "Hurst Eric D  (CIK 0001966855); Arcosa, Inc.  (CIK 0001739445)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966855/000173944526000169"
         },
         {
-          "datum": "2026-10-22",
-          "namn": "Burgum Melissa A  (CIK 0001455134); Accenture plc  (CIK 0001467373)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1455134/000145513426000022"
+          "datum": "2026-10-23",
+          "namn": "Krueger William J.  (CIK 0001575836); GREENBRIER COMPANIES INC  (CIK 0000923120)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1575836/000092312026000026"
         },
         {
-          "datum": "2026-10-22",
-          "namn": "Bolash Brian W.  (CIK 0001792596); ERIE INDEMNITY CO  (CIK 0000922621)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1792596/000162828026066800"
+          "datum": "2026-10-23",
+          "namn": "Adair Kathleen Theresa  (CIK 0002160363); Nature's Miracle Holding Inc.  (CIK 0001947861)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2160363/000216036326000003"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-25T23:12+00:00"
+      "vintage": "2026-10-26T01:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-10-26 02:14:34",
+          "emittent": "Svenska Handelsbanken AB",
+          "person": "Louise Lindh",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "147,7",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-25 20:00:42",
           "emittent": "Holmen AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "343,60",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-23 14:20:54",
-          "emittent": "Sleep Cycle AB (publ)",
-          "person": "Samuel Cyprian",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "74000,0",
-          "enhet": "Antal",
-          "pris": "24,4285",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-25T23:12+00:00"
+      "vintage": "2026-10-26T01:40+00:00"
     }
   }
 }
