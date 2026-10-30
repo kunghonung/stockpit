@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W44",
   "asOfDatum": "2026-10-30",
-  "genererad": "2026-10-30T20:06+00:00",
+  "genererad": "2026-10-30T23:45+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         99.14,
         99.43,
         101.17,
-        98.39
+        97.96
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.01,
         87.72,
         89.55,
-        90.17
+        89.71
       ]
     },
     {
@@ -222,7 +222,7 @@
         98.22,
         94.34,
         89.39,
-        90.37
+        89.83
       ]
     },
     {
@@ -273,7 +273,7 @@
         95.54,
         96.68,
         97.77,
-        100.44
+        99.94
       ]
     },
     {
@@ -324,7 +324,7 @@
         100.6,
         101.77,
         100.44,
-        104.21
+        103.69
       ]
     },
     {
@@ -375,7 +375,7 @@
         105.31,
         107.3,
         108.81,
-        111.8
+        111.27
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         90.01,
         91.15,
         91.26,
-        94.1
+        93.53
       ]
     },
     {
@@ -478,7 +478,7 @@
         92.08,
         93.37,
         93.3,
-        95.67
+        95.22
       ]
     },
     {
@@ -529,7 +529,7 @@
         125.12,
         127.67,
         124.98,
-        130.33
+        129.66
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         97.4,
         98.49,
         99.1,
-        100.69
+        100.13
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         93.7,
         94.64,
         96.04,
-        97.62
+        97.09
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 21.2,
-      "delta": "+1,7 · 1 v",
+      "varde": 19.4,
+      "delta": "−0,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 21.2,
+      "varde": 19.4,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.01,
-        4.67,
-        4.85,
-        5.05,
-        5.37
+        4.0,
+        4.61,
+        4.78,
+        4.98,
+        5.32
       ],
       "forr": [
-        4.1,
-        4.92,
+        4.07,
+        4.89,
         5.06,
-        5.24,
-        5.56
+        5.26,
+        5.59
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-28",
-      "not": "Brantande 2s10s: +6 bp/mån."
+      "vintage": "2026-10-29",
+      "not": "Oförändrad 2s10s senaste månaden."
     },
     "bredd": {
       "over50": 66,
@@ -958,19 +958,19 @@
       "spread": -8.9
     },
     "realranta": {
-      "varde": "2,67 %",
+      "varde": "2,63 %",
       "pil": "ned",
-      "delta": "−23 bp · 1 mån",
+      "delta": "−28 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-28"
+      "vintage": "2026-10-29"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3886",
+      "varde": "3885",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,6 %",
+      "delta4v": "−6,7 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,09",
+      "varde": "49,13",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−18,2 %",
+      "delta4v": "−18,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,48",
+      "varde": "6,51",
       "enhet": "USD/t",
-      "pil": "ned",
-      "delta4v": "−0,1 %",
+      "pil": "upp",
+      "delta4v": "+0,3 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-10-30"
     },
     "olja": {
-      "v": 112.9,
+      "v": 112.33,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-10-30"
     }
@@ -1686,7 +1686,7 @@
           101.45,
           101.62,
           101.57,
-          101.25
+          101.54
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           98.6,
           98.44,
           98.7,
-          96.99
+          96.97
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           97.77,
           96.99,
           97.77,
-          99.42
+          99.15
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           92.72,
           89.52,
           91.16,
-          91.06
+          90.81
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.7,
           93.99,
           93.87,
-          93.15
+          92.97
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           99.56,
           95.85,
           94.56,
-          96.68
+          96.45
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           95.2,
           93.36,
           94.06,
-          96.55
+          96.36
         ]
       }
     ],
@@ -1953,13 +1953,13 @@
         },
         {
           "datum": "2026-10-27",
-          "namn": "Tal Cohen  (CIK 0001781714); NASDAQ, INC.  (CIK 0001120193)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194"
+          "namn": "Tomoyama Shigeki  (CIK 0002119472); TOYOTA MOTOR CORP/  (CIK 0001094517)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2119472/000094787126000956"
         },
         {
           "datum": "2026-10-27",
-          "namn": "Tomoyama Shigeki  (CIK 0002119472); TOYOTA MOTOR CORP/  (CIK 0001094517)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2119472/000094787126000956"
+          "namn": "Tal Cohen  (CIK 0001781714); NASDAQ, INC.  (CIK 0001120193)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194"
         },
         {
           "datum": "2026-10-27",
@@ -1967,19 +1967,14 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1295399/000122520826008530"
         },
         {
-          "datum": "2026-10-28",
-          "namn": "Bornman Ryno  (CIK 0002119291); DRDGOLD LTD  (CIK 0001023512)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2119291/000211929126000008"
-        },
-        {
-          "datum": "2026-10-29",
-          "namn": "Lucky Mark Burdon  (CIK 0001392431); VISIUM TECHNOLOGIES, INC.  (CIK 0001082733)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1392431/000165495426009239"
-        },
-        {
           "datum": "2026-10-30",
           "namn": "Pershing Edward  (CIK 0001689739); PROVECTUS BIOPHARMACEUTICALS, INC.  (CIK 0000315545)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1689739/000149315226049383"
+        },
+        {
+          "datum": "2026-10-28",
+          "namn": "Bornman Ryno  (CIK 0002119291); DRDGOLD LTD  (CIK 0001023512)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2119291/000211929126000008"
         },
         {
           "datum": "2026-10-28",
@@ -1990,10 +1985,15 @@
           "datum": "2026-10-28",
           "namn": "Dolan Leinauer Corby  (CIK 0001788337); MSG Rangers Corp.  (CIK 0002132873)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1788337/000178833726000004"
+        },
+        {
+          "datum": "2026-10-28",
+          "namn": "Silver Andrew Jacob  (CIK 0002158786); CRISPR Therapeutics AG  (CIK 0001674416)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2158786/000119312526436444"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-10-30T20:06+00:00"
+      "vintage": "2026-10-30T23:45+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 9,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-30T20:06+00:00"
+      "vintage": "2026-10-30T23:45+00:00"
     }
   }
 }
