@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W44",
   "asOfDatum": "2026-10-30",
-  "genererad": "2026-11-01T13:13+00:00",
+  "genererad": "2026-11-01T18:32+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1953,13 +1953,13 @@
         },
         {
           "datum": "2026-10-27",
-          "namn": "Tomoyama Shigeki  (CIK 0002119472); TOYOTA MOTOR CORP/  (CIK 0001094517)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2119472/000094787126000956"
+          "namn": "Tal Cohen  (CIK 0001781714); NASDAQ, INC.  (CIK 0001120193)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194"
         },
         {
           "datum": "2026-10-27",
-          "namn": "Tal Cohen  (CIK 0001781714); NASDAQ, INC.  (CIK 0001120193)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194"
+          "namn": "Tomoyama Shigeki  (CIK 0002119472); TOYOTA MOTOR CORP/  (CIK 0001094517)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2119472/000094787126000956"
         },
         {
           "datum": "2026-10-27",
@@ -1967,36 +1967,47 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1295399/000122520826008530"
         },
         {
-          "datum": "2026-10-30",
-          "namn": "Pershing Edward  (CIK 0001689739); PROVECTUS BIOPHARMACEUTICALS, INC.  (CIK 0000315545)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1689739/000149315226049383"
-        },
-        {
           "datum": "2026-10-28",
           "namn": "Bornman Ryno  (CIK 0002119291); DRDGOLD LTD  (CIK 0001023512)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2119291/000211929126000008"
         },
         {
-          "datum": "2026-10-28",
-          "namn": "Stranksy Allison Robl  (CIK 0002159611); BOSTON BEER CO INC  (CIK 0000949870)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2159611/000215961126000002"
+          "datum": "2026-10-29",
+          "namn": "Lucky Mark Burdon  (CIK 0001392431); VISIUM TECHNOLOGIES, INC.  (CIK 0001082733)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1392431/000165495426009239"
         },
         {
-          "datum": "2026-10-28",
-          "namn": "Dolan Leinauer Corby  (CIK 0001788337); MSG Rangers Corp.  (CIK 0002132873)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1788337/000178833726000004"
+          "datum": "2026-10-30",
+          "namn": "Pershing Edward  (CIK 0001689739); PROVECTUS BIOPHARMACEUTICALS, INC.  (CIK 0000315545)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1689739/000149315226049383"
         },
         {
-          "datum": "2026-10-28",
-          "namn": "Silver Andrew Jacob  (CIK 0002158786); CRISPR Therapeutics AG  (CIK 0001674416)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2158786/000119312526436444"
+          "datum": "2026-10-30",
+          "namn": "FRITZ LANCE M  (CIK 0001499784); Parker-Hannifin Corp  (CIK 0000076334)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1499784/000007633426000154"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "WHITE KEVIN R.  (CIK 0001341654); MACH NATURAL RESOURCES LP  (CIK 0001980088)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1341654/000121390026114394"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-01T13:13+00:00"
+      "vintage": "2026-11-01T18:32+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-01 17:41:22",
+          "emittent": "Integrum AB",
+          "person": "Henric Carlsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "30000,0",
+          "enhet": "Antal",
+          "pris": "1,11",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-10-31 12:06:04",
           "emittent": "Integrum AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "11,90",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 16:48:51",
-          "emittent": "Storytel AB (publ)",
-          "person": "Stefan Fredrik Gunnar Wård",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "2500,0",
-          "enhet": "Antal",
-          "pris": "118,4818",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-10-31T23:42+00:00"
+      "vintage": "2026-11-01T18:32+00:00"
     }
   }
 }
