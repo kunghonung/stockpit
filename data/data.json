@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "lage": "LIVE",
-  "asOfWeek": "2026-W44",
-  "asOfDatum": "2026-10-30",
-  "genererad": "2026-11-01T22:23+00:00",
+  "asOfWeek": "2026-W45",
+  "asOfDatum": "2026-11-02",
+  "genererad": "2026-11-02T01:47+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -95,7 +95,7 @@
       },
       "insynKluster": 0,
       "rsRank": 10,
-      "rsRankForra": 9,
+      "rsRankForra": 10,
       "relSerie19": [
         100.0,
         101.49,
@@ -151,7 +151,7 @@
       },
       "insynKluster": 1,
       "rsRank": 9,
-      "rsRankForra": 10,
+      "rsRankForra": 9,
       "relSerie19": [
         100.0,
         97.59,
@@ -458,7 +458,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 7,
-      "rsRankForra": 8,
+      "rsRankForra": 7,
       "relSerie19": [
         100.0,
         98.15,
@@ -561,7 +561,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 8,
-      "rsRankForra": 7,
+      "rsRankForra": 8,
       "relSerie19": [
         100.0,
         98.81,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-10-30",
+      "vintage": "2026-11-02",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-10-30",
+      "vintage": "2026-11-02",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3899",
+      "varde": "3922",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,3 %",
+      "delta4v": "−5,7 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-10-30"
+      "vintage": "2026-11-02"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,28",
+      "varde": "50,00",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−17,8 %",
+      "delta4v": "−17,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-10-30"
+      "vintage": "2026-11-02"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,48",
+      "varde": "6,51",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−0,2 %",
+      "delta4v": "−1,1 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-10-30"
+      "vintage": "2026-11-02"
     },
     "olja": {
-      "v": 113.43,
+      "v": 111.13,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-10-30"
+      "vintage": "2026-11-02"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-10-30",
+    "vintage": "2026-11-02",
     "marknader": [
       {
         "namn": "USA",
@@ -1942,41 +1942,6 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-10-27",
-          "namn": "Gomide de Faria Mariano  (CIK 0001968909); VTEX  (CIK 0001793663)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1968909/000119312526433188"
-        },
-        {
-          "datum": "2026-10-27",
-          "namn": "Caliel Michael J  (CIK 0001368766); TEAM INC  (CIK 0000318833)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1368766/000136876626000005"
-        },
-        {
-          "datum": "2026-10-27",
-          "namn": "Tal Cohen  (CIK 0001781714); NASDAQ, INC.  (CIK 0001120193)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194"
-        },
-        {
-          "datum": "2026-10-27",
-          "namn": "Tomoyama Shigeki  (CIK 0002119472); TOYOTA MOTOR CORP/  (CIK 0001094517)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2119472/000094787126000956"
-        },
-        {
-          "datum": "2026-10-27",
-          "namn": "Dastoor Michael  (CIK 0001295399); JABIL INC  (CIK 0000898293)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1295399/000122520826008530"
-        },
-        {
-          "datum": "2026-10-28",
-          "namn": "Bornman Ryno  (CIK 0002119291); DRDGOLD LTD  (CIK 0001023512)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2119291/000211929126000008"
-        },
-        {
-          "datum": "2026-10-29",
-          "namn": "Lucky Mark Burdon  (CIK 0001392431); VISIUM TECHNOLOGIES, INC.  (CIK 0001082733)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1392431/000165495426009239"
-        },
-        {
           "datum": "2026-10-30",
           "namn": "Pershing Edward  (CIK 0001689739); PROVECTUS BIOPHARMACEUTICALS, INC.  (CIK 0000315545)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1689739/000149315226049383"
@@ -1990,10 +1955,45 @@
           "datum": "2026-10-30",
           "namn": "WHITE KEVIN R.  (CIK 0001341654); MACH NATURAL RESOURCES LP  (CIK 0001980088)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1341654/000121390026114394"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Glazer David A.  (CIK 0001823940); Palantir Technologies Inc.  (CIK 0001321655)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1823940/000182394026000012"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Davidson Matt  (CIK 0001741937); ADIAL PHARMACEUTICALS, INC.  (CIK 0001513525)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1741937/000121390026114588"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Ciccio John  (CIK 0001974196); OS Therapies Inc  (CIK 0001795091)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1974196/000121390026114607"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Romness Paul A.  (CIK 0001974517); OS Therapies Inc  (CIK 0001795091)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1974517/000121390026114609"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Brophy Michael Burkes  (CIK 0001697362); Natera, Inc.  (CIK 0001604821)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1697362/000169736226000021"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "MUTCH JOHN  (CIK 0001228146); AGILYSYS INC  (CIK 0000078749)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1228146/000119312526442029"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Doradla Anil  (CIK 0001731166); GRID DYNAMICS HOLDINGS, INC.  (CIK 0001743725)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1731166/000162828026068639"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-01T22:23+00:00"
+      "vintage": "2026-11-02T01:47+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-01T22:23+00:00"
+      "vintage": "2026-11-02T01:47+00:00"
     }
   }
 }
