@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-02",
-  "genererad": "2026-11-02T01:47+00:00",
+  "genererad": "2026-11-02T09:23+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 19.4,
-      "delta": "−0,0 · 1 v",
+      "varde": 19.0,
+      "delta": "+0,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 19.4,
+      "varde": 19.0,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3922",
+      "varde": "3911",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−5,7 %",
+      "delta4v": "−5,9 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "50,00",
+      "varde": "50,40",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−17,9 %",
+      "delta4v": "−17,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,51",
+      "varde": "6,52",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−1,1 %",
+      "delta4v": "−1,0 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-02"
     },
     "olja": {
-      "v": 111.13,
+      "v": 108.87,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-02"
     }
@@ -1768,7 +1768,7 @@
           97.77,
           96.99,
           99.15,
-          99.15
+          99.13
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           92.72,
           89.52,
           90.81,
-          90.81
+          90.51
         ]
       },
       {
@@ -1948,18 +1948,28 @@
         },
         {
           "datum": "2026-10-30",
-          "namn": "FRITZ LANCE M  (CIK 0001499784); Parker-Hannifin Corp  (CIK 0000076334)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1499784/000007633426000154"
-        },
-        {
-          "datum": "2026-10-30",
           "namn": "WHITE KEVIN R.  (CIK 0001341654); MACH NATURAL RESOURCES LP  (CIK 0001980088)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1341654/000121390026114394"
         },
         {
           "datum": "2026-10-30",
+          "namn": "FRITZ LANCE M  (CIK 0001499784); Parker-Hannifin Corp  (CIK 0000076334)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1499784/000007633426000154"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "Doradla Anil  (CIK 0001731166); GRID DYNAMICS HOLDINGS, INC.  (CIK 0001743725)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1731166/000162828026068639"
+        },
+        {
+          "datum": "2026-10-30",
           "namn": "Glazer David A.  (CIK 0001823940); Palantir Technologies Inc.  (CIK 0001321655)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1823940/000182394026000012"
+        },
+        {
+          "datum": "2026-10-30",
+          "namn": "MUTCH JOHN  (CIK 0001228146); AGILYSYS INC  (CIK 0000078749)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1228146/000119312526442029"
         },
         {
           "datum": "2026-10-30",
@@ -1980,23 +1990,123 @@
           "datum": "2026-10-30",
           "namn": "Brophy Michael Burkes  (CIK 0001697362); Natera, Inc.  (CIK 0001604821)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1697362/000169736226000021"
-        },
-        {
-          "datum": "2026-10-30",
-          "namn": "MUTCH JOHN  (CIK 0001228146); AGILYSYS INC  (CIK 0000078749)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1228146/000119312526442029"
-        },
-        {
-          "datum": "2026-10-30",
-          "namn": "Doradla Anil  (CIK 0001731166); GRID DYNAMICS HOLDINGS, INC.  (CIK 0001743725)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1731166/000162828026068639"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-02T01:47+00:00"
+      "vintage": "2026-11-02T09:23+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-02 10:10:12",
+          "emittent": "Wyld Networks AB",
+          "person": "Kjell Bertil Olovsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Lån utlåning",
+          "volym": "5000000,0",
+          "enhet": "Antal",
+          "pris": "0,17",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 10:07:11",
+          "emittent": "Micropos Medical AB (publ)",
+          "person": "Ove Mattsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "90000,0",
+          "enhet": "Antal",
+          "pris": "1,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 10:04:14",
+          "emittent": "Wyld Networks AB",
+          "person": "John Kvarnstrand",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lån utlåning",
+          "volym": "5000000,0",
+          "enhet": "Antal",
+          "pris": "0,17",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 10:02:41",
+          "emittent": "Vimian Group AB (publ)",
+          "person": "Stefano Santarelli",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "12491,0",
+          "enhet": "Antal",
+          "pris": "40,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 09:14:57",
+          "emittent": "AAK AB",
+          "person": "Sten Estrup Nielsen",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "176,47",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 08:52:17",
+          "emittent": "EQS Group AG",
+          "person": "Markus Spingler",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "18338,0",
+          "enhet": "Antal",
+          "pris": "251,311484",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 08:52:17",
+          "emittent": "EQS Group AG",
+          "person": "Markus Spingler",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "4741,0",
+          "enhet": "Antal",
+          "pris": "251,187302",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 08:52:08",
+          "emittent": "DistIT AB",
+          "person": "Martin Benckert",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1968750,0",
+          "enhet": "Antal",
+          "pris": "77,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 08:22:00",
+          "emittent": "Green Landscaping Group AB (publ)",
+          "person": "Clein Johansson Ullenvik",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "15,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-02 07:58:02",
+          "emittent": "Vo2 Cap Holding AB (publ)",
+          "person": "John Harmander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500000,0",
+          "enhet": "Antal",
+          "pris": "1,87",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-01 17:41:22",
           "emittent": "Integrum AB",
@@ -2436,121 +2546,11 @@
           "enhet": "Antal",
           "pris": "19,87",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 21:32:24",
-          "emittent": "TCECUR Sweden AB (publ)",
-          "person": "Per Lindstrand",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "43,0",
-          "enhet": "Antal",
-          "pris": "19,95",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 21:09:32",
-          "emittent": "KINNEVIK AB",
-          "person": "Christian Scherrer",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "16289,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 21:09:32",
-          "emittent": "KINNEVIK AB",
-          "person": "Christian Scherrer",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "16289,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 19:12:43",
-          "emittent": "Realfiction Holding AB",
-          "person": "Lars Bentsen Moeller",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "998600,0",
-          "enhet": "Antal",
-          "pris": "0,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 19:09:42",
-          "emittent": "Netel Holding AB (publ)",
-          "person": "Alireza Etemad",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "2,9919461",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 19:09:42",
-          "emittent": "Netel Holding AB (publ)",
-          "person": "Alireza Etemad",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "123134,0",
-          "enhet": "Antal",
-          "pris": "2,878205857",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 18:58:12",
-          "emittent": "KINNEVIK AB",
-          "person": "Cristina Stenbeck",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "63612,0",
-          "enhet": "Antal",
-          "pris": "75,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 18:45:06",
-          "emittent": "Kinnevik AB",
-          "person": "Anna Maria Stenberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "11000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 18:45:06",
-          "emittent": "Kinnevik AB",
-          "person": "Anna Maria Stenberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "11000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-10-29 16:50:13",
-          "emittent": "Infrea AB",
-          "person": "Carl Martin Reinholdsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "11,90",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 10,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-02T01:47+00:00"
+      "vintage": "2026-11-02T09:23+00:00"
     }
   }
 }
