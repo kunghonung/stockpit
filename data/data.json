@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-03",
-  "genererad": "2026-11-03T17:47+00:00",
+  "genererad": "2026-11-03T23:15+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         97.98,
         96.53,
         94.13,
-        95.14
+        95.09
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.89,
         91.92,
         93.64,
-        94.19
+        94.25
       ]
     },
     {
@@ -222,7 +222,7 @@
         93.88,
         89.39,
         90.15,
-        90.83
+        90.94
       ]
     },
     {
@@ -273,7 +273,7 @@
         100.16,
         103.53,
         105.86,
-        103.49
+        103.42
       ]
     },
     {
@@ -324,7 +324,7 @@
         104.23,
         106.19,
         108.39,
-        105.97
+        105.83
       ]
     },
     {
@@ -375,7 +375,7 @@
         110.73,
         114.82,
         115.21,
-        114.83
+        114.5
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         93.1,
         95.54,
         96.53,
-        95.83
+        95.69
       ]
     },
     {
@@ -457,7 +457,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 7,
       "relSerie19": [
         100.0,
@@ -478,7 +478,7 @@
         95.14,
         97.02,
         98.55,
-        97.79
+        98.32
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 8,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         125.04,
         126.99,
         122.56,
-        121.77
+        121.16
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 8,
+      "rsRank": 7,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         99.68,
         101.33,
         103.71,
-        102.56
+        102.74
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         95.83,
         98.31,
         101.17,
-        99.7
+        100.16
       ]
     }
   ],
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        3.99,
-        4.56,
-        4.71,
-        4.94,
-        5.31
+        4.03,
+        4.59,
+        4.7,
+        4.91,
+        5.28
       ],
       "forr": [
-        4.03,
-        4.88,
-        5.09,
-        5.29,
-        5.64
+        4.0,
+        4.78,
+        5.01,
+        5.24,
+        5.61
       ],
       "kalla": "FRED",
-      "vintage": "2026-10-30",
-      "not": "Flackande 2s10s: −3 bp/mån."
+      "vintage": "2026-11-02",
+      "not": "Flackande 2s10s: −14 bp/mån."
     },
     "bredd": {
       "over50": 67,
@@ -958,19 +958,19 @@
       "spread": -3.6
     },
     "realranta": {
-      "varde": "2,60 %",
+      "varde": "2,62 %",
       "pil": "ned",
-      "delta": "−33 bp · 1 mån",
+      "delta": "−26 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-10-30"
+      "vintage": "2026-11-02"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3938",
+      "varde": "3942",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,0 %",
+      "delta4v": "−5,9 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,65",
+      "varde": "49,86",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−18,8 %",
+      "delta4v": "−18,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,39",
+      "varde": "6,42",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−3,1 %",
+      "delta4v": "−2,6 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-03"
     },
     "olja": {
-      "v": 103.46,
+      "v": 104.32,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-03"
     }
@@ -1686,7 +1686,7 @@
           101.23,
           101.15,
           100.8,
-          101.06
+          101.08
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           97.64,
           96.17,
           94.99,
-          95.59
+          95.55
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.73,
           101.94,
           102.5,
-          101.74
+          101.88
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           91.96,
           93.29,
           93.1,
-          92.95
+          93.08
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           93.21,
           92.2,
           92.42,
-          92.29
+          92.39
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           92.74,
           93.33,
           94.44,
-          93.73
+          94.06
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.77,
           97.81,
           99.44,
-          99.86
+          99.93
         ]
       }
     ],
@@ -1982,21 +1982,54 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1266754/000143774926034575"
         },
         {
-          "datum": "2026-11-02",
-          "namn": "Hartree Partners, LP  (CIK 0001597857); HUDSON TECHNOLOGIES INC /NY  (CIK 0000925528)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1597857/000092189526002902"
+          "datum": "2026-11-03",
+          "namn": "EVERITT DAVID C  (CIK 0001196652); BRUNSWICK CORP  (CIK 0000014930)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1196652/000119665226000005"
         },
         {
-          "datum": "2026-11-02",
-          "namn": "Handwerker Jamie  (CIK 0001686806); LXP Industrial Trust  (CIK 0000910108)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1686806/000144483826000085"
+          "datum": "2026-11-03",
+          "namn": "Pickett Denise  (CIK 0001730101); AMERICAN EXPRESS CO  (CIK 0000004962)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1730101/000000496226000423"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-03T17:47+00:00"
+      "vintage": "2026-11-03T23:15+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-03 23:16:09",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Adam Wiman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "32881,0",
+          "enhet": "Antal",
+          "pris": "93,4573",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-03 22:20:08",
+          "emittent": "M.O.B.A. Network AB",
+          "person": "Mikael Gottschlich",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Konvertering minskning",
+          "volym": "11,0",
+          "enhet": "Antal",
+          "pris": "55000,0",
+          "valuta": "EUR"
+        },
+        {
+          "publicerad": "2026-11-03 22:20:08",
+          "emittent": "M.O.B.A. Network AB",
+          "person": "Mikael Gottschlich",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Konvertering ökning",
+          "volym": "7231751,0",
+          "enhet": "Antal",
+          "pris": "0,95",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-03 17:44:26",
           "emittent": "Volati AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "79,24",
           "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-11-02 21:00:17",
-          "emittent": "ABB Ltd",
-          "person": "Denise Johnson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1626,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-11-02 20:58:24",
-          "emittent": "ABB Ltd",
-          "person": "Johan Forssell",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "772,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-11-02 20:56:09",
-          "emittent": "ABB Ltd",
-          "person": "Frederico Curado",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1547,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
         }
       ],
-      "nyaSenasteKorning": 33,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-03T17:47+00:00"
+      "vintage": "2026-11-03T23:15+00:00"
     }
   }
 }
