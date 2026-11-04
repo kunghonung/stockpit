@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-04",
-  "genererad": "2026-11-04T03:12+00:00",
+  "genererad": "2026-11-04T11:32+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 20.8,
-      "delta": "+3,3 · 1 v",
+      "varde": 18.3,
+      "delta": "+1,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 20.8,
+      "varde": 18.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3939",
+      "varde": "4054",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,9 %",
+      "delta4v": "−2,1 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,03",
+      "varde": "52,06",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−18,1 %",
+      "delta4v": "−13,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,32",
+      "varde": "6,45",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−4,3 %",
+      "delta4v": "−2,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-04"
     },
     "olja": {
-      "v": 102.99,
+      "v": 102.38,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-04"
     }
@@ -1768,7 +1768,7 @@
           99.73,
           101.94,
           101.88,
-          101.88
+          103.31
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           91.96,
           93.29,
           93.08,
-          89.77
+          91.76
         ]
       },
       {
@@ -1942,9 +1942,24 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-11-02",
-          "namn": "Weatherl Caleb Lyle  (CIK 0002078488); ProPetro Holding Corp.  (CIK 0001680247)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2078488/000207848826000005"
+          "datum": "2026-11-03",
+          "namn": "Charash Inbar  (CIK 0002114569); Allot Ltd.  (CIK 0001365767)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2114569/000197640826000929"
+        },
+        {
+          "datum": "2026-11-03",
+          "namn": "Waldeck George P Jr.  (CIK 0002103938); PRUDENTIAL FINANCIAL INC  (CIK 0001137774)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2103938/000113777426000216"
+        },
+        {
+          "datum": "2026-11-03",
+          "namn": "WILLIAMS JOE L  (CIK 0001266754); FRIEDMAN INDUSTRIES INC  (CIK 0000039092)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1266754/000143774926034575"
+        },
+        {
+          "datum": "2026-11-03",
+          "namn": "EVERITT DAVID C  (CIK 0001196652); BRUNSWICK CORP  (CIK 0000014930)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1196652/000119665226000005"
         },
         {
           "datum": "2026-11-02",
@@ -1967,24 +1982,9 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1520776/000107997326001421"
         },
         {
-          "datum": "2026-11-03",
-          "namn": "Charash Inbar  (CIK 0002114569); Allot Ltd.  (CIK 0001365767)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2114569/000197640826000929"
-        },
-        {
-          "datum": "2026-11-03",
-          "namn": "Waldeck George P Jr.  (CIK 0002103938); PRUDENTIAL FINANCIAL INC  (CIK 0001137774)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2103938/000113777426000216"
-        },
-        {
-          "datum": "2026-11-03",
-          "namn": "WILLIAMS JOE L  (CIK 0001266754); FRIEDMAN INDUSTRIES INC  (CIK 0000039092)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1266754/000143774926034575"
-        },
-        {
-          "datum": "2026-11-03",
-          "namn": "EVERITT DAVID C  (CIK 0001196652); BRUNSWICK CORP  (CIK 0000014930)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1196652/000119665226000005"
+          "datum": "2026-11-02",
+          "namn": "Weatherl Caleb Lyle  (CIK 0002078488); ProPetro Holding Corp.  (CIK 0001680247)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2078488/000207848826000005"
         },
         {
           "datum": "2026-11-03",
@@ -1993,10 +1993,120 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-04T03:12+00:00"
+      "vintage": "2026-11-04T11:32+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-04 11:49:13",
+          "emittent": "Wihlborgs Fastigheter AB",
+          "person": "Agneta Axelsson",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2900,0",
+          "enhet": "Antal",
+          "pris": "69,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 11:44:27",
+          "emittent": "Senzime AB (publ.)",
+          "person": "Adam Dahlberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "110293,0",
+          "enhet": "Antal",
+          "pris": "3,21",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 11:15:46",
+          "emittent": "Röko AB",
+          "person": "Anders Nordby",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "3181,0",
+          "enhet": "Antal",
+          "pris": "2046,7",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 10:54:22",
+          "emittent": "Stille AB",
+          "person": "Martin Richardson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "884,0",
+          "enhet": "Antal",
+          "pris": "248,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 10:51:18",
+          "emittent": "Cheffelo AB (publ)",
+          "person": "Walker Kinman",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "77,71",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 10:29:29",
+          "emittent": "Nanologica AB (publ)",
+          "person": "Jeremie Trochu",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Förvärv",
+          "volym": "21453780,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 10:25:27",
+          "emittent": "Nanologica AB (publ)",
+          "person": "Jeremie Trochu",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "21453780,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 10:13:35",
+          "emittent": "Röko AB",
+          "person": "Anders Nordby",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2525,0",
+          "enhet": "Antal",
+          "pris": "2024,7",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 09:25:25",
+          "emittent": "Fagerhult Group AB",
+          "person": "Helene Mellquist",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2100,0",
+          "enhet": "Antal",
+          "pris": "12,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-04 09:21:41",
+          "emittent": "INVISIO AB",
+          "person": "Cecilia Daun Wennborg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2350,0",
+          "enhet": "Antal",
+          "pris": "212,91",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-03 23:16:09",
           "emittent": "NOBA Bank Group AB (publ)",
@@ -2436,121 +2546,11 @@
           "enhet": "Antal",
           "pris": "134,5",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-03 09:28:27",
-          "emittent": "Embellence Group AB (publ)",
-          "person": "Henrik Andersson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "33,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-03 09:22:31",
-          "emittent": "QBNK HOLDING AB (publ)",
-          "person": "Jörgen Karlsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "6553,0",
-          "enhet": "Antal",
-          "pris": "6,7906",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-02 22:38:24",
-          "emittent": "SkiStar AB",
-          "person": "Henrik Lundmark",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Förvärv",
-          "volym": "1078,0",
-          "enhet": "Antal",
-          "pris": "185,401484",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-02 22:35:05",
-          "emittent": "Wyld Networks AB",
-          "person": "Chenshun Tang",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lån utlåning",
-          "volym": "5000000,0",
-          "enhet": "Antal",
-          "pris": "0,17",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-02 22:05:59",
-          "emittent": "Hunter Capital RTO 1 AB (publ)",
-          "person": "Oliver Aleksov",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "1740,0",
-          "enhet": "Antal",
-          "pris": "1,13",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-02 22:05:59",
-          "emittent": "Hunter Capital RTO 1 AB (publ)",
-          "person": "Oliver Aleksov",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "840,0",
-          "enhet": "Antal",
-          "pris": "1,19",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-02 21:09:07",
-          "emittent": "ABB Ltd",
-          "person": "Mats Rahmström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "772,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-11-02 21:07:11",
-          "emittent": "ABB Ltd",
-          "person": "Claudia Nemat",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "763,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-11-02 21:05:31",
-          "emittent": "ABB Ltd",
-          "person": "David Meline",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "796,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
-        },
-        {
-          "publicerad": "2026-11-02 21:02:48",
-          "emittent": "ABB Ltd",
-          "person": "Jennifer Li",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1405,0",
-          "enhet": "Antal",
-          "pris": "79,24",
-          "valuta": "CHF"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 10,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-04T03:12+00:00"
+      "vintage": "2026-11-04T11:32+00:00"
     }
   }
 }
