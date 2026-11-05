@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-05",
-  "genererad": "2026-11-05T15:47+00:00",
+  "genererad": "2026-11-05T21:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         97.98,
         96.53,
         93.54,
-        90.2
+        90.02
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.89,
         91.92,
         91.71,
-        92.35
+        91.98
       ]
     },
     {
@@ -201,7 +201,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 8,
       "rsRankForra": 11,
       "relSerie19": [
         100.0,
@@ -222,7 +222,7 @@
         93.88,
         89.39,
         92.56,
-        94.42
+        96.26
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 5,
+      "rsRank": 6,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         100.16,
         103.53,
         104.28,
-        105.9
+        105.91
       ]
     },
     {
@@ -303,7 +303,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 2,
+      "rsRank": 1,
       "rsRankForra": 3,
       "relSerie19": [
         100.0,
@@ -324,7 +324,7 @@
         104.23,
         106.19,
         107.61,
-        112.43
+        111.72
       ]
     },
     {
@@ -354,7 +354,7 @@
       "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 1,
+      "rsRank": 2,
       "rsRankForra": 2,
       "relSerie19": [
         100.0,
@@ -375,7 +375,7 @@
         110.73,
         114.82,
         116.09,
-        120.19
+        118.41
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -406,7 +406,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 4,
+      "rsRank": 5,
       "rsRankForra": 4,
       "relSerie19": [
         100.0,
@@ -427,7 +427,7 @@
         93.1,
         95.54,
         94.55,
-        97.95
+        98.21
       ]
     },
     {
@@ -478,7 +478,7 @@
         95.14,
         97.02,
         99.94,
-        102.22
+        102.65
       ]
     },
     {
@@ -508,7 +508,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 10,
       "rsRankForra": 1,
       "relSerie19": [
         100.0,
@@ -529,7 +529,7 @@
         125.04,
         126.99,
         113.54,
-        118.26
+        115.24
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -612,7 +612,7 @@
       "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 4,
       "rsRankForra": 6,
       "relSerie19": [
         100.0,
@@ -633,7 +633,7 @@
         95.83,
         98.31,
         102.73,
-        102.08
+        103.35
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 23.6,
-      "delta": "+6,4 · 1 v",
+      "varde": 28.2,
+      "delta": "+11,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 90.0,
-      "delta": "−4 · 1 v",
+      "varde": 98.0,
+      "delta": "+4 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 90.0,
+      "varde": 98.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 23.6,
+      "varde": 28.2,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -860,21 +860,21 @@
       ],
       "nu": [
         4.03,
-        4.61,
-        4.74,
-        4.95,
-        5.32
+        4.58,
+        4.69,
+        4.9,
+        5.28
       ],
       "forr": [
-        4.01,
-        4.83,
+        4.05,
+        4.84,
         5.06,
-        5.28,
-        5.63
+        5.31,
+        5.66
       ],
       "kalla": "FRED",
-      "vintage": "2026-11-03",
-      "not": "Flackande 2s10s: −11 bp/mån."
+      "vintage": "2026-11-04",
+      "not": "Flackande 2s10s: −15 bp/mån."
     },
     "bredd": {
       "over50": 73,
@@ -958,19 +958,19 @@
       "spread": -3.6
     },
     "realranta": {
-      "varde": "2,65 %",
+      "varde": "2,64 %",
       "pil": "ned",
-      "delta": "−27 bp · 1 mån",
+      "delta": "−31 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-11-03"
+      "vintage": "2026-11-04"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4114",
+      "varde": "4098",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,0 %",
+      "delta4v": "−1,4 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "52,28",
+      "varde": "51,81",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,5 %",
+      "delta4v": "−12,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,18 +991,18 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,32",
+      "varde": "6,21",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−3,1 %",
-      "over200d": true,
-      "status": "gul",
+      "delta4v": "−4,8 %",
+      "over200d": false,
+      "status": "rod",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
       "vintage": "2026-11-05"
     },
     "olja": {
-      "v": 97.09,
+      "v": 98.86,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-05"
     }
@@ -1686,7 +1686,7 @@
           101.23,
           101.15,
           101.06,
-          100.91
+          100.44
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           97.64,
           96.17,
           94.89,
-          92.55
+          92.26
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.73,
           101.94,
           102.02,
-          104.98
+          105.67
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           91.96,
           93.29,
           90.25,
-          91.38
+          92.16
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           93.21,
           92.2,
           91.64,
-          90.15
+          89.76
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           92.74,
           93.33,
           96.56,
-          99.87
+          101.32
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.77,
           97.81,
           100.97,
-          103.93
+          104.95
         ]
       }
     ],
@@ -1993,10 +1993,120 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-05T15:47+00:00"
+      "vintage": "2026-11-05T21:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-05 21:50:20",
+          "emittent": "Avida Bank AB (publ)",
+          "person": "Celina Midelfart",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "27721,0",
+          "enhet": "Antal",
+          "pris": "6,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 21:50:20",
+          "emittent": "Avida Bank AB (publ)",
+          "person": "Celina Midelfart",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "6930,0",
+          "enhet": "Antal",
+          "pris": "6,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 21:50:20",
+          "emittent": "Avida Bank AB (publ)",
+          "person": "Celina Midelfart",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "13860,0",
+          "enhet": "Antal",
+          "pris": "6,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 19:14:59",
+          "emittent": "Berner Industrier AB",
+          "person": "Johan Lannebo",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "26876,0",
+          "enhet": "Antal",
+          "pris": "72,0224",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 17:40:11",
+          "emittent": "Amido AB (publ)",
+          "person": "Rikard Akhtarzand",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "3,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 17:20:16",
+          "emittent": "eEducation Albert AB",
+          "person": "Fredrik Bengtsson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "15707,0",
+          "enhet": "Antal",
+          "pris": "3,977791",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 17:16:05",
+          "emittent": "Observit AB (publ)",
+          "person": "Bengt Jönsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "322635,0",
+          "enhet": "Antal",
+          "pris": "0,4755",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 17:16:05",
+          "emittent": "Observit AB (publ)",
+          "person": "Bengt Jönsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "12449,0",
+          "enhet": "Antal",
+          "pris": "0,4755",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 17:16:05",
+          "emittent": "Observit AB (publ)",
+          "person": "Bengt Jönsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "11972,0",
+          "enhet": "Antal",
+          "pris": "0,4735",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 17:16:05",
+          "emittent": "Observit AB (publ)",
+          "person": "Bengt Jönsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "9712,0",
+          "enhet": "Antal",
+          "pris": "0,4735",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-05 16:22:18",
           "emittent": "Vuxen Group AB",
@@ -2436,121 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,73",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 22:35:54",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "215246,0",
-          "enhet": "Antal",
-          "pris": "3,45",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 22:35:54",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "22996,0",
-          "enhet": "Antal",
-          "pris": "3,4",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 22:35:54",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "3634,0",
-          "enhet": "Antal",
-          "pris": "3,44",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 21:42:22",
-          "emittent": "Bulten AB",
-          "person": "Axel Berntsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "14,23",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 19:23:18",
-          "emittent": "Bufab AB (publ)",
-          "person": "Johan Sandberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 19:23:18",
-          "emittent": "Bufab AB (publ)",
-          "person": "Johan Sandberg",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen ökning",
-          "volym": "4000,0",
-          "enhet": "Antal",
-          "pris": "81,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 19:05:59",
-          "emittent": "Berner Industrier AB",
-          "person": "Johan Lannebo",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "32572,0",
-          "enhet": "Antal",
-          "pris": "68,678",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 19:05:59",
-          "emittent": "Berner Industrier AB",
-          "person": "Johan Lannebo",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10552,0",
-          "enhet": "Antal",
-          "pris": "73,5042",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 18:09:28",
-          "emittent": "DevPort AB",
-          "person": "Per Rodert",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "9,07",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 17:25:42",
-          "emittent": "Rejlers AB (publ)",
-          "person": "Jangunnar AB",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5311,0",
-          "enhet": "Antal",
-          "pris": "141,20",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 36,
+      "nyaSenasteKorning": 10,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-05T15:47+00:00"
+      "vintage": "2026-11-05T21:57+00:00"
     }
   }
 }
