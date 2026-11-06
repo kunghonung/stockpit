@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-06",
-  "genererad": "2026-11-06T17:26+00:00",
+  "genererad": "2026-11-06T22:21+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         97.98,
         96.53,
         90.02,
-        90.96
+        91.05
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.89,
         91.92,
         91.98,
-        91.66
+        91.81
       ]
     },
     {
@@ -222,7 +222,7 @@
         93.88,
         89.39,
         96.26,
-        96.39
+        96.37
       ]
     },
     {
@@ -252,7 +252,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 6,
+      "rsRank": 7,
       "rsRankForra": 5,
       "relSerie19": [
         100.0,
@@ -273,7 +273,7 @@
         100.16,
         103.53,
         105.91,
-        105.08
+        104.81
       ]
     },
     {
@@ -324,7 +324,7 @@
         104.23,
         106.19,
         111.72,
-        109.91
+        109.95
       ]
     },
     {
@@ -375,7 +375,7 @@
         110.73,
         114.82,
         118.41,
-        117.5
+        117.97
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         93.1,
         95.54,
         98.21,
-        97.33
+        97.52
       ]
     },
     {
@@ -478,7 +478,7 @@
         95.14,
         97.02,
         102.65,
-        101.69
+        101.63
       ]
     },
     {
@@ -529,7 +529,7 @@
         125.04,
         126.99,
         115.24,
-        115.33
+        114.86
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -560,7 +560,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 1,
-      "rsRank": 7,
+      "rsRank": 6,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -581,7 +581,7 @@
         99.68,
         101.33,
         106.3,
-        105.42
+        105.35
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         95.83,
         98.31,
         103.35,
-        103.09
+        102.97
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 24.4,
-      "delta": "+5,0 · 1 v",
+      "varde": 25.6,
+      "delta": "+6,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -694,7 +694,7 @@
       "enhet": "",
       "decimaler": 0,
       "varde": 93.0,
-      "delta": "−8 · 1 v",
+      "delta": "−7 · 1 v",
       "trosklar": [
         100,
         130
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 24.4,
+      "varde": 25.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.03,
-        4.58,
-        4.69,
-        4.9,
-        5.28
+        4.0,
+        4.46,
+        4.59,
+        4.84,
+        5.25
       ],
       "forr": [
-        4.05,
-        4.84,
-        5.06,
-        5.31,
-        5.66
+        4.04,
+        4.79,
+        5.03,
+        5.27,
+        5.64
       ],
       "kalla": "FRED",
-      "vintage": "2026-11-04",
-      "not": "Flackande 2s10s: −15 bp/mån."
+      "vintage": "2026-11-05",
+      "not": "Flackande 2s10s: −10 bp/mån."
     },
     "bredd": {
       "over50": 63,
@@ -958,19 +958,19 @@
       "spread": -3.6
     },
     "realranta": {
-      "varde": "2,64 %",
+      "varde": "2,60 %",
       "pil": "ned",
       "delta": "−31 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-11-04"
+      "vintage": "2026-11-05"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4069",
+      "varde": "4080",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,5 %",
+      "delta4v": "−3,2 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "51,92",
+      "varde": "51,97",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−14,4 %",
+      "delta4v": "−14,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,27",
+      "varde": "6,26",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−5,6 %",
+      "delta4v": "−5,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-06"
     },
     "olja": {
-      "v": 97.62,
+      "v": 97.76,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-06"
     }
@@ -1686,7 +1686,7 @@
           101.23,
           101.15,
           100.44,
-          100.85
+          100.79
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           97.64,
           96.17,
           92.26,
-          93.62
+          93.58
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           99.73,
           101.94,
           105.67,
-          104.13
+          104.65
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           91.96,
           93.29,
           92.16,
-          86.27
+          86.7
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           93.21,
           92.2,
           89.76,
-          91.59
+          91.78
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           92.74,
           93.33,
           101.32,
-          100.62
+          101.07
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           94.77,
           97.81,
           104.95,
-          106.49
+          106.82
         ]
       }
     ],
@@ -1993,10 +1993,54 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-06T17:26+00:00"
+      "vintage": "2026-11-06T22:21+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-06 22:15:10",
+          "emittent": "SWECO AB (publ)",
+          "person": "Patrick Sandoval",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Avyttring",
+          "volym": "200,0",
+          "enhet": "Antal",
+          "pris": "142,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-06 20:07:30",
+          "emittent": "Svolder Aktiebolag",
+          "person": "Pontus Ejderhamn",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "3000,0",
+          "enhet": "Antal",
+          "pris": "63,73",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-06 20:07:30",
+          "emittent": "Svolder Aktiebolag",
+          "person": "Pontus Ejderhamn",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Avyttring",
+          "volym": "1029,0",
+          "enhet": "Antal",
+          "pris": "63,87",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-06 19:40:33",
+          "emittent": "Micropos Medical AB (publ)",
+          "person": "Richard Birger Forsberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "39221,0",
+          "enhet": "Antal",
+          "pris": "1,09",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-06 17:18:10",
           "emittent": "Trelleborg AB",
@@ -2502,55 +2546,11 @@
           "enhet": "Antal",
           "pris": "185,401484",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-05 23:22:21",
-          "emittent": "Intrum AB",
-          "person": "Indre Bartulyte-Uzupe",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "53000,0",
-          "enhet": "Antal",
-          "pris": "1,89",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-05 21:50:20",
-          "emittent": "Avida Bank AB (publ)",
-          "person": "Celina Midelfart",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "27721,0",
-          "enhet": "Antal",
-          "pris": "6,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-05 21:50:20",
-          "emittent": "Avida Bank AB (publ)",
-          "person": "Celina Midelfart",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "6930,0",
-          "enhet": "Antal",
-          "pris": "6,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-05 21:50:20",
-          "emittent": "Avida Bank AB (publ)",
-          "person": "Celina Midelfart",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "13860,0",
-          "enhet": "Antal",
-          "pris": "6,5",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 31,
+      "nyaSenasteKorning": 4,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-06T17:26+00:00"
+      "vintage": "2026-11-06T22:21+00:00"
     }
   }
 }
