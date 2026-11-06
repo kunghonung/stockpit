@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
-  "asOfDatum": "2026-11-05",
-  "genererad": "2026-11-05T21:57+00:00",
+  "asOfDatum": "2026-11-06",
+  "genererad": "2026-11-06T02:22+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-11-05",
+      "vintage": "2026-11-06",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-11-05",
+      "vintage": "2026-11-06",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4098",
+      "varde": "4079",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,4 %",
+      "delta4v": "−3,2 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-11-05"
+      "vintage": "2026-11-06"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "51,81",
+      "varde": "52,04",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,3 %",
+      "delta4v": "−14,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-11-05"
+      "vintage": "2026-11-06"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,21",
+      "varde": "6,28",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−4,8 %",
-      "over200d": false,
-      "status": "rod",
+      "delta4v": "−5,5 %",
+      "over200d": true,
+      "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-11-05"
+      "vintage": "2026-11-06"
     },
     "olja": {
-      "v": 98.86,
+      "v": 99.52,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-11-05"
+      "vintage": "2026-11-06"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-11-05",
+    "vintage": "2026-11-06",
     "marknader": [
       {
         "namn": "USA",
@@ -1685,7 +1685,7 @@
           101.06,
           101.23,
           101.15,
-          101.06,
+          96.6,
           100.44
         ]
       },
@@ -1726,7 +1726,7 @@
           97.8,
           97.64,
           96.17,
-          94.89,
+          88.74,
           92.26
         ]
       },
@@ -1808,8 +1808,8 @@
           95.25,
           91.96,
           93.29,
-          90.25,
-          92.16
+          88.64,
+          86.68
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           96.33,
           92.74,
           93.33,
-          96.56,
+          97.45,
           101.32
         ]
       },
@@ -1931,7 +1931,7 @@
           96.64,
           94.77,
           97.81,
-          100.97,
+          100.95,
           104.95
         ]
       }
@@ -1997,6 +1997,28 @@
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-06 00:38:05",
+          "emittent": "SkiStar AB",
+          "person": "Henrik Lundmark",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1078,0",
+          "enhet": "Antal",
+          "pris": "185,401484",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-05 23:22:21",
+          "emittent": "Intrum AB",
+          "person": "Indre Bartulyte-Uzupe",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "53000,0",
+          "enhet": "Antal",
+          "pris": "1,89",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-05 21:50:20",
           "emittent": "Avida Bank AB (publ)",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,74",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 22:37:33",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3000,0",
-          "enhet": "Antal",
-          "pris": "0,69",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-04 22:37:33",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "29000,0",
-          "enhet": "Antal",
-          "pris": "0,73",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 10,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-05T21:57+00:00"
+      "vintage": "2026-11-06T02:22+00:00"
     }
   }
 }
