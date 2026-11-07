@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-06",
-  "genererad": "2026-11-07T15:54+00:00",
+  "genererad": "2026-11-07T20:11+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -1993,10 +1993,21 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-07T15:54+00:00"
+      "vintage": "2026-11-07T20:11+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-07 17:38:06",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "7045,0",
+          "enhet": "Antal",
+          "pris": "3,46",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-07 15:54:55",
           "emittent": "Ferroamp AB (publ)",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,16",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 09:26:05",
-          "emittent": "Freja eID Group AB",
-          "person": "Pär-Ola Gustavsson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "21,0",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 6,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-07T15:54+00:00"
+      "vintage": "2026-11-07T20:11+00:00"
     }
   }
 }
