@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W45",
   "asOfDatum": "2026-11-06",
-  "genererad": "2026-11-06T22:21+00:00",
+  "genererad": "2026-11-07T02:20+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         97.68,
         97.98,
         96.53,
-        90.02,
+        91.05,
         91.05
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         91.21,
         89.89,
         91.92,
-        91.98,
+        91.81,
         91.81
       ]
     },
@@ -221,7 +221,7 @@
         97.74,
         93.88,
         89.39,
-        96.26,
+        95.96,
         96.37
       ]
     },
@@ -272,7 +272,7 @@
         98.97,
         100.16,
         103.53,
-        105.91,
+        104.81,
         104.81
       ]
     },
@@ -323,7 +323,7 @@
         103.03,
         104.23,
         106.19,
-        111.72,
+        109.95,
         109.95
       ]
     },
@@ -374,7 +374,7 @@
         108.67,
         110.73,
         114.82,
-        118.41,
+        117.97,
         117.97
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         91.94,
         93.1,
         95.54,
-        98.21,
+        97.52,
         97.52
       ]
     },
@@ -477,7 +477,7 @@
         93.82,
         95.14,
         97.02,
-        102.65,
+        102.33,
         101.63
       ]
     },
@@ -528,7 +528,7 @@
         122.55,
         125.04,
         126.99,
-        115.24,
+        114.86,
         114.86
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         98.58,
         99.68,
         101.33,
-        106.3,
+        105.35,
         105.35
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         94.88,
         95.83,
         98.31,
-        103.35,
+        102.97,
         102.97
       ]
     }
@@ -1685,7 +1685,7 @@
           101.06,
           101.23,
           101.15,
-          100.44,
+          100.79,
           100.79
         ]
       },
@@ -1726,7 +1726,7 @@
           97.8,
           97.64,
           96.17,
-          92.26,
+          93.58,
           93.58
         ]
       },
@@ -1767,7 +1767,7 @@
           100.53,
           99.73,
           101.94,
-          105.67,
+          104.65,
           104.65
         ]
       },
@@ -1808,7 +1808,7 @@
           95.25,
           91.96,
           93.29,
-          92.16,
+          86.7,
           86.7
         ]
       },
@@ -1849,7 +1849,7 @@
           93.91,
           93.21,
           92.2,
-          89.76,
+          91.78,
           91.78
         ]
       },
@@ -1890,7 +1890,7 @@
           96.33,
           92.74,
           93.33,
-          101.32,
+          101.07,
           101.07
         ]
       },
@@ -1931,7 +1931,7 @@
           96.64,
           94.77,
           97.81,
-          104.95,
+          105.0,
           106.82
         ]
       }
@@ -1941,6 +1941,11 @@
   "insynFlode": {
     "us": {
       "poster": [
+        {
+          "datum": "2026-11-05",
+          "namn": "Pottenger Carol M  (CIK 0001715865); CALIFORNIA WATER SERVICE GROUP  (CIK 0001035201)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1715865/000121465926013788"
+        },
         {
           "datum": "2026-11-03",
           "namn": "Charash Inbar  (CIK 0002114569); Allot Ltd.  (CIK 0001365767)",
@@ -1963,37 +1968,32 @@
         },
         {
           "datum": "2026-11-03",
-          "namn": "McCandless Margaret  (CIK 0001629976); Local Bounti Corporation/DE  (CIK 0001840780)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1629976/000162997626000009"
+          "namn": "Pickett Denise  (CIK 0001730101); AMERICAN EXPRESS CO  (CIK 0000004962)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1730101/000000496226000423"
         },
         {
           "datum": "2026-11-03",
-          "namn": "WEISNER AIMEE S  (CIK 0001227308); GLAUKOS Corp  (CIK 0001192448)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1227308/000119312526445961"
+          "namn": "Jenkins Dustee  (CIK 0001967030); Spotify Technology S.A.  (CIK 0001639920)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1967030/000114036126041801"
         },
         {
           "datum": "2026-11-03",
-          "namn": "Pinson Charles Wright  (CIK 0001930827); FB Financial Corp  (CIK 0001649749)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1930827/000193082726000008"
+          "namn": "Lawler Mary Katherine  (CIK 0001435059); Quanex Building Products CORP  (CIK 0001423221)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1435059/000142322126000064"
         },
         {
           "datum": "2026-11-03",
-          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); PIMCO Dynamic Income Strategy Fund  (CIK 0001756908)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000404"
+          "namn": "MOSLEY WILLIAM D  (CIK 0001388390); Seagate Technology Holdings plc  (CIK 0001137789)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1388390/000113778926000317"
         },
         {
           "datum": "2026-11-03",
-          "namn": "RICE SUSAN E  (CIK 0001735710); NETFLIX INC  (CIK 0001065280)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1735710/000106528026000300"
-        },
-        {
-          "datum": "2026-11-03",
-          "namn": "Darbyshire-Roberts Dylan  (CIK 0002122037); Elevra Lithium Ltd  (CIK 0001739016)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2122037/000114036126041867"
+          "namn": "Taneja Rajat  (CIK 0001532601); VISA INC.  (CIK 0001403161)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1532601/000140316126000130"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-06T22:21+00:00"
+      "vintage": "2026-11-07T02:20+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 4,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-06T22:21+00:00"
+      "vintage": "2026-11-07T02:20+00:00"
     }
   }
 }
