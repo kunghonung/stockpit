@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-09",
-  "genererad": "2026-11-09T01:57+00:00",
+  "genererad": "2026-11-09T09:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 25.6,
-      "delta": "+6,2 · 1 v",
+      "varde": 24.5,
+      "delta": "+3,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 25.6,
+      "varde": 24.5,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4129",
+      "varde": "4103",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−1,5 %",
+      "delta4v": "−2,1 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "53,31",
+      "varde": "52,48",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,4 %",
+      "delta4v": "−12,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,33",
+      "varde": "6,31",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−5,5 %",
+      "delta4v": "−5,8 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-09"
     },
     "olja": {
-      "v": 97.67,
+      "v": 97.01,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-09"
     }
@@ -1768,7 +1768,7 @@
           99.73,
           101.94,
           104.65,
-          104.65
+          105.14
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           91.96,
           93.29,
           86.7,
-          89.46
+          88.72
         ]
       },
       {
@@ -1943,13 +1943,13 @@
       "poster": [
         {
           "datum": "2026-11-06",
-          "namn": "Lee Rachel H.  (CIK 0001704740); Applied Digital Corp.  (CIK 0001144879)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1704740/000114487926000065"
+          "namn": "MILLER DOUGLAS S  (CIK 0001193054); Applied Digital Corp.  (CIK 0001144879)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1193054/000119305426000002"
         },
         {
           "datum": "2026-11-06",
-          "namn": "MILLER DOUGLAS S  (CIK 0001193054); Applied Digital Corp.  (CIK 0001144879)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1193054/000119305426000002"
+          "namn": "Lee Rachel H.  (CIK 0001704740); Applied Digital Corp.  (CIK 0001144879)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1704740/000114487926000065"
         },
         {
           "datum": "2026-11-06",
@@ -1973,13 +1973,13 @@
         },
         {
           "datum": "2026-11-06",
-          "namn": "BAKER JULIAN  (CIK 0001087939); BAKER FELIX  (CIK 0001087940)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1087939/000119312526451994"
+          "namn": "SEDRISH BRIAN  (CIK 0002027461); Sunrise Realty Trust, Inc.  (CIK 0002012706)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2027461/000162828026071760"
         },
         {
           "datum": "2026-11-06",
-          "namn": "SEDRISH BRIAN  (CIK 0002027461); Sunrise Realty Trust, Inc.  (CIK 0002012706)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2027461/000162828026071760"
+          "namn": "BAKER JULIAN  (CIK 0001087939); BAKER FELIX  (CIK 0001087940)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1087939/000119312526451994"
         },
         {
           "datum": "2026-11-06",
@@ -1993,10 +1993,153 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-09T01:57+00:00"
+      "vintage": "2026-11-09T09:40+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-09 10:23:12",
+          "emittent": "Dividend Sweden AB",
+          "person": "Bo Lindén",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "0,16",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:59:29",
+          "emittent": "Amido AB (publ)",
+          "person": "David Wästberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "3,94",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:59:29",
+          "emittent": "Amido AB (publ)",
+          "person": "David Wästberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "3,98",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:58:20",
+          "emittent": "Magle Chemoswed Holding AB",
+          "person": "Aaron Wong",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "7755890,0",
+          "enhet": "Antal",
+          "pris": "0,056",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:44:13",
+          "emittent": "Computershare Trustees Limited",
+          "person": "Mikael Sorensen",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "65,0",
+          "enhet": "Antal",
+          "pris": "12,01571",
+          "valuta": "GBP"
+        },
+        {
+          "publicerad": "2026-11-09 09:41:07",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "3500,0",
+          "enhet": "Antal",
+          "pris": "188,834",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:41:07",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "500,0",
+          "enhet": "Antal",
+          "pris": "190,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:29:25",
+          "emittent": "BAHNHOF AB (PUBL)",
+          "person": "Andreas Norman",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "46959,0",
+          "enhet": "Antal",
+          "pris": "60,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:26:36",
+          "emittent": "Observit AB (publ)",
+          "person": "Lars Larsson Flodén",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "236234,0",
+          "enhet": "Antal",
+          "pris": "0,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 09:13:58",
+          "emittent": "BAHNHOF AB (PUBL)",
+          "person": "Jon Karlung",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "375000,0",
+          "enhet": "Antal",
+          "pris": "60,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 08:54:46",
+          "emittent": "EQS Group AG",
+          "person": "Markus Spingler",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "41,0",
+          "enhet": "Antal",
+          "pris": "250,256098",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 08:54:46",
+          "emittent": "EQS Group AG",
+          "person": "Markus Spingler",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "983,0",
+          "enhet": "Antal",
+          "pris": "250,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-09 08:54:46",
+          "emittent": "EQS Group AG",
+          "person": "Markus Spingler",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "5897,0",
+          "enhet": "Antal",
+          "pris": "250,00",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-08 17:06:19",
           "emittent": "Magle Chemoswed Holding AB",
@@ -2403,154 +2546,11 @@
           "enhet": "Antal",
           "pris": "42,55",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:21:13",
-          "emittent": "Fastighetsbolaget Emilshus AB",
-          "person": "Jakob Fyrberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Inlösen egenutfärdat instrument",
-          "volym": "81806,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:21:13",
-          "emittent": "Fastighetsbolaget Emilshus AB",
-          "person": "Jakob Fyrberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "81806,0",
-          "enhet": "Antal",
-          "pris": "27,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:20:49",
-          "emittent": "Fastighetsbolaget Emilshus AB",
-          "person": "Emil Jansbo",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen ökning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "27,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:18:38",
-          "emittent": "Fastighetsbolaget Emilshus AB",
-          "person": "Emil Jansbo",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Lösen minskning",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:13:46",
-          "emittent": "Ymer Alternative Credit Fund IV AB (publ)",
-          "person": "Patrick De Muynck",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "6,0",
-          "enhet": "Antal",
-          "pris": "11264,99",
-          "valuta": "EUR"
-        },
-        {
-          "publicerad": "2026-11-06 11:13:02",
-          "emittent": "Fastighetsbolaget Emilshus AB",
-          "person": "Emil Jansbo",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Avyttring",
-          "volym": "30000,0",
-          "enhet": "Antal",
-          "pris": "42,55",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:10:22",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "102000,0",
-          "enhet": "Antal",
-          "pris": "1,09",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:10:22",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "26827,0",
-          "enhet": "Antal",
-          "pris": "1,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 11:10:22",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "92000,0",
-          "enhet": "Antal",
-          "pris": "1,09",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 10:31:03",
-          "emittent": "Gomero Group AB",
-          "person": "Alf Engqvist",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "11,75",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 10:18:38",
-          "emittent": "SARSYS-ASFT AB",
-          "person": "Mikael Larsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "22742,0",
-          "enhet": "Antal",
-          "pris": "0,532",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 10:18:38",
-          "emittent": "SARSYS-ASFT AB",
-          "person": "Mikael Larsson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10436,0",
-          "enhet": "Antal",
-          "pris": "0,526",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-06 09:54:04",
-          "emittent": "Bullerblomster Invest AB",
-          "person": "Magnus Trollius",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "8,6867",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 13,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-09T01:57+00:00"
+      "vintage": "2026-11-09T09:40+00:00"
     }
   }
 }
