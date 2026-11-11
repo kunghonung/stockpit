@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-11",
-  "genererad": "2026-11-11T00:36+00:00",
+  "genererad": "2026-11-11T07:10+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         102.06,
         100.55,
         94.84,
-        96.1,
+        95.35,
         95.35
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         89.74,
         91.77,
         91.66,
-        92.96,
+        93.22,
         93.22
       ]
     },
@@ -221,7 +221,7 @@
         93.26,
         88.8,
         95.73,
-        95.81,
+        96.53,
         96.53
       ]
     },
@@ -272,7 +272,7 @@
         99.31,
         102.66,
         103.93,
-        103.46,
+        103.67,
         103.67
       ]
     },
@@ -323,7 +323,7 @@
         101.33,
         103.24,
         106.89,
-        105.36,
+        105.91,
         105.91
       ]
     },
@@ -374,7 +374,7 @@
         108.85,
         112.87,
         115.97,
-        115.45,
+        116.21,
         116.21
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         92.15,
         94.57,
         96.52,
-        95.73,
+        95.96,
         95.96
       ]
     },
@@ -477,7 +477,7 @@
         91.67,
         93.48,
         97.93,
-        97.06,
+        97.28,
         97.28
       ]
     },
@@ -528,7 +528,7 @@
         117.56,
         119.4,
         107.99,
-        106.04,
+        106.9,
         106.9
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         97.18,
         98.79,
         102.71,
-        101.79,
+        102.69,
         102.69
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         95.82,
         98.3,
         102.96,
-        103.52,
+        103.93,
         103.93
       ]
     }
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "4045",
+      "varde": "4068",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−3,2 %",
+      "delta4v": "−1,0 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "51,53",
+      "varde": "53,02",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,9 %",
+      "delta4v": "−4,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,27",
+      "varde": "6,33",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−6,1 %",
+      "delta4v": "−4,2 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-11"
     },
     "olja": {
-      "v": 91.84,
+      "v": 92.27,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-11"
     }
@@ -1685,7 +1685,7 @@
           101.07,
           100.99,
           100.63,
-          100.39,
+          100.49,
           100.49
         ]
       },
@@ -1726,7 +1726,7 @@
           100.14,
           98.64,
           95.99,
-          96.86,
+          96.66,
           96.66
         ]
       },
@@ -1767,7 +1767,7 @@
           97.96,
           100.14,
           102.8,
-          101.45,
+          102.21,
           102.21
         ]
       },
@@ -1808,8 +1808,8 @@
           96.62,
           98.02,
           91.09,
-          90.84,
-          93.7
+          93.88,
+          95.11
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           96.85,
           95.8,
           95.36,
-          95.6,
+          95.32,
           95.32
         ]
       },
@@ -1890,7 +1890,7 @@
           91.48,
           92.05,
           99.69,
-          96.46,
+          96.12,
           96.12
         ]
       },
@@ -1931,7 +1931,7 @@
           93.9,
           96.92,
           105.84,
-          104.2,
+          105.32,
           105.32
         ]
       }
@@ -1941,6 +1941,11 @@
   "insynFlode": {
     "us": {
       "poster": [
+        {
+          "datum": "2026-11-09",
+          "namn": "Berset Mark S  (CIK 0001439853); BayFirst Financial Corp.  (CIK 0001649739)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1439853/000164973926000153"
+        },
         {
           "datum": "2026-11-09",
           "namn": "Jameson Jeremy Andrew  (CIK 0002083171); Midland States Bancorp, Inc.  (CIK 0001466026)",
@@ -1953,18 +1958,13 @@
         },
         {
           "datum": "2026-11-09",
-          "namn": "Berset Mark S  (CIK 0001439853); BayFirst Financial Corp.  (CIK 0001649739)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1439853/000164973926000153"
+          "namn": "Tuffin Paula  (CIK 0001989210); Better Home & Finance Holding Co  (CIK 0001835856)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1989210/000198921026000027"
         },
         {
           "datum": "2026-11-09",
           "namn": "Prahm Jeremy  (CIK 0001853905); Finance of America Companies Inc.  (CIK 0001828937)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1853905/000185390526000036"
-        },
-        {
-          "datum": "2026-11-09",
-          "namn": "Tuffin Paula  (CIK 0001989210); Better Home & Finance Holding Co  (CIK 0001835856)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1989210/000198921026000027"
         },
         {
           "datum": "2026-11-09",
@@ -1993,10 +1993,65 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-11T00:36+00:00"
+      "vintage": "2026-11-11T07:09+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-11 07:45:17",
+          "emittent": "Devyser Diagnostics AB",
+          "person": "Mia Arnhult",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "64,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-11 07:37:28",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "416180,0",
+          "enhet": "Antal",
+          "pris": "2,27",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-11 07:37:28",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "185,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-11 07:37:28",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "318548,0",
+          "enhet": "Antal",
+          "pris": "2,2",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-11 07:37:28",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "21295,0",
+          "enhet": "Antal",
+          "pris": "2,32",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-10 21:42:33",
           "emittent": "Goobit Group AB (publ)",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,34",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 11:12:02",
-          "emittent": "HEAD Engineering AB",
-          "person": "Anders Hofstedt",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "4445178,0",
-          "enhet": "Antal",
-          "pris": "22,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 11:03:31",
-          "emittent": "Magle Chemoswed Holding AB",
-          "person": "Søren Skjold Mogensen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1938973,0",
-          "enhet": "Antal",
-          "pris": "0,056",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 10:31:53",
-          "emittent": "eEducation Albert AB",
-          "person": "Fredrik Bengtsson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "3,972306",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 10:08:27",
-          "emittent": "AI Revenue Assistant Software Stockholm AB",
-          "person": "Daniel Wikberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "1339285,0",
-          "enhet": "Antal",
-          "pris": "5,6",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 09:58:20",
-          "emittent": "BONESUPPORT HOLDING AB",
-          "person": "Emil Billbäck",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "65000,0",
-          "enhet": "Antal",
-          "pris": "320,46",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 10,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-11T00:36+00:00"
+      "vintage": "2026-11-11T07:10+00:00"
     }
   }
 }
