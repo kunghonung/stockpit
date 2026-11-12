@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
-  "asOfDatum": "2026-11-11",
-  "genererad": "2026-11-11T22:16+00:00",
+  "asOfDatum": "2026-11-12",
+  "genererad": "2026-11-12T03:19+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         102.06,
         100.55,
         94.84,
-        95.35,
+        97.14,
         97.14
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -221,7 +221,7 @@
         93.26,
         88.8,
         95.73,
-        96.53,
+        96.01,
         96.01
       ]
     },
@@ -272,7 +272,7 @@
         99.31,
         102.66,
         103.93,
-        103.67,
+        102.65,
         102.65
       ]
     },
@@ -323,7 +323,7 @@
         101.33,
         103.24,
         106.89,
-        105.91,
+        105.01,
         105.01
       ]
     },
@@ -374,7 +374,7 @@
         108.85,
         112.87,
         115.97,
-        116.21,
+        114.74,
         114.74
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         92.15,
         94.57,
         96.52,
-        95.96,
+        94.9,
         94.9
       ]
     },
@@ -477,7 +477,7 @@
         91.67,
         93.48,
         97.93,
-        97.28,
+        96.04,
         96.04
       ]
     },
@@ -528,7 +528,7 @@
         117.56,
         119.4,
         107.99,
-        106.9,
+        107.48,
         107.48
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         97.18,
         98.79,
         102.71,
-        102.69,
+        101.95,
         101.95
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         95.82,
         98.3,
         102.96,
-        103.93,
+        102.53,
         102.53
       ]
     }
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-11-11",
+      "vintage": "2026-11-12",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-11-11",
+      "vintage": "2026-11-12",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3994",
+      "varde": "3988",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−2,8 %",
+      "delta4v": "−4,4 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-11-11"
+      "vintage": "2026-11-12"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "51,68",
+      "varde": "51,58",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,0 %",
+      "delta4v": "−9,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-11-11"
+      "vintage": "2026-11-12"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,27",
+      "varde": "6,26",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−5,2 %",
+      "delta4v": "−3,9 %",
       "over200d": true,
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-11-11"
+      "vintage": "2026-11-12"
     },
     "olja": {
-      "v": 92.63,
+      "v": 91.83,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-11-11"
+      "vintage": "2026-11-12"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-11-11",
+    "vintage": "2026-11-12",
     "marknader": [
       {
         "namn": "USA",
@@ -1685,7 +1685,7 @@
           101.07,
           100.99,
           100.63,
-          100.49,
+          100.64,
           100.64
         ]
       },
@@ -1726,7 +1726,7 @@
           100.14,
           98.64,
           95.99,
-          96.66,
+          97.76,
           97.76
         ]
       },
@@ -1767,7 +1767,7 @@
           97.96,
           100.14,
           102.8,
-          102.21,
+          101.76,
           101.76
         ]
       },
@@ -1808,8 +1808,8 @@
           96.62,
           98.02,
           91.09,
-          93.88,
-          94.02
+          94.02,
+          94.73
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           96.85,
           95.8,
           95.36,
-          95.32,
+          96.51,
           96.51
         ]
       },
@@ -1890,7 +1890,7 @@
           91.48,
           92.05,
           99.69,
-          96.12,
+          94.25,
           94.25
         ]
       },
@@ -1931,7 +1931,7 @@
           93.9,
           96.92,
           105.84,
-          105.32,
+          103.85,
           103.85
         ]
       }
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-11T22:16+00:00"
+      "vintage": "2026-11-12T03:19+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 14,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-11T22:16+00:00"
+      "vintage": "2026-11-12T03:19+00:00"
     }
   }
 }
