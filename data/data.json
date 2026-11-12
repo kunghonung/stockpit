@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-12",
-  "genererad": "2026-11-12T03:19+00:00",
+  "genererad": "2026-11-12T11:48+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 17.5,
-      "delta": "+0,9 · 1 v",
+      "varde": 18.3,
+      "delta": "−9,9 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 17.5,
+      "varde": 18.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3988",
+      "varde": "3953",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−4,4 %",
+      "delta4v": "−5,2 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "51,58",
+      "varde": "51,01",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−9,2 %",
+      "delta4v": "−10,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,18 +991,18 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,26",
+      "varde": "6,21",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−3,9 %",
-      "over200d": true,
-      "status": "gul",
+      "delta4v": "−4,7 %",
+      "over200d": false,
+      "status": "rod",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
       "vintage": "2026-11-12"
     },
     "olja": {
-      "v": 91.83,
+      "v": 92.31,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-12"
     }
@@ -1768,7 +1768,7 @@
           100.14,
           102.8,
           101.76,
-          101.76
+          102.16
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           98.02,
           91.09,
           94.02,
-          94.73
+          93.36
         ]
       },
       {
@@ -1993,10 +1993,318 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-12T03:19+00:00"
+      "vintage": "2026-11-12T11:48+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-12 12:15:12",
+          "emittent": "Moberg Pharma AB (publ)",
+          "person": "Lars Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "10,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:40:59",
+          "emittent": "Investment Aktiebolaget Spiltan",
+          "person": "Wilhelm Börjesson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1000,0",
+          "enhet": "Antal",
+          "pris": "184,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:13:45",
+          "emittent": "XANO Industri AB",
+          "person": "Lennart Persson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "39,99",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "115,0",
+          "enhet": "Antal",
+          "pris": "36,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "112,0",
+          "enhet": "Antal",
+          "pris": "36,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "30,0",
+          "enhet": "Antal",
+          "pris": "37,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "224,0",
+          "enhet": "Antal",
+          "pris": "37,45",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "60,0",
+          "enhet": "Antal",
+          "pris": "37,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "420,0",
+          "enhet": "Antal",
+          "pris": "37,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "415,0",
+          "enhet": "Antal",
+          "pris": "37,60",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "477,0",
+          "enhet": "Antal",
+          "pris": "37,85",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "232,0",
+          "enhet": "Antal",
+          "pris": "37,85",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "400,0",
+          "enhet": "Antal",
+          "pris": "37,90",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "39,0",
+          "enhet": "Antal",
+          "pris": "37,95",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "727,0",
+          "enhet": "Antal",
+          "pris": "38,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 11:12:13",
+          "emittent": "Qualisys Holding Aktiebolag",
+          "person": "Ingemar Pettersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1749,0",
+          "enhet": "Antal",
+          "pris": "38,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:43:57",
+          "emittent": "Axolot Solutions Holding AB",
+          "person": "Lennart Holm",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,2039",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:41:30",
+          "emittent": "Desenio Group AB (publ)",
+          "person": "David Spennare",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "13750000,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "135,0",
+          "enhet": "Antal",
+          "pris": "52,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "401,0",
+          "enhet": "Antal",
+          "pris": "52,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "110,0",
+          "enhet": "Antal",
+          "pris": "52,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "5,0",
+          "enhet": "Antal",
+          "pris": "52,70",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "63,0",
+          "enhet": "Antal",
+          "pris": "52,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "63,0",
+          "enhet": "Antal",
+          "pris": "52,25",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 10:35:55",
+          "emittent": "Elanders AB",
+          "person": "Martin Schubach",
+          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
+          "karaktar": "Förvärv",
+          "volym": "223,0",
+          "enhet": "Antal",
+          "pris": "52,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 09:20:39",
+          "emittent": "MIPS AB",
+          "person": "Cedric Marmeys",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "3500,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 09:20:39",
+          "emittent": "MIPS AB",
+          "person": "Cedric Marmeys",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "3640,0",
+          "enhet": "Antal",
+          "pris": "381,08",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-12 08:30:20",
+          "emittent": "Polygiene AB",
+          "person": "BEngström Förvaltning AB",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5820,0",
+          "enhet": "Antal",
+          "pris": "2,31",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-11 23:15:54",
           "emittent": "Micropos Medical AB (publ)",
@@ -2238,319 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,020614",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 10:37:54",
-          "emittent": "MOMENT GROUP AB",
-          "person": "Leif West",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10072,0",
-          "enhet": "Antal",
-          "pris": "5,0556",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 10:36:04",
-          "emittent": "Alcadon Group AB",
-          "person": "Fredrik Valentin",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "5000,0",
-          "enhet": "Antal",
-          "pris": "30,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 09:52:16",
-          "emittent": "Volati AB",
-          "person": "Magnus Sundström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "250000,0",
-          "enhet": "Antal",
-          "pris": "22,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 09:52:09",
-          "emittent": "Nosa Plugs AB (publ)",
-          "person": "Adrian Liljefors",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "0,4459",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 09:52:09",
-          "emittent": "Nosa Plugs AB (publ)",
-          "person": "Adrian Liljefors",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "19652,0",
-          "enhet": "Antal",
-          "pris": "0,4347",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 09:50:40",
-          "emittent": "Swedencare AB (publ)",
-          "person": "Lars Håkan Lagerberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "6500,0",
-          "enhet": "Antal",
-          "pris": "19,0416",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 09:06:49",
-          "emittent": "Unlimited Travel Group UTG AB (publ)",
-          "person": "John Andersson Löfström",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5762,0",
-          "enhet": "Antal",
-          "pris": "19,46",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 07:45:17",
-          "emittent": "Devyser Diagnostics AB",
-          "person": "Mia Arnhult",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "64,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 07:37:28",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "416180,0",
-          "enhet": "Antal",
-          "pris": "2,27",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 07:37:28",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "185,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 07:37:28",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "318548,0",
-          "enhet": "Antal",
-          "pris": "2,2",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-11 07:37:28",
-          "emittent": "Corem Property Group AB",
-          "person": "Rutger Arnhult",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "21295,0",
-          "enhet": "Antal",
-          "pris": "2,32",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:42:33",
-          "emittent": "Goobit Group AB (publ)",
-          "person": "Erhard Michael Völter",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "514706,0",
-          "enhet": "Antal",
-          "pris": "0,34",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:34:54",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Stefan Svensson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1000,0",
-          "enhet": "Antal",
-          "pris": "34,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:34:54",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Stefan Svensson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "4604,0",
-          "enhet": "Antal",
-          "pris": "33,86",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:34:54",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Stefan Svensson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "5600,0",
-          "enhet": "Antal",
-          "pris": "33,93",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:34:54",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Stefan Svensson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "2800,0",
-          "enhet": "Antal",
-          "pris": "34,06",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:34:54",
-          "emittent": "Nelly Group AB (publ)",
-          "person": "Stefan Svensson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "996,0",
-          "enhet": "Antal",
-          "pris": "34,16",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:12:02",
-          "emittent": "SenzaGen AB",
-          "person": "Bengt Peter Nählstedt",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "7039,0",
-          "enhet": "Antal",
-          "pris": "4,91",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:12:02",
-          "emittent": "SenzaGen AB",
-          "person": "Bengt Peter Nählstedt",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10400,0",
-          "enhet": "Antal",
-          "pris": "4,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 21:12:02",
-          "emittent": "SenzaGen AB",
-          "person": "Bengt Peter Nählstedt",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "3092,0",
-          "enhet": "Antal",
-          "pris": "4,85",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 20:57:44",
-          "emittent": "Idun Industrier AB (publ)",
-          "person": "Jonas Sandström Estmalm",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "325,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 20:37:16",
-          "emittent": "Prebona AB (publ)",
-          "person": "Christian Östberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Teckning",
-          "volym": "228000,0",
-          "enhet": "Antal",
-          "pris": "0,44",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 19:27:52",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "22,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 19:27:52",
-          "emittent": "QLIRO AB",
-          "person": "Christoffer Rutgersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "22,90",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 19:24:45",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "30527,0",
-          "enhet": "Antal",
-          "pris": "1,21",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 19:23:39",
-          "emittent": "Spago Nanomedical AB (publ)",
-          "person": "Tiel Ridderstad",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "8999383,0",
-          "enhet": "Antal",
-          "pris": "0,36",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-10 19:23:39",
-          "emittent": "Spago Nanomedical AB (publ)",
-          "person": "Tiel Ridderstad",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "8999383,0",
-          "enhet": "Antal",
-          "pris": "0,36",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 28,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-12T03:19+00:00"
+      "vintage": "2026-11-12T11:48+00:00"
     }
   }
 }
