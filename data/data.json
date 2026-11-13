@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-13",
-  "genererad": "2026-11-13T01:01+00:00",
+  "genererad": "2026-11-13T07:52+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         102.06,
         100.55,
         94.84,
-        97.14,
+        97.16,
         97.16
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         89.74,
         91.77,
         91.66,
-        93.22,
+        92.72,
         92.72
       ]
     },
@@ -201,7 +201,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 10,
+      "rsRank": 9,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -221,7 +221,7 @@
         93.26,
         88.8,
         95.73,
-        96.01,
+        95.43,
         95.43
       ]
     },
@@ -272,7 +272,7 @@
         99.31,
         102.66,
         103.93,
-        102.65,
+        101.69,
         101.69
       ]
     },
@@ -323,7 +323,7 @@
         101.33,
         103.24,
         106.89,
-        105.01,
+        104.94,
         104.94
       ]
     },
@@ -374,7 +374,7 @@
         108.85,
         112.87,
         115.97,
-        114.74,
+        114.47,
         114.47
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         92.15,
         94.57,
         96.52,
-        94.9,
+        95.22,
         95.22
       ]
     },
@@ -477,7 +477,7 @@
         91.67,
         93.48,
         97.93,
-        96.04,
+        95.88,
         95.88
       ]
     },
@@ -508,7 +508,7 @@
       "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 9,
+      "rsRank": 10,
       "rsRankForra": 10,
       "relSerie19": [
         100.0,
@@ -528,7 +528,7 @@
         117.56,
         119.4,
         107.99,
-        107.48,
+        109.49,
         109.49
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         97.18,
         98.79,
         102.71,
-        101.95,
+        101.58,
         101.58
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         95.82,
         98.3,
         102.96,
-        102.53,
+        102.44,
         102.44
       ]
     }
@@ -967,7 +967,7 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3890",
+      "varde": "3902",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−6,7 %",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,99",
+      "varde": "50,02",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,0 %",
+      "delta4v": "−12,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,21",
+      "varde": "6,14",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−4,7 %",
+      "delta4v": "−5,9 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-13"
     },
     "olja": {
-      "v": 95.69,
+      "v": 96.12,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-13"
     }
@@ -1685,7 +1685,7 @@
           101.07,
           100.99,
           100.63,
-          100.64,
+          100.87,
           100.87
         ]
       },
@@ -1726,7 +1726,7 @@
           100.14,
           98.64,
           95.99,
-          97.76,
+          98.0,
           98.0
         ]
       },
@@ -1767,7 +1767,7 @@
           97.96,
           100.14,
           102.8,
-          101.76,
+          102.49,
           102.49
         ]
       },
@@ -1808,8 +1808,8 @@
           96.62,
           98.02,
           91.09,
-          94.02,
-          95.36
+          93.89,
+          94.39
         ]
       },
       {
@@ -1849,7 +1849,7 @@
           96.85,
           95.8,
           95.36,
-          96.51,
+          95.66,
           95.66
         ]
       },
@@ -1890,7 +1890,7 @@
           91.48,
           92.05,
           99.69,
-          94.25,
+          93.04,
           93.04
         ]
       },
@@ -1931,7 +1931,7 @@
           93.9,
           96.92,
           105.84,
-          103.85,
+          104.37,
           104.37
         ]
       }
@@ -1953,13 +1953,13 @@
         },
         {
           "datum": "2026-11-10",
-          "namn": "Hensley Mark Earl  (CIK 0002065816); HERON THERAPEUTICS, INC. /DE/  (CIK 0000818033)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2065816/000119312526454742"
+          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); MEXICO FUND INC  (CIK 0000065433)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000425"
         },
         {
           "datum": "2026-11-10",
-          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); MEXICO FUND INC  (CIK 0000065433)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000425"
+          "namn": "Hensley Mark Earl  (CIK 0002065816); HERON THERAPEUTICS, INC. /DE/  (CIK 0000818033)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2065816/000119312526454742"
         },
         {
           "datum": "2026-11-10",
@@ -1993,10 +1993,43 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-13T01:01+00:00"
+      "vintage": "2026-11-13T07:52+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-13 08:45:59",
+          "emittent": "MOMENT GROUP AB",
+          "person": "Leif West",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "5112,0",
+          "enhet": "Antal",
+          "pris": "5,0833",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-13 08:33:14",
+          "emittent": "Bergman & Beving Aktiebolag",
+          "person": "Peter Schön",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Lösen minskning",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "79,56",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-13 06:38:04",
+          "emittent": "Balco Group AB",
+          "person": "Karl Håkan Viktor Arvidsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "13,05",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-12 23:15:15",
           "emittent": "Svevik Industri AB",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "37,95",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-12 11:12:13",
-          "emittent": "Qualisys Holding Aktiebolag",
-          "person": "Ingemar Pettersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "727,0",
-          "enhet": "Antal",
-          "pris": "38,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-12 11:12:13",
-          "emittent": "Qualisys Holding Aktiebolag",
-          "person": "Ingemar Pettersson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "1749,0",
-          "enhet": "Antal",
-          "pris": "38,00",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-12 10:43:57",
-          "emittent": "Axolot Solutions Holding AB",
-          "person": "Lennart Holm",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "100000,0",
-          "enhet": "Antal",
-          "pris": "0,2039",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 9,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-13T01:01+00:00"
+      "vintage": "2026-11-13T07:52+00:00"
     }
   }
 }
