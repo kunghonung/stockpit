@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-13",
-  "genererad": "2026-11-13T22:09+00:00",
+  "genererad": "2026-11-14T02:40+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         102.06,
         100.55,
         94.84,
-        97.16,
+        95.55,
         95.55
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -150,7 +150,7 @@
         "vintage": "2026-06"
       },
       "insynKluster": 1,
-      "rsRank": 9,
+      "rsRank": 8,
       "rsRankForra": 8,
       "relSerie19": [
         100.0,
@@ -170,7 +170,7 @@
         89.74,
         91.77,
         91.66,
-        92.72,
+        92.69,
         92.69
       ]
     },
@@ -201,7 +201,7 @@
       "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
-      "rsRank": 8,
+      "rsRank": 9,
       "rsRankForra": 9,
       "relSerie19": [
         100.0,
@@ -221,7 +221,7 @@
         93.26,
         88.8,
         95.73,
-        95.43,
+        96.79,
         96.79
       ]
     },
@@ -272,7 +272,7 @@
         99.31,
         102.66,
         103.93,
-        101.69,
+        101.85,
         101.85
       ]
     },
@@ -323,7 +323,7 @@
         101.33,
         103.24,
         106.89,
-        104.94,
+        106.81,
         106.81
       ]
     },
@@ -374,7 +374,7 @@
         108.85,
         112.87,
         115.97,
-        114.47,
+        115.51,
         115.51
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         92.15,
         94.57,
         96.52,
-        95.22,
+        96.07,
         96.07
       ]
     },
@@ -477,7 +477,7 @@
         91.67,
         93.48,
         97.93,
-        95.88,
+        96.25,
         96.25
       ]
     },
@@ -528,7 +528,7 @@
         117.56,
         119.4,
         107.99,
-        109.49,
+        110.97,
         110.97
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         97.18,
         98.79,
         102.71,
-        101.58,
+        102.77,
         102.77
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         95.82,
         98.3,
         102.96,
-        102.44,
+        102.41,
         102.41
       ]
     }
@@ -979,7 +979,7 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "48,69",
+      "varde": "48,65",
       "enhet": "USD/oz",
       "pil": "ned",
       "delta4v": "−14,6 %",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-13"
     },
     "olja": {
-      "v": 96.16,
+      "v": 96.08,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-13"
     }
@@ -1685,7 +1685,7 @@
           101.07,
           100.99,
           100.63,
-          100.87,
+          100.78,
           100.78
         ]
       },
@@ -1726,7 +1726,7 @@
           100.14,
           98.64,
           95.99,
-          98.0,
+          97.09,
           97.09
         ]
       },
@@ -1767,7 +1767,7 @@
           97.96,
           100.14,
           102.8,
-          102.49,
+          102.79,
           102.79
         ]
       },
@@ -1808,7 +1808,7 @@
           96.62,
           98.02,
           91.09,
-          93.89,
+          94.65,
           94.65
         ]
       },
@@ -1849,7 +1849,7 @@
           96.85,
           95.8,
           95.36,
-          95.66,
+          95.58,
           95.58
         ]
       },
@@ -1890,7 +1890,7 @@
           91.48,
           92.05,
           99.69,
-          93.04,
+          92.96,
           92.96
         ]
       },
@@ -1931,7 +1931,7 @@
           93.9,
           96.92,
           105.84,
-          104.37,
+          104.45,
           104.45
         ]
       }
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-13T22:09+00:00"
+      "vintage": "2026-11-14T02:40+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 16,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-13T22:09+00:00"
+      "vintage": "2026-11-14T02:40+00:00"
     }
   }
 }
