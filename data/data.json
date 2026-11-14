@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-13",
-  "genererad": "2026-11-14T02:40+00:00",
+  "genererad": "2026-11-14T10:14+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -82,11 +82,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 3.9,
-        "kalla": "FMP-riktkursaggregat 90 d, 59 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": 0.4,
+        "kalla": "FMP-riktkursaggregat 90 d, 55 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "accelererar",
+      "revRiktning": "flat",
       "flodeM": {
         "v": 13.0,
         "andelInflode": 78,
@@ -139,11 +139,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.5,
-        "kalla": "FMP-riktkursaggregat 90 d, 74 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": 0.6,
+        "kalla": "FMP-riktkursaggregat 90 d, 71 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "vänder",
+      "revRiktning": "accelererar",
       "flodeM": {
         "v": 2.2,
         "kalla": "SSGA månadsdata — störst enskild sektor vid sidan av Tech",
@@ -194,11 +194,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.8,
+        "v": 5.8,
         "kalla": "FMP-riktkursaggregat 90 d, 14 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "faller",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 9,
@@ -245,11 +245,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -3.5,
-        "kalla": "FMP-riktkursaggregat 90 d, 22 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": -3.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 21 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "vänder",
+      "revRiktning": "faller",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 7,
@@ -296,9 +296,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.6,
-        "kalla": "FMP-riktkursaggregat 90 d, 23 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": 1.9,
+        "kalla": "FMP-riktkursaggregat 90 d, 21 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
       "revRiktning": "accelererar",
       "flodeM": null,
@@ -347,9 +347,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.8,
-        "kalla": "FMP-riktkursaggregat 90 d, 53 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": 3.3,
+        "kalla": "FMP-riktkursaggregat 90 d, 48 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
       "revRiktning": "accelererar",
       "flodeM": null,
@@ -399,11 +399,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.3,
+        "v": 0.5,
         "kalla": "FMP-riktkursaggregat 90 d, 29 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "vänder",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 4,
@@ -450,11 +450,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.8,
-        "kalla": "FMP-riktkursaggregat 90 d, 27 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": -0.0,
+        "kalla": "FMP-riktkursaggregat 90 d, 25 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "faller",
+      "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 6,
@@ -501,11 +501,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 1.1,
+        "v": 1.7,
         "kalla": "FMP-riktkursaggregat 90 d, 19 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "stiger",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 10,
@@ -553,11 +553,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -1.5,
-        "kalla": "FMP-riktkursaggregat 90 d, 65 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": -0.3,
+        "kalla": "FMP-riktkursaggregat 90 d, 62 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "faller",
+      "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 5,
@@ -605,11 +605,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.3,
-        "kalla": "FMP-riktkursaggregat 90 d, 41 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-07"
+        "v": -0.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 38 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-14"
       },
-      "revRiktning": "accelererar",
+      "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 3,
@@ -779,7 +779,7 @@
       "score": 79,
       "komfort": 60,
       "kalla": "CFTC COT (percentil 3 år). BAML-komponenten utgår ur autoflödet (stängd källa).",
-      "vintage": "2026-11-07",
+      "vintage": "2026-11-14",
       "komponenter": [
         {
           "namn": "E-mini S&P 500 noncommercial netto",
@@ -894,7 +894,6 @@
     },
     "sentiment": {
       "spx26": [
-        106.9,
         108.1,
         108.8,
         108.3,
@@ -919,11 +918,11 @@
         112.6,
         112.6,
         112.6,
+        112.6,
         112.6
       ],
       "high52": 113.9,
       "spread26": [
-        6,
         8,
         5,
         7,
@@ -948,14 +947,15 @@
         -3,
         -9,
         -4,
-        -14
+        -14,
+        -21
       ],
       "kalla": "AAII Sentiment Survey (publika sidan, veckostaplarna)",
-      "vintage": "2026-11-04",
-      "bull": 34.1,
-      "neutral": 17.5,
-      "bear": 48.4,
-      "spread": -14.3
+      "vintage": "2026-11-11",
+      "bull": 30.8,
+      "neutral": 17.8,
+      "bear": 51.4,
+      "spread": -20.6
     },
     "realranta": {
       "varde": "2,86 %",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3888",
+      "varde": "3886",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,0 %",
+      "delta4v": "−7,1 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "48,65",
+      "varde": "49,03",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−14,6 %",
+      "delta4v": "−14,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,06",
+      "varde": "6,08",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−7,2 %",
+      "delta4v": "−6,9 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-13"
     },
     "olja": {
-      "v": 96.08,
+      "v": 95.84,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-13"
     }
@@ -1993,10 +1993,65 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-14T02:40+00:00"
+      "vintage": "2026-11-14T10:14+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-14 10:42:55",
+          "emittent": "Observit AB (publ)",
+          "person": "Lennart Rasmusson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,41771434",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-14 10:42:55",
+          "emittent": "Observit AB (publ)",
+          "person": "Lennart Rasmusson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,42",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-14 10:42:55",
+          "emittent": "Observit AB (publ)",
+          "person": "Lennart Rasmusson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,437",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-14 10:42:55",
+          "emittent": "Observit AB (publ)",
+          "person": "Lennart Rasmusson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,421",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-14 10:42:55",
+          "emittent": "Observit AB (publ)",
+          "person": "Lennart Rasmusson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "0,42627779",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-13 22:50:20",
           "emittent": "Nodebis Applications AB (publ)",
@@ -2491,66 +2546,11 @@
           "enhet": "Antal",
           "pris": "488,60",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 14:46:14",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "2328,0",
-          "enhet": "Antal",
-          "pris": "487,20",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 14:46:14",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "2205,0",
-          "enhet": "Antal",
-          "pris": "487,26",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 14:46:14",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "1239,0",
-          "enhet": "Antal",
-          "pris": "486,14",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 14:46:14",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "1247,0",
-          "enhet": "Antal",
-          "pris": "484,04",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 14:46:14",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Guido Oelkers",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "915,0",
-          "enhet": "Antal",
-          "pris": "483,50",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 5,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-14T02:40+00:00"
+      "vintage": "2026-11-14T10:14+00:00"
     }
   }
 }
