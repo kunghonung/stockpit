@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W46",
   "asOfDatum": "2026-11-13",
-  "genererad": "2026-11-15T01:17+00:00",
+  "genererad": "2026-11-15T08:25+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,03",
+      "varde": "49,12",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−14,0 %",
+      "delta4v": "−13,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,08",
+      "varde": "6,09",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−6,9 %",
+      "delta4v": "−6,7 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1993,7 +1993,7 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-15T01:17+00:00"
+      "vintage": "2026-11-15T08:25+00:00"
     },
     "se": {
       "poster": [
@@ -2550,7 +2550,7 @@
       ],
       "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-15T01:17+00:00"
+      "vintage": "2026-11-15T08:25+00:00"
     }
   }
 }
