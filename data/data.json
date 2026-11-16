@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "lage": "LIVE",
-  "asOfWeek": "2026-W46",
-  "asOfDatum": "2026-11-13",
-  "genererad": "2026-11-15T21:00+00:00",
+  "asOfWeek": "2026-W47",
+  "asOfDatum": "2026-11-16",
+  "genererad": "2026-11-16T00:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -407,7 +407,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 4,
-      "rsRankForra": 5,
+      "rsRankForra": 4,
       "relSerie19": [
         100.0,
         103.08,
@@ -458,7 +458,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 6,
-      "rsRankForra": 4,
+      "rsRankForra": 6,
       "relSerie19": [
         100.0,
         101.76,
@@ -561,7 +561,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 5,
-      "rsRankForra": 6,
+      "rsRankForra": 5,
       "relSerie19": [
         100.0,
         100.68,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-11-13",
+      "vintage": "2026-11-16",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-11-13",
+      "vintage": "2026-11-16",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3886",
+      "varde": "3895",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−7,1 %",
+      "delta4v": "−6,4 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-11-13"
+      "vintage": "2026-11-16"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "49,12",
+      "varde": "48,71",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−13,8 %",
+      "delta4v": "−14,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-11-13"
+      "vintage": "2026-11-16"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,09",
+      "varde": "6,07",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−6,7 %",
+      "delta4v": "−7,1 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-11-13"
+      "vintage": "2026-11-16"
     },
     "olja": {
-      "v": 95.84,
+      "v": 95.39,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-11-13"
+      "vintage": "2026-11-16"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-11-13",
+    "vintage": "2026-11-16",
     "marknader": [
       {
         "namn": "USA",
@@ -1809,7 +1809,7 @@
           98.02,
           91.09,
           94.65,
-          94.65
+          93.76
         ]
       },
       {
@@ -1942,61 +1942,72 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-11-10",
-          "namn": "Lu Chin-Sheng  (CIK 0002135942); TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD  (CIK 0001046179)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2135942/000104617926000776"
+          "datum": "2026-11-13",
+          "namn": "Zorn Rebecca E  (CIK 0001732984); GLOBE LIFE INC.  (CIK 0000320335)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1732984/000032033526000238"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "BENNETT GRANT C  (CIK 0001226537); CPS TECHNOLOGIES CORP/DE/  (CIK 0000814676)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1226537/000122653726000002"
+          "datum": "2026-11-13",
+          "namn": "CLAMADIEU JEAN-PIERRE  (CIK 0001962747); TE Connectivity plc  (CIK 0001385157)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1962747/000122520826008936"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); MEXICO FUND INC  (CIK 0000065433)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000425"
+          "datum": "2026-11-13",
+          "namn": "BERHO CORONA LORENZO MANUEL  (CIK 0002124256); Vesta Real Estate Corporation, S.A.B. de C.V.  (CIK 0001969373)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2124256/000212425626000006"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Hensley Mark Earl  (CIK 0002065816); HERON THERAPEUTICS, INC. /DE/  (CIK 0000818033)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2065816/000119312526454742"
+          "datum": "2026-11-13",
+          "namn": "Wang Haichen  (CIK 0002093135); Webull Corp  (CIK 0001866364)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2093135/000209313526000005"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Spray Stephen M  (CIK 0001549098); CINCINNATI FINANCIAL CORP  (CIK 0000020286)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1549098/000154909826000006"
+          "datum": "2026-11-13",
+          "namn": "Platzer Peter  (CIK 0001856366); Spire Global, Inc.  (CIK 0001816017)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1856366/000185636626000004"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Taffe Norman P  (CIK 0001338627); GENERAC HOLDINGS INC.  (CIK 0001474735)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1338627/000143774926036155"
+          "datum": "2026-11-13",
+          "namn": "Barton-Brobst Lindi Rene  (CIK 0002139722); DENTSPLY SIRONA Inc.  (CIK 0000818479)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2139722/000081847926000290"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Mitra Sabyaschi  (CIK 0002151431); EMERSON ELECTRIC CO  (CIK 0000032604)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2151431/000215143126000010"
+          "datum": "2026-11-13",
+          "namn": "Steele Christa  (CIK 0001530084); Global Water Resources, Inc.  (CIK 0001434728)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1530084/000162828026073804"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Zornio Peter  (CIK 0001957129); EMERSON ELECTRIC CO  (CIK 0000032604)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1957129/000195712926000006"
+          "datum": "2026-11-13",
+          "namn": "Jenks Trisha Esakoff  (CIK 0002156034); RESOURCES CONNECTION, INC.  (CIK 0001084765)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2156034/000215603426000007"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "MOLLOY JOHN P  (CIK 0001656592); Motorola Solutions, Inc.  (CIK 0000068505)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1656592/000165659226000008"
+          "datum": "2026-11-13",
+          "namn": "Elsztain Alejandro Gustavo  (CIK 0002119764); CRESUD INC  (CIK 0001034957)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2119764/000211976426000036"
         },
         {
-          "datum": "2026-11-10",
-          "namn": "Kidd Peter A.  (CIK 0002016010); Kontoor Brands, Inc.  (CIK 0001760965)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2016010/000089706926001909"
+          "datum": "2026-11-13",
+          "namn": "Kroeger Shadrak W  (CIK 0001724314); TE Connectivity plc  (CIK 0001385157)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1724314/000122520826008952"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-15T20:59+00:00"
+      "vintage": "2026-11-16T00:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-15 23:20:37",
+          "emittent": "Vuxen Group AB",
+          "person": "Tobias Fransson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "26,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-14 14:29:50",
           "emittent": "Webrock Ventures AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "302,736570",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 15:32:02",
-          "emittent": "Skanska AB",
-          "person": "Åsa Widholm Thunman",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "140,0",
-          "enhet": "Antal",
-          "pris": "302,736570",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-15T21:00+00:00"
+      "vintage": "2026-11-16T00:57+00:00"
     }
   }
 }
