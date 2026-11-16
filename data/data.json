@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
   "asOfDatum": "2026-11-16",
-  "genererad": "2026-11-16T00:57+00:00",
+  "genererad": "2026-11-16T07:55+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3895",
+      "varde": "3857",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−6,4 %",
+      "delta4v": "−7,3 %",
       "status": "gron",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "48,71",
+      "varde": "47,38",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−14,5 %",
+      "delta4v": "−16,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "6,07",
+      "varde": "6,03",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−7,1 %",
+      "delta4v": "−7,8 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-16"
     },
     "olja": {
-      "v": 95.39,
+      "v": 95.82,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-16"
     }
@@ -1809,7 +1809,7 @@
           98.02,
           91.09,
           94.65,
-          93.76
+          92.36
         ]
       },
       {
@@ -1993,10 +1993,32 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-16T00:57+00:00"
+      "vintage": "2026-11-16T07:55+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-16 07:21:11",
+          "emittent": "NCC AB",
+          "person": "Helena Hed",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1311,0",
+          "enhet": "Antal",
+          "pris": "194,0042",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-16 07:09:38",
+          "emittent": "NCC AB",
+          "person": "Tomas Joakim Brannemo",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "1744,0",
+          "enhet": "Antal",
+          "pris": "194,0042",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-15 23:20:37",
           "emittent": "Vuxen Group AB",
@@ -2524,33 +2546,11 @@
           "enhet": "Antal",
           "pris": "302,736570",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 15:34:04",
-          "emittent": "Skanska AB",
-          "person": "Lena Hök",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "113,0",
-          "enhet": "Antal",
-          "pris": "302,736570",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-13 15:33:07",
-          "emittent": "Skanska AB",
-          "person": "Therese Tegner",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "120,0",
-          "enhet": "Antal",
-          "pris": "302,736570",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 2,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-16T00:57+00:00"
+      "vintage": "2026-11-16T07:55+00:00"
     }
   }
 }
