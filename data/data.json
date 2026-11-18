@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
-  "asOfDatum": "2026-11-17",
-  "genererad": "2026-11-17T19:47+00:00",
+  "asOfDatum": "2026-11-18",
+  "genererad": "2026-11-18T02:23+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.13,
-        4.88,
-        4.98,
-        5.15,
-        5.47
+        4.16,
+        4.83,
+        4.93,
+        5.12,
+        5.46
       ],
       "forr": [
         4.1,
-        4.82,
-        5.0,
-        5.19,
-        5.52
+        4.77,
+        4.91,
+        5.1,
+        5.43
       ],
       "kalla": "FRED",
-      "vintage": "2026-11-13",
-      "not": "Flackande 2s10s: −10 bp/mån."
+      "vintage": "2026-11-16",
+      "not": "Flackande 2s10s: −4 bp/mån."
     },
     "bredd": {
       "over50": 66,
@@ -958,11 +958,11 @@
       "spread": -20.6
     },
     "realranta": {
-      "varde": "2,91 %",
+      "varde": "2,92 %",
       "pil": "upp",
-      "delta": "+7 bp · 1 mån",
+      "delta": "+14 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-11-13"
+      "vintage": "2026-11-16"
     },
     "guld": {
       "namn": "Guld",
@@ -1993,10 +1993,87 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-17T19:47+00:00"
+      "vintage": "2026-11-18T02:23+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-18 00:16:12",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "640000,0",
+          "enhet": "Antal",
+          "pris": "2,18",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-18 00:16:12",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "385172,0",
+          "enhet": "Antal",
+          "pris": "2,16",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-18 00:16:12",
+          "emittent": "Corem Property Group AB",
+          "person": "Rutger Arnhult",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "8748,0",
+          "enhet": "Antal",
+          "pris": "2,138",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-17 22:42:11",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "59872,0",
+          "enhet": "Antal",
+          "pris": "3,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-17 22:42:11",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "55780,0",
+          "enhet": "Antal",
+          "pris": "3,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-17 22:42:11",
+          "emittent": "Arbona AB",
+          "person": "Håkan Blomdahl",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "3,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-17 22:37:04",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "480,0",
+          "enhet": "Antal",
+          "pris": "41,6",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-17 20:47:06",
           "emittent": "NCC AKTIEBOLAG",
@@ -2469,88 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:49:30",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Annika Bäremo",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "2318,34184",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:47:44",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Carl-Johan Bergholm",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Tilldelning",
-          "volym": "2682,50996",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:44:13",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Robert Hellgren",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "3,99420",
-          "enhet": "Antal",
-          "pris": "638,92650",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:42:29",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Marcus Wandt",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "10,50824",
-          "enhet": "Antal",
-          "pris": "638,92650",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:40:17",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Lars Svensson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "6,83646",
-          "enhet": "Antal",
-          "pris": "638,92650",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:38:19",
-          "emittent": "SAAB Aktiebolag",
-          "person": "Magnus Gustafsson",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "4,80806",
-          "enhet": "Antal",
-          "pris": "638,92650",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-17 13:36:15",
-          "emittent": "SAAB Aktiebolag",
-          "person": "David Joakim Davidsson Truuberg",
-          "befattning": "Arbetstagarrepresentant i styrelsen eller arbetstagarsuppleant",
-          "karaktar": "Förvärv",
-          "volym": "12,83402",
-          "enhet": "Antal",
-          "pris": "638,92650",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 52,
+      "nyaSenasteKorning": 7,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-17T19:47+00:00"
+      "vintage": "2026-11-18T02:23+00:00"
     }
   }
 }
