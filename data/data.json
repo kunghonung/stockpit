@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
-  "asOfDatum": "2026-11-18",
-  "genererad": "2026-11-18T19:22+00:00",
+  "asOfDatum": "2026-11-19",
+  "genererad": "2026-11-19T01:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         94.13,
         94.83,
         93.65,
-        93.99
+        94.25
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.5,
         90.51,
         90.99,
-        91.21
+        91.22
       ]
     },
     {
@@ -222,7 +222,7 @@
         99.07,
         100.16,
         99.9,
-        100.85
+        100.51
       ]
     },
     {
@@ -273,7 +273,7 @@
         101.85,
         99.81,
         100.06,
-        99.47
+        99.62
       ]
     },
     {
@@ -324,7 +324,7 @@
         107.6,
         107.52,
         109.68,
-        109.73
+        109.68
       ]
     },
     {
@@ -375,7 +375,7 @@
         114.24,
         113.79,
         114.95,
-        112.72
+        112.77
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         93.63,
         93.19,
         94.63,
-        95.17
+        95.21
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.23,
         94.59,
         95.7,
-        95.92
+        96.06
       ]
     },
     {
@@ -529,7 +529,7 @@
         103.87,
         106.73,
         107.21,
-        103.95
+        104.03
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         102.01,
         102.08,
         102.25,
-        101.4
+        101.39
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         108.0,
         107.42,
         107.98,
-        110.35
+        110.25
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 24.4,
-      "delta": "+6,9 · 1 v",
+      "varde": 24.6,
+      "delta": "+7,1 · 1 v",
       "trosklar": [
         20,
         28
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-11-18",
+      "vintage": "2026-11-19",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-11-18",
+      "vintage": "2026-11-19",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 24.4,
+      "varde": 24.6,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.16,
-        4.83,
-        4.93,
-        5.12,
+        4.15,
+        4.8,
+        4.9,
+        5.1,
         5.46
       ],
       "forr": [
-        4.1,
-        4.77,
-        4.91,
-        5.1,
+        4.08,
+        4.74,
+        4.89,
+        5.09,
         5.43
       ],
       "kalla": "FRED",
-      "vintage": "2026-11-16",
-      "not": "Flackande 2s10s: −4 bp/mån."
+      "vintage": "2026-11-17",
+      "not": "Flackande 2s10s: −5 bp/mån."
     },
     "bredd": {
       "over50": 58,
@@ -958,53 +958,53 @@
       "spread": -20.6
     },
     "realranta": {
-      "varde": "2,92 %",
+      "varde": "2,89 %",
       "pil": "upp",
-      "delta": "+14 bp · 1 mån",
+      "delta": "+15 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-11-16"
+      "vintage": "2026-11-17"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3731",
+      "varde": "3750",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−10,1 %",
+      "delta4v": "−9,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-11-18"
+      "vintage": "2026-11-19"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "44,96",
+      "varde": "45,50",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−21,7 %",
+      "delta4v": "−20,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-11-18"
+      "vintage": "2026-11-19"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,67",
+      "varde": "5,71",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−13,3 %",
+      "delta4v": "−12,8 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-11-18"
+      "vintage": "2026-11-19"
     },
     "olja": {
-      "v": 88.8,
+      "v": 89.35,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-11-18"
+      "vintage": "2026-11-19"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-11-18",
+    "vintage": "2026-11-19",
     "marknader": [
       {
         "namn": "USA",
@@ -1686,7 +1686,7 @@
           100.77,
           100.91,
           101.06,
-          101.32
+          101.19
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           97.1,
           98.22,
           97.89,
-          98.73
+          98.7
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           101.87,
           101.86,
           102.94,
-          102.35
+          102.33
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           90.02,
           93.54,
           92.88,
-          93.57
+          94.37
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.87,
           95.09,
           93.81,
-          93.63
+          93.59
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           98.53,
           91.88,
           92.55,
-          92.08
+          91.76
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           107.32,
           105.91,
           110.19,
-          109.81
+          109.74
         ]
       }
     ],
@@ -1963,16 +1963,6 @@
         },
         {
           "datum": "2026-11-16",
-          "namn": "Johl Sundip Singh  (CIK 0002111739); RING ENERGY, INC.  (CIK 0001384195)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2111739/000162828026074217"
-        },
-        {
-          "datum": "2026-11-16",
-          "namn": "KISSAM LUTHER C IV  (CIK 0001266395); Corteva, Inc.  (CIK 0001755672)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1266395/000119312526463714"
-        },
-        {
-          "datum": "2026-11-16",
           "namn": "Salmon Tom  (CIK 0001559208); OLD NATIONAL BANCORP /IN/  (CIK 0000707179)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1559208/000070717926000073"
         },
@@ -1990,13 +1980,89 @@
           "datum": "2026-11-16",
           "namn": "Saba Capital Management, L.P.  (CIK 0001510281); JAPAN SMALLER CAPITALIZATION FUND INC  (CIK 0000859796)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000439"
+        },
+        {
+          "datum": "2026-11-16",
+          "namn": "White Timothy N  (CIK 0001879699); AirJoule Technologies Corp.  (CIK 0001855474)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1879699/000119312526464068"
+        },
+        {
+          "datum": "2026-11-17",
+          "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-18T19:22+00:00"
+      "vintage": "2026-11-19T01:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-19 00:07:29",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "AM Members Only AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "24,82",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 00:07:29",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "AM Members Only AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "4995,0",
+          "enhet": "Antal",
+          "pris": "24,42",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 00:01:04",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Saveit Lasse Fixar AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "4990,0",
+          "enhet": "Antal",
+          "pris": "24,49",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 00:01:04",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Saveit Lasse Fixar AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5005,0",
+          "enhet": "Antal",
+          "pris": "24,42",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-18 23:54:15",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Saveit Lasse Fixar AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5,0",
+          "enhet": "Antal",
+          "pris": "26,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-18 20:48:51",
+          "emittent": "Svedbergs Group AB",
+          "person": "Per-Arne Andersson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "28138,0",
+          "enhet": "Antal",
+          "pris": "59,70",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-18 18:56:51",
           "emittent": "EQT AB",
@@ -2480,77 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,0",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:07:39",
-          "emittent": "Nanologica AB (publ)",
-          "person": "Thomas Eldered",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Teckning",
-          "volym": "11904762,0",
-          "enhet": "Antal",
-          "pris": "1,68",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 14:57:03",
-          "emittent": "Camurus AB",
-          "person": "Fredrik Tiberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 14:23:27",
-          "emittent": "Investment AB Öresund",
-          "person": "Mats Qviberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "16405,0",
-          "enhet": "Antal",
-          "pris": "156,2678",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 14:19:50",
-          "emittent": "Waystream Group AB (publ)",
-          "person": "Fredrik Lundberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "2750,0",
-          "enhet": "Antal",
-          "pris": "38,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 14:19:41",
-          "emittent": "Bilia AB",
-          "person": "Mats Qviberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "27000,0",
-          "enhet": "Antal",
-          "pris": "147,565546",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 14:19:41",
-          "emittent": "Bilia AB",
-          "person": "Mats Qviberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "147,2348",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 58,
+      "nyaSenasteKorning": 6,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-18T19:22+00:00"
+      "vintage": "2026-11-19T01:28+00:00"
     }
   }
 }
