@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
   "asOfDatum": "2026-11-19",
-  "genererad": "2026-11-19T09:28+00:00",
+  "genererad": "2026-11-19T18:39+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         94.13,
         94.83,
         94.25,
-        94.25
+        94.44
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.5,
         90.51,
         91.22,
-        91.22
+        91.2
       ]
     },
     {
@@ -222,7 +222,7 @@
         99.07,
         100.16,
         100.51,
-        100.51
+        100.26
       ]
     },
     {
@@ -324,7 +324,7 @@
         107.6,
         107.52,
         109.68,
-        109.68
+        109.54
       ]
     },
     {
@@ -375,7 +375,7 @@
         114.24,
         113.79,
         112.77,
-        112.77
+        112.16
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         93.63,
         93.19,
         95.21,
-        95.21
+        95.45
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.23,
         94.59,
         96.06,
-        96.06
+        96.16
       ]
     },
     {
@@ -529,7 +529,7 @@
         103.87,
         106.73,
         104.03,
-        104.03
+        104.89
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         102.01,
         102.08,
         101.39,
-        101.39
+        101.43
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         108.0,
         107.42,
         110.25,
-        110.25
+        109.53
       ]
     }
   ],
@@ -655,8 +655,8 @@
       "etikett": "HY-spread",
       "enhet": "%",
       "decimaler": 2,
-      "varde": 3.43,
-      "delta": "+13 bp · 1 v",
+      "varde": 3.47,
+      "delta": "+17 bp · 1 v",
       "trosklar": [
         3.5,
         4.5
@@ -666,7 +666,7 @@
         5
       ],
       "kalla": "FRED BAMLH0A0HYM2",
-      "vintage": "2026-11-17",
+      "vintage": "2026-11-18",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 22.0,
-      "delta": "+3,3 · 1 v",
+      "varde": 27.7,
+      "delta": "+9,0 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 98.0,
-      "delta": "+6 · 1 v",
+      "varde": 95.0,
+      "delta": "−3 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 98.0,
+      "varde": 95.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 22.0,
+      "varde": 27.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -842,7 +842,7 @@
     {
       "id": "hy",
       "namn": "Kreditstress",
-      "varde": 3.43,
+      "varde": 3.47,
       "komfort": 3.5,
       "dec": 2,
       "mall": "{namn}: HY {varde} % mot komfort {komfort} %.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −5 bp/mån."
     },
     "bredd": {
-      "over50": 58,
+      "over50": 57,
       "over200": 55,
-      "antal": 495,
-      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 495 bolag)",
-      "vintage": "2026-11-18",
+      "antal": 494,
+      "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 494 bolag)",
+      "vintage": "2026-11-19",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-8 sedan förra"
+      "delta": "-1 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3735",
+      "varde": "3682",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−8,0 %",
+      "delta4v": "−9,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "44,99",
+      "varde": "44,40",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−17,9 %",
+      "delta4v": "−18,9 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,66",
+      "varde": "5,63",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−11,0 %",
+      "delta4v": "−11,5 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-19"
     },
     "olja": {
-      "v": 89.84,
+      "v": 90.21,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-19"
     }
@@ -1686,7 +1686,7 @@
           100.77,
           100.91,
           101.19,
-          101.19
+          101.21
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           97.1,
           98.22,
           98.7,
-          98.7
+          98.68
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           101.87,
           101.86,
           102.33,
-          102.59
+          102.49
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           90.02,
           93.54,
           93.55,
-          94.21
+          95.2
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.87,
           95.09,
           93.59,
-          93.59
+          93.72
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           98.53,
           91.88,
           91.76,
-          91.76
+          91.97
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           107.32,
           105.91,
           109.74,
-          109.74
+          112.06
         ]
       }
     ],
@@ -1941,11 +1941,6 @@
   "insynFlode": {
     "us": {
       "poster": [
-        {
-          "datum": "2026-11-16",
-          "namn": "Dibadj Ali  (CIK 0001837149); SYSCO CORP  (CIK 0000096021)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1837149/000183714926000010"
-        },
         {
           "datum": "2026-11-16",
           "namn": "Woods Lori A  (CIK 0001393007); Perspective Therapeutics, Inc.  (CIK 0000728387)",
@@ -1962,41 +1957,233 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1603527/000119312526462154"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Travis Tracey Thomas  (CIK 0001258930); Accenture plc  (CIK 0001467373)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1258930/000125893026000006"
+          "datum": "2026-11-16",
+          "namn": "Dibadj Ali  (CIK 0001837149); SYSCO CORP  (CIK 0000096021)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1837149/000183714926000010"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Price Paula A  (CIK 0001369240); Accenture plc  (CIK 0001467373)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1369240/000136924026000015"
+          "datum": "2026-11-16",
+          "namn": "Salmon Tom  (CIK 0001559208); OLD NATIONAL BANCORP /IN/  (CIK 0000707179)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1559208/000070717926000073"
+        },
+        {
+          "datum": "2026-11-16",
+          "namn": "Applebaum Scott  (CIK 0001618945); WINDWARD BIO GROUP AG  (CIK 0002145089)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1618945/000161894526000007"
+        },
+        {
+          "datum": "2026-11-16",
+          "namn": "Wang Yanjun  (CIK 0002113214); Sea Ltd  (CIK 0001703399)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2113214/000119312526464199"
+        },
+        {
+          "datum": "2026-11-16",
+          "namn": "Saba Capital Management, L.P.  (CIK 0001510281); JAPAN SMALLER CAPITALIZATION FUND INC  (CIK 0000859796)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000439"
+        },
+        {
+          "datum": "2026-11-16",
+          "namn": "White Timothy N  (CIK 0001879699); AirJoule Technologies Corp.  (CIK 0001855474)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1879699/000119312526464068"
         },
         {
           "datum": "2026-11-17",
           "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
-        },
-        {
-          "datum": "2026-11-17",
-          "namn": "Cassens Michael David  (CIK 0001766116); FIRST BUSEY CORP /NV/  (CIK 0000314489)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1766116/000176611626000032"
-        },
-        {
-          "datum": "2026-11-17",
-          "namn": "Voorhies Gregory William  (CIK 0002145648); WILLAMETTE VALLEY VINEYARDS INC  (CIK 0000838875)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2145648/000119983526000411"
-        },
-        {
-          "datum": "2026-11-17",
-          "namn": "DEASON DOUGLAS R  (CIK 0001079500); Galaxy Digital Inc.  (CIK 0001859392)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1079500/000107950026000013"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-19T09:28+00:00"
+      "vintage": "2026-11-19T18:39+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-19 18:18:16",
+          "emittent": "Johannes Schikan",
+          "person": "Johannes Schikan",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "154837,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 17:52:39",
+          "emittent": "Eniro Group AB",
+          "person": "Linus Johansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "6086,0",
+          "enhet": "Antal",
+          "pris": "33,500866",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 17:52:39",
+          "emittent": "Eniro Group AB",
+          "person": "Linus Johansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "3139,0",
+          "enhet": "Antal",
+          "pris": "33,510355",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 17:52:39",
+          "emittent": "Eniro Group AB",
+          "person": "Linus Johansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "17160,0",
+          "enhet": "Antal",
+          "pris": "33,537072",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 15:57:03",
+          "emittent": "PPI Public Property Invest AB (publ)",
+          "person": "Annika Ekström",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "17,83",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 15:53:24",
+          "emittent": "Gaming Corps AB",
+          "person": "Marika Fagerlund",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "461538,0",
+          "enhet": "Antal",
+          "pris": "0,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 15:29:53",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Adam Wiman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "95,4955",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 15:29:53",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Adam Wiman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "8000,0",
+          "enhet": "Antal",
+          "pris": "95,8766",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 15:29:53",
+          "emittent": "NOBA Bank Group AB (publ)",
+          "person": "Adam Wiman",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "5000,0",
+          "enhet": "Antal",
+          "pris": "96,3779",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 15:05:09",
+          "emittent": "Plejd AB",
+          "person": "Erik Calissendorff",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Pantsättning",
+          "volym": "7000,0",
+          "enhet": "Antal",
+          "pris": "834,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 14:44:41",
+          "emittent": "Actic Group AB",
+          "person": "Johan Ahldin",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "12660,0",
+          "enhet": "Antal",
+          "pris": "24,7983",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 14:35:07",
+          "emittent": "Mangold AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10,0",
+          "enhet": "Antal",
+          "pris": "1160,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 14:35:07",
+          "emittent": "Mangold AB",
+          "person": "Per Åhlgren",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "20,0",
+          "enhet": "Antal",
+          "pris": "1160,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 14:12:44",
+          "emittent": "Catena Media P.L.C",
+          "person": "Martin Zetterlund",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "526802,0",
+          "enhet": "Antal",
+          "pris": "3,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 12:52:30",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Lydia Abad-Franch",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "19000,0",
+          "enhet": "Antal",
+          "pris": "481,299016",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 12:52:30",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Lydia Abad-Franch",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Avyttring",
+          "volym": "52676,0",
+          "enhet": "Antal",
+          "pris": "481,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-19 12:52:30",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Lydia Abad-Franch",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "52676,0",
+          "enhet": "Antal",
+          "pris": "235,15",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-19 10:07:18",
           "emittent": "Avensia AB (publ)",
@@ -2359,198 +2546,11 @@
           "enhet": "Antal",
           "pris": "104,4000",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2206,0",
-          "enhet": "Antal",
-          "pris": "104,3113",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "870,0",
-          "enhet": "Antal",
-          "pris": "104,5630",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1936,0",
-          "enhet": "Antal",
-          "pris": "104,1165",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "11708,0",
-          "enhet": "Antal",
-          "pris": "104,3622",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "30,0",
-          "enhet": "Antal",
-          "pris": "104,9000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "8968,0",
-          "enhet": "Antal",
-          "pris": "104,2707",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "17241,0",
-          "enhet": "Antal",
-          "pris": "104,5051",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3533,0",
-          "enhet": "Antal",
-          "pris": "104,9406",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "22658,0",
-          "enhet": "Antal",
-          "pris": "104,8480",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3037,0",
-          "enhet": "Antal",
-          "pris": "104,8610",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5152,0",
-          "enhet": "Antal",
-          "pris": "104,8267",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "686,0",
-          "enhet": "Antal",
-          "pris": "104,9257",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1844,0",
-          "enhet": "Antal",
-          "pris": "104,8774",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "4639,0",
-          "enhet": "Antal",
-          "pris": "104,8836",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "279,0",
-          "enhet": "Antal",
-          "pris": "105,0000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1320,0",
-          "enhet": "Antal",
-          "pris": "104,9364",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 15:56:33",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "566,0",
-          "enhet": "Antal",
-          "pris": "104,9011",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 6,
+      "nyaSenasteKorning": 17,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-19T09:28+00:00"
+      "vintage": "2026-11-19T18:39+00:00"
     }
   }
 }
