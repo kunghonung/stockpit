@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
   "asOfDatum": "2026-11-20",
-  "genererad": "2026-11-20T17:59+00:00",
+  "genererad": "2026-11-20T23:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -115,7 +115,7 @@
         94.13,
         94.83,
         94.31,
-        91.37
+        90.76
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
     },
@@ -171,7 +171,7 @@
         89.5,
         90.51,
         91.18,
-        91.2
+        91.7
       ]
     },
     {
@@ -222,7 +222,7 @@
         99.07,
         100.16,
         99.78,
-        100.71
+        100.8
       ]
     },
     {
@@ -273,7 +273,7 @@
         101.85,
         99.81,
         99.52,
-        100.63
+        101.02
       ]
     },
     {
@@ -324,7 +324,7 @@
         107.6,
         107.52,
         110.25,
-        114.5
+        115.18
       ]
     },
     {
@@ -375,7 +375,7 @@
         114.24,
         113.79,
         112.68,
-        115.73
+        116.79
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
     },
@@ -427,7 +427,7 @@
         93.63,
         93.19,
         95.91,
-        98.64
+        98.79
       ]
     },
     {
@@ -478,7 +478,7 @@
         96.23,
         94.59,
         96.32,
-        98.75
+        98.98
       ]
     },
     {
@@ -529,7 +529,7 @@
         103.87,
         106.73,
         105.42,
-        108.15
+        108.72
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
     },
@@ -581,7 +581,7 @@
         102.01,
         102.08,
         101.88,
-        103.35
+        103.81
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
     },
@@ -633,7 +633,7 @@
         108.0,
         107.42,
         109.33,
-        109.83
+        110.11
       ]
     }
   ],
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 32.0,
-      "delta": "+12,7 · 1 v",
+      "varde": 35.9,
+      "delta": "+16,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -693,8 +693,8 @@
       "etikett": "MOVE",
       "enhet": "",
       "decimaler": 0,
-      "varde": 103.0,
-      "delta": "+4 · 1 v",
+      "varde": 106.0,
+      "delta": "+8 · 1 v",
       "trosklar": [
         100,
         130
@@ -824,7 +824,7 @@
     {
       "id": "move",
       "namn": "Räntevolatilitet",
-      "varde": 103.0,
+      "varde": 106.0,
       "komfort": 100,
       "dec": 0,
       "mall": "{namn}: MOVE {varde} mot komfort {komfort}.",
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 32.0,
+      "varde": 35.9,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -860,21 +860,21 @@
       ],
       "nu": [
         4.16,
-        4.8,
-        4.89,
-        5.07,
-        5.41
+        4.76,
+        4.86,
+        5.04,
+        5.4
       ],
       "forr": [
-        4.1,
-        4.77,
+        4.08,
+        4.79,
         4.94,
-        5.15,
-        5.48
+        5.12,
+        5.42
       ],
       "kalla": "FRED",
-      "vintage": "2026-11-18",
-      "not": "Flackande 2s10s: −11 bp/mån."
+      "vintage": "2026-11-19",
+      "not": "Flackande 2s10s: −5 bp/mån."
     },
     "bredd": {
       "over50": 49,
@@ -960,17 +960,17 @@
     "realranta": {
       "varde": "2,88 %",
       "pil": "upp",
-      "delta": "+8 bp · 1 mån",
+      "delta": "+11 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-11-18"
+      "vintage": "2026-11-19"
     },
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3524",
+      "varde": "3539",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,1 %",
+      "delta4v": "−11,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "40,82",
+      "varde": "41,08",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−24,0 %",
+      "delta4v": "−23,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-20"
     },
     "olja": {
-      "v": 89.09,
+      "v": 89.87,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-20"
     }
@@ -1686,7 +1686,7 @@
           100.77,
           100.91,
           101.18,
-          101.29
+          101.02
         ]
       },
       {
@@ -1727,7 +1727,7 @@
           97.1,
           98.22,
           98.46,
-          96.98
+          96.23
         ]
       },
       {
@@ -1768,7 +1768,7 @@
           101.87,
           101.86,
           103.45,
-          103.63
+          105.05
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           90.02,
           93.54,
           96.09,
-          93.25
+          94.52
         ]
       },
       {
@@ -1850,7 +1850,7 @@
           94.87,
           95.09,
           93.59,
-          91.82
+          92.0
         ]
       },
       {
@@ -1891,7 +1891,7 @@
           98.53,
           91.88,
           92.08,
-          92.57
+          93.38
         ]
       },
       {
@@ -1932,7 +1932,7 @@
           107.32,
           105.91,
           113.12,
-          117.86
+          119.21
         ]
       }
     ],
@@ -1993,10 +1993,98 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-20T17:59+00:00"
+      "vintage": "2026-11-20T23:57+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-20 21:08:43",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "551,0",
+          "enhet": "Antal",
+          "pris": "42,597096",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 21:08:43",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "420,0",
+          "enhet": "Antal",
+          "pris": "43,2",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 21:08:43",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "10,0",
+          "enhet": "Antal",
+          "pris": "43,8",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 21:08:43",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "100,0",
+          "enhet": "Antal",
+          "pris": "44,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 21:08:43",
+          "emittent": "AGES Industri AB",
+          "person": "Vibeke Gyllenram",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "23,0",
+          "enhet": "Antal",
+          "pris": "44,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 19:48:34",
+          "emittent": "Nanologica AB (publ)",
+          "person": "Jeremie Trochu",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "21453780,0",
+          "enhet": "Antal",
+          "pris": "0,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 19:46:57",
+          "emittent": "Scandi Standard AB (publ)",
+          "person": "Paulo Gaspar",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "28010,0",
+          "enhet": "Antal",
+          "pris": "199,38611",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 19:37:59",
+          "emittent": "Nanologica AB (publ)",
+          "person": "Jeremie Trochu",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "4290756,0",
+          "enhet": "Antal",
+          "pris": "1,68",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-20 17:32:37",
           "emittent": "NOBA BANK GROUP AB (PUBL)",
@@ -2458,99 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,433048",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:27:05",
-          "emittent": "Sound Dimension AB",
-          "person": "Eddy Cojulun Vela",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Teckning",
-          "volym": "471068,0",
-          "enhet": "Antal",
-          "pris": "0,53",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:18:45",
-          "emittent": "Vo2 Cap Holding AB (publ)",
-          "person": "Fredrik Johansson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "34499,0",
-          "enhet": "Antal",
-          "pris": "1,9314",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:08:17",
-          "emittent": "Gaming Corps AB",
-          "person": "Fredrik Geijer",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Teckning",
-          "volym": "461538,0",
-          "enhet": "Antal",
-          "pris": "0,65",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:04:29",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "9230,0",
-          "enhet": "Antal",
-          "pris": "1,190",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:04:29",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "24000,0",
-          "enhet": "Antal",
-          "pris": "1,250",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:04:29",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "19000,0",
-          "enhet": "Antal",
-          "pris": "1,280",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:04:29",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "4873,0",
-          "enhet": "Antal",
-          "pris": "1,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 13:04:29",
-          "emittent": "Micropos Medical AB (publ)",
-          "person": "Richard Birger Forsberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "11760,0",
-          "enhet": "Antal",
-          "pris": "1,310",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 62,
+      "nyaSenasteKorning": 8,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-20T17:59+00:00"
+      "vintage": "2026-11-20T23:57+00:00"
     }
   }
 }
