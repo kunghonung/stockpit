@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
   "asOfDatum": "2026-11-20",
-  "genererad": "2026-11-20T01:13+00:00",
+  "genererad": "2026-11-20T09:09+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -114,7 +114,7 @@
         99.8,
         94.13,
         94.83,
-        94.25,
+        94.31,
         94.31
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -170,7 +170,7 @@
         89.61,
         89.5,
         90.51,
-        91.22,
+        91.18,
         91.18
       ]
     },
@@ -221,7 +221,7 @@
         91.89,
         99.07,
         100.16,
-        100.51,
+        99.78,
         99.78
       ]
     },
@@ -272,7 +272,7 @@
         100.6,
         101.85,
         99.81,
-        99.62,
+        99.52,
         99.52
       ]
     },
@@ -323,7 +323,7 @@
         103.93,
         107.6,
         107.52,
-        109.68,
+        110.25,
         110.25
       ]
     },
@@ -374,7 +374,7 @@
         111.19,
         114.24,
         113.79,
-        112.77,
+        112.68,
         112.68
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -426,7 +426,7 @@
         91.74,
         93.63,
         93.19,
-        95.21,
+        95.91,
         95.91
       ]
     },
@@ -477,7 +477,7 @@
         91.86,
         96.23,
         94.59,
-        96.06,
+        96.32,
         96.32
       ]
     },
@@ -528,7 +528,7 @@
         114.83,
         103.87,
         106.73,
-        104.03,
+        105.42,
         105.42
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -580,7 +580,7 @@
         98.13,
         102.01,
         102.08,
-        101.39,
+        101.88,
         101.88
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -632,7 +632,7 @@
         103.11,
         108.0,
         107.42,
-        110.25,
+        109.33,
         109.33
       ]
     }
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 28.4,
-      "delta": "+9,7 · 1 v",
+      "varde": 28.7,
+      "delta": "+9,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 28.4,
+      "varde": 28.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3596",
+      "varde": "3581",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,4 %",
+      "delta4v": "−10,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "42,18",
+      "varde": "42,43",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−23,0 %",
+      "delta4v": "−21,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,52",
+      "varde": "5,56",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−13,2 %",
+      "delta4v": "−14,2 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-20"
     },
     "olja": {
-      "v": 89.42,
+      "v": 88.52,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-20"
     }
@@ -1685,7 +1685,7 @@
           101.13,
           100.77,
           100.91,
-          101.19,
+          101.18,
           101.18
         ]
       },
@@ -1726,7 +1726,7 @@
           99.79,
           97.1,
           98.22,
-          98.7,
+          98.46,
           98.46
         ]
       },
@@ -1767,8 +1767,8 @@
           99.23,
           101.87,
           101.86,
-          102.33,
-          103.45
+          103.45,
+          102.41
         ]
       },
       {
@@ -1808,8 +1808,8 @@
           96.86,
           90.02,
           93.54,
-          93.55,
-          92.28
+          96.09,
+          91.23
         ]
       },
       {
@@ -1890,7 +1890,7 @@
           90.99,
           98.53,
           91.88,
-          91.76,
+          92.08,
           92.08
         ]
       },
@@ -1931,7 +1931,7 @@
           98.27,
           107.32,
           105.91,
-          109.74,
+          113.12,
           113.12
         ]
       }
@@ -1943,11 +1943,6 @@
       "poster": [
         {
           "datum": "2026-11-17",
-          "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
-        },
-        {
-          "datum": "2026-11-17",
           "namn": "Travis Tracey Thomas  (CIK 0001258930); Accenture plc  (CIK 0001467373)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1258930/000125893026000006"
         },
@@ -1957,29 +1952,24 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1369240/000136924026000015"
         },
         {
-          "datum": "2026-11-18",
-          "namn": "SALAMEH MICHAEL J  (CIK 0001246496); ALPHA & OMEGA SEMICONDUCTOR Ltd  (CIK 0001387467)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1246496/000162828026074902"
-        },
-        {
-          "datum": "2026-11-19",
-          "namn": "O'Neill Stephen Andrew  (CIK 0001662140); RIVERNORTH OPPORTUNITIES FUND, INC.  (CIK 0001501072)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1662140/000139834426020323"
-        },
-        {
-          "datum": "2026-11-19",
-          "namn": "Newton Charles W.  (CIK 0001866219); Keros Therapeutics, Inc.  (CIK 0001664710)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1866219/000186621926000012"
+          "datum": "2026-11-17",
+          "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
         },
         {
           "datum": "2026-11-17",
-          "namn": "Stopar Daniel E  (CIK 0002095051); MATTHEWS INTERNATIONAL CORP  (CIK 0000063296)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2095051/000006329626000111"
+          "namn": "Cassens Michael David  (CIK 0001766116); FIRST BUSEY CORP /NV/  (CIK 0000314489)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1766116/000176611626000032"
         },
         {
           "datum": "2026-11-17",
-          "namn": "Birenbaum Matthew H.  (CIK 0001532949); VIVMARK RESIDENTIAL  (CIK 0000906107)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1532949/000090610726000082"
+          "namn": "Voorhies Gregory William  (CIK 0002145648); WILLAMETTE VALLEY VINEYARDS INC  (CIK 0000838875)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2145648/000119983526000411"
+        },
+        {
+          "datum": "2026-11-17",
+          "namn": "DEASON DOUGLAS R  (CIK 0001079500); Galaxy Digital Inc.  (CIK 0001859392)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1079500/000107950026000013"
         },
         {
           "datum": "2026-11-17",
@@ -1988,15 +1978,113 @@
         },
         {
           "datum": "2026-11-17",
-          "namn": "Young Alethia  (CIK 0001918147); Pacira BioSciences, Inc.  (CIK 0001396814)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1918147/000162828026074540"
+          "namn": "Kemly Thomas J.  (CIK 0001729897); Columbia Financial, Inc./MD/  (CIK 0002115119)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1729897/000172989726000057"
+        },
+        {
+          "datum": "2026-11-17",
+          "namn": "Sorenson Kory Beth  (CIK 0002164207); Marex Group Ltd  (CIK 0001997464)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2164207/000119312526465500"
+        },
+        {
+          "datum": "2026-11-17",
+          "namn": "Hernandez Gerard Albert Palana  (CIK 0002149532); OpenWorld, Inc.  (CIK 0001104038)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2149532/000089183926000492"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-20T01:13+00:00"
+      "vintage": "2026-11-20T09:09+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-20 10:06:19",
+          "emittent": "H100 Group AB",
+          "person": "Johannes Wiik",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "34767,0",
+          "enhet": "Antal",
+          "pris": "1,49",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 10:06:19",
+          "emittent": "H100 Group AB",
+          "person": "Johannes Wiik",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "993,0",
+          "enhet": "Antal",
+          "pris": "1,51",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 08:49:51",
+          "emittent": "Gaming Corps AB",
+          "person": "Juha Kristian Kauppinen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "384615,0",
+          "enhet": "Antal",
+          "pris": "0,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 08:47:41",
+          "emittent": "Vaccinium Holding ApS",
+          "person": "Karl Kristian Bergman Jensen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "15,14",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 08:47:41",
+          "emittent": "Vaccinium Holding ApS",
+          "person": "Karl Kristian Bergman Jensen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "2130,0",
+          "enhet": "Antal",
+          "pris": "15,5",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 08:47:41",
+          "emittent": "Vaccinium Holding ApS",
+          "person": "Karl Kristian Bergman Jensen",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Avyttring",
+          "volym": "3768,0",
+          "enhet": "Antal",
+          "pris": "15,53",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 08:14:05",
+          "emittent": "MOMENT GROUP AB",
+          "person": "Leif West",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "20585,0",
+          "enhet": "Antal",
+          "pris": "4,8373",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-20 07:59:41",
+          "emittent": "Intrum AB",
+          "person": "Johan Åkerblom",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "212412,0",
+          "enhet": "Antal",
+          "pris": "1,553",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-19 22:31:25",
           "emittent": "Svevik Industri AB",
@@ -2458,99 +2546,11 @@
           "enhet": "Antal",
           "pris": "104,5503",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "153,0",
-          "enhet": "Antal",
-          "pris": "104,9000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "12016,0",
-          "enhet": "Antal",
-          "pris": "104,4062",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "15049,0",
-          "enhet": "Antal",
-          "pris": "104,3253",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "222,0",
-          "enhet": "Antal",
-          "pris": "104,9581",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "9964,0",
-          "enhet": "Antal",
-          "pris": "104,1915",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "7723,0",
-          "enhet": "Antal",
-          "pris": "104,2734",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "33,0",
-          "enhet": "Antal",
-          "pris": "104,9000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-18 16:05:40",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1559,0",
-          "enhet": "Antal",
-          "pris": "104,6008",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 8,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-20T01:13+00:00"
+      "vintage": "2026-11-20T09:09+00:00"
     }
   }
 }
