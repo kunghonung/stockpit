@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W47",
   "asOfDatum": "2026-11-20",
-  "genererad": "2026-11-20T23:57+00:00",
+  "genererad": "2026-11-21T06:57+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -82,11 +82,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.4,
-        "kalla": "FMP-riktkursaggregat 90 d, 55 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 0.8,
+        "kalla": "FMP-riktkursaggregat 90 d, 56 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "flat",
+      "revRiktning": "stiger",
       "flodeM": {
         "v": 13.0,
         "andelInflode": 78,
@@ -114,7 +114,7 @@
         99.8,
         94.13,
         94.83,
-        94.31,
+        90.76,
         90.76
       ],
       "not": "SOX +100 % H1, semis +60 % YTD; 78 % av juniinflödena mot 45 % av tillgångarna (SSGA)."
@@ -139,11 +139,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.6,
-        "kalla": "FMP-riktkursaggregat 90 d, 71 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 0.8,
+        "kalla": "FMP-riktkursaggregat 90 d, 66 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "accelererar",
+      "revRiktning": "stiger",
       "flodeM": {
         "v": 2.2,
         "kalla": "SSGA månadsdata — störst enskild sektor vid sidan av Tech",
@@ -170,7 +170,7 @@
         89.61,
         89.5,
         90.51,
-        91.18,
+        91.7,
         91.7
       ]
     },
@@ -194,9 +194,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 5.8,
-        "kalla": "FMP-riktkursaggregat 90 d, 14 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 7.0,
+        "kalla": "FMP-riktkursaggregat 90 d, 15 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
       "revRiktning": "accelererar",
       "flodeM": null,
@@ -221,7 +221,7 @@
         91.89,
         99.07,
         100.16,
-        99.78,
+        100.8,
         100.8
       ]
     },
@@ -245,11 +245,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -3.2,
+        "v": -1.8,
         "kalla": "FMP-riktkursaggregat 90 d, 21 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "faller",
+      "revRiktning": "vänder",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 7,
@@ -272,7 +272,7 @@
         100.6,
         101.85,
         99.81,
-        99.52,
+        101.02,
         101.02
       ]
     },
@@ -296,11 +296,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 1.9,
-        "kalla": "FMP-riktkursaggregat 90 d, 21 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 2.3,
+        "kalla": "FMP-riktkursaggregat 90 d, 22 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "accelererar",
+      "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 1,
@@ -323,7 +323,7 @@
         103.93,
         107.6,
         107.52,
-        110.25,
+        115.18,
         115.18
       ]
     },
@@ -347,11 +347,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 3.3,
-        "kalla": "FMP-riktkursaggregat 90 d, 48 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 3.1,
+        "kalla": "FMP-riktkursaggregat 90 d, 51 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "accelererar",
+      "revRiktning": "stiger",
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 3,
@@ -374,7 +374,7 @@
         111.19,
         114.24,
         113.79,
-        112.68,
+        116.79,
         116.79
       ],
       "not": "RRG-hopp 9:e→6:e plats v.29 — pris/RS före fundamenta."
@@ -399,9 +399,9 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 0.5,
-        "kalla": "FMP-riktkursaggregat 90 d, 29 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 1.9,
+        "kalla": "FMP-riktkursaggregat 90 d, 28 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
       "revRiktning": "accelererar",
       "flodeM": null,
@@ -426,7 +426,7 @@
         91.74,
         93.63,
         93.19,
-        95.91,
+        98.79,
         98.79
       ]
     },
@@ -450,11 +450,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.0,
-        "kalla": "FMP-riktkursaggregat 90 d, 25 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 1.8,
+        "kalla": "FMP-riktkursaggregat 90 d, 19 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "vänder",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 4,
@@ -477,7 +477,7 @@
         91.86,
         96.23,
         94.59,
-        96.32,
+        98.98,
         98.98
       ]
     },
@@ -501,11 +501,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": 1.7,
-        "kalla": "FMP-riktkursaggregat 90 d, 19 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 0.4,
+        "kalla": "FMP-riktkursaggregat 90 d, 18 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "accelererar",
+      "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 9,
@@ -528,7 +528,7 @@
         114.83,
         103.87,
         106.73,
-        105.42,
+        108.72,
         108.72
       ],
       "not": "Olja ~+45 % å/å; sektorns RS släpar ännu — fundamenta före pris."
@@ -553,11 +553,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.3,
-        "kalla": "FMP-riktkursaggregat 90 d, 62 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 0.1,
+        "kalla": "FMP-riktkursaggregat 90 d, 56 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "vänder",
+      "revRiktning": "flat",
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 6,
@@ -580,7 +580,7 @@
         98.13,
         102.01,
         102.08,
-        101.88,
+        103.81,
         103.81
       ],
       "not": "XLF just in i Improving i korta fönstret v.29 — ej bekräftat i långa."
@@ -605,11 +605,11 @@
         "vintage": "approx"
       },
       "revQ2": {
-        "v": -0.2,
-        "kalla": "FMP-riktkursaggregat 90 d, 38 bolag likaviktat (proxy för FactSet EI)",
-        "vintage": "2026-11-14"
+        "v": 1.2,
+        "kalla": "FMP-riktkursaggregat 90 d, 40 bolag likaviktat (proxy för FactSet EI)",
+        "vintage": "2026-11-21"
       },
-      "revRiktning": "flat",
+      "revRiktning": "accelererar",
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 5,
@@ -632,7 +632,7 @@
         103.11,
         108.0,
         107.42,
-        109.33,
+        110.11,
         110.11
       ]
     }
@@ -776,15 +776,15 @@
       "vintage": "2026-09-15"
     },
     "crowding": {
-      "score": 79,
+      "score": 93,
       "komfort": 60,
       "kalla": "CFTC COT (percentil 3 år). BAML-komponenten utgår ur autoflödet (stängd källa).",
-      "vintage": "2026-11-14",
+      "vintage": "2026-11-21",
       "komponenter": [
         {
           "namn": "E-mini S&P 500 noncommercial netto",
-          "varde": "25.8 % av OI · percentil 79/100 (3 år)",
-          "kalla": "CFTC COT 2026-11-03"
+          "varde": "37.5 % av OI · percentil 93/100 (3 år)",
+          "kalla": "CFTC COT 2026-11-17"
         }
       ]
     },
@@ -894,7 +894,6 @@
     },
     "sentiment": {
       "spx26": [
-        108.1,
         108.8,
         108.3,
         109.5,
@@ -919,11 +918,11 @@
         112.6,
         112.6,
         112.6,
+        112.6,
         112.6
       ],
       "high52": 113.9,
       "spread26": [
-        8,
         5,
         7,
         4,
@@ -948,14 +947,15 @@
         -9,
         -4,
         -14,
-        -21
+        -21,
+        -9
       ],
       "kalla": "AAII Sentiment Survey (publika sidan, veckostaplarna)",
-      "vintage": "2026-11-11",
-      "bull": 30.8,
-      "neutral": 17.8,
-      "bear": 51.4,
-      "spread": -20.6
+      "vintage": "2026-11-18",
+      "bull": 33.3,
+      "neutral": 24.4,
+      "bear": 42.2,
+      "spread": -8.9
     },
     "realranta": {
       "varde": "2,88 %",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3539",
+      "varde": "3515",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,7 %",
+      "delta4v": "−12,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "41,08",
+      "varde": "41,03",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−23,5 %",
+      "delta4v": "−23,6 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,47",
+      "varde": "5,48",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−15,6 %",
+      "delta4v": "−15,4 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-20"
     },
     "olja": {
-      "v": 89.87,
+      "v": 92.57,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-20"
     }
@@ -1685,7 +1685,7 @@
           101.13,
           100.77,
           100.91,
-          101.18,
+          101.02,
           101.02
         ]
       },
@@ -1726,7 +1726,7 @@
           99.79,
           97.1,
           98.22,
-          98.46,
+          96.23,
           96.23
         ]
       },
@@ -1767,7 +1767,7 @@
           99.23,
           101.87,
           101.86,
-          103.45,
+          105.05,
           105.05
         ]
       },
@@ -1808,7 +1808,7 @@
           96.86,
           90.02,
           93.54,
-          96.09,
+          94.52,
           94.52
         ]
       },
@@ -1849,7 +1849,7 @@
           95.31,
           94.87,
           95.09,
-          93.59,
+          92.0,
           92.0
         ]
       },
@@ -1890,7 +1890,7 @@
           90.99,
           98.53,
           91.88,
-          92.08,
+          93.38,
           93.38
         ]
       },
@@ -1931,7 +1931,7 @@
           98.27,
           107.32,
           105.91,
-          113.12,
+          119.21,
           119.21
         ]
       }
@@ -1943,6 +1943,11 @@
       "poster": [
         {
           "datum": "2026-11-17",
+          "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
+        },
+        {
+          "datum": "2026-11-17",
           "namn": "Travis Tracey Thomas  (CIK 0001258930); Accenture plc  (CIK 0001467373)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1258930/000125893026000006"
         },
@@ -1952,24 +1957,29 @@
           "lank": "https://www.sec.gov/Archives/edgar/data/1369240/000136924026000015"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
+          "datum": "2026-11-18",
+          "namn": "SALAMEH MICHAEL J  (CIK 0001246496); ALPHA & OMEGA SEMICONDUCTOR Ltd  (CIK 0001387467)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1246496/000162828026074902"
+        },
+        {
+          "datum": "2026-11-19",
+          "namn": "O'Neill Stephen Andrew  (CIK 0001662140); RIVERNORTH OPPORTUNITIES FUND, INC.  (CIK 0001501072)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1662140/000139834426020323"
+        },
+        {
+          "datum": "2026-11-19",
+          "namn": "Newton Charles W.  (CIK 0001866219); Keros Therapeutics, Inc.  (CIK 0001664710)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1866219/000186621926000012"
         },
         {
           "datum": "2026-11-17",
-          "namn": "Cassens Michael David  (CIK 0001766116); FIRST BUSEY CORP /NV/  (CIK 0000314489)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1766116/000176611626000032"
+          "namn": "Stopar Daniel E  (CIK 0002095051); MATTHEWS INTERNATIONAL CORP  (CIK 0000063296)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2095051/000006329626000111"
         },
         {
           "datum": "2026-11-17",
-          "namn": "Voorhies Gregory William  (CIK 0002145648); WILLAMETTE VALLEY VINEYARDS INC  (CIK 0000838875)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2145648/000119983526000411"
-        },
-        {
-          "datum": "2026-11-17",
-          "namn": "DEASON DOUGLAS R  (CIK 0001079500); Galaxy Digital Inc.  (CIK 0001859392)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1079500/000107950026000013"
+          "namn": "Birenbaum Matthew H.  (CIK 0001532949); VIVMARK RESIDENTIAL  (CIK 0000906107)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1532949/000090610726000082"
         },
         {
           "datum": "2026-11-17",
@@ -1978,22 +1988,12 @@
         },
         {
           "datum": "2026-11-17",
-          "namn": "Kemly Thomas J.  (CIK 0001729897); Columbia Financial, Inc./MD/  (CIK 0002115119)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1729897/000172989726000057"
-        },
-        {
-          "datum": "2026-11-17",
-          "namn": "Sorenson Kory Beth  (CIK 0002164207); Marex Group Ltd  (CIK 0001997464)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2164207/000119312526465500"
-        },
-        {
-          "datum": "2026-11-17",
-          "namn": "Hernandez Gerard Albert Palana  (CIK 0002149532); OpenWorld, Inc.  (CIK 0001104038)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2149532/000089183926000492"
+          "namn": "Young Alethia  (CIK 0001918147); Pacira BioSciences, Inc.  (CIK 0001396814)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1918147/000162828026074540"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-20T23:57+00:00"
+      "vintage": "2026-11-21T06:57+00:00"
     },
     "se": {
       "poster": [
@@ -2548,9 +2548,9 @@
           "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 8,
+      "nyaSenasteKorning": 0,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-20T23:57+00:00"
+      "vintage": "2026-11-21T06:57+00:00"
     }
   }
 }
