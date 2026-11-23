@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W48",
   "asOfDatum": "2026-11-23",
-  "genererad": "2026-11-23T03:05+00:00",
+  "genererad": "2026-11-23T12:28+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 35.9,
-      "delta": "+16,6 · 1 v",
+      "varde": 30.3,
+      "delta": "+7,4 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 35.9,
+      "varde": 30.3,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3589",
+      "varde": "3613",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−11,1 %",
+      "delta4v": "−10,5 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "41,47",
+      "varde": "42,15",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−23,3 %",
+      "delta4v": "−22,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,45",
+      "varde": "5,51",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−16,3 %",
+      "delta4v": "−15,4 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-23"
     },
     "olja": {
-      "v": 89.46,
+      "v": 88.8,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-23"
     }
@@ -1768,7 +1768,7 @@
           101.87,
           101.86,
           105.05,
-          105.05
+          105.97
         ]
       },
       {
@@ -1993,10 +1993,241 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-23T03:05+00:00"
+      "vintage": "2026-11-23T12:28+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-23 13:13:06",
+          "emittent": "Transiro Holding AB",
+          "person": "Anders Östgren",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "402486,0",
+          "enhet": "Antal",
+          "pris": "0,025",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 13:13:06",
+          "emittent": "Transiro Holding AB",
+          "person": "Anders Östgren",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "597514,0",
+          "enhet": "Antal",
+          "pris": "0,025",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 12:20:00",
+          "emittent": "Mendus AB",
+          "person": "Sven Arne Andreasson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "19817,0",
+          "enhet": "Antal",
+          "pris": "6,6703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:49:52",
+          "emittent": "Mendus AB",
+          "person": "Helen Tuvesson Andersson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Tilldelning",
+          "volym": "9979,0",
+          "enhet": "Antal",
+          "pris": "6,6703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:24:23",
+          "emittent": "Kinda Brave Entertainment",
+          "person": "Hans Gunnar Henning Isoz",
+          "befattning": "Styrelseledamot, Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "2,14",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:18:49",
+          "emittent": "Mendus AB",
+          "person": "Dharminder Chahal",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "10401,0",
+          "enhet": "Antal",
+          "pris": "6,6703",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:18:08",
+          "emittent": "Hemnet Group AB (publ)",
+          "person": "Håkan Hellström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "2500,0",
+          "enhet": "Antal",
+          "pris": "46,58",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:16:27",
+          "emittent": "Mangold AB",
+          "person": "Alexander Michael Marsh",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "100,0",
+          "enhet": "Antal",
+          "pris": "935,7",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:15:08",
+          "emittent": "Micropos Medical AB (publ)",
+          "person": "Richard Birger Forsberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "14050,0",
+          "enhet": "Antal",
+          "pris": "1,20",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:15:08",
+          "emittent": "Micropos Medical AB (publ)",
+          "person": "Richard Birger Forsberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "11000,0",
+          "enhet": "Antal",
+          "pris": "1,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 11:15:08",
+          "emittent": "Micropos Medical AB (publ)",
+          "person": "Richard Birger Forsberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "4000,0",
+          "enhet": "Antal",
+          "pris": "1,27",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 10:38:35",
+          "emittent": "Hemnet Group AB (publ)",
+          "person": "Håkan Hellström",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "40,0",
+          "enhet": "Antal",
+          "pris": "49,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 10:21:07",
+          "emittent": "Logistea AB (publ)",
+          "person": "Michela Westin Sundberg",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "8500,0",
+          "enhet": "Antal",
+          "pris": "14,61",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:33:01",
+          "emittent": "MOMENT GROUP AB",
+          "person": "Leif West",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1988,0",
+          "enhet": "Antal",
+          "pris": "5,0765",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:32:36",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "178,4965",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:32:36",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "178,688",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:32:36",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "2304807,0",
+          "enhet": "Antal",
+          "pris": "178,1777",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:20:15",
+          "emittent": "AQ Group AB",
+          "person": "Åsa Landén Ericsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1300,0",
+          "enhet": "Antal",
+          "pris": "216,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:14:08",
+          "emittent": "H100 Group AB",
+          "person": "Eirik Grøttum",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "30474,0",
+          "enhet": "Antal",
+          "pris": "1,43",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 09:14:08",
+          "emittent": "H100 Group AB",
+          "person": "Eirik Grøttum",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "100000,0",
+          "enhet": "Antal",
+          "pris": "1,43",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-23 08:29:24",
+          "emittent": "Gaming Corps AB",
+          "person": "Robert Larsson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "384615,0",
+          "enhet": "Antal",
+          "pris": "0,65",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-23 01:41:52",
           "emittent": "Elanders AB",
@@ -2315,242 +2546,11 @@
           "enhet": "Antal",
           "pris": "451,50",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "778,0",
-          "enhet": "Antal",
-          "pris": "104,9653",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5171,0",
-          "enhet": "Antal",
-          "pris": "105,0000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "14370,0",
-          "enhet": "Antal",
-          "pris": "104,9777",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3611,0",
-          "enhet": "Antal",
-          "pris": "104,9988",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1869,0",
-          "enhet": "Antal",
-          "pris": "104,9755",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "7901,0",
-          "enhet": "Antal",
-          "pris": "104,9942",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "8658,0",
-          "enhet": "Antal",
-          "pris": "104,9919",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "27906,0",
-          "enhet": "Antal",
-          "pris": "105,0000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "32,0",
-          "enhet": "Antal",
-          "pris": "104,9203",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2816,0",
-          "enhet": "Antal",
-          "pris": "104,9876",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "272,0",
-          "enhet": "Antal",
-          "pris": "105,0000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5870,0",
-          "enhet": "Antal",
-          "pris": "104,9979",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "689,0",
-          "enhet": "Antal",
-          "pris": "104,8500",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "5643,0",
-          "enhet": "Antal",
-          "pris": "105,0000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "625,0",
-          "enhet": "Antal",
-          "pris": "104,9506",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "10602,0",
-          "enhet": "Antal",
-          "pris": "105,0000",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:41:19",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "3187,0",
-          "enhet": "Antal",
-          "pris": "104,9800",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:35:37",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "23,0",
-          "enhet": "Antal",
-          "pris": "104,3913",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:35:37",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "2924,0",
-          "enhet": "Antal",
-          "pris": "104,8899",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:35:37",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "33,0",
-          "enhet": "Antal",
-          "pris": "104,3636",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:35:37",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1165,0",
-          "enhet": "Antal",
-          "pris": "104,4670",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 1,
+      "nyaSenasteKorning": 21,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-23T03:05+00:00"
+      "vintage": "2026-11-23T12:28+00:00"
     }
   }
 }
