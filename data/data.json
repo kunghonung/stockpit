@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "lage": "LIVE",
-  "asOfWeek": "2026-W47",
-  "asOfDatum": "2026-11-20",
-  "genererad": "2026-11-22T22:27+00:00",
+  "asOfWeek": "2026-W48",
+  "asOfDatum": "2026-11-23",
+  "genererad": "2026-11-23T03:05+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -202,7 +202,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 10,
-      "rsRankForra": 9,
+      "rsRankForra": 10,
       "relSerie19": [
         100.0,
         100.72,
@@ -304,7 +304,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 1,
-      "rsRankForra": 2,
+      "rsRankForra": 1,
       "relSerie19": [
         100.0,
         100.0,
@@ -355,7 +355,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 3,
-      "rsRankForra": 1,
+      "rsRankForra": 3,
       "relSerie19": [
         100.0,
         98.9,
@@ -407,7 +407,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 2,
-      "rsRankForra": 4,
+      "rsRankForra": 2,
       "relSerie19": [
         100.0,
         94.77,
@@ -458,7 +458,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 4,
-      "rsRankForra": 6,
+      "rsRankForra": 4,
       "relSerie19": [
         100.0,
         97.02,
@@ -509,7 +509,7 @@
       "flodeM": null,
       "insynKluster": 0,
       "rsRank": 9,
-      "rsRankForra": 10,
+      "rsRankForra": 9,
       "relSerie19": [
         100.0,
         98.8,
@@ -561,7 +561,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 6,
-      "rsRankForra": 5,
+      "rsRankForra": 6,
       "relSerie19": [
         100.0,
         100.02,
@@ -613,7 +613,7 @@
       "flodeM": null,
       "insynKluster": 1,
       "rsRank": 5,
-      "rsRankForra": 3,
+      "rsRankForra": 5,
       "relSerie19": [
         100.0,
         104.95,
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-11-20",
+      "vintage": "2026-11-23",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-11-20",
+      "vintage": "2026-11-23",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3515",
+      "varde": "3589",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−12,3 %",
+      "delta4v": "−11,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-11-20"
+      "vintage": "2026-11-23"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "41,07",
+      "varde": "41,47",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−23,5 %",
+      "delta4v": "−23,3 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-11-20"
+      "vintage": "2026-11-23"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,49",
+      "varde": "5,45",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−15,3 %",
+      "delta4v": "−16,3 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-11-20"
+      "vintage": "2026-11-23"
     },
     "olja": {
-      "v": 89.95,
+      "v": 89.46,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-11-20"
+      "vintage": "2026-11-23"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-11-20",
+    "vintage": "2026-11-23",
     "marknader": [
       {
         "namn": "USA",
@@ -1942,61 +1942,72 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-11-17",
-          "namn": "Agah Ramtin  (CIK 0001862617); RenovoRx, Inc.  (CIK 0001574094)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1862617/000149315226052696"
+          "datum": "2026-11-20",
+          "namn": "Heltebran Laura  (CIK 0001872261); Atmus Filtration Technologies Inc.  (CIK 0001921963)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1872261/000187226126000006"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Travis Tracey Thomas  (CIK 0001258930); Accenture plc  (CIK 0001467373)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1258930/000125893026000006"
+          "datum": "2026-11-20",
+          "namn": "Gould Gregory A  (CIK 0001252905); Aclarion, Inc.  (CIK 0001635077)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1252905/000168316826008971"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Price Paula A  (CIK 0001369240); Accenture plc  (CIK 0001467373)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1369240/000136924026000015"
+          "datum": "2026-11-20",
+          "namn": "Sharma Ruby  (CIK 0001880428); SOUNDTHINKING, INC.  (CIK 0001351636)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1880428/000188042826000004"
         },
         {
-          "datum": "2026-11-18",
-          "namn": "SALAMEH MICHAEL J  (CIK 0001246496); ALPHA & OMEGA SEMICONDUCTOR Ltd  (CIK 0001387467)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1246496/000162828026074902"
+          "datum": "2026-11-20",
+          "namn": "Arthur Kirk  (CIK 0002108307); SOUNDTHINKING, INC.  (CIK 0001351636)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2108307/000210830726000008"
         },
         {
-          "datum": "2026-11-19",
-          "namn": "O'Neill Stephen Andrew  (CIK 0001662140); RIVERNORTH OPPORTUNITIES FUND, INC.  (CIK 0001501072)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1662140/000139834426020323"
+          "datum": "2026-11-20",
+          "namn": "KARY JASON ANDREW  (CIK 0002041962); Keysight Technologies, Inc.  (CIK 0001601046)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2041962/000204196226000004"
         },
         {
-          "datum": "2026-11-19",
-          "namn": "Newton Charles W.  (CIK 0001866219); Keros Therapeutics, Inc.  (CIK 0001664710)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1866219/000186621926000012"
+          "datum": "2026-11-20",
+          "namn": "Kelliher Mike  (CIK 0001987188); ARDELYX, INC.  (CIK 0001437402)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1987188/000198718826000012"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Stopar Daniel E  (CIK 0002095051); MATTHEWS INTERNATIONAL CORP  (CIK 0000063296)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2095051/000006329626000111"
+          "datum": "2026-11-20",
+          "namn": "McLaughlin Erica  (CIK 0001740348); CABOT CORP  (CIK 0000016040)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1740348/000119312526470342"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Birenbaum Matthew H.  (CIK 0001532949); VIVMARK RESIDENTIAL  (CIK 0000906107)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1532949/000090610726000082"
+          "datum": "2026-11-20",
+          "namn": "Mihm Oliver K.  (CIK 0001600424); PLEXUS CORP  (CIK 0000785786)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1600424/000160042426000005"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Johnson Gerald  (CIK 0001772226); Eaton Corp plc  (CIK 0001551182)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1772226/000110465926129068"
+          "datum": "2026-11-20",
+          "namn": "Edwardson Francesca M.  (CIK 0001077473); HUNT J B TRANSPORT SERVICES INC  (CIK 0000728535)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1077473/000107747326000002"
         },
         {
-          "datum": "2026-11-17",
-          "namn": "Young Alethia  (CIK 0001918147); Pacira BioSciences, Inc.  (CIK 0001396814)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1918147/000162828026074540"
+          "datum": "2026-11-20",
+          "namn": "Vroman Brett Earl James  (CIK 0001781807); Eightco Holdings Inc.  (CIK 0001892492)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1781807/000149315226053586"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-22T22:27+00:00"
+      "vintage": "2026-11-23T03:05+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-23 01:41:52",
+          "emittent": "Elanders AB",
+          "person": "Dan Frohm",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "57,181425",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-22 22:10:49",
           "emittent": "AQ Group AB",
@@ -2535,22 +2546,11 @@
           "enhet": "Antal",
           "pris": "104,4670",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-20 15:35:37",
-          "emittent": "Modern Times Group MTG AB",
-          "person": "Florian Schuhbauer",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "687,0",
-          "enhet": "Antal",
-          "pris": "104,3508",
-          "valuta": "SEK"
         }
       ],
       "nyaSenasteKorning": 1,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-22T22:27+00:00"
+      "vintage": "2026-11-23T03:05+00:00"
     }
   }
 }
