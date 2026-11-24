@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W48",
   "asOfDatum": "2026-11-24",
-  "genererad": "2026-11-24T00:19+00:00",
+  "genererad": "2026-11-24T10:24+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 26.6,
-      "delta": "+3,7 · 1 v",
+      "varde": 27.8,
+      "delta": "+2,3 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 26.6,
+      "varde": 27.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3626",
+      "varde": "3622",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−10,2 %",
+      "delta4v": "−11,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "43,03",
+      "varde": "41,81",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−20,5 %",
+      "delta4v": "−23,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,60",
+      "varde": "5,54",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−14,0 %",
+      "delta4v": "−16,3 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-24"
     },
     "olja": {
-      "v": 86.95,
+      "v": 86.59,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-24"
     }
@@ -1751,24 +1751,24 @@
         ],
         "relSerie19": [
           100.0,
-          99.35,
-          97.91,
-          97.05,
-          97.39,
-          97.37,
-          96.11,
-          95.48,
-          95.51,
-          94.94,
-          94.42,
-          93.97,
-          97.85,
-          97.07,
-          99.23,
-          101.87,
-          101.86,
-          105.05,
-          102.39
+          100.32,
+          96.85,
+          95.81,
+          96.83,
+          95.89,
+          93.83,
+          94.25,
+          95.29,
+          93.18,
+          93.76,
+          95.24,
+          95.8,
+          98.04,
+          98.75,
+          103.6,
+          95.26,
+          106.18,
+          101.41
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           90.02,
           93.54,
           94.52,
-          92.52
+          94.03
         ]
       },
       {
@@ -1963,13 +1963,13 @@
         },
         {
           "datum": "2026-11-23",
-          "namn": "Escovar Gomez Sylvia  (CIK 0002121214); Grupo Cibest S.A.  (CIK 0002058897)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2121214/000205889726000339"
+          "namn": "Hutjens Brad Vincent  (CIK 0001664629); NICOLET BANKSHARES INC  (CIK 0001174850)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1664629/000117485026000191"
         },
         {
           "datum": "2026-11-23",
-          "namn": "Hutjens Brad Vincent  (CIK 0001664629); NICOLET BANKSHARES INC  (CIK 0001174850)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1664629/000117485026000191"
+          "namn": "Escovar Gomez Sylvia  (CIK 0002121214); Grupo Cibest S.A.  (CIK 0002058897)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2121214/000205889726000339"
         },
         {
           "datum": "2026-11-23",
@@ -1978,25 +1978,58 @@
         },
         {
           "datum": "2026-11-23",
+          "namn": "Worsham Adam C.  (CIK 0002110450); VALVOLINE INC  (CIK 0001674910)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110450/000211045026000014"
+        },
+        {
+          "datum": "2026-11-23",
           "namn": "Jampol Thad  (CIK 0001869575); Intapp, Inc.  (CIK 0001565687)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1869575/000156568726000163"
         },
         {
           "datum": "2026-11-23",
-          "namn": "Izquierdo Sabido Agustin  (CIK 0002056904); LyondellBasell Industries N.V.  (CIK 0001489393)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2056904/000205690426000010"
-        },
-        {
-          "datum": "2026-11-23",
-          "namn": "Worsham Adam C.  (CIK 0002110450); VALVOLINE INC  (CIK 0001674910)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110450/000211045026000014"
+          "namn": "BLACKSTONE SECURITIES PARTNERS L.P.  (CIK 0000792326); Blackstone Intermediary Holdco L.L.C.  (CIK 0001720402)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/792326/000121390026123203"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-24T00:19+00:00"
+      "vintage": "2026-11-24T10:23+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-24 09:54:51",
+          "emittent": "Foremont Group AB",
+          "person": "Niklas Estensson",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "8,9",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-24 09:54:15",
+          "emittent": "Gaming Corps AB",
+          "person": "Christoffer Hartmann",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Teckning",
+          "volym": "646154,0",
+          "enhet": "Antal",
+          "pris": "0,65",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-24 08:59:13",
+          "emittent": "Eniro Group AB",
+          "person": "Linus Johansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "1030,0",
+          "enhet": "Antal",
+          "pris": "33,460068",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-23 22:30:41",
           "emittent": "PaperShell AB (publ)",
@@ -2513,44 +2546,11 @@
           "enhet": "Antal",
           "pris": "448,68",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-21 15:20:32",
-          "emittent": "Amido AB (publ)",
-          "person": "Rikard Akhtarzand",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "3958,0",
-          "enhet": "Antal",
-          "pris": "4,12",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-21 15:20:32",
-          "emittent": "Amido AB (publ)",
-          "person": "Rikard Akhtarzand",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "13842,0",
-          "enhet": "Antal",
-          "pris": "4,15",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-21 12:25:53",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "9229,0",
-          "enhet": "Antal",
-          "pris": "3,5",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 21,
+      "nyaSenasteKorning": 3,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-24T00:19+00:00"
+      "vintage": "2026-11-24T10:24+00:00"
     }
   }
 }
