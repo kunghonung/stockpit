@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W48",
   "asOfDatum": "2026-11-26",
-  "genererad": "2026-11-26T05:28+00:00",
+  "genererad": "2026-11-26T15:45+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 28.3,
-      "delta": "+3,7 · 1 v",
+      "varde": 26.8,
+      "delta": "−1,7 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 28.3,
+      "varde": 26.8,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -877,11 +877,11 @@
       "not": "Flackande 2s10s: −3 bp/mån."
     },
     "bredd": {
-      "over50": 51,
-      "over200": 51,
+      "over50": 60,
+      "over200": 54,
       "antal": 495,
       "kalla": "beräknad ur screenernuniversum (S&P 500-delen, 495 bolag)",
-      "vintage": "2026-11-25",
+      "vintage": "2026-11-26",
       "zoner": [
         35,
         72
@@ -890,7 +890,7 @@
         0,
         100
       ],
-      "delta": "-5 sedan förra"
+      "delta": "+9 sedan förra"
     },
     "sentiment": {
       "spx26": [
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3619",
+      "varde": "3602",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−10,2 %",
+      "delta4v": "−10,7 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "42,15",
+      "varde": "41,88",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−19,2 %",
+      "delta4v": "−19,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,50",
+      "varde": "5,47",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−16,4 %",
+      "delta4v": "−17,0 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-26"
     },
     "olja": {
-      "v": 91.18,
+      "v": 91.42,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-26"
     }
@@ -1768,7 +1768,7 @@
           102.52,
           105.73,
           101.93,
-          101.93
+          103.91
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           95.2,
           96.2,
           93.63,
-          95.13
+          94.43
         ]
       },
       {
@@ -1943,46 +1943,6 @@
       "poster": [
         {
           "datum": "2026-11-23",
-          "namn": "BLACKSTONE SECURITIES PARTNERS L.P.  (CIK 0000792326); Blackstone Intermediary Holdco L.L.C.  (CIK 0001720402)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/792326/000121390026123203"
-        },
-        {
-          "datum": "2026-11-23",
-          "namn": "Ng Hao Feng  (CIK 0002124103); Republic Power Group Ltd  (CIK 0001912884)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2124103/000121390026123222"
-        },
-        {
-          "datum": "2026-11-23",
-          "namn": "Rammohan Karthikeyan  (CIK 0002113601); LAM RESEARCH CORP  (CIK 0000707549)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2113601/000211360126000006"
-        },
-        {
-          "datum": "2026-11-23",
-          "namn": "Spurlock Martha S.  (CIK 0002088587); Commercial Bancgroup, Inc.  (CIK 0001981546)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2088587/000089843226000799"
-        },
-        {
-          "datum": "2026-11-23",
-          "namn": "Rittiner Chris M.  (CIK 0002030623); Fifth District Bancorp, Inc.  (CIK 0002012726)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2030623/000143774926038088"
-        },
-        {
-          "datum": "2026-11-23",
-          "namn": "OLMSTEAD JACK A.  (CIK 0001815106); HireQuest, Inc.  (CIK 0001140102)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1815106/000165495426010071"
-        },
-        {
-          "datum": "2026-11-24",
-          "namn": "Saltiel Robert J.  (CIK 0001434402); RPC INC  (CIK 0000742278)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1434402/000165495426010087"
-        },
-        {
-          "datum": "2026-11-24",
-          "namn": "Davenport Robin J  (CIK 0001891142); STANDEX INTERNATIONAL CORP/DE/  (CIK 0000310354)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891142/000031035426000124"
-        },
-        {
-          "datum": "2026-11-23",
           "namn": "Coombs Daniel M  (CIK 0001642974); PureCycle Technologies, Inc.  (CIK 0001830033)",
           "lank": "https://www.sec.gov/Archives/edgar/data/1642974/000164297426000005"
         },
@@ -1990,13 +1950,493 @@
           "datum": "2026-11-23",
           "namn": "Hyman Ryan L  (CIK 0002009638); SPIRE INC  (CIK 0001126956)",
           "lank": "https://www.sec.gov/Archives/edgar/data/2009638/000200963826000004"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "Ferre Maria Luisa  (CIK 0001289698); POPULAR, INC.  (CIK 0000763901)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1289698/000119312526471537"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "RICHARDSON EDWARD J  (CIK 0000918270); RICHARDSON ELECTRONICS, LTD.  (CIK 0000355948)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/918270/000119312526471762"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "Hutjens Brad Vincent  (CIK 0001664629); NICOLET BANKSHARES INC  (CIK 0001174850)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1664629/000117485026000191"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "Escovar Gomez Sylvia  (CIK 0002121214); Grupo Cibest S.A.  (CIK 0002058897)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2121214/000205889726000339"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "MILLER BRIAN K  (CIK 0001086072); TYLER TECHNOLOGIES INC  (CIK 0000860731)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1086072/000213003526000010"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "Worsham Adam C.  (CIK 0002110450); VALVOLINE INC  (CIK 0001674910)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2110450/000211045026000014"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "Jampol Thad  (CIK 0001869575); Intapp, Inc.  (CIK 0001565687)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1869575/000156568726000163"
+        },
+        {
+          "datum": "2026-11-23",
+          "namn": "BLACKSTONE SECURITIES PARTNERS L.P.  (CIK 0000792326); Blackstone Intermediary Holdco L.L.C.  (CIK 0001720402)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/792326/000121390026123203"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-26T05:28+00:00"
+      "vintage": "2026-11-26T15:45+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-26 16:26:26",
+          "emittent": "K-Fast Holding AB",
+          "person": "Niclas Bagler",
+          "befattning": "Vice VD",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "9,1",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:22:10",
+          "emittent": "BICO Group AB",
+          "person": "Olof Stranding",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "16,11",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:19:02",
+          "emittent": "Green Landscaping Group AB (publ)",
+          "person": "Staffan Salén",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "29137,0",
+          "enhet": "Antal",
+          "pris": "11,94",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 15:21:50",
+          "emittent": "ASMDEE B - Asmodee",
+          "person": "Anna Mossberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "1327,0",
+          "enhet": "Antal",
+          "pris": "150,6",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 15:21:50",
+          "emittent": "ASMDEE B - Asmodee",
+          "person": "Anna Mossberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "331,0",
+          "enhet": "Antal",
+          "pris": "150,46",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 15:13:11",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "49902,0",
+          "enhet": "Antal",
+          "pris": "37,2046",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 15:09:35",
+          "emittent": "Ework Group AB",
+          "person": "Tobias Johan Fredrik Kryss",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Teckning",
+          "volym": "16000,0",
+          "enhet": "Antal",
+          "pris": "9,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 14:45:52",
+          "emittent": "Vidhance AB",
+          "person": "Johan Qviberg",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "53600,0",
+          "enhet": "Antal",
+          "pris": "5,30",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 14:26:45",
+          "emittent": "Sweden BuyersClub AB",
+          "person": "Jacob Wendel",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "1300,0",
+          "enhet": "Antal",
+          "pris": "6,95",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 14:26:18",
+          "emittent": "Image Systems AB",
+          "person": "Erik Swerup",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "70179,0",
+          "enhet": "Antal",
+          "pris": "0,537",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 14:26:18",
+          "emittent": "Image Systems AB",
+          "person": "Erik Swerup",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "17565,0",
+          "enhet": "Antal",
+          "pris": "0,58",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 13:00:30",
+          "emittent": "Desenio Group AB (publ)",
+          "person": "David Spennare",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "8587,0",
+          "enhet": "Antal",
+          "pris": "0,1415",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 13:00:30",
+          "emittent": "Desenio Group AB (publ)",
+          "person": "David Spennare",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "91413,0",
+          "enhet": "Antal",
+          "pris": "0,1425",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:49:33",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "775159,0",
+          "enhet": "Antal",
+          "pris": "12,90064",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:49:33",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "155031,0",
+          "enhet": "Antal",
+          "pris": "38,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:49:33",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Avyttring",
+          "volym": "620128,0",
+          "enhet": "Antal",
+          "pris": "38,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:49:33",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Interntransaktion – Förvärv",
+          "volym": "620128,0",
+          "enhet": "Antal",
+          "pris": "38,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:42:46",
+          "emittent": "Sweden Buyersclub AB",
+          "person": "Emil Henriksson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "2000,0",
+          "enhet": "Antal",
+          "pris": "7,41",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:42:46",
+          "emittent": "Sweden Buyersclub AB",
+          "person": "Emil Henriksson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1400,0",
+          "enhet": "Antal",
+          "pris": "7,33",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:36:21",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "775159,0",
+          "enhet": "Antal",
+          "pris": "12,90064",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:36:21",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen minskning",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "19,38214",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:36:21",
+          "emittent": "Hasko Invest AB (publ)",
+          "person": "Mattias Friberg",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Lösen ökning",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "19,38214",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:11:53",
+          "emittent": "Gentoo Media Inc",
+          "person": "Jonas Warrer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "80000,0",
+          "enhet": "Antal",
+          "pris": "3,99",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 12:11:53",
+          "emittent": "Gentoo Media Inc",
+          "person": "Jonas Warrer",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "3,98",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:47:39",
+          "emittent": "Logistri Fastighets AB (Publ)",
+          "person": "Hans Günter Patrik von Hacht",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "6950,0",
+          "enhet": "Antal",
+          "pris": "14,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:45:23",
+          "emittent": "Logistri Fastighets AB (Publ",
+          "person": "Hans Günter Patrik von Hacht",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "13050,0",
+          "enhet": "Antal",
+          "pris": "14,10",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:39:04",
+          "emittent": "Humble Group AB",
+          "person": "Anders Fredriksson",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "700000,0",
+          "enhet": "Antal",
+          "pris": "0,51",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:34:00",
+          "emittent": "Advenica AB (publ)",
+          "person": "Per Wargéus",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "17,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:23:52",
+          "emittent": "Humble Group AB",
+          "person": "Noel Abdayem",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "0,51",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:23:51",
+          "emittent": "Humble Group AB",
+          "person": "Johan Lennartsson",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "200000,0",
+          "enhet": "Antal",
+          "pris": "0,51",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:09:21",
+          "emittent": "L E Lundbergföretagen Aktiebolag (publ)",
+          "person": "Lars Fredrik Elis Lundberg",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "101000,0",
+          "enhet": "Antal",
+          "pris": "572,9353",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:06:14",
+          "emittent": "EASTNINE AB (PUBL)",
+          "person": "Peter Elam Håkansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "96239,0",
+          "enhet": "Antal",
+          "pris": "44,4907",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:06:14",
+          "emittent": "EASTNINE AB (PUBL)",
+          "person": "Peter Elam Håkansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "14000,0",
+          "enhet": "Antal",
+          "pris": "45,3418",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 11:03:01",
+          "emittent": "EASTNINE AB (PUBL)",
+          "person": "Lars Peter Elam Håkansson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "12000,0",
+          "enhet": "Antal",
+          "pris": "44,1760",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 10:58:24",
+          "emittent": "Duroc Aktiebolag",
+          "person": "Caroline Talsma",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "10000,0",
+          "enhet": "Antal",
+          "pris": "19,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 10:09:52",
+          "emittent": "Lohilo Foods AB (publ)",
+          "person": "Emma Lundin",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "69000,0",
+          "enhet": "Antal",
+          "pris": "2,9945",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 10:08:01",
+          "emittent": "AQ Group AB",
+          "person": "Åsa Landén Ericsson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "1150,0",
+          "enhet": "Antal",
+          "pris": "217,16",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 09:44:16",
+          "emittent": "Studentbostäder i Norden AB (publ)",
+          "person": "Bo Netz",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "80686,0",
+          "enhet": "Antal",
+          "pris": "1,17",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 09:31:23",
+          "emittent": "Swedish Orphan Biovitrum AB (publ)",
+          "person": "Norbert Oppitz",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "2731,0",
+          "enhet": "Antal",
+          "pris": "499,80",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 07:04:22",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "28100,0",
+          "enhet": "Antal",
+          "pris": "3,95928",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-25 23:28:20",
           "emittent": "Vidhance AB",
@@ -2106,451 +2546,11 @@
           "enhet": "Antal",
           "pris": "0,00",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 18:44:46",
-          "emittent": "PaperShell AB(publ)",
-          "person": "Märta Ragnhild Wiborg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Lösen minskning",
-          "volym": "90,0",
-          "enhet": "Antal",
-          "pris": "3825,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 18:44:46",
-          "emittent": "PaperShell AB(publ)",
-          "person": "Märta Ragnhild Wiborg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Lösen ökning",
-          "volym": "90,0",
-          "enhet": "Antal",
-          "pris": "3825,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 16:43:12",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Henrik Mikael Halvorsen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "19,38214",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 16:41:32",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Henrik Mikael Halvorsen",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen ökning",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "19,38214",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 16:20:56",
-          "emittent": "Image Systems AB",
-          "person": "Anders Fransson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "150000,0",
-          "enhet": "Antal",
-          "pris": "0,54",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:57:40",
-          "emittent": "SenzaGen AB",
-          "person": "Paul Yianni",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "19774,0",
-          "enhet": "Antal",
-          "pris": "4,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:57:40",
-          "emittent": "SenzaGen AB",
-          "person": "Paul Yianni",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "25531,0",
-          "enhet": "Antal",
-          "pris": "4,7",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:57:40",
-          "emittent": "SenzaGen AB",
-          "person": "Paul Yianni",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "20000,0",
-          "enhet": "Antal",
-          "pris": "4,57",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:57:40",
-          "emittent": "SenzaGen AB",
-          "person": "Paul Yianni",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "18000,0",
-          "enhet": "Antal",
-          "pris": "4,64",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:57:40",
-          "emittent": "SenzaGen AB",
-          "person": "Paul Yianni",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "16695,0",
-          "enhet": "Antal",
-          "pris": "4,62",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:34:56",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Christer Jan Åke Löfdahl",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "25503,0",
-          "enhet": "Antal",
-          "pris": "18,61786",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:34:56",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Christer Jan Åke Löfdahl",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "24497,0",
-          "enhet": "Antal",
-          "pris": "19,38214",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:34:56",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Christer Jan Åke Löfdahl",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen ökning",
-          "volym": "24497,0",
-          "enhet": "Antal",
-          "pris": "19,38214",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:22:34",
-          "emittent": "Svevik Industri AB",
-          "person": "Fredrik Grevelius",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "101,0",
-          "enhet": "Antal",
-          "pris": "46,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:22:34",
-          "emittent": "Svevik Industri AB",
-          "person": "Fredrik Grevelius",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "2,0",
-          "enhet": "Antal",
-          "pris": "46,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:13:13",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Joakim Tengzelius",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Avyttring",
-          "volym": "1417500,0",
-          "enhet": "Antal",
-          "pris": "38,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:13:13",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Joakim Tengzelius",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "1655601,0",
-          "enhet": "Antal",
-          "pris": "27,18046",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 15:13:13",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Joakim Tengzelius",
-          "befattning": "Verkställande direktör (VD), Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "517593,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:51:32",
-          "emittent": "Alligo AB",
-          "person": "Alexandra Fürst",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "1049,0",
-          "enhet": "Antal",
-          "pris": "114,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:49:27",
-          "emittent": "Alligo AB",
-          "person": "Alexandra Fürst",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "271,0",
-          "enhet": "Antal",
-          "pris": "114,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:43:21",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lån mottaget",
-          "volym": "552709,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:38:52",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "175131,0",
-          "enhet": "Antal",
-          "pris": "38,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:38:52",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "1892116,0",
-          "enhet": "Antal",
-          "pris": "3,38246",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:38:52",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "242303,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:36",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "10,27635",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:36",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Interntransaktion – Förvärv",
-          "volym": "1892116,0",
-          "enhet": "Antal",
-          "pris": "0,00230",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:36",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "345062,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:36",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lån utlåning",
-          "volym": "552709,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:06",
-          "emittent": "Camurus AB",
-          "person": "Behshad Sheldon",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:06",
-          "emittent": "Camurus AB",
-          "person": "Behshad Sheldon",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen minskning",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:06",
-          "emittent": "Camurus AB",
-          "person": "Behshad Sheldon",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Lösen ökning",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "346,3",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:30:06",
-          "emittent": "Camurus AB",
-          "person": "Behshad Sheldon",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Utbyte minskning",
-          "volym": "2000,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:24:04",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "563759,0",
-          "enhet": "Antal",
-          "pris": "38,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:24:04",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "1892116,0",
-          "enhet": "Antal",
-          "pris": "3,38246",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:24:04",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "José Carlos Lorente Zarebski",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Lösen minskning",
-          "volym": "45249,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:23:53",
-          "emittent": "Papershell AB",
-          "person": "Märta Ragnhild Wiborg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Lösen minskning",
-          "volym": "90,0",
-          "enhet": "Antal",
-          "pris": "3825,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:23:53",
-          "emittent": "Papershell AB",
-          "person": "Märta Ragnhild Wiborg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Lösen ökning",
-          "volym": "90,0",
-          "enhet": "Antal",
-          "pris": "3825,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:20:05",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Magnus Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Avyttring",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "38,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:20:05",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Magnus Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "1000000,0",
-          "enhet": "Antal",
-          "pris": "10,27635",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 14:20:05",
-          "emittent": "Hasko Invest AB (publ)",
-          "person": "Per Magnus Eriksson",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Interntransaktion – Avyttring",
-          "volym": "1892116,0",
-          "enhet": "Antal",
-          "pris": "0,00230",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 0,
+      "nyaSenasteKorning": 40,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-26T05:28+00:00"
+      "vintage": "2026-11-26T15:45+00:00"
     }
   }
 }
