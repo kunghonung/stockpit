@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "lage": "LIVE",
   "asOfWeek": "2026-W48",
-  "asOfDatum": "2026-11-26",
-  "genererad": "2026-11-26T15:45+00:00",
+  "asOfDatum": "2026-11-27",
+  "genererad": "2026-11-27T00:32+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -675,7 +675,7 @@
       "enhet": "",
       "decimaler": 1,
       "varde": 26.8,
-      "delta": "−1,7 · 1 v",
+      "delta": "−1,6 · 1 v",
       "trosklar": [
         20,
         28
@@ -685,7 +685,7 @@
         34
       ],
       "kalla": "Yahoo ^VIX",
-      "vintage": "2026-11-26",
+      "vintage": "2026-11-27",
       "url": "https://fred.stlouisfed.org/series/VIXCLS"
     },
     {
@@ -704,7 +704,7 @@
         145
       ],
       "kalla": "Yahoo ^MOVE",
-      "vintage": "2026-11-26",
+      "vintage": "2026-11-27",
       "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
     }
   ],
@@ -967,44 +967,44 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3602",
+      "varde": "3595",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−10,7 %",
+      "delta4v": "−10,8 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
-      "vintage": "2026-11-26"
+      "vintage": "2026-11-27"
     },
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "41,88",
+      "varde": "41,76",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−19,8 %",
+      "delta4v": "−20,0 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
-      "vintage": "2026-11-26"
+      "vintage": "2026-11-27"
     },
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,47",
+      "varde": "5,45",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−17,0 %",
+      "delta4v": "−17,2 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
       "kalla": "Yahoo HG=F (USD/lb)",
-      "vintage": "2026-11-26"
+      "vintage": "2026-11-27"
     },
     "olja": {
-      "v": 91.42,
+      "v": 91.81,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
-      "vintage": "2026-11-26"
+      "vintage": "2026-11-27"
     }
   },
   "megatrender": [
@@ -1646,7 +1646,7 @@
   "geo": {
     "benchmark": "MSCI ACWI",
     "kalla": "Yahoo veckoserier mot ACWI (proxys: SXXP=^STOXX, EEM=EEM, NKY=^N225, MCHI=MCHI, SPX=SPY, NDX=QQQ, INDA=INDA)",
-    "vintage": "2026-11-26",
+    "vintage": "2026-11-27",
     "marknader": [
       {
         "namn": "USA",
@@ -1768,7 +1768,7 @@
           102.52,
           105.73,
           101.93,
-          103.91
+          103.71
         ]
       },
       {
@@ -1809,7 +1809,7 @@
           95.2,
           96.2,
           93.63,
-          94.43
+          94.54
         ]
       },
       {
@@ -1942,61 +1942,204 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-11-23",
-          "namn": "Coombs Daniel M  (CIK 0001642974); PureCycle Technologies, Inc.  (CIK 0001830033)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1642974/000164297426000005"
+          "datum": "2026-11-24",
+          "namn": "Saltiel Robert J.  (CIK 0001434402); RPC INC  (CIK 0000742278)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1434402/000165495426010087"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "Hyman Ryan L  (CIK 0002009638); SPIRE INC  (CIK 0001126956)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2009638/000200963826000004"
+          "datum": "2026-11-24",
+          "namn": "Davenport Robin J  (CIK 0001891142); STANDEX INTERNATIONAL CORP/DE/  (CIK 0000310354)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1891142/000031035426000124"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "Ferre Maria Luisa  (CIK 0001289698); POPULAR, INC.  (CIK 0000763901)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1289698/000119312526471537"
+          "datum": "2026-11-24",
+          "namn": "DEMETRIOU STEVEN J.  (CIK 0001173003); Amentum Holdings, Inc.  (CIK 0002011286)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1173003/000117300326000004"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "RICHARDSON EDWARD J  (CIK 0000918270); RICHARDSON ELECTRONICS, LTD.  (CIK 0000355948)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/918270/000119312526471762"
+          "datum": "2026-11-24",
+          "namn": "Nelson Lisa M  (CIK 0001865864); JACK HENRY & ASSOCIATES INC  (CIK 0000779152)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1865864/000077915226000140"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "Hutjens Brad Vincent  (CIK 0001664629); NICOLET BANKSHARES INC  (CIK 0001174850)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1664629/000117485026000191"
+          "datum": "2026-11-24",
+          "namn": "Lindborg Stacy  (CIK 0001813667); Imunon, Inc.  (CIK 0000749647)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1813667/000143774926038182"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "Escovar Gomez Sylvia  (CIK 0002121214); Grupo Cibest S.A.  (CIK 0002058897)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2121214/000205889726000339"
+          "datum": "2026-11-24",
+          "namn": "St. Mary Michele T  (CIK 0002057553); Amentum Holdings, Inc.  (CIK 0002011286)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2057553/000205755326000005"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "MILLER BRIAN K  (CIK 0001086072); TYLER TECHNOLOGIES INC  (CIK 0000860731)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1086072/000213003526000010"
+          "datum": "2026-11-24",
+          "namn": "Jazic Annemarie  (CIK 0001707990); DILLARD'S, INC.  (CIK 0000028917)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1707990/000170799026000021"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "Worsham Adam C.  (CIK 0002110450); VALVOLINE INC  (CIK 0001674910)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2110450/000211045026000014"
+          "datum": "2026-11-24",
+          "namn": "Stumpf Matthew  (CIK 0002003065); AppLovin Corp  (CIK 0001751008)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2003065/000200306526000009"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "Jampol Thad  (CIK 0001869575); Intapp, Inc.  (CIK 0001565687)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1869575/000156568726000163"
+          "datum": "2026-11-24",
+          "namn": "Scheinman Daniel  (CIK 0001605698); Arista Networks, Inc.  (CIK 0001596532)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1605698/000159653226000286"
         },
         {
-          "datum": "2026-11-23",
-          "namn": "BLACKSTONE SECURITIES PARTNERS L.P.  (CIK 0000792326); Blackstone Intermediary Holdco L.L.C.  (CIK 0001720402)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/792326/000121390026123203"
+          "datum": "2026-11-24",
+          "namn": "COGHILL CLINT D  (CIK 0001235155); Amplify Energy Corp.  (CIK 0001533924)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1235155/000123515526000004"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-26T15:45+00:00"
+      "vintage": "2026-11-27T00:32+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-26 19:26:08",
+          "emittent": "Guldbrev Holding AB (publ)",
+          "person": "Peter Gullander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utdelning mottagen",
+          "volym": "2673954,0",
+          "enhet": "Antal",
+          "pris": "4,0366",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 19:21:36",
+          "emittent": "Guldbrev Holding AB (publ)",
+          "person": "Peter Gullander",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Utdelning lämnad",
+          "volym": "2673954,0",
+          "enhet": "Antal",
+          "pris": "4,0366",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 18:09:50",
+          "emittent": "Done.ai Group AB",
+          "person": "Staffan Herbst",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "19818,0",
+          "enhet": "Antal",
+          "pris": "5,50",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 17:10:47",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "8095,0",
+          "enhet": "Antal",
+          "pris": "21,11",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 17:10:47",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "5122,0",
+          "enhet": "Antal",
+          "pris": "24,0",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 17:10:47",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "Lars Save",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Avyttring",
+          "volym": "7614,0",
+          "enhet": "Antal",
+          "pris": "21,11",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 17:07:34",
+          "emittent": "eWork Group AB",
+          "person": "Joel Sjöstedt",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Tilldelning",
+          "volym": "15000,0",
+          "enhet": "Antal",
+          "pris": "9,22",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:59:21",
+          "emittent": "Nodebis Applications AB (publ)",
+          "person": "AM Members Only AB",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "164,0",
+          "enhet": "Antal",
+          "pris": "24,49",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:52:48",
+          "emittent": "DevPort AB",
+          "person": "Per Rodert",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "9000,0",
+          "enhet": "Antal",
+          "pris": "8,4",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:50:39",
+          "emittent": "Sonetel AB (publ)",
+          "person": "Tomas André",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "9964,0",
+          "enhet": "Antal",
+          "pris": "4,4215",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:50:39",
+          "emittent": "Sonetel AB (publ)",
+          "person": "Tomas André",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "5064,0",
+          "enhet": "Antal",
+          "pris": "4,3185",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:50:39",
+          "emittent": "Sonetel AB (publ)",
+          "person": "Tomas André",
+          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
+          "karaktar": "Förvärv",
+          "volym": "2662,0",
+          "enhet": "Antal",
+          "pris": "4,3177",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-26 16:47:19",
+          "emittent": "AcadeMedia AB",
+          "person": "Petter Sylvan",
+          "befattning": "Ekonomichef/finanschef/finansdirektör",
+          "karaktar": "Förvärv",
+          "volym": "1700,0",
+          "enhet": "Antal",
+          "pris": "130,4",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-26 16:26:26",
           "emittent": "K-Fast Holding AB",
@@ -2403,154 +2546,11 @@
           "enhet": "Antal",
           "pris": "217,16",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 09:44:16",
-          "emittent": "Studentbostäder i Norden AB (publ)",
-          "person": "Bo Netz",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "80686,0",
-          "enhet": "Antal",
-          "pris": "1,17",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 09:31:23",
-          "emittent": "Swedish Orphan Biovitrum AB (publ)",
-          "person": "Norbert Oppitz",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Avyttring",
-          "volym": "2731,0",
-          "enhet": "Antal",
-          "pris": "499,80",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 07:04:22",
-          "emittent": "Gentoo Media Inc.",
-          "person": "Mateusz Juroszek",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "28100,0",
-          "enhet": "Antal",
-          "pris": "3,95928",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 23:28:20",
-          "emittent": "Vidhance AB",
-          "person": "Johan Qviberg",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "30000,0",
-          "enhet": "Antal",
-          "pris": "5,30",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 23:09:18",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "141423,0",
-          "enhet": "Antal",
-          "pris": "3,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 23:09:18",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "5001,0",
-          "enhet": "Antal",
-          "pris": "3,5",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 23:09:18",
-          "emittent": "Arbona AB",
-          "person": "Håkan Blomdahl",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "44460,0",
-          "enhet": "Antal",
-          "pris": "3,54",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 21:42:20",
-          "emittent": "Obducat AB",
-          "person": "Håkan Petersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen ökning",
-          "volym": "806862,0",
-          "enhet": "Antal",
-          "pris": "0,18",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 21:37:51",
-          "emittent": "Obducat AB",
-          "person": "Håkan Petersson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Lösen minskning",
-          "volym": "806862,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 20:17:43",
-          "emittent": "Keo Capital AB",
-          "person": "Alessandro Ciacchini",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "213926,0",
-          "enhet": "Antal",
-          "pris": "0,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 20:03:54",
-          "emittent": "Attendo AB (publ)",
-          "person": "Virpi Holmqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "7695,0",
-          "enhet": "Antal",
-          "pris": "133,981",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 20:03:54",
-          "emittent": "Attendo AB (publ)",
-          "person": "Virpi Holmqvist",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Avyttring",
-          "volym": "7695,0",
-          "enhet": "Antal",
-          "pris": "134,276",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-25 18:57:37",
-          "emittent": "KEO CAPITAL AB",
-          "person": "Davide Tomassoni",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Tilldelning",
-          "volym": "213926,0",
-          "enhet": "Antal",
-          "pris": "0,00",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 40,
+      "nyaSenasteKorning": 13,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-26T15:45+00:00"
+      "vintage": "2026-11-27T00:32+00:00"
     }
   }
 }
