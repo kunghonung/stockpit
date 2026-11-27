@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W48",
   "asOfDatum": "2026-11-27",
-  "genererad": "2026-11-27T00:32+00:00",
+  "genererad": "2026-11-27T09:03+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -674,8 +674,8 @@
       "etikett": "VIX",
       "enhet": "",
       "decimaler": 1,
-      "varde": 26.8,
-      "delta": "−1,6 · 1 v",
+      "varde": 24.7,
+      "delta": "−11,2 · 1 v",
       "trosklar": [
         20,
         28
@@ -833,7 +833,7 @@
     {
       "id": "vix",
       "namn": "Aktievolatilitet",
-      "varde": 26.8,
+      "varde": 24.7,
       "komfort": 20,
       "dec": 1,
       "mall": "{namn}: VIX {varde} mot komfort {komfort}.",
@@ -967,10 +967,10 @@
     "guld": {
       "namn": "Guld",
       "kort": "XAU",
-      "varde": "3595",
+      "varde": "3706",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−10,8 %",
+      "delta4v": "−8,1 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo GC=F",
@@ -979,10 +979,10 @@
     "silver": {
       "namn": "Silver",
       "kort": "XAG",
-      "varde": "41,76",
+      "varde": "44,79",
       "enhet": "USD/oz",
       "pil": "ned",
-      "delta4v": "−20,0 %",
+      "delta4v": "−14,2 %",
       "status": "gul",
       "atgard": "bevaka",
       "kalla": "Yahoo SI=F",
@@ -991,10 +991,10 @@
     "koppar": {
       "namn": "Koppar",
       "kort": "HG1",
-      "varde": "5,45",
+      "varde": "5,72",
       "enhet": "USD/t",
       "pil": "ned",
-      "delta4v": "−17,2 %",
+      "delta4v": "−13,0 %",
       "over200d": false,
       "status": "rod",
       "atgard": "bevaka",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-27"
     },
     "olja": {
-      "v": 91.81,
+      "v": 92.47,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-27"
     }
@@ -1767,8 +1767,8 @@
           102.53,
           102.52,
           105.73,
-          101.93,
-          103.71
+          103.71,
+          104.69
         ]
       },
       {
@@ -1808,8 +1808,8 @@
           91.61,
           95.2,
           96.2,
-          93.63,
-          94.54
+          94.43,
+          96.42
         ]
       },
       {
@@ -1993,10 +1993,142 @@
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-27T00:32+00:00"
+      "vintage": "2026-11-27T09:03+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-27 09:48:41",
+          "emittent": "DnB Carnegie Investment Bank AB",
+          "person": "Ola Hugoson",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "20000,0",
+          "enhet": "Antal",
+          "pris": "19,59727",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 09:30:59",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "600000,0",
+          "enhet": "Antal",
+          "pris": "181,3754",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 09:30:59",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "503209,0",
+          "enhet": "Antal",
+          "pris": "183,1179",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 09:30:59",
+          "emittent": "H & M Hennes & Mauritz AB",
+          "person": "Karl-Johan Persson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "250157,0",
+          "enhet": "Antal",
+          "pris": "184,2495",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 09:12:38",
+          "emittent": "Fastpartner AB",
+          "person": "Sven-Olof Johansson",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "72414,0",
+          "enhet": "Antal",
+          "pris": "38,1961",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 09:10:20",
+          "emittent": "Ellos Holding AB (publ)",
+          "person": "Morten Eivindssøn Astrup",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "47588,0",
+          "enhet": "Antal",
+          "pris": "63,9953",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 08:58:24",
+          "emittent": "Ellos Holding AB (publ)",
+          "person": "Morten Eivindssøn Astrup",
+          "befattning": "Styrelseordförande",
+          "karaktar": "Förvärv",
+          "volym": "45562,0",
+          "enhet": "Antal",
+          "pris": "63,0605",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 08:21:47",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "604,0",
+          "enhet": "Antal",
+          "pris": "9,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 08:21:47",
+          "emittent": "Tempest Security AB",
+          "person": "Andrew Spry",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "1089,0",
+          "enhet": "Antal",
+          "pris": "9,3",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 07:56:13",
+          "emittent": "Gentoo Media Inc.",
+          "person": "Mateusz Juroszek",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Förvärv",
+          "volym": "42100,0",
+          "enhet": "Antal",
+          "pris": "3,9806",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 07:14:00",
+          "emittent": "GASPOROX AB (PUBL)",
+          "person": "Märta Lewander Xu",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "8838,0",
+          "enhet": "Antal",
+          "pris": "3,749095",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 07:14:00",
+          "emittent": "GASPOROX AB (PUBL)",
+          "person": "Märta Lewander Xu",
+          "befattning": "Verkställande direktör (VD)",
+          "karaktar": "Förvärv",
+          "volym": "10616,0",
+          "enhet": "Antal",
+          "pris": "4,0",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-26 19:26:08",
           "emittent": "Guldbrev Holding AB (publ)",
@@ -2414,143 +2546,11 @@
           "enhet": "Antal",
           "pris": "14,10",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:45:23",
-          "emittent": "Logistri Fastighets AB (Publ",
-          "person": "Hans Günter Patrik von Hacht",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "13050,0",
-          "enhet": "Antal",
-          "pris": "14,10",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:39:04",
-          "emittent": "Humble Group AB",
-          "person": "Anders Fredriksson",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "700000,0",
-          "enhet": "Antal",
-          "pris": "0,51",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:34:00",
-          "emittent": "Advenica AB (publ)",
-          "person": "Per Wargéus",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "50000,0",
-          "enhet": "Antal",
-          "pris": "17,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:23:52",
-          "emittent": "Humble Group AB",
-          "person": "Noel Abdayem",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,51",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:23:51",
-          "emittent": "Humble Group AB",
-          "person": "Johan Lennartsson",
-          "befattning": "Ekonomichef/finanschef/finansdirektör",
-          "karaktar": "Förvärv",
-          "volym": "200000,0",
-          "enhet": "Antal",
-          "pris": "0,51",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:09:21",
-          "emittent": "L E Lundbergföretagen Aktiebolag (publ)",
-          "person": "Lars Fredrik Elis Lundberg",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "101000,0",
-          "enhet": "Antal",
-          "pris": "572,9353",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:06:14",
-          "emittent": "EASTNINE AB (PUBL)",
-          "person": "Peter Elam Håkansson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "96239,0",
-          "enhet": "Antal",
-          "pris": "44,4907",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:06:14",
-          "emittent": "EASTNINE AB (PUBL)",
-          "person": "Peter Elam Håkansson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "14000,0",
-          "enhet": "Antal",
-          "pris": "45,3418",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 11:03:01",
-          "emittent": "EASTNINE AB (PUBL)",
-          "person": "Lars Peter Elam Håkansson",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "12000,0",
-          "enhet": "Antal",
-          "pris": "44,1760",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 10:58:24",
-          "emittent": "Duroc Aktiebolag",
-          "person": "Caroline Talsma",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "10000,0",
-          "enhet": "Antal",
-          "pris": "19,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 10:09:52",
-          "emittent": "Lohilo Foods AB (publ)",
-          "person": "Emma Lundin",
-          "befattning": "Annan medlem i bolagets administrations-, lednings- eller kontrollorgan",
-          "karaktar": "Förvärv",
-          "volym": "69000,0",
-          "enhet": "Antal",
-          "pris": "2,9945",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 10:08:01",
-          "emittent": "AQ Group AB",
-          "person": "Åsa Landén Ericsson",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "1150,0",
-          "enhet": "Antal",
-          "pris": "217,16",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 13,
+      "nyaSenasteKorning": 12,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-27T00:32+00:00"
+      "vintage": "2026-11-27T09:03+00:00"
     }
   }
 }
