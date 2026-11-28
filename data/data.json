@@ -3,7 +3,7 @@
   "lage": "LIVE",
   "asOfWeek": "2026-W48",
   "asOfDatum": "2026-11-27",
-  "genererad": "2026-11-27T18:54+00:00",
+  "genererad": "2026-11-28T01:55+00:00",
   "illustrativ": false,
   "kommentar": "LIVE-data från fria källor (FRED, Yahoo, SEC EDGAR, FI:s CSV-export), uppdaterad var 30:e minut. Kurerade fält (flöden, estimat, megatrend, aktielista) behåller sina vintage-märken tills de uppdateras manuellt.",
   "rimlighet": {
@@ -859,22 +859,22 @@
         "30Y"
       ],
       "nu": [
-        4.18,
-        4.63,
-        4.69,
-        4.91,
-        5.3
+        4.16,
+        4.61,
+        4.65,
+        4.85,
+        5.24
       ],
       "forr": [
-        4.04,
-        4.69,
-        4.82,
+        4.05,
+        4.68,
+        4.84,
         5.0,
-        5.33
+        5.31
       ],
       "kalla": "FRED",
-      "vintage": "2026-11-24",
-      "not": "Flackande 2s10s: −3 bp/mån."
+      "vintage": "2026-11-25",
+      "not": "Flackande 2s10s: −8 bp/mån."
     },
     "bredd": {
       "over50": 60,
@@ -958,11 +958,11 @@
       "spread": -8.9
     },
     "realranta": {
-      "varde": "2,79 %",
+      "varde": "2,73 %",
       "pil": "upp",
-      "delta": "+13 bp · 1 mån",
+      "delta": "+7 bp · 1 mån",
       "kalla": "FRED 10y TIPS (DFII10)",
-      "vintage": "2026-11-24"
+      "vintage": "2026-11-25"
     },
     "guld": {
       "namn": "Guld",
@@ -1002,7 +1002,7 @@
       "vintage": "2026-11-27"
     },
     "olja": {
-      "v": 90.43,
+      "v": 90.84,
       "kalla": "Yahoo BZ=F (Brent, USD/fat)",
       "vintage": "2026-11-27"
     }
@@ -1942,61 +1942,182 @@
     "us": {
       "poster": [
         {
-          "datum": "2026-11-24",
-          "namn": "Saltiel Robert J.  (CIK 0001434402); RPC INC  (CIK 0000742278)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1434402/000165495426010087"
+          "datum": "2026-11-27",
+          "namn": "Sousa Mauad Bruno  (CIK 0002117905); Aura Minerals Inc.  (CIK 0001468642)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/2117905/000211790526000053"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Davenport Robin J  (CIK 0001891142); STANDEX INTERNATIONAL CORP/DE/  (CIK 0000310354)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1891142/000031035426000124"
+          "datum": "2026-11-25",
+          "namn": "Hobaica Paul  (CIK 0001966758); HealthLynked Corp  (CIK 0001680139)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1966758/000121390026124145"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Nelson Lisa M  (CIK 0001865864); JACK HENRY & ASSOCIATES INC  (CIK 0000779152)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1865864/000077915226000140"
+          "datum": "2026-11-25",
+          "namn": "HAN BERNARD L  (CIK 0001245319); Frontier Group Holdings, Inc.  (CIK 0001670076)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1245319/000124531926000003"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "DEMETRIOU STEVEN J.  (CIK 0001173003); Amentum Holdings, Inc.  (CIK 0002011286)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1173003/000117300326000004"
+          "datum": "2026-11-25",
+          "namn": "Kilmer Bobbi J  (CIK 0001738341); CITIZENS & NORTHERN CORP  (CIK 0000810958)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1738341/000173834126000010"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Jazic Annemarie  (CIK 0001707990); DILLARD'S, INC.  (CIK 0000028917)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1707990/000170799026000021"
+          "datum": "2026-11-25",
+          "namn": "LEWIS ROBERT B  (CIK 0001164469); SILGAN HOLDINGS INC  (CIK 0000849869)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1164469/000162828026075987"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Lindborg Stacy  (CIK 0001813667); Imunon, Inc.  (CIK 0000749647)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1813667/000143774926038182"
+          "datum": "2026-11-25",
+          "namn": "Baxter Scott H  (CIK 0001509765); Kontoor Brands, Inc.  (CIK 0001760965)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1509765/000089706926002000"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Stumpf Matthew  (CIK 0002003065); AppLovin Corp  (CIK 0001751008)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2003065/000200306526000009"
+          "datum": "2026-11-25",
+          "namn": "DUCHENE TODD M  (CIK 0001248745); Core Scientific, Inc./tx  (CIK 0001839341)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1248745/000090514826005183"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "St. Mary Michele T  (CIK 0002057553); Amentum Holdings, Inc.  (CIK 0002011286)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2057553/000205755326000005"
+          "datum": "2026-11-25",
+          "namn": "Shachar Erez  (CIK 0001601099); RISKIFIED LTD.  (CIK 0001851112)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1601099/000160109926000071"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Scheinman Daniel  (CIK 0001605698); Arista Networks, Inc.  (CIK 0001596532)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/1605698/000159653226000286"
+          "datum": "2026-11-25",
+          "namn": "Tannenbaum Robyn  (CIK 0001842694); Advanced Flower Capital Inc.  (CIK 0001822523)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1842694/000162828026076013"
         },
         {
-          "datum": "2026-11-24",
-          "namn": "Mowad-Nassar Nicole  (CIK 0002084190); RESMED INC  (CIK 0000943819)",
-          "lank": "https://www.sec.gov/Archives/edgar/data/2084190/000094381926000140"
+          "datum": "2026-11-25",
+          "namn": "Andres Dale  (CIK 0001866675); HECLA MINING CO/DE/  (CIK 0000719413)",
+          "lank": "https://www.sec.gov/Archives/edgar/data/1866675/000186667526000009"
         }
       ],
       "kalla": "SEC EDGAR full-text search (Form 4)",
-      "vintage": "2026-11-27T18:54+00:00"
+      "vintage": "2026-11-28T01:55+00:00"
     },
     "se": {
       "poster": [
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "26520,0",
+          "enhet": "Antal",
+          "pris": "13,28",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "14916,0",
+          "enhet": "Antal",
+          "pris": "15,92",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen minskning",
+          "volym": "6204,0",
+          "enhet": "Antal",
+          "pris": "38,58",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "26520,0",
+          "enhet": "Antal",
+          "pris": "13,28",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "14916,0",
+          "enhet": "Antal",
+          "pris": "15,92",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Lösen ökning",
+          "volym": "6204,0",
+          "enhet": "Antal",
+          "pris": "35,58",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "1800,0",
+          "enhet": "Antal",
+          "pris": "90,03",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 23:24:59",
+          "emittent": "Lundin Gold Inc.",
+          "person": "Terrence Smith",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Avyttring",
+          "volym": "45840,0",
+          "enhet": "Antal",
+          "pris": "90,7089",
+          "valuta": "CAD"
+        },
+        {
+          "publicerad": "2026-11-27 22:02:18",
+          "emittent": "Advenica",
+          "person": "Ove Linde",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "150000,0",
+          "enhet": "Antal",
+          "pris": "17,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 22:02:18",
+          "emittent": "Advenica",
+          "person": "Ove Linde",
+          "befattning": "Styrelseledamot",
+          "karaktar": "Avyttring",
+          "volym": "50000,0",
+          "enhet": "Antal",
+          "pris": "17,00",
+          "valuta": "SEK"
+        },
+        {
+          "publicerad": "2026-11-27 19:53:33",
+          "emittent": "Ambea AB ( publ )",
+          "person": "Susanne Sjöberg",
+          "befattning": "Annan ledande befattningshavare",
+          "karaktar": "Förvärv",
+          "volym": "3400,0",
+          "enhet": "Antal",
+          "pris": "24,30",
+          "valuta": "SEK"
+        },
         {
           "publicerad": "2026-11-27 18:08:53",
           "emittent": "Tele2 AB",
@@ -2425,132 +2546,11 @@
           "enhet": "Antal",
           "pris": "9,3",
           "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-27 07:56:13",
-          "emittent": "Gentoo Media Inc.",
-          "person": "Mateusz Juroszek",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Förvärv",
-          "volym": "42100,0",
-          "enhet": "Antal",
-          "pris": "3,9806",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-27 07:14:00",
-          "emittent": "GASPOROX AB (PUBL)",
-          "person": "Märta Lewander Xu",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "8838,0",
-          "enhet": "Antal",
-          "pris": "3,749095",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-27 07:14:00",
-          "emittent": "GASPOROX AB (PUBL)",
-          "person": "Märta Lewander Xu",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "10616,0",
-          "enhet": "Antal",
-          "pris": "4,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 19:26:08",
-          "emittent": "Guldbrev Holding AB (publ)",
-          "person": "Peter Gullander",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utdelning mottagen",
-          "volym": "2673954,0",
-          "enhet": "Antal",
-          "pris": "4,0366",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 19:21:36",
-          "emittent": "Guldbrev Holding AB (publ)",
-          "person": "Peter Gullander",
-          "befattning": "Styrelseledamot",
-          "karaktar": "Utdelning lämnad",
-          "volym": "2673954,0",
-          "enhet": "Antal",
-          "pris": "4,0366",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 18:09:50",
-          "emittent": "Done.ai Group AB",
-          "person": "Staffan Herbst",
-          "befattning": "Verkställande direktör (VD)",
-          "karaktar": "Förvärv",
-          "volym": "19818,0",
-          "enhet": "Antal",
-          "pris": "5,50",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 17:10:47",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "8095,0",
-          "enhet": "Antal",
-          "pris": "21,11",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 17:10:47",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "5122,0",
-          "enhet": "Antal",
-          "pris": "24,0",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 17:10:47",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "Lars Save",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Avyttring",
-          "volym": "7614,0",
-          "enhet": "Antal",
-          "pris": "21,11",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 17:07:34",
-          "emittent": "eWork Group AB",
-          "person": "Joel Sjöstedt",
-          "befattning": "Annan ledande befattningshavare",
-          "karaktar": "Tilldelning",
-          "volym": "15000,0",
-          "enhet": "Antal",
-          "pris": "9,22",
-          "valuta": "SEK"
-        },
-        {
-          "publicerad": "2026-11-26 16:59:21",
-          "emittent": "Nodebis Applications AB (publ)",
-          "person": "AM Members Only AB",
-          "befattning": "Styrelseordförande",
-          "karaktar": "Förvärv",
-          "volym": "164,0",
-          "enhet": "Antal",
-          "pris": "24,49",
-          "valuta": "SEK"
         }
       ],
-      "nyaSenasteKorning": 30,
+      "nyaSenasteKorning": 11,
       "kalla": "FI insynsregistret, officiell CSV-export (1 export/körning)",
-      "vintage": "2026-11-27T18:54+00:00"
+      "vintage": "2026-11-28T01:55+00:00"
     }
   }
 }
